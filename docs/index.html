@@ -159,17 +159,17 @@
         if (!lastsegment.includes(".md")) {
           // Assume default README.md file
           if (toc) {
-            var baseURL = `https://www.docsify-this.net?basePath=${url}&toc=true`;
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&toc=true`;
           } else {
-            var baseURL = `https://www.docsify-this.net?basePath=${url}`;
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}`;
           }
         } else {
           // Remove filename at end of URL
           url = url.substring(0, url.lastIndexOf("/"));
           if (toc) {
-            var baseURL = `https://www.docsify-this.net?basePath=${url}/&homepage=${lastsegment}&toc=true`;
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}&toc=true`;
           } else {
-            var baseURL = `https://www.docsify-this.net?basePath=${url}/&homepage=${lastsegment}`;
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}`;
           }
         }
 
