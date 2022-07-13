@@ -157,19 +157,28 @@
         var lastsegment = url.split('/').pop();
 
         if (!lastsegment.includes(".md")) {
-          // Assume default README.md file
+          // No filename is present, so assume default README.md file
           if (toc) {
             var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&toc=true`;
           } else {
             var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}`;
           }
         } else {
-          // Remove filename at end of URL
-          url = url.substring(0, url.lastIndexOf("/"));
-          if (toc) {
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}&toc=true`;
+          if (lastsegment == "README.md") {
+            // Default is README.md so homepage parm not needed
+            url = url.substring(0, url.lastIndexOf("/"));
+              if (toc) {
+                var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&toc=true`;
+              } else {
+                var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/`;
+              }
           } else {
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}`;
+            url = url.substring(0, url.lastIndexOf("/"));
+            if (toc) {
+              var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}&toc=true`;
+            } else {
+              var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}/&homepage=${lastsegment}`;
+            }
           }
         }
 
