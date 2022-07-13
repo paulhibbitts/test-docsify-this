@@ -187,9 +187,16 @@
       } else {
 
         alert("Please enter a Markdown File Source URL.");
+        selectText();
 
       }
 
+    }
+
+    function selectText() {
+      const input = document.getElementById('text');
+      input.focus();
+      input.select();
     }
 
     // Docsify
