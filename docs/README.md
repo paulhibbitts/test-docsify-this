@@ -42,5 +42,6 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ---
 
 **🙇🏻‍♂️Credits**  
+This open source project by [Hibbitts Design](https:hibbittsdesign.org).  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
 [Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.
