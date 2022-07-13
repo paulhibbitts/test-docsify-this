@@ -3,7 +3,7 @@
 ![3D cubes](images/rohit-choudhari-puy-FW4fOJc-unsplash.jpg  ':class=banner-image')  
 Photo by <a href="https://unsplash.com/@lilrohit?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Rohit Choudhari</a> on <a href="https://unsplash.com/s/photos/network?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-This site, built using the magical documentation site generator [Docsify](https://docsify.js.org) and based on the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to publish Markdown files as standalone Web pages using Docsify without needing to setup your own Docsify instance - all you need is a publicly available Markdown file and pass that URL to https://docsify.this. Try it out below!  
+This site, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to publish Markdown files as standalone Web pages without needing to setup your own Docsify site. All you need is a publicly available Markdown file and pass that URL to https://docsify.this. Try it out below!  
 
 Markdown File Source URL:</br>
 <input class="myfield" type="URL" autofocus="autofocus" onfocus="this.select()" id="text" size="200px" value="https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/" /></br>
