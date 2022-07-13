@@ -1,6 +1,6 @@
 # Docsify This
 
-![Multicoloured Folder Tabs](images/andrew-pons-6-RhsUzKO6g-unsplash.jpg  ':class=banner-image')
+![3D cubes](images/rohit-choudhari-puy-FW4fOJc-unsplash.jpg  ':class=banner-image')
 
 This site, which is built using [Docsify](https://docsify.js.org) and based on the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display a remote Markdown file as a standalone Web page.
 
