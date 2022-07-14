@@ -155,10 +155,8 @@
 
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
-          alert (url);
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
-          alert (url);
         }
 
         // Get last segment of URL
