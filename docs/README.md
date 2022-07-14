@@ -7,11 +7,11 @@ Photo by <a href="https://unsplash.com/@lilrohit?utm_source=unsplash&utm_medium=
 
 This Web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to publish Markdown files as standalone Web pages without needing to setup your own Docsify site. All you need is a publicly available Markdown file and pass that URL to https://docsify.this. Try it out below!  
 
-Markdown File URL:</br>
+Markdown File URL (GitHub or raw source URL):</br>
 <input class="myfield" type="URL" autofocus="autofocus" onfocus="this.select()" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md" /></br>
 <input class="button" style="border:none;" type="button" id="btn" value="Display as Standalone Page" onclick="openURLs(document.getElementById('text').value,false)"/> <input class="button" style="border:none;" type="button" id="btn" value="Display as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true)"/></br>
 
-_To manually get the source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file)._
+_To manually get the raw source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file)._
 
 ## Examples
 
