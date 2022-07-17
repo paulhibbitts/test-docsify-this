@@ -332,6 +332,12 @@
     		j.async = true; j.src = 'https://hibbitts.rocket.chat/livechat/rocketchat-livechat.min.js?_=201903270000';
     		h.parentNode.insertBefore(j, h);
     	})(window, document, 'script', 'https://hibbitts.rocket.chat/livechat');
+      RocketChat(function() {
+       this.setTheme({
+           title: "Chat with Paul Now", // default widget title when the status of service is online
+           offlineTitle: "Send Message to Paul", // default widget title when the status of service is online
+       });
+      });
     }
 	</script>
 
