@@ -43,7 +43,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 
 ---
 
-This open source project is by [Hibbitts Design](https://hibbittsdesign.org/).  
+This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
 
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
