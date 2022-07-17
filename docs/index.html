@@ -326,8 +326,8 @@
   <!-- Start of Rocket.Chat Livechat Script -->
 	<script type="text/javascript">
   console.log(window.$docsify['basePath']);
-  console.log(window.$docsify['basePath'] == null);
-  if (!(window.$docsify['basePath'] == null)) ;{
+  console.log(window.$docsify['basePath'] === undefined);
+  if (window.$docsify['basePath'] === undefined) ;{
   	(function(w, d, s, u) {
   		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
   		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
