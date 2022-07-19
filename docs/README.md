@@ -49,7 +49,7 @@ Docsify-this.net is intended as a quick way to display a remotely located Markdo
 
 - Create a [GitHub issue](https://github.com/hibbitts-design/docsify-this) for bug reports, feature requests, or questions
 - Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates and announcements
-- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) or 🐦 [tweet](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,markdown,webpage) to support the project!
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) or 🐦 [tweet](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage) to support the project!
 
 ---
 
