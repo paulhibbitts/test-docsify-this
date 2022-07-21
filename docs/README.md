@@ -47,7 +47,7 @@ Docsify-this.net is intended as a quick way to display a remotely located Markdo
 
 ## Troubleshooting
 
-_Embedded content not displaying as expected._
+_Embedded content not displaying as expected._  
 Due to iframe cross-domain issues embedded content may not be able to be displayed. Use a rich media embed service such as [embed.ly](https://embed.ly/) as a workaround.  
 
 ## Contact and Support
