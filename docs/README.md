@@ -20,7 +20,7 @@ _To manually get the raw source URL of a file stored on GitHub, tap the **Raw** 
 
 ## Technical Details
 
-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site which can render multiple remote Markdown files (for example, a Markdown file in a GitHub repository). You can use a rich media embed service such as [embed.ly](https://embed.ly/) to workaround iframe cross-domain issues.  
+This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site which can render multiple remote Markdown files (for example, a Markdown file in a GitHub repository).
 
 For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
@@ -44,6 +44,11 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ## Looking for more Customization and Control?
 
 Docsify-this.net is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and either store Markdown files within that site or with additional configuration render files located remotely. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
+
+## Troubleshooting
+
+_Embedded content not displaying as expected._
+Due to iframe cross-domain issues embedded content may not be able to be displayed. Use a rich media embed service such as [embed.ly](https://embed.ly/) as a workaround.  
 
 ## Contact and Support
 
