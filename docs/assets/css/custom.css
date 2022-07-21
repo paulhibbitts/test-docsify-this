@@ -58,11 +58,6 @@ span .button {
 }
 
 .mybutton {
-    overflow: hidden;
-    width: 100%;
-    background-color : #f2f8ff;
-    margin-bottom: 5px;
-    padding: 10px;
     white-space: normal;
     text-align: left;
 }
