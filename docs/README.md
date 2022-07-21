@@ -50,13 +50,13 @@ Docsify-this.net is intended as a quick way to display a remotely located Markdo
 _Embedded content not displaying as expected._  
 Due to iframe cross-domain issues embedded content may not be able to be displayed. Use the included rich media embed service [embed.ly](https://embed.ly/) as a workaround.  
 
-For example, the following iFrame HTML:  
+For example, the iFrame HTML:  
 
 ```
 <div class="video-container-16by9"><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRnnRFelgw1ksq_p8Eryg3dnyLCRRLPf5fBgdwdv9p-tCIwcxqWvzDGrGbjxGHL7HqEJVpmV26ntk3a/embed?start=false&loop=false&delayms=3000" frameborder="0" width=780" height="585" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
 ```
 
-Could be changed to:  
+Would be changed to:  
 
 ```
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
