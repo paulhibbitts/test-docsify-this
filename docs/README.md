@@ -62,6 +62,12 @@ Would be changed to:
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
 
+## Support the Project
+
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the project
+- Tweet 🐦 [tweet](https://twitter.com/intent/tweet?text=I+am+checking+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage) about the project
+- Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates and announcements
+
 ---
 
 This open source project is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
