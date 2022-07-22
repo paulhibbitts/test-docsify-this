@@ -48,7 +48,7 @@ Docsify-This is intended as a quick way to display a remotely located Markdown f
 ## Troubleshooting
 
 _Embedded image not displaying as expected._  
-Embedded images using HTML (vs. Markdown) will not be able to be displayed. Use Markdown to embed images if possible.
+The most likely cause for embedded images not be displayed as expected is the use of HTML (i.e. `<img src="filename.jpg">`). Use Markdown for embedded images if possible (i.e. `![image](filename.jpg)`) to better support remote rendering.
 
 _Embedded iFrame not displaying as expected._   
 Due to iframe cross-domain issues embedded content may not be able to be displayed. Use the included rich media embed service [embed.ly](https://embed.ly/) as a workaround.  
