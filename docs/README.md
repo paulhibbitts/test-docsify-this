@@ -64,9 +64,9 @@ Would be changed to:
 
 ## Support the Project
 
-- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this) to the project
-- 🐦 [tweet out](https://twitter.com/intent/tweet?text=Check+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage) your thoughts about the project
-- Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates and announcements
+- Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this)
+- 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=Check+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
+- Follow [@hibbittsdesign](https://twitter.com/hibbittsdesign) for updates
 
 ---
 
