@@ -10,15 +10,13 @@ This Web app, built using the magical documentation site generator [Docsify](htt
 ## URL Builder for Docsify-This
 
 Markdown File URL (GitHub or raw source URL):</br>
-<input class="myfield" type="URL" autofocus="autofocus" onfocus="this.select()" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md" /></br>
+<input class="myfield" type="URL" autofocus="autofocus" onfocus="this.select()" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page" onclick="openURLs(document.getElementById('text').value,false)"/> <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true)"/></br>
 
 _To manually get the raw source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file)._
 
 ## More Examples
 
-* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/)
-* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true)
 * [GitHub Training Manual Working Locally with Git file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true#/)
 * [Single Page Docsify Open Course Starter Kit](https://github.com/paulhibbitts/cpt-363-user-interface-design/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cpt-363-user-interface-design/main&toc=true#/)
 
