@@ -47,6 +47,9 @@ Docsify-This is intended as a quick way to display a remotely located Markdown f
 
 ## Troubleshooting
 
+_Updated Markdown file is not being displayed as expected._  
+Docsify is likely displaying the last cached version. To ensure the most recent version of a file is loaded, do a [hard refresh of your Browser cache](https://www.makeuseof.com/hard-refresh-browser/).
+
 _Embedded image not displaying as expected._  
 The most likely cause for embedded images not being displayed as expected is the use of HTML (i.e. `<img src="images/filename.jpg" alt="Alt Text">`). Use Markdown for embedded images if possible (i.e. `![Alt Text](images/filename.jpg)`) to better support remote rendering.
 
