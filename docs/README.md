@@ -20,7 +20,7 @@ _To manually get the raw source URL of a file stored on GitHub, tap the **Raw** 
 
 ## Technical Details
 
-Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site which can render remote Markdown files, including Markdown files located on GitHub.  
+Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files, including Markdown files located on GitHub. By entering the URL of a Markdown file that same file is displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page.   
 
 For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
