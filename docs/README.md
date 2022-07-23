@@ -68,7 +68,7 @@ Would be changed to:
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
 
-## Support the Project
+## Support this Project
 
 - Add a ⭐️ [star on GitHub](https://github.com/hibbitts-design/docsify-this)
 - 🐦 [tweet out your thoughts](https://twitter.com/intent/tweet?text=Check+out+the+Docsify-This+project+at&url=https%3A%2F%2Fgithub.com%2Fhibbitts-design%2Fdocsify-this&hashtags=docsify,remote,markdown,file,webpage)
