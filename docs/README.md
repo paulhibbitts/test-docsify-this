@@ -7,6 +7,11 @@ Photo by <a href="https://unsplash.com/@lilrohit?utm_source=unsplash&utm_medium=
 
 This Web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone Web pages without needing to setup your own Docsify site. All you need is a publicly available Markdown file and pass that URL to https://docsify.this.net. Try it out below!  
 
+## Examples
+
+* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/)
+* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true)
+
 ## URL Builder
 
 Markdown File URL (GitHub or raw source URL):</br>
@@ -14,11 +19,6 @@ Markdown File URL (GitHub or raw source URL):</br>
 <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page" onclick="openURLs(document.getElementById('text').value,false)"/> <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true)"/></br>
 
 _To manually get the raw source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file)._
-
-## Examples
-
-* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/)
-* [Docsify Open Publishing Starter Kit README file](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true)
 
 ## Technical Details
 
