@@ -13,6 +13,8 @@ Markdown File URL (GitHub or raw source URL):</br>
 <input class="myfield" type="URL" autofocus="autofocus" onfocus="this.select()" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page" onclick="openURLs(document.getElementById('text').value,false)"/> <input class="button mybutton" style="border:none;" type="button" id="btn" value="Display as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true)"/></br>
 
+Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL to a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
+
 ## Additional Examples
 
 * [GitHub Training Manual Working Locally with Git file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed as a [Standalone Page with a Table of Contents](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/githubtraining/training-manual/main/docs&homepage=06_working_locally.md&toc=true#/)
@@ -20,7 +22,7 @@ Markdown File URL (GitHub or raw source URL):</br>
 
 ## Technical Details
 
-Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone Web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL to a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com). To manually get the raw source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file).  
+Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters. The **basepath** parameter needs to point to the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameters are required, otherwise the **homepage** parameter must also be included set to the name of the file. To manually get the raw source URL of a file stored on GitHub, tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file).  
 
 For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
