@@ -8,7 +8,7 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 400px);
+  width: var(--toc-width, 300px);
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
