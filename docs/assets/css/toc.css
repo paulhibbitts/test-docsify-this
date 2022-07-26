@@ -8,7 +8,7 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 300px);
+  width: var(--toc-width, 400px);
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
@@ -76,7 +76,7 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
-@media screen and (max-width: 1099px) {
+@media screen and (max-width: 1200px) {
   .page_toc {
     position: relative;
     top: -20px;
