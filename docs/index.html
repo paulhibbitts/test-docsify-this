@@ -323,10 +323,12 @@
 
   <!-- Check for Return Key in URL Builder field -->
   <script>
-    function checkKey(e){
-     var key=e.keyCode || e.which;
-      if (key==13){
-         document.getElementById("btn_1").click();
+    if (window.$docsify['basePath'] === undefined) {
+      function checkKey(e){
+       var key=e.keyCode || e.which;
+        if (key==13){
+           document.getElementById("btn_1").click();
+        }
       }
     }
   </script>
