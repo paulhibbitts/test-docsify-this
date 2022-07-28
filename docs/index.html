@@ -148,7 +148,7 @@
     }
 
     // DOCSIFY THIS SCRIPTS
-    function openURLs(url,toc){
+    function openURLs(url,standalone,toc){
 
       if (url) {
 
@@ -160,30 +160,26 @@
 
         // Get last segment of URL
         var lastsegment = url.split('/').pop();
+        var URLparms = "";
+
+        if (standalone) {
+          var URLparms = `&standalone=true`;
+        }
+        if (toc) {
+          var URLparms = URLparms += `&toc=true`;
+        }
 
         if (!lastsegment.includes(".md")) {
           // No filename is present, so assume default README.md file
-          if (toc) {
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&toc=true`;
-          } else {
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}`;
-          }
+          var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}` + URLparms;
         } else {
           if (lastsegment == "README.md") {
             // Default is README.md so homepage parm not needed
             url = url.substring(0, url.lastIndexOf("/"));
-              if (toc) {
-                var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&toc=true`;
-              } else {
-                var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}`;
-              }
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}` + URLparms;
           } else {
             url = url.substring(0, url.lastIndexOf("/"));
-            if (toc) {
-              var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&homepage=${lastsegment}&toc=true`;
-            } else {
-              var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&homepage=${lastsegment}`;
-            }
+            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&homepage=${lastsegment}` + URLparms;
           }
         }
 
