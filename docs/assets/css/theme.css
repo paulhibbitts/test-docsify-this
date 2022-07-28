@@ -390,3 +390,7 @@ body .docsify-pagination-container {
    }
 
 }
+
+.sidebar .app-name {
+    display: none;
+}
