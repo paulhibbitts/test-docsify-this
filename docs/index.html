@@ -104,7 +104,7 @@
     var editThisPageLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
-    var standalone = !(getURLParameterByName('basepath'));
+    var standalone = !(getURLParameterByName('sidebar'));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
     var ToC = false;
@@ -148,7 +148,7 @@
     }
 
     // DOCSIFY THIS SCRIPTS
-    function openURLs(url,standalone,toc){
+    function openURLs(url,toc,sidebar){
 
       if (url) {
 
@@ -162,11 +162,12 @@
         var lastsegment = url.split('/').pop();
         var URLparms = "";
 
-        if (standalone) {
-          var URLparms = `&standalone=true`;
+        if (sidebar) {
+          var URLparms = `&sidebar=true`;
         }
+
         if (toc) {
-          var URLparms = URLparms += `&toc=true`;
+          var URLparms = `&toc=true`;
         }
 
         if (!lastsegment.includes(".md")) {
