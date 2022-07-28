@@ -104,7 +104,7 @@
     var editThisPageLinkText = 'Edit this Page';
 
     // Set standalone to true to permanently hide the Sidebar and Navbar
-    var standalone = false;
+    var standalone = !(getURLParameterByName('basepath'));
 
     // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
     var ToC = false;
