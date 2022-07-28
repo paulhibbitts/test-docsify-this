@@ -211,8 +211,8 @@
       homepage          : 'README.md',
       // coverpage      : 'coverpage.md',
       // Set last option for loadSidebar and loadNavbar to true for Remote Docsify
-      loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || true),
-      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || true),
+      loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
+      loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       // Set externalLinkTarget to '_self' for Remote Docsify
       externalLinkTarget: '_self',
 
@@ -222,7 +222,7 @@
       maxLevel: 3,
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
-      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone),
+      hideSidebar: (getURLParameterByName(['standalone','embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
