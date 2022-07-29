@@ -54,7 +54,7 @@ aside.nav.nothing {
   list-style-type: none;
   margin-top: 0px;
   padding-left: 10px;
-  color: var(--mono-shade2, black);
+  color: var(--base-color, black);
   text-decoration: none;
   font-weight: 300;
   line-height: 1.2em;
