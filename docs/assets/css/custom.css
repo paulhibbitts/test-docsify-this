@@ -74,3 +74,7 @@ span .button {
   text-decoration: none;
   border-radius: .25rem;
 }
+
+.sidebar .app-name {
+    display: none;
+}
