@@ -12,7 +12,7 @@ This Web app, built using the magical documentation site generator [Docsify](htt
 
 ## URL Builder for Docsify-This
 
-**Markdown File URL (GitHub or raw source URL):**</br>
+**Markdown File URL** (GitHub or raw source URL):</br>
 <input class="myfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="button mybutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="secondarybutton mybutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="secondarybutton mybutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
 
