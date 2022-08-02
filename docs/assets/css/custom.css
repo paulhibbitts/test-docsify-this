@@ -43,7 +43,8 @@ form .myfield {
 .myfield {
     overflow: hidden;
     width: 100%;
-    background-color : #f2f8ff;
+    background-color : #white;
+    margin-top: 5px;
     margin-bottom: 5px;
     padding: 10px;
 }
@@ -86,4 +87,12 @@ span .button {
       background-color: #A6A6A6;
   }
 
+}
+
+.markdown-section .mybuilder {
+  overflow: visible;
+  margin: 2em 0;
+  padding: 1.5em;
+  border-width: 0;
+  background: #f1f8fe;
 }
