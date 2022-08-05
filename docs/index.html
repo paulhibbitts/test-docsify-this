@@ -169,6 +169,9 @@
 
       if (url) {
 
+        docsifyurl = window.location.href
+        docsifyurl = docsifyurl.replace('/#/', '');
+
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
           url = url.replace('github.com', 'raw.githubusercontent.com');
@@ -189,15 +192,15 @@
 
         if (!lastsegment.includes(".md")) {
           // No filename is present, so assume default README.md file
-          var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}` + URLparms;
+          var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
         } else {
           if (lastsegment == "README.md") {
             // Default is README.md so homepage parm not needed
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}` + URLparms;
+            var baseURL = docsifyurl + `?basePath=${url}` + URLparms;
           } else {
             url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = `https://paulhibbitts.github.io/test-docsify-this?basePath=${url}&homepage=${lastsegment}` + URLparms;
+            var baseURL = docsifyurl + `?basePath=${url}&homepage=${lastsegment}` + URLparms;
           }
         }
 
