@@ -199,7 +199,8 @@
 
         const cb = document.querySelector('#editCheck');
         if (cb.checked) {
-          if (gitlinkPageURL) {
+          console.log(gitlinkPageURL);
+          if (gitlinkPageURL !== 'undefined') {
             if (!lastsegment.includes(".md")) {
             // No filename is present, so assume default README.md file
             gitlinkPageURL = gitlinkPageURL + "README.md"
