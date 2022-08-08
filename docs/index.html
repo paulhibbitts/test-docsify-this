@@ -182,6 +182,7 @@
 
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
+          gitlinkPageURL = url
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
         }
@@ -196,6 +197,15 @@
 
         if (toc) {
           var URLparms = `&toc=true`;
+        }
+
+        const cb = document.querySelector('#editCheck');
+        console.log(cb.checked); // false
+        if (cb.checked) {
+          if (gitlinkPageURL) {
+            var URLparms = `&gitlinkPageURL=` + gitlinkPageURL;
+            console.log(URLparms);
+          }
         }
 
         if (!lastsegment.includes(".md")) {

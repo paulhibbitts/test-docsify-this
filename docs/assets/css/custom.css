@@ -60,6 +60,11 @@ span .docsifythisurlfield{
     text-align: left;
 }
 
+.docsifythisurlbuildercheckbox{
+    transform: scale(1.2);
+    margin: 3px;
+}
+
 .markdown-section .docsifythisurlbuildersecondarybutton {
     cursor: pointer;
     color: white;
