@@ -180,9 +180,11 @@
 
         // If not Raw source URL convert it
         if (url.includes("github.com")) {
-          gitlinkPageURL = url
+          var gitlinkPageURL = url;
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
+        } else {
+          var gitlinkPageURL = "";
         }
 
         // Get last segment of URL
@@ -200,7 +202,7 @@
         const cb = document.querySelector('#editCheck');
         if (cb.checked) {
           console.log(gitlinkPageURL);
-          if (gitlinkPageURL !== 'undefined') {
+          if (gitlinkPageURL) {
             if (!lastsegment.includes(".md")) {
             // No filename is present, so assume default README.md file
             gitlinkPageURL = gitlinkPageURL + "README.md"
