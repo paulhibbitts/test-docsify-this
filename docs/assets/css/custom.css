@@ -62,7 +62,8 @@ span .docsifythisurlfield{
 
 .docsifythisurlbuildercheckbox{
     transform: scale(1.2);
-    margin: 3px;
+    margin-left: 2px;
+    margin-right: 4px;
 }
 
 .markdown-section .docsifythisurlbuildersecondarybutton {
