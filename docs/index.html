@@ -272,7 +272,7 @@
                 .replace('raw.githubusercontent.com', 'github.com')
                 .replace(/\/master/, '/blob/master')
             } else if (window.$docsify['basePath']) {
-              url  = getURLParameterByName('gitLinkRepoURL', null, null, window.location.href, true);
+              url  = getURLParameterByName('gitlinkPageURL', null, null, window.location.href, true);
               gitLinkRepoURL = url;
               console.log(url);
             } else {
