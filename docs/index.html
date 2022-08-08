@@ -146,10 +146,8 @@
 
       } else {
 
-        name = name.toLowerCase().replace(/[\[\]]/g, '\\$&');
-
         var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        var results = regex.exec(url.toLowerCase());
+        var results = regex.exec(url);
 
         exists = (results && results[2]) ? true : false;
 
