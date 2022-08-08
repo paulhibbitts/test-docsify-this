@@ -200,13 +200,11 @@
         const cb = document.querySelector('#editCheck');
         if (cb.checked) {
           if (gitlinkPageURL) {
-            if (gitlinkPageURL.includes('github.com')) {
-              if (!lastsegment.includes(".md")) {
-              // No filename is present, so assume default README.md file
-              gitlinkPageURL = gitlinkPageURL + "README.md"
-              }
-            var URLparms = URLparms + `&gitlinkPageURL=` + gitlinkPageURL;
+            if (!lastsegment.includes(".md")) {
+            // No filename is present, so assume default README.md file
+            gitlinkPageURL = gitlinkPageURL + "README.md"
             }
+            var URLparms = URLparms + `&gitlinkPageURL=` + gitlinkPageURL;
           }
         }
 
