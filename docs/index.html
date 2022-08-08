@@ -203,6 +203,10 @@
         console.log(cb.checked); // false
         if (cb.checked) {
           if (gitlinkPageURL) {
+            if (!lastsegment.includes(".md")) {
+            // No filename is present, so assume default README.md file
+            gitlinkPageURL = gitlinkPageURL + "README.md"
+            }
             var URLparms = `&gitlinkPageURL=` + gitlinkPageURL;
             console.log(URLparms);
           }
