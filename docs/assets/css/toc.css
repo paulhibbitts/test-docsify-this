@@ -56,7 +56,7 @@ aside.nav.nothing {
   padding-left: 10px;
   color: var(--base-color, black);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
@@ -68,7 +68,7 @@ aside.nav.nothing {
 .page_toc ul a {
   color: var(--base-color, black);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.2em;
 }
 
