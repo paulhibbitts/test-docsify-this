@@ -373,9 +373,7 @@
   <script>
     fontfamily  = getURLParameterByName('fontFamily', null, null, window.location.href, true);
     fontfamily = decodeURI(fontfamily);
-    console.log(fontfamily);
     if (!(fontfamily === false) && (window.$docsify['basePath'])) {
-      console.log(fontfamily);
       document.documentElement.style.setProperty('--base-font-family', fontfamily);
     }
   </script>
