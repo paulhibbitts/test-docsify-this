@@ -56,6 +56,16 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
+## Additional Parameters
+
+**fontFamily**  
+
+Set a custom font for your standalone pages, for example `&fontFamily=Helvetica,Arial,sans-serif`. Please note to use fonts with spaces in their names they must be encoded, for example "Open Sans" would be "Open%20Sans".
+
+**toc-alt**  
+
+Change the default breakpoint (1300) to an alternative smaller size (800) for moving the optional Page Table of Contents from the right-hand side of the screen to the top. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint.
+
 ## Looking for more Customization and Control?
 
 Docsify-This is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and either store Markdown files within that site or with additional configuration render files located remotely. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
