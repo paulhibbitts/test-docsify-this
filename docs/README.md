@@ -64,7 +64,7 @@ Set a custom font for your standalone pages, for example `&fontFamily=Helvetica,
 
 **toc-alt**  
 
-Change the default breakpoint (1300) to an alternative smaller size (800) for moving the optional Page Table of Contents from the right-hand side of the screen to the top. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint.
+Change the default breakpoint (1300) for moving the optional Page Table of Contents to the top of the screen to an alternative smaller size (800), for example `&toc-alt=true`. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint.
 
 ## Looking for more Customization and Control?
 
