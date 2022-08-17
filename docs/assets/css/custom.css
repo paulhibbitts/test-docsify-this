@@ -94,7 +94,7 @@ input[type="checkbox"] ~ label {
   margin: 2em 0;
   padding: 1.25em;
   border-width: 0;
-  background: #f1f8fe;
+  background: #bff0fc;
 }
 
 @media (prefers-color-scheme: dark) {
