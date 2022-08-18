@@ -76,6 +76,11 @@ input[type="checkbox"] ~ label {
     display:inline-block;
 }
 
+.markdown-section .button {
+  background-color: #0361cd;
+}
+
+
 .markdown-section .docsifythisurlbuildersecondarybutton {
     cursor: pointer;
     color: white;
@@ -84,7 +89,7 @@ input[type="checkbox"] ~ label {
     margin-top: 4px;
     padding: 10px;
     line-height: 1.2rem;
-    background-color: #6c6c6c;
+    background-color: #33adf7;
     text-decoration: none;
     border-radius: .25rem;
 }
