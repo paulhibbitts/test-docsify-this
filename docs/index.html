@@ -284,8 +284,7 @@
 
             // Scan for links to local Markdown files and adjust URLs to work correctly
             var url = window.location.href
-            var arr = url.split("/");
-            var currenturl = arr[0] + "//" + arr[2]
+            var currenturl = url.replace(/[?#].*/, ''); // Strips anything after ? or #
             console.log(currenturl); //www.example.com
 
             currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
