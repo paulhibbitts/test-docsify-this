@@ -280,6 +280,38 @@
 
         function(hook, vm) {
 
+          hook.afterEach(function(html, next) {
+
+            // Scan for links to local Markdown files and adjust URLs to work correctly
+            var url = window.location.href
+            var arr = url.split("/");
+            var currenturl = arr[0] + "//" + arr[2]
+            console.log(currenturl); //www.example.com
+
+            currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
+
+            // Invoked each time after the Markdown file is parsed.
+            // beforeEach and afterEach support asynchronous。
+            // ...
+            // call `next(html)` when task is done.
+            next(html);
+
+            const links = Array.from(document.querySelectorAll('a'))
+
+            for (const link of links) {
+              console.log(link.getAttribute('href'));
+              var lastsegment = link.getAttribute('href');
+              lastsegment = lastsegment.replace('#/', '');
+              console.log(lastsegment);
+              if (link.getAttribute('href')?.match(/^#/)) {
+                var newURL = currenturl + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
+                console.log(newURL);
+                link.setAttribute('href', newURL);
+              }
+            }
+
+          });
+
           hook.beforeEach(function(html) {
 
             // Remove any possible front matter with the delimiters '---'
