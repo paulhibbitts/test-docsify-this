@@ -283,6 +283,8 @@
           hook.afterEach(function(html, next) {
 
             // Scan for links to local Markdown files and adjust URLs to work correctly
+
+            // Get current Docsify URL without any parmarmeters
             var url = window.location.href
             var currenturl = url.replace(/[?#].*/, ''); // Strips anything after ? or #
             console.log(currenturl); //www.example.com
@@ -302,6 +304,7 @@
               var lastsegment = link.getAttribute('href');
               lastsegment = lastsegment.replace('#/', '');
               console.log(lastsegment);
+              // Find any local Markdown file links
               if (link.getAttribute('href')?.match(/^#/)) {
                 var newURL = currenturl + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
                 console.log(newURL);
