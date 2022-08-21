@@ -286,8 +286,8 @@
 
             // Get current Docsify URL without any parmarmeters
             var url = window.location.href
-            var currenturl = url.replace(/[?#].*/, ''); // Strips anything after ? or #
-            console.log(currenturl); //www.example.com
+            url = url.replace(/[?].*/, ''); // Strips anything after ?
+            console.log(url); //www.example.com
 
             currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
@@ -301,12 +301,13 @@
 
             for (const link of links) {
               console.log(link.getAttribute('href'));
-              var lastsegment = link.getAttribute('href');
-              lastsegment = lastsegment.replace('#/', '');
-              console.log(lastsegment);
               // Find any local Markdown file links
               if (link.getAttribute('href')?.match(/^#/)) {
-                var newURL = currenturl + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
+                // Modify each Markdown file link to work with Remote Docsify
+                var lastsegment = link.getAttribute('href');
+                lastsegment = lastsegment.replace('#/', '');
+                console.log(lastsegment);
+                var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
                 console.log(newURL);
                 link.setAttribute('href', newURL);
               }
