@@ -336,7 +336,7 @@
                   // Check to make sure link is not Docsify id anchor link
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
-                      // Construct URL to GitHub page for Edit this Page link parm
+                      // Carry and calculate existing editThisPageLink URL parm in links
                       var editThisPageLinkURLparm = ''
                       var editThisPageLink = '';
                       editThisPageLink = currentBasePath;
@@ -354,9 +354,7 @@
                   }
                 }
               }
-
             }
-
           });
 
           hook.beforeEach(function(html) {
@@ -392,7 +390,7 @@
             } else {
               return html
             }
-          })
+          });
 
         }
 
