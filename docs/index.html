@@ -336,6 +336,7 @@
                   // Check to make sure link is not Docsify id anchor link
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
+                      // Construct URL to GitHub page for Edit this Page link parm
                       var editThisPageLinkURLparm = ""
                       var editThisPageLink = "";
                       editThisPageLink = currentBasePath;
@@ -343,7 +344,6 @@
                       editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                       editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                       editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
-                      console.log(editThisPageLink);
                       editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
                       console.log(editThisPageLinkURLparm);
                     }
