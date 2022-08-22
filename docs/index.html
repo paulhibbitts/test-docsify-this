@@ -186,12 +186,12 @@
           url = url.replace('github.com', 'raw.githubusercontent.com');
           url = url.replace(/\/blob/, '');
         } else {
-          var gitlinkPageURL = "";
+          var gitlinkPageURL = '';
         }
 
         // Get last segment of URL
         var lastsegment = url.split('/').pop();
-        var URLparms = "";
+        var URLparms = '';
 
         if (sidebar) {
           var URLparms = `&sidebar=true`;
@@ -292,16 +292,16 @@
               // Scan for links to local Markdown files and adjust URLs to work correctly
 
               // Get current Docsify URL without any parmarmeters
-              var url = "";
+              var url = '';
               url = window.location.href
               url = url.replace(/[?].*/, ''); // Strips anything after ?
               console.log(url); //www.example.com
 
-              var currentBasePath = "";
+              var currentBasePath = '';
               currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
               // Carry any existing URL parms in links
-              var URLparms = "";
+              var URLparms = '';
 
               if (getURLParameterByName('sidebar')) {
                 URLparms = `&sidebar=true`;
@@ -327,7 +327,7 @@
                 // Find any local Markdown file links
                 if (link.getAttribute('href')?.match(/^#/)) {
                   // Modify each Markdown file link to work with Remote Docsify
-                  var lastsegment = "";
+                  var lastsegment = '';
                   lastsegment = link.getAttribute('href');
                   lastsegment = lastsegment.replace('#/', '');
                   lastsegment = lastsegment.replace('./', '');
@@ -337,8 +337,8 @@
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
                       // Construct URL to GitHub page for Edit this Page link parm
-                      var editThisPageLinkURLparm = ""
-                      var editThisPageLink = "";
+                      var editThisPageLinkURLparm = ''
+                      var editThisPageLink = '';
                       editThisPageLink = currentBasePath;
                       editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
                       editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
@@ -347,7 +347,7 @@
                       editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
                       console.log(editThisPageLinkURLparm);
                     }
-                    var newURL = ""
+                    var newURL = ''
                     newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
                     console.log(newURL);
                     link.setAttribute('href', newURL);
