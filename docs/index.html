@@ -460,15 +460,6 @@
     }
   </script>
 
-  <!-- Load custom CSS if css parameter present  -->
-  <script>
-    customcss  = getURLParameterByName('css', null, null, window.location.href, true);
-    console.log(customcss);
-    if (!(customcss === false) && !(window.$docsify['basePath'] === undefined)) {
-      document.write('<link rel="stylesheet" type="text/css" href="' + customcss +'" />');
-    }
-  </script>
-
   <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for local docsify-this.net pages -->
