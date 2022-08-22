@@ -287,53 +287,74 @@
             // call `next(html)` when task is done.
             next(html);
 
-            // Scan for links to local Markdown files and adjust URLs to work correctly
+            if (window.$docsify['basePath']) {
 
-            // Get current Docsify URL without any parmarmeters
-            var url = window.location.href
-            url = url.replace(/[?].*/, ''); // Strips anything after ?
-            console.log(url); //www.example.com
+              // Scan for links to local Markdown files and adjust URLs to work correctly
 
-            currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
+              // Get current Docsify URL without any parmarmeters
+              var url = "";
+              url = window.location.href
+              url = url.replace(/[?].*/, ''); // Strips anything after ?
+              console.log(url); //www.example.com
 
-            // Carry any existing URL parms in links
-            var URLparms = "";
+              var currentBasePath = "";
+              currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
-            if (getURLParameterByName('sidebar')) {
-              URLparms = `&sidebar=true`;
-            }
+              // Carry any existing URL parms in links
+              var URLparms = "";
 
-            if (getURLParameterByName('toc')) {
-              URLparms = `&toc=true`;
-            }
+              if (getURLParameterByName('sidebar')) {
+                URLparms = `&sidebar=true`;
+              }
 
-            if (getURLParameterByName('toc-alt')) {
-              URLparms = `&toc-alt=true`;
-            }
+              if (getURLParameterByName('toc')) {
+                URLparms = `&toc=true`;
+              }
 
-            if (getURLParameterByName('font-family')) {
-              fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
-              URLparms = URLparms + `&font-family=` + fontfamily;
-            }
+              if (getURLParameterByName('toc-alt')) {
+                URLparms = `&toc-alt=true`;
+              }
 
-            const links = Array.from(document.querySelectorAll('a'))
+              if (getURLParameterByName('font-family')) {
+                fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
+                URLparms = URLparms + `&font-family=` + fontfamily;
+              }
 
-            for (const link of links) {
-              console.log(link.getAttribute('href'));
-              // Find any local Markdown file links
-              if (link.getAttribute('href')?.match(/^#/)) {
-                // Modify each Markdown file link to work with Remote Docsify
-                var lastsegment = link.getAttribute('href');
-                lastsegment = lastsegment.replace('#/', '');
-                console.log(lastsegment);
-                console.log(lastsegment.startsWith("?id"));
-                // Check to make sure link is not Docsify id anchor link
-                if (lastsegment.startsWith("?id")===false) {
-                  var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms;
-                  console.log(newURL);
-                  link.setAttribute('href', newURL);
+              const links = Array.from(document.querySelectorAll('a'))
+
+              for (const link of links) {
+                console.log(link.getAttribute('href'));
+                // Find any local Markdown file links
+                if (link.getAttribute('href')?.match(/^#/)) {
+                  // Modify each Markdown file link to work with Remote Docsify
+                  var lastsegment = "";
+                  lastsegment = link.getAttribute('href');
+                  lastsegment = lastsegment.replace('#/', '');
+                  lastsegment = lastsegment.replace('./', '');
+                  console.log(lastsegment);
+                  console.log(lastsegment.startsWith("?id"));
+                  // Check to make sure link is not Docsify id anchor link
+                  if (lastsegment.startsWith("?id")===false) {
+                    if (getURLParameterByName('editThisPageLink')) {
+                      var editThisPageLinkURLparm = ""
+                      var editThisPageLink = "";
+                      editThisPageLink = currentBasePath;
+                      editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                      editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
+                      editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
+                      editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
+                      console.log(editThisPageLink);
+                      editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
+                      console.log(editThisPageLinkURLparm);
+                    }
+                    var newURL = ""
+                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
+                    console.log(newURL);
+                    link.setAttribute('href', newURL);
+                  }
                 }
               }
+
             }
 
           });
