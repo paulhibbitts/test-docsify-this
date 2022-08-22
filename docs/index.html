@@ -296,6 +296,20 @@
 
             currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
+            var URLparms = "";
+
+            if (getURLParameterByName('sidebar')) {
+              var URLparms = `&sidebar=true`;
+            }
+
+            if (getURLParameterByName('toc')) {
+              var URLparms = `&toc=true`;
+            }
+
+            if (getURLParameterByName('toc-alt')) {
+              var URLparms = `&toc-alt=true`;
+            }
+
             const links = Array.from(document.querySelectorAll('a'))
 
             for (const link of links) {
@@ -309,7 +323,7 @@
                 console.log(lastsegment.startsWith("?id"));
                 // Check to make sure link is not Docsify id anchor link
                 if (lastsegment.startsWith("?id")===false) {
-                  var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
+                  var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms;
                   console.log(newURL);
                   link.setAttribute('href', newURL);
                 }
