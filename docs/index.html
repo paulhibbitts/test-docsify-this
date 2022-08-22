@@ -281,6 +281,11 @@
         function(hook, vm) {
 
           hook.afterEach(function(html, next) {
+            // Invoked each time after the Markdown file is parsed.
+            // beforeEach and afterEach support asynchronous。
+            // ...
+            // call `next(html)` when task is done.
+            next(html);
 
             // Scan for links to local Markdown files and adjust URLs to work correctly
 
@@ -290,12 +295,6 @@
             console.log(url); //www.example.com
 
             currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
-
-            // Invoked each time after the Markdown file is parsed.
-            // beforeEach and afterEach support asynchronous。
-            // ...
-            // call `next(html)` when task is done.
-            next(html);
 
             const links = Array.from(document.querySelectorAll('a'))
 
@@ -307,9 +306,13 @@
                 var lastsegment = link.getAttribute('href');
                 lastsegment = lastsegment.replace('#/', '');
                 console.log(lastsegment);
-                var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
-                console.log(newURL);
-                link.setAttribute('href', newURL);
+                console.log(lastsegment.startsWith("?id"));
+                // Check to make sure link is not Docsify id anchor link
+                if (lastsegment.startsWith("?id")===false) {
+                  var newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md`
+                  console.log(newURL);
+                  link.setAttribute('href', newURL);
+                }
               }
             }
 
