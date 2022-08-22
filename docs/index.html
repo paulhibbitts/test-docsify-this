@@ -336,7 +336,7 @@
                   // Check to make sure link is not Docsify id anchor link
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
-                      // Carry and calculate existing editThisPageLink URL parm in links
+                      // Calculate existing editThisPageLink URL parm in link
                       var editThisPageLinkURLparm = ''
                       var editThisPageLink = '';
                       editThisPageLink = currentBasePath;
@@ -347,6 +347,7 @@
                       editThisPageLinkURLparm =  `&editThisPageLink=` + editThisPageLink;
                       console.log(editThisPageLinkURLparm);
                     }
+                    // Update Markdown file link
                     var newURL = ''
                     newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
                     console.log(newURL);
