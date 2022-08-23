@@ -300,6 +300,8 @@
               var currentBasePath = '';
               currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
 
+              var editThisPageLinkURLparm = ''
+
               // Carry any existing URL parms in links
               var URLparms = '';
 
@@ -337,7 +339,6 @@
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('editThisPageLink')) {
                       // Calculate existing editThisPageLink URL parm in link
-                      var editThisPageLinkURLparm = ''
                       var editThisPageLink = '';
                       editThisPageLink = currentBasePath;
                       editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
