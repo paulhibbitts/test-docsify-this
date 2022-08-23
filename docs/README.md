@@ -55,6 +55,16 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 To render the Markdown file **[introduction.md](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/docs/introduction.md)** as a standalone page with the Docsify Sidebar, the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true
 
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website, the URL for the would be: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents, the URL for the site would be: https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be: https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&editThisPageLink=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own table of contents, the URL for the site would be: https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone Website with each page having it's own Docsify Sidebar, the URL would be for the site's homepage: https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
+
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
 ## Additional Customization Parameters
@@ -69,7 +79,7 @@ Change the default breakpoint (1300) for moving the optional Page Table of Conte
 
 ## Looking for Even More Customization and Control?
 
-Docsify-This is intended as a quick way to display a remotely located Markdown file. If you want to further customize and control the presentation of your Markdown content you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and store Markdown files within that site or install your own instance of [Docsify-This](https://docsify-this.net) and further customize the rendering of remote files. You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
+Docsify-This is intended as a quick way to display one or more remotely located Markdown files. If you want to further customize and control the presentation of your Markdown content, while also substantially speeding up the rendering of multiple page Markdown file sites on GitHub, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted Web app is based on) and store Markdown files within that site. To further customize the rendering of remote files, install your own instance of [Docsify-This](https://docsify-this.net). You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
 
 ## Troubleshooting
 _'404 - Not found' message is displayed._  
