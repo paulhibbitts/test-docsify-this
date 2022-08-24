@@ -372,7 +372,7 @@
             } else if (window.$docsify['basePath']) {
               url  = getURLParameterByName('editThisPageLink', null, null, window.location.href, true);
               if (url) {
-                if (url.indexOf("github")) {
+                if (url.includes("github.com")) {
                   gitLinkRepoURL = url;
                 }
               }
