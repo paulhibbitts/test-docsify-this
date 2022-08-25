@@ -255,7 +255,7 @@
       // Set last option for loadSidebar and loadNavbar to true for Remote Docsify
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
-      externalLinkTarget: '_blank',
+      externalLinkTarget: '_top',
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -355,6 +355,7 @@
                     // Update Markdown file link
                     var newURL = ''
                     newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
+                    console.log("Changed:");
                     console.log(newURL);
                     link.setAttribute('href', newURL);
                   }
