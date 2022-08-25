@@ -255,7 +255,7 @@
       // Set last option for loadSidebar and loadNavbar to true for Remote Docsify
       loadSidebar       : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar        : !(getURLParameterByName(['standalone','embedded']) || standalone || getURLParameterByName('basePath')),
-      externalLinkTarget: (getURLParameterByName(['standalone','embedded','basePath'],'_top','_blank','_top')),
+      externalLinkTarget: (getURLParameterByName(['standalone','embedded','basePath'],'_top','_blank','_blank')),
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -286,6 +286,8 @@
             // ...
             // call `next(html)` when task is done.
             next(html);
+
+      alert (window.$docsify['externalLinkTarget']);
 
             if (window.$docsify['basePath']) {
 
