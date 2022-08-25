@@ -108,9 +108,3 @@ aside.nav.nothing {
   padding-left: 10px;
 }
 */
-
-.markdown-section code,
-.markdown-section pre,
-.markdown-section pre > code {
-  max-width: 580px;
-}
