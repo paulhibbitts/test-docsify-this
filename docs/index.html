@@ -315,6 +315,11 @@
                 URLparms = URLparms + `&edit-link-top=true`;
               }
 
+              if (getURLParameterByName('loadNavbar')) {
+                loadnavbar = getURLParameterByName('loadNavbar', null, null, window.location.href, true);
+                URLparms = URLparms + `&loadNavbar=` + loadnavbar;
+              }
+
               const links = Array.from(document.querySelectorAll('a'))
 
               for (const link of links) {
