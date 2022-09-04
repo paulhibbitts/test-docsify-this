@@ -38,7 +38,7 @@ aside.nav.nothing {
   border-image-slice: 1;
   padding-left: 5px;
   position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   overflow-y: scroll;
   z-index: 999999;
   align-self: flex-start;
