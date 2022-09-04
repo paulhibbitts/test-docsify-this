@@ -8,7 +8,7 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 280px);
+  width: var(--toc-width, 200px);
   align-self: flex-start;
   flex: 0 0 auto;
 }
@@ -17,17 +17,12 @@ aside.nav.nothing {
 }
 
 .page_toc {
-  position: sticky;
+  position: fixed;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: rgba(0, 0, 0, 0.07);
   border-image-slice: 1;
   padding-left: 5px;
-  max-height: calc(100vh - 10vh);
-  overflow-y: auto;
-  top: 0;
-  bottom: 0;
-  margin-right: 20px;
 }
 
 .page_toc a > * {
@@ -81,7 +76,7 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .page_toc {
     position: relative;
     top: -10px;
