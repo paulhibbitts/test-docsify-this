@@ -42,7 +42,7 @@ aside.nav.nothing {
   overflow-y: scroll;
   z-index: 999999;
   align-self: flex-start;
-  max-height: 100vh;
+  height: auto;
   top: 0;
   bottom: auto;
   margin-right: 20px;
