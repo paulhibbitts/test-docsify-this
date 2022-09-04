@@ -41,7 +41,7 @@ aside.nav.nothing {
   overflow-y: scroll;
   z-index: 999999;
   align-self: flex-start;
-  max-height: 70%;
+  max-height: 100vh;
   top: 0;
   bottom: auto;
   margin-right: 20px;
