@@ -8,7 +8,7 @@
   margin: 0 48px;
 }
 .nav {
-  width: var(--toc-width, 200px);
+  width: var(--toc-width, 280px);
   align-self: flex-start;
   flex: 0 0 auto;
 }
@@ -17,7 +17,7 @@ aside.nav.nothing {
 }
 
 .page_toc {
-  position: fixed;
+  position: sticky;
   border-left-style: solid;
   border-left-width: 1px;
   border-left-color: rgba(0, 0, 0, 0.07);
@@ -27,17 +27,7 @@ aside.nav.nothing {
   overflow-y: auto;
   top: 0;
   bottom: 0;
-}
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.page_toc::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.page_toc {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  margin-right: 20px;
 }
 
 .page_toc a > * {
@@ -91,7 +81,7 @@ aside.nav.nothing {
   padding-top: 7px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .page_toc {
     position: relative;
     top: -10px;
