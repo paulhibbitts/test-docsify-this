@@ -46,6 +46,7 @@ aside.nav.nothing {
   bottom: auto;
   margin-right: 20px;
   scrollbar-width: thin !important;
+  scrollbar-color: grey transparent;
 }
 
 .page_toc a > * {
