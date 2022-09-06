@@ -22,6 +22,7 @@
 }
 .nav {
   width: var(--toc-width, 380px);
+  min-width: 240px;
 /*   align-self: flex-start;
   flex: 0 0 auto; */
 }
