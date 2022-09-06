@@ -302,6 +302,10 @@
                 URLparms = `&toc-narrow=true`;
               }
 
+              if (getURLParameterByName(['toc-alt','toc-scrolling'])) {
+                URLparms = `&toc-scrolling=true`;
+              }
+
               if (getURLParameterByName('font-family')) {
                 fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
                 URLparms = URLparms + `&font-family=` + fontfamily;
