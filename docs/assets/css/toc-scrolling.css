@@ -16,6 +16,10 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  max-height: 100vh;
 }
 .markdown-section {
   flex: 1 1 0%;
@@ -25,8 +29,8 @@
   width: var(--toc-width, 280px);
   align-self: flex-start;
   flex: 0 0 auto;
-}
 
+}
 aside.nav.nothing {
   width: 0;
 }
@@ -41,6 +45,7 @@ aside.nav.nothing {
   position: fixed;
   overflow-y: scroll;
   z-index: 999999;
+  align-self: flex-start;
   max-height: 100vh;
   top: 0;
   bottom: auto;
