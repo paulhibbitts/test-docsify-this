@@ -25,7 +25,6 @@
   width: var(--toc-width, 280px);
   align-self: flex-start;
   flex: 0 0 auto;
-
 }
 aside.nav.nothing {
   width: 0;
