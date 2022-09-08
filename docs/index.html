@@ -126,6 +126,8 @@
 
       let exists = false;
 
+      url = decodeURIComponent(url) ;
+
       if (Array.isArray(name)) {
 
         name.forEach(element => {
