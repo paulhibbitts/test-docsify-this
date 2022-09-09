@@ -68,7 +68,10 @@ To render a set of Markdown files (located in the same GitHub repository) as a s
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
 To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own Docsify Sidebar, the URL would be:   
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
+
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own Docsify Sidebar including a link to the site homepage, the URL would be:   
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true&name=Easy%20Markdown%20to%20Github%20Pages&nameLink=https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
