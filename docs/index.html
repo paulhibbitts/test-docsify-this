@@ -283,7 +283,7 @@
               var url = '';
               url = window.location.href
               url = url.replace(/[?].*/, ''); // Strips anything after ?
-              console.log(url); //www.example.com
+              // console.log(url); //www.example.com
 
               var currentBasePath = '';
               currentBasePath  = getURLParameterByName('basePath', null, null, window.location.href, true);
@@ -326,7 +326,7 @@
               const links = Array.from(document.querySelectorAll('a'))
 
               for (const link of links) {
-                console.log(link.getAttribute('href'));
+                // console.log(link.getAttribute('href'));
                 // Find any local Markdown file links
                 if (link.getAttribute('href')?.match(/^#/)) {
                   // Modify each Markdown file link to work with Remote Docsify
@@ -334,8 +334,8 @@
                   lastsegment = link.getAttribute('href');
                   lastsegment = lastsegment.replace('#/', '');
                   lastsegment = lastsegment.replace('./', '');
-                  console.log(lastsegment);
-                  console.log(lastsegment.startsWith("?id"));
+                  // console.log(lastsegment);
+                  // console.log(lastsegment.startsWith("?id"));
                   // Check to make sure link is not Docsify id anchor link
                   if (lastsegment.startsWith("?id")===false) {
                     if (getURLParameterByName('edit-link')) {
@@ -349,18 +349,18 @@
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastsegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
-                        console.log(editThisPageLinkURLparm);
+                        // console.log(editThisPageLinkURLparm);
                       }
                     }
                     // Update Markdown file link
                     var newURL = ''
                     newURL = url + `?basePath=${currentBasePath}&homepage=${lastsegment}.md` + URLparms + editThisPageLinkURLparm;
-                    console.log("Changed:");
-                    console.log(newURL);
+                    // console.log("Changed:");
+                    // console.log(newURL);
                     link.setAttribute('href', newURL);
                   }
                 } else {
-                    console.log(link);
+                    // console.log(link);
                     // Set '_top' as external link targets
                     link.setAttribute('target', '_top');
                 }
