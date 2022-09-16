@@ -32,7 +32,7 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 <div class="property"><label for="fontfamily">Set the page font family to:</label></div><div class="value">
 <select id="fontfamily" name="fontfamily">
-  <option value="default">Default (Source Sans Pro)</option>
+  <option value="default">Source Sans Pro (default)</option>
   <option disabled="disabled">----</option>
   <option value="Arial,sans-serif">Arial, sans-serif</option>
   <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
