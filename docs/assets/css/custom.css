@@ -89,12 +89,20 @@ span .docsifythisurlfield{
   box-sizing:border-box;
   }
 
-input[type="checkbox"] {
+.docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
 }
-input[type="checkbox"] ~ label {
+
+.docsifythisurlbuilder input[type="checkbox"] ~ label {
     padding-left:1.2em;
     display:inline-block;
+}
+
+.docsifythisurlbuilder select {
+height: 30px;
+line-height: 30px;
+-webkit-appearance: menulist-button;
+-moz-appearance:none;
 }
 
 .markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #hideCredits  {
