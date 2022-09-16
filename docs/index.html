@@ -208,7 +208,7 @@
         }
 
         const cb2 = document.querySelector('#editLinkTopCheck');
-        if (cb2.checked) {
+        if (cb1.checked && cb2.checked) {
           if (gitlinkPageURL) {
             var URLparms = URLparms + `&edit-link-top=true`;
           }
