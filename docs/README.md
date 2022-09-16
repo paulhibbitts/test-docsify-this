@@ -24,13 +24,13 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 <div id="docsifythisurlbuilderoptionsDIV" style='display: none'>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Display the 'Edit this Page' link at the top of page</label></div>
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">When including the 'Edit this Page' link, display it at the top of page</label></div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Hide the Docsify-This credit text</label></div>
 
 <div class="docsifythisurlbuildermorelessoptions">
 
-<div class="property"><label for="fontfamily">Set the page Font Family to:</label></div><div class="value">
+<div class="property"><label for="fontfamily">Set the page font family to:</label></div><div class="value">
 <select id="fontfamily" name="fontfamily">
   <option value="default">Default (Source Sans Pro)</option>
   <option disabled="disabled">----</option>
