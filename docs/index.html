@@ -196,8 +196,8 @@
           var URLparms = `&toc=true`;
         }
 
-        const cb = document.querySelector('#editCheck');
-        if (cb.checked) {
+        const cb1 = document.querySelector('#editCheck');
+        if (cb1.checked) {
           if (gitlinkPageURL) {
             if (!lastsegment.includes(".md")) {
             // No filename is present, so assume default README.md file
@@ -205,6 +205,29 @@
             }
             var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
           }
+        }
+
+        const cb2 = document.querySelector('#editLinkTopCheck');
+        if (cb2.checked) {
+          if (gitlinkPageURL) {
+            var URLparms = URLparms + `&edit-link-top=true`;
+          }
+        }
+
+        const cb3 = document.querySelector('#hideCredits');
+        if (cb3.checked) {
+          var URLparms = URLparms + `&hide-credits=true`;
+        }
+
+        var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
+        if (!(getFontFamily === "default")) {
+            var URLparms = URLparms + `&font-family=` + getFontFamily;
+        }
+
+        var getColor = document.getElementById("linkcolor");
+        var hexcode = getColor.value.substring(1);
+        if (!(hexcode === "0374b5")) {
+          URLparms = URLparms + `&link-color=` + hexcode;
         }
 
         if (!lastsegment.includes(".md")) {
@@ -236,6 +259,17 @@
       const input = document.getElementById('text');
       input.focus();
       input.select();
+    }
+
+    function myToggle(link) {
+      var x = document.getElementById("docsifythisurlbuilderoptionsDIV");
+      if (x.style.display === "none") {
+        link.text = 'Show Fewer Options \«';
+        x.style.display = "block";
+      } else {
+        link.text = 'Show More Options \»';
+        x.style.display = "none";
+      }
     }
 
     // Docsify

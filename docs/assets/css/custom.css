@@ -68,6 +68,27 @@ span .docsifythisurlfield{
     margin-left: 2px;
 }
 
+.docsifythisurlbuildercheckboxline{
+    margin-top: 6px;
+}
+
+
+.docsifythisurlbuildermorelessoptions .property{
+  width:23%;
+  display:inline-block;
+  box-sizing:border-box;
+  text-align:left;
+  margin-top: 7px;
+  }
+
+.docsifythisurlbuildermorelessoptions .value{
+  text-align:left;
+  padding-left:10px;
+  width:77%;
+  display:inline-block;
+  box-sizing:border-box;
+  }
+
 input[type="checkbox"] {
     position: absolute;
 }
@@ -76,7 +97,7 @@ input[type="checkbox"] ~ label {
     display:inline-block;
 }
 
-.markdown-section #editCheck {
+.markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #hideCredits  {
   accent-color: #0361cd;
 }
 
@@ -114,6 +135,10 @@ input[type="checkbox"] ~ label {
   background: #eefbff;
 }
 
+#.markdown-section code {
+  word-break: break-all!important;
+}
+
 /*
 
 @media (prefers-color-scheme: dark) {
@@ -140,7 +165,3 @@ input[type="checkbox"] ~ label {
 }
 
 */
-
-.markdown-section code {
-  word-break: break-all!important;
-}

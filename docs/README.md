@@ -15,9 +15,40 @@ This web app, built using the magical documentation site generator [Docsify](htt
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
-<input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></br>
+
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></div>
 
 Entering the URL of a Markdown file into the above URL Builder, that file will be displayed as a standalone web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
+
+<a name="mytogglelink" href="#" onclick="myToggle(this); return false;">Show More Options &raquo;</a>
+
+<div id="docsifythisurlbuilderoptionsDIV" style='display: none'>
+
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Display the 'Edit this Page' link at the top of page</label></div>
+
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Hide the Docsify-This credit text</label></div>
+
+<div class="docsifythisurlbuildermorelessoptions">
+
+<div class="property"><label for="fontfamily">Set the page Font Family to:</label></div><div class="value">
+<select id="fontfamily" name="fontfamily">
+  <option value="default">Default (Source Sans Pro)</option>
+  <option disabled="disabled">----</option>
+  <option value="Arial,sans-serif">Arial, sans-serif</option>
+  <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+  <option value="Verdana">Verdana, sans-serif</option>
+  <option value="Tahoma">Tahoma, sans-serif</option>
+  <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
+  <option value="Georgia,serif">Georgia, serif</option>
+  <option value="Courier,monospace">Courier, monospace</option>
+</select>
+</div><br>
+
+<div class="property"><label for="colorWell">Set the page link color to:</label></div><div class="value"><input type="color" value="#0374B5" id="linkcolor" /></div><br>
+
+</div>
+
+</div>
 
 </div>
 
