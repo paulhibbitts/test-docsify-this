@@ -44,7 +44,7 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 </select>
 </div><br>
 
-<div class="property"><label for="colorWell">Set the page link color to:</label></div><div class="value"><input type="color" value="#0374B5" id="linkcolor" /></div><br>
+<div class="property"><label type="color">Set the page link color to:</label></div><div class="value"><input value="#0374B5" id="linkcolor" /></div><br>
 
 </div>
 
