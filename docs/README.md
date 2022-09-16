@@ -24,11 +24,9 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 <div id="docsifythisurlbuilderoptionsDIV" style='display: none'>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Change the location of the 'Edit this Page' link to page top</label></div>
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Move the 'Edit this Page' link to top of page</label></div>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Hide the Docsify-This credit text</label></div>
-
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
 <div class="docsifythisurlbuildermorelessoptions">
 
@@ -108,7 +106,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ## Additional Customization Parameters
 
 **edit-link-top**  
-Change the default position of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
+Change the location of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
 **font-family**  
 Set a custom font for your standalone pages with the optional **font-family** parameter, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
