@@ -89,13 +89,13 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file, the URL for the would be:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents, the URL for the site would be:  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own table of contents, the URL for the site would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own table of contents and an "Edit this Page" link, the URL for the site would be:  
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own table of contents and an "Edit this Page" link, the URL for the site would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having it's own Docsify Sidebar, the URL would be:   
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own Docsify Sidebar, the URL would be:   
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
