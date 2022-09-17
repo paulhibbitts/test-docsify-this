@@ -18,7 +18,7 @@ This web app, built using the magical documentation site generator [Docsify](htt
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></div>
 
-Entering the URL of a Markdown file into the above URL Builder will display that file as a standalone web page in a new Browser tab. This URL may then be copied and shared for others to view the same page. The URL Builder will also automatically transform a URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
+Enter the URL of a Markdown file into the above URL Builder and view that file as a standalone web page in a new Browser tab. This URL may then be copied and shared for others to view. The URL Builder will also automatically transform a URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
 
 <a name="mytogglelink" href="#" onclick="myToggle(this); return false;">Show More Options &raquo;</a>
 
