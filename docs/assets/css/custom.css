@@ -72,23 +72,6 @@ span .docsifythisurlfield{
     margin-top: 6px;
 }
 
-
-.docsifythisurlbuildermorelessoptions .property{
-    width:23%;
-    display:inline-block;
-    box-sizing:border-box;
-    text-align:left;
-    margin-top: 7px;
-}
-
-.docsifythisurlbuildermorelessoptions .value{
-    text-align:left;
-    padding-left:10px;
-    width:77%;
-    display:inline-block;
-    box-sizing:border-box;
-}
-
 .docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
 }
