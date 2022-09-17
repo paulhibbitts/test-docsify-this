@@ -219,6 +219,14 @@
           var URLparms = URLparms + `&hide-credits=true`;
         }
 
+        const cb4 = document.querySelector('#narrowToC');
+        if (cb4.checked) {
+          if (URLparms.includes("&toc=true")) {
+            var URLparms = URLparms.replace("&toc=true", "");
+            URLparms = URLparms + `&toc-narrow=true`;
+          }
+        }
+
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily === "default")) {
             var URLparms = URLparms + `&font-family=` + getFontFamily;
