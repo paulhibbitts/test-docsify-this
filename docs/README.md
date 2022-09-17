@@ -28,9 +28,7 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
-<div class="docsifythisurlbuildermorelessoptions">
-
-<div class="property"><label for="fontfamily">Set the page font family to:</label></div><div class="value">
+<div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family to:</label><br>
 <select id="fontfamily" name="fontfamily">
   <option value="default">Source Sans Pro (default)</option>
   <option disabled="disabled">----</option>
@@ -41,12 +39,9 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
   <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
   <option value="Georgia,serif">Georgia, serif</option>
   <option value="Courier,monospace">Courier, monospace</option>
-</select>
-</div><br>
+</select></div>
 
-<div class="property"><label type="color">Set the page link color to:</label></div><div class="value"><input value="#0374B5" id="linkcolor" /> (default is #0374B5)</div><br>
-
-</div>
+<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br><input value="#0374B5" id="linkcolor" /> (default is #0374B5)</div><br>
 
 </div>
 
