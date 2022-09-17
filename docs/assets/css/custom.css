@@ -74,20 +74,20 @@ span .docsifythisurlfield{
 
 
 .docsifythisurlbuildermorelessoptions .property{
-  width:23%;
-  display:inline-block;
-  box-sizing:border-box;
-  text-align:left;
-  margin-top: 7px;
-  }
+    width:23%;
+    display:inline-block;
+    box-sizing:border-box;
+    text-align:left;
+    margin-top: 7px;
+}
 
 .docsifythisurlbuildermorelessoptions .value{
-  text-align:left;
-  padding-left:10px;
-  width:77%;
-  display:inline-block;
-  box-sizing:border-box;
-  }
+    text-align:left;
+    padding-left:10px;
+    width:77%;
+    display:inline-block;
+    box-sizing:border-box;
+}
 
 .docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
@@ -99,27 +99,27 @@ span .docsifythisurlfield{
 }
 
 .docsifythisurlbuilder select {
-height: 30px;
-line-height: 30px;
--webkit-appearance: menulist-button;
--moz-appearance:none;
+    height: 30px;
+    line-height: 30px;
+    -webkit-appearance: menulist-button;
+    -moz-appearance:none;
 }
 
 .markdown-section #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #hideCredits  {
-  accent-color: #0361cd;
+    accent-color: #0361cd;
 }
 
 .markdown-section .docsifythisurlbuilderprimarybutton {
-  cursor: pointer;
-  color: white;
-  height: auto;
-  display: inline-block;
-  margin-top: 4px;
-  padding: 10px;
-  line-height: 1.2rem;
-  background-color: #0361cd;
-  text-decoration: none;
-  border-radius: .25rem;
+    cursor: pointer;
+    color: white;
+    height: auto;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 10px;
+    line-height: 1.2rem;
+    background-color: #0361cd;
+    text-decoration: none;
+    border-radius: .25rem;
 }
 
 .markdown-section .docsifythisurlbuildersecondarybutton {
@@ -136,15 +136,15 @@ line-height: 30px;
 }
 
 .markdown-section .docsifythisurlbuilder {
-  overflow: visible;
-  margin: 2em 0;
-  padding: 1.25em;
-  border-width: 0;
-  background: #eefbff;
+    overflow: visible;
+    margin: 2em 0;
+    padding: 1.25em;
+    border-width: 0;
+    background: #eefbff;
 }
 
 .markdown-section code {
-  word-break: break-all!important;
+    word-break: break-all!important;
 }
 
 /*
