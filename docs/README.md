@@ -24,7 +24,9 @@ Entering the URL of a Markdown file into the above URL Builder, that file will b
 
 <div id="docsifythisurlbuilderoptionsDIV" style='display: none'>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Locate the optional 'Edit this Page' link at top of page</label></div>
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
+
+<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
