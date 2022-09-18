@@ -37,7 +37,7 @@ Enter the URL of a Markdown file into the above URL Builder and view that file a
   <option value="Courier,monospace">Courier, monospace</option>
 </select></div>
 
-<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br><input value="#0374B5" id="linkcolor" /> (default is #0374B5)</div>
+<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /> (default is 0374B5)</div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
@@ -112,7 +112,7 @@ Set a custom font for your standalone pages with the optional **font-family** pa
 Hide the credits usually shown at the bottom of every rendered Docsify-This page, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
 **link-color**  
-Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
 **toc-narrow**  
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
