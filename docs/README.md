@@ -24,9 +24,9 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
-<div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family to:</label><br>
+<div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family and size to:</label><br>
 <select id="fontfamily" name="fontfamily">
-  <option value="default">Source Sans Pro (default)</option>
+  <option value="default">Source Sans Pro</option>
   <option disabled="disabled">----</option>
   <option value="Arial,sans-serif">Arial, sans-serif</option>
   <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
@@ -35,7 +35,9 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
   <option value="Times%20New%20Roman, serif">Times New Roman, serif</option>
   <option value="Georgia,serif">Georgia, serif</option>
   <option value="Courier,monospace">Courier, monospace</option>
-</select></div>
+</select>
+<label for="fontsize">&nbsp;</label><input type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3">&nbsp;(default is Source Sans Pro 1.1rem)
+</div>
 
 <div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /> (default is 0374B5)</div>
 

@@ -232,6 +232,11 @@
             var URLparms = URLparms + `&font-family=` + getFontFamily;
         }
 
+        var getFontSize = document.getElementById('fontsize').value;
+        if (!(getFontSize === "1.1")) {
+            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+        }
+
         var getColor = document.getElementById("linkcolor");
         var hexcode = getColor.value.substring(1);
         if (!(hexcode === "0374b5")) {
@@ -354,6 +359,11 @@
               if (getURLParameterByName('font-family')) {
                 fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
                 URLparms = URLparms + `&font-family=` + fontfamily;
+              }
+
+              if (getURLParameterByName('font-size')) {
+                fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+                URLparms = URLparms + `&font-size=` + fontsize + `rem`;
               }
 
               if (getURLParameterByName('link-color')) {
@@ -535,6 +545,16 @@
       fontfamily = fontfamily.replaceAll(' ','%20');
       fontfamily = fontfamily.replaceAll('%2C',',');
       document.documentElement.style.setProperty('--base-font-family', fontfamily);
+    }
+  </script>
+
+  <!-- Change body font size if fontSize parameter present  -->
+  <script>
+    fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+    if (!(fontsize === false) && !(window.$docsify['basePath'] === undefined)) {
+      console.log(fontsize);
+      fontsize = fontsize + "rem"
+      document.documentElement.style.setProperty('--base-font-size', fontsize);
     }
   </script>
 
