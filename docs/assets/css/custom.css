@@ -72,6 +72,10 @@ span .docsifythisurlfield{
     margin-top: 6px;
 }
 
+.docsifythisurlbuilderrestoredefaults{
+    margin-top: 10px;
+}
+
 .docsifythisurlbuilder input[type="checkbox"] {
     position: absolute;
 }

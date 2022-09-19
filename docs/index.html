@@ -285,6 +285,21 @@
       }
     }
 
+    function restoreAllDefaults() {
+      let element1 = document.getElementById("fontfamily");
+      element1.value = 'default';
+      let element2 = document.getElementById("fontsize");
+      element2.value = '1.1';
+      let element3 = document.getElementById("linkcolor");
+      element3.value = '0374B5';
+      let element4 = document.getElementById("editLinkTopCheck");
+      element4.checked = false;
+      let element5 = document.getElementById("narrowToC");
+      element5.checked = false;
+      let element6 = document.getElementById("hideCredits");
+      element6.checked = false;
+    }
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS

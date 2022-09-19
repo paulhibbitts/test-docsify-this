@@ -36,16 +36,18 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
   <option value="Georgia,serif">Georgia, serif</option>
   <option value="Courier,monospace">Courier, monospace</option>
 </select>
-<label for="fontsize">&nbsp;</label><input type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3">&nbsp;(default is Source Sans Pro 1.1rem)
+<label for="fontsize">&nbsp;</label><input type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3">
 </div>
 
-<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /> (default is 0374B5)</div>
+<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
 <div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+
+<div class="docsifythisurlbuilderrestoredefaults"><input type="button" id="btn_4" value="Restore to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
