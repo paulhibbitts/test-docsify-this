@@ -20,9 +20,9 @@ This web app, built using the magical documentation site generator [Docsify](htt
 
 Enter the URL of a Markdown file into the URL Builder and view that file as a standalone web page in a new Browser tab. The resulting URL can also be copied and shared for others to view the same web page. The URL Builder automatically transforms the URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
 
-<a name="mytogglelink" href="#" onclick="toggleDiv(this); return false;">Show More Options &raquo;</a>
+<a name="mytogglelink" href="#" onclick="myToggle(this); return false;">Show More Options &raquo;</a>
 
-<div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
+<div id="docsifythisurlbuilderoptionsDIV" style='display: none'>
 
 <div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family to:</label><br>
 <select id="fontfamily" name="fontfamily">

@@ -227,17 +227,6 @@
           }
         }
 
-        function toggleDiv(link) {
-          var x = document.getElementById("docsifythisurlbuilderoptionsDiv");
-          if (x.style.display === "none") {
-            link.text = 'Show Fewer Options \«';
-            x.style.display = "block";
-          } else {
-            link.text = 'Show More Options \»';
-            x.style.display = "none";
-          }
-        }
-
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily === "default")) {
             var URLparms = URLparms + `&font-family=` + getFontFamily;
@@ -278,6 +267,17 @@
       const input = document.getElementById('text');
       input.focus();
       input.select();
+    }
+
+    function myToggle(link) {
+      var x = document.getElementById("docsifythisurlbuilderoptionsDIV");
+      if (x.style.display === "none") {
+        link.text = 'Show Fewer Options \«';
+        x.style.display = "block";
+      } else {
+        link.text = 'Show More Options \»';
+        x.style.display = "none";
+      }
     }
 
     // Docsify
