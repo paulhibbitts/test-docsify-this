@@ -47,7 +47,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
-<div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Restore to Defaults" onclick="restoreAllDefaults()"/></div>
+<div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
