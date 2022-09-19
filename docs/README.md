@@ -25,7 +25,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
 <div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family and size to:</label><br>
-<select class="docsifythisurlbuildercheckboxline" id="fontfamily" name="fontfamily>
+<select class="docsifythisurlbuildercheckboxline" id="fontfamily" name="fontfamily">
   <option value="default">Source Sans Pro</option>
   <option disabled="disabled">----</option>
   <option value="Arial,sans-serif">Arial, sans-serif</option>
