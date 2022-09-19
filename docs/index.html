@@ -239,7 +239,6 @@
 
         var getColor = document.getElementById("linkcolor");
         var hexcode = getColor.value.substring(1);
-        console.log(hexcode);
         if (!(hexcode == "374B5")) {
           URLparms = URLparms + `&link-color=` + hexcode;
         }
@@ -568,7 +567,6 @@
   <script>
     fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
     if (!(fontsize === false) && !(window.$docsify['basePath'] === undefined)) {
-      console.log(fontsize);
       fontsize = fontsize + "rem"
       document.documentElement.style.setProperty('--base-font-size', fontsize);
     }
