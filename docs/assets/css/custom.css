@@ -72,7 +72,9 @@ span .docsifythisurlfield{
     margin-top: 6px;
 }
 
-.docsifythisurlbuilderrestoredefaults{
+.docsifythisurlbuilderrestoredefaults {
+    font-family: inherit;
+    font-size: inherit;
     margin-top: 10px;
 }
 
@@ -83,6 +85,16 @@ span .docsifythisurlfield{
 .docsifythisurlbuilder input[type="checkbox"] ~ label {
     padding-left:1.2em;
     display:inline-block;
+}
+
+.docsifythisurlbuilder select{
+	border:1px solid #ffffff;
+	height:30px;
+	font-size:1.1rem;
+	width: 240px;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
 }
 
 .docsifythisurlbuilder select {
