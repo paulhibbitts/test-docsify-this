@@ -36,7 +36,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
   <option value="Georgia,serif">Georgia, serif</option>
   <option value="Courier,monospace">Courier, monospace</option>
 </select>
-<label for="fontsize">&nbsp;</label><input class="docsifythisurlbuildercheckboxline" type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3">
+<label for="fontsize">&nbsp;&nbsp;</label><input class="docsifythisurlbuildercheckboxline" type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3"><span class="docsifythisurlbuildercheckboxline">&nbsp;rem</span>
 </div>
 
 <div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
