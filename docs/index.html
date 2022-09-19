@@ -228,18 +228,19 @@
         }
 
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
-        if (!(getFontFamily === "default")) {
+        if (!(getFontFamily == "default")) {
             var URLparms = URLparms + `&font-family=` + getFontFamily;
         }
 
         var getFontSize = document.getElementById('fontsize').value;
-        if (!(getFontSize === "1.1")) {
+        if (!(getFontSize == "1.1")) {
             var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
         }
 
         var getColor = document.getElementById("linkcolor");
         var hexcode = getColor.value.substring(1);
-        if (!(hexcode === "374B5")) {
+        console.log(hexcode);
+        if (!(hexcode == "374B5")) {
           URLparms = URLparms + `&link-color=` + hexcode;
         }
 
