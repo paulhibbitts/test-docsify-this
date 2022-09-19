@@ -16,7 +16,7 @@ This web app, built using the magical documentation site generator [Docsify](htt
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
 <input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/> <input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link at bottom of page (requires GitHub Markdown file)</label></div>
 
 Enter the URL of a Markdown file into the URL Builder and view that file as a standalone web page in a new Browser tab. The resulting URL can also be copied and shared for others to view the same web page. The URL Builder automatically transforms the URL of a GitHub Markdown file into the needed raw source URL (i.e. raw.githubusercontent.com).
 
@@ -24,8 +24,8 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
-<div class="docsifythisurlbuildercheckboxline"><label for="fontfamily">Set the page font family and size to:</label><br>
-<select class="docsifythisurlbuildercheckboxline" id="fontfamily" name="fontfamily">
+<div class="docsifythisurlbuilderoptionsline"><label for="fontfamily">Set the page font family and size to:</label><br>
+<select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
   <option value="default">Source Sans Pro</option>
   <option disabled="disabled">----</option>
   <option value="Arial,sans-serif">Arial, sans-serif</option>
@@ -36,18 +36,18 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
   <option value="Georgia,serif">Georgia, serif</option>
   <option value="Courier,monospace">Courier, monospace</option>
 </select>
-<label for="fontsize">&nbsp;&nbsp;</label><input class="docsifythisurlbuildercheckboxline" type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3"><span class="docsifythisurlbuildercheckboxline">&nbsp;rem</span>
+<label for="fontsize">&nbsp;&nbsp;</label><input class="docsifythisurlbuilderoptionsline" type="number" value="1.1" step=".1" id="fontsize" name="fontsize" min=".9" max="1.3"><span class="docsifythisurlbuilderoptionsline">&nbsp;rem</span>
 </div>
 
-<div class="docsifythisurlbuildercheckboxline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
-<div class="docsifythisurlbuildercheckboxline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
 
-<div class="docsifythisurlbuilderrestoredefaults"><input type="button" id="btn_4" value="Restore to Defaults" onclick="restoreAllDefaults()"/></div>
+<div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Restore to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 

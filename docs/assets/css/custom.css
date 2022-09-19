@@ -68,12 +68,12 @@ span .docsifythisurlfield{
     margin-left: 2px;
 }
 
-.docsifythisurlbuildercheckboxline{
+.docsifythisurlbuilderoptionsline{
     margin-top: 6px;
     vertical-align: middle;
 }
 
-.docsifythisurlbuilderrestoredefaults {
+.docsifythisurlbuilderrestoredefaultsbutton {
     font-family: inherit;
     font-size: inherit;
     margin-top: 10px;
