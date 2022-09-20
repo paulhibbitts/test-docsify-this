@@ -94,12 +94,12 @@ span .docsifythisurlfield{
 }
 
 .docsifythisurlbuilder select{
-	border:1px solid #ffffff;
-	height:30px;
-	font-size:1.1rem;
-  -moz-appearance: none;
-  text-indent: 0.01px;
-  text-overflow: '';
+  	border:1px solid #ffffff;
+  	height:30px;
+  	font-size:1.1rem;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
 }
 
 .docsifythisurlbuilder select {
