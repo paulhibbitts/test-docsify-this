@@ -43,6 +43,7 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
   <option value="1">16px (1rem)</option>
   <option value="1.25">20px (1.25rem)</option>
 </select>
+</div>
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
 
