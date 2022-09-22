@@ -227,6 +227,33 @@
           }
         }
 
+        const cb5 = document.querySelector('#toch1');
+        const cb6 = document.querySelector('#toch2');
+        const cb7 = document.querySelector('#toch3');
+        if (! (!(cb5.checked) && (cb6.checked) && (cb7.checked)) ) {
+          if (URLparms.includes("&toc=true")) {
+            var tocheadings = "";
+              if (cb5.checked) {
+                tocheadings = "h1";
+              }
+              if (cb6.checked) {
+                if (tocheadings) {
+                  tocheadings = tocheadings + ",h2";
+                } else {
+                  tocheadings = "h2";
+                }
+              }
+              if (cb7.checked) {
+                if (tocheadings) {
+                  tocheadings = tocheadings + ",h3";
+                } else {
+                  tocheadings = "h3";
+                }
+              }
+            URLparms = URLparms + `&toc-headings=` + tocheadings;
+          }
+        }
+
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily == "default")) {
             var URLparms = URLparms + `&font-family=` + getFontFamily;
@@ -296,8 +323,14 @@
       element4.checked = false;
       let element5 = document.getElementById("narrowToC");
       element5.checked = false;
-      let element6 = document.getElementById("hideCredits");
+      let element6 = document.getElementById("toch1");
       element6.checked = false;
+      let element7 = document.getElementById("toch2");
+      element7.checked = true;
+      let element8 = document.getElementById("toch3");
+      element8.checked = true;
+      let element9 = document.getElementById("hideCredits");
+      element9.checked = false;
     }
 
     // Docsify
@@ -327,6 +360,12 @@
         nextText: 'NEXT',
         crossChapter: false,
         crossChapterText: false,
+      },
+
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h2',
+        title: 'Table of Contents',
       },
 
       // CUSTOM PLUGINS
@@ -369,6 +408,11 @@
 
               if (getURLParameterByName(['toc-alt','toc-narrow'])) {
                 URLparms = `&toc-narrow=true`;
+              }
+
+              if (getURLParameterByName('toc-headings')) {
+                tocheadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
+                URLparms = URLparms + `&toc-headings=` + tocheadings;
               }
 
               if (getURLParameterByName('font-family')) {

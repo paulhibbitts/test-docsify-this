@@ -24,6 +24,8 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
+<hr>
+
 <div class="docsifythisurlbuilderoptionsline"><label for="fontfamily">Set the page font family and size to:</label><br>
 <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
   <option value="default">Source Sans Pro</option>
@@ -49,9 +51,16 @@ Enter the URL of a Markdown file into the URL Builder and view that file as a st
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
-
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline"><label for="tocheadings">Headings to include in Table of Contents:</label><br>
+&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch1" unchecked><label for="toch1">Heading 1 (h1)</label>&nbsp;&nbsp;<br>
+&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch2" checked><label for="toch2">Heading 2 (h2)</label>&nbsp;&nbsp;<br>
+&nbsp;&nbsp;<input class="docsifythisurlbuildercheckbox" type="checkbox" id="toch3" checked><label for="toch3">Heading 3 (h3)</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC" unchecked><label for="narrowToC">Use a more narrow Table of Contents area, along with a smaller breakpoint</label></div>
 
 <div class="docsifythisurlbuilderrestoredefaultsbutton"><input type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
