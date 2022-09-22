@@ -142,6 +142,8 @@ Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table
 **toc-narrow**  
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
+Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevels** can be used to set the maximum header level.
+
 ## Looking for Even More Customization and Control?
 
 Docsify-This is intended as a quick way to display one or more remotely located Markdown files. If you want to further customize and control the presentation of your Markdown content, while also substantially speeding up the rendering of multiple page Markdown file sites on GitHub, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store Markdown files within that site. To further customize the rendering of remote files, install your own instance of [Docsify-This](https://github.com/hibbitts-design/docsify-this). You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
