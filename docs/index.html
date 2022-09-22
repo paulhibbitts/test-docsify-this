@@ -552,6 +552,7 @@
     const params = new URLSearchParams(window.location.search);
     params.forEach((value, key) => {
       // TODO: Parse numbers?
+      // console.log( window.$docsify[key] , value )
       window.$docsify[key] = value;
     });
 
