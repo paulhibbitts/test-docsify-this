@@ -144,6 +144,16 @@ Use a less wide Page Table of Contents with the optional **toc-narrow** paramete
 
 Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
+## Improving Markdown Previews in Text Editors
+
+Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
+
+Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
+https://docsify-this.net/assets/css/editor.css
+
+FontAwesome CSS:  
+https://docsify-this.net/assets/vendor/fontawesome/css/all.min.css
+
 ## Looking for Even More Customization and Control?
 
 Docsify-This is intended as a quick way to display one or more remotely located Markdown files. If you want to further customize and control the presentation of your Markdown content, while also substantially speeding up the rendering of multiple page Markdown file sites on GitHub, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store Markdown files within that site. To further customize the rendering of remote files, install your own instance of [Docsify-This](https://github.com/hibbitts-design/docsify-this). You can learn more about the capabilities of Docsify itself at [Docsify](https://docsify.js.org).
