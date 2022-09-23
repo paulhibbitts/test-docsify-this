@@ -12,7 +12,7 @@ This web app, built using the magical documentation site generator [Docsify](htt
 
 ## Web Page Builder
 
-Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting web page URL can also be copied and shared for others to view.
+Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting page URL can be copied and shared as a standalone page or used for embedding into another system.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
