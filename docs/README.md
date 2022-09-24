@@ -122,7 +122,7 @@ _TIP: If not a README.md file, the filename will also need to be passed using th
 ## Additional Customization Parameters
 
 **edit-link-top**  
-Change the location of the optional "Edit this Page" link from the bottom of pages to be the top of pages, for example:  
+Change the location of the "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
 **font-family**  
@@ -134,7 +134,7 @@ Set a custom font size for your standalone pages with the optional **font-size**
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 **hide-credits**  
-Hide the credits usually shown at the bottom of every rendered Docsify-This page, for example:  
+Hide the credits usually shown at the bottom of every rendered Docsify-This page with the optional **hide-credits** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
 **link-color**  
