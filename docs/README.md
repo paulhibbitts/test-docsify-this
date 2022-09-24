@@ -119,7 +119,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
 
-## Additional Customization Parameters
+## Customization Parameters
 
 **edit-link**  
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
