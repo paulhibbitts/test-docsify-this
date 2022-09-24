@@ -80,10 +80,10 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 ## Examples of Usage
 
 **Single Page Examples**  
-For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL parameter **basePath** is required and the complete URL would be:  
+For example, to render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
 
-To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents the URL parameter **basePath** is required along with the URL parameter **toc**, and the complete URL would be:  
+To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true
 
 To render the Markdown file **[README.md](https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md)** (the expected default name) as a standalone page with a table of contents and an "Edit this Page" link the URL would be:  
@@ -114,7 +114,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own table of contents and an "Edit this Page" link, the URL for the site would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md
 
-To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own Docsify Sidebar, the URL would be:   
+To render a set of Markdown files (located in the same GitHub repository) as a standalone website with the initial page being the README.md file and each page having its own Docsify Sidebar, the URL would be:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true
 
 _TIP: If not a README.md file, the filename will also need to be passed using the **homepage** URL parameter._
