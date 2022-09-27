@@ -4,7 +4,7 @@
 Photo by <a href="https://unsplash.com/@fakurian?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
 Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-## Display a Markdown file as a web page in seconds.
+## Display a Markdown file as a simple web page in seconds.
 
 This web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
 
@@ -138,11 +138,12 @@ Set a custom font size for your standalone pages with the optional **font-size**
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 **hide-credits**  
-Hide the credits usually shown at the bottom of every rendered Docsify-This page with the optional **hide-credits** parameter, for example:  
+Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
 **link-color**  
-Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
+Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
 **sidebar**  
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
@@ -158,7 +159,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 **toc-narrow**  
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. Please note that in rare situations Markdown page content may not respect margin boundaries with this smaller breakpoint. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.  
 
 Please note that standard [Docsify configuration settings](https://docsify.js.org/#/configuration) can also be used as URL parameters, for example when displaying the Docsify sidebar the parameter **maxLevel** can be used to set the maximum header level.
 
