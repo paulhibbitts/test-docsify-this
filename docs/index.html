@@ -531,11 +531,10 @@
             }
 
             editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
-              console.log(editlinktextparm);
-              if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
-                editlinktextparm = editlinktextparm.replaceAll('%20',' ');
-                editLinkText = editlinktextparm;
-              }
+            if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
+              editlinktextparm = editlinktextparm.replaceAll('%20',' ');
+              editLinkText = editlinktextparm;
+            }
 
             var editHtml = '[:memo: ' + editLinkText + '](' + url + ')\n'
 
