@@ -453,13 +453,13 @@
                 URLparms = URLparms + `&link-color=` + linkcolor;
               }
 
-              if (getURLParameterByName('edit-link-top')) {
-                URLparms = URLparms + `&edit-link-top=true`;
-              }
-
               if (getURLParameterByName('edit-link-text')) {
                 editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
                 URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
+              }
+
+              if (getURLParameterByName('edit-link-top')) {
+                URLparms = URLparms + `&edit-link-top=true`;
               }
 
               if (getURLParameterByName('loadNavbar')) {
