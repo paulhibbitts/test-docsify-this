@@ -49,7 +49,7 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br>#<input value="0374B5" id="linkcolor" /></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Set the text for of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
