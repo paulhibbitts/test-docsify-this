@@ -164,9 +164,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 An alternative to installing Docsify locally (as described following this section) is to install MAMP to view your Docsify sites locally on your own computer.
 
 1. Download [MAMP](https://www.mamp.info/)
-2. Move your local Docsify site to the htdocs folder of MAMP
-3. Turn MAMP on and then tap "My website"
-4. Tap on the folder containing your local Docsify site
+2. Move your local Docsify site to the **htdocs** folder of MAMP
+3. Turn MAMP on, tap **WebStart** and then tap **My Website**
+4. Tap on the folder containing your local Docsify site and then tap on the **docs** folder
 
 📼 Video Walkthrough of Local Docsify Install/Config
 ---
