@@ -15,10 +15,27 @@ This web app, built using the magical documentation site generator [Docsify](htt
 Enter the URL of a Markdown file into the Web Page Builder and view that file as a standalone web page in a new Browser tab. The resulting page URL can be copied and shared as a standalone page or used for embedding into other systems.
 
 **Markdown File URL** (GitHub or raw source URL):</br>
-<input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" /></br>
-<input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value,false,false)"/></br>
-<input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_2" value="View as Standalone Page with Table of Contents" onclick="openURLs(document.getElementById('text').value,true,false)"/>
-<input class="docsifythisurlbuildersecondarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_3" value="View as Standalone Page with Docsify Sidebar" onclick="openURLs(document.getElementById('text').value,false,true)"/></br>
+<input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
+<input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value)"/></br>
+
+Page Style:</br>
+
+<div class="docsifythisurlbuilderoptionsline">
+<label>
+  <input type="radio" name="pagestyle" value="contentonly" checked>
+  <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
+</label>
+
+<label>
+  <input type="radio" name="pagestyle" value="toc" id="styletoc">
+  <img src="images/toc.png" alt="Page with Table of Contents" title="Page with Table of Contents">
+</label>
+
+<label>
+  <input type="radio" name="pagestyle" value="sidebar" id="stylesidebar" >
+  <img src="images/sidebar.png" alt="Page with Sidebar (collapsible)" title="Page with Sidebar (collapsible)">
+</label>
+</div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with GitHub files (default location is bottom of page)</label></div>
 
