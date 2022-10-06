@@ -22,7 +22,7 @@ Page style:</br>
 
 <div class="docsifythisurlbuilderoptionsline">
 <label>
-  <input type="radio" name="pagestyle" value="contentonly" checked>
+  <input type="radio" name="pagestyle" value="contentonly"id="stylecontentonly"  checked>
   <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
 </label>
 
