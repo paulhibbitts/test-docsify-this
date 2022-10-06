@@ -20,21 +20,26 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 
 Page style:</br>
 
-<div class="docsifythisurlbuilderoptionsline">
+<div class="docsifythisurlbuilderoptionsline" style="display: flex;">
+
 <label>
   <input type="radio" name="pagestyle" value="contentonly"id="stylecontentonly"  checked>
   <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
+  <figcaption id="caption">Content Only</figcaption>
 </label>
 
 <label>
   <input type="radio" name="pagestyle" value="toc" id="styletoc">
   <img src="images/toc.png" alt="Page with Table of Contents" title="Page with Table of Contents">
+  <figcaption id="caption">Table of Contents</figcaption>
 </label>
 
 <label>
   <input type="radio" name="pagestyle" value="sidebar" id="stylesidebar" >
   <img src="images/sidebar.png" alt="Page with Sidebar (collapsible)" title="Page with Sidebar (collapsible)">
+  <figcaption id="caption">Sidebar</figcaption>
 </label>
+
 </div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with GitHub files (default location is bottom of page)</label></div>
