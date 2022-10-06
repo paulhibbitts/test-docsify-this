@@ -18,9 +18,9 @@ Enter the URL of a Markdown file into the Web Page Builder and view that file as
 <input name="markdownFileURL" aria-label="markdown file url" class="docsifythisurlfield" type="url" autofocus="autofocus" onfocus="this.select()" onclick="this.select()" onkeypress="checkKey(event);" id="text" size="200px" value="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md" />
 <input class="docsifythisurlbuilderprimarybutton docsifythisurlbuilderbutton" style="border:none;" type="button" id="btn_1" value="View as Standalone Page" onclick="openURLs(document.getElementById('text').value)"/></br>
 
-Page style:</br>
+Page style:
 
-<div class="docsifythisurlbuilderoptionsline" style="display: flex;">
+<div style="display: flex; margin-top: -3px;">
 
 <label>
   <input type="radio" name="pagestyle" value="contentonly"id="stylecontentonly"  checked>
@@ -36,8 +36,8 @@ Page style:</br>
 
 <label>
   <input type="radio" name="pagestyle" value="sidebar" id="stylesidebar" >
-  <img src="images/sidebar.png" alt="Page with Sidebar (collapsible)" title="Page with Sidebar (collapsible)">
-  <figcaption id="caption">Sidebar</figcaption>
+  <img src="images/sidebar.png" alt="Page with Docsify Sidebar (collapsible)" title="Page with Docsify Sidebar (collapsible)">
+  <figcaption id="caption">Docsify Sidebar</figcaption>
 </label>
 
 </div>
