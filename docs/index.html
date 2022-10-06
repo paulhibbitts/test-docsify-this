@@ -340,6 +340,9 @@
     }
 
     function restoreAllDefaults() {
+      document.getElementById("stylecontentonly").checked = true;
+      document.getElementById("styletoc").checked = false;
+      document.getElementById("stylesidebar").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
       document.getElementById("linkcolor").value = '0374B5';
