@@ -176,6 +176,8 @@ margin-right: 0.75rem;
 
 .docsifythisurlbuilder .colorpreview {
     border: solid 3px #0374B5;
+    border-radius: 0px 2px 2px 0px; 
+    margin-left: -2px;
 }
 
 /*
