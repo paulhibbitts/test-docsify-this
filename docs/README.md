@@ -23,19 +23,19 @@ Page layout:
 <div style="display: flex; margin-top: -3px;">
 
 <label>
-  <input type="radio" name="pagestyle" value="contentonly"id="stylecontentonly"  checked>
+  <input type="radio" name="pagestyle" id="stylecontentonly"  checked>
   <img src="images/contentonly.png" alt="Page Content Only" title="Page Content Only" >
   <figcaption id="caption">Content Only</figcaption>
 </label>
 
 <label>
-  <input type="radio" name="pagestyle" value="toc" id="styletoc">
+  <input type="radio" name="pagestyle" id="styletoc">
   <img src="images/toc.png" alt="Page with Table of Contents" title="Page with Table of Contents">
   <figcaption id="caption">Table of Contents</figcaption>
 </label>
 
 <label>
-  <input type="radio" name="pagestyle" value="sidebar" id="stylesidebar" >
+  <input type="radio" name="pagestyle" id="stylesidebar" >
   <img src="images/sidebar.png" alt="Page with Docsify Sidebar (collapsible)" title="Page with Docsify Sidebar (collapsible)">
   <figcaption id="caption">Docsify Sidebar</figcaption>
 </label>
