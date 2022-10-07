@@ -175,9 +175,11 @@ margin-right: 0.75rem;
 }
 
 .docsifythisurlbuilder .colorpreview {
+    width: 30px;
     border: solid 3px #0374B5;
-    border-radius: 0px 2px 2px 0px; 
-    margin-left: -2px;
+    background-color: #0374B5;
+    border-radius: 2px 2px 2px 2px; 
+    margin-left: 3px;
 }
 
 /*
