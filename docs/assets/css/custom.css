@@ -36,6 +36,31 @@ body .markdown-section {
 
 /* DOCSIFY THIS */
 
+.docsifythisimagebanner img {
+    width: 100%;
+    height: calc( 120px + (180 - 120) * (100vw - 400px) / (800 - 400) );
+    object-fit: cover;
+    position: relative;
+  }
+  
+.docsifythisimagebanner h1 {
+    color: #FFFFFF;
+    font-size: calc( 22px + (24 - 16) * (100vw - 400px) / (800 - 400) );
+}
+
+.docsifythisimagebanner .overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    padding-top: 5%;
+    padding-left: 4%;
+    color: #a800ba;
+    text-shadow: 1px 1px #323232;
+    font-weight: bold;
+    text-align: right;
+    font-size: 3vw;
+}
+
 #docsifythisurlbuilder {
     overflow: visible;
     margin: 2em 0;
@@ -172,7 +197,7 @@ span #docsifythisurlfield {
     margin-top: 10px;
     text-align: right;
 }
-
+  
 /*
 
 @media (prefers-color-scheme: dark) {
