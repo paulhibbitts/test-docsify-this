@@ -104,6 +104,7 @@
 <body>
   <div id="app"></div>
   <script>
+
     // Enter the URL of your own GitHub Repository in between the two quotes below
     var gitLinkRepoURL = '';
 
@@ -365,7 +366,7 @@
     }
 
     function isHexadecimalColor(str) {
-      regExp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
+      var regExp = /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i
       if (regExp.test(str)) {
           return true;
       } else {
