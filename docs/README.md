@@ -1,7 +1,7 @@
 <div class="docsifythisimagebanner">
   <img  class="background-image" src="images/milad-fakurian-CN2FEPXERRI-unsplash.jpg">
   <div class="overlay">
-    <h1><b>Docsify-This</b><h1>
+    <h1><b>Docsify-This</b></h1>
   </div>
 </div>
 Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
