@@ -1,10 +1,9 @@
 <div class="docsifythisimagebanner">
-  <img  class="background-image" src="images/milad-fakurian-CN2FEPXERRI-unsplash.jpg">
+  <img  class="background-image" src="images/milad-fakurian-CN2FEPXERRI-unsplash.jpg"  alt="Milad Fakurian on Unsplash">
   <div class="overlay">
     <h1><b>Docsify-This</b></h1>
   </div>
 </div>
-Milad Fakurian</a> on <a href="https://unsplash.com/s/photos/render?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 ## Display a Markdown file as a simple web page in seconds.
 
