@@ -429,7 +429,6 @@
             // beforeEach and afterEach support asynchronous。
             // ...
             // call `next(html)` when task is done.
-            next(html);
 
             if (window.$docsify['basePath']) {
 
@@ -494,8 +493,11 @@
                 URLparms = URLparms + `&loadNavbar=` + loadnavbar;
               }
 
-              const links = Array.from(document.querySelectorAll('a'))
+              var htmlElement = document.createElement('div');
+              htmlElement.innerHTML = html;
 
+              const links = Array.from(htmlElement.querySelectorAll('a'))
+              
               for (const link of links) {
                 // console.log(link.getAttribute('href'));
                 // Find any local Markdown file links
@@ -536,6 +538,9 @@
                     link.setAttribute('target', '_top');
                 }
               }
+              next(htmlElement.innerHTML);
+            } else {
+              next(html);
             }
           });
 
