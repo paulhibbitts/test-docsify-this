@@ -5,8 +5,6 @@
   </div>
 </div>
 
-<h1 aria-label="Display a Markdown file as a simple web page in seconds"></h1>
-
 # Display a Markdown file as a simple web page in seconds.
 
 This web app, built using the magical documentation site generator [Docsify](https://docsify.js.org) and the [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit), provides a quick way to display Markdown files as standalone web pages (also perfect for embedding) without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to https://docsify-this.net. Try it out below!  
