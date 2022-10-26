@@ -501,36 +501,37 @@
               for (const link of links) {
                 // console.log(link.getAttribute('href'));
                 // Find any local Markdown file links
-                if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
+                if (link.getAttribute('href')?.match(/^#/)) {
                   // Modify each Markdown file link to work with Remote Docsify
-                  var existingLink = link.getAttribute('href');
-                  console.log(existingLink);
-                  if (getURLParameterByName('edit-link')) {
-                    // Calculate existing edit-link URL parm in link
-                    var editThisPageLinkURLparm = '';
-                    if (currentBasePath.includes("githubusercontent.com")) {
-                      var editThisPageLink = '';
-                      editThisPageLink = decodeURIComponent(currentBasePath);
-                      editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
-                      editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
-                      editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
-                      var pagePath = '';
-                      pagePath = existingLink.replace('#/', '');
-                      pagePath = pagePath.replace('./', '');
-                      editThisPageLink = editThisPageLink + '/' + pagePath + '.md'
-                      editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
-                      // console.log(editThisPageLinkURLparm);
+                  var lastSegment = '';
+                  lastSegment = link.getAttribute('href');
+                  lastSegment = lastSegment.replace('#/', '');
+                  lastSegment = lastSegment.replace('./', '');
+                  // console.log(lastSegment);
+                  // console.log(lastSegment.startsWith("?id"));
+                  // Check to make sure link is not Docsify id anchor link
+                  if (lastSegment.startsWith("?id")===false) {
+                    if (getURLParameterByName('edit-link')) {
+                      // Calculate existing edit-link URL parm in link
+                      var editThisPageLinkURLparm = '';
+                      if (currentBasePath.includes("githubusercontent.com")) {
+                        var editThisPageLink = '';
+                        editThisPageLink = decodeURIComponent(currentBasePath);
+                        editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
+                        editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
+                        editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
+                        editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
+                        editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
+                        // console.log(editThisPageLinkURLparm);
+                      }
                     }
+                    // Update Markdown file link
+                    var newURL = ''
+                    newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
+                    // console.log("Changed:");
+                    // console.log(newURL);
+                    link.setAttribute('href', newURL);
                   }
-                  // Update Markdown file link
-                  var newURL = ''
-                  // newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
-                  newURL = existingLink + URLparms + editThisPageLinkURLparm;
-                  console.log("Changed:");
-                  // Make first URL parm use '?' rather than '&'
-                  newURL = newURL.replace('&', '?');
-                  console.log(newURL);
-                  link.setAttribute('href', newURL);
                 } else {
                     // console.log(link);
                     // Set '_top' as external link targets
@@ -645,7 +646,6 @@
 
   <!-- Customizable Theme -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
-  <script src="assets/vendor/themeable/docsify-themeable.min.js"></script>
 
   <!-- Font Awesome Plugin -->
   <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
