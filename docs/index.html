@@ -504,7 +504,7 @@
                 if ((link.getAttribute('href')?.match(/^#/) && (link.getAttribute('href').includes('id=')) ===false)) {
                   // Modify each Markdown file link to work with Remote Docsify
                   var existingLink = link.getAttribute('href');
-                  // console.log(lastSegment);
+                  console.log(existingLink);
                   if (getURLParameterByName('edit-link')) {
                     // Calculate existing edit-link URL parm in link
                     var editThisPageLinkURLparm = '';
@@ -525,8 +525,10 @@
                   // Update Markdown file link
                   var newURL = ''
                   // newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
-                  newURL =  existingLink + URLparms + editThisPageLinkURLparm;
+                  newURL = existingLink + URLparms + editThisPageLinkURLparm;
                   console.log("Changed:");
+                  // Make first URL parm use '?' rather than '&'
+                  newURL = newURL.replace('&', '?');
                   console.log(newURL);
                   link.setAttribute('href', newURL);
                 } else {
