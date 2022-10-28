@@ -611,6 +611,20 @@
             }
           });
 
+          hook.ready(function () {
+            if (!(window.$docsify['basePath'])) {
+              if (getURLParameterByName('markdown-file-url')) {
+                var markdownFileURL = '';
+                markdownFileURL = getURLParameterByName('markdown-file-url', null, null, window.location.href, true);
+                document.getElementById('docsifythisurlfield').value = markdownFileURL;
+                var url = window.location.href;
+                var params = new URLSearchParams(url.search);
+                params.delete('markdown-file-url');
+                window.location.href =  window.location.href.split("?")[0]; //url;
+              }
+            }
+          });
+
         }
 
       ]
