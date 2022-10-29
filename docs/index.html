@@ -515,10 +515,10 @@
                   // console.log(lastSegment);
                   // console.log(lastSegment.startsWith("?id"));
                   // Check to make sure link is not Docsify id anchor link
+                  var editThisPageLinkURLparm = '';
                   if (lastSegment.startsWith("?id")===false) {
                     if (getURLParameterByName('edit-link')) {
                       // Calculate existing edit-link URL parm in link
-                      var editThisPageLinkURLparm = '';
                       if (currentBasePath.includes("githubusercontent.com")) {
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
@@ -527,20 +527,20 @@
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
-                        // console.log(editThisPageLinkURLparm);
+                        console.log(editThisPageLinkURLparm);
                       }
                     }
                     // Update Markdown file link
                     var newURL = ''
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
                     if (editThisPageLinkURLparm === "") { 
-                      newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
-                    } else {
                       newURL = '#/' + lastSegment
-                    // console.log("Changed:");
-                    // console.log(newURL);
-                    link.setAttribute('href', newURL);
+                      console.log("Changed:");
+                     } else {
+                      newURL = url + `?basePath=${currentBasePath}&homepage=${lastSegment}.md` + URLparms + editThisPageLinkURLparm;
                     }
+                    console.log(newURL);
+                    link.setAttribute('href', newURL);
                   }
                 } else {
                     // console.log(link);
@@ -636,7 +636,6 @@
     const params = new URLSearchParams(window.location.search);
     params.forEach((value, key) => {
       // TODO: Parse numbers?
-      // console.log( window.$docsify[key] , value )
       window.$docsify[key] = value;
     });
 
