@@ -160,4 +160,4 @@ if (!window.$docsify) {
 
 window.$docsify.plugins = (window.$docsify.plugins || []).concat(_plugin.default);
 },{"./plugin":"GOVZ"}]},{},["Focm"], null)
-//# sourceMappingURL=/docsify-mermaid.js.map
+//# sourceMappingURL=docsify-mermaid.js.map
