@@ -112,9 +112,9 @@ Page layout:
 * [Standalone Pages with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
 * [Standalone Pages with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
-[GitHub's LaTeX Support Examples](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example#/).
+[GitHub's LaTeX Support Examples](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
-[Mermaid-Docsify Example](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true#/).  
+[Mermaid-Docsify Example](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
 
 ## How it Works
 
