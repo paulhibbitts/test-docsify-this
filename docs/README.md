@@ -112,6 +112,10 @@ Page layout:
 * [Standalone Pages with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
 * [Standalone Pages with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
+[GitHub's LaTeX Support Examples](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example#/).
+
+[Mermaid-Docsify Example](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md) Markdown file, displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true#/).  
+
 ## How it Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the format `https://docsify-this.net?basePath=URLpath&homepage=filename.md`, which are automaticaly created by the above Web Page Builder. The **basePath** parameter is the directory containing the raw source Markdown file to render. If the file is named the expected default **README.md** then no other parameter are required, otherwise the **homepage** parameter must also be included set to the name of the file to render. To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically.  
