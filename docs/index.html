@@ -624,8 +624,12 @@
           hook.ready(function () {
             if (!(window.$docsify['basePath'])) {
               if (getURLParameterByName('url-field')) {
+                // console.log(getURLParameterByName('url-field'));
                 var markdownFileURL = '';
                 markdownFileURL = getURLParameterByName('url-field', null, null, window.location.href, true);
+                if (markdownFileURL == "empty") {
+                  markdownFileURL = '';
+                }
                 document.getElementById('docsifythisurlfield').value = markdownFileURL;
               }
 
