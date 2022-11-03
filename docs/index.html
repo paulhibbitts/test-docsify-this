@@ -738,8 +738,8 @@
       // Change body font if fontFamily parameter present
       fontfamily  = getURLParameterByName('font-family', null, null, window.location.href, true);
       if (!(fontfamily === false)) {
-        fontfamily = fontfamily.replaceAll(' ','%20');
-        fontfamily = fontfamily.replaceAll('%2C',',');
+        // console.log(fontfamily);
+        // console.log(fontfamily);
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       }
 
