@@ -408,6 +408,16 @@
       }
     }
 
+    function removeParam(paramName) {
+      var searchParams = new URLSearchParams(window.location.search);
+      searchParams.delete(paramName);
+      if (history.replaceState) {
+        var searchString = searchParams.toString().length > 0 ? '?' + searchParams.toString() : '';
+        var newUrl = window.location.protocol + "//" + window.location.host + window.location.pathname +  searchString + window.location.hash;
+        history.replaceState(null, '', newUrl);
+      }
+    }
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
@@ -542,6 +552,8 @@
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm =  `&edit-link=` + editThisPageLink;
                         // console.log(editThisPageLinkURLparm);
+                      } else {
+                        removeParam('edit-link');
                       }
                     }
                     // Update Markdown file link
