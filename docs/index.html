@@ -746,6 +746,13 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
 
+  <!-- Optionally load Hypothesis -->
+  <script>
+    if (getURLParameterByName('hypothesis') && getURLParameterByName('basePath')) {
+      document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
+    }
+</script>
+
   <!-- Hide Sidebar app title when displaying remote site  -->
   <script>
     if (window.$docsify['basePath']) {
