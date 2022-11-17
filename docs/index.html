@@ -284,6 +284,11 @@
           }
         }
 
+        const cb8 = document.querySelector('#hypothesis');
+        if (cb8.checked) {
+          var URLparms = URLparms + `&hypothesis=true`;
+        }
+
         var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
         if (!(getFontFamily == "default")) {
           var URLparms = URLparms + `&font-family=` + getFontFamily;
