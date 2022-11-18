@@ -404,6 +404,7 @@
       document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      document.getElementById("hypothesis").checked = false;
     }
 
     if (!getURLParameterByName('basePath')) {
@@ -751,7 +752,7 @@
   <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
   <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
 
-  <!-- Optionally load Hypothesis -->
+  <!-- Optionally enable Hypothesis -->
   <script>
     if (getURLParameterByName('hypothesis') && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
