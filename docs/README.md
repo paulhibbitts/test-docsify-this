@@ -118,7 +118,7 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 
 To render a file stored on GitHub you need to use the raw source URL of a file (i.e. raw.githubusercontent.com) - tap the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file) to get this URL when not using the above Web Page Builder, which does this automatically.  
 
-In addition to support standard Markdown, [Embed.ly](https://embed.ly/), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also supported. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
+In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
 ### Example Web Pages
 
