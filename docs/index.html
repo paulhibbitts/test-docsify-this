@@ -520,6 +520,10 @@
                 URLparms = URLparms + `&loadNavbar=` + loadnavbar;
               }
 
+              if (getURLParameterByName('hypothesis')) {
+                URLparms = `&hypothesis=true`;
+              }
+
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
 
@@ -555,7 +559,7 @@
                     // Update Markdown file link
                     var newURL = ''
                     // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link)
-                    if (editThisPageLinkURLparm === "") {
+                    if (editThisPageLinkURLparm === "" && !(getURLParameterByName('hypothesis'))) {
                       newURL = '#/' + lastSegment
                       // console.log("Changed:");
                     } else {
