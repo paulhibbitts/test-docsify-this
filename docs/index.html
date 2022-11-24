@@ -642,8 +642,7 @@
               return html
             }
 
-            var hasEmbedlyCards = document.getElementsByClassName('embedly-card');
-            if (hasEmbedlyCards.length > 0) {
+            if (html.includes("embedly-card")) {
                 // elements with class "embedly-card" exist
                 console.log("YES!");
                 document.write('<script async src="//cdn.embedly.com/widgets/platform.js"><\/script>');
