@@ -641,6 +641,13 @@
             } else {
               return html
             }
+
+            var hasEmbedlyCards = document.getElementsByClassName('embedly-card');
+            if (hasEmbedlyCards.length > 0) {
+                // elements with class "embedly-card" exist
+                console.log("YES!");
+                document.write('<script async src="//cdn.embedly.com/widgets/platform.js"><\/script>');
+            }
           });
 
           hook.ready(function () {
@@ -802,8 +809,6 @@
       }
     }
   </script>
-
-  <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
 
   <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
 
