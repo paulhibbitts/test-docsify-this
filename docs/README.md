@@ -110,6 +110,7 @@ Page layout:
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 * [Troubleshooting](/?id=troubleshooting)
+* [Privacy Policy Summary](/?id=privacy-policy-summary)
 * [Support this Project](/?id=support-this-project)
 
 ### How it Works
