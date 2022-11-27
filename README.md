@@ -48,8 +48,8 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 [Easy Markdown to Github Pages linked set of Markdown files](https://github.com/nicolas-van/easy-markdown-to-github-pages), displayed by Docsify-This as:   
 * [Standalone Pages](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master "Easy Markdown to Github Pages - Standalone Page")  
-* [Standalone Pages with Table of Contents](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
-* [Standalone Pages with Docsify Sidebar](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
+* [Standalone Pages with Table of Contents and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Table of Contents")  
+* [Standalone Pages with Docsify Sidebar and an 'Edit this Page' link](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&sidebar=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Standalone Page with Docsify Sidebar")
 
 [Single Markdown file](https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md), displayed by Docsify-This as a [Single Page Course Site](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/one-page-course-site/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/one-page-course-site/blob/main/home.md&toc-headings=h2).
 
