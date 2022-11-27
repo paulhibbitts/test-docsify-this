@@ -19,7 +19,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Example Web Pages](#xample-web-pages)
+* [Example Web Pages](#example-web-pages)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
