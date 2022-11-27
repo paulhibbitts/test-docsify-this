@@ -138,7 +138,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
 ```
 
-`embedly-card` (for linked article previews, embedded slides/videos, etc.) 
+`embedly-card` (for linked article previews, embedded slides/videos, etc.)  
 
 ```markdown
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
