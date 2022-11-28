@@ -19,7 +19,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [How it Works](#how-it-works)
-* [Docsify-This Templates](#docsify-this-templates)
+* [Docsify-This Markdown Templates](#docsify-this-markdown-templates)
 * [More Docsify-This Examples](#more-docsify-this-examples)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
@@ -35,7 +35,7 @@ Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://githu
 
 In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Katex](https://github.com/upupming/docsify-katex), and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are also included. Opionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
-### Docsify-This Templates
+### Docsify-This Markdown Templates
 
 **[Docsify-This One Page Course Template (including how to use)](https://github.com/paulhibbitts/docsify-this-one-page-course)**   
 
