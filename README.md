@@ -39,7 +39,7 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 **[Docsify-This One Page Course Template](https://github.com/paulhibbitts/docsify-this-one-page-course)**   
 
-![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
 
 Displayed by Docsify-This as a:   
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
@@ -48,7 +48,7 @@ Displayed by Docsify-This as a:
 
 **[Docsify-This One Page Article Template](https://github.com/paulhibbitts/docsify-this-one-page-article)**
 
-![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
 
 Displayed by Docsify-This as a:  
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
