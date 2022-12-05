@@ -41,7 +41,7 @@ While all you need to get going with Docsify-This is a basic Markdown file, here
 
 **[Docsify-This One Page Course Template](https://github.com/paulhibbitts/docsify-this-one-page-course)** (including how to use)   
 
-![Docsify-This One Page Course Template](images/docsify-this-one-page-course.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png ':class=docsify-this-screenshot')
 
 Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md) file displayed by Docsify-This as a:   
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
@@ -50,7 +50,7 @@ Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-t
 
 **[Docsify-This One Page Article Template](https://github.com/paulhibbitts/docsify-this-one-page-article)**  (including how to use)  
 
-![Docsify-This One Page Article Template](images/docsify-this-one-page-article.png ':class=docsify-this-screenshot')
+![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png ':class=docsify-this-screenshot')
 
 Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md) file displayed by Docsify-This as a:  
 * [Standalone Page](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md "Single Page Docsify Open Course Starter Kit - Standalone Page")  
