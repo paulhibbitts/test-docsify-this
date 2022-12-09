@@ -179,7 +179,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image`  
+`header-image`  (suggested size of 1200px to 2000px width and 400px to 600px height)  
 
 ```markdown
 ![Welcome sign](images/belinda-fewings-6wAGwpsXHE0-unsplash.jpg ':class=header-image')
