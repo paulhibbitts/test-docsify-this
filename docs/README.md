@@ -271,13 +271,13 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 `header-image` (suggested size of 1200px to 2000px width and 400px to 600px height)  
 
 ```markdown
-![Welcome sign](images/belinda-fewings-6wAGwpsXHE0-unsplash.jpg ':class=header-image')
+![Welcome sign](images/mountain.jpg ':class=header-image')
 ```
 
 `header-image-fade`  
 
 ```markdown
-![Welcome sign](images/belinda-fewings-6wAGwpsXHE0-unsplash.jpg ':class=header-image-fade')
+![Welcome sign](images/mountain.jpg ':class=header-image-fade')
 ```
 
 `row` & `column`   
