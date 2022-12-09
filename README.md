@@ -155,13 +155,13 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
-`banner-image`  
+`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`banner-tall-image`  
+`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
