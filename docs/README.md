@@ -274,7 +274,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ![Welcome sign](images/mountain.jpg ':class=header-image')
 ```
 
-`header-image-fade`  
+`header-image-fade` (minimum expected height is 400px)  
 
 ```markdown
 ![Welcome sign](images/mountain.jpg ':class=header-image-fade')
