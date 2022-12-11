@@ -53,7 +53,7 @@ body .markdown-section {
 }
 
 /* CSS currently only works with content only and sidebar pages */
-.markdown-section .header-image {
+.markdown-section .header-image-full-width {
     margin-top: -2rem;
     left: 50%;
 	margin-left: -50vw;
