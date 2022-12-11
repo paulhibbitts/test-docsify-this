@@ -268,7 +268,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height)  
+`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height, and optional Table of Contents is not supported)  
 
 ```markdown
 ![Welcome sign](images/mountain.jpg ':class=header-image')
