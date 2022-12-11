@@ -185,6 +185,12 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ![Welcome sign](images/mountain.jpg ':class=header-image')
 ```
 
+`header-image` (suggested size of 1200px to 2000px width and 400px to 600px height, and optional Table of Contents is not supported)  
+
+```markdown
+![Welcome sign](images/mountain.jpg ':class=header-image')
+```
+
 `header-image-fade`  
 
 ```markdown
