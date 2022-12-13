@@ -65,7 +65,7 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 
 **[Docsify-This Multiple Page Template](https://github.com/paulhibbitts/docsify-this-multiple-page-site-readme.png)** (including how to use)  
 
-![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-site.png ':class=docsify-this-screenshot')
+![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site.png ':class=docsify-this-screenshot')
 
 Docsify-This Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multiple-page-site/blob/main/home.md) file displayed by Docsify-This as a:  
 * [Standalone Pages](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Standalone Pages")  
