@@ -522,6 +522,11 @@
                 URLparms = URLparms + `&loadNavbar=` + loadnavbar;
               }
 
+              if (getURLParameterByName('loadFooter')) {
+                loadfooter = getURLParameterByName('loadFooter', null, null, window.location.href, true);
+                URLparms = URLparms + `&loadFooter=` + loadfooter;
+              }
+
               if (getURLParameterByName('hypothesis')) {
                 URLparms = URLparms + `&hypothesis=true`;
               }
