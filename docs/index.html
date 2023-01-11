@@ -125,8 +125,14 @@
     // Set standalone to true to permanently hide the Sidebar
     var standalone = (!(getURLParameterByName('sidebar') && getURLParameterByName('basePath')));
 
-    // Set ToC to true to permanently show page Table of Contents (Sidebar must also be hidden)
+    // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
     var ToC = false;
+
+    // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
+    var navbar = false;
+ 
+    // Set footer to true to permanently show the Footer ('_footer.md)
+    var footer = false;
 
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
@@ -437,6 +443,8 @@
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
+      loadFooter: (getURLParameterByName('footer') || footer || false),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
@@ -813,7 +821,7 @@
   <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script>
 
   <!-- Docsify Footnotes Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footer.min.js"></script>
 
   <!-- Optionally enable Hypothesis -->
