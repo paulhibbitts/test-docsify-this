@@ -434,7 +434,9 @@
       homepage: 'README.md',
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
-      externalLinkTarget: '_top',
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
+      externalLinkTarget: (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
+      loadFooter: (getURLParameterByName('footer') || footer || false),
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
@@ -443,8 +445,6 @@
       // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
-      loadFooter: (getURLParameterByName('footer') || footer || false),
 
       // PLUGIN SETTINGS
       // -----------------------------------------------------------------
