@@ -69,7 +69,7 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 * [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-**[Docsify-This Multiple Page Template](https://github.com/paulhibbitts/docsify-this-multiple-page-site-readme.png)** (including how to use)  
+**[Docsify-This Multiple Page Site Template](https://github.com/paulhibbitts/docsify-this-multiple-page-site-readme.png)** (including how to use)  
 
 ![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site-readme.png)
 
