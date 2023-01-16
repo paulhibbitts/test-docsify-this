@@ -49,9 +49,9 @@ In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), 
 
 ### Ready-to-Use Docsify-This Markdown Templates
 
-While all you need to get going with Docsify-This is a basic Markdown file, here are some templates you can use that show what is possible with Markdown, images, and even a few HTML snippets!
+While all you need to get going with Docsify-This is a basic Markdown file, here are some templates (with step-by-step how to use instructions) you can use that show what is possible with Markdown, images, and even a few HTML snippets!
 
-**[Docsify-This One Page Course Template](https://github.com/paulhibbitts/docsify-this-one-page-course)** (including how to use)   
+**[Docsify-This One Page Course Template](https://github.com/paulhibbitts/docsify-this-one-page-course)**    
 
 ![Docsify-This One Page Course Template](docs/images/docsify-this-one-page-course-readme.png)
 
@@ -60,7 +60,7 @@ Docsify-This One Page Course [home.md](https://github.com/paulhibbitts/docsify-t
 * [Standalone Page with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&toc=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-course/main&homepage=home.md&sidebar=true&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-course/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-**[Docsify-This One Page Article Template](https://github.com/paulhibbitts/docsify-this-one-page-article)** (including how to use)  
+**[Docsify-This One Page Article Template](https://github.com/paulhibbitts/docsify-this-one-page-article)**  
 
 ![Docsify-This One Page Article Template](docs/images/docsify-this-one-page-article-readme.png)
 
@@ -69,7 +69,7 @@ Docsify-This One Page Article [home.md](https://github.com/paulhibbitts/docsify-
 * [Standalone Page with Table of Contents including h2 and h3 Headers and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Table of Contents")  
 * [Standalone Page with Docsify Sidebar with maxLevel of 3 (H3) and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md "Single Page Docsify Open Course Starter Kit - Standalone Page with Docsify Sidebar")
 
-**[Docsify-This Multiple Page Site Template](https://github.com/paulhibbitts/docsify-this-multiple-page-site-readme.png)** (including how to use)  
+**[Docsify-This Multiple Page Site Template](https://github.com/paulhibbitts/docsify-this-multiple-page-site-readme.png)**  
 
 ![Docsify-This Multiple Page Site](docs/images/docsify-this-multiple-page-site-readme.png)
 
