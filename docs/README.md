@@ -187,7 +187,7 @@ One Page Article [home.md](https://github.com/paulhibbitts/docsify-this-one-page
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This LMS Content Pages Template](images/docsify-this-lms-pages.png ':class=docsify-this-screenshot')
+![Docsify-This LMS Content Pages Template](images/docsify-this-lms-content-pages.png ':class=docsify-this-screenshot')
 
 </div>
 
