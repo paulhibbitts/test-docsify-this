@@ -205,7 +205,7 @@ Example pages, including the use of the `font-family`, `font-size` and `hide-cre
 * [Embeddable Contact Page](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=contact.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&amp;font-size=1&amp;link-color=0374B5&amp;hide-credits=true "Embeddable Contact Page")
 
 </div>
-
+</div>
 </div>
 
 <div class="row">
