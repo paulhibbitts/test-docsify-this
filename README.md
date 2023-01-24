@@ -21,6 +21,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [How it Works](#how-it-works)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
+* [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Page Appearance URL Parameters](#page-appearance-url-parameters)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
 * [Tips and Techniques](#tips-and-techniques)
@@ -113,6 +114,39 @@ Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multip
 [GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
 [Mermaid-Docsify Example Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
+
+---
+
+### Embedding Docsify-This Pages into Other Platforms
+
+#### Canvas LMS
+
+[Embed content in Canvas](https://www.howtocanvas.com/create-amazing-pages-in-canvas/embedding-content)  
+iFrame Code Example, including URL parameters to seamlessly match Docsify-This content to Canvas:  
+
+```html
+<p><iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;" src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,%20Lato,Helvetica%20Neue,%20Helvetica,%20Arial,%20sans-serif&font-size=1&hide-credits=true" width="800px" height="1400px" allowfullscreen="allowfullscreen"></iframe></p>
+```
+
+[How do I add an external URL as a module item?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-an-external-URL-as-a-module-item/ta-p/967)  
+Module external link example:  
+
+```html
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-02.md&toc-alt=true&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica, Arial,sans-serif&font-size=1&hide-credits=true
+```
+
+[Redirect Tool (for adding a link as a navigation item in a course )](https://www.eduappcenter.com/apps/63?filter_text=#.X3uex2hKiM8)  
+Redirect URL field example:  
+
+```html
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=resources.md&edit-link=https://github.com/paulhibbitts/cmpt-363-222-pages/blob/main/resources.md&font-family=Lato%20Extended, Lato,Helvetica%20Neue, Helvetica, Arial, sans-serif&font-size=1&hide-credits=true
+```
+
+#### Moodle LMS
+
+[iFrame (for embedding content within pages)](https://docs.moodle.org/401/en/Iframe)  
+
+[External tool (for adding a link to course navigation or elements)](https://docs.moodle.org/401/en/External_tool)
 
 ---
 
