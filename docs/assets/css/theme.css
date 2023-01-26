@@ -353,6 +353,21 @@
   z-index: -1;
 }
 
+.markdown-section .image-75 {
+  width: 75%;
+  height: auto;
+}
+
+.markdown-section .image-50 {
+  width: 75%;
+  height: auto;
+}
+
+.markdown-section .image-25 {
+  width: 75%;
+  height: auto;
+}
+
 @media screen and (max-width: 980px) {
   .markdown-section .header-image-fade {
     top: -20px;
