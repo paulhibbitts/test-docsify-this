@@ -430,6 +430,11 @@
       document.getElementById("hypothesis").checked = false;
     }
 
+    // console.log (getURLParameterByName(['standalone', 'embedded']));
+    // console.log (!(getURLParameterByName('navbar')));
+    // console.log (standalone);
+    // console.log (navbar);
+
     // Docsify
     window.$docsify = {
       // GENERAL SETTINGS
@@ -440,7 +445,7 @@
       homepage: 'README.md',
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('navbar')) || standalone && !navbar ||false),
+      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar ||false),
       externalLinkTarget: (getURLParameterByName(['standalone', 'embedded'], '_top', '_blank')),
       loadFooter: (getURLParameterByName('footer') || footer || false),
       notFoundPage: '404.md',
