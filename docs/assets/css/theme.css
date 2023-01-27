@@ -724,6 +724,11 @@ html {
   opacity: 1;
 }
 
+.sidebar-nav a, .sidebar nav a {
+  overflow: visible;
+  white-space: break-spaces;
+}
+
 /* Dark mode colours for use with light + dark themes */
 /*
 
