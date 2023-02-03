@@ -31,7 +31,6 @@
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css">
   <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css">
   <link rel="stylesheet" href="assets/css/theme.css">
-  <link rel="stylesheet" href="assets/css/dark.css">
 
   <!-- Font Awesome Stylesheets -->
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
@@ -625,26 +624,29 @@
                 }
               }
 
-            /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
-            const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
-            if (!(embeds.length === 0)) {
-              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                  // dark mode
-                  embeds.forEach(embed => {
-                    embed.setAttribute('data-card-theme', 'dark');
-                  });
-                  } else {
-                  // light mode
-                  embeds.forEach(embed => {
-                    embed.setAttribute('data-card-theme', 'light');
-                  });
-              }
-              window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-                // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
-                // console.log(e.matches);
-                location.reload();
-              });
+            /* JS to change Embedly cards to light or dark theme based on system theme */
+            enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+            if (enabledarkmode === true || darkmode === true) {
+              const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
+              if (!(embeds.length === 0)) {
+                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    // dark mode
+                    embeds.forEach(embed => {
+                      embed.setAttribute('data-card-theme', 'dark');
+                    });
+                    } else {
+                    // light mode
+                    embeds.forEach(embed => {
+                      embed.setAttribute('data-card-theme', 'light');
+                    });
+                }
+                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+                  // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+                  // console.log(e.matches);
+                  location.reload();
+                });
 
+              }
             }
             
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
