@@ -270,6 +270,10 @@ Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multip
 
 ### Page Appearance URL Parameters
 
+**dark-mode**  
+Automatically switch light/dark theme based on system OS-level preference (not included in the Web Page Builder), for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
+
 **edit-link**  
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md

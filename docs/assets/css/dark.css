@@ -1,0 +1,56 @@
+/* Dark mode colours for use with light + dark themes */
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+      --navbar-root-color--active: #1182C5!important;
+      --blockquote-border-color: #1182C5!important;
+      --sidebar-name-color: #1182C5!important;
+      --sidebar-nav-link-color--active: #1182C5!important;
+      --sidebar-nav-link-border-color--active: #1182C5!important;
+      --link-color: #1182C5!important;
+      --pagination-title-color: #1182C5!important;
+    }
+    
+    .markdown-section .button {
+      color: #222222;
+    }
+  
+    .markdown-section a.button {
+      color: #222222;
+    }
+  
+  }
+
+@media (prefers-color-scheme: dark) {
+
+    #docsifythisurlbuilder {
+        background: #074d94;
+    }
+
+    #docsifythisurlfield{
+        background-color: #273338;
+        color: white;
+    }
+
+    .docsifythisurlbuilderprimarybutton {
+        color: black;
+        background-color: #4bc3f4;
+    }
+
+    .docsifythisurlbuildersecondarybutton {
+        color: black;
+        background-color: #a2e8fc;
+    }
+
+    #docsifythisurlbuilder [type=radio]:checked + img {
+        outline: 3px solid #4bc3f4;
+        position: relative;
+    }
+
+    #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
+        color: #4bc3f4;
+    }
+
+}
+

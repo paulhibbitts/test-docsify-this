@@ -24,13 +24,14 @@
   <meta name="twitter:image" content="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/screenshot.png" />
 
   <!-- Stylesheets -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <!-- <link rel="stylesheet" id="default" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <link rel="stylesheet" href="assets/vendor/themeable/themes/theme-simple.css">
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" class="alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)" class="alternate" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="assets/vendor/themeable/themes/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="assets/vendor/themeable/themes/theme-simple-dark.css"> -->
   <link rel="stylesheet" href="assets/css/theme.css">
+  <link rel="stylesheet" href="assets/css/dark.css">
 
   <!-- Font Awesome Stylesheets -->
   <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
@@ -562,6 +563,11 @@
                 URLparms = URLparms + `&maxLevel=` + maxLevel;
               }
 
+              if (getURLParameterByName('dark-mode')) {
+                darkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                URLparms = URLparms + `&dark-mode=` + darkmode;
+              }
+
               const links = Array.from(htmlElement.querySelectorAll('a'))
 
               for (const link of links) {
@@ -612,7 +618,6 @@
               }
 
             /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
-            /*
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
               if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
@@ -631,8 +636,7 @@
                 // console.log(e.matches);
                 location.reload();
               });
-            }
-            */
+            }           
 
             next(htmlElement.innerHTML);
             } else {
@@ -897,7 +901,7 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize and linkcolor parameters  -->
+  <!-- Check for fontfamily, fontsize, linkcolor and darkmode parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
@@ -926,6 +930,16 @@
         document.documentElement.style.setProperty('--link-color', linkcolor);
         document.documentElement.style.setProperty('--pagination-title-color', linkcolor);
       }
+
+      // Keep dark theme CSS files loaded if dark-mode parameter present
+      darkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      if (darkmode === false) {
+        var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
+        linkNode.parentNode.removeChild(linkNode);
+        var linkNode = document.querySelector('link[href*="dark.css"]');
+        linkNode.parentNode.removeChild(linkNode);
+      }
+
     }
   </script>
 
