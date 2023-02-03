@@ -2,28 +2,6 @@
 
 @media (prefers-color-scheme: dark) {
 
-    :root {
-      --navbar-root-color--active: #1182C5!important;
-      --blockquote-border-color: #757b7f!important;
-      --sidebar-name-color: #1182C5!important;
-      --sidebar-nav-link-color--active: #1182C5!important;
-      --sidebar-nav-link-border-color--active: #1182C5!important;
-      --link-color: #1182C5!important;
-      --pagination-title-color: #1182C5!important;
-    }
-    
-    .markdown-section .button {
-      color: #222222;
-    }
-  
-    .markdown-section a.button {
-      color: #222222;
-    }
-  
-  }
-
-@media (prefers-color-scheme: dark) {
-
     #docsifythisurlbuilder {
         background: #224567;
     }
