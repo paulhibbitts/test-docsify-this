@@ -117,6 +117,9 @@
     // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
     var allowedDomains = '';
 
+    // Set darkmode to true to permanently enable dark mode support
+    var darkmode = false;
+
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
     // @param {*}      isTrue      Returns this variable if "name" found
@@ -564,8 +567,8 @@
               }
 
               if (getURLParameterByName('dark-mode')) {
-                darkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-                URLparms = URLparms + `&dark-mode=` + darkmode;
+                enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                URLparms = URLparms + `&dark-mode=` + enabledarkmode;
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
@@ -932,8 +935,8 @@
       }
 
       // Keep dark theme CSS files loaded if dark-mode parameter present
-      darkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-      if (darkmode === false) {
+      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
         var linkNode = document.querySelector('link[href*="dark.css"]');
