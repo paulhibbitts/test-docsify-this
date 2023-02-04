@@ -86,7 +86,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="darkModeEnabled" unchecked><label for="editdarkModeEnabledLinkTopCheck">Enable dark mode support (based on system-level OS settings)</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="darkModeEnabled" unchecked><label for="darkModeEnabled">Enable dark mode support (based on system-level OS settings)</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color for dark mode:</label><br># <input type="text" maxlength="6" size="6" value="1182C5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateDarkModeColorAndUpdatePreview()"/><span id="linkcolordarkmodepreview"></span></div>
 
