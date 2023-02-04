@@ -76,13 +76,19 @@ Page layout:
 </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview""></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color to:</label><br># <input type="text" maxlength="6" size="6" value="0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()"/><span id="linkcolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Set the text of the 'Edit this Page' link to:</label><br><input type="text" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hideCredits" unchecked><label for="hideCredits">Remove the Docsify-This credit text from bottom of page</label></div>
+
+<hr>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="darkModeEnabled" unchecked><label for="editdarkModeEnabledLinkTopCheck">Enable dark mode support (based on system-level OS settings)</label></div>
+
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Set the page link color for dark mode:</label><br># <input type="text" maxlength="6" size="6" value="1182C5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateDarkModeColorAndUpdatePreview()"/><span id="linkcolordarkmodepreview"></span></div>
 
 <hr>
 

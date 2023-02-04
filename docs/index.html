@@ -237,39 +237,56 @@
             var URLparms = URLparms + `&hide-credits=true`;
           }
 
-          const cb4 = document.querySelector('#narrowToC');
+          const cb4 = document.querySelector('#darkModeEnabled');
           if (cb4.checked) {
+            var URLparms = URLparms + `&dark-mode=true`;
+          }
+
+          var getColor = document.getElementById("linkcolordarkmode");
+          var hexCode = getColor.value;
+          if (cb4.checked) {
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+              getColor.value = hexCode;
+            }
+            if (!(hexCode == "1182C5")) {
+              URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+            }
+          } 
+          
+          const cb5 = document.querySelector('#narrowToC');
+          if (cb5.checked) {
             if (URLparms.includes("&toc=true")) {
               var URLparms = URLparms.replace("&toc=true", "");
               URLparms = URLparms + `&toc-narrow=true`;
             }
           }
 
-          const cb5 = document.querySelector('#toch1');
-          const cb6 = document.querySelector('#toch2');
-          const cb7 = document.querySelector('#toch3');
+          const cb6 = document.querySelector('#toch1');
+          const cb7 = document.querySelector('#toch2');
+          const cb8 = document.querySelector('#toch3');
           // console.log (cb5.checked,cb6.checked,cb7.checked );
           // console.log ( (!(cb5.checked) && (cb6.checked) && (cb7.checked)) );
           // console.log ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) === true );
 
           if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
-            if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
+            if (((cb6.checked === false) && (cb7.checked === false) && (cb8.checked === false))) {
               alert("At least one page Heading level for the Table of Contents must be selected.");
               return;
-            } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
+            } else if (!(!(cb6.checked) && (cb7.checked) && (!(cb8.checked)))) {
               if (URLparms.includes("&toc=true")) {
                 var ToCHeadings = "";
-                if (cb5.checked) {
+                if (cb6.checked) {
                   ToCHeadings = "h1";
                 }
-                if (cb6.checked) {
+                if (cb7.checked) {
                   if (ToCHeadings) {
                     ToCHeadings = ToCHeadings + ",h2";
                   } else {
                     ToCHeadings = "h2";
                   }
                 }
-                if (cb7.checked) {
+                if (cb8.checked) {
                   if (ToCHeadings) {
                     ToCHeadings = ToCHeadings + ",h3";
                   } else {
@@ -287,8 +304,8 @@
             URLparms = URLparms + `&maxLevel=` + maxLevel;
           }
 
-          const cb8 = document.querySelector('#hypothesis');
-          if (cb8.checked) {
+          const cb9 = document.querySelector('#hypothesis');
+          if (cb9.checked) {
             var URLparms = URLparms + `&hypothesis=true`;
           }
 
@@ -410,6 +427,30 @@
       document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
     }
 
+    function validateDarkModeColorAndUpdatePreview() {
+      var getColor = document.getElementById("linkcolordarkmode");
+      var hexCode = getColor.value;
+      var regExp = /[0-9A-Fa-f]{1}/g;
+      if (!(regExp.test(hexCode.slice(-1)))) {
+        // Last character entered was not a valid hexidecimal number, so supress it
+        document.getElementById("linkcolordarkmode").value = hexCode.slice(0, -1);
+      }
+      if (isHexadecimalColor(hexCode)) {
+        document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+      } else {
+        if (isHexadecimalColor(document.getElementById("linkcolordarkmode").value)) {
+          document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+        } else {
+          document.getElementById("linkcolordarkmodepreview").style.visibility = "hidden";
+        }
+      }
+      if (!(hexCode.charAt(0) == "#")) {
+        hexCode = '#' + hexCode;
+      }
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = hexCode;
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = hexCode;
+    }
+
     function isHexadecimalColor(str) {
       return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
     }
@@ -422,6 +463,9 @@
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
       document.getElementById("linkcolor").value = '0374B5';
+      document.getElementById("linkcolorpreview").style.visibility = "visible";
+      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("narrowToC").checked = false;
@@ -430,9 +474,11 @@
       document.getElementById("toch3").checked = false;
       document.getElementById("maxLevel").value = 2;
       document.getElementById("hideCredits").checked = false;
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
-      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      document.getElementById("darkModeEnabled").checked = false;
+      document.getElementById("linkcolordarkmode").value = '1182C5';
+      document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#1182C5';
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#1182C5';
       document.getElementById("hypothesis").checked = false;
     }
 
@@ -537,12 +583,17 @@
                 URLparms = URLparms + `&link-color=` + linkcolor;
               }
 
+              if (getURLParameterByName('dark-mode')) {
+                enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                URLparms = URLparms + `&dark-mode=` + enabledarkmode;
+              }
+
               if (getURLParameterByName('link-color-dark-mode')) {
                 linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
                 URLparms = URLparms + `&link-color-dark-mode=` + linkcolordarkmode;
               }
 
-              if (getURLParameterByName('edit-link-text')) {
+              if ((getURLParameterByName('edit-link-text')) && (getURLParameterByName('link-color-dark-mode'))) {
                 editlinktextparm = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
                 URLparms = URLparms + `&edit-link-text=` + editlinktextparm;
               }
@@ -568,11 +619,6 @@
               if (getURLParameterByName('maxLevel')) {
                 maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
                 URLparms = URLparms + `&maxLevel=` + maxLevel;
-              }
-
-              if (getURLParameterByName('dark-mode')) {
-                enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
-                URLparms = URLparms + `&dark-mode=` + enabledarkmode;
               }
 
               const links = Array.from(htmlElement.querySelectorAll('a'))
