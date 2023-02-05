@@ -589,6 +589,7 @@ span #docsifythisurlfield {
 }
 
 .docsifythisurlbuilderoptionsline {
+  clear: left;
   margin-top: 6px;
   vertical-align: middle;
 }
@@ -702,6 +703,15 @@ span #docsifythisurlfield {
       width: 100%;
       margin-top: 0px;
   }
+}
+
+#docsifythisurlbuilder .stackedlabeldropdown {
+  float: left;   
+  margin: 0 10px 10px 0px;
+}
+
+#docsifythisurlbuilder .stackedlabeldropdown label {
+  display: block;   
 }
 
 html {

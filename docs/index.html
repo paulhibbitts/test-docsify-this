@@ -299,7 +299,12 @@
 
           var getFontSize = document.getElementById('fontsize').value;
           if (!(getFontSize == "1.125")) {
-            var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+            var URLparms = URLparms + `&font-size=` + getFontSize;
+          }
+
+          var getLineHeight = document.getElementById('lineheight').value;
+          if (!(getLineHeight == "1.4")) {
+            var URLparms = URLparms + `&line-height=` + getLineHeight
           }
 
           var getColor = document.getElementById("linkcolor");
@@ -421,6 +426,7 @@
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
+      document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
@@ -529,7 +535,12 @@
 
               if (getURLParameterByName('font-size')) {
                 fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
-                URLparms = URLparms + `&font-size=` + fontsize + `rem`;
+                URLparms = URLparms + `&font-size=` + fontsize;
+              }
+
+              if (getURLParameterByName('line-height')) {
+                lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+                URLparms = URLparms + `&line-height=` + lineheight;
               }
 
               if (getURLParameterByName('link-color')) {
@@ -975,7 +986,7 @@
     }
   </script>
 
-  <!-- Check for fontfamily, fontsize, linkcolor and darkmode parameters  -->
+  <!-- Check for fontfamily, fontsize, lineheight, linkcolor and darkmode parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
       // Change body font if fontFamily parameter present
@@ -988,8 +999,14 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        fontsize = fontsize + "rem"
+        fontsize = fontsize + 'rem'
         document.documentElement.style.setProperty('--base-font-size', fontsize);
+      }
+
+      // Change line height if lineheight parameter present
+      lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+      if (!(lineheight === false)) {
+        document.documentElement.style.setProperty('--base-line-height', lineheight);
       }
 
       // Change link color if link-color parameter present
