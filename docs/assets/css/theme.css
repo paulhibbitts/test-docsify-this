@@ -714,14 +714,14 @@ span #docsifythisurlfield {
   display: block;   
 }
 
-html {
-  visibility: visible;
-  opacity: 1;
-}
-
 .sidebar-nav a, .sidebar nav a {
   overflow: visible;
   white-space: break-spaces;
+}
+
+html {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Dark mode colours for use with light + dark themes */
