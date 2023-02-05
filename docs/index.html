@@ -86,6 +86,7 @@
       --link-color: #0374B5;
 
       --pagination-title-color: #0374B5;
+
     }
   </style>
 
@@ -663,7 +664,7 @@
               });
 
             }
-            
+
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
               const newColorScheme = event.matches ? "dark" : "light";
               if (newColorScheme === "dark") {
@@ -999,7 +1000,7 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        fontsize = fontsize + 'rem'
+        fontsize = fontsize + 'rem';
         document.documentElement.style.setProperty('--base-font-size', fontsize);
       }
 
