@@ -664,14 +664,6 @@ span #docsifythisurlfield {
   margin-left: 4px;
 }
 
-#docsifythisurlbuilder #linkcolordarkmodepreview {
-  width: 30px;
-  border: solid 4px #1182C5;
-  background-color: #1182C5;
-  border-radius: 3px 3px 3px 3px;
-  margin-left: 4px;
-}
-
 #docsifythisurlbuilder input[type="number"] {
   width: 4em;
 }
