@@ -249,21 +249,11 @@
               hexCode = hexCode.substring(1);
               getColor.value = hexCode;
             }
-            if (!(hexCode == "1182C5") && cb4.checked) {
+            if (!(hexCode == "1182C5")) {
               URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
             }
           } 
           
-          var getColor = document.getElementById("linkcolor");
-          var hexCode = getColor.value;
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-            getColor.value = hexCode;
-          }
-          if (!(hexCode == "0374B5") || cb4.checked) {
-            URLparms = URLparms + `&link-color=` + hexCode;
-          }
-
           const cb5 = document.querySelector('#narrowToC');
           if (cb5.checked) {
             if (URLparms.includes("&toc=true")) {
@@ -327,6 +317,16 @@
           var getFontSize = document.getElementById('fontsize').value;
           if (!(getFontSize == "1.125")) {
             var URLparms = URLparms + `&font-size=` + getFontSize; + `rem`
+          }
+
+          var getColor = document.getElementById("linkcolor");
+          var hexCode = getColor.value;
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+            getColor.value = hexCode;
+          }
+          if (!(hexCode == "0374B5")) {
+            URLparms = URLparms + `&link-color=` + hexCode;
           }
 
           // console.log(lastSegment);
