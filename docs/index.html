@@ -597,6 +597,7 @@
                   lastSegment = link.getAttribute('href');
                   lastSegment = lastSegment.replace('#/', '');
                   lastSegment = lastSegment.replace('./', '');
+                  lastSegment = lastSegment.replace('.md', '');
                   // console.log(lastSegment);
                   // console.log(lastSegment.startsWith("?id"));
                   // Check to make sure link is not Docsify id anchor link
@@ -610,6 +611,7 @@
                         editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
+                        console.log(lastSegment);
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
                         // console.log(editThisPageLinkURLparm);
