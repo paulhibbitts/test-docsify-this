@@ -185,7 +185,7 @@ Docsify-This.net open and collaborative workflow using GitHub Markdown files
 </div>
 <div class="column">
 
-![Docsify-This.net workflow using Webserver Markdown files](images/docsify-this-webserver.png ':class=image-border-rounded')
+![Docsify-This.net workflow using Webserver Markdown files](images/docsify-this-webserver.png ':class=image-border-rounded' ':class=image-25')
 Docsify-This.net workflow using Webserver Markdown files
 </div>
 </div>
