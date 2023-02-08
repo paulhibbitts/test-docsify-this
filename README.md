@@ -16,8 +16,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-* [How it Works](#how-it-works)
-* [Example Usage Scenarios](#example-usage-scenarios)
+* [What Problem does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+* [How Docsify-This Works](#how-docsify-this-works)
 * [Example Workflow using GitHub Markdown Files](#example-usage-scenarios)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [More Docsify-This Markdown Examples](#more-docsify-this-markdown-examples)
@@ -33,7 +33,20 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ---
 
-### How it Works
+### What Problem does Docsify-This Solve?
+
+Docsify-This provides an easy on-ramp to pubishing [Markdown](https://www.markdownguide.org/basic-syntax/) content, with no website setup or build process required. Collaborative authoring using GitHub is also supported.
+
+With Docsify-This you can:
+
+* Quickly publish and share online Markdown files (incl. Open Educational Resources) as web pages
+* Share GitHub hosted Markdown files as web pages, with an optional 'Edit this Page' link automatically provided
+* Reuse Markdown software documentation in other contexts and platforms
+* Seamlessly embed constraint-free Markdown/HTML content into an LMS
+
+---
+
+### How Docsify-This Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the following format:
 
@@ -50,15 +63,6 @@ Looking for more of an overall introduction to Docsify-This? Check out [Markdown
 
 ---
 
-
-### Example Usage Scenarios
-
-* Quickly turn publicly available Markdown files (incl. Open Educational Resources) into Web pages
-* Share GitHub hosted Markdown files as Web pages, with an optional 'Edit this Page' link
-* Reuse Markdown software documentation in other contexts
-* Seamlessly embed constraint-free Markdown/HTML content into an LMS
-
----
 
 ### Example Content Workflows
 
