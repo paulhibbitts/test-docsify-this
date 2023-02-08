@@ -180,7 +180,7 @@ Looking for more of an overall introduction to Docsify-This? Check out [Markdown
 <div class="row">
 <div class="column">
 
-![Docsify-This.net open and collaborative workflow using GitHub Markdown files](images/docsify-this-gitHub.png ':class=image-border-rounded')  
+![Docsify-This.net open and collaborative workflow using GitHub Markdown files](images/docsify-this-gitHub.png ':class=image-border-rounded image-25')  
 Docsify-This.net open and collaborative workflow using GitHub Markdown files
 </div>
 <div class="column">
