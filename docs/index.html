@@ -323,9 +323,16 @@
           if (!(getLineHeight == "1.4")) {
             var URLparms = URLparms + `&line-height=` + getLineHeight
           }
-
+          
           var getColor = document.getElementById("linkcolor");
           var hexCode = getColor.value;
+          if (hexCode === '') {
+            hexCode = '0374B5';
+            document.getElementById("linkcolor").value = hexCode;
+            document.getElementById("linkcolorpreview").style.visibility = "visible";
+            document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+            document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+          }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
             getColor.value = hexCode;
