@@ -210,6 +210,9 @@
 
           var getPageTitle = document.getElementById("pageTitle");
           var pageTitle = getPageTitle.value;
+          if (pageTitle === '') {
+            document.getElementById("pageTitle").value = 'Published by Docsify-This';
+          }
           if (!(pageTitle == "Published by Docsify-This")) {
             pageTitle = encodeURI(pageTitle);
             URLparms = URLparms + `&title=` + pageTitle;
@@ -228,6 +231,9 @@
 
           var getEditThisPage = document.getElementById("editLinkText");
           var editlinktext = getEditThisPage.value;
+          if (editlinktext === '') {
+            document.getElementById("editLinkText").value = 'Edit this Page';
+          }
           if (!(editlinktext == "Edit this Page")) {
             editlinktext = editlinktext.replace(/ /g, '%20');
             URLparms = URLparms + `&edit-link-text=` + editlinktext;
@@ -291,6 +297,9 @@
 
           var getMaxLevel = document.getElementById("maxLevel");
           var maxLevel = getMaxLevel.value;
+          if (maxLevel === '') {
+            document.getElementById("maxLevel").value = 2;
+          }
           if (!(maxLevel == 2)) {
             URLparms = URLparms + `&maxLevel=` + maxLevel;
           }
