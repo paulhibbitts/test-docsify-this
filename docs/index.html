@@ -805,7 +805,7 @@
 
           // Invoked on each page load after new HTML has been appended to the DOM
           hook.doneEach(function () {
-            if (!(window.$docsify['basePath'])) {
+            if (window.$docsify['basePath']) {
               var hasEmbedly = document.getElementsByClassName('embedly-card');
               if (hasEmbedly.length > 0) {
                   // console.log("Load Embedly");
