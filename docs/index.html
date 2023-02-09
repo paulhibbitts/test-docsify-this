@@ -832,6 +832,15 @@
               document.body.appendChild(editCSS);
             }
 
+            // Change page title if title parameter present
+            pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
+            if (!(pageTitle === false)) {
+              // console.log(pageTitle);
+              document.title = pageTitle;
+            } else {
+              document.title = 'Published by Docsify-This';
+            }
+
           });
 
           hook.ready(function () {
@@ -1073,15 +1082,6 @@
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
-      }
-
-      // Change page title if title parameter present
-      pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-      if (!(pageTitle === false)) {
-        // console.log(pageTitle);
-        document.title = pageTitle;
-      } else {
-        document.title = 'Published by Docsify-This';
       }
 
     }
