@@ -576,6 +576,11 @@ span #docsifythisurlfield {
   overflow: hidden;
 }
 
+#pageTitle {
+  width: 50%;
+  min-width: 380px;
+}
+
 .docsifythisurlbuilderprimarybutton {
   cursor: pointer;
   color: white;

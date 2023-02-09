@@ -45,6 +45,8 @@ Page layout:
 
 </div>
 
+<div class="docsifythisurlbuilderoptionsline"><label>Page title (displayed on Browser tab):</label><br><input type="text" value="Published by Docsify-This" id="pageTitle" name="pageTitle" size="100px"></div>
+
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with public GitHub files (default location is bottom of page)</label></div>
 
 <div id="docsifythisurlbuildershowhidelink"><a name="toggleDivlink" href="#" onclick="toggleDiv(this); return false;">Show More Page Options &raquo;</a></div>

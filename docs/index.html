@@ -208,6 +208,13 @@
             var URLparms = `&toc=true`;
           }
 
+          var getPageTitle = document.getElementById("pageTitle");
+          var pageTitle = getPageTitle.value;
+          if (!(pageTitle == "Published by Docsify-This")) {
+            pageTitle = encodeURI(pageTitle);
+            URLparms = URLparms + `&title=` + pageTitle;
+          }
+
           const cb1 = document.querySelector('#editCheck');
           if (cb1.checked) {
             if (gitlinkPageURL) {
@@ -424,6 +431,7 @@
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
+      document.getElementById("pageTitle").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
