@@ -395,6 +395,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter (not included in the Web Page Builder), for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md
 
+**title**  
+Set a custom page title for your standalone pages with the optional **title** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=My%20Page. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
 ---
 
 ### Embedding Docsify-This Pages into Other Platforms
