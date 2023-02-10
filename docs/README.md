@@ -367,7 +367,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 **title**  
 Set a custom page title for your standalone pages with the optional **title** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=My%20Page. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
