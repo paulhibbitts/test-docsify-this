@@ -64,7 +64,6 @@ The appearance of rendered Markdown files can be customized by optional [URL par
 Looking for more of an overall introduction to Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/markdown-publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/markdown-publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
 ---
 
-
 ### Example Content Workflows
 
 <div class="row">
