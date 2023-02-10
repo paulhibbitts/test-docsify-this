@@ -762,6 +762,11 @@ html {
       color: white;
   }
 
+  #pageTitle {
+    background-color: #273338;
+    color: white;
+  }
+
   .docsifythisurlbuilderprimarybutton {
       color: black;
       background-color: #4bc3f4;
@@ -779,6 +784,16 @@ html {
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
       color: #4bc3f4;
+  }
+
+  #linkcolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #editLinkText {
+    background-color: #273338;
+    color: white;
   }
 
 }
