@@ -82,24 +82,6 @@ _Docsify-This.net workflow using Webserver Markdown files._
 </div>
 </div>
 
-<table>
-  <tr>
-    <td valign="top"><img src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-gitHub.png"></td>
-    <td valign="top"><img src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-webserver.png"></td>
-  </tr>
-  <tr>
-    <td>Docsify-This.net open and collaborative workflow using GitHub Markdown files.</td>
-    <td>Docsify-This.net workflow using Webserver Markdown files.</td>
-  </tr>
- </table>
-
-<p float="left">
-  <img alt="Docsify-This.net open and collaborative workflow using GitHub Markdown files" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-gitHub.png" width="49%">
-  <br>Docsify-This.net open and collaborative workflow using GitHub Markdown files.
-  <img alt="Docsify-This.net workflow using Webserver Markdown files" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-webserver.png" width="49%"><br>Docsify-This.net workflow using Webserver Markdown files
-</p>
-
-
 ---
 
 ### Ready-to-Use Docsify-This Markdown Templates
