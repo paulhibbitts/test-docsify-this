@@ -82,23 +82,6 @@ _Docsify-This.net workflow using Webserver Markdown files._
 </div>
 </div>
 
-<table><tr>
-<td> 
-  <p align="center" style="padding: 10px">
-    <img alt="Forwarding" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-gitHub.png" width="49%">
-    <br>
-    <em>Docsify-This.net open and collaborative workflow using GitHub Markdown files.</em>
-  </p> 
-</td>
-<td> 
-  <p align="center">
-    <img alt="Routing" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-webserver.png" width="49%">
-    <br>
-    <em>Docsify-This.net workflow using Webserver Markdown files.</em>
-  </p> 
-</td>
-</tr></table>
-
 ---
 
 ### Ready-to-Use Docsify-This Markdown Templates
