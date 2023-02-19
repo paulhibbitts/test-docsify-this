@@ -145,11 +145,13 @@ Multiple Page Site [home.md](https://github.com/paulhibbitts/docsify-this-multip
 
 [A Collection of Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within a Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
-[Markdown Content Demo file](https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/markdown-content-demo/main&edit-link=https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md#/).  
+[GitHub Markdown Content Demo file](https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/markdown-content-demo/main&edit-link=https://github.com/paulhibbitts/markdown-content-demo/blob/main/README.md#/).  
+
+[Codeberg Markdown Content Demo file](https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.codeberg.page/paulhibbitts/markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/markdown-content-demo/src/branch/main/README.md#/).  
 
 [GitHub's LaTeX Support Examples Markdown file](https://github.com/dotcom-poland/medium-latex-support/blob/main/README.md), displayed by Docsify-This as a [Standalone Page with Table of Contents](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/dotcom-poland/medium-latex-support/main&toc=true).
 
-[Mermaid-Docsify Example Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
+[Mermaid-Docsify Example GitHub Markdown file](https://github.com/Leward/mermaid-docsify/blob/master/example/README.md), displayed by Docsify-This as a [Standalone Page with an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/Leward/mermaid-docsify/master/example&edit-link=https://github.com/Leward/mermaid-docsify/blob/master/example/README.md#/).  
 
 ---
 
@@ -220,19 +222,19 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 The following URL parameters are available but not included in the Web Page Builder.
 
 **dark-mode**  
-Automatically switch light/dark theme based on system OS-level preference (not included in the Web Page Builder), for example:  
+Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
 **link-color-dark-mode**  
-Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter (not included in the Web Page Builder), for example:  
+Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E
 
 **loadFooter**  
-Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter (not included in the Web Page Builder), for example:  
+Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
 
 **loadNavbar**  
-Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter (not included in the Web Page Builder), for example:  
+Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md  
 
 ---
@@ -245,7 +247,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 iFrame code example, including URL parameters to seamlessly match Docsify-This content to Canvas:  
 
 ```html
-<p><iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;" src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,%20Arial,sans-serif&font-size=1&hide-credits=true" width="800px" height="1400px" allowfullscreen="allowfullscreen"></iframe></p>
+<p><iframe style="overflow: hidden; border: 0px #ffffff none; background: #ffffff;" src="https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=home.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=1&hide-credits=true" width="800px" height="1400px" allowfullscreen="allowfullscreen"></iframe></p>
 ```
 
 [How do I add an external URL as a module item?](https://community.canvaslms.com/t5/Instructor-Guide/How-do-I-add-an-external-URL-as-a-module-item/ta-p/967)  
