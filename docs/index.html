@@ -194,14 +194,17 @@
             gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
           } else if (url.includes("codeberg.org")) {
             var gitlinkPageURL = url;
-            url = url.replace('codeberg.org', 'raw.codeberg.page');
+            gitlinkPageURL = gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, '/src');
+            url = url.replace(/\/raw/, '');
             url = url.replace(/\/src/, '');
             url = url.replace(/\/branch/, '');
             url = url.replace(/\/main/, '');
             url = url.replace(/\/master/, '');
+            url = url.replace('codeberg.org', 'raw.codeberg.page');
           } else if (url.includes("codeberg.page")) {
             // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
-            var gitlinkPageURL = '';
+            alert("Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md').");
+              return;
           } else {
             var gitlinkPageURL = '';
           }
@@ -333,7 +336,7 @@
           if (!(getLineHeight == "1.4")) {
             var URLparms = URLparms + `&line-height=` + getLineHeight
           }
-          
+
           var getColor = document.getElementById("linkcolor");
           var hexCode = getColor.value;
           if (hexCode === '') {
@@ -650,19 +653,20 @@
                         editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
                         editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
                         editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
-                        console.log(lastSegment);
+                        //console.log(lastSegment);
                         editThisPageLink = editThisPageLink + '/' + lastSegment + '.md'
                         editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
                         // console.log(editThisPageLinkURLparm);
                       }
                       if (currentBasePath.includes("codeberg.page")) {
+                        //console.log(currentBasePath);
                         var editThisPageLink = '';
                         editThisPageLink = decodeURIComponent(currentBasePath);
                         editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
-                        console.log(lastSegment);
-                        editThisPageLink = editThisPageLink + 'src/branch/main/' + lastSegment + '.md'
+                        //console.log(lastSegment);
+                        editThisPageLink = editThisPageLink + '/src/branch/main/' + lastSegment + '.md'
                         editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
-                        // console.log(editThisPageLinkURLparm);
+                        //console.log(editThisPageLinkURLparm);
                       }
                     }
                     // Update Markdown file link
@@ -802,6 +806,7 @@
                   url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
                 }
                 if (gitLinkRepoURL.includes("codeberg.org") || gitLinkRepoURL.includes("codeberg.pages")) {
+                  gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, '/src');
                   url = gitLinkRepoURL + vm.route.file
                 }
               }
