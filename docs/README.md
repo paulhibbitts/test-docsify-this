@@ -540,7 +540,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 ### Font Awesome Icons
 
-The display of [Font Awesome Free](https://fontawesome.com/icons) icons from within Markdown content is supported with the following format:
+The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
 
 `:fas fa-home fa-fw:` (equivalent HTML markup would be `<i class="fas fa-home fa-fw"></i>`)
 
