@@ -568,26 +568,32 @@ body .docsify-pagination-container {
    }
 
    .markdown-section blockquote h1, .markdown-section .alert h1 {
-     line-height: 1.45rem;
+    font-size: 1.35rem;
+    line-height: 1.45rem;
    }
 
    .markdown-section blockquote h2, .markdown-section .alert  h2 {
+    font-size: 1.25rem;
     line-height: 1.35rem;
    }
 
    .markdown-section blockquote h3, .markdown-section .alert  h3 {
+    font-size: 1.2rem;
     line-height: 1.3rem;
    }
 
    .markdown-section blockquote h4, .markdown-section .alert  h4 {
+    font-size: 1.10rem;
     line-height: 1.15rem;
    }
 
    .markdown-section blockquote h5, .markdown-section .alert  h5 {
+    font-size: 1.05rem;
     line-height: 1.1rem;
    }
 
    .markdown-section blockquote h6, .markdown-section .alert  h6 {
+    font-size: 1rem;
     line-height: 1rem;
    }
 
