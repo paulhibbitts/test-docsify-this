@@ -55,7 +55,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">
 
-<div class="docsifythisurlbuilderoptionsline"><label>Title on Browser tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="titleBrowserTab" name="titleBrowserTab"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
   <div class='stackedlabeldropdown'>
       <label for="select1">Page font family:</label>
