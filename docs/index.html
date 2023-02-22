@@ -220,14 +220,14 @@
             var URLparms = `&toc=true`;
           }
 
-          var getPageTitle = document.getElementById("pageTitle");
-          var pageTitle = getPageTitle.value;
-          if (pageTitle === '') {
+          var getTitleBrowserTab = document.getElementById("titleBrowserTab");
+          var titleBrowserTab = getTitleBrowserTab.value;
+          if (titleBrowserTab === '') {
             document.getElementById("pageTitle").value = 'Published by Docsify-This';
           }
-          if (!(pageTitle == "Published by Docsify-This")) {
-            pageTitle = encodeURI(pageTitle);
-            URLparms = URLparms + `&title=` + pageTitle;
+          if (!(titleBrowserTab == "Published by Docsify-This")) {
+            titleBrowserTab = encodeURI(titleBrowserTab);
+            URLparms = URLparms + `&title-browser-tab=` + titleBrowserTab;
           }
 
           const cb1 = document.querySelector('#editCheck');
@@ -459,7 +459,7 @@
       document.getElementById("stylecontentonly").checked = true;
       document.getElementById("styletoc").checked = false;
       document.getElementById("stylesidebar").checked = false;
-      document.getElementById("pageTitle").value = 'Published by Docsify-This';
+      document.getElementById("titleBrowserTab").value = 'Published by Docsify-This';
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
@@ -565,9 +565,14 @@
                 URLparms = URLparms + `&toc-headings=` + ToCHeadings;
               }
 
-              if (getURLParameterByName('title')) {
-                pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-                URLparms = URLparms + `&title=` + pageTitle;
+              if (getURLParameterByName('title-browser-tab')) {
+                titleBrowserTab = getURLParameterByName('title-browser-tab', null, null, window.location.href, true);
+                URLparms = URLparms + `&'title-browser-tab=` + titleBrowserTab;
+              }
+
+              if (getURLParameterByName('title-page')) {
+                titlePage = getURLParameterByName('title-page', null, null, window.location.href, true);
+                URLparms = URLparms + `&'title-page=` + titlePage;
               }
 
               if (getURLParameterByName('font-family')) {
@@ -777,6 +782,7 @@
               }
             });
 
+            console.log(htmlElement.innerHTML);
             next(htmlElement.innerHTML);
             } else {
               next(html);
@@ -888,14 +894,25 @@
                 document.body.appendChild(editCSS);
               }
 
-              // Change page title if title parameter present
-              pageTitle = getURLParameterByName('title', null, null, window.location.href, true);
-              if (!(pageTitle === false)) {
-                // console.log(pageTitle);
-                document.title = pageTitle;
+              // Change browser title if browser tab title parameter present
+              titleBrowserTab = getURLParameterByName('title-browser-tab', null, null, window.location.href, true);
+              if (!(titleBrowserTab === false)) {
+                // console.log(titleBrowserTab);
+                document.title = titleBrowserTab;
               } else {
                 document.title = 'Published by Docsify-This';
               }
+
+              // Change page title if page title parameter present
+              titlePage = getURLParameterByName('title-page', null, null, window.location.href, true);
+              if (!(titlePage === false)) {
+                // console.log(pageTitle);
+                var newh1 = document.createElement("h1");
+                newh1.innerHTML = titlePage
+                var divToMoveTo = document.getElementById("main");
+                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);   
+              }
+
             }
           });
 

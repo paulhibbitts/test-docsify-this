@@ -202,9 +202,9 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true 
 
-**title**  
-Set a custom page title on Browser tab for your standalone pages with the optional **title** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+**title-browser-tab**  
+Set a custom title on Browser tab for your standalone pages with the optional **title-browser-tab** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&title-browser-tab=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 **toc**  
 Display a page table of contents with the optional **toc** parameter, for example:  
@@ -237,6 +237,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 **loadNavbar**  
 Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md  
+
+**title-page**  
+Set a custom page title at the top of your standalone pages with the optional **title-page** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/blog-hibbitts-design-org/master/pages/01.posts/2022-09-01-docsify-this-v1-released&homepage=item.md&title-page=Docsify-This%20v1.0%20Released. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ---
 
