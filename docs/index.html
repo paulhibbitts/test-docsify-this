@@ -620,7 +620,8 @@
               }
 
               if (getURLParameterByName('hypothesis')) {
-                URLparms = URLparms + `&hypothesis=true`;
+                console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === true);
+                URLparms = URLparms + `&hypothesis=` + getURLParameterByName('hypothesis', true, false, window.location.href, true);
               }
 
               if (getURLParameterByName('maxLevel')) {
