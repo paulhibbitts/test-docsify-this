@@ -549,15 +549,15 @@
               var editThisPageLinkURLparm = ''
 
               if (getURLParameterByName('sidebar')) {
-                URLparms = URLparms + `&sidebar=` + getURLParameterByName('sidebar', true, false, window.location.href, true);
+                URLparms = URLparms + `&sidebar=` + getURLParameterByName('sidebar', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('toc')) {
-                URLparms = URLparms + `&toc=` + getURLParameterByName('toc', true, false, window.location.href, true);
+                URLparms = URLparms + `&toc=` + getURLParameterByName('toc', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('toc-narrow')) {
-                URLparms = URLparms + `&toc-narrow=` + getURLParameterByName('toc-narrow', true, false, window.location.href, true);
+                URLparms = URLparms + `&toc-narrow=` + getURLParameterByName('toc-narrow', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('toc-headings')) {
@@ -597,7 +597,7 @@
               }
 
               if (getURLParameterByName('edit-link-top')) {
-                URLparms = URLparms + `&edit-link-top=` + getURLParameterByName('edit-link-top', true, false, window.location.href, true);
+                URLparms = URLparms + `&edit-link-top=` + getURLParameterByName('edit-link-top', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('loadNavbar')) {
@@ -609,7 +609,7 @@
               }
 
               if (getURLParameterByName('hypothesis')) {
-                URLparms = URLparms + `&hypothesis=` + getURLParameterByName('hypothesis', true, false, window.location.href, true);
+                URLparms = URLparms + `&hypothesis=` + getURLParameterByName('hypothesis', null, null, window.location.href, true);
               }
 
               if (getURLParameterByName('maxLevel')) {
@@ -1052,7 +1052,7 @@
   <!-- Optionally enable Hypothesis -->
   <script>
     console.log(getURLParameterByName('hypothesis'));
-    console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === true);
+    console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === true);
     console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true');
     if (getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
