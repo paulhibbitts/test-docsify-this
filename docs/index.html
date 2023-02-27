@@ -681,13 +681,13 @@
                 }
               }
 
-            /* JS to change Embedly cards to light or dark theme based on system theme (uncomment to use) */
+            /* JS to change Embedly cards to light or dark theme based on system theme */
             const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
             if (!(embeds.length === 0)) {
                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)  {
                   // dark mode
                   // console.log("dark");
-                  enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+                  enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
                   if (enabledarkmode || darkmode) {
                     embeds.forEach(embed => {
                       embed.setAttribute('data-card-theme', 'dark');
@@ -712,7 +712,7 @@
 
             window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
               const newColorScheme = event.matches ? "dark" : "light";
-              enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+              enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
               if (newColorScheme === "dark" && (enabledarkmode || darkmode)) {
                 // dark mode
                 linkcolordarkmode = getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
@@ -1140,8 +1140,8 @@
         }
       }
 
-      // Keep dark theme CSS files loaded if dark-mode parameter present
-      enabledarkmode = getURLParameterByName('dark-mode', null, null, window.location.href, true);
+      // Keep dark theme CSS files loaded if dark-mode parameter is true
+      enabledarkmode = getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
         var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
         linkNode.parentNode.removeChild(linkNode);
