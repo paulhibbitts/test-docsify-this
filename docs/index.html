@@ -1051,9 +1051,9 @@
 
   <!-- Optionally enable Hypothesis -->
   <script>
-    console.log(getURLParameterByName('hypothesis'));
-    console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === true);
-    console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true');
+    // console.log(getURLParameterByName('hypothesis'));
+    // console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === true);
+    // console.log(getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true');
     if (getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
     }
