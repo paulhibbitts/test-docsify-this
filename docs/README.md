@@ -390,8 +390,12 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 The following URL parameters are available but not included in the Web Page Builder.
 
+**coverpage**  
+Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&coverpage=_coverpage.md
+
 **dark-mode**  
-Automatically switch light/dark theme based on system OS-level preference (not included in the Web Page Builder), for example:  
+Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
 **header-weight**  
@@ -403,11 +407,11 @@ Set a custom color for all links in dark mode, defined using the standard hexade
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
 
 **loadFooter**  
-Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter (not included in the Web Page Builder), for example:  
+Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadFooter=_footer.md
 
 **loadNavbar**  
-Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter (not included in the Web Page Builder), for example:  
+Load a Docsify navbar from the Markdown file passed with the optional **loadNavbar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&loadNavbar=_navbar.md
 
 **page-title**  
