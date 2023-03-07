@@ -223,6 +223,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 The following URL parameters are available but not included in the Web Page Builder.
 
+**coverpage**  
+Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&coverpage=_coverpage.md
+
 **dark-mode**  
 Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
