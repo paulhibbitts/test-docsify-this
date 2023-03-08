@@ -1073,9 +1073,29 @@
     }
   </script>
 
-  <!-- Check for headerweight, fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
+  <!-- Check for coverpage-color, coverpage-link-color, headerweight, fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters  -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
+
+      // Change coverpage color if coverpagecolor parameter present
+      coverpagecolor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
+      if (!(coverpagecolor === false)) {
+        coverpagecolor = '#' + coverpagecolor;
+        // console.log(coverpagecolor);
+        document.documentElement.style.setProperty('--cover-background-color', coverpagecolor);
+      }
+
+      // Change coverpage link color if coverpagelink color parameter present
+      coverpagelinkcolor = getURLParameterByName('coverpage-link-color', null, null, window.location.href, true);
+      if (!(coverpagelinkcolor === false)) {
+        coverpagelinkcolor = '#' + coverpagelinkcolor;
+        // console.log(coverpagelinkcolor);
+        document.documentElement.style.setProperty('--cover-link-color', coverpagelinkcolor);
+        document.documentElement.style.setProperty('--cover-button-primary-background', coverpagelinkcolor);
+        document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + coverpagelinkcolor);
+        document.documentElement.style.setProperty('--cover-button-color', coverpagelinkcolor);
+        document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + coverpagelinkcolor);
+      }
 
       // Change header weight if headerweight parameter present
       headerweight = getURLParameterByName('header-weight', null, null, window.location.href, true);
