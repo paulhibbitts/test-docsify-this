@@ -399,7 +399,7 @@ Set a custom color for the coverpage with the optional **coverpage-color** param
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-color=cc0000
 
 **coverpage-link-color**  
-Set a custom color for all coverpage links, with the  optional **coverpage-link-colo** parameter, for example:  
+Set a custom color for all coverpage links, with the  optional **coverpage-link-color** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-link-color=cc0000
 
 **dark-mode**  
