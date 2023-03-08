@@ -398,9 +398,9 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Set a custom color for the coverpage with the optional **coverpage-color** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-color=cc0000
 
-**coverpage-link-color**  
-Set a custom color for all coverpage links, with the  optional **coverpage-link-color** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&coverpage-link-color=cc0000
+**coverpage-color-dark-mode**  
+Set a custom color for the coverpage in dark mode with the  optional **coverpage-color-dark-mode** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&coverpage=_coverpage.md&dark-mode=true&coverpage-color-dark-mode=4d0000
 
 **dark-mode**  
 Automatically switch light/dark theme based on system OS-level preference, for example:  
