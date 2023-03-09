@@ -497,73 +497,95 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitt
 
 ### Supported Markdown CSS Classes
 
+* [badge](/?id=badge)
+* [banner-image](/?id=banner-image)
+* [banner-tall-image](/?id=banner-tall-image)
+* [button](/?id=button)
+* [embedly-card](/?id=embedly-card)
+* [header-image-fade](/?id=header-image-fade)
+* [header-image-full-width](/?id=header-image-full-width)
+* [image-75/image-50/image-25](/?id=image-75image-50image-25)
+* [image-75-border/image-50-border/image-25-border](/?id=image-75-borderimage-50-borderimage-25-border)
+* [image-border](/?id=image-border)
+* [image-border-rounded](/?id=image-border-rounded)
+* [row/column](/?id=rowcolumn)
+* [video-container-4by3](/?id=video-container-4by3)
+* [video-container-16by9](/?id=video-container-16by9)
+
 #### Badge
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
-`banner-image` (cropped to height of 250px on large screens, 125px on small screens)  
+#### banner-image
+Cropped to height of 250px on large screens, 125px on small screens.  
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-image')
 ```
 
-`banner-tall-image` (cropped to height of 350px on large screens, 175px on small screens)  
+#### banner-tall-image
+Cropped to height of 350px on large screens, 175px on small screens.   
 
 ```markdown
 ![UX - User Experience](images/12650723674_d5c85af332_k.jpg ':class=banner-tall-image')
 ```
 
-`button`  
+#### button
 
 ```markdown
 [Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button')
 ```
 
-`embedly-card` (for linked article previews, embedded slides/videos, etc.)  
+#### embedly-card
+For linked article previews, embedded slides/videos, etc.  
 
 ```markdown
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
-`header-image-fade` (suggested width of 1200px to 2000px)  
+#### header-image-fade
+Suggested width of 1200px to 2000px.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=header-image-fade')
 ```
 
-`header-image-full-width` (suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available)  
+#### header-image-full-width
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents is not available.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=header-image')
 ```
 
-`image-75`, `image-50` and `image-25` (scale images to %)
+#### image-75/image-50/image-25
+Scale images to %.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-75')
 ```
 
-`image-75-border`, `image-50-border` and `image-25-border` (scale images with border to %)
+#### image-75-border/image-50-border/image-25-border
+Scale images with border to %.  
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-75-border')
 ```
 
-`image-border`
+#### image-border
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-border')
 ```
 
-`image-border-rounded`
+#### image-border-rounded
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
 ```
 
-`row` & `column`  
+#### row/column
 
 ```html
 <div class="row">
@@ -580,13 +602,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ```
 
-`video-container-4by3`  
+#### video-container-4by3
 
 ```html
 <div class="video-container-4by3"><div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
 
-`video-container-16by9`  
+#### video-container-16by9
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
