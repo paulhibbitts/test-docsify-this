@@ -285,6 +285,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
 ---
 
 ### Embedding Docsify-This Pages into Other Platforms
@@ -444,7 +445,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ```html
 <div class="video-container-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/lJIrF4YjHfQ"></iframe></div>
 ```
-
 
 ---
 
