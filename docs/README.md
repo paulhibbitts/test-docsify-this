@@ -1,10 +1,10 @@
 <div id="docsifythis">
 
 <div class="docsifythisheader">
-    <div class="logoandtext">
-        <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
-        <h1>Docsify&#8288;&#8211;&#8288;This</h1>
-    </div>
+  <div class="logoandtext">
+    <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
+    <h1>Docsify&#8288;&#8211;&#8288;This</h1>
+  </div>
 </div>
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
@@ -736,6 +736,6 @@ This [open source project](https://github.com/hibbitts-design/docsify-this) is b
 **🙇🏻‍♂️Special Thanks**  
 [Beau Shaw](https://github.com/DaddyWarbucks) for his [Remote Docsify](https://github.com/DaddyWarbucks/remote-docsify) example.  
 [Alan Levine](https://github.com/cogdog) for the inspiration of a consolidated ReadMe collection.  
-[Milad Fakurian](https://unsplash.com/@fakurian) on [Unsplash](https://unsplash.com/photos/CN2FEPXERRI) for the header image.  
+
 
 </div>
