@@ -610,7 +610,7 @@ body .docsify-pagination-container {
   display: inline;
   vertical-align: middle;
   line-height: 45px;
-  color:#7a7a7a;
+  color:#6a6a6a;
 }
 
 #docsifythis .docsifythisheader img {
@@ -687,7 +687,7 @@ body .docsify-pagination-container {
 }
 
 #docsifythisurlbuilder h2 {
-  color: #0d54a5;
+  color: #2462ae;
 }
 
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
