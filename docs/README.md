@@ -2,7 +2,7 @@
 
 <div class="docsifythisheader">
     <div class="logoandtext">
-        <img src='../images/icon.svg' />
+        <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
         <h1>Docsify&#8288;&#8211;&#8288;This</h1>
     </div>
 </div>
