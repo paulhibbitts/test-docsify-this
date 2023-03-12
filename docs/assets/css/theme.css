@@ -595,6 +595,10 @@ body .docsify-pagination-container {
 
 /* DOCSIFY THIS */
 
+#docsifythis .docsifythisheader .logoandtext {
+  margin-bottom: 18px;
+}
+
 #docsifythis .docsifythisheader .logoandtext img {
   float: left;
 }
