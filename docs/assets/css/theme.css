@@ -893,7 +893,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
 
-  #docsifythis .docsifythisheader h1 {
+  #docsifythis .docsifythisheader .logoandtext  h1 {
     color: #A6A6A6;
   }
   
