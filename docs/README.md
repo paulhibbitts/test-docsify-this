@@ -1,13 +1,13 @@
 <div id="docsifythis">
 
-<div class="docsifythisimagebanner">
-  <img class="background-image" src="images/milad-fakurian-CN2FEPXERRI-unsplash.jpg"  alt="3D Render by Milad Fakurian on Unsplash">
-  <div class="overlay">
-    <h1><b>Docsify-This</b></h1>
-  </div>
+<div class="docsifythisheader">
+    <div class="logoandtext">
+        <img src='../images/icon.svg' />
+        <h1>Docsify&#8288;&#8211;&#8288;This</h1>
+    </div>
 </div>
 
-<h1><strong>Instantly Turn Online Markdown Files into Web Pages</strong></h1>
+<h1>Instantly Turn Online Markdown Files into Web Pages</h1>
 
 This [open-source web app](https://github.com/hibbitts-design/docsify-this), built with the magical documentation site generator [Docsify](https://docsify.js.org), provides a quick way to publish one or more online Markdown files as standalone web pages without needing to setup your own website. All you need is a publicly available Markdown file and pass that URL to docsify-this.net. Try it out below!
 
