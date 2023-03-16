@@ -43,6 +43,10 @@
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" /> -->
   <link rel="stylesheet" href="assets/vendor/katex/katex.min.css" />
 
+  <!-- Coloris -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"/>
+  <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+
   <style>
     :root {
 
@@ -340,15 +344,15 @@
           var getColor = document.getElementById("linkcolor");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '0374B5';
-            document.getElementById("linkcolor").value = hexCode;
-            document.getElementById("linkcolorpreview").style.visibility = "visible";
-            document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-            document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+            hexCode = '#0374B5';
+            // document.getElementById("linkcolor").value = hexCode;
+            // document.getElementById("linkcolorpreview").style.visibility = "visible";
+            // document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+            // document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
           }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
-            getColor.value = hexCode;
+            // getColor.value = hexCode;
           }
           if (!(hexCode == "0374B5")) {
             URLparms = URLparms + `&link-color=` + hexCode;
@@ -428,13 +432,14 @@
       }
     }
 
+    /*
     function validateColorAndUpdatePreview() {
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
       var regExp = /[0-9A-Fa-f]{1}/g;
       if (!(regExp.test(hexCode.slice(-1)))) {
         // Last character entered was not a valid hexidecimal number, so supress it
-        document.getElementById("linkcolor").value = hexCode.slice(0, -1);
+        // document.getElementById("linkcolor").value = hexCode.slice(0, -1);
       }
       if (isHexadecimalColor(hexCode)) {
         document.getElementById("linkcolorpreview").style.visibility = "visible";
@@ -455,6 +460,7 @@
     function isHexadecimalColor(str) {
       return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
     }
+    */
 
     function restoreAllDefaults() {
       document.getElementById("stylecontentonly").checked = true;
@@ -465,7 +471,7 @@
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '1.125';
       document.getElementById("lineheight").value = '1.4';
-      document.getElementById("linkcolor").value = '0374B5';
+      document.getElementById("linkcolor").value = '#0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("narrowToC").checked = false;
@@ -474,9 +480,9 @@
       document.getElementById("toch3").checked = false;
       document.getElementById("maxLevel").value = 2;
       document.getElementById("hideCredits").checked = false;
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
-      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+      // document.getElementById("linkcolorpreview").style.visibility = "visible";
+      // document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+      // document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
       document.getElementById("hypothesisenable").checked = false;
     }
 
