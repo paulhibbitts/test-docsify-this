@@ -25,7 +25,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Markdown Syntax References](#markdown-syntax-references)
 * [Supported Markdown CSS Classes](#supported-markdown-css-classes)
-* [Custom Markdown CSS Classes](#supported-markdown-css-classes)
+* [Custom Markdown CSS Classes](#custom-markdown-css-classes)
 * [Font Awesome Icons](#font-awesome-icons)
 * [Tips and Techniques](#tips-and-techniques)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
