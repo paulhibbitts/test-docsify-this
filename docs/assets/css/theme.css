@@ -888,6 +888,23 @@ span #docsifythisurlfield {
   display: none;
 }
 
+#docsifythis .navbarbutton {
+  cursor: pointer;
+  color: #FFFFFF;
+  height: auto;
+  display: inline-block;
+  /* border: 1px solid #0460cd; */
+  border-radius: 4rem;
+  padding: 4px 14px 4px 14px;
+  margin-left: 6px;
+  font-size: .8rem;
+  line-height: .9rem;
+  background-color: #6a6a6a;
+  font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 480px) {
 
   #docsifythis .docsifythisheader .logoandtext h1 {
@@ -909,6 +926,11 @@ html {
 /* Dark mode colours for use with light + dark themes */
 
 @media (prefers-color-scheme: dark) {
+
+  #docsifythis .navbarbutton {
+    color: #6a6a6a;
+    background-color: #EEEEEE;
+  }
 
   #docsifythis .docsifythisheader .logoandtext  h1 {
     color: #A6A6A6;

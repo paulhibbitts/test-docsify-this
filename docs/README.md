@@ -1,10 +1,13 @@
 <div id="docsifythis">
 
 <div class="docsifythisheader">
+<div style="text-align:right;"><a class="navbarbutton" href="http://publishing.docsify-this.net" target="_blank">Publishing with Docsify-This Guide</a><a class="navbarbutton" href="https://github.com/hibbitts-design/docsify-this" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a></div>
   <div class="logoandtext">
     <img src='https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/icon.svg' />
     <h1>Docsify&#8288;&#8211;&#8288;This</h1>
   </div>
+  
+ 
 </div>
 
 <h1>Instantly Turn Online Markdown Files into Web Pages</h1>
