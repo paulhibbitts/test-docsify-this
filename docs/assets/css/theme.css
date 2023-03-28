@@ -888,7 +888,7 @@ span #docsifythisurlfield {
   display: none;
 }
 
-#docsifythis .navbarbutton {
+#docsifythis .navbarpill {
   cursor: pointer;
   color: #6a6a6a;
   height: auto;
@@ -927,7 +927,7 @@ html {
 
 @media (prefers-color-scheme: dark) {
 
-  #docsifythis .navbarbutton {
+  #docsifythis .navbarpill {
     color: #FFFFFF;
     border: 1px solid #6a6a6a;
     background-color: #6a6a6a;
