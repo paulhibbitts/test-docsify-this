@@ -890,16 +890,16 @@ span #docsifythisurlfield {
 
 #docsifythis .navbarbutton {
   cursor: pointer;
-  color: #FFFFFF;
+  color: #6a6a6a;
   height: auto;
   display: inline-block;
-  /* border: 1px solid #0460cd; */
+  border: 1px solid #6a6a6a;
   border-radius: 4rem;
   padding: 4px 14px 4px 14px;
   margin-left: 6px;
   font-size: .8rem;
   line-height: .9rem;
-  background-color: #6a6a6a;
+  background-color: #FFFFFF;
   font-family: -apple-system, "Segoe UI", "Helvetica Neue", sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -928,8 +928,9 @@ html {
 @media (prefers-color-scheme: dark) {
 
   #docsifythis .navbarbutton {
-    color: #6a6a6a;
-    background-color: #EEEEEE;
+    color: #FFFFFF;
+    border: 1px solid #6a6a6a;
+    background-color: #6a6a6a;
   }
 
   #docsifythis .docsifythisheader .logoandtext  h1 {
