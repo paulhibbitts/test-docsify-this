@@ -717,7 +717,7 @@ https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/
 
 ##### show-page-options
 ```html
-https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&show-page-options=true
+https://paulhibbitts.github.io/test-docsify-this?show-page-options=true
 ```
 
 ---
