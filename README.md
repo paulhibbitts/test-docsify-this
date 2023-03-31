@@ -538,17 +538,17 @@ https://paulhibbitts.github.io/test-docsify-this?url-field=empty
 
 ```
 
-##### toc
+##### toc-layout
 ```html
 
-https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc=true
+https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc-layout=true
 
 ```
 
-##### sidebar
+##### sidebar-layout
 ```html
 
-https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar=true
+https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&sidebar-layout=true
 
 ```
 
