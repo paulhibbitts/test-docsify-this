@@ -530,6 +530,10 @@ You can change the default values of the Docsify-This Web Page Builder via URL p
 https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
 ```
 
+```html
+https://paulhibbitts.github.io/test-docsify-this?url-field=empty
+```
+
 ##### toc
 ```html
 https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&toc=true
