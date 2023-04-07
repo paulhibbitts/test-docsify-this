@@ -520,7 +520,7 @@
             document.documentElement.style.setProperty('--cover-button-primary-background', linkcolor);
             document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + linkcolor);
             document.documentElement.style.setProperty('--cover-button-color', '#FFFFFF');
-            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#597381');
+            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#59666D');
           } else {
             document.documentElement.style.setProperty('--navbar-root-color--active', '#1BA1EE');
             document.documentElement.style.setProperty('--blockquote-border-color', '#757b7f');
@@ -533,12 +533,14 @@
             document.documentElement.style.setProperty('--cover-button-primary-background', '#1BA1EE');
             document.documentElement.style.setProperty('--cover-button-primary-border',  '1px solid ' + '#1BA1EE');
             // document.documentElement.style.setProperty('--cover-button-color', '#1BA1EE');
-            // document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#1BA1EE');
+            document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#597381');
           }
           coverpagecolordarkmode = getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
           if (!(coverpagecolordarkmode === false)) {
             coverpagecolordarkmode = '#' + coverpagecolordarkmode;
             document.documentElement.style.setProperty('--cover-background-color', coverpagecolordarkmode);
+          } else {
+            document.documentElement.style.setProperty('--cover-background-color', '#262d30');
           }
         }
       } else {
