@@ -812,7 +812,7 @@
 
             }
 
-            /* Change relative HTML img tag src to absolute for GitHub Markdown files */
+            /* Change relative HTML img tag src to absolute for GitHub or Codeberg Markdown files */
             if (currentBasePath.includes("raw.githubusercontent.com") || currentBasePath.includes("raw.codeberg.page")) {
               const images = Array.from(htmlElement.querySelectorAll('img'));
               for (const image of images) {
