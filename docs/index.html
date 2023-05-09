@@ -540,6 +540,15 @@
           setColorProperties('#0374B5');
           document.documentElement.style.setProperty('--cover-button-border', '1px solid #0374B5');
         }
+
+        const coverPageColor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
+
+        if (coverpagecolor !== false) {s
+          document.documentElement.style.setProperty('--cover-background-color', '#' + coverpagecolor);
+        } else {
+          document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
+        }
+
       }
     }
 
