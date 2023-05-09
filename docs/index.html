@@ -543,8 +543,8 @@
 
         const coverPageColor = getURLParameterByName('coverpage-color', null, null, window.location.href, true);
 
-        if (coverpagecolor !== false) {s
-          document.documentElement.style.setProperty('--cover-background-color', '#' + coverpagecolor);
+        if (coverPageColor !== false) {
+          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
         } else {
           document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
         }
