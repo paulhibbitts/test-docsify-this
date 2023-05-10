@@ -634,6 +634,9 @@ Would be changed to:
 <a class="embedly-card" data-card-controls="0" data-card-align="left" data-card-width="100%" href="https://docs.google.com/presentation/d/1BLaaOTsGxDmNcAhg6pdx3hl9IvI8NErg8Oe5ceh83fw/edit?usp=sharing">Grav and Docsify Slides Placeholder</a>
 ```
 
+_Generation of 'Edit this Page' links on multiple page Markdown sites not working as expected when a Navbar is present._   
+Due to not being able to update Navbar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround.  
+
 ---
 
 ### Privacy Policy Summary
