@@ -508,6 +508,8 @@
 
         if (linkColorDarkMode !== false) {
           setColorProperties('#' + linkColorDarkMode);
+          document.documentElement.style.setProperty('--cover-button-color', '#' + linkColorDarkMode);
+          document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + '#' + linkColorDarkMode);
         } else {
           const linkColor = getURLParameterByName('link-color', null, null, window.location.href, true);
 
@@ -517,6 +519,7 @@
             document.documentElement.style.setProperty('--cover-button-border', '1px solid #59666D');
           } else {
             setColorProperties('#1BA1EE');
+            document.documentElement.style.setProperty('--cover-button-color', '#1BA1EE');
             document.documentElement.style.setProperty('--cover-button-border', '1px solid #597381');
           }
         }
@@ -538,6 +541,7 @@
           document.documentElement.style.setProperty('--cover-button-border', '1px solid #' + linkColor);
         } else {
           setColorProperties('#0374B5');
+          document.documentElement.style.setProperty('--cover-button-color', '#0374B5');
           document.documentElement.style.setProperty('--cover-button-border', '1px solid #0374B5');
         }
 
