@@ -854,6 +854,8 @@ Paul offers a range of services related to using the system-independent format o
 
 ---
 
+[![Repo Updated Badge](https://badges.strrl.dev/updated/paulhibbitts/test-docsify-this)](https://badges.strrl.dev)
+
 This [open source project](https://github.com/hibbitts-design/docsify-this) is by Paul Hibbitts of [Hibbitts Design](https://hibbittsdesign.org/).  
 
 **🙇🏻‍♂️Special Thanks**  
