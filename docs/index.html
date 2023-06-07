@@ -575,6 +575,7 @@
     function isExtensionAllowed(fileURL) {
       // Check if filename contains an allowed file extension
       var allowedExtensions = getAllowedFileExtensions();
+      fileURL = fileURL.split('?id')[0];
       var extension = fileURL.split(".").pop();
 
       return allowedExtensions.includes(extension.toLowerCase());
@@ -692,7 +693,9 @@
                   lastSegment = lastSegment.replace('#/', '');
                   lastSegment = lastSegment.replace('./', '');
                   lastSegment = lastSegment.replace(fileExt, '');
-                  lastSegment = lastSegment.substring(0, lastSegment.indexOf("?id="));
+                  if (isExtensionAllowed(lastSegment)) {
+                    lastSegment = lastSegment.substring(0, lastSegment.indexOf("?id"));
+                  }
                   // console.log(lastSegment);
                   // console.log(lastSegment.startsWith("?id"));
                   // Check to make sure link is not Docsify id anchor link
