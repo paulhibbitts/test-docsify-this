@@ -1092,13 +1092,11 @@
 
  <!-- Optionally load AsciiDoc Plugin -->
  <script>
-  // console.log(getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)));
-  if (getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true) == '.adoc')); {
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.src = 'assets/vendor/docsify/plugins/docsify-asciidoc.js';    
-    document.head.appendChild(script);
-  }
+    var script = document.createElement("script");
+    script.setAttribute("src", "assets/vendor/docsify/plugins/docsify-asciidoc.js");
+    script.setAttribute("async", "false");
+    var head = document.head;
+    head.insertBefore(script, head.firstChild);
 </script>
 
   <!-- Check for coverpage-color, coverpage-link-color, headerweight, fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters -->
