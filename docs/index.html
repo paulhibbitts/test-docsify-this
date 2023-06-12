@@ -1090,6 +1090,17 @@
     }
   </script>
 
+ <!-- Optionally load AsciiDoc Plugin -->
+ <script>
+  console.log(getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)));
+  if (getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true) == '.adoc')); {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'assets/vendor/docsify/plugins/docsify-asciidoc.js';    
+    document.head.appendChild(script);
+  }
+</script>
+
   <!-- Check for coverpage-color, coverpage-link-color, headerweight, fontfamily, fontsize, lineheight, linkcolor, darkmode and title parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
