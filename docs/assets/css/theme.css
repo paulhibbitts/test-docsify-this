@@ -926,6 +926,7 @@ span #docsifythisurlfield {
 }
 
 .sidebar h1 {
+  color: inherit;
   margin-top: 0;
   font-size: 1.40rem;
   text-align: center;
