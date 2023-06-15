@@ -925,6 +925,11 @@ span #docsifythisurlfield {
   display: none;
 }
 
+.sidebar h1 {
+  font-size: 1.20rem;
+  text-align: center;
+}
+
 #docsifythis .navbarpill {
   cursor: pointer;
   color: #484c55;
