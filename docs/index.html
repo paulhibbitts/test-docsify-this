@@ -411,16 +411,6 @@
       return !!urlPattern.test(urlString);
     }
 
-    // Return true if file exists, false otherwise
-    async function checkIfFileExists(url) {
-      try {
-        const response = await fetch(url, { method: "HEAD" });
-        return response.ok;
-      } catch (error) {
-        return false;
-      }
-    }
-
     function selectText() {
       const input = document.getElementById('docsifythisurlfield');
       input.focus();
@@ -584,6 +574,16 @@
       var extension = fileURL.split(".").pop();
 
       return allowedExtensions.includes(extension.toLowerCase());
+    }
+
+    async function checkIfFileExists(url) {
+      // Return true if file exists, false otherwise
+      try {
+        const response = await fetch(url, { method: "HEAD" });
+        return response.ok;
+      } catch (error) {
+        return false;
+      }
     }
 
     function setFavicon(favImage){
