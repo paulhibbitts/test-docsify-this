@@ -408,13 +408,12 @@
       return !!urlPattern.test(urlString);
     }
 
-    // Return true if file exists, false otherwise
-    function existsFile(url) {
-      var http = new XMLHttpRequest();
-      http.open('HEAD', url, false);
-      http.send();
-      return http.status!=404;
-    }
+    // Return true if image exists, false otherwise
+    function imageExists(url) {
+        var img = new Image();
+        img.src = url;
+        return img.height != 0;
+      }
 
     function selectText() {
       const input = document.getElementById('docsifythisurlfield');
@@ -579,6 +578,14 @@
       var extension = fileURL.split(".").pop();
 
       return allowedExtensions.includes(extension.toLowerCase());
+    }
+
+    function setFavicon(favImage){
+      let headTitle = document.querySelector('head');
+      let setFavicon = document.createElement('link');
+      setFavicon.setAttribute('rel','shortcut icon');
+      setFavicon.setAttribute('href',favImage);
+      headTitle.appendChild(setFavicon);
     }
 
     // console.log (getURLParameterByName(['standalone', 'embedded']));
@@ -1035,6 +1042,21 @@
   <script>
     if (window.$docsify['basePath']) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />');
+    }
+  </script>
+
+  <!-- Load default or custom favicon file -->
+  <script>
+    if (window.$docsify['basePath']) {
+      var faviconURL = window.$docsify['basePath'] + '/_media/favicon.png';
+      // console.log(faviconURL);
+      // console.log(imageExists(faviconURL));
+      if (imageExists(faviconURL)) {
+        setFavicon(faviconURL);
+      }
+    } else {
+      // console.log ("use standard favicon");
+      setFavicons('assets/favicon/favicon.png');
     }
   </script>
 
