@@ -408,12 +408,15 @@
       return !!urlPattern.test(urlString);
     }
 
-    // Return true if image exists, false otherwise
-    function imageExists(url) {
-        var img = new Image();
-        img.src = url;
-        return img.height != 0;
+    // Return true if file exists, false otherwise
+    async function checkIfFileExists(url) {
+      try {
+        const response = await fetch(url, { method: "HEAD" });
+        return response.ok;
+      } catch (error) {
+        return false;
       }
+    }
 
     function selectText() {
       const input = document.getElementById('docsifythisurlfield');
@@ -1048,12 +1051,24 @@
   <!-- Load default or custom favicon file -->
   <script>
     if (window.$docsify['basePath']) {
-      var faviconURL = window.$docsify['basePath'] + '/_media/favicon.png';
-      console.log(faviconURL);
-      console.log(imageExists(faviconURL));
-      if (imageExists(faviconURL)) {
-        setFavicon(faviconURL);
-      }
+      const fileUrl = window.$docsify['basePath'] + '/_media/favicon.png';
+
+      checkIfFileExists(fileUrl)
+        .then(exists => {
+          if (exists) {
+            console.log("File exists.");
+            // Perform actions when the file exists.
+            setFavicon(fileUrl);
+          } else {
+            console.log("File does not exist.");
+            // Perform actions when the file does not exist.
+            setFavicon('assets/favicon/favicon.png');
+          }
+        })
+        .catch(error => {
+          console.error("Error occurred while checking the file:", error);
+          // Handle the error appropriately.
+        });
     } else {
       console.log ("use standard favicon");
       setFavicon('assets/favicon/favicon.png');
