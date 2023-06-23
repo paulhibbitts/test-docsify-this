@@ -1060,17 +1060,18 @@
         .then(exists => {
           if (exists) {
             console.log("File exists.");
-            // Perform actions when the file exists.
+            // Perform actions when the file exists
             setFavicon(fileUrl);
           } else {
             console.log("File does not exist.");
-            // Perform actions when the file does not exist.
+            // Perform actions when the file does not exist
             setFavicon('assets/favicon/favicon.png');
           }
         })
         .catch(error => {
           console.error("Error occurred while checking the file:", error);
-          // Handle the error appropriately.
+          // Handle the error
+          setFavicon('assets/favicon/favicon.png');
         });
     } else {
       console.log ("use standard favicon");
