@@ -809,10 +809,10 @@
             }
 
             // Get all YouTube iframes on the page
-            const youtubeIframes = htmlElement.querySelectorAll('iframe[src*="youtube.com"]');
+            const iframes = htmlElement.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="docs.google.com"]');
 
             // Add a div with a default responsive video class to each YouTube iframe without one
-            youtubeIframes.forEach((iframe) => {
+            iframes.forEach((iframe) => {
               const wrapperDiv = document.createElement('div');
               wrapperDiv.classList.add('video-container-16by9');
 
