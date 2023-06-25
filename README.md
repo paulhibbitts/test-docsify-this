@@ -539,7 +539,7 @@ function test() {
 ```
 
 #### Display of Custom Favicon
-You can set a custom Favicon for your pages displayed with Docsify-This by creating a top-level folder named `_media` with a PNG file of your favicon named `favicon.png`. Currently this is not supported with the use of heirachical folder page structure (i.e. Markdown files stored in multiple folders).
+You can set a custom Favicon for your pages displayed with Docsify-This by creating a top-level folder named `_media` with a PNG file of your favicon named `favicon.png`.
 
 #### Display of AsciiDoc files (file extension .adoc)
 The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) by passing the relevant filenames within a Docsify-This URL (not included in the Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
