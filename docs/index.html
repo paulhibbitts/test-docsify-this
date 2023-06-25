@@ -808,6 +808,28 @@
               }
             }
 
+            // Get all YouTube iframes on the page
+            const youtubeIframes = htmlElement.querySelectorAll('iframe[src*="youtube.com"]');
+
+            // Add a default responsive video div with a class to each YouTube iframe without one
+            youtubeIframes.forEach((iframe) => {
+              const wrapperDiv = document.createElement('div');
+              wrapperDiv.classList.add('video-container-16by9');
+
+              // Preserve existing classes on the iframe
+              if (!(iframe.classList.contains('video-container-16by9') || iframe.classList.contains('video-container-16by9'))) {
+                // The either video class already exists, no need to add it
+                wrapperDiv.classList.add(...iframe.classList);
+              } else {
+                // Add the class to the wrapper div
+                wrapperDiv.classList.add('video-container-16by9');
+              }
+
+              // Replace the iframe with the wrapper div
+              iframe.parentNode.replaceChild(wrapperDiv, iframe);
+              wrapperDiv.appendChild(iframe);
+            });
+
             next(htmlElement.innerHTML);
             } else {
               next(html);
