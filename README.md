@@ -248,6 +248,7 @@ The following URL parameters are available but not included in the Web Page Buil
 * [dark-mode](#dark-mode)
 * [header-weight](#header-weight)
 * [link-color-dark-mode](#link-color-dark-mode)
+* [loadFavicon](#loadFavicon)
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
 * [page-title](#page-title)
@@ -268,10 +269,6 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
-##### loadFavicon
-You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
-
 ##### header-weight
 Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
@@ -279,6 +276,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
+
+##### loadFavicon
+You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
 
 ##### loadFooter
 Load a Docsify footer from the Markdown file passed with the optional **loadFooter** Docsify parameter, for example:  
