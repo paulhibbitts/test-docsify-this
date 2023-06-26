@@ -269,7 +269,8 @@ Automatically switch light/dark theme based on system OS-level preference, for e
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
 ##### loadFavicon
-You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
+You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
 
 ##### header-weight
 Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
