@@ -938,10 +938,10 @@
                 divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);   
               }
 
-               // Update all iframes with source domains 'youtube.com' or 'docs.google.com' to include the default responsive CSS Markdown class `video-container-16by9`
+              // Update all iframes with source domains 'youtube.com' or 'docs.google.com' to include the default responsive CSS Markdown class `video-container-16by9`
               const allIframes = Array.from(document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="docs.google.com"]'));
 
-              // Filter out iframes that are not already wrapped with a div including the classes 'video-9by16' and 'video-container-4by3'
+              // Filter out iframes that are not already wrapped with a div including the classes 'video-container-16by9' and 'video-container-4by3'
               const targetIframes = allIframes.filter(function(iframe) {
                 const parentDiv = iframe.parentNode;
                 return !parentDiv.matches('.video-container-16by9, .video-container-4by3');
