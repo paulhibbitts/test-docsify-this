@@ -1079,9 +1079,10 @@
 
   <!-- Load default or custom favicon file -->
   <script>
-    if (getURLParameterByName('loadFavicon', true, false, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
-      const fileUrl = window.$docsify['basePath'] + '/_media/favicon.png';
-
+    const favicon = getURLParameterByName('loadFavicon', null, null, window.location.href, true);
+    console.log(favicon);
+    if ((favicon !== false) && getURLParameterByName('basePath')) {
+      const fileUrl = window.$docsify['basePath'] + '/' + favicon;
       checkIfFileExists(fileUrl)
         .then(exists => {
           if (exists) {
