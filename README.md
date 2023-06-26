@@ -268,6 +268,9 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 Automatically switch light/dark theme based on system OS-level preference, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
+##### loadFavicon
+You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&loadFavicon=grav.png
+
 ##### header-weight
 Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
@@ -538,9 +541,6 @@ function test() {
   console.log("Hello world!");
 }
 ```
-
-#### Display of Custom Favicon
-You can set a custom Favicon for your pages displayed with Docsify-This by creating a top-level folder named `_media` with a PNG file of your favicon named `favicon.png`.
 
 #### Display of AsciiDoc files (file extension .adoc)
 The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) by passing the relevant filenames within a Docsify-This URL (not included in the Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
