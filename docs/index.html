@@ -587,11 +587,18 @@
     }
 
     function setFavicon(favImage){
+      console.log(favImage);
       let headTitle = document.querySelector('head');
       let setFavicon = document.createElement('link');
       setFavicon.setAttribute('rel','shortcut icon');
       setFavicon.setAttribute('href',favImage);
+      console.log(setFavicon);
       headTitle.appendChild(setFavicon);
+      let appleTouchIcon = document.createElement('link');
+      appleTouchIcon.setAttribute('rel','apple-touch-icon');
+      appleTouchIcon.setAttribute('href',favImage);
+      headTitle.appendChild(appleTouchIcon);
+      console.log(appleTouchIcon);
     }
 
     // console.log (getURLParameterByName(['standalone', 'embedded']));
