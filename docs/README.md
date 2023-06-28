@@ -302,7 +302,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Course Site Template](images/docsify-this-course-site.png ':class=docsify-this-screenshot')
+![Docsify-This Course Site Template](images/docsify-this-course-site.jpg ':class=docsify-this-screenshot')
 
 </div>
 
