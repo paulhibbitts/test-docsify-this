@@ -252,6 +252,7 @@ The following URL parameters are available but not included in the Web Page Buil
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
 * [page-title](#page-title)
+* [zoom-images](#zoom-images)
 
 ##### coverpage
 Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
@@ -300,6 +301,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### subMaxLevel
 Set the maximum header level of a custom Docsify sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1  
+
+##### zoom-images
+Enable image zoom ( tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true  
 
 ---
 
