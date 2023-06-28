@@ -472,7 +472,7 @@ Set the maximum header level of a custom Docsify sidebar (i.e. file '_sidebar.md
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1  
 
 ##### zoom-images
-Enable image zoom ( tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
+Enable image zoom (tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true  
 
 ---
