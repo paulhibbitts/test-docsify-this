@@ -346,6 +346,7 @@ Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-mul
 * [toc](/?id=toc)
 * [toc-headings](/?id=toc-headings)
 * [toc-narrow](/?id=toc-narrow)
+* [zoom-images](/?id=zoom-images)
 
 ##### browser-tab-title
 Set a custom title on Browser tab for your standalone pages with the optional **browser-tab-title** parameter, for example:  
@@ -469,6 +470,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### subMaxLevel
 Set the maximum header level of a custom Docsify sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1  
+
+##### zoom-images
+Enable image zoom ( tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true  
 
 ---
 
