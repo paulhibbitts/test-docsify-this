@@ -442,6 +442,8 @@ The following URL parameters are available but not included in the Web Page Buil
 * [loadFooter](/?id=loadFooter)
 * [loadNavbar](/?id=loadNavbar)
 * [page-title](/?id=page-title)
+* [search](/?id=search)
+* [zoom-images](/?id=zoom-images)
 
 ##### coverpage
 Display a Docsify coverpage with the optional **coverpage** parameter, for example:  
@@ -486,6 +488,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
+##### search
+Enable the Docsify Search plugin on multiple page sites including a custom Sidebar with the optional **search** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true
 
 ##### subMaxLevel
 Set the maximum header level of a custom Docsify sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
