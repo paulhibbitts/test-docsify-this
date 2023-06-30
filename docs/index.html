@@ -620,6 +620,20 @@
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
 
+      search: 'auto', // default
+
+      // complete configuration parameters
+      search: {
+        maxAge: 86400000, // Expiration time, the default one day
+        paths: 'auto',
+        placeholder: 'Type to search',
+        noData: 'No matches found.',
+        // Headline depth, 1 - 6
+        depth: 6,
+        namespace: 'docsify-this',
+        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+     },
+
       // CUSTOM PLUGINS
       // -----------------------------------------------------------------
       plugins: [
@@ -668,6 +682,7 @@
               'loadSidebar',
               'maxLevel',
               'page-title',
+              'search',
               'sidebar',
               'subMaxLevel',
               'toc',
@@ -1228,6 +1243,13 @@
   <script>
     if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+    }
+  </script>
+
+  <!--Search Plugin -->
+  <script>
+    if (getURLParameterByName('search', true, false, window.location.href, true) === 'true') {
+      document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>');
     }
   </script>
 
