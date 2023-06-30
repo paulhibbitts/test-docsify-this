@@ -760,11 +760,11 @@
                     var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) && !getURLParameterByName('hypothesis');
                     if (!isDynamicLink) {
                       newURL = '#/' + lastSegment;
-                      console.log("Changed:");
+                      // console.log("Changed:");
                       console.log();
                     } else {
                       newURL = url + '?basePath=' + currentBasePath + '&homepage=' + lastSegment + fileExt + URLparms + editThisPageLinkURLparm;
-                      console.log("Changed long:");
+                      // console.log("Changed long:");
                     }
                     // console.log(newURL);
                     link.setAttribute('href', newURL);
