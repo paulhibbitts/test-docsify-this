@@ -591,6 +591,19 @@
       // console.log(appleTouchIcon);
     }
 
+    function generateRandomName() {
+      const length = 8; // Length of the random name
+      const characters = 'abcdefghijklmnopqrstuvwxyz0123456789'; // Characters to choose from
+      let randomName = '';
+
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * characters.length);
+        randomName += characters[randomIndex];
+      }
+
+      return randomName;
+    }
+
     // console.log (getURLParameterByName(['standalone', 'embedded']));
     // console.log (!(getURLParameterByName('navbar')));
     // console.log (standalone);
@@ -630,7 +643,7 @@
         noData: 'No matches found.',
         // Headline depth, 1 - 6
         depth: 6,
-        namespace: 'docsify-this-2',
+        namespace: generateRandomName(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
      },
 
