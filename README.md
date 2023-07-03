@@ -397,6 +397,7 @@ The following style prefixes are available with Docsify-This:
 * [image-75-border/image-50-border/image-25-border](#image-75-borderimage-50-borderimage-25-border)
 * [image-border](#image-border)
 * [image-border-rounded](#image-border-rounded)
+* [navpill](#navpill)
 * [row/column](#rowcolumn)
 * [video-container-4by3](#video-container-4by3)
 * [video-container-16by9](#video-container-16by9)
