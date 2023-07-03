@@ -410,6 +410,10 @@ The following CSS classes are available when authoring your own Markdown content
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
+```html
+<span class='badge'> [Tue May 16 2:30pm PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
+```
+
 #### banner-image
 Cropped to height of 250px on large screens, 125px on small screens.  
 
@@ -478,8 +482,6 @@ Scale images with border to %.
 ```
 
 #### navpill
-
-[Example Navpill](# ':class=navpill')
 
 ```markdown
 [GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
