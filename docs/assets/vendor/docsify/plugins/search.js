@@ -340,7 +340,8 @@
   
       var isExpired = localStorage.getItem(expireKey) < Date.now();
   
-      INDEXS = JSON.parse(localStorage.getItem(indexKey));
+      // Always clear search cache to facilitate multiple Docsify-This instances
+      INDEXS = {};
   
       if (isExpired) {
         INDEXS = {};
