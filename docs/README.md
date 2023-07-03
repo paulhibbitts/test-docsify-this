@@ -575,7 +575,7 @@ The following style prefixes are available with Docsify-This:
 * [image-75-border/image-50-border/image-25-border](/?id=image-75-borderimage-50-borderimage-25-border)
 * [image-border](/?id=image-border)
 * [image-border-rounded](/?id=image-border-rounded)
-* [image-border-rounded](/?id=navpill)
+* [navpill](/?id=navpill)
 * [row/column](/?id=rowcolumn)
 * [video-container-4by3](/?id=video-container-4by3)
 * [video-container-16by9](/?id=video-container-16by9)
@@ -588,6 +588,12 @@ The following CSS classes are available when authoring your own Markdown content
 
 ```html
 <span class='badge'> Tue Jun 12th 11:59pm PDT</span>
+```
+
+<span class='badge'> [Example Badge with Link](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
+
+```html
+<span class='badge'> [Tue May 16 2:30pm PT](https://www.timeanddate.com/worldclock/fixedtime.html?msg=CMPT-363+Blackboard+Mini-lectures+and+Activities&iso=20220516T1430&p1=256&ah=1&am=50)</span>  
 ```
 
 #### banner-image
