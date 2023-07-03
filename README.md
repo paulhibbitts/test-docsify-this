@@ -479,7 +479,7 @@ Scale images with border to %.
 
 #### navpill
 
-<span class='navpill'> Example Navpill</span>
+[Example Navpill](# ':class=navpill')
 
 ```markdown
 [GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
