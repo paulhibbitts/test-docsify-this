@@ -225,11 +225,11 @@
         var postContent = post.body && post.body.trim();
         var postUrl = post.slug || '';
   
-        // Skip posts that contain iframes, embedly cards, or Markdown images
+        // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
         // console.log(postContent);
         var isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
-        if (postContent.includes('iframe') || postContent.includes('embedly-card') || isImage) {
+        if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
           return;
         }
 
