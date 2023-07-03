@@ -226,7 +226,7 @@
         var postUrl = post.slug || '';
   
         // Skip posts that contain iframes, embedly cards, or Markdown images
-        console.log(postContent);
+        // console.log(postContent);
         var isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
         if (postContent.includes('iframe') || postContent.includes('embedly-card') || isImage) {
