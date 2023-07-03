@@ -476,6 +476,14 @@ Scale images with border to %.
 ![Photo of Mountain](images/mountain.jpg ':class=image-border-rounded')
 ```
 
+#### navpill
+
+<span class='navpill'> Example Navpilladge</span>
+
+```markdown
+[GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
+```
+
 #### row/column
 
 ```html
