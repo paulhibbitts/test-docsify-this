@@ -673,6 +673,12 @@ Scale images with border to %.
 [GitHub](https://github.com/hibbitts-design/docsify-this ':class=navpill')
 ```
 
+<a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>Example Navpill with Font Awesome Icon</a>
+
+```html
+<a class="navpill" href="https://github.com" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+```
+
 #### row/column
 
 ```html
