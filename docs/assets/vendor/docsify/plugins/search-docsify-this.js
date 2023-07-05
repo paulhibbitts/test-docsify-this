@@ -505,7 +505,7 @@
   
     var CONFIG = {
       placeholder: 'Type to search',
-      noData: 'No Results!',
+      noData: 'No matches found.',
       paths: 'auto',
       depth: 2,
       maxAge: 86400000, // 1 day
