@@ -323,7 +323,7 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 
 ##### zoom-images
 Enable image zoom (tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.  
 
 ---
 
