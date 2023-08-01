@@ -567,7 +567,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 #### Displaying a Site Title in a Custom Sidebar
 To display a site title in a custom sidebar you can add a H1 header level (including a tag to not include it with Docsify generated header navigation) above the page list in the Sidebar Markdown file (i.e. `_sidebar.md`), for example:  
 
-```
+```markdown
 # Your Site Title Here <!-- {docsify-ignore} -->
 
 - [Page One](page-one)
