@@ -608,19 +608,19 @@ The following CSS classes are available when authoring your own Markdown content
 ```html
 <div class="accordion">
 
-  <details>
-    <summary>Topic One</summary>
-    
-    Topic one details here.
-    
-  </details>
+<details>
+  <summary>Topic One</summary>
+  
+  Topic one details here.
+  
+</details>
 
-  <details>
-    <summary>Topic Two</summary>
-    
-    Topic two details here.
-    
-  </details>
+<details>
+  <summary>Topic Two</summary>
+  
+  Topic two details here.
+  
+</details>
 
 </div>
 ```
