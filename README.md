@@ -469,7 +469,7 @@ Cropped to height of 350px on large screens, 175px on small screens.
 #### embedly-card
 For linked article previews, embedded slides/videos, etc.  
 
-```markdown
+```html
 <a class="embedly-card" data-card-controls="0" data-card-align="left" href="https://blog.prototypr.io/defining-usability-e7bf42e8abd0">Defining usability</a>
 ```
 
