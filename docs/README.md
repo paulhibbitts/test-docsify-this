@@ -586,18 +586,17 @@ The following CSS classes are available when authoring your own Markdown content
 
 #### accordion
 
-**Example Accordion**  
 <div class="accordion">
 
 <details>
-  <summary>Topic One</summary>
+  <summary>Example Accordion Topic One</summary>
   
   Topic one details here.
   
 </details>
 
 <details>
-  <summary>Topic Two</summary>
+  <summary>Example Accordion Topic Two</summary>
   
   Topic two details here.
   
