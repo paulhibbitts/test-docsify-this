@@ -565,6 +565,7 @@ The following style prefixes are available with Docsify-This:
 
 ### Supported Markdown CSS Classes
 
+* [accordion](/?id=accordion)
 * [badge](/?id=badge)
 * [banner-image](/?id=banner-image)
 * [banner-tall-image](/?id=banner-tall-image)
@@ -582,6 +583,47 @@ The following style prefixes are available with Docsify-This:
 * [video-container-16by9](/?id=video-container-16by9)
 
 The following CSS classes are available when authoring your own Markdown content.  
+
+#### accordion
+
+**Example Accordion**  
+<div class="accordion">
+
+<details>
+  <summary>Topic One</summary>
+  
+  Topic one details here.
+  
+</details>
+
+<details>
+  <summary>Topic Two</summary>
+  
+  Topic two details here.
+  
+</details>
+
+</div>
+
+```html
+<div class="accordion">
+
+  <details>
+    <summary>Topic One</summary>
+    
+    Topic one details here.
+    
+  </details>
+
+  <details>
+    <summary>Topic Two</summary>
+    
+    Topic two details here.
+    
+  </details>
+
+</div>
+```
 
 #### badge
 
