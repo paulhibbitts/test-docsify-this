@@ -846,6 +846,12 @@ span #docsifythisurlfield {
   position: relative;
 }
 
+#docsifythisurlbuilder input[type=number] {
+  border: 1px solid #000;
+  height: 2rem;
+  padding-left: .3rem;
+}
+
 #docsifythisurlbuilder figcaption {
   cursor: pointer;
   margin-top: -5px;
