@@ -125,6 +125,51 @@ Page layout:
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
+<div id="docsifythisurlbuildershowhidelink2" style="margin-top: 14px;"><a name='toggleDivlink2' href='#' onclick='toggleDiv2(this); return false;'>Show Advanced Page and Site Appearance Options &raquo;</a></div>
+
+<div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
+
+<hr>
+
+[ ] Page and site Favicon (file 'favicon.png')  
+
+<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and include additional Docsify Markdown files:</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (file '_sidebar.md')</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar with Search field (file '_sidebar.md')</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (file '_navbar.md')<Sidebar/label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (file '_footer.md')</label></div>
+
+<hr>
+
+Page Title:  
+[  ]  
+
+Page Header Weight:  
+[  ]  
+
+[ ] Zoomable Images  
+
+<hr>
+
+[ ] Load and display Docsify Coverpage (file '_coverpage.md)
+
+Docsify Coverpage color:  
+[  ]  
+
+<hr>
+
+[ ] Enable automatic switching of light/dark theme based on system OS-level preference
+
+Link color for dark theme:  
+[  ]  
+
+Coverpage color for dark theme:  
+[  ]  
+
+<hr>
+
+</div>
+
 <div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232; margin-top:12px;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
