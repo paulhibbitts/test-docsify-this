@@ -170,7 +170,7 @@ Link color for dark theme:
 Coverpage color for dark theme:  
 [  ]  
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageDarkmodeColorAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageColorDarkmodeAndUpdatePreview()" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
