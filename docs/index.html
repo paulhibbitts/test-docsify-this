@@ -454,6 +454,77 @@
       document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
     }
 
+    function validateCoverpageColorAndUpdatePreview() {
+      var getColor = document.getElementById("coverpagecolor");
+      var hexCode = getColor.value;
+      var regExp = /[#0-9A-Fa-f]{1}/g;
+      if (!(regExp.test(hexCode.slice(-1)))) {
+        // Last character entered was not a valid hexidecimal number, so supress it
+        document.getElementById("coverpagecolor").value = hexCode.slice(0, -1);
+      }
+      if (isHexadecimalColor(hexCode.substring(1) )) {
+        document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+      } else {
+        if (isHexadecimalColor(document.getElementById("coverpagecolor").value)) {
+          document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+        } else {
+          document.getElementById("coverpagecolorpreview").style.visibility = "hidden";
+        }
+      }
+      if (!(hexCode.charAt(0) == "#")) {
+        hexCode = '#' + hexCode;
+      }
+      document.getElementById("linkcolorpreview").style.borderColor = hexCode;
+      document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
+    }
+
+    function validateDarkmodeLinkColorAndUpdatePreview() {
+      var getColor = document.getElementById("coverpagecolordarkmode");
+      var hexCode = getColor.value;
+      var regExp = /[#0-9A-Fa-f]{1}/g;
+      if (!(regExp.test(hexCode.slice(-1)))) {
+        // Last character entered was not a valid hexidecimal number, so supress it
+        document.getElementById("coverpagecolordarkmode").value = hexCode.slice(0, -1);
+      }
+      if (isHexadecimalColor(hexCode.substring(1) )) {
+        document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+      } else {
+        if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
+          document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+        } else {
+          document.getElementById("coverpagecolorpreview").style.visibility = "hidden";
+        }
+      }
+      if (!(hexCode.charAt(0) == "#")) {
+        hexCode = '#' + hexCode;
+      }
+      document.getElementById("linkcolorpreview").style.borderColor = hexCode;
+      document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
+    }
+    function validateCoverpageDarkmodeColorAndUpdatePreview() {
+      var getColor = document.getElementById("linkcolor");
+      var hexCode = getColor.value;
+      var regExp = /[#0-9A-Fa-f]{1}/g;
+      if (!(regExp.test(hexCode.slice(-1)))) {
+        // Last character entered was not a valid hexidecimal number, so supress it
+        document.getElementById("linkcolor").value = hexCode.slice(0, -1);
+      }
+      if (isHexadecimalColor(hexCode.substring(1) )) {
+        document.getElementById("linkcolorpreview").style.visibility = "visible";
+      } else {
+        if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
+          document.getElementById("linkcolorpreview").style.visibility = "visible";
+        } else {
+          document.getElementById("linkcolorpreview").style.visibility = "hidden";
+        }
+      }
+      if (!(hexCode.charAt(0) == "#")) {
+        hexCode = '#' + hexCode;
+      }
+      document.getElementById("linkcolorpreview").style.borderColor = hexCode;
+      document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
+    }
+
     function isHexadecimalColor(str) {
       return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
     }
@@ -479,6 +550,22 @@
       document.getElementById("linkcolorpreview").style.visibility = "visible";
       document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
       document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+
+      document.getElementById("coverpagecolor").value = '#6C8A9A';
+      document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+      document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
+      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+
+      document.getElementById("linkcolordarkmode").value = '#0374B5';
+      document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+
+      document.getElementById("coverpagecolordarkmode").value = '#262D30';
+      document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
+      document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
+      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+
       document.getElementById("hypothesisenable").checked = false;
     }
 

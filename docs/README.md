@@ -156,6 +156,8 @@ Page Header Weight:
 Docsify Coverpage color:  
 [  ]  
 
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateCoverpageColorAndUpdatePreview()" data-coloris><span id="coverpagecolorpreview"></span></div>
+
 <hr>
 
 [ ] Enable automatic switching of light/dark theme based on system OS-level preference
@@ -163,8 +165,12 @@ Docsify Coverpage color:
 Link color for dark theme:  
 [  ]  
 
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateLinkColorDarkmodeAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+
 Coverpage color for dark theme:  
 [  ]  
+
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageDarkmodeColorAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
