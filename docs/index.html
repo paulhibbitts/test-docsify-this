@@ -1029,6 +1029,17 @@
                 theDiv.style.display = "block";
               }
 
+              if (getURLParameterByName('advanced', true, false, window.location.href, true) === 'true') {
+                // console.log("show advanced options!");
+                document.getElementById("btn_2").style.display = "none";
+                var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+                document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
+                theDiv.style.display = "block";
+                var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+                document.getElementById("docsifythisurlbuildershowhidelink2").style.display = "none";
+                theDiv2.style.display = "block";
+              }
+
               const x = window.scrollX;
               const y = window.scrollY;
               selectText();

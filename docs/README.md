@@ -123,7 +123,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
-<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_1" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
 <div id="docsifythisurlbuildershowhidelink2" style="margin-top: 14px;"><a name='toggleDivlink2' href='#' onclick='toggleDiv2(this); return false;'>Show Advanced Page and Site Appearance Options &raquo;</a></div>
 
@@ -166,7 +166,7 @@ Link color for dark theme:
 Coverpage color for dark theme:  
 [  ]  
 
-<hr>
+<input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
 </div>
 
