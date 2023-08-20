@@ -1047,6 +1047,11 @@ html {
       color: white;
   }
 
+  #pageTitle {
+    background-color: #273338;
+    color: white;
+  }
+
   .docsifythisurlbuilderprimarybutton {
       color: black;
       background-color: #817eed; /* Original color #4bc3f4 */
@@ -1072,6 +1077,36 @@ html {
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
       color: #4bc3f4;
+  }
+
+  #linkcolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #browserTabTitle {
+    background-color: #273338;
+    color: white;
+  }
+
+  #editLinkText {
+    background-color: #273338;
+    color: white;
+  }
+
+  #coverpagecolor {
+    background-color: #273338;
+    color: white;
+  }
+
+  #linkcolordarkmode {
+    background-color: #273338;
+    color: white;
+  }
+
+  #coverpagecolordarkmode {
+    background-color: #273338;
+    color: white;
   }
 
   #docsifythis .button {
