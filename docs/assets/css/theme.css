@@ -760,6 +760,11 @@ body .docsify-pagination-container {
   color: #2442ae; /* Original color #2462ae */
 }
 
+#docsifythisurlbuilder h3 {
+  margin-top: 14px;
+  color: #2442ae; /* Original color #2462ae */
+}
+
 #docsifythisurlbuilder input[type=text], input[type=url], input[type=color] {
   overflow: hidden;
   background-color: #white;
@@ -1048,7 +1053,6 @@ html {
   }
 
   #docsifythis #docsifythisurlbuilder h3 {
-    margin-top: 14px;
     color: #8798ee; /* Original color #4bc3f4 */
   }
   
