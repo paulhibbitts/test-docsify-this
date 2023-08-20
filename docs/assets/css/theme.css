@@ -1017,6 +1017,10 @@ span #docsifythisurlfield {
 
 }
 
+#docsifythisurlbuilder .clr-picker .clr-alpha {
+  display: none;
+}
+
 html {
   visibility: visible;
   opacity: 1;
