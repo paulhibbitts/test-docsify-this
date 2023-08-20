@@ -145,7 +145,7 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><label>Page title (added to top of Web page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class='stackedlabeldropdown'>
-  <label for="select3">Page Headers weight:</label>
+  <label for="select3">Page headers weight:</label>
   <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
     <option value="600">Semi Bold (600)</option>
