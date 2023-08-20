@@ -419,17 +419,6 @@
       }
     }
 
-    function toggleDiv2(link) {
-      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-      if (theDiv.style.display === "none") {
-        link.text = 'Hide Advanced Page and Site Appearance Options \«';
-        theDiv.style.display = "block";
-      } else {
-        link.text = 'Show Advanced Page and Site Appearance Options \»';
-        theDiv.style.display = "none";
-      }
-    }
-
     function validateColorAndUpdatePreview() {
       var getColor = document.getElementById("linkcolor");
       var hexCode = getColor.value;
@@ -539,6 +528,9 @@
       document.getElementById("fontsize").value = '1.125';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
+      document.getElementById("linkcolorpreview").style.visibility = "visible";
+      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
+      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
       document.getElementById("editLinkText").value = 'Edit this Page';
       document.getElementById("editLinkTopCheck").checked = false;
       document.getElementById("narrowToC").checked = false;
@@ -547,14 +539,25 @@
       document.getElementById("toch3").checked = false;
       document.getElementById("maxLevel").value = 2;
       document.getElementById("hideCredits").checked = false;
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
-      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
+
+      document.getElementById("loadfavicon").checked = false;
+      document.getElementById("loadcoverpage").checked = false;
+      document.getElementById("loadcustomsidebar").checked = false;
+      document.getElementById("loadcustomnavbar").checked = false;
+      document.getElementById("loadcustomfooter").checked = false;
+
+      document.getElementById("pageTitle").value = '';
+
+      document.getElementById("headerweight").value = '400';
+
+      document.getElementById("zoomableimages").checked = false;
 
       document.getElementById("coverpagecolor").value = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.visibility = "visible";
       document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+
+      document.getElementById("enableDarkmode").checked = false;
 
       document.getElementById("linkcolordarkmode").value = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
@@ -1123,7 +1126,6 @@
                 document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
                 theDiv.style.display = "block";
                 var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-                document.getElementById("docsifythisurlbuildershowhidelink2").style.display = "none";
                 theDiv2.style.display = "block";
               }
 

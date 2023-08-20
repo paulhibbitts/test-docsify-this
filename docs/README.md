@@ -125,52 +125,43 @@ Page layout:
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
-<div id="docsifythisurlbuildershowhidelink2" style="margin-top: 14px;"><a name='toggleDivlink2' href='#' onclick='toggleDiv2(this); return false;'>Show Advanced Page and Site Appearance Options &raquo;</a></div>
-
 <div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
 
 <hr>
 
-[ ] Page and site Favicon (file 'favicon.png')  
-
-<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and include additional Docsify Markdown files:</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (file '_sidebar.md')</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar with Search field (file '_sidebar.md')</label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (file '_navbar.md')<Sidebar/label></div>
-<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (file '_footer.md')</label></div>
-
-<hr>
-
-Page Title:  
-[  ]  
-
-Page Header Weight:  
-[  ]  
-
-[ ] Zoomable Images  
+<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and display additional custom files:</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadfavicon"  unchecked><label for="loadfavicon">Favicon (favicon.png)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcoverpage" unchecked><label for="loadcoverpage">Coverpage (_coverpage.md)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar with Search field (_sidebar.md)</label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomnavbar" unchecked><label for="loadcustomnavbar">Navbar (_navbar.md)<Sidebar/label></div>
+<div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (_footer.md)</label></div>
 
 <hr>
 
-[ ] Load and display Docsify Coverpage (file '_coverpage.md)
+<div class="docsifythisurlbuilderoptionsline"><label>Page Title:</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
-Docsify Coverpage color:  
-[  ]  
+<div class='stackedlabeldropdown'>
+  <label for="select3">Page Headers weight:</label>
+  <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
+    <option value="400">Normal (400)</option>
+    <option value="600">Semi Bold (600)</option>
+    <option value="800">Bold (800)</option>
+  </select>
+</div>
+
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomableimages" unchecked><label for="zoomableimages">Zoomable images</label></div>
+
+<hr>
 
 <div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateCoverpageColorAndUpdatePreview()" data-coloris><span id="coverpagecolorpreview"></span></div>
 
 <hr>
 
-[ ] Enable automatic switching of light/dark theme based on system OS-level preference
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
-Link color for dark theme:  
-[  ]  
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateLinkColorDarkmodeAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateLinkColorDarkmodeAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
-
-Coverpage color for dark theme:  
-[  ]  
-
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageColorDarkmodeAndUpdatePreview()" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageColorDarkmodeAndUpdatePreview()" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
