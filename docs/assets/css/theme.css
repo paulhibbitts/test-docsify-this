@@ -865,7 +865,7 @@ span #docsifythisurlfield {
   line-height: 1.2rem;
 }
 
-#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable {
+#docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode {
   accent-color: #0324cd; /* Original color #0361cd */
 }
 
@@ -1047,11 +1047,6 @@ html {
       color: white;
   }
 
-  #pageTitle {
-    background-color: #273338;
-    color: white;
-  }
-
   .docsifythisurlbuilderprimarybutton {
       color: black;
       background-color: #817eed; /* Original color #4bc3f4 */
@@ -1077,16 +1072,6 @@ html {
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active {
       color: #4bc3f4;
-  }
-
-  #linkcolor {
-    background-color: #273338;
-    color: white;
-  }
-
-  #editLinkText {
-    background-color: #273338;
-    color: white;
   }
 
   #docsifythis .button {
