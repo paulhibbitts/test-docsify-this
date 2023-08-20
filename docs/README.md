@@ -144,7 +144,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and display additional custom files (must be located at root level of remote files):</label></div>
+<div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and display additional Docsify custom files (must be located at root level of remote files):</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadfavicon"  unchecked><label for="loadfavicon">Favicon (<code>favicon.png</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcoverpage" unchecked><label for="loadcoverpage">Coverpage (<code>_coverpage.md</code>)</label></div>
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomsidebar"  unchecked><label for="loadcustomsidebar">Sidebar (<code>_sidebar.md</code>)</label></div>
