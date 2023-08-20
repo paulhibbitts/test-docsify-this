@@ -157,7 +157,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Sidebar</label></div>
 
-<h3>Covepage and Dark Theme Colors</h3>
+<h3>Coverpage and Dark Theme Colors</h3>
 
 <hr>
 
