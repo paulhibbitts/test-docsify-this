@@ -159,7 +159,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Page link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
