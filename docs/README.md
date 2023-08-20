@@ -52,7 +52,7 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
-<h3>Page Appearance Options</h3>
+<div id="pageappearanceoptionsheader"><h3>Page Appearance Options</h3></div>
 
 <hr>
 
