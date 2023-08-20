@@ -98,7 +98,7 @@ Page layout:
 </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview()" data-coloris><span id="linkcolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
@@ -157,15 +157,13 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateCoverpageColorAndUpdatePreview()" data-coloris><span id="coverpagecolorpreview"></span></div>
-
-<hr>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateLinkColorDarkmodeAndUpdatePreview()" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateCoverpageColorDarkmodeAndUpdatePreview()" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 

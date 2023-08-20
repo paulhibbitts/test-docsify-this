@@ -526,99 +526,31 @@
       }
     }
 
-    function validateColorAndUpdatePreview() {
-      var getColor = document.getElementById("linkcolor");
+    function validateAndDisplayColorAndUpdatePreview(inputId, previewId) {
+      var getColor = document.getElementById(inputId);
       var hexCode = getColor.value;
       var regExp = /[#0-9A-Fa-f]{1}/g;
+      
       if (!(regExp.test(hexCode.slice(-1)))) {
-        // Last character entered was not a valid hexidecimal number, so supress it
-        document.getElementById("linkcolor").value = hexCode.slice(0, -1);
+        document.getElementById(inputId).value = hexCode.slice(0, -1);
       }
-      if (isHexadecimalColor(hexCode.substring(1) )) {
-        document.getElementById("linkcolorpreview").style.visibility = "visible";
+      
+      if (isHexadecimalColor(hexCode.substring(1))) {
+        document.getElementById(previewId).style.visibility = "visible";
       } else {
-        if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
-          document.getElementById("linkcolorpreview").style.visibility = "visible";
+        if (isHexadecimalColor(document.getElementById(inputId).value)) {
+          document.getElementById(previewId).style.visibility = "visible";
         } else {
-          document.getElementById("linkcolorpreview").style.visibility = "hidden";
+          document.getElementById(previewId).style.visibility = "hidden";
         }
       }
+      
       if (!(hexCode.charAt(0) == "#")) {
         hexCode = '#' + hexCode;
       }
-      document.getElementById("linkcolorpreview").style.borderColor = hexCode;
-      document.getElementById("linkcolorpreview").style.backgroundColor = hexCode;
-    }
-
-    function validateCoverpageColorAndUpdatePreview() {
-      var getColor = document.getElementById("coverpagecolor");
-      var hexCode = getColor.value;
-      var regExp = /[#0-9A-Fa-f]{1}/g;
-      if (!(regExp.test(hexCode.slice(-1)))) {
-        // Last character entered was not a valid hexidecimal number, so supress it
-        document.getElementById("coverpagecolor").value = hexCode.slice(0, -1);
-      }
-      if (isHexadecimalColor(hexCode.substring(1) )) {
-        document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-      } else {
-        if (isHexadecimalColor(document.getElementById("coverpagecolor").value)) {
-          document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-        } else {
-          document.getElementById("coverpagecolorpreview").style.visibility = "hidden";
-        }
-      }
-      if (!(hexCode.charAt(0) == "#")) {
-        hexCode = '#' + hexCode;
-      }
-      document.getElementById("coverpagecolorpreview").style.borderColor = hexCode;
-      document.getElementById("coverpagecolorpreview").style.backgroundColor = hexCode;
-    }
-
-    function validateLinkColorDarkmodeAndUpdatePreview() {
-      var getColor = document.getElementById("linkcolordarkmode");
-      var hexCode = getColor.value;
-      var regExp = /[#0-9A-Fa-f]{1}/g;
-      if (!(regExp.test(hexCode.slice(-1)))) {
-        // Last character entered was not a valid hexidecimal number, so supress it
-        document.getElementById("linkcolordarkmode").value = hexCode.slice(0, -1);
-      }
-      if (isHexadecimalColor(hexCode.substring(1) )) {
-        document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-      } else {
-        if (isHexadecimalColor(document.getElementById("linkcolor").value)) {
-          document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-        } else {
-          document.getElementById("linkcolordarkmodepreview").style.visibility = "hidden";
-        }
-      }
-      if (!(hexCode.charAt(0) == "#")) {
-        hexCode = '#' + hexCode;
-      }
-      document.getElementById("linkcolordarkmodepreview").style.borderColor = hexCode;
-      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = hexCode;
-    }
-    function validateCoverpageColorDarkmodeAndUpdatePreview() {
-      var getColor = document.getElementById("coverpagecolordarkmode");
-      var hexCode = getColor.value;
-      var regExp = /[#0-9A-Fa-f]{1}/g;
-      if (!(regExp.test(hexCode.slice(-1)))) {
-        // Last character entered was not a valid hexidecimal number, so supress it
-        document.getElementById("coverpagecolordarkmode").value = hexCode.slice(0, -1);
-      }
-      if (isHexadecimalColor(hexCode.substring(1) )) {
-        document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
-      } else {
-        if (isHexadecimalColor(document.getElementById("coverpagecolordarkmode").value)) {
-          document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
-        } else {
-          document.getElementById("coverpagecolordarkmodepreview").style.visibility = "hidden";
-        }
-      }
-      if (!(hexCode.charAt(0) == "#")) {
-        hexCode = '#' + hexCode;
-      }
-      document.getElementById("coverpagecolordarkmodepreview").style.borderColor = hexCode;
-      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = hexCode;
+      
+      document.getElementById(previewId).style.borderColor = hexCode;
+      document.getElementById(previewId).style.backgroundColor = hexCode;
     }
 
     function isHexadecimalColor(str) {
