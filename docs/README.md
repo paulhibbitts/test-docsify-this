@@ -145,7 +145,7 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><label>Page title (added to top of Web page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class='stackedlabeldropdown'>
-  <label for="select3">Page headers weight:</label>
+  <label for="select3">Page headers font weight:</label>
   <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
     <option value="600">Semi Bold (600)</option>
@@ -508,7 +508,7 @@ Automatically switch light/dark theme based on system OS-level preference, for e
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
 
 ##### header-weight
-Set a custom header weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
+Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
 ##### link-color-dark-mode
