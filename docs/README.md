@@ -52,6 +52,8 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
+<h3>Page Appearance Options</h3>
+
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
@@ -142,6 +144,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoom images (tapping on images to enlarge them)</label></div>
 
+<h3>Docsify Custom Files</h3>
+
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline"><label for="customdocsifyfilesheadings">Load and display additional Docsify custom files (must be located at root level of remote files):</label></div>
@@ -152,6 +156,8 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsindentedline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="loadcustomfooter" unchecked><label for="loadcustomfooter">Footer (<code>_footer.md</code>)</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Sidebar</label></div>
+
+<h3>Covepage and Dark Theme Colors</h3>
 
 <hr>
 
