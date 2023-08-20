@@ -153,7 +153,7 @@ Page layout:
   </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Zoomable images</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoom images (tapping on images to enlarge them)</label></div>
 
 <hr>
 
