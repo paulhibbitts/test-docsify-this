@@ -57,21 +57,21 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><label>Title on Browser Tab:</label><br><input type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
 <div class='stackedlabeldropdown'>
-    <label for="select1">Page font family:</label>
-    <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-      <option value="default">Source Sans Pro</option>
-      <option disabled="disabled">----</option>
-      <option value="Arial,sans-serif">Arial, sans-serif</option>
-      <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
-      <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
-      <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
-      <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
-      <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
-      <option value="Verdana,sans-serif">Verdana, sans-serif</option>
-    <option value="Georgia,serif">Georgia, serif</option>
-    <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
-    <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
-    <option value="Courier,monospace">Courier, monospace</option>
+  <label for="select1">Page font family:</label>
+  <select class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
+    <option value="default">Source Sans Pro</option>
+    <option disabled="disabled">----</option>
+    <option value="Arial,sans-serif">Arial, sans-serif</option>
+    <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
+    <option value="Helvetica%20Neue,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
+    <option value="Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
+    <option value="Open%20Sans,sans-serif">Open Sans, sans-serif</option>
+    <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
+    <option value="Verdana,sans-serif">Verdana, sans-serif</option>
+  <option value="Georgia,serif">Georgia, serif</option>
+  <option value="Merriweather,Georgia,serif">Merriweather, serif</option>
+  <option value="Times%20New%20Roman,serif">Times New Roman, serif</option>
+  <option value="Courier,monospace">Courier, monospace</option>
   </select>
 </div>
 
@@ -85,20 +85,20 @@ Page layout:
     <option value="1.25">20px (1.25rem)</option>
   </select>
 </div>
-      
+        
 <div class='stackedlabeldropdown'>
   <label for="select3">Line height:</label>
   <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 60px;">
-  <option value="1.4">1.4</option>
-  <option disabled="disabled">----</option>
-  <option value="1.2">1.2</option>
-  <option value="1.3">1.3</option>
-  <option value="1.5">1.5</option>
-  <option value="1.6">1.6</option>
-</select>
+    <option value="1.4">1.4</option>
+    <option disabled="disabled">----</option>
+    <option value="1.2">1.2</option>
+    <option value="1.3">1.3</option>
+    <option value="1.5">1.5</option>
+    <option value="1.6">1.6</option>
+  </select>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Page link color:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Text of 'Edit this Page' link:</label><br><input type="text" maxlength="60" value="Edit this Page" id="editLinkText" name="editLinkText"></div>
 
@@ -155,13 +155,13 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline"><label type="color">Docsify Coverpage color:</label><br><input type="text" maxlength="7" size="7" value="#6C8A9A" id="coverpagecolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Link color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
 
-<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateAndDisplayColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;"><label type="color">Coverpage color for dark theme:</label><br><input type="text" maxlength="7" size="7" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_3" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
