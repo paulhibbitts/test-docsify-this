@@ -363,6 +363,113 @@
             URLparms = URLparms + `&link-color=` + hexCode;
           }
 
+          const cb9 = document.querySelector('#loadfavicon');
+          if (cb9.checked) {
+            var URLparms = URLparms + `&loadFavicon=favicon.png`;
+          }
+
+          const cb10 = document.querySelector('#loadcoverpage');
+          if (cb10.checked) {
+            var URLparms = URLparms + `&coverpage=_coverpage.md`;
+          }
+
+          const cb11 = document.querySelector('#loadcustomsidebar');
+          if (cb11.checked) {
+
+            if (!(URLparms.includes("&sidebar=true"))) {
+              var URLparms = URLparms + `&sidebar=true`; 
+              document.getElementById("stylecontentonly").checked = false;
+              document.getElementById("styletoc").checked = false;
+              document.getElementById("stylesidebar").checked = true;
+            }
+            var URLparms = URLparms + `&loadSidebar=_sidebar.md`;
+          }
+
+          const cb12 = document.querySelector('#loadcustomnavbar');
+          if (cb12.checked) {
+            var URLparms = URLparms + `&loadNavbar=_navbar.md`;
+          }
+
+          const cb13 = document.querySelector('#loadcustomfooter');
+          if (cb13.checked) {
+            var URLparms = URLparms + `&loadFooter=_footer.md`;
+          }
+
+          const cb14 = document.querySelector('#enableSidebarsearch');
+          if (cb14.checked) {
+            var URLparms = URLparms + `&search=true`;
+          }
+
+          var getpageTitle = document.getElementById("pageTitle");
+          var pageTitle = getpageTitle.value;
+          if (!(pageTitle == "")) {
+            pageTitle = pageTitle.replace(/ /g, '%20');
+            URLparms = URLparms + `&page-title=` + pageTitle;
+          }
+
+          var getheaderweight = document.getElementById('headerweight').value;
+          if (!(getheaderweight == "400")) {
+            var URLparms = URLparms + `&header-weight=` + getheaderweight
+          }
+
+          const cb15 = document.querySelector('#zoomimages');
+          if (cb15.checked) {
+            var URLparms = URLparms + `&zoom-images=true`;
+          }
+
+          var getColor = document.getElementById("coverpagecolor");
+          var hexCode = getColor.value;
+          if (hexCode === '') {
+            hexCode = '#6C8A9A';
+            document.getElementById("coverpagecolor").value = hexCode;
+            document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+            document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
+            document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+          }
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+          }
+          if (!(hexCode == "6C8A9A")) {
+            URLparms = URLparms + `&coverpage-color=` + hexCode;
+          }
+
+          const cb16 = document.querySelector('#enableDarkmode');
+          if (cb16.checked) {
+            var URLparms = URLparms + `&dark-mode=true`;
+          }
+          
+          var getColor = document.getElementById("linkcolordarkmode");
+          var hexCode = getColor.value;
+          if (hexCode === '') {
+            hexCode = '#0374B5';
+            document.getElementById("linkcolordarkmode").value = hexCode;
+            document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0374B5';
+            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0374B5';
+          }
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+          }
+          if (!(hexCode == "0374B5")) {
+            URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+          }
+
+          var getColor = document.getElementById("coverpagecolordarkmode");
+          var hexCode = getColor.value;
+          if (hexCode === '') {
+            hexCode = '#262D30';
+            document.getElementById("coverpagecolordarkmode").value = hexCode;
+            document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
+            document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#262D30';
+            document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+          }
+          if (hexCode.charAt(0) == "#") {
+            hexCode = hexCode.substring(1);
+          }
+          if (!(hexCode == "262D30")) {
+            URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
+          }
+
           if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
           // Filename without supported extension or missing filename
             alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
@@ -546,11 +653,13 @@
       document.getElementById("loadcustomnavbar").checked = false;
       document.getElementById("loadcustomfooter").checked = false;
 
+      document.getElementById("enableSidebarsearch").checked = false;
+
       document.getElementById("pageTitle").value = '';
 
       document.getElementById("headerweight").value = '400';
 
-      document.getElementById("zoomableimages").checked = false;
+      document.getElementById("zoomimages").checked = false;
 
       document.getElementById("coverpagecolor").value = '#6C8A9A';
       document.getElementById("coverpagecolorpreview").style.visibility = "visible";
