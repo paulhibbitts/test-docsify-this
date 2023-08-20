@@ -142,7 +142,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><label>Page Title:</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline"><label>Page title (added to top of Web page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <div class='stackedlabeldropdown'>
   <label for="select3">Page Headers weight:</label>
