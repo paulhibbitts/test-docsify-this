@@ -999,6 +999,12 @@ span #docsifythisurlfield {
   margin-top: 4px;
 }
 
+#docsifythisurlbuilder .clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+ }
+
 .sidebar-nav a, .sidebar nav a {
   overflow: visible;
   white-space: break-spaces;
