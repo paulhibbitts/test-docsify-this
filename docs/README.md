@@ -129,7 +129,7 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
 
-<h3>Page Title and Headings</h3>
+<h3>Page Title and Headings Display</h3>
 
 <hr>
 
