@@ -890,7 +890,6 @@ span #docsifythisurlfield {
   display: inline-block;
 }
 
-
 #docsifythisurlbuilder input[type=number] {
   border: 1px solid #000;
   height: 2rem;
@@ -1048,11 +1047,7 @@ html {
     color: #A6A6A6;
   }
   
-  #docsifythis #docsifythisurlbuilder h2 {
-    color: #8798ee; /* Original color #4bc3f4 */
-  }
-
-  #docsifythis #docsifythisurlbuilder h3 {
+  #docsifythis #docsifythisurlbuilder h2, #docsifythis #docsifythisurlbuilder h2 {
     color: #8798ee; /* Original color #4bc3f4 */
   }
   
