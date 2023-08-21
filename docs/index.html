@@ -527,6 +527,17 @@
       }
     }
 
+    function toggleDiv2(link) {
+      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+      if (theDiv.style.display === "none") {
+        link.text = 'Hide Advanced Page and Site Appearance Options \«';
+        theDiv.style.display = "block";
+      } else {
+        link.text = 'Show Advanced Page and Site Appearance Options \»';
+        theDiv.style.display = "none";
+      }
+    }
+
     function validateColorAndUpdatePreview(inputId, previewId) {
       var getColor = document.getElementById(inputId);
       var hexCode = getColor.value;
@@ -1168,6 +1179,7 @@
                 var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
                 document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
                 theDiv.style.display = "block";
+                document.getElementById("docsifythisurlbuildershowhidelink2").style.display = "none";
                 var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
                 theDiv2.style.display = "block";
               }
