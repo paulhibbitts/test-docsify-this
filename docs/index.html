@@ -1128,13 +1128,13 @@
                 document.getElementById('docsifythisurlfield').value = markdownFileURL;
               }
 
-              if (getURLParameterByName('toc-layout', true, false, window.location.href, true) === 'true') {
+              if (getURLParameterByName('toc', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = true;
                 document.getElementById("stylesidebar").checked = false;
               }
 
-              if (getURLParameterByName('sidebar-layout', true, false, window.location.href, true) === 'true') {
+              if (getURLParameterByName('sidebar', true, false, window.location.href, true) === 'true') {
                 document.getElementById("stylecontentonly").checked = false;
                 document.getElementById("styletoc").checked = false;
                 document.getElementById("stylesidebar").checked = true;
@@ -1142,6 +1142,140 @@
 
               if (getURLParameterByName('edit-link-checkbox', true, false, window.location.href, true) === 'true') {
                 document.getElementById("editCheck").checked = true;
+              }
+
+              if (getURLParameterByName('browser-tab-title')) {
+                browserTabTitle = getURLParameterByName('browser-tab-title', null, null, window.location.href, true);
+                document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
+              }
+
+              if (getURLParameterByName('font-family')) {
+                fontfamily = getURLParameterByName('font-family', null, null, window.location.href, true);
+                document.getElementById('fontfamily').value = fontfamily;
+              }
+
+              if (getURLParameterByName('font-size')) {
+                fontsize = getURLParameterByName('font-size', null, null, window.location.href, true);
+                document.getElementById('fontsize').value = fontsize;
+              }
+
+              if (getURLParameterByName('line-height')) {
+                lineheight = getURLParameterByName('line-height', null, null, window.location.href, true);
+                document.getElementById('lineheight').value = lineheight;
+              }
+
+              if (getURLParameterByName('link-color')) {
+                linkcolor = '#' + getURLParameterByName('link-color', null, null, window.location.href, true);
+                document.getElementById('linkcolor').value = linkcolor;
+                document.getElementById("linkcolorpreview").style.visibility = "visible";
+                document.getElementById("linkcolorpreview").style.borderColor = linkcolor;
+                document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
+              }
+
+              if (getURLParameterByName('edit-link-text')) {
+                editLinkText = getURLParameterByName('edit-link-text', null, null, window.location.href, true);
+                document.getElementById('editLinkText').value = decodeURI(editLinkText);
+              }
+
+              if (getURLParameterByName('edit-link-top', true, false, window.location.href, true) === 'true') {
+                document.getElementById("editLinkTopCheck").checked = true;
+              }
+
+              if (getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true') {
+                document.getElementById("hideCredits").checked = true;
+              }
+
+              if (getURLParameterByName('toc-headings')) {
+                tocheadings = getURLParameterByName('toc-headings', null, null, window.location.href, true);
+                if (tocheadings.includes("h1")) {
+                  document.getElementById("toch1").checked = true;
+                }
+                if (tocheadings.includes("h2")) {
+                  document.getElementById("toch2").checked = true;
+                }
+                if (tocheadings.includes("h3")) {
+                  document.getElementById("toch3").checked = true;
+                }
+              }
+
+              if (getURLParameterByName('toc-narrow', true, false, window.location.href, true) === 'true') {
+                document.getElementById("narrowToC").checked = true;
+              }
+
+              if (getURLParameterByName('maxLevel')) {
+                maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
+                document.getElementById('maxLevel').value = maxLevel;
+              }
+
+              if (getURLParameterByName('hypothesis', true, false, window.location.href, true) === 'true') {
+                document.getElementById("hypothesisenable").checked = true;
+              }
+
+              if (getURLParameterByName('page-title')) {
+                pageTitle = getURLParameterByName('page-title', null, null, window.location.href, true);
+                document.getElementById('pageTitle').value = decodeURI(pageTitle);
+              }
+
+              if (getURLParameterByName('header-weight')) {
+                headerweight = getURLParameterByName('header-weight', null, null, window.location.href, true);
+                document.getElementById('headerweight').value = headerweight;
+              }
+
+              if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
+                document.getElementById("zoomimages").checked = true;
+              }
+              
+              if (getURLParameterByName('loadFavicon')) {
+                document.getElementById("loadfavicon").checked = true;
+              }
+
+              if (getURLParameterByName('coverpage')) {
+                document.getElementById("loadcoverpage").checked = true;
+              }
+
+              if (getURLParameterByName('loadSidebar')) {
+                document.getElementById("loadcustomsidebar").checked = true;
+              }
+
+              if (getURLParameterByName('loadNavbar')) {
+                document.getElementById("loadcustomnavbar").checked = true;
+              }
+
+              if (getURLParameterByName('loadFooter')) {
+                document.getElementById("loadcustomfooter").checked = true;
+              }
+
+              if (getURLParameterByName('search', true, false, window.location.href, true) === 'true') {
+                document.getElementById("enableSidebarsearch").checked = true;
+              }
+
+              if (getURLParameterByName('coverpage-color')) {
+                coverpagecolor = '#' + getURLParameterByName('coverpage-color', null, null, window.location.href, true);
+                document.getElementById('coverpagecolor').value = coverpagecolor;
+                document.getElementById("coverpagecolorpreview").style.visibility = "visible";
+                document.getElementById("coverpagecolorpreview").style.borderColor = coverpagecolor;
+                document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
+              }
+
+              if (getURLParameterByName('dark-mode', true, false, window.location.href, true) === 'true') {
+                document.getElementById("enableDarkmode").checked = true;
+              }
+
+              if (getURLParameterByName('link-color-dark-mode')) {
+                linkcolordarkmode = '#' + getURLParameterByName('link-color-dark-mode', null, null, window.location.href, true);
+                document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
+                document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
+                document.getElementById("linkcolordarkmodepreview").style.borderColor = linkcolordarkmode;
+                document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
+              }
+
+
+              if (getURLParameterByName('coverpage-color-dark-mode')) {
+                coverpagecolordarkmode = '#' + getURLParameterByName('coverpage-color-dark-mode', null, null, window.location.href, true);
+                document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
+                document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
+                document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
+                document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = coverpagecolordarkmode;
               }
 
               if (getURLParameterByName('show-page-options', true, false, window.location.href, true) === 'true') {
@@ -1191,7 +1325,10 @@
           window.$docsify[key] = value;
         }
       } else {
+        // ensure to only load when displaying remote files
+        if (getURLParameterByName('basePath')) {
         window.$docsify[key] = value;
+        }
       }
     });
 
