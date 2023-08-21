@@ -127,8 +127,6 @@ Page layout:
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
 
-<div id="docsifythisurlbuildershowhidelink2" style="margin-top: 16px;"><a name='toggleDivlink2' href='#' onclick='toggleDiv2(this); return false;'>Show Advanced Page and Site Appearance Options &raquo;</a></div>
-
 <div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
 
 <h3>Page Title and Headings</h3>
