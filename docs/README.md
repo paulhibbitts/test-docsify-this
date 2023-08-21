@@ -48,7 +48,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editCheck" unchecked><label for="editCheck">Include 'Edit this Page' link with public GitHub or Codeberg files (default location is bottom of page)</label></div>
 
-<div id="docsifythisurlbuildershowhidelink"><a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show More Page Appearance Options &raquo;</a></div>
+<div id="docsifythisurlbuildershowhidelink";><a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show More Page Appearance Options &raquo;</a></div>
 
 <div id="docsifythisurlbuilderoptionsDiv" style='display: none'>
 
@@ -126,6 +126,8 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
 <input class="docsifythisurlbuilderprimarybutton" style="border:none;margin-top: 10px;" type="button" id="btn_2" value="Publish as a Standalone Web Page" onclick="openURLs(document.getElementById('docsifythisurlfield').value)"/>
+
+<div id="docsifythisurlbuildershowhidelink2" style="margin-top: 16px;"><a name='toggleDivlink2' href='#' onclick='toggleDiv2(this); return false;'>Show Advanced Page and Site Appearance Options &raquo;</a></div>
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
 
