@@ -1317,7 +1317,7 @@
         // TODO: Parse numbers?
 
         // console.log(value,key);
-        if (key === 'basePath' && !(allowedDomains === '')) {
+        if (!(allowedDomains === '')) {
           const { hostname } = new URL(value);
           if (!(allowedDomains.includes(hostname))) {
             alert('Only the domain(s) ' + allowedDomains + ' permitted for a Markdown source file URL.');
