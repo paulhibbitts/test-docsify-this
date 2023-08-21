@@ -129,18 +129,26 @@ Page layout:
 
 <div id="docsifythisurlbuilderoptionsDiv2" style='display: none'>
 
+<h3>Page Title and Headings</h3>
+
 <hr>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Page title (append to top of page):</label><br><input type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
-<div class='stackedlabeldropdown'>
-  <label for="select3">Page headers font weight:</label>
-  <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
-    <option value="400">Normal (400)</option>
-    <option value="600">Semi Bold (600)</option>
-    <option value="800">Bold (800)</option>
-  </select>
+<div class='clearfix'>
+  <div class='stackedlabeldropdown' style='margin-bottom:4px;'>
+    <label for="select3">Page headers font weight:</label>
+    <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
+      <option value="400">Normal (400)</option>
+      <option value="600">Semi Bold (600)</option>
+      <option value="800">Bold (800)</option>
+    </select>
+  </div>
 </div>
+
+<h3>Page Images</h3>
+
+<hr>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoom images (tapping on images to enlarge them)</label></div>
 
