@@ -1536,8 +1536,10 @@
 
   <!-- Zoom Image Plugin -->
   <script>
-    if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
+    if (!(window.$docsify['basePath'] === undefined)) {
+      if (getURLParameterByName('zoom-images', true, false, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+      }
     }
   </script>
 
