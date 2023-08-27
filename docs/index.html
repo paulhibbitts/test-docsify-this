@@ -237,6 +237,10 @@
               if (document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) {
                 gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
               }
+              const cb17 = document.querySelector('#usegithubdotdev');
+              if (cb17.checked) {
+                gitlinkPageURL = gitlinkPageURL.replace('github.com', 'github.dev');
+              }
               var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
             }
           }
