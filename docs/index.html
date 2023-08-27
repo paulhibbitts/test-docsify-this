@@ -198,6 +198,10 @@
             var gitlinkPageURL = url;
             url = url.replace('github.com', 'raw.githubusercontent.com');
             url = url.replace(/\/blob/, '');
+          } else if (url.includes("github.dev")) {
+            var gitlinkPageURL = url;
+            url = url.replace('github.dev', 'raw.githubusercontent.com');
+            url = url.replace(/\/blob/, '');
           } else if (url.includes("githubusercontent.com")) {
             var gitlinkPageURL = url;
             gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
