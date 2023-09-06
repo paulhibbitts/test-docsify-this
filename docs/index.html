@@ -1300,6 +1300,11 @@
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
+            subMaxLevel = getURLParameter('subMaxLevel', null, null, window.location.href, true);
+            if (subMaxLevel) {
+              document.getElementById('subMaxLevel').value = subMaxLevel;
+            }
+
             coverpagecolor = getURLParameter('coverpage-color');
             if (coverpagecolor) {
               coverpagecolor = '#' + coverpagecolor;
