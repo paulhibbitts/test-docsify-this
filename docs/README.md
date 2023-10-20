@@ -554,7 +554,7 @@ Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) 
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
 
 ##### name
-Display the name of a site in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
+Display the name of the Website in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  
 
 ##### page-title
