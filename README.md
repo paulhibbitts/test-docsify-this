@@ -609,19 +609,6 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
-#### Displaying a Site Title in a Custom Sidebar
-To display a site title in a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) you can add a H1 header level (including a tag to not include it with Docsify generated header navigation) above the page list in the Sidebar, for example:  
-
-```markdown
-# Your Site Title Here <!-- {docsify-ignore} -->
-
-- [Page One](page-one)
-- [Page Two](page-two)
-- [Page Three](page-three)
-```
-
-If you want to include a link to the site home page it is recommended that page is included as either the first item in the page list in the Sidebar or is included as the first item in a [Docsify custom navbar](https://docsify.js.org/#/custom-navbar?id=markdown).  
-
 #### Including Code Blocks
 Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
 
