@@ -793,6 +793,8 @@
       subMaxLevel: 2,
       hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
 
+      skipLink: !(getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
+
       search: 'auto', // default
 
       // complete configuration parameters
@@ -1046,7 +1048,7 @@
 
               var editHtml = '[:memo:' + editLinkText + '](' + url + ')\n'
 
-              var creditHtml = '\n\n' + 'This page is displayed using <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
+              var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
 
               if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', true, false, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
                 if (!(getURLParameterByName('hide-credits', true, false, window.location.href, true) === 'true')) {
@@ -1432,7 +1434,9 @@
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script> -->
   <!-- <script src="https://docsify-preview-mqvotzlmj-docsifyjs.vercel.app/lib/docsify.js"></script> -->
-  <script src="assets/vendor/docsify/docsify.min.js"></script>
+  <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
+  <script src="https://docsify-preview-git-494-skip-link-docsifyjs.vercel.app/lib/docsify.min.js"></script>
+  
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
@@ -1445,8 +1449,9 @@
 
   <!-- Customizable Theme -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script> -->
-  <script src="assets/vendor/themeable/docsify-themeable.min.js"></script>
-
+  <!-- <script src="assets/vendor/themeable/docsify-themeable.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+  
   <!-- Load custom.css file only when displaying Markdown files -->
   <script>
     if (window.$docsify['basePath']) {
