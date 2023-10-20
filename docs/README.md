@@ -167,6 +167,8 @@ Page layout:
 
 <hr>
 
+<div class="docsifythisurlbuilderoptionsline"><label>Site name:</label><br><input type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
+
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch" unchecked><label for="enableSidebarsearch">Enable Docsify Search plugin in custom Docsify Sidebar</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><label>Maximum header level of custom Docsify Sidebar automatic table of contents (0 for none):</label><br><input type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
@@ -505,6 +507,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [loadFooter](/?id=loadFooter)
 * [loadNavbar](/?id=loadNavbar)
 * [loadSidebar](/?id=loadSidebar)
+* [name](/?id=name)
 * [page-title](/?id=page-title)
 * [search](/?id=search)
 * [subMaxLevel](/?id=subMaxLevel)
@@ -549,6 +552,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### loadSidebar
 Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
+
+##### name
+Display the name of the site in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  

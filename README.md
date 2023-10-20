@@ -269,6 +269,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
 * [loadSidebar](#loadSidebar)
+* [name](#name)
 * [page-title](#page-title)
 * [search](#search)
 * [zoom-images](#zoom-images)
@@ -312,6 +313,10 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### loadSidebar
 Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
+
+##### name
+Display the name of the site in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
