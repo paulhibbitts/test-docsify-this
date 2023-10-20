@@ -271,6 +271,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [loadSidebar](#loadSidebar)
 * [name](#name)
 * [page-title](#page-title)
+* [pagination](#pagination)
 * [search](#search)
 * [zoom-images](#zoom-images)
 
@@ -321,6 +322,10 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+
+##### pagination
+Display Pagination buttons in page content area (custom Docsify Sidebar required) with the optional **pagination** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&pagination=true  
 
 ##### subMaxLevel
 Set the maximum automatic table of contents header levels in custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
