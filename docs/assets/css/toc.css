@@ -43,8 +43,8 @@ aside.nav.nothing {
   top: 0;
   bottom: auto;
   margin-right: 10px;
-  scrollbar-width: thin !important;
-  scrollbar-color: grey transparent;
+  /* scrollbar-width: thin !important;
+  scrollbar-color: grey transparent; */
 }
 
 .page_toc a > * {
