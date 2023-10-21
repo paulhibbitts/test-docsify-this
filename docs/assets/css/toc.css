@@ -42,9 +42,9 @@ aside.nav.nothing {
   max-height: 100vh;
   top: 0;
   bottom: auto;
-  /* margin-right: 10px;
+  margin-right: 100px;
   scrollbar-width: thin !important;
-  scrollbar-color: grey transparent; */
+  scrollbar-color: grey transparent;
 }
 
 .page_toc a > * {
