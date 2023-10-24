@@ -501,21 +501,18 @@
             URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
           }
 
-          // console.log(!(isExtensionAllowed(lastSegment)));
-          // console.log((lastSegment === ""));
-          // console.log((lastSegment == "download"));
           if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.raw.githubusercontent.com")) {
           // Filename without supported extension or missing filename
             alert("Please use the GitHub Gist raw source URL and a filename that includes the '.md' extension as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
             selectText();
             return;
-          } else if ( (!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(lastSegment == "download")) {
+          } else if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
           // Filename without supported extension or missing filename
             alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
             return;
           } else {
-            // Filename with a supported extension along with full path and filename or full path and supported download folder is present
+            // Filename with supported extension is present along with full path and filename
             url = url.substring(0, url.lastIndexOf("/"));
             var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
           }
