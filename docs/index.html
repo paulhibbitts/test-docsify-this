@@ -232,15 +232,11 @@
 
           // Get last segment of URL
           const { hostname } = new URL(url);
-          if (!(hedgedocInstances.includes(hostname))) {
-            var lastSegment = url.split('/').pop();
-          } else {
+          var lastSegment = url.split('/').pop();
+          if (hedgedocInstances.includes(hostname)) {
             // Support for HedgeDoc instances in the Web Page Builder
-            if (url.includes('download')) {
-              // Do not add '/download' to URL
-              var lastSegment = url.split('/').pop();
-            } else {
-              var lastSegment = url.split('/').pop() + '/download';
+            if (!url.includes('/download')) {
+              lastSegment = lastSegment + '/download';
             }
           }
           var URLparms = '';
