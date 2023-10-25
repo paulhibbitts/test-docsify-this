@@ -131,6 +131,9 @@
     // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
     var allowedDomains = '';
 
+    // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL
+    var hedgedocInstances = 'demo.hedgedoc.org';
+
     // Get value from GET-parameter in URL
     // @param {array}  name        Parameter-name
     // @param {*}      isTrue      Returns this variable if "name" found
@@ -228,7 +231,18 @@
           }
 
           // Get last segment of URL
-          var lastSegment = url.split('/').pop();
+          const { hostname } = new URL(url);
+          if (!(hedgedocInstances.includes(hostname))) {
+            var lastSegment = url.split('/').pop();
+          } else {
+            // Support for HedgeDoc instances in the Web Page Builder
+            if (url.includes('download')) {
+              // Do not add '/download' to URL
+              var lastSegment = url.split('/').pop();
+            } else {
+              var lastSegment = url.split('/').pop() + '/download';
+            }
+          }
           var URLparms = '';
 
           const cb1 = document.querySelector('#editCheck');
@@ -506,8 +520,8 @@
             alert("Please use the GitHub Gist raw source URL and a filename that includes the '.md' extension as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
             selectText();
             return;
-          } else if (!(isExtensionAllowed(lastSegment)) || lastSegment === "") {
-          // Filename without supported extension or missing filename
+          } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
+          // Filename without supported extension or missing filename and not a HedgeDoc instance
             alert("Please include the full path and filename with a supported extension (" + getAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
             selectText();
             return;
@@ -730,7 +744,7 @@
     }
 
     function getAllowedFileExtensions() {
-      // Return list of supported file extensions and supported slugs (e.g. 'download')
+      // Return list of supported file extensions and supported slugs (e.g. 'download' for HedgeDoc)
       return ".md,.adoc,download";
     }
 
