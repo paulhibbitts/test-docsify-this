@@ -1182,7 +1182,7 @@
 
             // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
 
-            if (getURLParameterByName('show-page-options') === true || getURLParameterByName(['browser-tab-title','browserTabTitle','font-family','fontFamily','font-size','fontSize','line-height','lineHeight','link-color','linkColor','edit-link-text','editLinkText','edit-link-top','editLinkTop','hide-credits','hideCredits','toc-headings','tocHeadings','toc-narrow','tocNarrow','maxLevel','hypothesis'])) {
+            if (getURLParameterByName(['show-page-options','showPageOptions']) === true || getURLParameterByName(['browser-tab-title','browserTabTitle','font-family','fontFamily','font-size','fontSize','line-height','lineHeight','link-color','linkColor','edit-link-text','editLinkText','edit-link-top','editLinkTop','hide-credits','hideCredits','toc-headings','tocHeadings','toc-narrow','tocNarrow','maxLevel','hypothesis'])) {
               // console.log("show more!");
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
