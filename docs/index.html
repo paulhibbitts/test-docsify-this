@@ -1214,8 +1214,7 @@
               document.getElementById("stylesidebar").checked = true;
             }
 
-            if ((getURLParameterByName(['edit-link-checkbox','editLinkCheckbox']) === true) || (getURLParameterByName(['edit-link','editLink']))) {
-              console.log("set edit link checkbox");
+            if ((getURLParameterByName(['edit-link-checkbox','editLinkCheckbox'], null, null, window.location.href, true) === 'true') || (getURLParameterByName(['edit-link','editLink']))) {
               document.getElementById("editCheck").checked = true;
             }
 
@@ -1253,11 +1252,11 @@
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
 
-            if (getURLParameterByName(['edit-link-top','editLinkTop']) === true) {
+            if (getURLParameterByName(['edit-link-top','editLinkTop'], null, null, window.location.href, true) === 'true') {
               document.getElementById("editLinkTopCheck").checked = true;
             }
 
-            if (getURLParameterByName(['hide-credits','hideCredits']) === true) {
+            if (getURLParameterByName(['hide-credits','hideCredits'], null, null, window.location.href, true) === 'true') {
               document.getElementById("hideCredits").checked = true;
             }
 
@@ -1274,7 +1273,7 @@
               }
             }
 
-            if (getURLParameterByName(['toc-narrow','tocNarrow']) === true) {
+            if (getURLParameterByName(['toc-narrow','tocNarrow'], null, null, window.location.href, true) === 'true') {
               document.getElementById("narrowToC").checked = true;
             }
 
@@ -1283,7 +1282,7 @@
               document.getElementById('maxLevel').value = maxLevel;
             }
 
-            if (getURLParameterByName('hypothesis') === true) {
+            if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true') {
               document.getElementById("hypothesisenable").checked = true;
             }
 
@@ -1297,7 +1296,7 @@
               document.getElementById('headerweight').value = headerweight;
             }
 
-            if (getURLParameterByName(['zoom-images','zoomImages']) === true) {
+            if (getURLParameterByName(['zoom-images','zoomImages'], null, null, window.location.href, true) === 'true') {
               document.getElementById("zoomimages").checked = true;
             }
             
@@ -1331,11 +1330,11 @@
               document.getElementById('subMaxLevel').value = subMaxLevel;
             }
 
-            if (getURLParameterByName('search') === true) {
+            if (getURLParameterByName('search', null, null, window.location.href, true) === 'true') {
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
-            if (getURLParameterByName('pagination') === true) {
+            if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
               document.getElementById("pagination").checked = true;
             }
 
@@ -1348,7 +1347,7 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            if (getURLParameterByName(['dark-mode','darkMode']) === true) {
+            if (getURLParameterByName(['dark-mode','darkMode'], null, null, window.location.href, true) === 'true') {
               document.getElementById("enableDarkmode").checked = true;
             }
 
