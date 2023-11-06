@@ -1214,7 +1214,8 @@
               document.getElementById("stylesidebar").checked = true;
             }
 
-            if (getURLParameterByName(['edit-link-checkbox','editLinkCheckbox']) === 'true' || getURLParameterByName(['edit-link','editLink'])) {
+            if ((getURLParameterByName(['edit-link-checkbox','editLinkCheckbox']) === true) || (getURLParameterByName(['edit-link','editLink']))) {
+              console.log("set edit link checkbox");
               document.getElementById("editCheck").checked = true;
             }
 
@@ -1252,11 +1253,11 @@
               document.getElementById('editLinkText').value = decodeURI(editLinkText);
             }
 
-            if (getURLParameterByName(['edit-link-top','editLinkTop']) === 'true') {
+            if (getURLParameterByName(['edit-link-top','editLinkTop']) === true) {
               document.getElementById("editLinkTopCheck").checked = true;
             }
 
-            if (getURLParameterByName(['hide-credits','hideCredits']) === 'true') {
+            if (getURLParameterByName(['hide-credits','hideCredits']) === true) {
               document.getElementById("hideCredits").checked = true;
             }
 
@@ -1273,7 +1274,7 @@
               }
             }
 
-            if (getURLParameterByName(['toc-narrow','tocNarrow']) === 'true') {
+            if (getURLParameterByName(['toc-narrow','tocNarrow']) === true) {
               document.getElementById("narrowToC").checked = true;
             }
 
@@ -1296,7 +1297,7 @@
               document.getElementById('headerweight').value = headerweight;
             }
 
-            if (getURLParameterByName(['zoom-images','zoomImages']) === 'true') {
+            if (getURLParameterByName(['zoom-images','zoomImages']) === true) {
               document.getElementById("zoomimages").checked = true;
             }
             
@@ -1347,7 +1348,7 @@
               document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
             }
 
-            if (getURLParameterByName(['dark-mode','darkMode']) === 'true') {
+            if (getURLParameterByName(['dark-mode','darkMode']) === true) {
               document.getElementById("enableDarkmode").checked = true;
             }
 
