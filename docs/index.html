@@ -191,13 +191,13 @@
         if (isValidUrl(url)) {
 
           docsifyURL = window.location.href
-          docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
 
           var params = new URLSearchParams(docsifyURL.search);
           params.delete('url-field');
           docsifyURL = docsifyURL.split("?")[0]; //url;
 
           docsifyURL = docsifyURL.replace('/#/', '');
+          docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
 
           const urlhostname = new URL(url).hostname
 
