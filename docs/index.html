@@ -191,6 +191,7 @@
         if (isValidUrl(url)) {
 
           docsifyURL = window.location.href
+          docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
 
           var params = new URLSearchParams(docsifyURL.search);
           params.delete('url-field');
