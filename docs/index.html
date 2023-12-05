@@ -1463,14 +1463,13 @@
   <!-- Load default or custom favicon file -->
   <script>
     const favicon = getURLParameterByName('loadFavicon', null, null, window.location.href, true);
-    console.log(favicon);
+    // console.log(favicon);
     if ((favicon !== false) && getURLParameterByName('basePath')) {
       const fileUrl = window.$docsify['basePath'] + '/' + favicon;
       checkIfFileExists(fileUrl)
         .then(exists => {
           if (exists) {
-            console.log("File exists.");
-            console.log(fileUrl);
+            // console.log("File exists.");
             // Perform actions when the file exists
             setFavicon(fileUrl);
           } else {
@@ -1480,12 +1479,12 @@
           }
         })
         .catch(error => {
-          console.error("Error occurred while checking the file:", error);
+          // console.error("Error occurred while checking the file:", error);
           // Handle the error
           setFavicon('assets/favicon/favicon.png');
         });
     } else {
-      console.log ("use standard favicon");
+      // console.log ("use standard favicon");
       setFavicon('assets/favicon/favicon.png');
     }
   </script>
