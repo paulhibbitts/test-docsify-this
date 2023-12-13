@@ -25,7 +25,11 @@ function plugin(hook, vm) {
         const innerContent = content.replace('![[', '').replace(']]', '');
         const linkAliasSps = innerContent.split('|'); // [link, alias]
         const imagePath = linkAliasSps.length === 2 ? `${linkAliasSps[0].trim()}` : innerContent;
-        return `<img src="${imagePath}" alt="${linkAliasSps[1]}" />`;
+
+        // Check if there is alt text before including it in the img tag
+        const altText = linkAliasSps[1] ? ` alt="${linkAliasSps[1].trim()}"` : '';
+
+        return `<img src="${imagePath}"${altText} />`;
       });
 
       // Check for regular wikilinks
