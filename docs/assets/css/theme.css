@@ -1070,12 +1070,12 @@ html {
   }
 
   #docsifythisurlbuilder {
-      background: #36416d; /* Original color #1f4b66 */
+    background: #36416d; /* Original color #1f4b66 */
   }
 
   #docsifythisurlfield{
-      background-color: #273338;
-      color: white;
+    background-color: #273338;
+    color: white;
   }
 
   #pageTitle {
@@ -1084,18 +1084,18 @@ html {
   }
 
   .docsifythisurlbuilderprimarybutton {
-      color: black;
-      background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
+    color: black;
+    background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
   }
 
   .docsifythisurlbuildersecondarybutton {
-      color: black;
-      background-color: #c1bfed; /* Original color #a2e8fc */
+    color: black;
+    background-color: #c1bfed; /* Original color #a2e8fc */
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
-      outline: 4px solid #7e83ed; /* Previous colors #9592ec #4bc3f4 */
-      position: relative;
+    outline: 4px solid #7e83ed; /* Previous colors #9592ec #4bc3f4 */
+    position: relative;
   }
 
   #docsifythisurlbuilder #editCheck, .markdown-section #editLinkTopCheck, .markdown-section #narrowToC, .markdown-section #toch1, .markdown-section #toch2, .markdown-section #toch3, .markdown-section #hideCredits, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #hypothesisenable, .markdown-section #loadfavicon, .markdown-section #loadcoverpage, .markdown-section #loadcustomsidebar, .markdown-section #loadcustomnavbar, .markdown-section #loadcustomfooter, .markdown-section #enableSidebarsearch, .markdown-section #zoomimages, .markdown-section #enableDarkmode, .markdown-section #pagination {
