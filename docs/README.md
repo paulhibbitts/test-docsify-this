@@ -167,9 +167,9 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Name for Website displayed in Sidebar:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Website name displayed in Sidebar" type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
+<div class="docsifythisurlbuilderoptionsline">Website name displayed in Sidebar:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Website name displayed in Sidebar" type="text" maxlength="80" value="" id="siteName" name="siteName"></div>
 
-<div class="docsifythisurlbuilderoptionsline">Logo image folder path and filename for Website displayed in Sidebar:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Website logo displayed in Sidebar" type="text" maxlength="80" value="" id="siteLogo" name="siteLogo"></div>
+<div class="docsifythisurlbuilderoptionsline">Website name logo displayed in Sidebar (folder path and image filename):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Website logo displayed in Sidebar" type="text" maxlength="80" value="" id="siteLogo" name="siteLogo"></div>
 
 <div class="docsifythisurlbuilderoptionsline">Maximum header level of Sidebar automatic table of contents (0 for none):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Maximum header level of Sidebar automatic table of contents (0 for none)" type="number" size="1" value="2" min="0" max="6" id="subMaxLevel" name="subMaxLevel"></div>
 
@@ -592,7 +592,7 @@ Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) 
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
 
 ##### logo
-Display a logo image for the Website in a custom Docsify Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
+Display a logo image for the Website name in a custom Docsify Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided.  
 
 ##### name
