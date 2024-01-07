@@ -296,6 +296,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [loadFooter](#loadFooter)
 * [loadNavbar](#loadNavbar)
 * [loadSidebar](#loadSidebar)
+* [logo](#logo)
 * [name](#name)
 * [page-title](#page-title)
 * [pagination](#pagination)
@@ -342,8 +343,12 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Load a [Docsify custom sidebar](https://docsify.js.org/#/more-pages?id=sidebar) from the Markdown file passed with the optional **loadSidebar** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md  
 
+##### logo
+Display a logo image for the Website in a custom Docsify Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided.  
+
 ##### name
-Display the name of the Website in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
+Display the name for the Website in a custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  When this parameter is provided it will be automatically used as the Browser tab title as well.  
 
 ##### page-title
