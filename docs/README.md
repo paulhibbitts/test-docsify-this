@@ -224,7 +224,6 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 [:fa fa-comment fa-fw: Share your Feedback](https://forms.gle/ViYu2ZdPmj6PeQ439 ':class=button-rounded')
 
-
 ---
 
 ### What Problem Does Docsify-This Solve?
