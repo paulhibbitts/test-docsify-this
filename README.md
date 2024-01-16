@@ -304,6 +304,7 @@ The following URL parameters are available for use in Docsify-This URLs, and are
 * [page-title](#page-title)
 * [pagination](#pagination)
 * [search](#search)
+* [submaxLevel](#subMaxLevel)
 * [zoom-images](#zoom-images)
 
 ##### coverpage
@@ -362,13 +363,13 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Display Pagination buttons in page content area (custom Docsify Sidebar required) with the optional **pagination** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&pagination=true  
 
-##### subMaxLevel
-Set the maximum automatic table of contents header levels in custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1
-
 ##### search
 Enable the Docsify Search plugin (which currently includes matches for text and markup) on multiple page sites including a custom Sidebar with the optional **search** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true
+
+##### subMaxLevel
+Set the maximum automatic table of contents header levels in custom Docsify Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1
 
 ##### zoom-images
 Enable image zoom (tapping on images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
