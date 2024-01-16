@@ -691,6 +691,8 @@ The following style prefixes are available with Docsify-This:
 * [banner-tall-image](/?id=banner-tall-image)
 * [button](/?id=button)
 * [button-rounded](/?id=button-rounded)
+* [button-secondary](/?id=button-secondary)
+* [button-secondary-rounded](/?id=button-secondary-rounded)
 * [embedly-card](/?id=embedly-card)
 * [header-image-fade](/?id=header-image-fade)
 * [header-image-full-width](/?id=header-image-full-width)
@@ -807,6 +809,42 @@ Cropped to height of 350px on large screens, 175px on small screens.
 
 ```html
 <a class="button-rounded" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
+#### button-secondary
+
+[Example Secondary Button](# ':class=button-secondary')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button-secondary')
+```
+
+<a class="button-secondary" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Secondary Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-secondary')
+```
+
+```html
+<a class="button-secondary" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
+```
+
+#### button-secondary-rounded
+
+[Example Secondary Rounded Button](# ':class=button-secondary-rounded')
+
+```markdown
+[Required Reading Quiz due Jun 4th](https://canvas.sfu.ca/courses/44038/quizzes/166553 ':class=button-secondary-rounded')
+```
+
+<a class="button-secondary-rounded" href="#" target="_blank"><i class="fa fa-download fa-fw"></i>Example Secondary Rounded Button with Font Awesome Icon</a>
+
+```markdown
+[﹕fa fa-download fa-fw﹕Download](https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip ':class=button-secondary-rounded')
+```
+
+```html
+<a class="button-secondary-rounded" href="https://creativecommons.org/wp-content/uploads/2019/02/ccheart_black.svg_.zip" target="_blank"><i class="fa fa-download fa-fw"></i>Download</a>
 ```
 
 #### embedly-card
