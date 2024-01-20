@@ -656,6 +656,23 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </div>
 ```
 
+#### row/column with right-aligned second column
+
+```html
+<div class="row">
+<div class="column">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+<div class="column-right">
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+</div>
+</div>
+```
+
 #### video-container-4by3
 
 ```html
