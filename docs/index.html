@@ -706,6 +706,7 @@
 
         if (linkColorDarkMode !== false) {
           setColorProperties('#' + linkColorDarkMode);
+          document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
         } else {
           const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
 
@@ -726,6 +727,8 @@
       } else {
         // light mode
         const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
+
+        document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
 
         if (linkColor !== false) {
           setColorProperties('#' + linkColor);
