@@ -719,6 +719,7 @@
             setColorProperties('#' + linkColor);
           } else {
             setColorProperties('#1BA1EE');
+            document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
           }
         }
 
@@ -740,6 +741,7 @@
 
         } else {
           setColorProperties('#0374B5');
+          document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
         }
 
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
