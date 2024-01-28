@@ -17,6 +17,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+* [Read What Docsify-This Users Are Saying](#read-what-docsify-this-users-are-saying)
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Example Content Workflows](#example-content-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
@@ -51,6 +52,22 @@ With Docsify-This you can:
 * Seamlessly embed constraint-free Markdown/HTML, which you have authored, into other platforms (e.g. LMS or CMS)
 * Reuse existing Markdown content by seamlessly embedding it within other platforms (e.g. LMS or CMS)
 * Utilize the supported URL parameters when embedding content to match each destination platform better visually
+
+---
+
+### Read What Docsify-This Users Are Saying
+
+> I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
+— J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
+
+> Docsify-This feels like a rope ladder dropped from the software-development ship down to my mechanical engineering dingy. As an educator, I can't do a great job of instruction until I can do a great (modern) job of documentation. So, I'm using Docsify-This to create highly readable, dynamic content without an intensive study of coding - it has a perfect learning curve for technical experts in fields outside of coding.  
+— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University, United States)
+
+> I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
+— J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University, Canada)
+
+> Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
+— A. Levine aka CogDog (Independent Educational Technologist, Saskatchewan, Canada)
 
 ---
 
