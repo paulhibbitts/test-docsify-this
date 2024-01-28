@@ -17,7 +17,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 ## All About Docsify-This
 
 * [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
-* [Read What Docsify-This Users Are Saying](#read-what-docsify-this-users-are-saying)
+* [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Example Content Workflows](#example-content-workflows)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
@@ -55,7 +55,7 @@ With Docsify-This you can:
 
 ---
 
-### Read What Docsify-This Users Are Saying
+### Read What People are Saying about Docsify-This
 
 > I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
 — J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
