@@ -323,7 +323,7 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 
 #### Additional URL Parameters
 
-The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
+The following URL parameters are available for use in Docsify-This URLs, and (except for **page-title**) are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](#coverpage)
 * [coverpage-color](#coverpage-color)
@@ -392,7 +392,7 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 
 ##### page-title
 Set a custom page title at the top of your standalone pages with the optional **page-title** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Not included in the Advanced Web Page Builder.  
 
 ##### pagination
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
