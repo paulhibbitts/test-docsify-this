@@ -147,7 +147,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Page title (when provided, added as an H1 level header to the top of page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (append to top of page)" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Page title (when displaying a single Markdown file, add as an H1 level header at top of the page):<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page title (append to top of page)" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
