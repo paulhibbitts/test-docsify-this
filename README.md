@@ -328,7 +328,7 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 
 #### Advanced Web Page Builder
 
-The following additional URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
+The following additional URL parameters are also available for use in Docsify-This URLs, and are included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](#coverpage)
 * [coverpage-color](#coverpage-color)
