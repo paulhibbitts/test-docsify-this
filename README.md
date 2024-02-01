@@ -238,7 +238,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 ### Page Appearance URL Parameters
 
-#### Web Page Builder
+#### Basic Web Page Builder
 
 * [browser-tab-title](#browser-tab-title)
 * [edit-link](#edit-link)
@@ -326,9 +326,9 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Enable image zoom (tapping on page images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.  
 
-#### Additional URL Parameters
+#### Advanced Web Page Builder
 
-The following URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
+The following additional URL parameters are available for use in Docsify-This URLs, and are also included in the [Advanced Web Page Builder](https://paulhibbitts.github.io/test-docsify-this/?advanced=true).
 
 * [coverpage](#coverpage)
 * [coverpage-color](#coverpage-color)
