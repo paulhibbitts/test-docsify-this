@@ -487,7 +487,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 
 ### Page Appearance URL Parameters
 
-#### Basic URL Parameters (included in the default basic Web Page Builder)
+#### Basic URL Parameters (included in the standard Web Page Builder)
 
 * [browser-tab-title](/?id=browser-tab-title)
 * [edit-link](/?id=edit-link)
