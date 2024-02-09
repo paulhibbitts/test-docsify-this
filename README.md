@@ -523,7 +523,7 @@ The following CSS classes are available when authoring your own Markdown content
 ```
 
 ```html
-<span class='badge' style='--badge-text-color: #000; --badge-bg-color: #e7c500;'> Tue Jun 12th 11:59pm PDT</span>
+<span class='badge' style='--badge-bg-color: #e7c500; --badge-text-color: #000;'> Tue Jun 12th 11:59pm PDT</span>
 ```
 
 ```html
