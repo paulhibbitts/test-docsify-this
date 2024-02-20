@@ -32,8 +32,9 @@
                         next(html + footerHtml); // Append the footer to the current page content
                     });
             } finally {
-                // If no footer content found in same subdirectory
-                next(html);
+                // Handle possible 404 error
+                const footerHtml = vm.compiler.compile(content);
+                next(html + footerHtml); // Append the footer to the current page content
             }
         });
     }
