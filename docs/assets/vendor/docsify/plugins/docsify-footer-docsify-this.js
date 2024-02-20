@@ -11,27 +11,30 @@
   
       hook.afterEach(function (html, next) {
         try {
-          // Parse current URL to extract folder path on each page update
+          // Parse current URL to extract folder path
           var urlFragment = window.location.hash.slice(1); // Remove '#' character
           var pathSegments = urlFragment.split("/");
           var folderPath = pathSegments.slice(0, -1).join("/"); // Exclude the file part
           folderPath = folderPath ? folderPath + "/" : ""; // Ensure folder path ends with '/'
-  
+        
+          var footerAppended = false; // Flag to indicate footer append status
+        
           var footerFile =
             folderPath +
             (loadFooter === true ? DEFAULT_FOOTER + ext : loadFooter);
-  
+        
           // Fetch and append the footer content
-          Docsify.get(vm.router.getFile(footerFile), false, requestHeaders).then(
-            (content) => {
+          Docsify.get(vm.router.getFile(footerFile), false, requestHeaders)
+            .then((content) => {
               const footerHtml = vm.compiler.compile(content);
+              footerAppended = true; // Set flag to true as footer is appended
               next(html + footerHtml); // Append the footer to the current page content
-            },
-          );
+            })
         } finally {
-          // Handle possible 404 error
-          const footerHtml = vm.compiler.compile(content);
-          next(html + footerHtml); // Append the footer to the current page content
+          // Check if footer was not appended, then pass html
+          if (!footerAppended) {
+            next(html);
+          }
         }
       });
     };
