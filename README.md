@@ -234,7 +234,9 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 * [Standalone Site with zoomable images](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-student-portfolio-starter/main&homepage=README.md&zoom-images=true "Docsify-This Markdown Starter Portfolio Template")
 * [Standalone Site with 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter/blob/main/README.md "Docsify-This Markdown Starter Portfolio Template")  
 
-[Multi-language Site Template](https://github.com/paulhibbitts/docsify-this-multilanguage-site), displayed by Docsify-This as a [Standalone Site with Docsify Sidebar and Navbar](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multilanguage-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=Multi-language%20Site).  
+[Multi-language Site Template](https://github.com/paulhibbitts/docsify-this-multilanguage-site), displayed by Docsify-This as a:
+* [Standalone Site with Docsify Sidebar and Navbar](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multilanguage-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=Multi-language%20Site)
+* [Standalone Site with Docsify Sidebar, Navbar and Footer](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-multilanguage-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&loadFooter=_footer.md&hide-credits=true&name=Multi-language%20Site)  
 
 ---
 
