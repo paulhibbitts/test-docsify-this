@@ -946,7 +946,6 @@
               }
               // console.log(fileExt);
 
-              /* Handle 'Edit this Page' links */
               for (const link of links) {
                 const href = link.getAttribute('href');
                 if (href?.startsWith('#')) {
@@ -954,26 +953,28 @@
 
                   if (!lastSegment.startsWith("?id")) {
                     let editThisPageLink = '';
-                    if (existingEditThisPageLink.endsWith(fileExt)) {
-                      editThisPageLink = decodeURIComponent(currentBasePath);
+                    if (existingEditThisPageLink) {
+                      if (existingEditThisPageLink.endsWith(fileExt)) {
+                        editThisPageLink = decodeURIComponent(currentBasePath);
 
-                      if (currentBasePath.includes("githubusercontent.com")) {
-                        editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', existingEditThisPageLink.includes('github.dev') ? 'github.dev' : 'github.com')
-                          .replace(/\/main/, '/blob/main')
-                          .replace(/\/master/, '/blob/master');
-                      } else if (currentBasePath.includes("codeberg.page")) {
-                        editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
+                        if (currentBasePath.includes("githubusercontent.com")) {
+                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', existingEditThisPageLink.includes('github.dev') ? 'github.dev' : 'github.com')
+                            .replace(/\/main/, '/blob/main')
+                            .replace(/\/master/, '/blob/master');
+                        } else if (currentBasePath.includes("codeberg.page")) {
+                          editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
+                        }
+
+                        editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
+                      } else {
+                        editThisPageLink = existingEditThisPageLink;
                       }
-
-                      editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
-                    } else {
-                      editThisPageLink = existingEditThisPageLink;
                     }
 
                     const editThisPageLinkURLparm = editThisPageLink && `&edit-link=${editThisPageLink}`;
                     let newURL = '';
 
-                    const isDynamicLink = isExtensionAllowed(editThisPageLinkURLparm) && editThisPageLinkURLparm && !getURLParameterByName('hypothesis');
+                    var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) || getURLParameterByName('hypothesis');
                     if (!isDynamicLink) {
                       newURL = `#/${lastSegment}`;
                     } else {
@@ -988,6 +989,7 @@
                   }
                 }
               }
+
 
               /* JS to change Embedly cards to light or dark theme based on system theme */
               const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
