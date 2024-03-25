@@ -947,70 +947,42 @@
               // console.log(fileExt);
 
               for (const link of links) {
-                // console.log(link.getAttribute('href'));
-                // Find any local Markdown file links
-                if (link.getAttribute('href')?.match(/^#/)) {
-                  // Modify each Markdown file link to work with Remote Docsify
-                  var lastSegment = '';
-                  lastSegment = link.getAttribute('href');
-                  lastSegment = lastSegment.replace('#/', '');
-                  lastSegment = lastSegment.replace('./', '');
-                  lastSegment = lastSegment.replace(fileExt, '');
-                  // console.log(lastSegment);
-                  // console.log(lastSegment.startsWith("?id"));
-                  // Check to make sure link is not Docsify id anchor link
-                  var editThisPageLinkURLparm = '';
-                  if (lastSegment.startsWith("?id") === false) {
-                    if (existingEditThisPageLink) {
-                      // Calculate existing edit-link URL parm in link
-                      if (currentBasePath.includes("githubusercontent.com") && (existingEditThisPageLink.substr(existingEditThisPageLink.length - fileExt.length) == fileExt)) {
-                        var editThisPageLink = '';
-                        editThisPageLink = decodeURIComponent(currentBasePath);
-                        if (existingEditThisPageLink.includes('github.dev')) {
-                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.dev');
-                        } else {
-                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', 'github.com');
-                        }
-                        editThisPageLink = editThisPageLink.replace(/\/main/, '/blob/main');
-                        editThisPageLink = editThisPageLink.replace(/\/master/, '/blob/master');
-                        //console.log(lastSegment);
-                        editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
-                        editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
-                        // console.log(editThisPageLinkURLparm);
-                      }
-                      if (currentBasePath.includes("codeberg.page") && (existingEditThisPageLink.substr(existingEditThisPageLink.length - fileExt.length) == fileExt)) {
-                        //console.log(currentBasePath);
-                        var editThisPageLink = '';
-                        editThisPageLink = decodeURIComponent(currentBasePath);
+                const href = link.getAttribute('href');
+                if (href?.startsWith('#')) {
+                  let lastSegment = href.replace('#/', '').replace('./', '').replace(fileExt, '');
+
+                  if (!lastSegment.startsWith("?id")) {
+                    let editThisPageLink = '';
+                    if (existingEditThisPageLink.endsWith(fileExt)) {
+                      editThisPageLink = decodeURIComponent(currentBasePath);
+
+                      if (currentBasePath.includes("githubusercontent.com")) {
+                        editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', existingEditThisPageLink.includes('github.dev') ? 'github.dev' : 'github.com')
+                          .replace(/\/main/, '/blob/main')
+                          .replace(/\/master/, '/blob/master');
+                      } else if (currentBasePath.includes("codeberg.page")) {
                         editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
-                        //console.log(lastSegment);
-                        editThisPageLink = editThisPageLink + '/src/branch/main/' + lastSegment + fileExt;
-                        editThisPageLinkURLparm = `&edit-link=` + editThisPageLink;
-                        //console.log(editThisPageLinkURLparm);
                       }
-                      if (!(existingEditThisPageLink.substr(existingEditThisPageLink.length - fileExt.length) == fileExt)) {
-                        editThisPageLinkURLparm = `&edit-link=` + existingEditThisPageLink;
-                      }
-                    }
-                    // Update Markdown file link
-                    var newURL = '';
-                    // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
-                    var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) && !getURLParameterByName('hypothesis');
-                    if (!isDynamicLink) {
-                      newURL = '#/' + lastSegment;
-                      // console.log("Changed:");
-                      console.log();
+
+                      editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
                     } else {
-                      newURL = url + '?basePath=' + currentBasePath + '&homepage=' + lastSegment + fileExt + URLparms + editThisPageLinkURLparm;
-                      // console.log("Changed long:");
+                      editThisPageLink = existingEditThisPageLink;
                     }
-                    // console.log(newURL);
+
+                    const editThisPageLinkURLparm = editThisPageLink && `&edit-link=${editThisPageLink}`;
+                    let newURL = '';
+
+                    const isDynamicLink = isExtensionAllowed(editThisPageLinkURLparm) && editThisPageLinkURLparm && !getURLParameterByName('hypothesis');
+                    if (!isDynamicLink) {
+                      newURL = `#/${lastSegment}`;
+                    } else {
+                      newURL = `${url}?basePath=${currentBasePath}&homepage=${lastSegment}${fileExt}${URLparms}${editThisPageLinkURLparm}`;
+                    }
+
                     link.setAttribute('href', newURL);
                   }
                 } else {
-                  // console.log(link);
-                  // Set '_top' as external link targets except for docsify-this.net and GitHub Docsify-This repository
-                  if (!(link.href == "https://docsify-this.net/" || link.href == "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit")) {
+                  if (link.href !== "https://docsify-this.net/" && link.href !== "https://github.com/hibbitts-design/docsify-open-publishing-starter-kit") {
                     link.setAttribute('target', '_top');
                   }
                 }
