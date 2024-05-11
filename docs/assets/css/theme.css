@@ -478,7 +478,7 @@
 }
 
 .markdown-section a {
-  word-break: break-all;
+  overflow-wrap: break-word;
 }
 
 .markdown-section .fa-fw {
