@@ -244,11 +244,11 @@
 
       // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
       // console.log(postContent);
-      const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+      // const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
-      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
-        continue;
-      }
+      // if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
+      //   continue;
+      // }
 
       if (postTitle) {
         keywords.forEach(keyword => {
@@ -265,9 +265,13 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
-          handlePostContent = postContent
+          
+          const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+          if (!(postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage)) {
+            handlePostContent = postContent
             ? escapeHtml(ignoreDiacriticalMarks(postContent))
             : postContent;
+          }
 
           indexTitle = postTitle ? handlePostTitle.search(regEx) : -1;
           indexContent = postContent ? handlePostContent.search(regEx) : -1;
