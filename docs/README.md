@@ -219,6 +219,7 @@ Page layout:
 * [Editing Docsify-This Markdown Files on your Desktop](/?id=editing-docsify-this-markdown-files-on-your-desktop)
 * [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
+* [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 * [Troubleshooting](/?id=troubleshooting)
 * [Privacy Policy Summary](/?id=privacy-policy-summary)
 * [Contact and Support](/?id=contact-and-support)
@@ -1388,6 +1389,18 @@ When the search field is enabled in a Docsify custom Sidebar, only pages listed 
 
 _Multiple embedded scripts are not working as expected._  
 Docsify-This (as with Docsify itself) will only execute the first script included in a Markdown page, as described in the [Docsify documentation](https://docsify.js.org/#/configuration?id=executescript).
+
+---
+
+### Additional Docsify-This Learning Materials
+
+[Introduction to Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/otessa-2024/main/pages&homepage=introduction-to-docsify-this.md&edit-link=https://github.com/paulhibbitts/otessa-2024&sidebar=true&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Introduction%20to%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Introductory, beginner to intermediate._  
+An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.  
+
+[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Intermediate, with a mix of basic and advanced aspects._  
+An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
 
 ---
 
