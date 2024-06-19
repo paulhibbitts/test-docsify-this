@@ -213,6 +213,14 @@
     return keyword;
   }
 
+  // Function to convert string to title case and replace hyphens with spaces
+  function convertToTitle(str) {
+    return str
+      .split('-') // Split the string by hyphens
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()) // Capitalize the first letter and lower case the rest
+      .join(' '); // Join the words with spaces
+  }
+  
   /**
    * @param {String} query Search query
    * @returns {Array} Array of results
@@ -241,14 +249,16 @@
       const postTitle = post.title && post.title.trim();
       const postContent = post.body && post.body.trim();
       const postUrl = post.slug || '';
+      const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
+      const postPageTitle = convertToTitle(postPageSlug);
 
       // Skip posts that contain iframes, Font Awesome icons, embedly cards, or Markdown images
       // console.log(postContent);
-      // const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
+      const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
 
-      // if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
-      //   continue;
-      // }
+      if (postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage) {
+        continue;
+      }
 
       if (postTitle) {
         keywords.forEach(keyword => {
@@ -265,13 +275,9 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
-          
-          const isImage = /!\[[^\]]*\]\([^)]*\)/g.test(postContent); // Check if it's a Markdown image
-          if (!(postContent.includes('iframe') || postContent.includes(':fas') || postContent.includes(':fab') || postContent.includes('embedly-card') || isImage)) {
-            handlePostContent = postContent
+          handlePostContent = postContent
             ? escapeHtml(ignoreDiacriticalMarks(postContent))
             : postContent;
-          }
 
           indexTitle = postTitle ? handlePostTitle.search(regEx) : -1;
           indexContent = postContent ? handlePostContent.search(regEx) : -1;
@@ -294,6 +300,7 @@
 
             const matchContent =
               handlePostContent &&
+              (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + // Add page title if not empty
               '...' +
                 handlePostContent
                   .substring(start, end)
