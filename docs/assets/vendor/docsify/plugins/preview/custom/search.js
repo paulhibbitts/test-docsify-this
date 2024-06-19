@@ -325,9 +325,9 @@
               end = postContent.length;
             }
 
+            console.log(postPageTitle);
             const matchContent =
               handlePostContent &&
-              (postPageTitle ? `<strong>${postPageTitle}</strong><br>` : '') + // Add page title if not empty
               '...' +
                 handlePostContent
                   .substring(start, end)
@@ -344,11 +344,12 @@
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: postContent ? resultStr : '',
+            content: postContent ? resultStr : `<strong>${postPageTitle}</strong><br>`,
             url: postUrl,
             score: matchesScore,
           };
 
+          console.log(matchingPost);
           matchingResults.push(matchingPost);
         }
       }
