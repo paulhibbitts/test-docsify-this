@@ -340,10 +340,13 @@
           }
         });
 
+        // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
         if (matchesScore > 0) {
           const matchingPost = {
             title: handlePostTitle,
-            content: postContent ? resultStr : `<strong>${postPageTitle}</strong><br>`,
+            content: postContent 
+            ? resultStr 
+            : `${postPageTitle ? `<strong>${postPageTitle}</strong><br>` : ''}`,
             url: postUrl,
             score: matchesScore,
           };
