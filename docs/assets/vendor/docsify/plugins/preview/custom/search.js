@@ -325,7 +325,6 @@
               end = postContent.length;
             }
 
-            console.log(postPageTitle);
             const matchContent =
               handlePostContent &&
               '...' +
