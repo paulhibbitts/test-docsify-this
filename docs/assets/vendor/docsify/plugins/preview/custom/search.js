@@ -221,6 +221,15 @@
       .join(' '); // Join the words with spaces
   }
   
+  // Function to replace Markdown links with their titles
+  function replaceMarkdownLinksWithTitles(content) {
+    // Regular expression to match Markdown link syntax and capture the title and URL
+    const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+    
+    // Replace each Markdown link with its title
+    return content.replace(markdownLinkRegex, (match, title, url) => title);
+  }
+
   /**
    * @param {String} query Search query
    * @returns {Array} Array of results
@@ -247,7 +256,7 @@
       let handlePostTitle = '';
       let handlePostContent = '';
       const postTitle = post.title && post.title.trim();
-      const postContent = post.body && post.body.trim();
+      const postContent = replaceMarkdownLinksWithTitles(post.body && post.body.trim());
       const postUrl = post.slug || '';
       const postPageSlug = postUrl.split('/')[1].split('?')[0].replace('0', '');
       const postPageTitle = convertToTitle(postPageSlug);
