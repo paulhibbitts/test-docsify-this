@@ -892,13 +892,13 @@
 
       // complete configuration parameters
       search: {
-        maxAge: 86400000, // Expiration time, the default one day
+        maxAge: 60000, // Expiration time, 1 minute
         paths: 'auto',
         placeholder: 'Type to search',
         noData: 'No matches found.',
         // Headline depth, 1 - 6
         depth: 6,
-        namespace: 'docsify-this',
+        namespace: 'docsify-this-' + new Date().getTime(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
       },
 
