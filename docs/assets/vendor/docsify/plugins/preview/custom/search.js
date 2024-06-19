@@ -349,7 +349,6 @@
             score: matchesScore,
           };
 
-          console.log(matchingPost);
           matchingResults.push(matchingPost);
         }
       }
