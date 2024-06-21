@@ -400,7 +400,7 @@
           };
         
           matchingResults.push(matchingPost);
-        }        
+        }
       }
     }
 
