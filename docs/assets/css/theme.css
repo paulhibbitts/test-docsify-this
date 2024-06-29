@@ -1045,7 +1045,7 @@ span #docsifythisurlfield {
 #docsifythisurlbuilder select {
   color: #323232;
   border: 1px solid #757575;
-  height: 2rem;
+  /* height: 2rem; DOCSIFY v5 */
   /* line-height: 2rem; DOCSIFY v5 */
   /* -webkit-appearance: menulist-button; DOCSIFY v5 */
 }
