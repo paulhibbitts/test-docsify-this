@@ -14,7 +14,7 @@ This open-source web app, built with the magical documentation site generator [D
 
 <div id="docsifythisurlbuilder">
 
-<h2>Web Page Builder</h2>
+<h2 style="margin-top:0px;">Web Page Builder</h2>
 
 <p style="margin-bottom:-8px;">Enter the URL of a Markdown file and view that file as a web page in a new Browser tab. The resulting Docsify-This page URL can be copied and shared or used as an iFrame source URL.</p>
 
@@ -194,7 +194,7 @@ Page layout:
 
 </div>
 
-<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
+<div id="docsifythisurlbuilderrestoredefaultsbutton"><input style="color: #323232;border-color: #8e8f9d;" type="button" id="btn_4" value="Reset to Defaults" onclick="restoreAllDefaults()"/></div>
 
 </div>
 
