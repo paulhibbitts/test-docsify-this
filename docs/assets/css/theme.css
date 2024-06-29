@@ -1010,6 +1010,10 @@ span #docsifythisurlfield {
   line-height: 1.2rem;
 }
 
+#docsifythisurlbuilder input[type="checkbox"] {
+  border-color: #8e8f9d;
+}
+
 #docsifythisurlbuilder input[type="checkbox"]:checked {
   background: #0324cd;
   border-color: #0324cd;
