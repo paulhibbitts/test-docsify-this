@@ -42,7 +42,7 @@
 
   <!-- Docsify Themeable "develop" branch preview files -->
   <!--<link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
-  <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
+  <!--<link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css"> -->
   
   <!-- Docsify Themeable current release -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
@@ -55,10 +55,15 @@
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css">-->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
     href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple-dark.css">-->
-  <link rel="stylesheet" media="(prefers-color-scheme: light)"
-    href="assets/vendor/themeable/themes/preview/theme-simple.css">
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css">
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)"
+    href="assets/vendor/themeable/themes/preview/theme-simple.css">-->
+  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+    href="assets/vendor/themeable/themes/preview/theme-simple-dark.css">-->
+
+  <link rel="stylesheet"
+    href="https://docsify-preview-e6o8zf9jn-docsifyjs.vercel.app/dist/themes/core.min.css">
+  <!-- <link rel="stylesheet"
+    href="https://docsify-preview-e6o8zf9jn-docsifyjs.vercel.app/dist/themes/vue.min.css"> -->
 
   <link rel="stylesheet" href="assets/css/theme.css">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -80,10 +85,10 @@
   <style>
     :root {
 
-      --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+      --font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; /*DOCSIFY v5*/
 
-      --base-line-height: 1.4;
-      --base-font-size: 1.125rem;
+      --line-height: 1.4; /*DOCSIFY v5*/
+      --font-size: 1.125rem; /*DOCSIFY v5*/
 
       --cover-max-width: 45em;
 
@@ -1511,7 +1516,7 @@
   <!-- <script src="https://docsify-themeable-preview.vercel.app/dist/js/docsify-themeable.min.js"></script> -->
 
   <!-- Docsify Themeable "develop" branch preview files -->
-  <script src="assets/vendor/themeable/preview/docsify-themeable.min.js"></script>
+  <!--<script src="assets/vendor/themeable/preview/docsify-themeable.min.js"></script> -->
 
   <!-- docsify-tabs (latest v1.x.x) -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
@@ -1638,20 +1643,20 @@
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         // console.log(fontfamily);
-        document.documentElement.style.setProperty('--base-font-family', fontfamily);
+        document.documentElement.style.setProperty('--font-family', fontfamily); // DOCSIFY v5
       }
 
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
         fontsize = fontsize + 'rem';
-        document.documentElement.style.setProperty('--base-font-size', fontsize);
+        document.documentElement.style.setProperty('--font-size', fontsize); // DOCSIFY v5
       }
 
       // Change line height if lineheight parameter present
       lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
-        document.documentElement.style.setProperty('--base-line-height', lineheight);
+        document.documentElement.style.setProperty('--line-height', lineheight); // DOCSIFY v5
       }
 
       updateThemeModeLinkColors();
