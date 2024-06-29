@@ -1014,20 +1014,11 @@ span #docsifythisurlfield {
   accent-color: #0324cd; /* Original color #0361cd */
 }
 
-.docsifythisurlbuildercheckbox {
-  position: absolute;
-  /* transform: scale(1.2); DOCSIFY v5*/
-  margin-top: 6px;
-  margin-left: 2px;
-}
-
-#docsifythisurlbuilder input[type="checkbox"] {
-  /*  position: absolute; DOCSIFY v5*/
-}
-
 #docsifythisurlbuilder input[type="checkbox"]~label {
-  padding-left: .2em; /* DOCSIFY v5*/
-  display: inline-block;
+  width: 90%;
+  padding-left: .23rem;
+  display: inline-block; 
+  vertical-align: top;
 }
 
 #docsifythisurlbuilder input[type=number] {
