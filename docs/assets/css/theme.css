@@ -1046,8 +1046,8 @@ span #docsifythisurlfield {
   color: #323232;
   border: 1px solid #757575;
   height: 2rem;
-  line-height: 2rem;
-  -webkit-appearance: menulist-button;
+  /* line-height: 2rem; DOCSIFY v5 */
+  /* -webkit-appearance: menulist-button; DOCSIFY v5 */
 }
 
 #docsifythisurlbuilder hr {
