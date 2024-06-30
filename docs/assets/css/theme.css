@@ -1104,13 +1104,13 @@ span #docsifythisurlfield {
 .markdown-section .docsifythiscolumn35 {
   float: left;
   width: 35%;
-  margin-right: -28px;
+  
 }
 
 .markdown-section .docsifythiscolumn65 {
   float: left;
   width: 65%;
-  margin-top: 15px;
+  margin-top: -22px;
 }
 
 @media screen and (max-width:800px) {
