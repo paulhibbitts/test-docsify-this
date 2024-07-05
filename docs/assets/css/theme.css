@@ -1152,8 +1152,10 @@ span #docsifythisurlfield {
  }
 
 .sidebar-nav a, .sidebar nav a {
-  /* overflow: visible; DOCSIFY v5 */
-  /* white-space: break-spaces; DOCSIFY v5 */
+  overflow: visible;
+  white-space: break-spaces;
+  margin: .8em 0; /* DOCSIFY v5 */
+  line-height: 1.4em; /* DOCSIFY v5 */
 }
 
 .sidebar .app-name {
