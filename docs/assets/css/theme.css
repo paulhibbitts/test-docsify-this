@@ -453,7 +453,7 @@
 }
 
 .markdown-section .accordion details {
-  padding: .75rem 1.25rem;
+  padding: .0 1.25rem 1rem 1.25rem; /* DOCSIFY v5 */
   margin-bottom: 0;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -461,7 +461,7 @@
 .markdown-section summary {
   cursor: pointer;
   color: var(--link-color);
-  margin-bottom:-8px;
+  /* margin-bottom:-8px; DOCSIFY v5 */
   padding: 0;
   
   h1, h2, h3 {
