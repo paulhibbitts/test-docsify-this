@@ -64,7 +64,9 @@
     href="https://docsify-preview-7r4ziasdt-docsifyjs.vercel.app/dist/themes/core.min.css">
   <!-- <link rel="stylesheet"
     href="https://docsify-preview-e6o8zf9jn-docsifyjs.vercel.app/dist/themes/vue.min.css"> -->
-  <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://docsify-preview-7r4ziasdt-docsifyjs.vercel.app/dist/themes/dark.min.css" title="dark"/> -->
+  
+  <!-- Core Dark / Dark Mode Only (add-on) -->
+  <link rel="stylesheet" href="https://docsify-preview-7r4ziasdt-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)" />
 
   <!-- Sidebar Chevrons Right (add-on) -->
   <!--<link rel="stylesheet" href="https://docsify-preview-7r4ziasdt-docsifyjs.vercel.app/dist/themes/addons/sidebar-chevrons-left.min.css" /> -->
@@ -1670,7 +1672,7 @@
       // Keep dark theme CSS files loaded if dark-mode parameter is true
       enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
-        var linkNode = document.querySelector('link[href*="theme-simple-dark.css"]');
+        var linkNode = document.querySelector('link[href*="core-dark.min.css"]');
         linkNode.parentNode.removeChild(linkNode);
       }
 
