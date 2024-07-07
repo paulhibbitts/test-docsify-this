@@ -102,7 +102,7 @@ aside.nav.nothing {
   .page_toc {
     position: relative;
     top: -20px;
-    padding: 10px 0;
+    padding: 0 0 0 40px; /* DOCSIFY v5 */
     border: none;
     border-bottom: 1px solid #ddd;
     font-size: 1.0em;
