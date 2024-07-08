@@ -1184,7 +1184,11 @@
                 // DOCSIFY v5
                 if (!docBody.querySelector('style.sidebar-nav-adjusted')) {
                   let editCSS = document.createElement('style')
-                  editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 47px;}";
+                  if (docBody.querySelector('.app-nav')) {
+                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 60px;}"; // Style when navbar is present
+                  } else {
+                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 47px;}"; // Default style
+                  }
                   editCSS.classList.add('style.sidebar-nav-adjusted');
                   console.log(editCSS);
                   docBody.appendChild(editCSS);
