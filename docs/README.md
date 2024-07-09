@@ -80,11 +80,11 @@ Page layout:
 <div class='stackedlabeldropdown'>
   <label for="fontsize">Font size:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
-    <option value="1">18px (1.125rem)</option>
+    <option value="1.125">18px (1.125rem)</option>
     <option disabled="disabled">----</option>
     <option value=".875">14px (.875rem)</option>
     <option value="1">16px (1rem)</option>
-    <option value="1.125">20px (1.25rem)</option>
+    <option value="1.25">20px (1.25rem)</option>
   </select>
 </div>
         
