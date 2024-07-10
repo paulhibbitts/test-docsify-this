@@ -194,11 +194,11 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
   color: #3940bf;
-  text-decoration: none;
+  text-decoration-color: #3940bf;
 }
 
 #docsifythisurlbuilder select {
-  color: #323232;
+  /* color: #323232; DOCSIFY v5 */
   border: 1px solid #757575;
   /* height: 2rem; DOCSIFY v5 */
   /* line-height: 2rem; DOCSIFY v5 */
@@ -221,8 +221,8 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuilder #coverpagecolorpreview {
   width: 30px;
-  border: solid 4px #6C8A9A;
-  background-color: #6C8A9A;
+  border: solid 4px #C1E1F6;
+  background-color: #C1E1F6;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
@@ -231,14 +231,14 @@ span #docsifythisurlfield {
   width: 30px;
   border: solid 4px #0374B5;
   background-color: #0374B5;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 3px   3px 3px 3px;
   margin-left: 4px;
 }
 
 #docsifythisurlbuilder #coverpagecolordarkmodepreview {
   width: 30px;
-  border: solid 4px #262D30;
-  background-color: #262D30;
+  border: solid 4px #20587D;
+  background-color: #20587D;
   border-radius: 3px 3px 3px 3px;
   margin-left: 4px;
 }
