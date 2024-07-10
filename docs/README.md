@@ -178,7 +178,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline">Coverpage color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Coverpage color" type="text" maxlength="7" size="7" value="#BCD5E3" id="coverpagecolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
+<div class="docsifythisurlbuilderoptionsline">Coverpage color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Coverpage color" type="text" maxlength="7" size="7" value="#C1E1F6" id="coverpagecolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolor', 'coverpagecolorpreview');" data-coloris><span id="coverpagecolorpreview"></span></div>
 
 <h3>Dark Theme Support and Colors</h3>
 

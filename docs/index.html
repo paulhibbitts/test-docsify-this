@@ -102,6 +102,8 @@
       --link-underline-thickness: 2px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
 
+      --cover-bg: #C1E1F6;
+
       --docsifytabs-tab-color: var(--base-color);
 
     }
@@ -478,16 +480,16 @@
           var getColor = document.getElementById("coverpagecolor");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '#6C8A9A';
+            hexCode = '#C1E1F6';
             document.getElementById("coverpagecolor").value = hexCode;
             document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-            document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
-            document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+            document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
+            document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
           }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
           }
-          if (!(hexCode == "6C8A9A")) {
+          if (!(hexCode == "C1E1F6")) {
             URLparms = URLparms + `&coverpage-color=` + hexCode;
           }
 
@@ -669,10 +671,10 @@
       document.getElementById("pagination").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
-      document.getElementById("coverpagecolor").value = '#6C8A9A';
+      document.getElementById("coverpagecolor").value = '#C1E1F6';
       document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-      document.getElementById("coverpagecolorpreview").style.borderColor = '#6C8A9A';
-      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#6C8A9A';
+      document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
+      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
       document.getElementById("enableDarkmode").checked = false;
       document.getElementById("linkcolordarkmode").value = '#0374B5';
       document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
@@ -752,7 +754,7 @@
         if (coverPageColor !== false) {
           document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
         } else {
-          document.documentElement.style.setProperty('--cover-bg', '#6c8a9a');
+          document.documentElement.style.setProperty('--cover-bg', '#C1E1F6');
         }
 
       }
