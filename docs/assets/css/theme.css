@@ -266,12 +266,6 @@
   overflow: visible; /* DOCSIFY v5 */
   margin: 1em 0; /* DOCSIFY v5 */
   padding: 1em; /* DOCSIFY v5 */
-  background: var(--blockquote-bg); /* DOCSIFY v5 */
-  border: solid var(--blockquote-border-color); /* DOCSIFY v5 */
-  border-radius: var(--blockquote-border-radius); /* DOCSIFY v5 */
-  border-width: var(--blockquote-border-width); /* DOCSIFY v5 */
-  color: var(--blockquote-color); /* DOCSIFY v5 */
-  position: relative; /* DOCSIFY v5 */
 }
 
 .markdown-section ul {
