@@ -97,6 +97,8 @@
 
       --max-width: 990px; /*DOCSIFY v5*/
 
+      --heading-font-weight: 400;
+
       --link-color: var(--theme-color);
       --link-color-hover: var(--link-color);
       --link-underline-thickness: 2px;
@@ -1617,13 +1619,8 @@
       // Change header weight if headerweight parameter present
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
-        // console.log(headerweight);
-        document.documentElement.style.setProperty('--heading-h1-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h2-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h3-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h4-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h5-font-weight', headerweight);
-        document.documentElement.style.setProperty('--heading-h6-font-weight', headerweight);
+        console.log(headerweight);
+        document.documentElement.style.setProperty('--heading-font-weight)', headerweight);
       }
 
       // Change body font if fontFamily parameter present
