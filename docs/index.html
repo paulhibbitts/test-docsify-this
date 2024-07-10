@@ -104,6 +104,8 @@
       --link-underline-thickness: 2px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
 
+      --blockquote-bg: var(--color-mono-1); /*DOCSIFY v5*/
+      
       --cover-bg: #C1E1F6;
 
       --docsifytabs-tab-color: var(--base-color);
@@ -1620,7 +1622,7 @@
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
         console.log(headerweight);
-        document.documentElement.style.setProperty('--heading-font-weight)', headerweight);
+        document.documentElement.style.setProperty('--heading-font-weight', headerweight); // DOCSIFY v5
       }
 
       // Change body font if fontFamily parameter present
