@@ -782,7 +782,7 @@ body .docsify-pagination-container {
 }
 
 .progress {
-  background-color: var(--blockquote-border-color);
+  /* background-color: var(--link-color); DOCSIFY v5 */
 }
 
 @media only screen and (max-width: 480px) {
