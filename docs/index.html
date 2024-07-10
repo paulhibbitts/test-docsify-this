@@ -97,8 +97,9 @@
 
       --max-width: 800px; /*DOCSIFY v5*/
 
+      --link-color: var(--theme-color);
       --link-color-hover: var(--link-color);
-      --link-underline-thickness: 1px;
+      --link-underline-thickness: 2px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
 
       --docsifytabs-tab-color: var(--base-color);
@@ -684,21 +685,23 @@
     }
 
     function setColorProperties(color) {
-      document.documentElement.style.setProperty('--navbar-root-color--active', color);
-      document.documentElement.style.setProperty('--blockquote-border-color', color);
-      document.documentElement.style.setProperty('--sidebar-name-color', color);
-      document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
-      document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
+      // document.documentElement.style.setProperty('--navbar-root-color--active', color);
+      // document.documentElement.style.setProperty('--blockquote-border-color', color);
+      // document.documentElement.style.setProperty('--sidebar-name-color', color);
+      // document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
+      // document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
+      document.documentElement.style.setProperty('--theme-color', color);
       document.documentElement.style.setProperty('--link-color', color);
-      document.documentElement.style.setProperty('--pagination-title-color', color);
-      document.documentElement.style.setProperty('--cover-link-color', color);
-      document.documentElement.style.setProperty('--cover-button-primary-background', color);
-      document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
-      document.documentElement.style.setProperty('--cover-button-color', color);
-      document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + color);
-      document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--active', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
-      document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--collapse', 'no-repeat 2px calc(50% - 2.5px) / 6px 5px linear-gradient(45deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px), no-repeat 2px calc(50% + 2.5px) / 6px 5px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px)');
-      document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--loaded', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
+      document.documentElement.style.setProperty('--link-underline-color', color);
+      // document.documentElement.style.setProperty('--pagination-title-color', color);
+      // document.documentElement.style.setProperty('--cover-link-color', color);
+      // document.documentElement.style.setProperty('--cover-button-primary-background', color);
+      // document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
+      // document.documentElement.style.setProperty('--cover-button-color', color);
+      // document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + color);
+      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--active', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
+      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--collapse', 'no-repeat 2px calc(50% - 2.5px) / 6px 5px linear-gradient(45deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px), no-repeat 2px calc(50% + 2.5px) / 6px 5px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px)');
+      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--loaded', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
     }
 
     function updateThemeModeLinkColors() {
@@ -726,9 +729,9 @@
         const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
 
         if (coverPageColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColorDarkMode);
+          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColorDarkMode);
         } else {
-          document.documentElement.style.setProperty('--cover-background-color', '#262d30');
+          document.documentElement.style.setProperty('--cover-bg', '#262d30');
         }
       } else {
         // light mode
@@ -747,9 +750,9 @@
         const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
 
         if (coverPageColor !== false) {
-          document.documentElement.style.setProperty('--cover-background-color', '#' + coverPageColor);
+          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
         } else {
-          document.documentElement.style.setProperty('--cover-background-color', '#6c8a9a');
+          document.documentElement.style.setProperty('--cover-bg', '#6c8a9a');
         }
 
       }
