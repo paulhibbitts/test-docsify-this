@@ -194,6 +194,7 @@ span #docsifythisurlfield {
 
 #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
   color: #3940bf;
+  text-decoration: none;
 }
 
 #docsifythisurlbuilder select {
