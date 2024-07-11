@@ -259,6 +259,7 @@
 }
 
 .markdown-section {
+  margin-top: 1.4rem; /* DOCSIFY v5 */
   /* padding: 1rem 40px; DOCSIFY v5 */
 }
 
