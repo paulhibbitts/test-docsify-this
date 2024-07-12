@@ -1494,15 +1494,6 @@
   <!-- <script src="assets/vendor/docsify/preview/docsify.min.js"></script> -->
   <script src="https://docsify-preview-ifndm5t4e-docsifyjs.vercel.app/dist/docsify.min.js"></script>
   
-  <!-- Adjust Page Margins When Standalone or Embedded -->
-  <script>
-    if (getURLParameterByName(['standalone', 'embedded']) || standalone) {
-      var editCSS = document.createElement('style')
-      editCSS.innerHTML = ".markdown-section {padding: 1rem 14px;}";
-      document.body.appendChild(editCSS);
-    }
-  </script>
-  
   <script>
     if (!(getURLParameterByName('docsify-this-theme', null, null, window.location.href, true) === 'false')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
