@@ -506,23 +506,23 @@
           var getColor = document.getElementById("linkcolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '##0374B5';
+            hexCode = '#0685D7';
             document.getElementById("linkcolordarkmode").value = hexCode;
             document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-            document.getElementById("linkcolordarkmodepreview").style.borderColor = '##0374B5';
-            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '##0374B5';
+            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0685D7';
+            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0685D7';
           }
           if (hexCode.charAt(0) == "#") {
             hexCode = hexCode.substring(1);
           }
-          if (!(hexCode == "#0374B5")) {
+          if (!(hexCode == "0685D7")) {
             URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
           }
 
           var getColor = document.getElementById("coverpagecolordarkmode");
           var hexCode = getColor.value;
           if (hexCode === '') {
-            hexCode = '#262D30';
+            hexCode = '#20587D';
             document.getElementById("coverpagecolordarkmode").value = hexCode;
             document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
             document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
@@ -681,14 +681,14 @@
       document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
       document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
       document.getElementById("enableDarkmode").checked = false;
-      document.getElementById("linkcolordarkmode").value = '##0374B5';
+      document.getElementById("linkcolordarkmode").value = '#0685D7';
       document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-      document.getElementById("linkcolordarkmodepreview").style.borderColor = '##0374B5';
-      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '##0374B5';
+      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0685D7';
+      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0685D7';
       document.getElementById("coverpagecolordarkmode").value = '#20587D';
       document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
       document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
-      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#262D30';
+      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#20587D';
     }
 
     function setColorProperties(color) {
