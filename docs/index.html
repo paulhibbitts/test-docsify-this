@@ -1497,9 +1497,9 @@
   
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if ((getURLParameterByName(['standalone', 'embedded']) || standalone) && (!(getURLParameterByName('toc')))) {
+    if ((getURLParameterByName(['standalone', 'embedded']) || standalone)) {
       const root_theme = document.querySelector(':root');
-      root_theme.style.setProperty('--_markdown-margin-inline', '15px');
+      root_theme.style.setProperty('--_markdown-margin-inline', '20px');
     }
   </script>
 
