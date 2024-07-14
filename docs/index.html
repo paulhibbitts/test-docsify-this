@@ -1495,6 +1495,14 @@
   <!-- <script src="assets/vendor/docsify/preview/docsify.min.js"></script> -->
   <script src="https://docsify-preview-lt9a1hgxq-docsifyjs.vercel.app/dist/docsify.min.js"></script>
   
+  <!-- Adjust Page Margins When Standalone or Embedded -->
+  <script>
+    if ((getURLParameterByName(['standalone', 'embedded']) || standalone) && (!(getURLParameterByName('toc')))) {
+      const root_theme = document.querySelector(':root');
+      root_theme.style.setProperty('--_markdown-margin-inline', '15px');
+    }
+  </script>
+
   <script>
     if (!(getURLParameterByName('docsify-this-theme', null, null, window.location.href, true) === 'false')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
