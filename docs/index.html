@@ -30,17 +30,8 @@
 
   <!-- Stylesheets -->
 
-  <!-- Docsify v5 Core Theme (required) -->
-  <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/core.min.css">
-  
-  <!--  Docsify v5 Core Dark / Dark Mode Only (add-on) -->
-  <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)" />
-
-  <!-- Sidebar Chevrons Right (add-on) -->
-  <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/addons/sidebar-chevrons-right.min.css" />
-
-  <!-- Sidebar Group Box (add-on) -->
-  <link rel="stylesheet" href="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/themes/addons/sidebar-group-box.min.css" />
+  <!-- Core Theme (Auto) -->
+  <link rel="stylesheet" href="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core.min.css" />
 
   <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
@@ -88,7 +79,7 @@
 
 </head>
 
-<body>
+<body class="sidebar-chevron-right sidebar-group-box">
   <div id="app"></div>
   <script>
 
@@ -1460,7 +1451,7 @@
   </script>
 
   <!-- Docsify v5 release -->
-  <script src="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/docsify.min.js"></script>
+  <script src="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/docsify.min.js"></script>
   <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
   
   <!-- Adjust Page Margins When Standalone or Embedded -->
@@ -1623,8 +1614,12 @@
       // Keep dark theme CSS files loaded if dark-mode parameter is true
       enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
-        var linkNode = document.querySelector('link[href*="core-dark.min.css"]');
+        var linkNode = document.querySelector('link[href*="core.min.css"]');
         linkNode.parentNode.removeChild(linkNode);
+        var newLinkNode = document.createElement('link');
+        newLinkNode.rel = 'stylesheet';
+        newLinkNode.href = 'https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core-light.min.css';
+        document.head.appendChild(newLinkNode);
       }
 
     }
@@ -1665,7 +1660,7 @@
       <!-- document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>'); -->
 
       <!-- Docsify Search Plugin "develop" branch preview files -->
-      document.write('<script src="https://docsify-preview-jeqkk30xe-docsifyjs.vercel.app/dist/plugins/search.min.js"><\/script>');
+      document.write('<script src="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/plugins/search.min.js"><\/script>');
 
     }
   </script>
