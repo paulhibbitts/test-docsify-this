@@ -33,6 +33,11 @@
   <!-- Core Theme (Auto) -->
   <link rel="stylesheet" href="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core.min.css" />
 
+  <link rel="stylesheet" 
+  href="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core-light.min.css">
+  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
+  href="https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core-dark.min.css">
+
   <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -1614,12 +1619,9 @@
       // Keep dark theme CSS files loaded if dark-mode parameter is true
       enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
       if (enabledarkmode === false && darkmode === false) {
-        var linkNode = document.querySelector('link[href*="core.min.css"]');
+        var linkNode = document.querySelector('link[href*="core-dark.min.css"]');
         linkNode.parentNode.removeChild(linkNode);
-        var newLinkNode = document.createElement('link');
-        newLinkNode.rel = 'stylesheet';
-        newLinkNode.href = 'https://docsify-preview-4i67t178j-docsifyjs.vercel.app/dist/themes/core-light.min.css';
-        document.head.appendChild(newLinkNode);
+        console.log("DGF");
       }
 
     }
