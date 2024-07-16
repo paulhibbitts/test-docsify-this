@@ -690,20 +690,20 @@
 }
 
 .markdown-section h2 {
-  font-size: 1.45rem; /* DOCSIFY v5 */
+  font-size: 1.50rem; /* DOCSIFY v5 */
   line-height: 1.55rem;
   margin: 1rem 0rem -1.2rem 0rem; /* DOCSIFY v5 */
   border-style: none; /* DOCSIFY v5 */
 }
 
 .markdown-section h3 {
-  font-size: 1.25rem; /* DOCSIFY v5 */
+  font-size: 1.35rem; /* DOCSIFY v5 */
   line-height: 1.35rem;
   margin: 1rem 0rem -.5rem 0rem; /* DOCSIFY v5 */
 }
 
 .markdown-section h4 {
-  font-size: 1.2rem; /* DOCSIFY v5 */
+  font-size: 1.25rem; /* DOCSIFY v5 */
   line-height: 1.3rem;
   margin: 1rem 0rem -.5rem 0rem; /* DOCSIFY v5 */
 }
@@ -798,7 +798,7 @@ body .docsify-pagination-container {
   }
 
   .markdown-section h4 {
-    font-size: 1.15rem;
+    font-size: 1.17rem;
     line-height: 1.2rem;
   }
 
