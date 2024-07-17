@@ -247,6 +247,11 @@
   transition: all .2s;
 }
 
+.markdown-section :is(h1, h2, h3, h4, h5, h6) {
+  display: flex;
+  gap: 0.15em;
+}
+
 .markdown-section {
   margin-top: 1.4rem; /* DOCSIFY v5 */
   /* padding: 1rem 40px; DOCSIFY v5 */
