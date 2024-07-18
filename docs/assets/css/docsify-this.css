@@ -358,15 +358,15 @@ span #docsifythisurlfield {
   }
 
   .docsifythisurlbuilderprimarybutton {
-    color: black;
-    background-color: #7e83ed; /* Previous colors #817eed #4bc3f4 */
-    border: 1px solid #7e83ed;
+    color: black!important;
+    background-color: #7e83ed!important; /* Previous colors #817eed #4bc3f4 */
+    border: 1px solid #7e83ed!important;
   }
 
   .docsifythisurlbuildersecondarybutton {
-    color: #c1bfed;
-    background-color: transparent;
-    border: 1px solid #c1bfed;
+    color: #c1bfed!important;
+    background-color: transparent!important;
+    border: 1px solid #c1bfed!important;
   }
 
   #docsifythisurlbuilder [type=radio]:checked + img {
@@ -385,6 +385,7 @@ span #docsifythisurlfield {
 
   #docsifythisurlbuildershowhidelink a:link, #docsifythisurlbuildershowhidelink a:visited, #docsifythisurlbuildershowhidelink a:hover, #docsifythisurlbuildershowhidelink a:active,   #docsifythisurlbuildershowhidelink2 a:link, #docsifythisurlbuildershowhidelink2 a:visited, #docsifythisurlbuildershowhidelink2 a:hover, #docsifythisurlbuildershowhidelink2 a:active {
       color: #c6bfed; /* Original color #4bc3f4 */
+      text-decoration-color: #c6bfed;
   }
 
   #linkcolor {
