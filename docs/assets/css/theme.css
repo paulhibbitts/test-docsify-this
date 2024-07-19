@@ -301,7 +301,7 @@
   outline:transparent!important;
 }
 
-.markdown-section a.button {
+.markdown-section a.button *:not(button) {
   cursor: pointer;
   color: var(--color-mono-min); /* DOCSIFY v5 */
   text-decoration: none !important;
@@ -322,7 +322,7 @@
   border-radius: .25rem;
 }
 
-.markdown-section a.button-secondary {
+.markdown-section a.button-secondary *:not(button) {
   cursor: pointer;
   color: var(--link-color);
   text-decoration: none !important;
@@ -341,7 +341,7 @@
   border-radius: 1.2rem;
 }
 
-.markdown-section a.button-rounded {
+.markdown-section a.button-rounded *:not(button) {
   cursor: pointer;
   color: var(--color-mono-min); /* DOCSIFY v5 */
   text-decoration: none !important;
@@ -361,7 +361,7 @@
   border-radius: 1.4rem;
 }
 
-.markdown-section a.button-secondary-rounded {
+.markdown-section a.button-secondary-rounded *:not(button) {
   cursor: pointer;
   color: var(--link-color);
   text-decoration: none !important;
