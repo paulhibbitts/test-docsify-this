@@ -286,7 +286,7 @@
   margin-left: -18px;
 }
 
-.markdown-section .button {
+.markdown-section .button[class="button"] {
   cursor: pointer!important;
   color: var(--color-mono-min); /* DOCSIFY v5 */
   height: auto!important;
@@ -301,7 +301,7 @@
   outline:transparent!important;
 }
 
-.markdown-section a.button *:not(button) {
+.markdown-section .button[class="button"] {
   cursor: pointer;
   color: var(--color-mono-min); /* DOCSIFY v5 */
   text-decoration: none !important;
@@ -322,7 +322,7 @@
   border-radius: .25rem;
 }
 
-.markdown-section a.button-secondary *:not(button) {
+.markdown-section a.button-secondary {
   cursor: pointer;
   color: var(--link-color);
   text-decoration: none !important;
@@ -341,7 +341,7 @@
   border-radius: 1.2rem;
 }
 
-.markdown-section a.button-rounded *:not(button) {
+.markdown-section a.button-rounded {
   cursor: pointer;
   color: var(--color-mono-min); /* DOCSIFY v5 */
   text-decoration: none !important;
@@ -361,7 +361,7 @@
   border-radius: 1.4rem;
 }
 
-.markdown-section a.button-secondary-rounded *:not(button) {
+.markdown-section a.button-secondary-rounded {
   cursor: pointer;
   color: var(--link-color);
   text-decoration: none !important;
