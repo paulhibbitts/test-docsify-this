@@ -1467,7 +1467,9 @@
   </script>
 
   <script>
-    if (!(getURLParameterByName(['docsify-this-theme','docsifythistheme'], null, null, window.location.href, true) === 'false')) {
+    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
+      document.querySelectorAll('style').forEach(style => style.remove());
+    } else {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
   </script>
