@@ -81,14 +81,6 @@
     }
   </style>
 
-  <script>
-    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
-      document.querySelectorAll('style').forEach(style => style.remove());
-    } else {
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
-    }
-  </script>
-
 </head>
 
 <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
@@ -169,6 +161,12 @@
       }
 
       return exists;
+    }
+
+    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
+      document.querySelectorAll('style').forEach(style => style.remove());
+    } else {
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
 
     // DOCSIFY THIS SCRIPTS
