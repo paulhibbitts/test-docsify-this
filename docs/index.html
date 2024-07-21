@@ -87,6 +87,12 @@
   <div id="app"></div>
   <script>
 
+    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
+      document.querySelectorAll('style').forEach(style => style.remove());
+    } else {
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
+    }
+
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
     var gitLinkRepoURL = '';
 
@@ -161,12 +167,6 @@
       }
 
       return exists;
-    }
-
-    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
-      document.querySelectorAll('style').forEach(style => style.remove());
-    } else {
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
 
     // DOCSIFY THIS SCRIPTS
