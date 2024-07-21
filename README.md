@@ -360,6 +360,7 @@ The following additional URL parameters are also available for use in Docsify-Th
 * [coverpage-color](#coverpage-color)
 * [coverpage-color-dark-mode](#coverpage-color-dark-mode)
 * [dark-mode](#dark-mode)
+* [docsify-theme](#docsify-theme)
 * [edit-link-emoji](#edit-link-emoji)
 * [link-color-dark-mode](#link-color-dark-mode)
 * [loadFavicon](#loadFavicon)
@@ -386,8 +387,12 @@ Set a custom color for the coverpage in dark mode with the optional **coverpage-
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=home.md&dark-mode=true&link-color=CC0000&link-color-dark-mode=FF9E9E&coverpage=_coverpage.md&coverpage-color=cc0000&coverpage-color-dark-mode=4d0000
 
 ##### dark-mode
-Automatically switch light/dark theme based on system OS-level preference, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
+Automatically switch light/dark theme based on system OS-level preference with the optional **dark-mode** parameter, for example:  
+https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&dark-mode=true
+
+##### docsify-theme
+Use the default docsify v5 theme instead of the Docsify-This theme with the optional **docsify-theme** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&docsify-theme=true
 
 ##### edit-link-emoji
 Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
