@@ -238,13 +238,14 @@
        url('../fonts/merriweather-v30-latin-700italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
-/* main {
+/* horizontal scrolling fix */
+main {
   overflow-x: hidden;
 
   > .content {
     position: static;
   }
-} */
+}
 
 .app-nav:not(:empty)~main .markdown-section {
   padding-top: 1.0rem; /* DOCSIFY v5 */
