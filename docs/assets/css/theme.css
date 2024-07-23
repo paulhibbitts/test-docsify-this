@@ -238,15 +238,9 @@
        url('../fonts/merriweather-v30-latin-700italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
-/* Wrapping long content fix */
-main {
-  overflow-x: hidden;
-
-  > .content pre {
-    position: static;
-    white-space: pre-wrap; /* This allows the content to wrap */
-    word-wrap: break-word; /* This ensures long words will break and wrap to the next line */
-  }
+/* Wrapping long <pre> tag content fix */
+pre {
+  overflow: auto;
 }
 
 .app-nav:not(:empty)~main .markdown-section {
