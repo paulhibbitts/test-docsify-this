@@ -238,11 +238,6 @@
        url('../fonts/merriweather-v30-latin-700italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
-/* Wrapping long <pre> tag content fix */
-pre {
-  overflow: auto;
-}
-
 .app-nav:not(:empty)~main .markdown-section {
   padding-top: 1.0rem; /* DOCSIFY v5 */
 }
@@ -473,6 +468,10 @@ pre {
 .markdown-section summary h3 {
   margin: 0;
   display: inline-block;
+}
+
+.markdown-section pre {
+  overflow: auto;
 }
 
 .markdown-section code {
