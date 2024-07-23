@@ -56,15 +56,15 @@
   <style>
     :root {
 
-      --font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; /*DOCSIFY v5*/
+      --font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
-      --line-height: 1.4; /*DOCSIFY v5*/
-      --font-size: 18px; /*DOCSIFY v5*/
-      --font-weight: 350; /*DOCSIFY v5*/
+      --line-height: 1.4;
+      --font-size: 18px;
+      --font-weight: 350;
 
-      --content-max-width: 960px; /*DOCSIFY v5*/
+      --content-max-width: 960px;
 
-      --heading-font-weight: 400; /*DOCSIFY v5*/
+      --heading-font-weight: 400;
 
       --theme-color: #0374B5;
       --link-color: #0374B5;
@@ -72,7 +72,7 @@
       --link-underline-thickness: 1px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
 
-      --blockquote-bg: var(--color-mono-1); /*DOCSIFY v5*/
+      --blockquote-bg: var(--color-mono-1);
 
       --cover-bg: #C1E1F6;
 
@@ -665,23 +665,9 @@
     }
 
     function setColorProperties(color) {
-      // document.documentElement.style.setProperty('--navbar-root-color--active', color);
-      // document.documentElement.style.setProperty('--blockquote-border-color', color);
-      // document.documentElement.style.setProperty('--sidebar-name-color', color);
-      // document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
-      // document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
       document.documentElement.style.setProperty('--theme-color', color);
       document.documentElement.style.setProperty('--link-color', color);
       document.documentElement.style.setProperty('--link-underline-color', color);
-      // document.documentElement.style.setProperty('--pagination-title-color', color);
-      // document.documentElement.style.setProperty('--cover-link-color', color);
-      // document.documentElement.style.setProperty('--cover-button-primary-background', color);
-      // document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
-      // document.documentElement.style.setProperty('--cover-button-color', color);
-      // document.documentElement.style.setProperty('--cover-button-border', '1px solid ' + color);
-      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--active', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
-      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--collapse', 'no-repeat 2px calc(50% - 2.5px) / 6px 5px linear-gradient(45deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px), no-repeat 2px calc(50% + 2.5px) / 6px 5px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4px)');
-      // document.documentElement.style.setProperty('--sidebar-nav-pagelink-background--loaded', 'no-repeat 0px center / 5px 6px linear-gradient(225deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px), no-repeat 5px center / 5px 6px linear-gradient(135deg, transparent 2.75px, ' + color + ' 2.75px 4.25px, transparent 4.25px)');
     }
 
     function updateThemeModeLinkColors() {
@@ -851,7 +837,7 @@
       skipLink: (!(getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && (!(getURLParameterByName('sidebar')))) || (getURLParameterByName('toc'))),
 
       search: 'auto', // default
-      
+
       // complete configuration parameters
       search: {
         maxAge: 86400000, // Expiration time, the default one day
@@ -1065,7 +1051,7 @@
               } else {
                 editlinkemoji = 'memo';
               }
-              
+
               var editHtml = '[:' + editlinkemoji + ':' + editLinkText + '](' + url + ' ":class=align-items-vertically")\n'
 
               var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
@@ -1132,7 +1118,6 @@
                   docBody.appendChild(editCSS);
                 }
               } else {
-                // DOCSIFY v5
                 if (!docBody.querySelector('style.sidebar-nav-adjusted')) {
                   let editCSS = document.createElement('style')
                   if (docBody.querySelector('.app-nav')) {
