@@ -255,9 +255,9 @@
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: antialiased;
-    -o-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* For Firefox on macOS */
+  font-smooth: always; /* Standard property, limited support */
 }
 
 .markdown-section figure, .markdown-section p, .markdown-section ol, .markdown-section ul {
