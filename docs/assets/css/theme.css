@@ -766,12 +766,12 @@ body {
 
 .markdown-section .alert h1, .markdown-section blockquote h1 {
   font-size: 1.5rem;
-  line-height: 1.75rem;
+  line-height: 1.65rem;
 }
 
 .markdown-section .alert  h2, .markdown-section blockquote h2 {
   font-size: 1.35rem;
-  line-height: 1.6rem;
+  line-height: 1.5rem;
 }
 
 .markdown-section .alert  h3, .markdown-section blockquote h3 {
@@ -781,17 +781,17 @@ body {
 
 .markdown-section .alert  h4, .markdown-section blockquote h4 {
   font-size: 1.15rem;
-  line-height: 1.3rem;
+  line-height: 1.30rem;
 }
 
 .markdown-section .alert  h5, .markdown-section blockquote h5 {
   font-size: 1.1rem;
-  line-height: 1.3rem;
+  line-height: 1.25rem;
 }
 
 .markdown-section .alert  h6, .markdown-section blockquote h6 {
   font-size: 1rem;
-  line-height: 1.2rem;
+  line-height: 1.1rem;
 }
 
 .markdown-section .align-items-vertically {
@@ -820,7 +820,7 @@ body .docsify-pagination-container {
 
   .markdown-section h1 {
     font-size: 1.45rem;
-    line-height: 1.7rem;
+    line-height: 1.65rem;
   }
 
   .markdown-section h2 {
