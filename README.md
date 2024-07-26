@@ -272,7 +272,6 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 * [edit-link-top](#edit-link-top)
 * [font-family](#font-family)
 * [font-size](/#font-size)
-* [font-weight](#font-weight)
 * [header-weight](#header-weight)
 * [hide-credits](#hide-credits)
 * [hypothesis](#hypothesis)
@@ -308,10 +307,6 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### font-size
 Set a custom font size in pixels for your standalone pages with the optional **font-size** parameter, for example:  
 https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
-
-##### font-weight
-Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **font-weight** parameter, for example:  
-https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-weight=300. 
 
 ##### header-weight
 Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  
@@ -402,6 +397,10 @@ https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent
 ##### edit-link-emoji
 Change the default emoji for a "Edit this Page" link with the optional **edit-link-emoji** parameter (not included in the Advanced Web Page Builder), for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:
+
+##### font-weight
+Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **font-weight** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-weight=300. 
 
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
