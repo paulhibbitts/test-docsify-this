@@ -89,6 +89,17 @@ Page layout:
     <option value="20px">20px</option>
   </select>
 </div>
+
+<div class='stackedlabeldropdown'>
+  <label for="fontsize">Font weight:</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontweight" name="fontweight">
+    <option value="400">Normal (400)</option>
+    <option disabled="disabled">----</option>
+    <option value="300">Light (300)</option>
+    <option value="600">Semi Bold (600)</option>
+    <option value="700">Bold (700)</option>
+  </select>
+</div>
         
 <div class='stackedlabeldropdown'>
   <label for="lineheight">Line height:</label>
@@ -524,6 +535,7 @@ View an example Canvas LMS site using Docsify-This content at https://canvas.sfu
 * [edit-link-top](/?id=edit-link-top)
 * [font-family](/?id=font-family)
 * [font-size](/?id=font-size)
+* [font-weight](/?id=font-weight)
 * [header-weight](/?id=header-weight)
 * [hide-credits](/?id=hide-credits)
 * [hypothesis](/?id=hypothesis)
@@ -559,6 +571,10 @@ https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent
 ##### font-size
 Set a custom font size in pixels for your standalone pages with the optional **font-size** parameter, for example:  
 https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16px. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
+
+##### font-weight
+Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **font-weight** parameter, for example:  
+https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-weight=300. 
 
 ##### header-weight
 Set a custom header font weight (default is 400 - regular) for your standalone pages with the optional **header-weight** parameter, for example:  

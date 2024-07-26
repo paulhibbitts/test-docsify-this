@@ -360,6 +360,11 @@
             var URLparms = URLparms + `&font-size=` + getFontSize;
           }
 
+          var getFontWeight = document.getElementById('fontweight').value;
+          if (!(getFontWeight == "400")) {
+            var URLparms = URLparms + `&font-weight=` + getFontWeight;
+          }
+
           var getLineHeight = document.getElementById('lineheight').value;
           if (!(getLineHeight == "1.4")) {
             var URLparms = URLparms + `&line-height=` + getLineHeight
@@ -622,6 +627,7 @@
       document.getElementById("editCheck").checked = false;
       document.getElementById("fontfamily").value = 'default';
       document.getElementById("fontsize").value = '18px';
+      document.getElementById("fontweight").value = '400';
       document.getElementById("lineheight").value = '1.4';
       document.getElementById("linkcolor").value = '#0374B5';
       document.getElementById("linkcolorpreview").style.visibility = "visible";
@@ -1192,7 +1198,7 @@
 
             // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
 
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'font-weight', 'fontWeight', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
               // console.log("show more!");
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
@@ -1243,6 +1249,11 @@
             fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             if (fontsize) {
               document.getElementById('fontsize').value = fontsize;
+            }
+
+            fontweight = getURLParameterByName(['font-weight', 'fontWeight'], null, null, window.location.href, true);
+            if (fontweight) {
+              document.getElementById('fontweight').value = fontweight;
             }
 
             lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
@@ -1568,7 +1579,7 @@
   <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
 
-  <!-- Check for headerweight, fontfamily, fontsize, lineheight, theme colors, and darkmode parameters -->
+  <!-- Check for headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
@@ -1593,8 +1604,15 @@
           // Convert rem values to pixel values
           fontsize = (fontsize * 16) + "px";
         }
-        console.log(fontsize);
+        // console.log(fontsize);
         document.documentElement.style.setProperty('--font-size', fontsize); // DOCSIFY v5
+      }
+
+      // Change body font size if fontWeight parameter present
+      fontweight = getURLParameterByName(['font-weight', 'fontWeight'], null, null, window.location.href, true);
+      if (!(fontweight === false)) {
+        // console.log(fontweight);
+        document.documentElement.style.setProperty('--font-weight', fontweight); // DOCSIFY v5
       }
 
       // Change line height if lineheight parameter present
