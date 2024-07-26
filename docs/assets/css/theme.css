@@ -254,6 +254,12 @@
   gap: 0.15em;
 }
 
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+}
+
 .markdown-section figure, .markdown-section p, .markdown-section ol, .markdown-section ul {
   margin: .75em 0em .5em 0em!important; /* DOCSIFY v5 */
 }
