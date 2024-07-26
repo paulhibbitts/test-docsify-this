@@ -755,8 +755,8 @@ body {
 .markdown-section h6 {
   font-size: 1.1rem; /* DOCSIFY v5 */
   line-height: 1.3rem;
-  margin-top: .3rem;
-  margin-bottom: -.1rem;
+  margin-top: .4rem;
+  margin-bottom: 0rem;
   padding-bottom: 0;
 }
 
