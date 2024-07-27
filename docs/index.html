@@ -1192,7 +1192,7 @@
 
             // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
 
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'font-weight', 'fontWeight', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
               // console.log("show more!");
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
@@ -1243,11 +1243,6 @@
             fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             if (fontsize) {
               document.getElementById('fontsize').value = fontsize;
-            }
-
-            fontweight = getURLParameterByName(['font-weight', 'fontWeight'], null, null, window.location.href, true);
-            if (fontweight) {
-              document.getElementById('fontweight').value = fontweight;
             }
 
             lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
@@ -1600,13 +1595,6 @@
         }
         // console.log(fontsize);
         document.documentElement.style.setProperty('--font-size', fontsize); // DOCSIFY v5
-      }
-
-      // Change body font size if fontWeight parameter present
-      fontweight = getURLParameterByName(['font-weight', 'fontWeight'], null, null, window.location.href, true);
-      if (!(fontweight === false)) {
-        // console.log(fontweight);
-        document.documentElement.style.setProperty('--font-weight', fontweight); // DOCSIFY v5
       }
 
       // Change line height if lineheight parameter present
