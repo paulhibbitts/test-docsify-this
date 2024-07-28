@@ -806,8 +806,3 @@ body .docsify-pagination-container {
     line-height: 1.15rem;
   }
 }
-
-html {
-  visibility: visible;
-  opacity: 1;
-}
