@@ -54,6 +54,10 @@
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
+    body {
+      visibility: hidden;
+      opacity: 0;
+    }
     :root {
 
       --font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
@@ -79,25 +83,22 @@
       --docsifytabs-tab-color: var(--color-mono-max);
 
     }
-    body {
-      visibility: hidden;
-    }
   </style>
-  <link rel="preload" href="assets/css/docsify-this.css" as="style" onload="this.rel='stylesheet'">
+
 </head>
 
 <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
   <div id="app"></div>
   <script>
 
-    document.addEventListener('DOMContentLoaded', function() {
-      if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
-        document.querySelectorAll('style').forEach(style => style.remove());
-      } else {
-        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
-      }
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/docsify-this.css" onload="document.body.style.visibility=\'visible\'" />');
-    });
+    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
+      document.querySelectorAll('style').forEach(style => style.remove());
+    } else {
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
+    }
+
+    document.body.style.visibility = 'visible';
+    document.body.style.opacity = '1';
 
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
     var gitLinkRepoURL = '';

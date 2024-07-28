@@ -441,3 +441,8 @@ span #docsifythisurlfield {
   }
 
 }
+
+body {
+  visibility: visible;
+  opacity: 1;
+}
