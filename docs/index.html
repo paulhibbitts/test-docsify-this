@@ -36,8 +36,6 @@
   <!-- Core Dark (add-on) -->
   <link rel="stylesheet" href="https://docsify-preview-57eiemxx4-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
 
-  <link rel="stylesheet" href="assets/css/theme.css">
-
   <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
@@ -92,11 +90,7 @@
     if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
       document.querySelectorAll('style').forEach(style => style.remove());
     } else {
-      const link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = 'assets/css/theme.css';
-      document.head.appendChild(link);
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
 
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
