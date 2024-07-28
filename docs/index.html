@@ -30,15 +30,13 @@
 
   <!-- Stylesheets -->
 
-  <!-- Docsify-This Theme -->
-  <link rel="stylesheet" href="assets/css/docsify-this.css">
-
   <!-- Core Theme -->
   <link rel="stylesheet" href="https://docsify-preview-57eiemxx4-docsifyjs.vercel.app/dist/themes/core.min.css" />
 
   <!-- Core Dark (add-on) -->
   <link rel="stylesheet" href="https://docsify-preview-57eiemxx4-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
 
+  <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
   <!-- Font Awesome Stylesheets -->
@@ -81,14 +79,27 @@
       --docsifytabs-tab-color: var(--color-mono-max);
 
     }
-    <link rel="preload" href="assets/css/theme.css" as="style" onload="this.rel='stylesheet'">
+    body {
+      visibility: hidden;
+    }
   </style>
-
+  <link rel="preload" href="assets/css/docsify-this.css" as="style" onload="this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="assets/css/theme.css">
+  </noscript>
 </head>
 
 <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
   <div id="app"></div>
   <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
+        document.querySelectorAll('style').forEach(style => style.remove());
+      } else {
+        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" onload="document.body.style.visibility=\'visible\'" />');
+      }
+    });
 
     if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
       document.querySelectorAll('style').forEach(style => style.remove());
