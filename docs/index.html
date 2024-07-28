@@ -30,14 +30,13 @@
 
   <!-- Stylesheets -->
 
-  <link rel="stylesheet" href="assets/css/docsify-this.css">
-
   <!-- Core Theme -->
   <link rel="stylesheet" href="https://docsify-preview-57eiemxx4-docsifyjs.vercel.app/dist/themes/core.min.css" />
 
   <!-- Core Dark (add-on) -->
   <link rel="stylesheet" href="https://docsify-preview-57eiemxx4-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
 
+  <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
 
   <!-- Font Awesome Stylesheets -->
@@ -55,10 +54,6 @@
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
-    body {
-      visibility: hidden;
-      opacity: 0;
-    }
     :root {
 
       --font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
@@ -97,9 +92,6 @@
     } else {
       document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
-
-    document.body.style.visibility = 'visible';
-    document.body.style.opacity = '1';
 
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
     var gitLinkRepoURL = '';
