@@ -84,9 +84,6 @@
     }
   </style>
   <link rel="preload" href="assets/css/docsify-this.css" as="style" onload="this.rel='stylesheet'">
-  <noscript>
-    <link rel="stylesheet" href="assets/css/docsify-this.css">
-  </noscript>
 </head>
 
 <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
@@ -97,8 +94,9 @@
       if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
         document.querySelectorAll('style').forEach(style => style.remove());
       } else {
-        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" onload="document.body.style.visibility=\'visible\'" />');
+        document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
       }
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/docsify-this.css" onload="document.body.style.visibility=\'visible\'" />');
     });
 
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
