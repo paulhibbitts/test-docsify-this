@@ -56,8 +56,6 @@
   <style>
     :root {
 
-      --font-family: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
-
       --line-height: 1.4;
       --font-size: 18px;
       --font-weight: 400;
@@ -1585,6 +1583,8 @@
       if (!(fontfamily === false)) {
         // console.log(fontfamily);
         document.documentElement.style.setProperty('--font-family', fontfamily); // DOCSIFY v5
+      } else {
+        document.documentElement.style.setProperty('--font-family', '"Source Sans 3",sans-serif'); // DOCSIFY v5
       }
 
       // Change body font size if fontSize parameter present
