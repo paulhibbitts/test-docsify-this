@@ -91,7 +91,14 @@
     if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
       document.querySelectorAll('style').forEach(style => style.remove());
     } else {
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
+      var link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'style';
+      link.href = 'assets/css/theme.css';
+      link.onload = function() {
+          this.rel = 'stylesheet';
+      };
+      document.head.appendChild(link);
     }
 
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
