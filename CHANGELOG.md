@@ -6,6 +6,7 @@
 * Docsify v5 used for all Markdown file rendering
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify core (default) theme
 * Skip-link to content, accessible via tab key
+* Use of variable fonts for Source Sans 3 (default) and Open Sans
 
 **Improved:**
 * Updated ReadMe
