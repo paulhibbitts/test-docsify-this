@@ -68,7 +68,6 @@ Page layout:
     <option value="&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">Helvetica Neue, sans-serif</option>
     <option value="&quot;Lato Extended&quot;,Lato,&quot;Helvetica Neue&quot;,Helvetica,Arial,sans-serif">Lato, sans-serif</option>
     <option value="&quot;Open Sans&quot;,sans-serif">Open Sans, sans-serif</option>
-    <option value="&quot;Source Sans 3&quot;,sans-serif">Source Sans 3, sans-serif</option>
     <option value="system-ui,sans-serif">System UI, sans-serif</option>
     <option value="Tahoma,sans-serif">Tahoma, sans-serif</option>
     <option value="Verdana,sans-serif">Verdana, sans-serif</option>
