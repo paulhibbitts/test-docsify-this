@@ -587,7 +587,7 @@ body {
   font-size: 1.65rem; /* DOCSIFY v5 */
   line-height: 2.1rem;
   margin-top: 1.1rem;
-  margin-bottom: -.2rem;
+  margin-bottom: -.35rem;
   padding-bottom: 0;
 }
 
@@ -595,7 +595,7 @@ body {
   font-size: 1.50rem; /* DOCSIFY v5 */
   line-height: 1.75rem;
   margin-top: .9rem;
-  margin-bottom: 0rem;
+  margin-bottom: -.15rem;
   padding-bottom: 0;
   border-style: none; /* DOCSIFY v5 */
 }
@@ -604,7 +604,7 @@ body {
   font-size: 1.35rem; /* DOCSIFY v5 */
   line-height: 1.6rem;
   margin-top: .7rem;
-  margin-bottom: 0rem;
+  margin-bottom: -.1rem;
   padding-bottom: 0;
 }
 
@@ -612,7 +612,7 @@ body {
   font-size: 1.25rem; /* DOCSIFY v5 */
   line-height: 1.4rem;
   margin-top: .6rem;
-  margin-bottom: 0rem;
+  margin-bottom: -.1rem;
   padding-bottom: 0;
 }
 
@@ -628,7 +628,7 @@ body {
   font-size: 1.1rem; /* DOCSIFY v5 */
   line-height: 1.3rem;
   margin-top: .4rem;
-  margin-bottom: 0rem;
+  margin-bottom: -.1rem;
   padding-bottom: 0;
 }
 
@@ -638,7 +638,7 @@ body {
 
 .markdown-section .alert h1, .markdown-section blockquote h1 {
   font-size: 1.5rem;
-  line-height: 1.65rem;
+  line-height: 1.7rem;
 }
 
 .markdown-section .alert h2, .markdown-section blockquote h2 {
