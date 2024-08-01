@@ -5,18 +5,18 @@
 **New:**
 * Docsify v5 used for all Markdown file rendering
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify core (default) theme
-* Skip-link to content, accessible via tab key
-* Use of variable fonts for Source Sans 3 (default) and Open Sans
+* Skip-link to content, accessible via tab key (via Docsify v5)
+* Added platform default font choice ('system-ui')
 
 **Improved:**
 * Updated ReadMe
 * Enabling of Docsify Search plugin URL parameter changed to `searchbox` from `search` for Docsify v5 compatibility
-* Aria attributes for Sidebar toggle button and current page link
-* Assigning proper roles and aria attributes to various site elements
-* Support for keyboard shortcuts (e.g. \ for hide or show Sidebar)
-* Keyboard scrolling is supported within code blocks
-* Focus on hidden Sidebar items is prevented
-* Top navbar can now accept focus
+* Aria attributes for Sidebar toggle button and current page link (via Docsify v5)
+* Assigning proper roles and aria attributes to various site elements (via Docsify v5)
+* Support for keyboard shortcuts, e.g. \ for hide or show Sidebar (via Docsify v5)
+* Keyboard scrolling is supported within code blocks (via Docsify v5)
+* Focus on hidden Sidebar items is prevented (via Docsify v5)
+* Top navbar can now accept focus (via Docsify v5)
 
 ## [1.9.9] - XX/XX/2024
 
