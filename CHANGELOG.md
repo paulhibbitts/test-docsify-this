@@ -17,6 +17,7 @@
 * Keyboard scrolling is supported within code blocks (via Docsify v5)
 * Focus on hidden Sidebar items is prevented (via Docsify v5)
 * Top navbar can now accept focus (via Docsify v5)
+* Improved search results, which exclude Markdown formating syntax (via Docsify v5)
 
 ## [1.9.9] - XX/XX/2024
 
