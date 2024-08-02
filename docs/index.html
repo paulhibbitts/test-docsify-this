@@ -1,1690 +1,2565 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <title>Docsify-This | A Lightweight Markdown Open Publishing Tool</title>
+    <meta
+      name="description"
+      content="This web app provides a quick way to display one or more Markdown files as standalone web pages without needing to setup your own website. All you need is an online Markdown file and pass that URL to docsify-this.net."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- <link rel="icon" href="assets/favicon/favicon.png"> -->
+    <link rel="shortcut icon" href="#" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="robots" content="noindex">
-  <title>Docsify-This | A Lightweight Markdown Open Publishing Tool</title>
-  <meta name="description"
-    content="This web app provides a quick way to display one or more Markdown files as standalone web pages without needing to setup your own website. All you need is an online Markdown file and pass that URL to docsify-this.net.">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" href="assets/favicon/favicon.png"> -->
-  <link rel="shortcut icon" href="#">
+    <meta property="og:title" content="Docsify-This" />
+    <meta
+      property="og:description"
+      content="Instantly turn online Markdown files into standalone Web pages."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://paulhibbitts.github.io/test-docsify-this/"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/og-image.png"
+    />
 
-  <meta property="og:title" content="Docsify-This" />
-  <meta property="og:description" content="Instantly turn online Markdown files into standalone Web pages." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://paulhibbitts.github.io/test-docsify-this/" />
-  <meta property="og:image"
-    content="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/og-image.png" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@hibbittsdesign" />
+    <meta name="twitter:title" content="Docsify-This" />
+    <meta
+      name="twitter:description"
+      content="Instantly turn online Markdown files into standalone Web pages."
+    />
+    <meta
+      name="twitter:image"
+      content="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/og-image.png"
+    />
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@hibbittsdesign" />
-  <meta name="twitter:title" content="Docsify-This" />
-  <meta name="twitter:description" content="Instantly turn online Markdown files into standalone Web pages." />
-  <meta name="twitter:image"
-    content="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/og-image.png" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 
-  <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <!-- Preload Default Source Sans 3 Fonts -->
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-600italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="assets/fonts/source-sans-3-v15-latin-700italic.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
 
-  <!-- Preload Default Source Sans 3 Fonts -->
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-600italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  
-  <!-- Stylesheets -->
+    <!-- Stylesheets -->
 
-  <!-- Core Theme -->
-  <link rel="stylesheet" href="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/themes/core.min.css" />
+    <!-- Core Theme -->
+    <link
+      rel="stylesheet"
+      href="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/themes/core.min.css"
+    />
 
-  <!-- Core Dark (add-on) -->
-  <link rel="stylesheet" href="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css" media="(prefers-color-scheme: dark)"/>
+    <!-- Core Dark (add-on) -->
+    <link
+      rel="stylesheet"
+      href="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/themes/addons/core-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
 
-  <link rel="stylesheet" href="assets/css/docsify-this.css">
-  <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/docsify-this.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-  <!-- Font Awesome Stylesheets -->
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/brands.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/regular.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.css" />
+    <!-- Font Awesome Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="assets/vendor/fontawesome/css/fontawesome.css"
+    />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/brands.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/regular.css" />
+    <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.css" />
 
-  <!-- Katex Stylesheet -->
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" /> -->
-  <!-- <link rel="stylesheet" href="assets/vendor/katex/katex.min.css" /> -->
+    <!-- Katex Stylesheet -->
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" /> -->
+    <!-- <link rel="stylesheet" href="assets/vendor/katex/katex.min.css" /> -->
 
-  <!-- Coloris -->
-  <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
-  <script src="assets/vendor/coloris/coloris.min.js"></script>
+    <!-- Coloris -->
+    <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
+    <script src="assets/vendor/coloris/coloris.min.js"></script>
 
-  <style>
-    :root {
+    <style>
+      :root {
+        --line-height: 1.4;
+        --font-size: 18px;
+        --font-weight: 400;
 
-      --line-height: 1.4;
-      --font-size: 18px;
-      --font-weight: 400;
+        --content-max-width: 960px;
 
-      --content-max-width: 960px;
+        --heading-font-weight: 400;
 
-      --heading-font-weight: 400;
+        --theme-color: #0374b5;
+        --link-color: #0374b5;
+        --link-color-hover: var(--link-color);
+        --link-underline-thickness: 1px;
+        --link-underline-thickness-hover: var(--link-underline-thickness);
 
-      --theme-color: #0374B5;
-      --link-color: #0374B5;
-      --link-color-hover: var(--link-color);
-      --link-underline-thickness: 1px;
-      --link-underline-thickness-hover: var(--link-underline-thickness);
+        --blockquote-color: var(--color-text);
+        --blockquote-bg: var(--color-mono-1);
 
-      --blockquote-color: var(--color-text);
-      --blockquote-bg: var(--color-mono-1);
+        --cover-bg: #c1e1f6;
 
-      --cover-bg: #C1E1F6;
+        --docsifytabs-tab-color: var(--color-mono-max);
+      }
+    </style>
+  </head>
 
-      --docsifytabs-tab-color: var(--color-mono-max);
-
-    }
-  </style>
-
-</head>
-
-<body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
-  <div id="app"></div>
-  <script>
-
-    if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
-      document.querySelectorAll('style').forEach(style => style.remove());
-    } else {
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
-    }
-
-    // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
-    var gitLinkRepoURL = '';
-
-    // Customize the text for your Edit this Page on GitHub link between the two quotes below
-    var editLinkText = 'Edit this Page';
-
-    // Set standalone to true to permanently hide the Sidebar
-    var standalone = (!(getURLParameterByName('sidebar', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')));
-
-    // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
-    var ToC = false;
-
-    // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
-    var navbar = false;
-
-    // Set footer to true to permanently show the Footer ('_footer.md)
-    var footer = false;
-
-    // Set darkmode to true to permanently enable dark mode support
-    var darkmode = false;
-
-    // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
-    var allowedDomains = '';
-
-    // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL with Web Page Builder
-    var hedgedocInstances = 'demo.hedgedoc.org';
-
-    // Get value from GET-parameter in URL
-    // @param {array}  name        Parameter-name
-    // @param {*}      isTrue      Returns this variable if "name" found
-    // @param {*}      isFalse     Returns this variable if "name" not found
-    // @param {string} url         A custom url to look in (defaults to current page URL)
-    // @param {bool}   returnValue Returns the URL Param if exists
-    // @returns {string|null}      Parameter-value
-    function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href, returnValue = false) {
-
-      let exists = false;
-      let paramValue = null;
-
-      url = decodeURIComponent(url);
-
-      if (Array.isArray(name)) {
-        name.forEach(element => {
-          var value = getURLParameterByName(element, null, null, url, true);
-          if (value === 'true' || value === 'false') {
-            exists = true;
-            paramValue = value;
-          } else if (!exists && value) {
-            exists = true;
-            paramValue = value;
-          }
-        });
+  <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
+    <div id="app"></div>
+    <script>
+      if (
+        getURLParameterByName(
+          ["docsify-theme", "docsifytheme"],
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true"
+      ) {
+        document.querySelectorAll("style").forEach((style) => style.remove());
       } else {
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
-        var results = regex.exec(url);
-        exists = (results && results[2] !== undefined) ? true : false;
-        paramValue = results && results[2] ? results[2] : null;
+        document.head.insertAdjacentHTML(
+          "beforeend",
+          '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />'
+        );
       }
 
-      if (returnValue && exists) {
-        return paramValue;
-      } else if (!exists && isFalse) {
-        return isFalse;
-      }
+      // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
+      var gitLinkRepoURL = "";
 
-      if (exists && isTrue) {
-        return isTrue;
-      }
+      // Customize the text for your Edit this Page on GitHub link between the two quotes below
+      var editLinkText = "Edit this Page";
 
-      if (!exists && isFalse) {
-        return isFalse;
-      }
+      // Set standalone to true to permanently hide the Sidebar
+      var standalone = !(
+        getURLParameterByName(
+          "sidebar",
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true" && getURLParameterByName("basePath")
+      );
 
-      return exists;
-    }
+      // Set ToC to true to permanently show page Table of Contents (Sidebar and Navbar must also be hidden)
+      var ToC = false;
 
-    // DOCSIFY THIS SCRIPTS
-    function openURLs(url) {
+      // Set navbar to true to permanently override the hiding of the Navbar when displaying as standalone
+      var navbar = false;
 
-      if (url) {
+      // Set footer to true to permanently show the Footer ('_footer.md)
+      var footer = false;
 
-        if (isValidUrl(url)) {
+      // Set darkmode to true to permanently enable dark mode support
+      var darkmode = false;
 
-          docsifyURL = window.location.href
+      // Set allowedDomains to contain single or multiple (comma separated) domain names to control which domains can be used for hosting source Markdown files
+      var allowedDomains = "";
 
-          var params = new URLSearchParams(docsifyURL.search);
-          params.delete('url-field');
-          docsifyURL = docsifyURL.split("?")[0]; //url;
+      // Set hedgedocInstances to contain domain names of HedgeDoc instances to enable automatic creation of needed Docsify-This URL with Web Page Builder
+      var hedgedocInstances = "demo.hedgedoc.org";
 
-          docsifyURL = docsifyURL.replace('/#/', '');
-          docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
+      // Get value from GET-parameter in URL
+      // @param {array}  name        Parameter-name
+      // @param {*}      isTrue      Returns this variable if "name" found
+      // @param {*}      isFalse     Returns this variable if "name" not found
+      // @param {string} url         A custom url to look in (defaults to current page URL)
+      // @param {bool}   returnValue Returns the URL Param if exists
+      // @returns {string|null}      Parameter-value
+      function getURLParameterByName(
+        name,
+        isTrue = null,
+        isFalse = null,
+        url = window.location.href,
+        returnValue = false
+      ) {
+        let exists = false;
+        let paramValue = null;
 
-          const urlhostname = new URL(url).hostname
+        url = decodeURIComponent(url);
 
-          // If not Raw source URL convert it and determine automatic gitlink page URL when possible
-          if (url.includes("github.com")) {
-            var gitlinkPageURL = url;
-            url = url.replace('github.com', 'raw.githubusercontent.com');
-            url = url.replace(/\/blob/, '');
-          } else if (url.includes("github.dev")) {
-            var gitlinkPageURL = url;
-            url = url.replace('github.dev', 'raw.githubusercontent.com');
-            url = url.replace(/\/blob/, '');
-          } else if (url.includes("raw.githubusercontent.com")) {
-            var gitlinkPageURL = url;
-            gitlinkPageURL = gitlinkPageURL.replace('raw.githubusercontent.com', 'github.com');
-            gitlinkPageURL = gitlinkPageURL.replace(/\/main/, '/blob/main');
-            gitlinkPageURL = gitlinkPageURL.replace(/\/master/, '/blob/master');
-          } else if (url.includes("gist.githubusercontent.com")) {
-            var gitlinkPageURL = url;
-            gitlinkPageURL = gitlinkPageURL.replace('gist.githubusercontent.com', 'gist.github.com');
-            gitlinkPageURL = gitlinkPageURL.split("/raw")[0];
-          } else if (url.includes("codeberg.org")) {
-            var gitlinkPageURL = url;
-            url = url.replace(/\/raw/, '');
-            url = url.replace(/\/src/, '');
-            url = url.replace(/\/branch/, '');
-            url = url.replace(/\/main/, '');
-            url = url.replace(/\/master/, '');
-            url = url.replace('codeberg.org', 'raw.codeberg.page');
-          } else if (hedgedocInstances.includes(urlhostname)) {
-            var gitlinkPageURL = url;
-            if (gitlinkPageURL.includes('/download')) {
-              gitlinkPageURL = gitlinkPageURL.split("/download")[0];
+        if (Array.isArray(name)) {
+          name.forEach((element) => {
+            var value = getURLParameterByName(element, null, null, url, true);
+            if (value === "true" || value === "false") {
+              exists = true;
+              paramValue = value;
+            } else if (!exists && value) {
+              exists = true;
+              paramValue = value;
             }
-          } else if (url.includes("codeberg.page")) {
-            // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
-            alert("Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md').");
-            return;
-          } else {
-            var gitlinkPageURL = '';
-          }
-
-          // Get last segment of URL
-          const { hostname } = new URL(url);
-          var lastSegment = url.split('/').pop();
-          if (hedgedocInstances.includes(hostname)) {
-            // Support for HedgeDoc instances in the Web Page Builder
-            lastSegment = lastSegment.replace(/#/g, '');
-            if (!url.includes('/download')) {
-              lastSegment = lastSegment + '/download';
-            }
-          }
-          var URLparms = '';
-
-          const cb1 = document.querySelector('#editCheck');
-          if (cb1.checked) {
-            if (gitlinkPageURL) {
-              if (!(isExtensionAllowed(lastSegment)) && !(hedgedocInstances.includes(hostname))) {
-                // No filename is present and not a HedgeDoc instance, so assume default README.md file
-                gitlinkPageURL = gitlinkPageURL + "README.md";
-              }
-              if ((document.querySelector('#stylesidebar').checked || document.querySelector('#loadcustomnavbar').checked) && !(hedgedocInstances.includes(hostname))) {
-                gitlinkPageURL = gitlinkPageURL.substring(0, gitlinkPageURL.lastIndexOf("/"));
-              }
-              var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
-            }
-          }
-
-          if (document.querySelector('#stylesidebar').checked) {
-            var URLparms = URLparms + `&sidebar=true`;
-          }
-
-          if (document.querySelector('#styletoc').checked) {
-            var URLparms = URLparms + `&toc=true`;
-          }
-
-          var getBrowserTabTitle = document.getElementById("browserTabTitle");
-          var browserTabTitle = getBrowserTabTitle.value;
-          if (browserTabTitle === '') {
-            document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
-          }
-          if (!(browserTabTitle == "Published by Docsify-This")) {
-            browserTabTitle = encodeURI(browserTabTitle);
-            URLparms = URLparms + `&browser-tab-title=` + browserTabTitle;
-          }
-
-          var getEditThisPage = document.getElementById("editLinkText");
-          var editlinktext = getEditThisPage.value;
-          if (editlinktext === '') {
-            document.getElementById("editLinkText").value = 'Edit this Page';
-          }
-          if (!(editlinktext == "Edit this Page")) {
-            editlinktext = editlinktext.replace(/ /g, '%20');
-            URLparms = URLparms + `&edit-link-text=` + editlinktext;
-          }
-
-          const cb2 = document.querySelector('#editLinkTopCheck');
-          if (cb1.checked && cb2.checked) {
-            if (gitlinkPageURL) {
-              var URLparms = URLparms + `&edit-link-top=true`;
-            }
-          }
-
-          const cb3 = document.querySelector('#hideCredits');
-          if (cb3.checked) {
-            var URLparms = URLparms + `&hide-credits=true`;
-          }
-
-          const cb4 = document.querySelector('#narrowToC');
-          if (cb4.checked) {
-            if (URLparms.includes("&toc=true")) {
-              var URLparms = URLparms.replace("&toc=true", "");
-              URLparms = URLparms + `&toc-narrow=true`;
-            }
-          }
-
-          const cb5 = document.querySelector('#toch1');
-          const cb6 = document.querySelector('#toch2');
-          const cb7 = document.querySelector('#toch3');
-          // console.log (cb5.checked,cb6.checked,cb7.checked );
-          // console.log ( (!(cb5.checked) && (cb6.checked) && (cb7.checked)) );
-          // console.log ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) === true );
-
-          if (URLparms.includes("&toc=true") || URLparms.includes("&toc-narrow=true")) {
-            if (((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false))) {
-              alert("At least one page Heading level for the Table of Contents must be selected.");
-              return;
-            } else if (!(!(cb5.checked) && (cb6.checked) && (!(cb7.checked)))) {
-              if (URLparms.includes("&toc=true")) {
-                var ToCHeadings = "";
-                if (cb5.checked) {
-                  ToCHeadings = "h1";
-                }
-                if (cb6.checked) {
-                  if (ToCHeadings) {
-                    ToCHeadings = ToCHeadings + ",h2";
-                  } else {
-                    ToCHeadings = "h2";
-                  }
-                }
-                if (cb7.checked) {
-                  if (ToCHeadings) {
-                    ToCHeadings = ToCHeadings + ",h3";
-                  } else {
-                    ToCHeadings = "h3";
-                  }
-                }
-                URLparms = URLparms + `&toc-headings=` + ToCHeadings;
-              }
-            }
-          }
-
-          var getMaxLevel = document.getElementById("maxLevel");
-          var maxLevel = getMaxLevel.value;
-          if (maxLevel === '') {
-            document.getElementById("maxLevel").value = 2;
-          }
-          if (!(maxLevel == 2)) {
-            URLparms = URLparms + `&maxLevel=` + maxLevel;
-          }
-
-          const cb8 = document.querySelector('#hypothesisenable');
-          if (cb8.checked) {
-            var URLparms = URLparms + `&hypothesis=true`;
-          }
-
-          var getFontFamily = document.getElementById('fontfamily').selectedOptions[0].value;
-          if (!(getFontFamily == "default")) {
-            var URLparms = URLparms + `&font-family=` + getFontFamily;
-          }
-
-          var getFontSize = document.getElementById('fontsize').value;
-          if (!(getFontSize == "18px")) {
-            var URLparms = URLparms + `&font-size=` + getFontSize;
-          }
-
-          var getLineHeight = document.getElementById('lineheight').value;
-          if (!(getLineHeight == "1.4")) {
-            var URLparms = URLparms + `&line-height=` + getLineHeight
-          }
-
-          var getColor = document.getElementById("linkcolor");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#0374B5';
-            document.getElementById("linkcolor").value = hexCode;
-            document.getElementById("linkcolorpreview").style.visibility = "visible";
-            document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-            document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "0374B5")) {
-            URLparms = URLparms + `&link-color=` + hexCode;
-          }
-
-          const cb9 = document.querySelector('#loadfavicon');
-          if (cb9.checked) {
-            var URLparms = URLparms + `&loadFavicon=favicon.png`;
-          }
-
-          const cb10 = document.querySelector('#loadcoverpage');
-          if (cb10.checked) {
-            var URLparms = URLparms + `&coverpage=_coverpage.md`;
-          }
-
-          const cb11 = document.querySelector('#loadcustomsidebar');
-          if (cb11.checked) {
-            if (!(URLparms.includes("&sidebar=true"))) {
-              var URLparms = URLparms + `&sidebar=true`;
-              document.getElementById("stylecontentonly").checked = false;
-              document.getElementById("styletoc").checked = false;
-              document.getElementById("stylesidebar").checked = true;
-            }
-            var URLparms = URLparms + `&loadSidebar=_sidebar.md`;
-          }
-
-          const cb12 = document.querySelector('#loadcustomnavbar');
-          if (cb12.checked) {
-            var URLparms = URLparms + `&loadNavbar=_navbar.md`;
-          }
-
-          const cb13 = document.querySelector('#loadcustomfooter');
-          if (cb13.checked) {
-            var URLparms = URLparms + `&loadFooter=_footer.md`;
-          }
-
-          var getSiteName = document.getElementById("siteName");
-          var siteName = getSiteName.value;
-          if (!(siteName == "")) {
-            siteName = siteName.replace(/ /g, '%20');
-            URLparms = URLparms + `&name=` + siteName;
-          }
-
-          const cb14 = document.querySelector('#enableSidebarsearch');
-          if (cb14.checked) {
-            var URLparms = URLparms + `&searchbox=true`;
-          }
-
-          var getSubMaxLevel = document.getElementById("subMaxLevel");
-          var subMaxLevel = getSubMaxLevel.value;
-          if (subMaxLevel === '') {
-            document.getElementById("subMaxLevel").value = 2;
-          }
-          if (!(subMaxLevel == 2)) {
-            URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
-          }
-
-          var getpageTitle = document.getElementById("pageTitle");
-          var pageTitle = getpageTitle.value;
-          if (!(pageTitle == "")) {
-            pageTitle = pageTitle.replace(/ /g, '%20');
-            URLparms = URLparms + `&page-title=` + pageTitle;
-          }
-
-          const cb17 = document.querySelector('#pagination');
-          if (cb17.checked) {
-            var URLparms = URLparms + `&pagination=true`;
-          }
-
-          var getheaderweight = document.getElementById('headerweight').value;
-          if (!(getheaderweight == "400")) {
-            var URLparms = URLparms + `&header-weight=` + getheaderweight
-          }
-
-          const cb15 = document.querySelector('#zoomimages');
-          if (cb15.checked) {
-            var URLparms = URLparms + `&zoom-images=true`;
-          }
-
-          var getColor = document.getElementById("coverpagecolor");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#C1E1F6';
-            document.getElementById("coverpagecolor").value = hexCode;
-            document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-            document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
-            document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "C1E1F6")) {
-            URLparms = URLparms + `&coverpage-color=` + hexCode;
-          }
-
-          const cb16 = document.querySelector('#enableDarkmode');
-          if (cb16.checked) {
-            var URLparms = URLparms + `&dark-mode=true`;
-          }
-
-          var getColor = document.getElementById("linkcolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#0685D7';
-            document.getElementById("linkcolordarkmode").value = hexCode;
-            document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-            document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0685D7';
-            document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0685D7';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "0685D7")) {
-            URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
-          }
-
-          var getColor = document.getElementById("coverpagecolordarkmode");
-          var hexCode = getColor.value;
-          if (hexCode === '') {
-            hexCode = '#20587D';
-            document.getElementById("coverpagecolordarkmode").value = hexCode;
-            document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
-            document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
-            document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#20587D';
-          }
-          if (hexCode.charAt(0) == "#") {
-            hexCode = hexCode.substring(1);
-          }
-          if (!(hexCode == "20587D")) {
-            URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
-          }
-
-          if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && url.includes("gist.githubusercontent.com")) {
-            // Filename without supported extension or missing filename
-            alert("Please use the GitHub Gist raw source URL and a filename that includes a supported extension (" + displayAllowedFileExtensions() + ") as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button.");
-            selectText();
-            return;
-          } else if ((!(isExtensionAllowed(lastSegment)) || lastSegment === "") && !(hedgedocInstances.includes(hostname))) {
-            // Filename without supported extension or missing filename and not a HedgeDoc instance
-            alert("Please include the full path and filename with a supported extension (" + displayAllowedFileExtensions() + ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'.");
-            selectText();
-            return;
-          } else {
-            // Filename with supported extension is present along with full path and filename
-            url = url.substring(0, url.lastIndexOf("/"));
-            var baseURL = docsifyURL + `?basePath=${url}&homepage=${lastSegment}` + URLparms;
-          }
-
-          var docsifyPreviewWin = window.open(baseURL, "Docsify-This Preview");
-          docsifyPreviewWin.focus();
-
+          });
         } else {
-
-          alert("Please enter a valid Markdown file URL.");
-          selectText();
-
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+          var results = regex.exec(url);
+          exists = results && results[2] !== undefined ? true : false;
+          paramValue = results && results[2] ? results[2] : null;
         }
 
-      } else {
+        if (returnValue && exists) {
+          return paramValue;
+        } else if (!exists && isFalse) {
+          return isFalse;
+        }
 
-        alert("Please enter a Markdown file URL.");
-        selectText();
+        if (exists && isTrue) {
+          return isTrue;
+        }
 
+        if (!exists && isFalse) {
+          return isFalse;
+        }
+
+        return exists;
       }
 
-    }
+      // DOCSIFY THIS SCRIPTS
+      function openURLs(url) {
+        if (url) {
+          if (isValidUrl(url)) {
+            docsifyURL = window.location.href;
 
-    const isValidUrl = urlString => {
-      var urlPattern = new RegExp('^(https?:\\/\\/)?' + // validate protocol
-        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // validate domain name
-        '((\\d{1,3}\\.){3}\\d{1,3}))' + // validate OR ip (v4) address
-        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // validate port and path
-        '(\\?[;&a-z\\d%_.~+=-]*)?' + // validate query string
-        '(\\#[-a-z\\d_]*)?$', 'i'); // validate fragment locator
-      return !!urlPattern.test(urlString);
-    }
+            var params = new URLSearchParams(docsifyURL.search);
+            params.delete("url-field");
+            docsifyURL = docsifyURL.split("?")[0]; //url;
 
-    function selectText() {
-      const input = document.getElementById('docsifythisurlfield');
-      input.focus();
-      input.select();
-    }
+            docsifyURL = docsifyURL.replace("/#/", "");
+            docsifyURL = docsifyURL.replace(/\/?$/, "/"); // If no trailing slash add it
 
-    function toggleDiv(link) {
-      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-      if (theDiv.style.display === "none") {
-        link.text = 'Show Fewer Page Appearance Options \«';
-        document.getElementById("pageappearanceoptionsheader").style.display = "none";
-        theDiv.style.display = "block";
-      } else {
-        link.text = 'Show More Page Appearance Options \»';
-        theDiv.style.display = "none";
+            const urlhostname = new URL(url).hostname;
+
+            // If not Raw source URL convert it and determine automatic gitlink page URL when possible
+            if (url.includes("github.com")) {
+              var gitlinkPageURL = url;
+              url = url.replace("github.com", "raw.githubusercontent.com");
+              url = url.replace(/\/blob/, "");
+            } else if (url.includes("github.dev")) {
+              var gitlinkPageURL = url;
+              url = url.replace("github.dev", "raw.githubusercontent.com");
+              url = url.replace(/\/blob/, "");
+            } else if (url.includes("raw.githubusercontent.com")) {
+              var gitlinkPageURL = url;
+              gitlinkPageURL = gitlinkPageURL.replace(
+                "raw.githubusercontent.com",
+                "github.com"
+              );
+              gitlinkPageURL = gitlinkPageURL.replace(/\/main/, "/blob/main");
+              gitlinkPageURL = gitlinkPageURL.replace(
+                /\/master/,
+                "/blob/master"
+              );
+            } else if (url.includes("gist.githubusercontent.com")) {
+              var gitlinkPageURL = url;
+              gitlinkPageURL = gitlinkPageURL.replace(
+                "gist.githubusercontent.com",
+                "gist.github.com"
+              );
+              gitlinkPageURL = gitlinkPageURL.split("/raw")[0];
+            } else if (url.includes("codeberg.org")) {
+              var gitlinkPageURL = url;
+              url = url.replace(/\/raw/, "");
+              url = url.replace(/\/src/, "");
+              url = url.replace(/\/branch/, "");
+              url = url.replace(/\/main/, "");
+              url = url.replace(/\/master/, "");
+              url = url.replace("codeberg.org", "raw.codeberg.page");
+            } else if (hedgedocInstances.includes(urlhostname)) {
+              var gitlinkPageURL = url;
+              if (gitlinkPageURL.includes("/download")) {
+                gitlinkPageURL = gitlinkPageURL.split("/download")[0];
+              }
+            } else if (url.includes("codeberg.page")) {
+              // Automatic determination of gitLink not supported with raw.codeberg.pages URLs
+              alert(
+                "Codeberg.page URLs not supported, please use Codeberg.org Markdown file URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/src/branch/main/home.md') or raw URL (e.g. 'https://codeberg.org/paulhibbitts/docsify-this-one-page-article/raw/branch/main/home.md')."
+              );
+              return;
+            } else {
+              var gitlinkPageURL = "";
+            }
+
+            // Get last segment of URL
+            const { hostname } = new URL(url);
+            var lastSegment = url.split("/").pop();
+            if (hedgedocInstances.includes(hostname)) {
+              // Support for HedgeDoc instances in the Web Page Builder
+              lastSegment = lastSegment.replace(/#/g, "");
+              if (!url.includes("/download")) {
+                lastSegment = lastSegment + "/download";
+              }
+            }
+            var URLparms = "";
+
+            const cb1 = document.querySelector("#editCheck");
+            if (cb1.checked) {
+              if (gitlinkPageURL) {
+                if (
+                  !isExtensionAllowed(lastSegment) &&
+                  !hedgedocInstances.includes(hostname)
+                ) {
+                  // No filename is present and not a HedgeDoc instance, so assume default README.md file
+                  gitlinkPageURL = gitlinkPageURL + "README.md";
+                }
+                if (
+                  (document.querySelector("#stylesidebar").checked ||
+                    document.querySelector("#loadcustomnavbar").checked) &&
+                  !hedgedocInstances.includes(hostname)
+                ) {
+                  gitlinkPageURL = gitlinkPageURL.substring(
+                    0,
+                    gitlinkPageURL.lastIndexOf("/")
+                  );
+                }
+                var URLparms = URLparms + `&edit-link=` + gitlinkPageURL;
+              }
+            }
+
+            if (document.querySelector("#stylesidebar").checked) {
+              var URLparms = URLparms + `&sidebar=true`;
+            }
+
+            if (document.querySelector("#styletoc").checked) {
+              var URLparms = URLparms + `&toc=true`;
+            }
+
+            var getBrowserTabTitle = document.getElementById("browserTabTitle");
+            var browserTabTitle = getBrowserTabTitle.value;
+            if (browserTabTitle === "") {
+              document.getElementById("browserTabTitle").value =
+                "Published by Docsify-This";
+            }
+            if (!(browserTabTitle == "Published by Docsify-This")) {
+              browserTabTitle = encodeURI(browserTabTitle);
+              URLparms = URLparms + `&browser-tab-title=` + browserTabTitle;
+            }
+
+            var getEditThisPage = document.getElementById("editLinkText");
+            var editlinktext = getEditThisPage.value;
+            if (editlinktext === "") {
+              document.getElementById("editLinkText").value = "Edit this Page";
+            }
+            if (!(editlinktext == "Edit this Page")) {
+              editlinktext = editlinktext.replace(/ /g, "%20");
+              URLparms = URLparms + `&edit-link-text=` + editlinktext;
+            }
+
+            const cb2 = document.querySelector("#editLinkTopCheck");
+            if (cb1.checked && cb2.checked) {
+              if (gitlinkPageURL) {
+                var URLparms = URLparms + `&edit-link-top=true`;
+              }
+            }
+
+            const cb3 = document.querySelector("#hideCredits");
+            if (cb3.checked) {
+              var URLparms = URLparms + `&hide-credits=true`;
+            }
+
+            const cb4 = document.querySelector("#narrowToC");
+            if (cb4.checked) {
+              if (URLparms.includes("&toc=true")) {
+                var URLparms = URLparms.replace("&toc=true", "");
+                URLparms = URLparms + `&toc-narrow=true`;
+              }
+            }
+
+            const cb5 = document.querySelector("#toch1");
+            const cb6 = document.querySelector("#toch2");
+            const cb7 = document.querySelector("#toch3");
+            // console.log (cb5.checked,cb6.checked,cb7.checked );
+            // console.log ( (!(cb5.checked) && (cb6.checked) && (cb7.checked)) );
+            // console.log ( ((cb5.checked === false) && (cb6.checked === false) && (cb7.checked === false)) === true );
+
+            if (
+              URLparms.includes("&toc=true") ||
+              URLparms.includes("&toc-narrow=true")
+            ) {
+              if (
+                cb5.checked === false &&
+                cb6.checked === false &&
+                cb7.checked === false
+              ) {
+                alert(
+                  "At least one page Heading level for the Table of Contents must be selected."
+                );
+                return;
+              } else if (!(!cb5.checked && cb6.checked && !cb7.checked)) {
+                if (URLparms.includes("&toc=true")) {
+                  var ToCHeadings = "";
+                  if (cb5.checked) {
+                    ToCHeadings = "h1";
+                  }
+                  if (cb6.checked) {
+                    if (ToCHeadings) {
+                      ToCHeadings = ToCHeadings + ",h2";
+                    } else {
+                      ToCHeadings = "h2";
+                    }
+                  }
+                  if (cb7.checked) {
+                    if (ToCHeadings) {
+                      ToCHeadings = ToCHeadings + ",h3";
+                    } else {
+                      ToCHeadings = "h3";
+                    }
+                  }
+                  URLparms = URLparms + `&toc-headings=` + ToCHeadings;
+                }
+              }
+            }
+
+            var getMaxLevel = document.getElementById("maxLevel");
+            var maxLevel = getMaxLevel.value;
+            if (maxLevel === "") {
+              document.getElementById("maxLevel").value = 2;
+            }
+            if (!(maxLevel == 2)) {
+              URLparms = URLparms + `&maxLevel=` + maxLevel;
+            }
+
+            const cb8 = document.querySelector("#hypothesisenable");
+            if (cb8.checked) {
+              var URLparms = URLparms + `&hypothesis=true`;
+            }
+
+            var getFontFamily =
+              document.getElementById("fontfamily").selectedOptions[0].value;
+            if (!(getFontFamily == "default")) {
+              var URLparms = URLparms + `&font-family=` + getFontFamily;
+            }
+
+            var getFontSize = document.getElementById("fontsize").value;
+            if (!(getFontSize == "18px")) {
+              var URLparms = URLparms + `&font-size=` + getFontSize;
+            }
+
+            var getLineHeight = document.getElementById("lineheight").value;
+            if (!(getLineHeight == "1.4")) {
+              var URLparms = URLparms + `&line-height=` + getLineHeight;
+            }
+
+            var getColor = document.getElementById("linkcolor");
+            var hexCode = getColor.value;
+            if (hexCode === "") {
+              hexCode = "#0374B5";
+              document.getElementById("linkcolor").value = hexCode;
+              document.getElementById("linkcolorpreview").style.visibility =
+                "visible";
+              document.getElementById("linkcolorpreview").style.borderColor =
+                "#0374B5";
+              document.getElementById(
+                "linkcolorpreview"
+              ).style.backgroundColor = "#0374B5";
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "0374B5")) {
+              URLparms = URLparms + `&link-color=` + hexCode;
+            }
+
+            const cb9 = document.querySelector("#loadfavicon");
+            if (cb9.checked) {
+              var URLparms = URLparms + `&loadFavicon=favicon.png`;
+            }
+
+            const cb10 = document.querySelector("#loadcoverpage");
+            if (cb10.checked) {
+              var URLparms = URLparms + `&coverpage=_coverpage.md`;
+            }
+
+            const cb11 = document.querySelector("#loadcustomsidebar");
+            if (cb11.checked) {
+              if (!URLparms.includes("&sidebar=true")) {
+                var URLparms = URLparms + `&sidebar=true`;
+                document.getElementById("stylecontentonly").checked = false;
+                document.getElementById("styletoc").checked = false;
+                document.getElementById("stylesidebar").checked = true;
+              }
+              var URLparms = URLparms + `&loadSidebar=_sidebar.md`;
+            }
+
+            const cb12 = document.querySelector("#loadcustomnavbar");
+            if (cb12.checked) {
+              var URLparms = URLparms + `&loadNavbar=_navbar.md`;
+            }
+
+            const cb13 = document.querySelector("#loadcustomfooter");
+            if (cb13.checked) {
+              var URLparms = URLparms + `&loadFooter=_footer.md`;
+            }
+
+            var getSiteName = document.getElementById("siteName");
+            var siteName = getSiteName.value;
+            if (!(siteName == "")) {
+              siteName = siteName.replace(/ /g, "%20");
+              URLparms = URLparms + `&name=` + siteName;
+            }
+
+            const cb14 = document.querySelector("#enableSidebarsearch");
+            if (cb14.checked) {
+              var URLparms = URLparms + `&searchbox=true`;
+            }
+
+            var getSubMaxLevel = document.getElementById("subMaxLevel");
+            var subMaxLevel = getSubMaxLevel.value;
+            if (subMaxLevel === "") {
+              document.getElementById("subMaxLevel").value = 2;
+            }
+            if (!(subMaxLevel == 2)) {
+              URLparms = URLparms + `&subMaxLevel=` + subMaxLevel;
+            }
+
+            var getpageTitle = document.getElementById("pageTitle");
+            var pageTitle = getpageTitle.value;
+            if (!(pageTitle == "")) {
+              pageTitle = pageTitle.replace(/ /g, "%20");
+              URLparms = URLparms + `&page-title=` + pageTitle;
+            }
+
+            const cb17 = document.querySelector("#pagination");
+            if (cb17.checked) {
+              var URLparms = URLparms + `&pagination=true`;
+            }
+
+            var getheaderweight = document.getElementById("headerweight").value;
+            if (!(getheaderweight == "400")) {
+              var URLparms = URLparms + `&header-weight=` + getheaderweight;
+            }
+
+            const cb15 = document.querySelector("#zoomimages");
+            if (cb15.checked) {
+              var URLparms = URLparms + `&zoom-images=true`;
+            }
+
+            var getColor = document.getElementById("coverpagecolor");
+            var hexCode = getColor.value;
+            if (hexCode === "") {
+              hexCode = "#C1E1F6";
+              document.getElementById("coverpagecolor").value = hexCode;
+              document.getElementById(
+                "coverpagecolorpreview"
+              ).style.visibility = "visible";
+              document.getElementById(
+                "coverpagecolorpreview"
+              ).style.borderColor = "#C1E1F6";
+              document.getElementById(
+                "coverpagecolorpreview"
+              ).style.backgroundColor = "#C1E1F6";
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "C1E1F6")) {
+              URLparms = URLparms + `&coverpage-color=` + hexCode;
+            }
+
+            const cb16 = document.querySelector("#enableDarkmode");
+            if (cb16.checked) {
+              var URLparms = URLparms + `&dark-mode=true`;
+            }
+
+            var getColor = document.getElementById("linkcolordarkmode");
+            var hexCode = getColor.value;
+            if (hexCode === "") {
+              hexCode = "#0685D7";
+              document.getElementById("linkcolordarkmode").value = hexCode;
+              document.getElementById(
+                "linkcolordarkmodepreview"
+              ).style.visibility = "visible";
+              document.getElementById(
+                "linkcolordarkmodepreview"
+              ).style.borderColor = "#0685D7";
+              document.getElementById(
+                "linkcolordarkmodepreview"
+              ).style.backgroundColor = "#0685D7";
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "0685D7")) {
+              URLparms = URLparms + `&link-color-dark-mode=` + hexCode;
+            }
+
+            var getColor = document.getElementById("coverpagecolordarkmode");
+            var hexCode = getColor.value;
+            if (hexCode === "") {
+              hexCode = "#20587D";
+              document.getElementById("coverpagecolordarkmode").value = hexCode;
+              document.getElementById(
+                "coverpagecolordarkmodepreview"
+              ).style.visibility = "visible";
+              document.getElementById(
+                "coverpagecolordarkmodepreview"
+              ).style.borderColor = "#20587D";
+              document.getElementById(
+                "coverpagecolordarkmodepreview"
+              ).style.backgroundColor = "#20587D";
+            }
+            if (hexCode.charAt(0) == "#") {
+              hexCode = hexCode.substring(1);
+            }
+            if (!(hexCode == "20587D")) {
+              URLparms = URLparms + `&coverpage-color-dark-mode=` + hexCode;
+            }
+
+            if (
+              (!isExtensionAllowed(lastSegment) || lastSegment === "") &&
+              url.includes("gist.githubusercontent.com")
+            ) {
+              // Filename without supported extension or missing filename
+              alert(
+                "Please use the GitHub Gist raw source URL and a filename that includes a supported extension (" +
+                  displayAllowedFileExtensions() +
+                  ") as the file URL. To get this URL, tap on the filename of your Gist (i.e. 'Yourfile.md') and then tap the 'Raw' button."
+              );
+              selectText();
+              return;
+            } else if (
+              (!isExtensionAllowed(lastSegment) || lastSegment === "") &&
+              !hedgedocInstances.includes(hostname)
+            ) {
+              // Filename without supported extension or missing filename and not a HedgeDoc instance
+              alert(
+                "Please include the full path and filename with a supported extension (" +
+                  displayAllowedFileExtensions() +
+                  ") in the file URL, for example 'https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md'."
+              );
+              selectText();
+              return;
+            } else {
+              // Filename with supported extension is present along with full path and filename
+              url = url.substring(0, url.lastIndexOf("/"));
+              var baseURL =
+                docsifyURL +
+                `?basePath=${url}&homepage=${lastSegment}` +
+                URLparms;
+            }
+
+            var docsifyPreviewWin = window.open(
+              baseURL,
+              "Docsify-This Preview"
+            );
+            docsifyPreviewWin.focus();
+          } else {
+            alert("Please enter a valid Markdown file URL.");
+            selectText();
+          }
+        } else {
+          alert("Please enter a Markdown file URL.");
+          selectText();
+        }
       }
-    }
 
-    function toggleDiv2(link) {
-      var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-      if (theDiv.style.display === "none") {
-        link.checked = true;
-        document.getElementById("pageappearanceoptionsheader").style.display = "none";
-        theDiv.style.display = "block";
-      } else {
-        link.checked = false;
-        theDiv.style.display = "none";
-      }
-    }
+      const isValidUrl = (urlString) => {
+        var urlPattern = new RegExp(
+          "^(https?:\\/\\/)?" + // validate protocol
+            "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" + // validate domain name
+            "((\\d{1,3}\\.){3}\\d{1,3}))" + // validate OR ip (v4) address
+            "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" + // validate port and path
+            "(\\?[;&a-z\\d%_.~+=-]*)?" + // validate query string
+            "(\\#[-a-z\\d_]*)?$",
+          "i"
+        ); // validate fragment locator
+        return !!urlPattern.test(urlString);
+      };
 
-    function validateColorAndUpdatePreview(inputId, previewId) {
-      var getColor = document.getElementById(inputId);
-      var hexCode = getColor.value;
-      var regExp = /[#0-9A-Fa-f]{1}/g;
-
-      if (!(regExp.test(hexCode.slice(-1)))) {
-        document.getElementById(inputId).value = hexCode.slice(0, -1);
+      function selectText() {
+        const input = document.getElementById("docsifythisurlfield");
+        input.focus();
+        input.select();
       }
 
-      if (isHexadecimalColor(hexCode.substring(1))) {
-        document.getElementById(previewId).style.visibility = "visible";
-      } else {
-        if (isHexadecimalColor(document.getElementById(inputId).value)) {
+      function toggleDiv(link) {
+        var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+        if (theDiv.style.display === "none") {
+          link.text = "Show Fewer Page Appearance Options \«";
+          document.getElementById("pageappearanceoptionsheader").style.display =
+            "none";
+          theDiv.style.display = "block";
+        } else {
+          link.text = "Show More Page Appearance Options \»";
+          theDiv.style.display = "none";
+        }
+      }
+
+      function toggleDiv2(link) {
+        var theDiv = document.getElementById(
+          "docsifythisurlbuilderoptionsDiv2"
+        );
+        if (theDiv.style.display === "none") {
+          link.checked = true;
+          document.getElementById("pageappearanceoptionsheader").style.display =
+            "none";
+          theDiv.style.display = "block";
+        } else {
+          link.checked = false;
+          theDiv.style.display = "none";
+        }
+      }
+
+      function validateColorAndUpdatePreview(inputId, previewId) {
+        var getColor = document.getElementById(inputId);
+        var hexCode = getColor.value;
+        var regExp = /[#0-9A-Fa-f]{1}/g;
+
+        if (!regExp.test(hexCode.slice(-1))) {
+          document.getElementById(inputId).value = hexCode.slice(0, -1);
+        }
+
+        if (isHexadecimalColor(hexCode.substring(1))) {
           document.getElementById(previewId).style.visibility = "visible";
         } else {
-          document.getElementById(previewId).style.visibility = "hidden";
-        }
-      }
-
-      if (!(hexCode.charAt(0) == "#")) {
-        hexCode = '#' + hexCode;
-      }
-
-      document.getElementById(previewId).style.borderColor = hexCode;
-      document.getElementById(previewId).style.backgroundColor = hexCode;
-    }
-
-    function isHexadecimalColor(str) {
-      return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
-    }
-
-    function restoreAllDefaults() {
-      document.getElementById("stylecontentonly").checked = true;
-      document.getElementById("styletoc").checked = false;
-      document.getElementById("stylesidebar").checked = false;
-      document.getElementById("browserTabTitle").value = 'Published by Docsify-This';
-      document.getElementById("editCheck").checked = false;
-      document.getElementById("fontfamily").value = 'default';
-      document.getElementById("fontsize").value = '18px';
-      document.getElementById("lineheight").value = '1.4';
-      document.getElementById("linkcolor").value = '#0374B5';
-      document.getElementById("linkcolorpreview").style.visibility = "visible";
-      document.getElementById("linkcolorpreview").style.borderColor = '#0374B5';
-      document.getElementById("linkcolorpreview").style.backgroundColor = '#0374B5';
-      document.getElementById("editLinkText").value = 'Edit this Page';
-      document.getElementById("editLinkTopCheck").checked = false;
-      document.getElementById("narrowToC").checked = false;
-      document.getElementById("toch1").checked = false;
-      document.getElementById("toch2").checked = true;
-      document.getElementById("toch3").checked = false;
-      document.getElementById("maxLevel").value = 2;
-      document.getElementById("hideCredits").checked = false;
-      document.getElementById("hypothesisenable").checked = false;
-      document.getElementById("loadfavicon").checked = false;
-      document.getElementById("loadcoverpage").checked = false;
-      document.getElementById("loadcustomsidebar").checked = false;
-      document.getElementById("loadcustomnavbar").checked = false;
-      document.getElementById("loadcustomfooter").checked = false;
-      document.getElementById("siteLogo").value = '';
-      document.getElementById("siteName").value = '';
-      document.getElementById("enableSidebarsearch").checked = false;
-      document.getElementById("subMaxLevel").value = 2;
-      document.getElementById("pageTitle").value = '';
-      document.getElementById("pagination").checked = false;
-      document.getElementById("headerweight").value = 400;
-      document.getElementById("zoomimages").checked = false;
-      document.getElementById("coverpagecolor").value = '#C1E1F6';
-      document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-      document.getElementById("coverpagecolorpreview").style.borderColor = '#C1E1F6';
-      document.getElementById("coverpagecolorpreview").style.backgroundColor = '#C1E1F6';
-      document.getElementById("enableDarkmode").checked = false;
-      document.getElementById("linkcolordarkmode").value = '#0685D7';
-      document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-      document.getElementById("linkcolordarkmodepreview").style.borderColor = '#0685D7';
-      document.getElementById("linkcolordarkmodepreview").style.backgroundColor = '#0685D7';
-      document.getElementById("coverpagecolordarkmode").value = '#20587D';
-      document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
-      document.getElementById("coverpagecolordarkmodepreview").style.borderColor = '#20587D';
-      document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = '#20587D';
-    }
-
-    function setColorProperties(color) {
-      document.documentElement.style.setProperty('--theme-color', color);
-      document.documentElement.style.setProperty('--link-color', color);
-      document.documentElement.style.setProperty('--link-underline-color', color);
-    }
-
-    function updateThemeModeLinkColors() {
-      // Update link colors based on current theme mode
-      const darkModeEnabled = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) || darkmode;
-
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && darkModeEnabled) {
-        // dark mode
-        const linkColorDarkMode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
-
-        if (linkColorDarkMode !== false) {
-          setColorProperties('#' + linkColorDarkMode);
-          document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
-        } else {
-          const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
-
-          if (linkColor !== false) {
-            setColorProperties('#' + linkColor);
+          if (isHexadecimalColor(document.getElementById(inputId).value)) {
+            document.getElementById(previewId).style.visibility = "visible";
           } else {
-            setColorProperties('#1BA1EE');
-            document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
+            document.getElementById(previewId).style.visibility = "hidden";
           }
         }
 
-        const coverPageColorDarkMode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
-
-        if (coverPageColorDarkMode !== false) {
-          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColorDarkMode);
-        } else {
-          document.documentElement.style.setProperty('--cover-bg', '#20587D');
-        }
-      } else {
-        // light mode
-        const linkColor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
-
-        document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
-
-        if (linkColor !== false) {
-          setColorProperties('#' + linkColor);
-
-        } else {
-          setColorProperties('#0374B5');
-          document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
+        if (!(hexCode.charAt(0) == "#")) {
+          hexCode = "#" + hexCode;
         }
 
-        const coverPageColor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
-
-        if (coverPageColor !== false) {
-          document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
-        } else {
-          document.documentElement.style.setProperty('--cover-bg', '#C1E1F6');
-        }
-
+        document.getElementById(previewId).style.borderColor = hexCode;
+        document.getElementById(previewId).style.backgroundColor = hexCode;
       }
-    }
 
-    function getFileExtension(filename) {
-      // Extracts and returns the file extension from the given filename
-      if (filename) {
-        const dotIndex = filename.lastIndexOf('.');
-        if (dotIndex !== -1) {
-          return filename.slice(dotIndex);
+      function isHexadecimalColor(str) {
+        return /^(?:[0-9A-F]{3}|[0-9A-F]{6})$/i.test(str);
+      }
+
+      function restoreAllDefaults() {
+        document.getElementById("stylecontentonly").checked = true;
+        document.getElementById("styletoc").checked = false;
+        document.getElementById("stylesidebar").checked = false;
+        document.getElementById("browserTabTitle").value =
+          "Published by Docsify-This";
+        document.getElementById("editCheck").checked = false;
+        document.getElementById("fontfamily").value = "default";
+        document.getElementById("fontsize").value = "18px";
+        document.getElementById("lineheight").value = "1.4";
+        document.getElementById("linkcolor").value = "#0374B5";
+        document.getElementById("linkcolorpreview").style.visibility =
+          "visible";
+        document.getElementById("linkcolorpreview").style.borderColor =
+          "#0374B5";
+        document.getElementById("linkcolorpreview").style.backgroundColor =
+          "#0374B5";
+        document.getElementById("editLinkText").value = "Edit this Page";
+        document.getElementById("editLinkTopCheck").checked = false;
+        document.getElementById("narrowToC").checked = false;
+        document.getElementById("toch1").checked = false;
+        document.getElementById("toch2").checked = true;
+        document.getElementById("toch3").checked = false;
+        document.getElementById("maxLevel").value = 2;
+        document.getElementById("hideCredits").checked = false;
+        document.getElementById("hypothesisenable").checked = false;
+        document.getElementById("loadfavicon").checked = false;
+        document.getElementById("loadcoverpage").checked = false;
+        document.getElementById("loadcustomsidebar").checked = false;
+        document.getElementById("loadcustomnavbar").checked = false;
+        document.getElementById("loadcustomfooter").checked = false;
+        document.getElementById("siteLogo").value = "";
+        document.getElementById("siteName").value = "";
+        document.getElementById("enableSidebarsearch").checked = false;
+        document.getElementById("subMaxLevel").value = 2;
+        document.getElementById("pageTitle").value = "";
+        document.getElementById("pagination").checked = false;
+        document.getElementById("headerweight").value = 400;
+        document.getElementById("zoomimages").checked = false;
+        document.getElementById("coverpagecolor").value = "#C1E1F6";
+        document.getElementById("coverpagecolorpreview").style.visibility =
+          "visible";
+        document.getElementById("coverpagecolorpreview").style.borderColor =
+          "#C1E1F6";
+        document.getElementById("coverpagecolorpreview").style.backgroundColor =
+          "#C1E1F6";
+        document.getElementById("enableDarkmode").checked = false;
+        document.getElementById("linkcolordarkmode").value = "#0685D7";
+        document.getElementById("linkcolordarkmodepreview").style.visibility =
+          "visible";
+        document.getElementById("linkcolordarkmodepreview").style.borderColor =
+          "#0685D7";
+        document.getElementById(
+          "linkcolordarkmodepreview"
+        ).style.backgroundColor = "#0685D7";
+        document.getElementById("coverpagecolordarkmode").value = "#20587D";
+        document.getElementById(
+          "coverpagecolordarkmodepreview"
+        ).style.visibility = "visible";
+        document.getElementById(
+          "coverpagecolordarkmodepreview"
+        ).style.borderColor = "#20587D";
+        document.getElementById(
+          "coverpagecolordarkmodepreview"
+        ).style.backgroundColor = "#20587D";
+      }
+
+      function setColorProperties(color) {
+        document.documentElement.style.setProperty("--theme-color", color);
+        document.documentElement.style.setProperty("--link-color", color);
+        document.documentElement.style.setProperty(
+          "--link-underline-color",
+          color
+        );
+      }
+
+      function updateThemeModeLinkColors() {
+        // Update link colors based on current theme mode
+        const darkModeEnabled =
+          getURLParameterByName(
+            ["dark-mode", "darkMode"],
+            null,
+            null,
+            window.location.href,
+            true
+          ) || darkmode;
+
+        if (
+          window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches &&
+          darkModeEnabled
+        ) {
+          // dark mode
+          const linkColorDarkMode = getURLParameterByName(
+            ["link-color-dark-mode", "linkColorDarkMode"],
+            null,
+            null,
+            window.location.href,
+            true
+          );
+
+          if (linkColorDarkMode !== false) {
+            setColorProperties("#" + linkColorDarkMode);
+            document.documentElement.style.setProperty(
+              "--cover-button-primary-color",
+              "#000000"
+            );
+          } else {
+            const linkColor = getURLParameterByName(
+              ["link-color", "linkColor"],
+              null,
+              null,
+              window.location.href,
+              true
+            );
+
+            if (linkColor !== false) {
+              setColorProperties("#" + linkColor);
+            } else {
+              setColorProperties("#1BA1EE");
+              document.documentElement.style.setProperty(
+                "--cover-button-primary-color",
+                "#000000"
+              );
+            }
+          }
+
+          const coverPageColorDarkMode = getURLParameterByName(
+            ["coverpage-color-dark-mode", "coverpageColorDarkMode"],
+            null,
+            null,
+            window.location.href,
+            true
+          );
+
+          if (coverPageColorDarkMode !== false) {
+            document.documentElement.style.setProperty(
+              "--cover-bg",
+              "#" + coverPageColorDarkMode
+            );
+          } else {
+            document.documentElement.style.setProperty("--cover-bg", "#20587D");
+          }
+        } else {
+          // light mode
+          const linkColor = getURLParameterByName(
+            ["link-color", "linkColor"],
+            null,
+            null,
+            window.location.href,
+            true
+          );
+
+          document.documentElement.style.setProperty(
+            "--cover-button-primary-color",
+            "#FFFFFF"
+          );
+
+          if (linkColor !== false) {
+            setColorProperties("#" + linkColor);
+          } else {
+            setColorProperties("#0374B5");
+            document.documentElement.style.setProperty(
+              "--cover-button-primary-color",
+              "#FFFFFF"
+            );
+          }
+
+          const coverPageColor = getURLParameterByName(
+            ["coverpage-color", "coverpageColor"],
+            null,
+            null,
+            window.location.href,
+            true
+          );
+
+          if (coverPageColor !== false) {
+            document.documentElement.style.setProperty(
+              "--cover-bg",
+              "#" + coverPageColor
+            );
+          } else {
+            document.documentElement.style.setProperty("--cover-bg", "#C1E1F6");
+          }
         }
       }
-      return '';
-    }
 
-    function getAllowedFileExtensions() {
-      // Return list of supported file extensions
-      return ".md,.markdown,.adoc";
-    }
-
-    function displayAllowedFileExtensions() {
-      // Get list of supported file extensions
-      let itemsString = getAllowedFileExtensions();
-      let displayFileExtentions = itemsString.split(',').join(' or ');
-      return displayFileExtentions;
-    }
-
-    function isExtensionAllowed(fileURL) {
-      // Check if filename contains an allowed file extension or supported slug
-      var allowedExtensions = getAllowedFileExtensions();
-      fileURL = fileURL.split('?id')[0];
-      var extension = fileURL.split(".").pop();
-
-      return allowedExtensions.includes(extension.toLowerCase());
-    }
-
-    async function checkIfFileExists(url) {
-      // Return true if file exists, false otherwise
-      try {
-        const response = await fetch(url, { method: "HEAD" });
-        return response.ok;
-      } catch (error) {
-        return false;
-      }
-    }
-
-    function setFavicon(favImage) {
-      // console.log(favImage);
-      let headTitle = document.querySelector('head');
-      let setFavicon = document.createElement('link');
-      setFavicon.setAttribute('rel', 'shortcut icon');
-      setFavicon.setAttribute('href', favImage);
-      // console.log(setFavicon);
-      headTitle.appendChild(setFavicon);
-      let appleTouchIcon = document.createElement('link');
-      appleTouchIcon.setAttribute('rel', 'apple-touch-icon');
-      appleTouchIcon.setAttribute('href', favImage);
-      headTitle.appendChild(appleTouchIcon);
-      // console.log(appleTouchIcon);
-    }
-
-    // console.log (getURLParameterByName(['standalone', 'embedded']));
-    // console.log (!(getURLParameterByName('navbar')));
-    // console.log (standalone);
-    // console.log (navbar);
-
-    // Ensure the link for displayed site name is correct after scrolling to id element
-    // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-    // Function to check and set the href attribute
-    function checkAndSetDisplayedSiteName() {
-        const appNameLink = document.querySelector('a.app-name-link');
-        if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
-            appNameLink.setAttribute('href', '#/');
+      function getFileExtension(filename) {
+        // Extracts and returns the file extension from the given filename
+        if (filename) {
+          const dotIndex = filename.lastIndexOf(".");
+          if (dotIndex !== -1) {
+            return filename.slice(dotIndex);
+          }
         }
-    }
-    // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
-    // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
-    const observer = new MutationObserver((mutationsList, observer) => {
+        return "";
+      }
+
+      function getAllowedFileExtensions() {
+        // Return list of supported file extensions
+        return ".md,.markdown,.adoc";
+      }
+
+      function displayAllowedFileExtensions() {
+        // Get list of supported file extensions
+        let itemsString = getAllowedFileExtensions();
+        let displayFileExtentions = itemsString.split(",").join(" or ");
+        return displayFileExtentions;
+      }
+
+      function isExtensionAllowed(fileURL) {
+        // Check if filename contains an allowed file extension or supported slug
+        var allowedExtensions = getAllowedFileExtensions();
+        fileURL = fileURL.split("?id")[0];
+        var extension = fileURL.split(".").pop();
+
+        return allowedExtensions.includes(extension.toLowerCase());
+      }
+
+      async function checkIfFileExists(url) {
+        // Return true if file exists, false otherwise
+        try {
+          const response = await fetch(url, { method: "HEAD" });
+          return response.ok;
+        } catch (error) {
+          return false;
+        }
+      }
+
+      function setFavicon(favImage) {
+        // console.log(favImage);
+        let headTitle = document.querySelector("head");
+        let setFavicon = document.createElement("link");
+        setFavicon.setAttribute("rel", "shortcut icon");
+        setFavicon.setAttribute("href", favImage);
+        // console.log(setFavicon);
+        headTitle.appendChild(setFavicon);
+        let appleTouchIcon = document.createElement("link");
+        appleTouchIcon.setAttribute("rel", "apple-touch-icon");
+        appleTouchIcon.setAttribute("href", favImage);
+        headTitle.appendChild(appleTouchIcon);
+        // console.log(appleTouchIcon);
+      }
+
+      // console.log (getURLParameterByName(['standalone', 'embedded']));
+      // console.log (!(getURLParameterByName('navbar')));
+      // console.log (standalone);
+      // console.log (navbar);
+
+      // Ensure the link for displayed site name is correct after scrolling to id element
+      // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+      // Function to check and set the href attribute
+      function checkAndSetDisplayedSiteName() {
+        const appNameLink = document.querySelector("a.app-name-link");
+        if (appNameLink && appNameLink.getAttribute("href") !== "#/") {
+          appNameLink.setAttribute("href", "#/");
+        }
+      }
+      // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
+      // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
+      const observer = new MutationObserver((mutationsList, observer) => {
         // Call checkAndSetHref to ensure the href is as expected
         checkAndSetDisplayedSiteName();
-    });
-    // Assuming the body exists when this script runs, start observing
-    observer.observe(document.body, {
+      });
+      // Assuming the body exists when this script runs, start observing
+      observer.observe(document.body, {
         childList: true, // observe direct children being added or removed
         subtree: true, // observe all descendants
         attributes: true, // observe attributes changes
-        attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
-    });
+        attributeFilter: ["href"], // filter to only observe changes to 'href' attributes
+      });
 
-    // Docsify
-    window.$docsify = {
-      // GENERAL SETTINGS
-      // -----------------------------------------------------------------
-      name: 'Docsify-This',
-      // repo           : 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/',
-      // Rename homepage to README.md and set homepage to README.md to default to README file for Remote Docsify
-      homepage: 'README.md',
-      // coverpage      : 'coverpage.md',
-      loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
-      loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar || false),
-      externalLinkTarget: '_top',
-      loadFooter: (getURLParameterByName('footer') || footer || false),
-      notFoundPage: '404.md',
-      ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
-      executeScript: true,
+      // Docsify
+      window.$docsify = {
+        // GENERAL SETTINGS
+        // -----------------------------------------------------------------
+        name: "Docsify-This",
+        // repo           : 'https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/',
+        // Rename homepage to README.md and set homepage to README.md to default to README file for Remote Docsify
+        homepage: "README.md",
+        // coverpage      : 'coverpage.md',
+        loadSidebar: !(
+          getURLParameterByName(["standalone", "embedded"]) ||
+          standalone ||
+          getURLParameterByName("basePath")
+        ),
+        loadNavbar: !(
+          getURLParameterByName(["standalone", "embedded"]) ||
+          !getURLParameterByName("navbar") ||
+          standalone ||
+          !navbar ||
+          false
+        ),
+        externalLinkTarget: "_top",
+        loadFooter: getURLParameterByName("footer") || footer || false,
+        notFoundPage: "404.md",
+        ext: getFileExtension(
+          getURLParameterByName(
+            "homepage",
+            null,
+            null,
+            window.location.href,
+            true
+          )
+        ),
+        executeScript: true,
 
-      // SIDEBAR NAVIGATION
-      // -----------------------------------------------------------------
-      auto2top: true,
-      maxLevel: 2,
-      // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
-      subMaxLevel: 2,
-      hideSidebar: (getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && !(getURLParameterByName('sidebar'))),
+        // SIDEBAR NAVIGATION
+        // -----------------------------------------------------------------
+        auto2top: true,
+        maxLevel: 2,
+        // Set subMaxLevel to 0 to remove automatic display of page table of contents (TOC) in Sidebar
+        subMaxLevel: 2,
+        hideSidebar:
+          getURLParameterByName(["standalone", "embedded"]) ||
+          standalone ||
+          (getURLParameterByName("basePath") &&
+            !getURLParameterByName("sidebar")),
 
-      skipLink: (!(getURLParameterByName(['standalone', 'embedded']) || standalone || (getURLParameterByName('basePath')) && (!(getURLParameterByName('sidebar')))) || (getURLParameterByName('toc'))),
+        skipLink:
+          !(
+            getURLParameterByName(["standalone", "embedded"]) ||
+            standalone ||
+            (getURLParameterByName("basePath") &&
+              !getURLParameterByName("sidebar"))
+          ) || getURLParameterByName("toc"),
 
-      search: 'auto', // default
+        search: "auto", // default
 
-      // complete configuration parameters
-      search: {
-        maxAge: 86400000, // Expiration time, the default one day
-        paths: 'auto',
-        placeholder: 'Type to search',
-        noData: 'No matches found.',
-        // Headline depth, 1 - 6
-        depth: 6,
-        namespace: 'docsify-this',
-        hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        insertAfter: '.app-name',
-      },
+        // complete configuration parameters
+        search: {
+          maxAge: 86400000, // Expiration time, the default one day
+          paths: "auto",
+          placeholder: "Type to search",
+          noData: "No matches found.",
+          // Headline depth, 1 - 6
+          depth: 6,
+          namespace: "docsify-this",
+          hideOtherSidebarContent: false, // whether or not to hide other sidebar content
+          insertAfter: ".app-name",
+        },
 
-      // CUSTOM PLUGINS
-      // -----------------------------------------------------------------
-      plugins: [
+        // CUSTOM PLUGINS
+        // -----------------------------------------------------------------
+        plugins: [
+          function (hook, vm) {
+            hook.afterEach(function (html, next) {
+              // Invoked each time after the Markdown file is parsed.
+              // beforeEach and afterEach support asynchronous。
+              // ...
+              // call `next(html)` when task is done.
 
-        function (hook, vm) {
+              if (window.$docsify["basePath"]) {
+                var htmlElement = document.createElement("div");
+                htmlElement.innerHTML = html;
 
-          hook.afterEach(function (html, next) {
-            // Invoked each time after the Markdown file is parsed.
-            // beforeEach and afterEach support asynchronous。
-            // ...
-            // call `next(html)` when task is done.
+                // Scan for links to local Markdown files and adjust URLs to work correctly
 
-            if (window.$docsify['basePath']) {
+                // Get current Docsify URL
+                var url = "";
+                url = window.location.href;
+                url = url.replace("#/", "");
 
-              var htmlElement = document.createElement('div');
-              htmlElement.innerHTML = html;
+                var currentBasePath = "";
+                currentBasePath = getURLParameterByName(
+                  "basePath",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
 
-              // Scan for links to local Markdown files and adjust URLs to work correctly
+                // Will store array of URL parameters
+                var paramArray = [];
+                // Split the remaining URL parameters into an array
+                paramArray = url.split("&");
+                // Filter out elements containing 'homepage' or 'edit-link'
+                var filteredParams = paramArray.filter(function (param) {
+                  return (
+                    !param.includes("homepage") &&
+                    !param.includes("edit-link") &&
+                    !param.includes("editLink")
+                  );
+                });
+                // Assemble filtered URL parameters from the array into a single string
+                var URLparms = "&" + filteredParams.join("&");
+                // console.log(URLparms);
 
-              // Get current Docsify URL
-              var url = '';
-              url = window.location.href;
-              url = url.replace('#/', '');
+                url = url.replace(/[?].*/, ""); // Strips anything after ?
+                // console.log(url); //www.example.com
 
-              var currentBasePath = '';
-              currentBasePath = getURLParameterByName('basePath', null, null, window.location.href, true);
+                const links = Array.from(htmlElement.querySelectorAll("a"));
 
-              // Will store array of URL parameters
-              var paramArray = [];
-              // Split the remaining URL parameters into an array
-              paramArray = url.split('&');
-              // Filter out elements containing 'homepage' or 'edit-link'
-              var filteredParams = paramArray.filter(function (param) {
-                return !param.includes('homepage') && !param.includes('edit-link') && !param.includes('editLink');
-              });
-              // Assemble filtered URL parameters from the array into a single string
-              var URLparms = '&' + filteredParams.join('&');
-              // console.log(URLparms);
+                let existingEditThisPageLink = getURLParameterByName(
+                  ["edit-link", "editLink"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                let fileExt = getFileExtension(existingEditThisPageLink);
+                if (!fileExt) {
+                  fileExt = getFileExtension(
+                    getURLParameterByName(
+                      "homepage",
+                      null,
+                      null,
+                      window.location.href,
+                      true
+                    )
+                  );
+                }
+                // console.log(fileExt);
 
-              url = url.replace(/[?].*/, ''); // Strips anything after ?
-              // console.log(url); //www.example.com
+                for (const link of links) {
+                  const href = link.getAttribute("href");
+                  // Find any local Markdown file links
+                  if (href?.startsWith("#")) {
+                    // Modify each Markdown file link to work with Remote Docsify
+                    let lastSegment = href
+                      .replace("#/", "")
+                      .replace("./", "")
+                      .replace(fileExt, "");
 
-              const links = Array.from(htmlElement.querySelectorAll('a'));
+                    // Check to make sure link is not Docsify id anchor link
+                    if (!lastSegment.startsWith("?id")) {
+                      let editThisPageLink = "";
+                      if (existingEditThisPageLink) {
+                        if (existingEditThisPageLink.endsWith(fileExt)) {
+                          // Calculate existing edit-link URL parm in link
+                          editThisPageLink =
+                            decodeURIComponent(currentBasePath);
 
-              let existingEditThisPageLink = getURLParameterByName(['edit-link', 'editLink'], null, null, window.location.href, true);
-              let fileExt = getFileExtension(existingEditThisPageLink);
-              if (!fileExt) {
-                fileExt = getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true));
-              }
-              // console.log(fileExt);
+                          if (
+                            currentBasePath.includes("githubusercontent.com")
+                          ) {
+                            editThisPageLink = editThisPageLink
+                              .replace(
+                                "raw.githubusercontent.com",
+                                existingEditThisPageLink.includes("github.dev")
+                                  ? "github.dev"
+                                  : "github.com"
+                              )
+                              .replace(/\/main/, "/blob/main")
+                              .replace(/\/master/, "/blob/master");
+                          } else if (
+                            currentBasePath.includes("codeberg.page")
+                          ) {
+                            editThisPageLink = editThisPageLink.replace(
+                              "raw.codeberg.page",
+                              "codeberg.org"
+                            );
+                            editThisPageLink =
+                              editThisPageLink + "/src/branch/main/";
+                          }
 
-              for (const link of links) {
-                const href = link.getAttribute('href');
-                // Find any local Markdown file links
-                if (href?.startsWith('#')) {
-                  // Modify each Markdown file link to work with Remote Docsify
-                  let lastSegment = href.replace('#/', '').replace('./', '').replace(fileExt, '');
-
-                  // Check to make sure link is not Docsify id anchor link
-                  if (!lastSegment.startsWith("?id")) {
-                    let editThisPageLink = '';
-                    if (existingEditThisPageLink) {
-                      if (existingEditThisPageLink.endsWith(fileExt)) {
-                        // Calculate existing edit-link URL parm in link
-                        editThisPageLink = decodeURIComponent(currentBasePath);
-
-                        if (currentBasePath.includes("githubusercontent.com")) {
-                          editThisPageLink = editThisPageLink.replace('raw.githubusercontent.com', existingEditThisPageLink.includes('github.dev') ? 'github.dev' : 'github.com')
-                            .replace(/\/main/, '/blob/main')
-                            .replace(/\/master/, '/blob/master');
-                        } else if (currentBasePath.includes("codeberg.page")) {
-                          editThisPageLink = editThisPageLink.replace('raw.codeberg.page', 'codeberg.org');
-                          editThisPageLink = editThisPageLink + '/src/branch/main/'
+                          editThisPageLink =
+                            editThisPageLink + "/" + lastSegment + fileExt;
+                        } else {
+                          editThisPageLink = existingEditThisPageLink;
                         }
-
-                        editThisPageLink = editThisPageLink + '/' + lastSegment + fileExt;
-                      } else {
-                        editThisPageLink = existingEditThisPageLink;
                       }
+
+                      const editThisPageLinkURLparm =
+                        editThisPageLink && `&edit-link=${editThisPageLink}`;
+                      // Update Markdown file link
+                      let newURL = "";
+
+                      // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
+                      var isDynamicLink =
+                        (isExtensionAllowed(editThisPageLinkURLparm) &&
+                          !(editThisPageLinkURLparm === "")) ||
+                        getURLParameterByName("hypothesis");
+                      if (!isDynamicLink) {
+                        newURL = `#/${lastSegment}`;
+                      } else {
+                        newURL = `${url}?basePath=${currentBasePath}&homepage=${lastSegment}${fileExt}${URLparms}${editThisPageLinkURLparm}`;
+                      }
+
+                      link.setAttribute("href", newURL);
                     }
-
-                    const editThisPageLinkURLparm = editThisPageLink && `&edit-link=${editThisPageLink}`;
-                    // Update Markdown file link
-                    let newURL = '';
-
-                    // Leverage Docsify page-to-page cache if no dynamic URL parameters are present (i.e. edit-link Markdown pages)
-                    var isDynamicLink = (isExtensionAllowed(editThisPageLinkURLparm) && !(editThisPageLinkURLparm === "")) || getURLParameterByName('hypothesis');
-                    if (!isDynamicLink) {
-                      newURL = `#/${lastSegment}`;
-                    } else {
-                      newURL = `${url}?basePath=${currentBasePath}&homepage=${lastSegment}${fileExt}${URLparms}${editThisPageLinkURLparm}`;
-                    }
-
-                    link.setAttribute('href', newURL);
                   }
                 }
-              }
 
-              /* JS to change Embedly cards to light or dark theme based on system theme */
-              const embeds = Array.from(htmlElement.querySelectorAll('.embedly-card'))
-              if (!(embeds.length === 0)) {
-                if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                  // dark mode
-                  // console.log("dark");
-                  enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
-                  if (enabledarkmode || darkmode) {
-                    embeds.forEach(embed => {
-                      embed.setAttribute('data-card-theme', 'dark');
+                /* JS to change Embedly cards to light or dark theme based on system theme */
+                const embeds = Array.from(
+                  htmlElement.querySelectorAll(".embedly-card")
+                );
+                if (!(embeds.length === 0)) {
+                  if (
+                    window.matchMedia &&
+                    window.matchMedia("(prefers-color-scheme: dark)").matches
+                  ) {
+                    // dark mode
+                    // console.log("dark");
+                    enabledarkmode =
+                      getURLParameterByName(
+                        ["dark-mode", "darkMode"],
+                        null,
+                        null,
+                        window.location.href,
+                        true
+                      ) === "true";
+                    if (enabledarkmode || darkmode) {
+                      embeds.forEach((embed) => {
+                        embed.setAttribute("data-card-theme", "dark");
+                      });
+                    }
+                  } else {
+                    // light mode
+                    // console.log("light");
+                    embeds.forEach((embed) => {
+                      embed.setAttribute("data-card-theme", "light");
                     });
                   }
-                } else {
-                  // light mode
-                  // console.log("light");
-                  embeds.forEach(embed => {
-                    embed.setAttribute('data-card-theme', 'light');
-                  });
+                  window
+                    .matchMedia("(prefers-color-scheme: dark)")
+                    .addListener(function (e) {
+                      // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+                      // console.log(e.matches);
+                      if (enabledarkmode || darkmode) {
+                        document.location.reload();
+                      }
+                    });
                 }
-                window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-                  // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
-                  // console.log(e.matches);            
-                  if (enabledarkmode || darkmode) {
-                    document.location.reload();
+
+                /* Change relative HTML img tag src to absolute for GitHub or Codeberg Markdown files */
+                if (
+                  currentBasePath.includes("raw.githubusercontent.com") ||
+                  currentBasePath.includes("raw.codeberg.page")
+                ) {
+                  const images = Array.from(
+                    htmlElement.querySelectorAll("img")
+                  );
+                  for (const image of images) {
+                    // console.log(image.getAttribute('src'));
+                    let url = image.getAttribute("src");
+                    if (!(url.includes("://") > 0 || url.startsWith("//"))) {
+                      // URL is relative
+                      url = url.replace(/^\/+/g, "");
+                      url = currentBasePath + "/" + url;
+                      image.setAttribute("src", url);
+                      // console.log("changed src");
+                    }
+                  }
+                }
+
+                /* Support Browser-level image lazy loading of images */
+                htmlElement.innerHTML = htmlElement.innerHTML.replace(
+                  /<img(.*?)>/g,
+                  function (match, p1) {
+                    if (p1.indexOf("loading=") === -1) {
+                      return match.replace(">", ' loading="lazy">');
+                    }
+                    return match;
+                  }
+                );
+
+                next(htmlElement.innerHTML);
+              } else {
+                next(html);
+              }
+            });
+
+            hook.beforeEach(function (html) {
+              if (window.$docsify["basePath"]) {
+                // Remove any possible front matter with the delimiters '---'
+                if (html.startsWith("---")) {
+                  html = html.replace(/---(.|\n)*?---/, "");
+                }
+
+                if (/githubusercontent\.com/.test(vm.route.file)) {
+                  url = vm.route.file
+                    .replace("raw.githubusercontent.com", "github.com")
+                    .replace(/\/master/, "/blob/master");
+                } else if (window.$docsify["basePath"]) {
+                  url = getURLParameterByName(
+                    ["edit-link", "editLink"],
+                    null,
+                    null,
+                    window.location.href,
+                    true
+                  );
+                  gitLinkRepoURL = url;
+                } else {
+                  if (gitLinkRepoURL.includes("github.com")) {
+                    url = gitLinkRepoURL + "/blob/main/docs/" + vm.route.file;
+                  }
+                  if (
+                    gitLinkRepoURL.includes("codeberg.org") ||
+                    gitLinkRepoURL.includes("codeberg.pages")
+                  ) {
+                    gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, "/src");
+                    url = gitLinkRepoURL + vm.route.file;
+                  }
+                }
+
+                //console.log(url);
+                //console.log(gitLinkRepoURL);
+
+                editlinktextparm = getURLParameterByName(
+                  ["edit-link-text", "editLinkText"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                if (
+                  !(editlinktextparm === false) &&
+                  !(window.$docsify["basePath"] === undefined)
+                ) {
+                  editlinktextparm = editlinktextparm.replaceAll("%20", " ");
+                  editLinkText = editlinktextparm;
+                }
+
+                let editlinkemoji = getURLParameterByName(
+                  "edit-link-emoji",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                if (editlinkemoji) {
+                  // Remove leading and trailing colons if they are present
+                  editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, "");
+                } else {
+                  editlinkemoji = "memo";
+                }
+
+                var editHtml =
+                  "[:" +
+                  editlinkemoji +
+                  ":" +
+                  editLinkText +
+                  "](" +
+                  url +
+                  ' ":class=align-items-vertically")\n';
+
+                var creditHtml =
+                  "\n\n" +
+                  'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.';
+
+                if (
+                  !getURLParameterByName(["standalone", "embedded"]) &&
+                  !(
+                    getURLParameterByName(
+                      "hidegitlink",
+                      null,
+                      null,
+                      window.location.href,
+                      true
+                    ) === "true"
+                  ) &&
+                  !!gitLinkRepoURL
+                ) {
+                  if (
+                    !(
+                      getURLParameterByName(
+                        ["hide-credits", "hideCredits"],
+                        null,
+                        null,
+                        window.location.href,
+                        true
+                      ) === "true"
+                    )
+                  ) {
+                    if (
+                      getURLParameterByName(
+                        ["edit-link-top", "editLinkTop"],
+                        null,
+                        null,
+                        window.location.href,
+                        true
+                      ) === "true"
+                    ) {
+                      return (
+                        editHtml +
+                        "\n" +
+                        html +
+                        "<br />" +
+                        "\n\n" +
+                        "<hr>" +
+                        creditHtml
+                      );
+                    } else {
+                      return (
+                        html + "\n\n" + editHtml + "\n\n" + "<hr>" + creditHtml
+                      );
+                    }
+                  } else {
+                    if (
+                      getURLParameterByName(
+                        ["edit-link-top", "editLinkTop"],
+                        null,
+                        null,
+                        window.location.href,
+                        true
+                      ) === "true"
+                    ) {
+                      return editHtml + "\n" + html;
+                    } else {
+                      return html + "<br />" + "\n\n" + editHtml;
+                    }
+                  }
+                } else if (
+                  getURLParameterByName(["standalone", "embedded"]) &&
+                  !(
+                    getURLParameterByName(
+                      "hidegitlink",
+                      null,
+                      null,
+                      window.location.href,
+                      true
+                    ) === "true"
+                  ) &&
+                  !!gitLinkRepoURL
+                ) {
+                  if (
+                    getURLParameterByName(
+                      ["edit-link-top", "editLinkTop"],
+                      null,
+                      null,
+                      window.location.href,
+                      true
+                    ) === "true"
+                  ) {
+                    return editHtml + "\n" + html;
+                  } else {
+                    return html + "<br />" + "\n\n" + editHtml;
+                  }
+                } else if (!getURLParameterByName(["standalone", "embedded"])) {
+                  if (
+                    !(
+                      getURLParameterByName(
+                        "hide-credits",
+                        null,
+                        null,
+                        window.location.href,
+                        true
+                      ) === "true"
+                    )
+                  ) {
+                    return html + "<br />" + "\n\n" + "<hr>" + creditHtml;
+                  } else {
+                    return html;
+                  }
+                } else {
+                  return html;
+                }
+              }
+            });
+
+            // Invoked on each page load after new HTML has been appended to the DOM
+            hook.doneEach(function () {
+              if (window.$docsify["basePath"]) {
+                const docHead = document.head;
+                const docBody = document.body;
+
+                // Embedly script
+                let hasEmbedly =
+                  document.getElementsByClassName("embedly-card");
+                if (
+                  hasEmbedly.length > 0 &&
+                  !document.querySelector(
+                    'script[src="https://cdn.embedly.com/widgets/platform.js"]'
+                  )
+                ) {
+                  let script = document.createElement("script");
+                  script.type = "text/javascript";
+                  script.src = "https://cdn.embedly.com/widgets/platform.js";
+                  docHead.appendChild(script);
+                }
+
+                // Set link for displayed site name
+                const appName = getURLParameterByName(
+                  "name",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                if (appName) {
+                  const appNameLink = document.querySelector("a.app-name-link");
+                  appNameLink.setAttribute("href", "#/");
+                  if (!docBody.querySelector("style.sidebar-app-name")) {
+                    let editCSS = document.createElement("style");
+                    editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                    editCSS.classList.add("sidebar-app-name");
+                    docBody.appendChild(editCSS);
+                  }
+                } else {
+                  if (!docBody.querySelector("style.sidebar-nav-adjusted")) {
+                    let editCSS = document.createElement("style");
+                    if (docBody.querySelector(".app-nav")) {
+                      editCSS.innerHTML =
+                        ".sidebar .sidebar-nav {margin-top: 60px;}";
+                    } else {
+                      editCSS.innerHTML =
+                        ".sidebar .sidebar-nav {margin-top: 47px;}";
+                    }
+                    editCSS.classList.add("style.sidebar-nav-adjusted");
+                    docBody.appendChild(editCSS);
+                  }
+                }
+
+                // Remove optional ToC area if full width header image is present
+                let hasImageHeader = document.getElementsByClassName(
+                  "header-image-full-width"
+                );
+                if (hasImageHeader.length > 0) {
+                  let elements = document.getElementsByClassName("nav");
+                  while (elements.length > 0) elements[0].remove();
+                }
+
+                // Adjust left margin for optional ToC area if faded header image is present
+                let hasImageFade =
+                  document.getElementsByClassName("header-image-fade").length >
+                  0;
+                let hasNav = document.getElementsByClassName("nav").length > 0;
+                if (
+                  hasImageFade &&
+                  hasNav &&
+                  !docBody.querySelector("style.markdown-section-adjust")
+                ) {
+                  let editCSS = document.createElement("style");
+                  editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
+                  editCSS.classList.add("markdown-section-adjust");
+                  docBody.appendChild(editCSS);
+                }
+
+                // Browser title logic optimized by early return pattern
+                let browserTabTitle = getURLParameterByName(
+                  ["browser-tab-title", "browserTabTitle"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                document.title =
+                  browserTabTitle || appName || "Published by Docsify-This";
+
+                // Update page title if parameter present
+                let pageTitle = getURLParameterByName(
+                  ["page-title", "pageTitle"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                if (pageTitle) {
+                  let newh1 = document.createElement("h1");
+                  newh1.innerHTML = pageTitle;
+                  let divToMoveTo = document.getElementById("main");
+                  divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
+                }
+
+                // Iframes update for responsive design
+                const allIframes = document.querySelectorAll(
+                  'iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]'
+                );
+                allIframes.forEach((iframe) => {
+                  const parentDiv = iframe.parentNode;
+                  if (
+                    !parentDiv.matches(
+                      ".video-container-16by9, .video-container-4by3"
+                    )
+                  ) {
+                    const wrapperDiv = document.createElement("div");
+                    wrapperDiv.classList.add("video-container-16by9");
+                    iframe.classList.forEach((className) =>
+                      wrapperDiv.classList.add(className)
+                    );
+                    parentDiv.replaceChild(wrapperDiv, iframe);
+                    wrapperDiv.appendChild(iframe);
                   }
                 });
+              }
+            });
 
+            hook.ready(function () {
+              if (window.$docsify["basePath"]) {
+                return; // Exit if basePath is present
               }
 
-              /* Change relative HTML img tag src to absolute for GitHub or Codeberg Markdown files */
-              if (currentBasePath.includes("raw.githubusercontent.com") || currentBasePath.includes("raw.codeberg.page")) {
-                const images = Array.from(htmlElement.querySelectorAll('img'));
-                for (const image of images) {
-                  // console.log(image.getAttribute('src'));
-                  let url = image.getAttribute('src');
-                  if (!(url.includes('://') > 0 || url.startsWith('//'))) {
-                    // URL is relative
-                    url = url.replace(/^\/+/g, '');
-                    url = currentBasePath + '/' + url;
-                    image.setAttribute('src', url);
-                    // console.log("changed src");
-                  }
+              if (getURLParameterByName(["url-field", "urlField"])) {
+                // console.log(getURLParameterByName('url-field'));
+                var markdownFileURL = "";
+                markdownFileURL = getURLParameterByName(
+                  ["url-field", "urlField"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                );
+                if (markdownFileURL == "empty") {
+                  markdownFileURL = "";
+                }
+                document.getElementById("docsifythisurlfield").value =
+                  markdownFileURL;
+              }
+
+              // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
+
+              if (
+                getURLParameterByName([
+                  "show-page-options",
+                  "showPageOptions",
+                ]) === true ||
+                getURLParameterByName([
+                  "browser-tab-title",
+                  "browserTabTitle",
+                  "font-family",
+                  "fontFamily",
+                  "font-size",
+                  "fontSize",
+                  "line-height",
+                  "lineHeight",
+                  "link-color",
+                  "linkColor",
+                  "edit-link-text",
+                  "editLinkText",
+                  "edit-link-top",
+                  "editLinkTop",
+                  "hide-credits",
+                  "hideCredits",
+                  "toc-headings",
+                  "tocHeadings",
+                  "toc-narrow",
+                  "tocNarrow",
+                  "maxLevel",
+                  "hypothesis",
+                ])
+              ) {
+                // console.log("show more!");
+                var theDiv = document.getElementById(
+                  "docsifythisurlbuilderoptionsDiv"
+                );
+                document.getElementById(
+                  "docsifythisurlbuildershowhidelink"
+                ).innerHTML =
+                  "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
+                document.getElementById(
+                  "pageappearanceoptionsheader"
+                ).style.display = "none";
+                theDiv.style.display = "block";
+              }
+
+              // console.log(getURLParameterByName(['page-title','header-weight','zoom-images','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','searchbox','coverpage-color','dark-mode','link-color-dark-mode','coverpage-color-dark-mode']));
+
+              if (
+                getURLParameterByName("advanced") === true ||
+                getURLParameterByName([
+                  "page-title",
+                  "pageTitle",
+                  "header-weight",
+                  "headerWeight",
+                  "zoom-images",
+                  "zoomImages",
+                  "loadFavicon",
+                  "coverpage",
+                  "loadSidebar",
+                  "loadNavbar",
+                  "loadFooter",
+                  "name",
+                  "subMaxLevel",
+                  "searchbox",
+                  "pagination",
+                  "coverpage-color",
+                  "coverpageColor",
+                  "dark-mode",
+                  "darkMode",
+                  "link-color-dark-mode",
+                  "linkColorDarkMode",
+                  "coverpage-color-dark-mode",
+                  "coverpageColorDarkMode",
+                ])
+              ) {
+                // console.log("show advanced options!");
+                document.getElementById("btn_2").style.display = "none";
+                var theDiv = document.getElementById(
+                  "docsifythisurlbuilderoptionsDiv"
+                );
+                document.getElementById(
+                  "docsifythisurlbuildershowhidelink"
+                ).style.display = "none";
+                theDiv.style.display = "block";
+                document.getElementById(
+                  "advancedwebpagebuilder"
+                ).style.display = "none";
+                document.querySelector(
+                  "label[for='advancedwebpagebuilder']"
+                ).style.display = "none";
+                var theDiv2 = document.getElementById(
+                  "docsifythisurlbuilderoptionsDiv2"
+                );
+                theDiv2.style.display = "block";
+              }
+
+              if (getURLParameterByName("toc") === true) {
+                document.getElementById("stylecontentonly").checked = false;
+                document.getElementById("styletoc").checked = true;
+                document.getElementById("stylesidebar").checked = false;
+              }
+
+              if (getURLParameterByName("sidebar") === true) {
+                document.getElementById("stylecontentonly").checked = false;
+                document.getElementById("styletoc").checked = false;
+                document.getElementById("stylesidebar").checked = true;
+              }
+
+              if (
+                getURLParameterByName(
+                  ["edit-link-checkbox", "editLinkCheckbox"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true" ||
+                getURLParameterByName(["edit-link", "editLink"])
+              ) {
+                document.getElementById("editCheck").checked = true;
+              }
+
+              browserTabTitle = getURLParameterByName(
+                ["browser-tab-title", "browserTabTitle"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (browserTabTitle) {
+                document.getElementById("browserTabTitle").value =
+                  decodeURI(browserTabTitle);
+              }
+
+              fontfamily = getURLParameterByName(
+                ["font-family", "fontFamily"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (fontfamily) {
+                document.getElementById("fontfamily").value =
+                  encodeURI(fontfamily);
+              }
+
+              fontsize = getURLParameterByName(
+                ["font-size", "fontSize"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (fontsize) {
+                document.getElementById("fontsize").value = fontsize;
+              }
+
+              lineheight = getURLParameterByName(
+                ["line-height", "lineHeight"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (lineheight) {
+                document.getElementById("lineheight").value = lineheight;
+              }
+
+              linkcolor = getURLParameterByName(
+                ["link-color", "linkColor"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (linkcolor) {
+                linkcolor = "#" + linkcolor;
+                document.getElementById("linkcolor").value = linkcolor;
+                document.getElementById("linkcolorpreview").style.visibility =
+                  "visible";
+                document.getElementById("linkcolorpreview").style.borderColor =
+                  linkcolor;
+                document.getElementById(
+                  "linkcolorpreview"
+                ).style.backgroundColor = linkcolor;
+              }
+
+              editLinkText = getURLParameterByName(
+                ["edit-link-text", "editLinkText"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (editLinkText) {
+                document.getElementById("editLinkText").value =
+                  decodeURI(editLinkText);
+              }
+
+              if (
+                getURLParameterByName(
+                  ["edit-link-top", "editLinkTop"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("editLinkTopCheck").checked = true;
+              }
+
+              if (
+                getURLParameterByName(
+                  ["hide-credits", "hideCredits"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("hideCredits").checked = true;
+              }
+
+              tocheadings = getURLParameterByName(
+                ["toc-headings", "tocHeadings"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (tocheadings) {
+                if (tocheadings.includes("h1")) {
+                  document.getElementById("toch1").checked = true;
+                }
+                if (tocheadings.includes("h2")) {
+                  document.getElementById("toch2").checked = true;
+                }
+                if (tocheadings.includes("h3")) {
+                  document.getElementById("toch3").checked = true;
                 }
               }
 
-              /* Support Browser-level image lazy loading of images */
-              htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
-                if (p1.indexOf('loading=') === -1) {
-                  return match.replace('>', ' loading="lazy">');
-                }
-                return match;
-              });
-
-              next(htmlElement.innerHTML);
-            } else {
-              next(html);
-            }
-
-          });
-
-          hook.beforeEach(function (html) {
-
-            if (window.$docsify['basePath']) {
-
-              // Remove any possible front matter with the delimiters '---'
-              if (html.startsWith("---")) {
-                html = html.replace(/---(.|\n)*?---/, '');
+              if (
+                getURLParameterByName(
+                  ["toc-narrow", "tocNarrow"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("narrowToC").checked = true;
               }
 
-              if (/githubusercontent\.com/.test(vm.route.file)) {
-                url = vm.route.file
-                  .replace('raw.githubusercontent.com', 'github.com')
-                  .replace(/\/master/, '/blob/master')
-              } else if (window.$docsify['basePath']) {
-                url = getURLParameterByName(['edit-link', 'editLink'], null, null, window.location.href, true);
-                gitLinkRepoURL = url;
-              } else {
-                if (gitLinkRepoURL.includes("github.com")) {
-                  url = gitLinkRepoURL + '/blob/main/docs/' + vm.route.file
-                }
-                if (gitLinkRepoURL.includes("codeberg.org") || gitLinkRepoURL.includes("codeberg.pages")) {
-                  gitlinkPageURL = gitlinkPageURL.replace(/\/raw/, '/src');
-                  url = gitLinkRepoURL + vm.route.file
-                }
+              maxLevel = getURLParameterByName(
+                "maxLevel",
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (maxLevel) {
+                document.getElementById("maxLevel").value = maxLevel;
               }
 
-              //console.log(url);
-              //console.log(gitLinkRepoURL);
-
-              editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
-              if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
-                editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
-                editLinkText = editlinktextparm;
+              if (
+                getURLParameterByName(
+                  "hypothesis",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("hypothesisenable").checked = true;
               }
 
-              let editlinkemoji = getURLParameterByName('edit-link-emoji', null, null, window.location.href, true);
-              if (editlinkemoji) {
-              // Remove leading and trailing colons if they are present
-              editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, '');
-              } else {
-                editlinkemoji = 'memo';
-              }
-
-              var editHtml = '[:' + editlinkemoji + ':' + editLinkText + '](' + url + ' ":class=align-items-vertically")\n'
-
-              var creditHtml = '\n\n' + 'Displayed by <a href="https://docsify-this.net" target="_blank">Docsify-This</a>, based on the <a href="https://github.com/hibbitts-design/docsify-open-publishing-starter-kit" target="_blank">Docsify Open Publishing Starter Kit</a>.'
-
-              if (!(getURLParameterByName(['standalone', 'embedded'])) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (!(getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true')) {
-                  if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    return editHtml + '\n' + html + '<br />' + '\n\n' + '<hr>' + creditHtml
-                  } else {
-                    return html + '\n\n' + editHtml + '\n\n' + '<hr>' + creditHtml
-                  }
-                } else {
-                  if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                    return editHtml + '\n' + html
-                  } else {
-                    return html + '<br />' + '\n\n' + editHtml
-                  }
-                }
-
-              } else if (getURLParameterByName(['standalone', 'embedded']) && !(getURLParameterByName('hidegitlink', null, null, window.location.href, true) === 'true') && (!!gitLinkRepoURL)) {
-                if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-                  return editHtml + '\n' + html
-                } else {
-                  return html + '<br />' + '\n\n' + editHtml
-                }
-
-              } else if (!(getURLParameterByName(['standalone', 'embedded']))) {
-                if (!(getURLParameterByName('hide-credits', null, null, window.location.href, true) === 'true')) {
-                  return html + '<br />' + '\n\n' + '<hr>' + creditHtml
-                } else {
-                  return html
-                }
-
-              } else {
-                return html
-              }
-            }
-          });
-
-          // Invoked on each page load after new HTML has been appended to the DOM
-          hook.doneEach(function () {
-            if (window.$docsify['basePath']) {
-              const docHead = document.head;
-              const docBody = document.body;
-
-              // Embedly script
-              let hasEmbedly = document.getElementsByClassName('embedly-card');
-              if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
-                let script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.src = 'https://cdn.embedly.com/widgets/platform.js';
-                docHead.appendChild(script);
-              }
-
-              // Set link for displayed site name
-              const appName = getURLParameterByName('name', null, null, window.location.href, true);
-              if (appName) {
-                const appNameLink = document.querySelector('a.app-name-link');
-                appNameLink.setAttribute('href', '#/');
-                if (!docBody.querySelector('style.sidebar-app-name')) {
-                  let editCSS = document.createElement('style')
-                  editCSS.innerHTML = ".sidebar .app-name {display: block;}";
-                  editCSS.classList.add('sidebar-app-name');
-                  docBody.appendChild(editCSS);
-                }
-              } else {
-                if (!docBody.querySelector('style.sidebar-nav-adjusted')) {
-                  let editCSS = document.createElement('style')
-                  if (docBody.querySelector('.app-nav')) {
-                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 60px;}";
-                  } else {
-                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 47px;}";
-                  }
-                  editCSS.classList.add('style.sidebar-nav-adjusted');
-                  docBody.appendChild(editCSS);
-                }
-              }
-
-              // Remove optional ToC area if full width header image is present
-              let hasImageHeader = document.getElementsByClassName('header-image-full-width');
-              if (hasImageHeader.length > 0) {
-                let elements = document.getElementsByClassName("nav");
-                while (elements.length > 0) elements[0].remove();
-              }
-
-              // Adjust left margin for optional ToC area if faded header image is present
-              let hasImageFade = document.getElementsByClassName('header-image-fade').length > 0;
-              let hasNav = document.getElementsByClassName('nav').length > 0;
-              if (hasImageFade && hasNav && !docBody.querySelector('style.markdown-section-adjust')) {
-                let editCSS = document.createElement('style')
-                editCSS.innerHTML = ".markdown-section {margin-right: 0px;}";
-                editCSS.classList.add('markdown-section-adjust');
-                docBody.appendChild(editCSS);
-              }
-
-              // Browser title logic optimized by early return pattern
-              let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
-              document.title = browserTabTitle || appName || 'Published by Docsify-This';
-
-              // Update page title if parameter present
-              let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
+              pageTitle = getURLParameterByName(
+                ["page-title", "pageTitle"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
               if (pageTitle) {
-                let newh1 = document.createElement("h1");
-                newh1.innerHTML = pageTitle;
-                let divToMoveTo = document.getElementById("main");
-                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
+                document.getElementById("pageTitle").value =
+                  decodeURI(pageTitle);
               }
 
-              // Iframes update for responsive design
-              const allIframes = document.querySelectorAll('iframe[src*="youtube.com"], iframe[src*="youtube-nocookie.com"], iframe[src*="docs.google.com"], iframe[src*="onedrive.live.com"]');
-              allIframes.forEach(iframe => {
-                const parentDiv = iframe.parentNode;
-                if (!parentDiv.matches('.video-container-16by9, .video-container-4by3')) {
-                  const wrapperDiv = document.createElement('div');
-                  wrapperDiv.classList.add('video-container-16by9');
-                  iframe.classList.forEach(className => wrapperDiv.classList.add(className));
-                  parentDiv.replaceChild(wrapperDiv, iframe);
-                  wrapperDiv.appendChild(iframe);
-                }
-              });
-            }
-          });
-
-          hook.ready(function () {
-            if (window.$docsify['basePath']) {
-              return; // Exit if basePath is present
-            }
-
-            if (getURLParameterByName(['url-field', 'urlField'])) {
-              // console.log(getURLParameterByName('url-field'));
-              var markdownFileURL = '';
-              markdownFileURL = getURLParameterByName(['url-field', 'urlField'], null, null, window.location.href, true);
-              if (markdownFileURL == "empty") {
-                markdownFileURL = '';
+              headerweight = getURLParameterByName(
+                ["header-weight", "headerWeight"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (headerweight) {
+                console.log(headerweight);
+                document.getElementById("headerweight").value = headerweight;
               }
-              document.getElementById('docsifythisurlfield').value = markdownFileURL;
-            }
 
-            // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
-
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true || getURLParameterByName(['browser-tab-title', 'browserTabTitle', 'font-family', 'fontFamily', 'font-size', 'fontSize', 'line-height', 'lineHeight', 'link-color', 'linkColor', 'edit-link-text', 'editLinkText', 'edit-link-top', 'editLinkTop', 'hide-credits', 'hideCredits', 'toc-headings', 'tocHeadings', 'toc-narrow', 'tocNarrow', 'maxLevel', 'hypothesis'])) {
-              // console.log("show more!");
-              var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-              document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
-              document.getElementById("pageappearanceoptionsheader").style.display = "none";
-              theDiv.style.display = "block";
-            }
-
-            // console.log(getURLParameterByName(['page-title','header-weight','zoom-images','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','searchbox','coverpage-color','dark-mode','link-color-dark-mode','coverpage-color-dark-mode']));
-
-            if (getURLParameterByName('advanced') === true || getURLParameterByName(['page-title', 'pageTitle', 'header-weight', 'headerWeight', 'zoom-images', 'zoomImages', 'loadFavicon', 'coverpage', 'loadSidebar', 'loadNavbar', 'loadFooter', 'name', 'subMaxLevel', 'searchbox', 'pagination', 'coverpage-color', 'coverpageColor', 'dark-mode', 'darkMode', 'link-color-dark-mode', 'linkColorDarkMode', 'coverpage-color-dark-mode', 'coverpageColorDarkMode'])) {
-              // console.log("show advanced options!");
-              document.getElementById("btn_2").style.display = "none";
-              var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-              document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
-              theDiv.style.display = "block";
-              document.getElementById("advancedwebpagebuilder").style.display = "none";
-              document.querySelector("label[for='advancedwebpagebuilder']").style.display = "none";
-              var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-              theDiv2.style.display = "block";
-            }
-
-            if (getURLParameterByName('toc') === true) {
-              document.getElementById("stylecontentonly").checked = false;
-              document.getElementById("styletoc").checked = true;
-              document.getElementById("stylesidebar").checked = false;
-            }
-
-            if (getURLParameterByName('sidebar') === true) {
-              document.getElementById("stylecontentonly").checked = false;
-              document.getElementById("styletoc").checked = false;
-              document.getElementById("stylesidebar").checked = true;
-            }
-
-            if ((getURLParameterByName(['edit-link-checkbox', 'editLinkCheckbox'], null, null, window.location.href, true) === 'true') || (getURLParameterByName(['edit-link', 'editLink']))) {
-              document.getElementById("editCheck").checked = true;
-            }
-
-            browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
-            if (browserTabTitle) {
-              document.getElementById('browserTabTitle').value = decodeURI(browserTabTitle);
-            }
-
-            fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
-            if (fontfamily) {
-              document.getElementById('fontfamily').value = encodeURI(fontfamily);
-            }
-
-            fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
-            if (fontsize) {
-              document.getElementById('fontsize').value = fontsize;
-            }
-
-            lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
-            if (lineheight) {
-              document.getElementById('lineheight').value = lineheight;
-            }
-
-            linkcolor = getURLParameterByName(['link-color', 'linkColor'], null, null, window.location.href, true);
-            if (linkcolor) {
-              linkcolor = '#' + linkcolor;
-              document.getElementById('linkcolor').value = linkcolor;
-              document.getElementById("linkcolorpreview").style.visibility = "visible";
-              document.getElementById("linkcolorpreview").style.borderColor = linkcolor;
-              document.getElementById("linkcolorpreview").style.backgroundColor = linkcolor;
-            }
-
-            editLinkText = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
-            if (editLinkText) {
-              document.getElementById('editLinkText').value = decodeURI(editLinkText);
-            }
-
-            if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("editLinkTopCheck").checked = true;
-            }
-
-            if (getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("hideCredits").checked = true;
-            }
-
-            tocheadings = getURLParameterByName(['toc-headings', 'tocHeadings'], null, null, window.location.href, true);
-            if (tocheadings) {
-              if (tocheadings.includes("h1")) {
-                document.getElementById("toch1").checked = true;
+              if (
+                getURLParameterByName(
+                  ["zoom-images", "zoomImages"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("zoomimages").checked = true;
               }
-              if (tocheadings.includes("h2")) {
-                document.getElementById("toch2").checked = true;
+
+              if (getURLParameterByName("loadFavicon")) {
+                document.getElementById("loadfavicon").checked = true;
               }
-              if (tocheadings.includes("h3")) {
-                document.getElementById("toch3").checked = true;
+
+              if (getURLParameterByName("coverpage")) {
+                document.getElementById("loadcoverpage").checked = true;
               }
+
+              if (getURLParameterByName("loadSidebar")) {
+                document.getElementById("loadcustomsidebar").checked = true;
+              }
+
+              if (getURLParameterByName("loadNavbar")) {
+                document.getElementById("loadcustomnavbar").checked = true;
+              }
+
+              if (getURLParameterByName("loadFooter")) {
+                document.getElementById("loadcustomfooter").checked = true;
+              }
+
+              siteName = getURLParameterByName(
+                "name",
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (siteName) {
+                document.getElementById("siteName").value = siteName;
+              }
+
+              subMaxLevel = getURLParameterByName(
+                "subMaxLevel",
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (subMaxLevel) {
+                document.getElementById("subMaxLevel").value = subMaxLevel;
+              }
+
+              if (
+                getURLParameterByName(
+                  "searchbox",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("enableSidebarsearch").checked = true;
+              }
+
+              if (
+                getURLParameterByName(
+                  "pagination",
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("pagination").checked = true;
+              }
+
+              coverpagecolor = getURLParameterByName(
+                ["coverpage-color", "coverpageColor"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (coverpagecolor) {
+                coverpagecolor = "#" + coverpagecolor;
+                document.getElementById("coverpagecolor").value =
+                  coverpagecolor;
+                document.getElementById(
+                  "coverpagecolorpreview"
+                ).style.visibility = "visible";
+                document.getElementById(
+                  "coverpagecolorpreview"
+                ).style.borderColor = coverpagecolor;
+                document.getElementById(
+                  "coverpagecolorpreview"
+                ).style.backgroundColor = coverpagecolor;
+              }
+
+              if (
+                getURLParameterByName(
+                  ["dark-mode", "darkMode"],
+                  null,
+                  null,
+                  window.location.href,
+                  true
+                ) === "true"
+              ) {
+                document.getElementById("enableDarkmode").checked = true;
+              }
+
+              linkcolordarkmode = getURLParameterByName(
+                ["link-color-dark-mode", "linkColorDarkMode"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (linkcolordarkmode) {
+                linkcolordarkmode = "#" + linkcolordarkmode;
+                document.getElementById("linkcolordarkmode").value =
+                  linkcolordarkmode;
+                document.getElementById(
+                  "linkcolordarkmodepreview"
+                ).style.visibility = "visible";
+                document.getElementById(
+                  "linkcolordarkmodepreview"
+                ).style.borderColor = linkcolordarkmode;
+                document.getElementById(
+                  "linkcolordarkmodepreview"
+                ).style.backgroundColor = linkcolordarkmode;
+              }
+
+              coverpagecolordarkmode = getURLParameterByName(
+                ["coverpage-color-dark-mode", "coverpageColorDarkMode"],
+                null,
+                null,
+                window.location.href,
+                true
+              );
+              if (coverpagecolordarkmode) {
+                coverpagecolordarkmode = "#" + coverpagecolordarkmode;
+                document.getElementById("coverpagecolordarkmode").value =
+                  coverpagecolordarkmode;
+                document.getElementById(
+                  "coverpagecolordarkmodepreview"
+                ).style.visibility = "visible";
+                document.getElementById(
+                  "coverpagecolordarkmodepreview"
+                ).style.borderColor = coverpagecolordarkmode;
+                document.getElementById(
+                  "coverpagecolordarkmodepreview"
+                ).style.backgroundColor = coverpagecolordarkmode;
+              }
+
+              const x = window.scrollX;
+              const y = window.scrollY;
+              selectText();
+              window.scrollTo(x, y);
+            });
+          },
+        ],
+      };
+
+      <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
+      <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
+      if (getURLParameterByName("basePath")) {
+        const params = new URLSearchParams(window.location.search);
+        params.forEach((value, key) => {
+          // TODO: Parse numbers?
+
+          // console.log(value,key);
+          if (key === "basePath" && !(allowedDomains === "")) {
+            const { hostname } = new URL(value);
+            if (!allowedDomains.includes(hostname)) {
+              alert(
+                "Only the domain(s) " +
+                  allowedDomains +
+                  " permitted for a Markdown source file URL."
+              );
+              throw new Error(
+                "Only the domain " +
+                  allowedDomains +
+                  " permitted for a Markdown source file URL."
+              );
+            } else {
+              window.$docsify[key] = convertToBoolean(value);
             }
-
-            if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("narrowToC").checked = true;
-            }
-
-            maxLevel = getURLParameterByName('maxLevel', null, null, window.location.href, true);
-            if (maxLevel) {
-              document.getElementById('maxLevel').value = maxLevel;
-            }
-
-            if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true') {
-              document.getElementById("hypothesisenable").checked = true;
-            }
-
-            pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
-            if (pageTitle) {
-              document.getElementById('pageTitle').value = decodeURI(pageTitle);
-            }
-
-            headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
-            if (headerweight) {
-              console.log(headerweight);
-              document.getElementById('headerweight').value = headerweight;
-            }
-
-            if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("zoomimages").checked = true;
-            }
-
-            if (getURLParameterByName('loadFavicon')) {
-              document.getElementById("loadfavicon").checked = true;
-            }
-
-            if (getURLParameterByName('coverpage')) {
-              document.getElementById("loadcoverpage").checked = true;
-            }
-
-            if (getURLParameterByName('loadSidebar')) {
-              document.getElementById("loadcustomsidebar").checked = true;
-            }
-
-            if (getURLParameterByName('loadNavbar')) {
-              document.getElementById("loadcustomnavbar").checked = true;
-            }
-
-            if (getURLParameterByName('loadFooter')) {
-              document.getElementById("loadcustomfooter").checked = true;
-            }
-
-            siteName = getURLParameterByName('name', null, null, window.location.href, true);
-            if (siteName) {
-              document.getElementById("siteName").value = siteName;
-            }
-
-            subMaxLevel = getURLParameterByName('subMaxLevel', null, null, window.location.href, true);
-            if (subMaxLevel) {
-              document.getElementById('subMaxLevel').value = subMaxLevel;
-            }
-
-            if (getURLParameterByName('searchbox', null, null, window.location.href, true) === 'true') {
-              document.getElementById("enableSidebarsearch").checked = true;
-            }
-
-            if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
-              document.getElementById("pagination").checked = true;
-            }
-
-            coverpagecolor = getURLParameterByName(['coverpage-color', 'coverpageColor'], null, null, window.location.href, true);
-            if (coverpagecolor) {
-              coverpagecolor = '#' + coverpagecolor;
-              document.getElementById('coverpagecolor').value = coverpagecolor;
-              document.getElementById("coverpagecolorpreview").style.visibility = "visible";
-              document.getElementById("coverpagecolorpreview").style.borderColor = coverpagecolor;
-              document.getElementById("coverpagecolorpreview").style.backgroundColor = coverpagecolor;
-            }
-
-            if (getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true') {
-              document.getElementById("enableDarkmode").checked = true;
-            }
-
-            linkcolordarkmode = getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'], null, null, window.location.href, true);
-            if (linkcolordarkmode) {
-              linkcolordarkmode = '#' + linkcolordarkmode;
-              document.getElementById('linkcolordarkmode').value = linkcolordarkmode;
-              document.getElementById("linkcolordarkmodepreview").style.visibility = "visible";
-              document.getElementById("linkcolordarkmodepreview").style.borderColor = linkcolordarkmode;
-              document.getElementById("linkcolordarkmodepreview").style.backgroundColor = linkcolordarkmode;
-            }
-
-            coverpagecolordarkmode = getURLParameterByName(['coverpage-color-dark-mode', 'coverpageColorDarkMode'], null, null, window.location.href, true);
-            if (coverpagecolordarkmode) {
-              coverpagecolordarkmode = '#' + coverpagecolordarkmode;
-              document.getElementById('coverpagecolordarkmode').value = coverpagecolordarkmode;
-              document.getElementById("coverpagecolordarkmodepreview").style.visibility = "visible";
-              document.getElementById("coverpagecolordarkmodepreview").style.borderColor = coverpagecolordarkmode;
-              document.getElementById("coverpagecolordarkmodepreview").style.backgroundColor = coverpagecolordarkmode;
-            }
-
-            const x = window.scrollX;
-            const y = window.scrollY;
-            selectText();
-            window.scrollTo(x, y);
-
-          });
-
-        }
-
-      ]
-    }
-
-    <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
-    <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
-    if (getURLParameterByName('basePath')) {
-      const params = new URLSearchParams(window.location.search);
-      params.forEach((value, key) => {
-        // TODO: Parse numbers?
-
-        // console.log(value,key);
-        if (key === 'basePath' && !(allowedDomains === '')) {
-          const { hostname } = new URL(value);
-          if (!(allowedDomains.includes(hostname))) {
-            alert('Only the domain(s) ' + allowedDomains + ' permitted for a Markdown source file URL.');
-            throw new Error('Only the domain ' + allowedDomains + ' permitted for a Markdown source file URL.');
           } else {
             window.$docsify[key] = convertToBoolean(value);
           }
-        } else {
-          window.$docsify[key] = convertToBoolean(value);
-        }
-      });
-    }
-
-    // Convert to Boolean if true or false, otherwise return original value
-    function convertToBoolean(value) {
-      if (value === 'true') {
-        return true;
-      } else if (value === 'false') {
-        return false;
-      } else {
-        return value;
-      }
-    }
-
-    // If switch of light/dark theme mode
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
-      // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
-      // console.log(e.matches);            
-      updateThemeModeLinkColors();
-    });
-
-    // Check for Return Key with Web Page Builder
-    if (window.$docsify['basePath'] === undefined) {
-      function checkKey(e) {
-        var key = e.keyCode || e.which;
-        if (key == 13) {
-          document.getElementById("btn_1").click();
-        }
-      }
-    }
-
-  </script>
-
-  <!-- Docsify v5 release -->
-  <script src="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/docsify.min.js"></script>
-  <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
-  
-  <!-- Adjust Page Margins When Standalone or Embedded -->
-  <script>
-    if ((getURLParameterByName(['standalone', 'embedded']) || standalone)) {
-      const root_theme = document.querySelector(':root');
-      root_theme.style.setProperty('--content-margin-inline', '14px');
-    }
-  </script>
-  
-  <!-- docsify-tabs (latest v1.x.x) -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
-
-  <!-- Load custom.css file only when displaying Markdown files -->
-  <script>
-    if (window.$docsify['basePath']) {
-      document.write('<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />');
-    }
-  </script>
-
-  <!-- Load default or custom favicon file -->
-  <script>
-    const favicon = getURLParameterByName('loadFavicon', null, null, window.location.href, true);
-    // console.log(favicon);
-    if ((favicon !== false) && getURLParameterByName('basePath')) {
-      const fileUrl = window.$docsify['basePath'] + '/' + favicon;
-      checkIfFileExists(fileUrl)
-        .then(exists => {
-          if (exists) {
-            // console.log("File exists.");
-            // Perform actions when the file exists
-            setFavicon(fileUrl);
-          } else {
-            console.log("File does not exist.");
-            // Perform actions when the file does not exist
-            setFavicon('assets/favicon/favicon.png');
-          }
-        })
-        .catch(error => {
-          // console.error("Error occurred while checking the file:", error);
-          // Handle the error
-          setFavicon('assets/favicon/favicon.png');
         });
-    } else {
-      // console.log ("use standard favicon");
-      setFavicon('assets/favicon/favicon.png');
-    }
-  </script>
-
-  <!-- Font Awesome Plugin -->
-  <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
-  <!-- <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/custom/docsify-fontawesome.min.js"></script>
-
-  <!-- Footnotes Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
-
-  <!--Pagination Plugin -->
-  <script>
-    if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
-      document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
-    }
-  </script>
-
-  <!-- Footer Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/custom/docsify-footer.min.js"></script>
-
-  <!-- Table of Contents Plugin -->
-  <script>
-    if (getURLParameterByName('toc', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath') || ToC) {
-      document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />');
-      document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
-    }
-    if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
-      document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
-      document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
-    }
-  </script>
-
-  <!-- Mermaid Diagrams Plugin v2 -->
-  <script type="module">
-    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
-    mermaid.initialize({ startOnLoad: true });
-    window.mermaid = mermaid;
-  </script>
-  <!-- <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script>
-
-  <!-- Katex Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>  -->
-  <!-- <script src="assets/vendor/katex/katex.min.js"></script>  -->
-
-  <!-- LaTeX Plugin -->
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
-  <script src="assets/vendor/docsify/plugins/docsify-latex.js"></script>
-
-  <!-- <script src="//cdn.jsdelivr.net/npm/marked@4"></script> -->
-  <!--  <script src="assets/vendor/marked4/marked.js"></script> -->
-
-  <!-- CDN files for docsify-katex -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script> -->
-  <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
-
-  <!-- Optionally enable Hypothesis -->
-  <script>
-    // console.log(getURLParameterByName('hypothesis'));
-    // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === true);
-    // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true');
-    if (getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
-      document.write('<script async src="https://hypothes.is/embed.js"><\/script>');
-    }
-  </script>
-
-  <!-- Load AsciiDoc Plugin -->
-  <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
-
-  <!-- Check for headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
-  <script>
-    if (!(window.$docsify['basePath'] === undefined)) {
-
-      // Change header weight if headerweight parameter present
-      headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
-      if (!(headerweight === false)) {
-        // console.log(headerweight);
-        document.documentElement.style.setProperty('--heading-font-weight', headerweight); // DOCSIFY v5
       }
 
-      // Change body font if fontFamily parameter present
-      fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
-      if (!(fontfamily === false)) {
-        // console.log(fontfamily);
-        document.documentElement.style.setProperty('--font-family', fontfamily); // DOCSIFY v5
-      } else {
-        document.documentElement.style.setProperty('--font-family', '"Source Sans 3","Helvetica Neue",sans-serif');
-      }
-
-      // Change body font size if fontSize parameter present
-      fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
-      if (!(fontsize === false)) {
-        if (!(fontsize.includes("px"))) {    
-          // Convert rem values to pixel values
-          fontsize = (fontsize * 16) + "px";
+      // Convert to Boolean if true or false, otherwise return original value
+      function convertToBoolean(value) {
+        if (value === "true") {
+          return true;
+        } else if (value === "false") {
+          return false;
+        } else {
+          return value;
         }
-        // console.log(fontsize);
-        document.documentElement.style.setProperty('--font-size', fontsize); // DOCSIFY v5
       }
 
-      // Change line height if lineheight parameter present
-      lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
-      if (!(lineheight === false)) {
-        document.documentElement.style.setProperty('--line-height', lineheight); // DOCSIFY v5
+      // If switch of light/dark theme mode
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addListener(function (e) {
+          // console.log(`changed to ${e.matches ? "dark" : "light"} mode`);
+          // console.log(e.matches);
+          updateThemeModeLinkColors();
+        });
+
+      // Check for Return Key with Web Page Builder
+      if (window.$docsify["basePath"] === undefined) {
+        function checkKey(e) {
+          var key = e.keyCode || e.which;
+          if (key == 13) {
+            document.getElementById("btn_1").click();
+          }
+        }
       }
+    </script>
 
-      updateThemeModeLinkColors();
+    <!-- Docsify v5 release -->
+    <script src="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/docsify.min.js"></script>
+    <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
 
-      // Keep dark theme CSS files loaded if dark-mode parameter is true
-      enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true) === 'true';
-      if (enabledarkmode === false && darkmode === false) {
-        var linkNode = document.querySelector('link[href*="core-dark.min.css"]');
-        linkNode.parentNode.removeChild(linkNode);
+    <!-- Adjust Page Margins When Standalone or Embedded -->
+    <script>
+      if (getURLParameterByName(["standalone", "embedded"]) || standalone) {
+        const root_theme = document.querySelector(":root");
+        root_theme.style.setProperty("--content-margin-inline", "14px");
       }
+    </script>
 
-    }
-  </script>
+    <!-- docsify-tabs (latest v1.x.x) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
+    <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
 
-  <script src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js" charset="UTF-8"></script>
-
-  <!-- Additional Languages for Prismjs -->
-  <script src="assets/vendor/prismjs/prism-bash.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-go.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-java.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-kotlin.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-php.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-python.min.js"></script>
-  <script src="assets/vendor/prismjs/prism-swift.min.js"></script>
-
-  <!-- WikiLinks Plugin -->
-  <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-wikilink@1"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-wikilink.js"></script>
-
-  <!-- Zoom Image Plugin -->
-  <script>
-    if (!(window.$docsify['basePath'] === undefined)) {
-      if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
-        document.write('<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>');
+    <!-- Load custom.css file only when displaying Markdown files -->
+    <script>
+      if (window.$docsify["basePath"]) {
+        document.write(
+          '<link rel="stylesheet" type="text/css" href="assets/css/custom.css" />'
+        );
       }
-    }
-  </script>
+    </script>
 
-  <!--Search Plugin -->
-  <script>
-    if (getURLParameterByName('searchbox', null, null, window.location.href, true) === 'true') {
- 
-      <!-- Docsify Search Plugin current release -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
- 
-      <!-- Docsify Search Plugin "develop" branch custom preview files -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>'); -->
+    <!-- Load default or custom favicon file -->
+    <script>
+      const favicon = getURLParameterByName(
+        "loadFavicon",
+        null,
+        null,
+        window.location.href,
+        true
+      );
+      // console.log(favicon);
+      if (favicon !== false && getURLParameterByName("basePath")) {
+        const fileUrl = window.$docsify["basePath"] + "/" + favicon;
+        checkIfFileExists(fileUrl)
+          .then((exists) => {
+            if (exists) {
+              // console.log("File exists.");
+              // Perform actions when the file exists
+              setFavicon(fileUrl);
+            } else {
+              console.log("File does not exist.");
+              // Perform actions when the file does not exist
+              setFavicon("assets/favicon/favicon.png");
+            }
+          })
+          .catch((error) => {
+            // console.error("Error occurred while checking the file:", error);
+            // Handle the error
+            setFavicon("assets/favicon/favicon.png");
+          });
+      } else {
+        // console.log ("use standard favicon");
+        setFavicon("assets/favicon/favicon.png");
+      }
+    </script>
 
-      <!-- Docsify Search Plugin "develop" branch preview files -->
-      document.write('<script src="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/plugins/search.min.js"><\/script>');
+    <!-- Font Awesome Plugin -->
+    <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
+    <!-- <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script> -->
+    <script src="assets/vendor/docsify/plugins/custom/docsify-fontawesome.min.js"></script>
 
-    }
-  </script>
+    <!-- Footnotes Plugin -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
+    <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
 
-  <!-- RunKit Plugin -->
-  <script src="assets/vendor/docsify/plugins/docsify-runkit.js"></script>
+    <!--Pagination Plugin -->
+    <script>
+      if (
+        getURLParameterByName(
+          "pagination",
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true"
+      ) {
+        document.write(
+          '<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>'
+        );
+      }
+    </script>
 
-  <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
+    <!-- Footer Plugin -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/@alertbox/docsify-footer/dist/docsify-footer.min.js"></script> -->
+    <script src="assets/vendor/docsify/plugins/custom/docsify-footer.min.js"></script>
 
-  <script>
-    if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
-      document.write('<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19424343-37"><\/script>');
-    }
-  </script>
+    <!-- Table of Contents Plugin -->
+    <script>
+      if (
+        (getURLParameterByName(
+          "toc",
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true" &&
+          getURLParameterByName("basePath")) ||
+        ToC
+      ) {
+        document.write(
+          '<link rel="stylesheet" type="text/css" href="assets/css/toc.css" />'
+        );
+        document.write(
+          '<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>'
+        );
+      }
+      if (
+        getURLParameterByName(
+          ["toc-narrow", "tocNarrow"],
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true" &&
+        getURLParameterByName("basePath")
+      ) {
+        document.write(
+          '<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />'
+        );
+        document.write(
+          '<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>'
+        );
+      }
+    </script>
 
-  <script>
-    if ((location.hostname.includes("docsify-this.net")) && (window.$docsify['basePath'] === undefined)) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag() { dataLayer.push(arguments); }
-      gtag('js', new Date());
+    <!-- Mermaid Diagrams Plugin v2 -->
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+      window.mermaid = mermaid;
+    </script>
+    <!-- <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script> -->
+    <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script>
 
-      gtag('config', 'UA-19424343-37', { 'anonymize_ip': true });
-    }
-  </script>
+    <!-- Katex Plugin -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>  -->
+    <!-- <script src="assets/vendor/katex/katex.min.js"></script>  -->
 
-</body>
+    <!-- LaTeX Plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <script src="assets/vendor/docsify/plugins/docsify-latex.js"></script>
 
+    <!-- <script src="//cdn.jsdelivr.net/npm/marked@4"></script> -->
+    <!--  <script src="assets/vendor/marked4/marked.js"></script> -->
+
+    <!-- CDN files for docsify-katex -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+    <!-- <script src="assets/vendor/docsify/plugins/docsify-katex.js"></script> -->
+
+    <!-- Optionally enable Hypothesis -->
+    <script>
+      // console.log(getURLParameterByName('hypothesis'));
+      // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === true);
+      // console.log(getURLParameterByName('hypothesis', null, null, window.location.href, true) === 'true');
+      if (
+        getURLParameterByName(
+          "hypothesis",
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true" &&
+        getURLParameterByName("basePath")
+      ) {
+        document.write(
+          '<script async src="https://hypothes.is/embed.js"><\/script>'
+        );
+      }
+    </script>
+
+    <!-- Load AsciiDoc Plugin -->
+    <!-- <script src="unpkg.com/docsify-asciidoc@^1/dist/main.js"></script> -->
+    <script src="assets/vendor/docsify/plugins/docsify-asciidoc.js"></script>
+
+    <!-- Check for headerweight, fontfamily, fontsize, fontweight, lineheight, theme colors, and darkmode parameters -->
+    <script>
+      if (!(window.$docsify["basePath"] === undefined)) {
+        // Change header weight if headerweight parameter present
+        headerweight = getURLParameterByName(
+          ["header-weight", "headerWeight"],
+          null,
+          null,
+          window.location.href,
+          true
+        );
+        if (!(headerweight === false)) {
+          // console.log(headerweight);
+          document.documentElement.style.setProperty(
+            "--heading-font-weight",
+            headerweight
+          ); // DOCSIFY v5
+        }
+
+        // Change body font if fontFamily parameter present
+        fontfamily = getURLParameterByName(
+          ["font-family", "fontFamily"],
+          null,
+          null,
+          window.location.href,
+          true
+        );
+        if (!(fontfamily === false)) {
+          // console.log(fontfamily);
+          document.documentElement.style.setProperty(
+            "--font-family",
+            fontfamily
+          ); // DOCSIFY v5
+        } else {
+          document.documentElement.style.setProperty(
+            "--font-family",
+            '"Source Sans 3","Helvetica Neue",sans-serif'
+          );
+        }
+
+        // Change body font size if fontSize parameter present
+        fontsize = getURLParameterByName(
+          ["font-size", "fontSize"],
+          null,
+          null,
+          window.location.href,
+          true
+        );
+        if (!(fontsize === false)) {
+          if (!fontsize.includes("px")) {
+            // Convert rem values to pixel values
+            fontsize = fontsize * 16 + "px";
+          }
+          // console.log(fontsize);
+          document.documentElement.style.setProperty("--font-size", fontsize); // DOCSIFY v5
+        }
+
+        // Change line height if lineheight parameter present
+        lineheight = getURLParameterByName(
+          ["line-height", "lineHeight"],
+          null,
+          null,
+          window.location.href,
+          true
+        );
+        if (!(lineheight === false)) {
+          document.documentElement.style.setProperty(
+            "--line-height",
+            lineheight
+          ); // DOCSIFY v5
+        }
+
+        updateThemeModeLinkColors();
+
+        // Keep dark theme CSS files loaded if dark-mode parameter is true
+        enabledarkmode =
+          getURLParameterByName(
+            ["dark-mode", "darkMode"],
+            null,
+            null,
+            window.location.href,
+            true
+          ) === "true";
+        if (enabledarkmode === false && darkmode === false) {
+          var linkNode = document.querySelector(
+            'link[href*="core-dark.min.css"]'
+          );
+          linkNode.parentNode.removeChild(linkNode);
+        }
+      }
+    </script>
+
+    <script
+      src="https://h5p.org/sites/all/modules/h5p/library/js/h5p-resizer.js"
+      charset="UTF-8"
+    ></script>
+
+    <!-- Additional Languages for Prismjs -->
+    <script src="assets/vendor/prismjs/prism-bash.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-go.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-java.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-kotlin.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-php.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-python.min.js"></script>
+    <script src="assets/vendor/prismjs/prism-swift.min.js"></script>
+
+    <!-- WikiLinks Plugin -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-wikilink@1"></script> -->
+    <script src="assets/vendor/docsify/plugins/docsify-wikilink.js"></script>
+
+    <!-- Zoom Image Plugin -->
+    <script>
+      if (!(window.$docsify["basePath"] === undefined)) {
+        if (
+          getURLParameterByName(
+            ["zoom-images", "zoomImages"],
+            null,
+            null,
+            window.location.href,
+            true
+          ) === "true"
+        ) {
+          document.write(
+            '<script src="assets/vendor/docsify/plugins/zoom-image.min.js"><\/script>'
+          );
+        }
+      }
+    </script>
+
+    <!--Search Plugin -->
+    <script>
+      if (
+        getURLParameterByName(
+          "searchbox",
+          null,
+          null,
+          window.location.href,
+          true
+        ) === "true"
+      ) {
+        <!-- Docsify Search Plugin current release -->
+        <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
+
+        <!-- Docsify Search Plugin "develop" branch custom preview files -->
+        <!-- document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>'); -->
+
+        <!-- Docsify Search Plugin "develop" branch preview files -->
+        document.write(
+          '<script src="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/plugins/search.min.js"><\/script>'
+        );
+      }
+    </script>
+
+    <!-- RunKit Plugin -->
+    <script src="assets/vendor/docsify/plugins/docsify-runkit.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
+
+    <script>
+      if (
+        location.hostname.includes("docsify-this.net") &&
+        window.$docsify["basePath"] === undefined
+      ) {
+        document.write(
+          '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-19424343-37"><\/script>'
+        );
+      }
+    </script>
+
+    <script>
+      if (
+        location.hostname.includes("docsify-this.net") &&
+        window.$docsify["basePath"] === undefined
+      ) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-19424343-37", { anonymize_ip: true });
+      }
+    </script>
+  </body>
 </html>
