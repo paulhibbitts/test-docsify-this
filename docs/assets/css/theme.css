@@ -56,7 +56,6 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/lato-v24-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* lato-italic - latin */
 @font-face {
@@ -65,7 +64,6 @@
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/lato-v24-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/lato-v24-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* lato-700 - latin */
 @font-face {
@@ -74,7 +72,6 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/lato-v24-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* lato-700italic - latin */
 @font-face {
@@ -83,7 +80,6 @@
   font-style: italic;
   font-weight: 700;
   src: url('../fonts/lato-v24-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/lato-v24-latin-700italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /* https://gwfh.mranftl.com/fonts/open-sans?subsets=latin */
@@ -144,7 +140,6 @@
   font-style: normal;
   font-weight: 400;
   src: url('../fonts/merriweather-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/merriweather-v30-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* merriweather-italic - latin */
 @font-face {
@@ -153,7 +148,6 @@
   font-style: italic;
   font-weight: 400;
   src: url('../fonts/merriweather-v30-latin-italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/merriweather-v30-latin-italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* merriweather-700 - latin */
 @font-face {
@@ -162,7 +156,6 @@
   font-style: normal;
   font-weight: 700;
   src: url('../fonts/merriweather-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/merriweather-v30-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 /* merriweather-700italic - latin */
 @font-face {
@@ -171,7 +164,6 @@
   font-style: italic;
   font-weight: 700;
   src: url('../fonts/merriweather-v30-latin-700italic.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-       url('../fonts/merriweather-v30-latin-700italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
 
 /*
@@ -183,7 +175,7 @@ body {
 */
 
 .app-nav:not(:empty)~main .markdown-section {
-  padding-top: 1.0rem; /* DOCSIFY v5 */
+  padding-top: 1.0rem;
 }
 
 .pagination-item:not(:last-child) a .pagination-item-label, .pagination-item:not(:last-child) a .pagination-item-subtitle, .pagination-item:not(:last-child) a .pagination-item-title {
@@ -197,18 +189,16 @@ body {
 }
 
 .markdown-section figure, .markdown-section p, .markdown-section ol, .markdown-section ul {
-  margin: .75em 0em .5em 0em!important; /* DOCSIFY v5 */
+  margin: .75em 0em .5em 0em!important;
 }
 
 .markdown-section {
-  margin-top: 1.4rem; /* DOCSIFY v5 */
-  /* padding: 1rem 40px; DOCSIFY v5 */
-}
+  margin-top: 1.4rem;
 
 .markdown-section .alert, .markdown-section blockquote {
-  overflow: visible; /* DOCSIFY v5 */
-  margin: 1em 0; /* DOCSIFY v5 */
-  padding: 1em; /* DOCSIFY v5 */
+  overflow: visible;
+  margin: 1em 0;
+  padding: 1em;
 }
 
 .markdown-section ul {
@@ -232,7 +222,7 @@ body {
 
 .markdown-section .button[class="button"] {
   cursor: pointer!important;
-  color: var(--color-mono-min); /* DOCSIFY v5 */
+  color: var(--color-mono-min);
   height: auto!important;
   display: inline-block!important;
   padding: 10px!important;
@@ -247,7 +237,7 @@ body {
 
 .markdown-section a.button[class="button"] {
   cursor: pointer;
-  color: var(--color-mono-min); /* DOCSIFY v5 */
+  color: var(--color-mono-min);
   text-decoration: none !important;
   outline:transparent!important;
 }
@@ -274,7 +264,7 @@ body {
 
 .markdown-section .button-rounded {
   cursor: pointer;
-  color: var(--color-mono-min); /* DOCSIFY v5 */
+  color: var(--color-mono-min);
   height: auto;
   display: inline-block;
   padding: 10px min(20px, 5%) 10px min(20px, 5%);
@@ -287,7 +277,7 @@ body {
 
 .markdown-section a.button-rounded {
   cursor: pointer;
-  color: var(--color-mono-min); /* DOCSIFY v5 */
+  color: var(--color-mono-min);
   text-decoration: none !important;
 }
 
@@ -313,17 +303,17 @@ body {
 
 .markdown-section .navpill {
   cursor: pointer;
-  color: var(--color-mono-max)!important; /* DOCSIFY v5 */
+  color: var(--color-mono-max)!important;
   height: auto;
   display: inline-block;
-  border: 1px solid var(--color-mono-max); /* DOCSIFY v5 */
+  border: 1px solid var(--color-mono-max);
   border-radius: 4rem;
   padding: 4px 14px 4px 14px;
   margin-bottom: 4px;
   margin-right: 6px;
   font-size: .8rem;
   line-height: .9rem;
-  background-color: var(--color-mono-min); /* DOCSIFY v5 */
+  background-color: var(--color-mono-min);
   font-family: system-ui, sans-serif;
   font-weight: bold;
   text-decoration: none;
@@ -331,14 +321,14 @@ body {
 
 .markdown-section a.navpill {
   cursor: pointer;
-  color: var(--color-mono-max); /* DOCSIFY v5 */
-  border: 1px solid var(--color-mono-max); /* DOCSIFY v5 */
+  color: var(--color-mono-max);
+  border: 1px solid var(--color-mono-max);
   text-decoration: none !important;
 }
 
 .markdown-section .badge {
-  color: var(--badge-text-color, var(--color-mono-min)); /* DOCSIFY v5 */
-  background-color: var(--badge-bg-color, color-mix(in srgb, var(--color-mono-max) 60%, transparent)); /* DOCSIFY v5 */
+  color: var(--badge-text-color, var(--color-mono-min));
+  background-color: var(--badge-bg-color, color-mix(in srgb, var(--color-mono-max) 60%, transparent));
 
   display: inline-block;
   padding: .25em .4em .25em .4em;
@@ -356,7 +346,7 @@ body {
 }
 
 .markdown-section .badge a {
-  color: var(--badge-text-color, var(--color-mono-min))!important; /* DOCSIFY v5 */
+  color: var(--badge-text-color, var(--color-mono-min))!important;
   text-decoration: none !important;
 }
 
@@ -371,11 +361,11 @@ body {
 
 .markdown-section #a, .markdown-section #b, .markdown-section #c, .markdown-section #d, .markdown-section #e, .markdown-section #f, .markdown-section #g, .markdown-section #h, .markdown-section #i, .markdown-section #j, .markdown-section #k, .markdown-section #l, .markdown-section #m, .markdown-section #n, .markdown-section #o, .markdown-section #p, .markdown-section #q, .markdown-section #r, .markdown-section #s, .markdown-section #t, .markdown-section #u, .markdown-section #v, .markdown-section #w, .markdown-section #x, .markdown-section #y, .markdown-section #z {
   width: 2em;
-  color: var(--color-mono-min); /* DOCSIFY v5 */
+  color: var(--color-mono-min);
   font-weight: 700;
   margin-top: 1.00rem;
   padding-left: 0.25rem;
-  background: color-mix(in srgb, var(--color-mono-max) 70%, transparent); /* DOCSIFY v5 */
+  background: color-mix(in srgb, var(--color-mono-max) 70%, transparent);
 }
 
 .markdown-section .accordion {
@@ -395,7 +385,7 @@ body {
 }
 
 .markdown-section .accordion details {
-  padding: .0 1.25rem 1rem 1.25rem; /* DOCSIFY v5 */
+  padding: .0 1.25rem 1rem 1.25rem;
   margin-bottom: 0;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -403,7 +393,6 @@ body {
 .markdown-section summary {
   cursor: pointer;
   color: var(--link-color);
-  /* margin-bottom:-8px; DOCSIFY v5 */
   padding: 0;
 }
 
@@ -644,11 +633,11 @@ body {
 }
 
 .markdown-section hr {
-  margin-top: 1.2rem; /* DOCSIFY v5 */
+  margin-top: 1.2rem;
 }
 
 .markdown-section h1 {
-  font-size: 1.65rem; /* DOCSIFY v5 */
+  font-size: 1.65rem;
   line-height: 2.1rem;
   margin-top: 1.1rem;
   margin-bottom: -.35rem;
@@ -656,16 +645,16 @@ body {
 }
 
 .markdown-section h2 {
-  font-size: 1.50rem; /* DOCSIFY v5 */
+  font-size: 1.50rem;
   line-height: 1.75rem;
   margin-top: .9rem;
   margin-bottom: -.15rem;
   padding-bottom: 0;
-  border-style: none; /* DOCSIFY v5 */
+  border-style: none;
 }
 
 .markdown-section h3 {
-  font-size: 1.35rem; /* DOCSIFY v5 */
+  font-size: 1.35rem;
   line-height: 1.65rem;
   margin-top: .7rem;
   margin-bottom: -.1rem;
@@ -673,7 +662,7 @@ body {
 }
 
 .markdown-section h4 {
-  font-size: 1.25rem; /* DOCSIFY v5 */
+  font-size: 1.25rem;
   line-height: 1.4rem;
   margin-top: .6rem;
   margin-bottom: -.1rem;
@@ -681,7 +670,7 @@ body {
 }
 
 .markdown-section h5 {
-  font-size: 1.15rem; /* DOCSIFY v5 */
+  font-size: 1.15rem;
   line-height: 1.3rem;
   margin-top: .5rem;
   margin-bottom: 0rem;
@@ -689,7 +678,7 @@ body {
 }
 
 .markdown-section h6 {
-  font-size: 1.1rem; /* DOCSIFY v5 */
+  font-size: 1.1rem;
   line-height: 1.3rem;
   margin-top: .4rem;
   margin-bottom: -.1rem;
