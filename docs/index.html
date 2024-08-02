@@ -35,7 +35,7 @@
   <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-600italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="assets/fonts/source-sans-3-v15-latin-700italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  
+
   <!-- Stylesheets -->
 
   <!-- Core Theme -->
@@ -63,28 +63,20 @@
 
   <style>
     :root {
-
       --line-height: 1.4;
       --font-size: 18px;
       --font-weight: 400;
-
       --content-max-width: 960px;
-
       --heading-font-weight: 400;
-
       --theme-color: #0374B5;
       --link-color: #0374B5;
       --link-color-hover: var(--link-color);
       --link-underline-thickness: 1px;
       --link-underline-thickness-hover: var(--link-underline-thickness);
-
       --blockquote-color: var(--color-text);
       --blockquote-bg: var(--color-mono-1);
-
       --cover-bg: #C1E1F6;
-
       --docsifytabs-tab-color: var(--color-mono-max);
-
     }
   </style>
 
@@ -93,7 +85,6 @@
 <body class="sidebar-chevron-right sidebar-group-box sidebar-toggle-kebab">
   <div id="app"></div>
   <script>
-
     if (getURLParameterByName(['docsify-theme','docsifytheme'], null, null, window.location.href, true) === 'true') {
       document.querySelectorAll('style').forEach(style => style.remove());
     } else {
@@ -135,12 +126,9 @@
     // @param {bool}   returnValue Returns the URL Param if exists
     // @returns {string|null}      Parameter-value
     function getURLParameterByName(name, isTrue = null, isFalse = null, url = window.location.href, returnValue = false) {
-
       let exists = false;
       let paramValue = null;
-
       url = decodeURIComponent(url);
-
       if (Array.isArray(name)) {
         name.forEach(element => {
           var value = getURLParameterByName(element, null, null, url, true);
@@ -178,22 +166,15 @@
 
     // DOCSIFY THIS SCRIPTS
     function openURLs(url) {
-
       if (url) {
-
         if (isValidUrl(url)) {
-
           docsifyURL = window.location.href
-
           var params = new URLSearchParams(docsifyURL.search);
           params.delete('url-field');
           docsifyURL = docsifyURL.split("?")[0]; //url;
-
           docsifyURL = docsifyURL.replace('/#/', '');
           docsifyURL = docsifyURL.replace(/\/?$/, '/'); // If no trailing slash add it
-
           const urlhostname = new URL(url).hostname
-
           // If not Raw source URL convert it and determine automatic gitlink page URL when possible
           if (url.includes("github.com")) {
             var gitlinkPageURL = url;
@@ -535,19 +516,14 @@
           docsifyPreviewWin.focus();
 
         } else {
-
           alert("Please enter a valid Markdown file URL.");
           selectText();
-
         }
 
       } else {
-
         alert("Please enter a Markdown file URL.");
         selectText();
-
       }
-
     }
 
     const isValidUrl = urlString => {
@@ -759,7 +735,6 @@
       var allowedExtensions = getAllowedFileExtensions();
       fileURL = fileURL.split('?id')[0];
       var extension = fileURL.split(".").pop();
-
       return allowedExtensions.includes(extension.toLowerCase());
     }
 
@@ -861,9 +836,7 @@
       // CUSTOM PLUGINS
       // -----------------------------------------------------------------
       plugins: [
-
         function (hook, vm) {
-
           hook.afterEach(function (html, next) {
             // Invoked each time after the Markdown file is parsed.
             // beforeEach and afterEach support asynchronous。
@@ -871,10 +844,8 @@
             // call `next(html)` when task is done.
 
             if (window.$docsify['basePath']) {
-
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
-
               // Scan for links to local Markdown files and adjust URLs to work correctly
 
               // Get current Docsify URL
@@ -1017,9 +988,7 @@
           });
 
           hook.beforeEach(function (html) {
-
             if (window.$docsify['basePath']) {
-
               // Remove any possible front matter with the delimiters '---'
               if (html.startsWith("---")) {
                 html = html.replace(/---(.|\n)*?---/, '');
@@ -1450,13 +1419,12 @@
         }
       }
     }
-
   </script>
 
   <!-- Docsify v5 release -->
   <script src="https://docsify-preview-aup4gny2n-docsifyjs.vercel.app/dist/docsify.min.js"></script>
   <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
-  
+
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
     if ((getURLParameterByName(['standalone', 'embedded']) || standalone)) {
@@ -1464,7 +1432,7 @@
       root_theme.style.setProperty('--content-margin-inline', '14px');
     }
   </script>
-  
+
   <!-- docsify-tabs (latest v1.x.x) -->
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-tabs.min.js"></script>
@@ -1651,10 +1619,10 @@
   <!--Search Plugin -->
   <script>
     if (getURLParameterByName('searchbox', null, null, window.location.href, true) === 'true') {
- 
+
       <!-- Docsify Search Plugin current release -->
       <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
- 
+
       <!-- Docsify Search Plugin "develop" branch custom preview files -->
       <!-- document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>'); -->
 
@@ -1684,7 +1652,5 @@
       gtag('config', 'UA-19424343-37', { 'anonymize_ip': true });
     }
   </script>
-
 </body>
-
 </html>
