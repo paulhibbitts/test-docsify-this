@@ -1319,7 +1319,7 @@
               document.getElementById('subMaxLevel').value = subMaxLevel;
             }
 
-            if (getURLParameterByName('searchbox', null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['search-box', 'searchbox'], null, null, window.location.href, true) === 'true') {
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
@@ -1618,7 +1618,7 @@
 
   <!--Search Plugin -->
   <script>
-    if (getURLParameterByName('searchbox', null, null, window.location.href, true) === 'true') {
+    if (getURLParameterByName(['search-box', 'searchbox'], null, null, window.location.href, true) === 'true') {
 
       <!-- Docsify Search Plugin current release -->
       <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
