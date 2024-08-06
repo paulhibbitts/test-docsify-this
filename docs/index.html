@@ -1277,7 +1277,7 @@
 
             headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
             if (headerweight) {
-              console.log(headerweight);
+              // console.log(headerweight);
               document.getElementById('headerweight').value = headerweight;
             }
 
@@ -1453,7 +1453,7 @@
             // Perform actions when the file exists
             setFavicon(fileUrl);
           } else {
-            console.log("File does not exist.");
+            // console.log("File does not exist.");
             // Perform actions when the file does not exist
             setFavicon('assets/favicon/favicon.png');
           }
@@ -1536,14 +1536,14 @@
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
         // console.log(headerweight);
-        document.documentElement.style.setProperty('--heading-font-weight', headerweight); // DOCSIFY v5
+        document.documentElement.style.setProperty('--heading-font-weight', headerweight);
       }
 
       // Change body font if fontFamily parameter present
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         // console.log(fontfamily);
-        document.documentElement.style.setProperty('--font-family', fontfamily); // DOCSIFY v5
+        document.documentElement.style.setProperty('--font-family', fontfamily);
       } else {
         document.documentElement.style.setProperty('--font-family', '"Source Sans 3","Helvetica Neue",sans-serif');
       }
@@ -1556,13 +1556,13 @@
           fontsize = (fontsize * 16) + "px";
         }
         // console.log(fontsize);
-        document.documentElement.style.setProperty('--font-size', fontsize); // DOCSIFY v5
+        document.documentElement.style.setProperty('--font-size', fontsize);
       }
 
       // Change line height if lineheight parameter present
       lineheight = getURLParameterByName(['line-height', 'lineHeight'], null, null, window.location.href, true);
       if (!(lineheight === false)) {
-        document.documentElement.style.setProperty('--line-height', lineheight); // DOCSIFY v5
+        document.documentElement.style.setProperty('--line-height', lineheight);
       }
 
       updateThemeModeLinkColors();
