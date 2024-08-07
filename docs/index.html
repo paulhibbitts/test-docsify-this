@@ -798,6 +798,7 @@
       // coverpage      : 'coverpage.md',
       loadSidebar: !(getURLParameterByName(['standalone', 'embedded']) || standalone || getURLParameterByName('basePath')),
       loadNavbar: !(getURLParameterByName(['standalone', 'embedded']) || !(getURLParameterByName('navbar')) || standalone || !navbar || false),
+      mergeNavbar: true,
       externalLinkTarget: '_top',
       loadFooter: (getURLParameterByName('footer') || footer || false),
       notFoundPage: '404.md',
