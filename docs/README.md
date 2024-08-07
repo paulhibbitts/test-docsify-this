@@ -643,6 +643,7 @@ The following additional URL parameters are also available for use in Docsify-Th
 * [loadNavbar](/?id=loadNavbar)
 * [loadSidebar](/?id=loadSidebar)
 * [logo](/?id=logo)
+* [mergeNavbar](/?id=mergeNavbar)
 * [name](/?id=name)
 * [page-title](/?id=page-title)
 * [pagination](/?id=pagination)
@@ -696,6 +697,10 @@ https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent
 ##### logo
 Display a logo image for the Website name in a Docsify custom Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
 https://docsify-this-test-v2.netlify.app/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided. When a Website name is provided it will be used as the alt text for the logo.  
+
+##### mergeNavbar
+Do not merge Navbar items to the top of the sidebar on smaller screens with the optional **mergeNavbar** Docsify parameter, for example: 
+https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&mergeNavbar=false&name=CPT-363
 
 ##### name
 Display the name for the Website in a Docsify custom Sidebar (i.e. file '_sidebar.md) with the optional **name** Docsify parameter, for example:  
