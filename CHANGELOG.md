@@ -7,7 +7,6 @@
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify core (default) theme
 * Skip-link to content, accessible via tab key (via Docsify v5)
 * Added platform default font choice ('system-ui')
-* Added example Docsify-This template (Multiple Page Open Publishing Site Template) 
 
 **Improved:**
 * Updated ReadMe
@@ -23,7 +22,9 @@
 ## [1.9.9] - XX/XX/2024
 
 **Improved:**
-* Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js upgrades (with thanks and appreciation to @scruel)
+* Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js compatibility (with thanks and appreciation to @scruel)
+* Support of the alias searchbox for search for future Docsify-This compatibility
+* Added example Docsify-This template (Multiple Page Open Publishing Site Template) 
 
 ## [1.9.8] - 07/23/2024
 
