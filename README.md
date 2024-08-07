@@ -33,8 +33,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 * [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
-* [Troubleshooting](#troubleshooting)
 * [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+* [Troubleshooting](#troubleshooting)
 * [Privacy Policy Summary](#privacy-policy-summary)
 * [Contact and Support](#contact-and-support)
 
