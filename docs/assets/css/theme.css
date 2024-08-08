@@ -229,12 +229,8 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-.app-nav-merged:empty ~ main .markdown-section {
-  padding-top: 1rem;
-}
-
-.active:is(:is(.app-nav-merged,.sidebar-nav) li)>a {
-  font-weight: bold;
+.app-nav:not(:empty) ~ main .markdown-section {
+  padding-top: .25rem;
 }
 
 .pagination-item:not(:last-child) a .pagination-item-label,
