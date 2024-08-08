@@ -1100,9 +1100,9 @@
                 if (!docBody.querySelector('style.sidebar-nav-adjusted')) {
                   let editCSS = document.createElement('style')
                   if (docBody.querySelector('.app-nav')) {
-                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 60px;}";
+                    editCSS.innerHTML = ".sidebar {padding-top: 78px;}";
                   } else {
-                    editCSS.innerHTML = ".sidebar .sidebar-nav {margin-top: 47px;}";
+                    editCSS.innerHTML = ".sidebar {padding-top: 8px;}";
                   }
                   editCSS.classList.add('style.sidebar-nav-adjusted');
                   docBody.appendChild(editCSS);
