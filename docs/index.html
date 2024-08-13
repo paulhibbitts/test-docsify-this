@@ -43,7 +43,7 @@
   <!-- Docsify Themeable "develop" branch preview files -->
   <!--<link rel="stylesheet" href="https://docsify-themeable-preview.vercel.app/dist/css/theme-simple.css"> -->
   <link rel="stylesheet" href="assets/vendor/themeable/themes/preview/theme-simple.css">
-  
+
   <!-- Docsify Themeable current release -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: light)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
   <!-- <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
@@ -79,7 +79,6 @@
 
   <style>
     :root {
-
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
       --base-line-height: 1.4;
@@ -123,7 +122,6 @@
 
       --docsifytabs-tab-color: var(--base-color);
       --docsifytabs-tab-highlight-color: var(--link-color);
-
     }
   </style>
 
@@ -842,23 +840,23 @@
     // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
     // Function to check and set the href attribute
     function checkAndSetDisplayedSiteName() {
-        const appNameLink = document.querySelector('a.app-name-link');
-        if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
-            appNameLink.setAttribute('href', '#/');
-        }
+      const appNameLink = document.querySelector('a.app-name-link');
+      if (appNameLink && appNameLink.getAttribute('href') !== '#/') {
+        appNameLink.setAttribute('href', '#/');
+      }
     }
     // Set up a MutationObserver to monitor the entire body for added nodes or attribute changes
     // This assumes that the 'a.app-name-link' might be added dynamically or its attributes changed
     const observer = new MutationObserver((mutationsList, observer) => {
-        // Call checkAndSetHref to ensure the href is as expected
-        checkAndSetDisplayedSiteName();
+      // Call checkAndSetHref to ensure the href is as expected
+      checkAndSetDisplayedSiteName();
     });
     // Assuming the body exists when this script runs, start observing
     observer.observe(document.body, {
-        childList: true, // observe direct children being added or removed
-        subtree: true, // observe all descendants
-        attributes: true, // observe attributes changes
-        attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
+      childList: true, // observe direct children being added or removed
+      subtree: true, // observe all descendants
+      attributes: true, // observe attributes changes
+      attributeFilter: ['href'] // filter to only observe changes to 'href' attributes
     });
 
     // Docsify
@@ -1097,8 +1095,8 @@
 
               let editlinkemoji = getURLParameterByName('edit-link-emoji', null, null, window.location.href, true);
               if (editlinkemoji) {
-              // Remove leading and trailing colons if they are present
-              editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, '');
+                // Remove leading and trailing colons if they are present
+                editlinkemoji = editlinkemoji.replace(/^:+|:+$/g, '');
               } else {
                 editlinkemoji = 'memo';
               }
@@ -1383,7 +1381,7 @@
               document.getElementById('subMaxLevel').value = subMaxLevel;
             }
 
-            if (getURLParameterByName(['search','searchbox'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
               document.getElementById("enableSidebarsearch").checked = true;
             }
 
@@ -1441,7 +1439,7 @@
       params.forEach((value, key) => {
         // TODO: Parse numbers?
 
-        // console.log(value,key);
+        // console.log(value, key);
         if (key === 'basePath' && !(allowedDomains === '')) {
           const { hostname } = new URL(value);
           if (!(allowedDomains.includes(hostname))) {
@@ -1490,8 +1488,8 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script> -->
   <!-- <script src="assets/vendor/docsify/docsify.min.js"></script> -->
   <!-- <script src="https://docsify-preview-kz17kuu5n-docsifyjs.vercel.app/dist/docsify.min.js"></script> -->
-  
-  <!-- Docsify "develop" branch preview files -->
+
+  <!-- Docsify Themeable "develop" branch preview files -->
   <script src="assets/vendor/docsify/preview/docsify.min.js"></script>
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
@@ -1560,7 +1558,7 @@
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
 
-  <!--Pagination Plugin -->
+  <!-- Pagination Plugin -->
   <script>
     if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
       document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
@@ -1606,7 +1604,7 @@
   <!-- LaTeX Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
   <script src="assets/vendor/docsify/plugins/docsify-latex.js"></script>
-  
+
   <!-- Optionally enable Hypothesis -->
   <script>
     // console.log(getURLParameterByName('hypothesis'));
@@ -1693,13 +1691,13 @@
     }
   </script>
 
-  <!--Search Plugin -->
+  <!-- Search Plugin -->
   <script>
-    if (getURLParameterByName(['search','searchbox'], null, null, window.location.href, true) === 'true') {
- 
+    if (getURLParameterByName(['search', 'searchbox'], null, null, window.location.href, true) === 'true') {
+
       <!-- Docsify Search Plugin current release -->
       <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
- 
+
       <!-- Docsify Search Plugin "develop" branch preview files -->
       document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
     }
