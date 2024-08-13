@@ -7,7 +7,6 @@
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify core (default) theme
 * Skip-link to content, accessible via tab key (via Docsify v5)
 * Added platform default font choice ('system-ui')
-* Added checkbox to move Navbar items to the top of the Sidebar on smaller screens in Advanced Web Page Builder (in addition to URL parameter `mergeNavbar`)
 
 **Improved:**
 * Updated ReadMe
