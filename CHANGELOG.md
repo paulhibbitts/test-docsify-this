@@ -5,12 +5,11 @@
 **New:**
 * Docsify v5 used for all Markdown file rendering
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify core (default) theme
-* Skip-link to content, accessible via tab key (via Docsify v5)
+* Skip-link to content button, accessible via tab key (via Docsify v5)
 * Added platform default font choice ('system-ui')
 
 **Improved:**
 * Updated ReadMe
-* Enabling of Docsify Search plugin URL parameter changed to `searchbox` from `search` for Docsify v5 compatibility
 * Aria attributes for Sidebar toggle button and current page link (via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (via Docsify v5)
 * Support for keyboard shortcuts, e.g. \ for hide or show Sidebar (via Docsify v5)
@@ -27,7 +26,7 @@
 
 **Improved:**
 * Support for mathmatical formula display now provided by the Latex plugin for compatibility with future Marked.js compatibility (with thanks and appreciation to @scruel)
-* Support of the alias searchbox for search for future Docsify-This compatibility
+* Search plugin URL parameter changed to `searchbox` from `search` for future Docsify v5 compatability
 * Updated ReadMe
 
 ## [1.9.8] - 07/23/2024
