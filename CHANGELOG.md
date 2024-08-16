@@ -7,6 +7,7 @@
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify v5 core (default) theme
 * Skip-link to content button, accessible via tab key (via Docsify v5)
 * Added platform default font choice ('system-ui')
+* Mermaid diagram support now done via Marked.js + Mermaid.js (instead of an additional plugin)
 
 **Improved:**
 * Updated ReadMe
