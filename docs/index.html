@@ -57,6 +57,10 @@
   <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
+  <!-- Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@9.3.0/dist/mermaid.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.css">
+
   <style>
     :root {
       --line-height: 1.4;
@@ -809,6 +813,10 @@
     });
 
     // Docsify
+
+    let num = 0;
+    mermaid.initialize({ startOnLoad: false });
+
     window.$docsify = {
       // GENERAL SETTINGS
       // -----------------------------------------------------------------
@@ -849,6 +857,22 @@
         namespace: 'docsify-this',
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
         insertAfter: '.app-name',
+      },
+
+      markdown: {
+        renderer: {
+          code({ text, lang }) {
+            if (lang === 'mermaid') {
+              return /* html */ `
+                <div class="mermaid">${mermaid.render(
+                  'mermaid-svg-' + num++,
+                  text,
+                )}</div>
+              `;
+            }
+            return this.origin.code.apply(this, arguments);
+          },
+        },
       },
 
       // CUSTOM PLUGINS
@@ -1531,13 +1555,13 @@
   </script>
 
   <!-- Mermaid Diagrams Plugin v2 -->
-  <script type="module">
+  <!-- <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
     mermaid.initialize({ startOnLoad: true });
     window.mermaid = mermaid;
-  </script>
+  </script> -->
   <!-- <script src="//unpkg.com/docsify-mermaid@2.0.0/dist/docsify-mermaid.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script>
+  <!-- <script src="assets/vendor/docsify/plugins/docsify-mermaid.js"></script> -->
 
   <!-- LaTeX Plugin -->
   <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_CHTML"></script>
