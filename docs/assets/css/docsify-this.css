@@ -267,6 +267,14 @@ span #docsifythisurlfield {
   text-align: right;
 }
 
+.markdown-section #docsifythisdocsindex h3 {
+  font-size: 1em;
+}
+
+.markdown-section #docsifythisdocscontent h4 {
+  font-size: 1.2em;
+}
+
 .markdown-section .docsify-this-screenshot {
   width: 85%;
   height: 85%;
