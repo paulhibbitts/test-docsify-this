@@ -16,33 +16,46 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-* [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
-* [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
-* [How Docsify-This Works](#how-docsify-this-works)
-* [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
-* [Example Content Workflows](#example-content-workflows)
-* [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
-* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
-* [Page Appearance URL Parameters](#page-appearance-url-parameters)
-* [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
-* [Markdown Syntax References](#markdown-syntax-references)
-* [Font Awesome Icons](#font-awesome-icons)
-* [Supported Markdown CSS Classes](#supported-markdown-css-classes)
-* [Custom Markdown CSS Classes](#custom-markdown-css-classes)
-* [Tips and Techniques](#tips-and-techniques)
-* [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
-* [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
-* [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
-* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
-* [Troubleshooting](#troubleshooting)
-* [Privacy Policy Summary](#privacy-policy-summary)
-* [Contact and Support](#contact-and-support)
+### [1. Introduction and Overview](#1-introduction-and-overview-)
+- [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
+- [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
+- [How Docsify-This Works](#how-docsify-this-works)
+- [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
+
+### [2. Using Docsify-This](#2-using-docsify-this)
+- [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
+- [Page Appearance URL Parameters](#page-appearance-url-parameters)
+- [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
+- [Example Content Workflows](#example-content-workflows)
+- [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
+
+### [3. Customization and Advanced Usage](#3-customization-and-advanced-usage)
+- [Supported Markdown CSS Classes](#supported-markdown-css-classes)
+- [Custom Markdown CSS Classes](#custom-markdown-css-classes)
+- [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+
+### [4. Resources and Templates](#4-resources-and-templates)
+- [Markdown Syntax References](#markdown-syntax-references)
+- [Font Awesome Icons](#font-awesome-icons)
+- [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
+- [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+
+### [5. Tips, Techniques, and Troubleshooting](#5-tips-techniques-and-troubleshooting)
+- [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
+- [Tips and Techniques](#tips-and-techniques)
+- [Troubleshooting](#troubleshooting)
+
+### [6. Support and Policies](#_6-support-and-policies)
+- [Privacy Policy Summary](#privacy-policy-summary)
+- [Contact and Support](#contact-and-support)
 
 Have you tried out Docsify-This? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
 
 ---
 
-### What Problem Does Docsify-This Solve?
+### 1. Introduction and Overview
+
+#### What Problem Does Docsify-This Solve?
 
 Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. Collaborative authoring using GitHub or Codeberg is also supported.  
 
@@ -57,7 +70,7 @@ With Docsify-This you can:
 
 ---
 
-### Docsify-This Core Design Principles
+#### Docsify-This Core Design Principles
 
 * Frictionless Markdown publishing
 * Flexible content display handling
@@ -67,7 +80,7 @@ With Docsify-This you can:
 
 ---
 
-### How Docsify-This Works
+#### How Docsify-This Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the following format:
 
@@ -91,7 +104,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 ---
 
-### Read What People are Saying about Docsify-This
+#### Read What People are Saying about Docsify-This
 
 > I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
 — J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
@@ -106,6 +119,8 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — A. Levine aka CogDog (Independent Educational Technologist)
 
 ---
+
+### 2. Using Docsify-This
 
 ### Example Content Workflows
 
