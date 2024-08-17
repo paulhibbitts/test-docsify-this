@@ -16,13 +16,13 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-### [1. Introduction and Overview](#1-introduction-and-overview-)
+### [1. Introduction and Overview](#1-introduction-and-overview-1)
 - [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
 - [Docsify-This Core Design Principles](#docsify-this-core-design-principles)
 - [How Docsify-This Works](#how-docsify-this-works)
 - [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 
-### [2. Using Docsify-This](#2-using-docsify-this)
+### [2. Using Docsify-This](#2-using-docsify-this-1)
 - [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 - [Page Appearance URL Parameters](#page-appearance-url-parameters)
 - [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
