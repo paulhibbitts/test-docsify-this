@@ -11,6 +11,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Reorganized Docsify-This docs
 * Docsify-This Web app UI appearance updates
 * Aria attributes for Sidebar toggle button and current page link (via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (via Docsify v5)
