@@ -218,7 +218,7 @@ Page layout:
 - [How Docsify-This Works](/?id=how-docsify-this-works)
 - [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
 
-### [2. Using Docsify-This](/?id=_2-using-docsify-this-1)
+### [2. Working with Docsify-This](/?id=_2-using-docsify-this-1)
 - [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 - [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
 - [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
@@ -322,7 +322,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 ---
 
-### 2. Using Docsify-This
+### 2. Working with Docsify-This
 
 #### Ready-to-Use Docsify-This Markdown Templates
 
