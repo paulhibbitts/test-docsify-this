@@ -230,7 +230,7 @@ Page layout:
 - [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 
-### [4. Additional Resources and Templates](/?id=_4-resources-and-templates-1)
+### [4. Resources and Additional Templates](/?id=_4-resources-and-templates-1)
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
 - [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
@@ -1146,7 +1146,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ---
 
-### 4. Additional Resources and Templates
+### 4. Resources and Additional Templates
 
 #### Markdown Syntax References
 
