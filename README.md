@@ -34,7 +34,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 - [Custom Markdown CSS Classes](#custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
 
-### [4. Additional Resources and Templates](#4-resources-and-templates-1)
+### [4. Additional Resources and Templates](#4-additional-resources-and-templates-1)
 - [Markdown Syntax References](#markdown-syntax-references)
 - [Font Awesome Icons](#font-awesome-icons)
 - [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
@@ -45,7 +45,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 - [Tips and Techniques](#tips-and-techniques)
 - [Troubleshooting](#troubleshooting)
 
-### [6. Support and Policies](#_6-support-and-policies-1)
+### [6. Support and Policies](#6-support-and-policies-1)
 - [Privacy Policy Summary](#privacy-policy-summary)
 - [Contact and Support](#contact-and-support)
 
