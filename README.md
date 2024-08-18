@@ -127,10 +127,10 @@ The visual appearance of a Markdown file displayed by Docsify-This can be custom
 - **Using the Web Page Builder:** This tool automatically generates the required Docsify-This URL with the necessary parameters
 - **Manually Adjusting URL Parameters:** You can also manually modify the appearance by adding specific parameters to the Docsify-This URL
 
-For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar, the Docsify-This URL would be:
+For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar including headings up to 3 levels, the Docsify-This URL is:  
 
 ```html
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3
 ```
 
 #### Page Appearance URL Parameters
