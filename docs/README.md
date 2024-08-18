@@ -312,19 +312,17 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
 
 > I've been using Docsify-This for my graduate publishing production course, partly to explore new models in markdown publishing, but partly also to tame Canvas, which I find awkward and cumbersome. Keeping all my course notes as plain text files and deploying them through Github and Docsify-this is easy and makes my course development a breeze. Plus, I keep all my materials locally, and can use re-use them without being reliant on Canvas.  
-— J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University, Canada)
+— J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University)
 
 > Best tool I’ve found in years - this is one of those creations that is just done right, all the way to the core.  
 — D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University, United States)
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
-— A. Levine aka CogDog (Independent Educational Technologist, Saskatchewan, Canada)
+— A. Levine aka CogDog (Independent Educational Technologist)
 
 ---
 
 ### 2. Using Docsify-This
-
----
 
 #### Ready-to-Use Docsify-This Markdown Templates
 
@@ -1246,9 +1244,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 ### 5. Tips, Techniques, and Troubleshooting
 
-#### Tips and Techniques
-
-##### Improving Markdown Previews in Text Editors
+#### Improving Markdown Previews in Text Editors
 
 Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev Web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
 
@@ -1257,6 +1253,10 @@ https://docsify-this.net/assets/css/editor.css
 
 FontAwesome CSS:  
 https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+
+---
+
+#### Tips and Techniques
 
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
