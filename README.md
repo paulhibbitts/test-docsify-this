@@ -198,7 +198,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 * [Standalone Site with a 'Propose an Edit to this Site' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Standalone Site with a 'Propose an Edit to this Site' link")
 * [Standalone Site with Footer and a 'Propose an Edit to this Site' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Standalone Site with Footer and a 'Propose an Edit to this Site' link")
 
-#### [Docsify-This LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
+##### [Docsify-This LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
 
 ![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.png)
 
@@ -297,7 +297,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3.
 
-##### toc-narrow
+###### toc-narrow
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.  
 
@@ -778,6 +778,33 @@ Markdown:
 
 ---
 
+### 4. Resources and Templates
+
+#### Markdown Syntax References
+
+* [What Is Markdown, and How Do You Use It?](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
+* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* [Markdown Guide](https://www.markdownguide.org/)
+
+---
+
+#### Font Awesome Icons
+
+The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
+
+:`fas fa-home fa-fw`:
+
+The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw" aria-hidden="true"></i>`.
+
+When using the above shortcode for Font Awesome icons, it is assumed to be for decorative purposes, and so for improved accessibility an `aria-hidden="true"` attribute is automatically added to the icon. For semantic purposes, it is recommended you refer to the [Font Awesome Icons and Accessibility](https://docs.fontawesome.com/web/dig-deeper/accessibility) guidelines.
+
+The following style prefixes are available with Docsify-This:
+
+* fas (i.e. [Solid](https://fontawesome.com/search?o=r&m=free&s=solid))
+* fab (i.e. [Brands](https://fontawesome.com/search?o=r&m=free&f=brands))
+
+---
+
 #### Additional Docsify-This Markdown Examples and Templates
 
 ##### Examples
@@ -833,32 +860,37 @@ Markdown:
 * [Standalone Site with zoomable images](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-student-portfolio-starter/main&homepage=README.md&zoom-images=true "Docsify-This Markdown Starter Portfolio Template")
 * [Standalone Site with 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-portfolio-starter/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this-markdown-portfolio-starter/blob/main/README.md "Docsify-This Markdown Starter Portfolio Template")  
 
-### Markdown Syntax References
+---
 
-* [What Is Markdown, and How Do You Use It?](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
-* [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* [Markdown Guide](https://www.markdownguide.org/)
+#### Additional Docsify-This Learning Materials
+
+[Introduction to Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/otessa-2024/main/pages&homepage=introduction-to-docsify-this.md&edit-link=https://github.com/paulhibbitts/otessa-2024&sidebar=true&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Introduction%20to%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Introductory, beginner to intermediate._  
+An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.  
+
+[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
+_Intermediate, with a mix of basic and advanced aspects._  
+An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
 
 ---
 
-### Font Awesome Icons
+### 5. Tips, Techniques, and Troubleshooting
 
-The display of [Font Awesome Free](https://fontawesome.com/icons) icons within Markdown content is supported with the following format:
+#### Improving Markdown Previews in Text Editors
 
-:`fas fa-home fa-fw`:
+Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev Web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
 
-The above Markdown is equivalent to the HTML markup `<i class="fas fa-home fa-fw" aria-hidden="true"></i>`.
+Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
+https://docsify-this.net/assets/css/editor.css
 
-When using the above shortcode for Font Awesome icons, it is assumed to be for decorative purposes, and so for improved accessibility an `aria-hidden="true"` attribute is automatically added to the icon. For semantic purposes, it is recommended you refer to the [Font Awesome Icons and Accessibility](https://docs.fontawesome.com/web/dig-deeper/accessibility) guidelines.
+FontAwesome CSS:  
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
-The following style prefixes are available with Docsify-This:
+---
 
-* fas (i.e. [Solid](https://fontawesome.com/search?o=r&m=free&s=solid))
-* fab (i.e. [Brands](https://fontawesome.com/search?o=r&m=free&f=brands))
+#### Tips and Techniques
 
-### Tips and Techniques
-
-#### Making a Raw Markdown File Available Online
+##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
 **GitHub or Codeberg:**  
@@ -878,15 +910,15 @@ There are multiple ways to get a raw Markdown file available online, here are th
 2. Upload the Markdown file to your server
 3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
-#### Matching Fonts with Your Destination Platform Content
+##### Matching Fonts with Your Destination Platform Content
 Use a page inspector to identify the font family and font size used in the platform you are embedding Docsify-This content in, and then pass that font family using the `font-family` ([encoded](https://meyerweb.com/eric/tools/dencoder/), where spaces are replaced with '%20') and `font-size` (REM units) URL parameters to Docsify-This. For example, to match fonts with the Canvas LMS:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363-222-pages/main&homepage=topics.md&font-family=Lato%20Extended,Lato,Helvetica%20Neue,Helvetica,Arial,sans-serif&font-size=16  
 
-#### Providing a Page Table of Contents within a Smaller Destination Platform Screen Area
+##### Providing a Page Table of Contents within a Smaller Destination Platform Screen Area
 If you want to include a Page Table of Contents with embedded Docsify-This content, but the destination platform screen area is not very wide, you might want to try the optional `toc-narrow` display option. For example, to use a narrower Table of Contents area that includes a smaller screen breakpoint:
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/cmpt-363/main/docs/222&homepage=week-01.md&toc-narrow=true  
 
-#### Including Code Blocks
+##### Including Code Blocks
 Using [Prismjs](https://prismjs.com/) code blocks with syntax highlighting is supported for the languages [included with Docsify](https://docsify.js.org/#/language-highlight?id=language-highlighting) and as well Bash, Go, Java, Kotlin, PHP, Python and Swift. To embed a code block use the Markdown standard of triple backticks and start the block with the name of the language, for example to embed a block of Javascript code with syntax highlight the following would be used:  
 
 <pre>
@@ -905,7 +937,7 @@ function test() {
 }
 ```
 
-#### Including Interactive Javascript Blocks
+##### Including Interactive Javascript Blocks
 Using the Docsify Plugin [RunKit](https://jhildenbiddle.github.io/docsify-plugin-runkit/) interactive JavaScript <abbr title="Read-Eval-Print Loop">REPLs</abbr> powered by RunKit can be embedded, for example to embed a data visualization rendered using [D3.js](https://d3js.org/) the following would be used:  
 
 
@@ -936,7 +968,7 @@ d3Graph(nodes, links);
 </div>
 ````
 
-#### Including External Markdown Content
+##### Including External Markdown Content
 
 The content of external Markdown files can be embedded into Docisfy-This Web pages with the following:
 
@@ -950,25 +982,25 @@ The content of external Markdown files can be embedded into Docisfy-This Web pag
 
 For additional examples of including external content, view [Docsify Embeded Files](https://docsify.js.org/#/embed-files?id=embed-files).
 
-#### Use of WikiLinks
+##### Use of WikiLinks
 [WikiLinks format](https://help.obsidian.md/Linking+notes+and+files/Internal+links) for links and images are supported, as also found in the desktop editor [Obsidian](https://obsidian.md) and other platforms.  
 
-#### Display of AsciiDoc files (file extension .adoc)
+##### Display of AsciiDoc files (file extension .adoc)
 The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc  
 
 You can support the display of AsciiDoc files in the Web Page Builder of your own instance of Docsify-This by locating the function `getAllowedFileExtensions()` within the `index.html` file and add the file extension '.adoc' to the `return` statement, for example `return ".md,.adoc";`.  
 
-#### Display of HedgeDocs files
+##### Display of HedgeDocs files
 The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download  
 
 Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a standalone Web page by Docsify-This https://paulhibbitts.github.io/test-docsify-this/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc  
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
-#### Changing the Default Values of the Docsify-This Web Page Builder
+##### Changing the Default Values of the Docsify-This Web Page Builder
 You can configure the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing Docsify-This online sessions/workshops as well as Docsify-This users helping each other out. In addition to Docsify-This URL parameters, the following Web Page Builder URL parameters are available:  
 
-##### url-field
+###### url-field
 ```html
 
 https://paulhibbitts.github.io/test-docsify-this?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
@@ -981,21 +1013,21 @@ https://paulhibbitts.github.io/test-docsify-this?url-field=empty
 
 ```
 
-##### edit-link-checkbox
+###### edit-link-checkbox
 ```html
 
 https://docsify-this.net/?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
 
 ```
 
-##### show-page-options
+###### show-page-options
 ```html
 
 https://paulhibbitts.github.io/test-docsify-this?show-page-options=true
 
 ```
 
-##### advanced
+###### advanced
 ```html
 
 https://paulhibbitts.github.io/test-docsify-this?advanced=true
@@ -1006,27 +1038,15 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-#### Use of Camel case (e.g. camelCase) format for Docsify-This URL parameter names instead of hyphenated names
+##### Use of Camel case (e.g. camelCase) format for Docsify-This URL parameter names instead of hyphenated names
 You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
 
-#### Use of New Web Editor GitHub.dev
+##### Use of New Web Editor GitHub.dev
 To use the new GitHub.dev Web editor (currently in Beta) for 'Edit this Page' links, change `github.com` to `github.dev` for GitHub.com files entered into the Web Page Builder Markdown File URL field.
 
 ---
 
-### Improving Markdown Previews in Text Editors
-
-Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev Web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
-
-Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
-https://docsify-this.net/assets/css/editor.css
-
-FontAwesome CSS:  
-https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
-
----
-
-### Looking for Even More Customization and Control?
+#### Looking for Even More Customization and Control?
 
 Docsify-This is intended as a quick way to display one or more remotely located Markdown files. To further customize the rendering of remote files and have the posibility to have an instance of Docsify-This running on a custom domain, fork/clone your own instance of [Docsify-This](https://github.com/hibbitts-design/docsify-this) on GitHub and enable GitHub Pages with the folder `/docs`.  
 
@@ -1048,18 +1068,6 @@ To host a Docsify-This instance on your LMS, do the following:
 If you want to further customize and control the presentation of your Markdown content, especially when rendering multiple page sites, you can install your own [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) (that this hosted web app is based on) and store all Markdown files within that site. You can learn more about the capabilities of Docsify itself at [Docsify.js.org](https://docsify.js.org).  
 
 Looking for some help with getting a Docsify custom-This instance up and running for your organization? Paul provides a range of professional services related to Docsify-This - [contact him to learn more](https://docsify-this.net/#/?id=contact-and-support).  
-
----
-
-### Additional Docsify-This Learning Materials
-
-[Introduction to Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/otessa-2024/main/pages&homepage=introduction-to-docsify-this.md&edit-link=https://github.com/paulhibbitts/otessa-2024&sidebar=true&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Introduction%20to%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
-_Introductory, beginner to intermediate._  
-An introduction of Markdown publishing using the open source project Docsify⁠–⁠This.  
-
-[Self-Publishing with Docsify⁠–⁠This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/self-publishing-with-docsify-this/main/pages&homepage=introduction-to-self-publishing-with-docsify-this.md&edit-link=https://github.com/paulhibbitts/self-publishing-with-docsify-this&sidebar=true&maxLevel=4&edit-link-text=View%20on%20GitHub&edit-link-emoji=:file_folder:&browser-tab-title=Overview%20to%20Self-Publishing%20with%20Docsify-This&header-weight=600&dark-mode=true&coverpage=_coverpage.md)  
-_Intermediate, with a mix of basic and advanced aspects._  
-An overview to self-publishing with Markdown using the open source project Docsify⁠–⁠This, with a focus on digital literacy.
 
 ---
 
@@ -1105,7 +1113,9 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 ---
 
-### Privacy Policy Summary
+### 6. Support and Policies
+
+#### Privacy Policy Summary
 
 * This website is hosted by [GitHub Pages, which is GDPR compliant](https://github.blog/2018-04-19-updates-to-our-privacy-statement-and-terms-of-service/)
 * Only this web page (containing the Web Page Builder) uses [Google Analytics in a GDPR manner](https://support.google.com/analytics/answer/9019185?hl=en#IP&zippy=%2Cin-this-article)
@@ -1117,7 +1127,7 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 
 ---
 
-### Contact and Support
+#### Contact and Support
 
 - Follow [@hibbittsdesign@mastodon.social](https://mastodon.social/@hibbittsdesign) on Mastodon for updates, or subscribe via [RSS feed](https://mastodon.social/@hibbittsdesign.rss)
 - 👩🏻‍💻🧑🏻‍💻 Join the [Docsify Discord](https://discord.gg/docsify) and visit the **#Docsify-This** Channel
