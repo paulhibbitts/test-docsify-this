@@ -358,7 +358,8 @@ span #docsifythisurlfield {
   }
 
   #docsifythis p a,
-  #docsifythis li a {
+  #docsifythis li a,
+  #docsifythis h3 a {
     color: #1ba1ee;
   }
 
