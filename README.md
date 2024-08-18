@@ -34,7 +34,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 - [Custom Markdown CSS Classes](#custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
 
-### [4. Resources and Templates](#4-resources-and-templates)
+### [4. Additional Resources and Templates](#4-resources-and-templates)
 - [Markdown Syntax References](#markdown-syntax-references)
 - [Font Awesome Icons](#font-awesome-icons)
 - [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
@@ -467,9 +467,9 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 
 [Learn more about getting started with GitHub Desktop](https://docs.github.com/en/desktop/overview/getting-started-with-github-desktop).
 
-### 3. Customization and Advanced Usage
-
 ---
+
+### 3. Customization and Advanced Usage
 
 #### Supported Markdown CSS Classes
 
@@ -778,7 +778,7 @@ Markdown:
 
 ---
 
-### 4. Resources and Templates
+### 4. Additional Resources and Templates
 
 #### Markdown Syntax References
 
