@@ -34,7 +34,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 - [Custom Markdown CSS Classes](#custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
 
-### [4. Additional Resources and Templates](#4-additional-resources-and-templates-1)
+### [4. Resources and Additional Templates](#4-additional-resources-and-templates-1)
 - [Markdown Syntax References](#markdown-syntax-references)
 - [Font Awesome Icons](#font-awesome-icons)
 - [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
@@ -803,7 +803,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ---
 
-### 4. Additional Resources and Templates
+### 4. Resources and Additional Templates
 
 #### Markdown Syntax References
 
