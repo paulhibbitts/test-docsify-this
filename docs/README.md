@@ -334,7 +334,7 @@ For example, to display the Markdown file located at https://raw.githubuserconte
 <p style="word-wrap: break-word; margin-top: 1rem; padding: 6px; background-color: #666666; color: #F1F1F1; font-weight:normal; font-size: x-large; border-radius: 3px; font-family: monospace;">https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3
 </p>
 
-#### Page Appearance Base URL Parameters
+#### Page Appearance URL Parameters
 
 **Base URL Parameters (included in the standard Web Page Builder)**  
 
