@@ -247,7 +247,9 @@ What do you think about Docsify-This so far? Help shape its direction by sharing
 
 ---
 
-### What Problem Does Docsify-This Solve?
+### 1. Introduction and Overview
+
+#### What Problem Does Docsify-This Solve?
 
 Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. Collaborative authoring using GitHub or Codeberg is also supported.  
 
@@ -262,7 +264,7 @@ With Docsify-This you can:
 
 ---
 
-### Docsify-This Core Design Principles
+#### Docsify-This Core Design Principles
 
 * Frictionless Markdown publishing
 * Flexible content display handling
@@ -272,7 +274,7 @@ With Docsify-This you can:
 
 ---
 
-### How Docsify-This Works
+#### How Docsify-This Works
 
 Docsify-This is a customized [Docsify Open Publishing Starter Kit](https://github.com/hibbitts-design/docsify-open-publishing-starter-kit) site configured to render remote Markdown files via URL parameters in the following format (automatically created by the above Web Page Builder):
 
@@ -296,7 +298,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 ---
 
-### Read What People are Saying about Docsify-This
+#### Read What People are Saying about Docsify-This
 
 > I’m blown away just by the fact you put a (Markdown file) URL into Docsify-This and then you get a URL back for a web page… done! Take the URL and go. It is so seamless.  
 — J. Groom, [Reclaim Today Episode 39](https://today.reclaimhosting.com/podcast/039-docsify-this-with-paul-hibbitts/) (Co-founder, Reclaim Hosting)
