@@ -208,27 +208,38 @@ Page layout:
 
 ## All About Docsify-This
 
-* [What Problem Does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
-* [Docsify-This Core Design Principles](/?id=docsify-this-core-design-principles)
-* [How Docsify-This Works](/?id=how-docsify-this-works)
-* [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
-* [Example Content Workflows](/?id=example-content-workflows)
-* [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
-* [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
-* [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
-* [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
-* [Markdown Syntax References](/?id=markdown-syntax-references)
-* [Font Awesome Icons](/?id=font-awesome-icons)
-* [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
-* [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
-* [Tips and Techniques](/?id=tips-and-techniques)
-* [Editing Docsify-This Markdown Files on your Desktop](/?id=editing-docsify-this-markdown-files-on-your-desktop)
-* [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
-* [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
-* [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
-* [Troubleshooting](/?id=troubleshooting)
-* [Privacy Policy Summary](/?id=privacy-policy-summary)
-* [Contact and Support](/?id=contact-and-support)
+### [1. Introduction and Overview](/?id=_1-introduction-and-overview-1)
+- [What Problem Does Docsify-This Solve?](/?id=what-problem-does-docsify-this-solve)
+- [Docsify-This Core Design Principles](/?id=docsify-this-core-design-principles)
+- [How Docsify-This Works](/?id=how-docsify-this-works)
+- [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
+
+### [2. Publishing with Docsify-This](/?id=_2-publishing-with-docsify-this-1)
+- [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
+- [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
+- [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
+- [Example Content Workflows](/?id=example-content-workflows)
+- [Editing Docsify-This Markdown Files on your Desktop](/?id=editing-docsify-this-markdown-files-on-your-desktop)
+
+### [3. Customization and Advanced Usage](/?id=_3-customization-and-advanced-usage-1)
+- [Supported Markdown CSS Classes](/?id=supported-markdown-css-classes)
+- [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
+- [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
+
+### [4. Resources and Additional Templates](/?id=_4-resources-and-templates-1)
+- [Markdown Syntax References](/?id=markdown-syntax-references)
+- [Font Awesome Icons](/?id=font-awesome-icons)
+- [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
+- [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
+
+### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
+- [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
+- [Tips and Techniques](/?id=tips-and-techniques)
+- [Troubleshooting](/?id=troubleshooting)
+
+### [6. Support and Policies](/?id=_6-support-and-policies-1)
+- [Privacy Policy Summary](/?id=privacy-policy-summary)
+- [Contact and Support](/?id=contact-and-support)
 
 What do you think about Docsify-This so far? Help shape its direction by sharing your feedback in just a few minutes!
 
