@@ -318,6 +318,8 @@ https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubuse
 Set the maximum automatic table of contents header levels in Docsify custom Sidebar (i.e. file '_sidebar.md) with the optional **subMaxLevel** Docsify parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar-with-home.md&subMaxLevel=1
 
+---
+
 #### Embedding Docsify-This Pages into Other Platforms
 
 ##### Canvas LMS
