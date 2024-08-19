@@ -230,7 +230,7 @@ Page layout:
 - [Custom Markdown CSS Classes](/?id=custom-markdown-css-classes)
 - [Looking for Even More Customization and Control?](/?id=looking-for-even-more-customization-and-control)
 
-### [4. Resources and Additional Templates](/?id=_4-resources-and-templates-1)
+### [4. Resources and Additional Templates](/?id=_4-resources-and-additional-templates-1)
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
 - [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
