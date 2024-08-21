@@ -100,7 +100,7 @@ To directly render a file stored in a public GitHub repository when not using th
 
 The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex), [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) and [RunKit](https://runkit.com/) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.  
 
-Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
+Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
 
 ---
 
@@ -113,7 +113,7 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 — J. Maxwell (Director & Associate Professor in the Publishing Program at Simon Fraser University)
 
 > Best tool I’ve found in years - this is one of those creations that is just done right, all the way to the core.  
-— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University, United States)
+— D. Malawey (Multidisciplinary Lab Coordinator, Texas A&M University)
 
 > Docsify-This has significantly improved my WordPress themes by being able to seamlessly embed into the interface the same documentation I use in the GitHub repository. This in turn has lead me to write better docs! I've barely scratched the surface of what Docsify-This can do as a simple-to-use web publishing tool.  
 — A. Levine aka CogDog (Independent Educational Technologist)
@@ -124,14 +124,19 @@ Looking for an overall introduction to publishing with Docsify-This? Check out [
 
 The visual appearance of an online Markdown file displayed as a Web page by Docsify-This can be altered in two ways:
 
-- **Using the Web Page Builder:** This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
-- **Manually Adjusting URL Parameters:** You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
+- **Using the above Web Page Builder:** This point-and-click tool automatically generates the required Docsify-This URL with the necessary parameters
+- **Manually adjusting URL parameters:** You can also manually modify the appearance by changing or adding specific parameters to the Docsify-This URL
 
 For example, to display the Markdown file located at https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main/home.md with a Docsify sidebar including headings up to 3 levels, the Docsify-This URL is:  
 
 ```html
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3
 ```
+
+And here’s how the Docsify-This URL displays the same Markdown file:
+
+<img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/docsify-this-example-page.png" width="1152" height="819" class="responsive image-border" alt="Example Docsify-This URL displayed by Docsify-This"><br>
+<em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
 
 #### Page Appearance URL Parameters
 
