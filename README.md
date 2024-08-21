@@ -133,7 +133,7 @@ For example, to display the Markdown file located at https://raw.githubuserconte
 https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3
 ```
 
-And here’s how Docsify-This displays the same URL:
+And here’s how Docsify-This.net displays the same URL:
 
 <img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border" alt="Example Docsify-This URL displayed by Docsify-This"><br>
 <em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
