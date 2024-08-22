@@ -12,6 +12,7 @@
 **Improved:**
 * Updated ReadMe
 * Docsify-This Web app UI appearance updates
+* Default font Source Sans Pro replaced with the latest version (Source Sans 3)
 * Aria attributes for Sidebar toggle button and current page link (via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (via Docsify v5)
 * Support for keyboard shortcuts, e.g. \ for hide or show Sidebar (via Docsify v5)
