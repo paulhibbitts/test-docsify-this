@@ -6,12 +6,10 @@
 * Docsify v5 used for all Markdown file rendering
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify v5 core (default) theme
 * Skip-link to content button, accessible via tab key (via Docsify v5)
-* Added platform default font choice ('system-ui')
 * Mermaid diagram support now directly done via Marked.js + Mermaid.js (instead of an additional plugin)
 
 **Improved:**
 * Updated ReadMe
-* Docsify-This Web app UI appearance updates
 * Default font Source Sans Pro replaced with the latest version (Source Sans 3)
 * Aria attributes for Sidebar toggle button and current page link (via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (via Docsify v5)
@@ -26,8 +24,12 @@
 
 ## [1.9.10] - XX/XX/2024
 
+**New:**
+* Added platform default font choice ('system-ui')
+
 **Improved:**
 * Updated ReadMe
+* Docsify-This Web app UI appearance updates
 
 ## [1.9.9] - 08/19/2024
 
