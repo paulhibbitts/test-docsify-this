@@ -830,7 +830,6 @@
       mergeNavbar: false,
       externalLinkTarget: '_top',
       loadFooter: (getURLParameterByName('footer') || footer || false),
-      notFoundPage: '404.md',
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
       executeScript: true,
 
@@ -1032,6 +1031,16 @@
           hook.beforeEach(function (html) {
 
             if (window.$docsify['basePath']) {
+
+              // Basic error handling (i.e. 404 - File not found error)
+              const { file, response } = vm.route;
+              const { ok, status, statusText } = response;
+              if (ok === false) {
+                return [
+                  `# Oops!`,
+                  `A **${status}** error occurred while requesting the file **${vm.route.file}**`,
+                ].join('\n\n');
+              }
 
               if (/githubusercontent\.com/.test(vm.route.file)) {
                 url = vm.route.file
