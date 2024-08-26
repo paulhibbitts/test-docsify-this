@@ -143,7 +143,7 @@ span #docsifythisurlfield {
 }
 
 #docsifythisurlbuilder [type="radio"] {
-  position: absolute;
+  position: fixed;
   opacity: 0;
 }
 
