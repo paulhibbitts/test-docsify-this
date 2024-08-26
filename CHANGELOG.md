@@ -34,6 +34,9 @@
 * Docsify-This Web app UI appearance updates
 * Optimized images for smaller download sizes (with thanks and appreciation to TinyPNG)
 
+**Bugfix:**
+* Restore ability to link to specific sections (i.e. via id) in the Docsify-This Web page app
+
 ## [1.9.9] - 08/19/2024
 
 **New:**
