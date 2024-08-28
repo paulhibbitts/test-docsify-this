@@ -113,6 +113,9 @@ span #docsifythisurlfield {
   border: 1px solid #2302cd;
   border-radius: 1.4rem;
   -webkit-appearance: none;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
 }
 
 #docsifythisurlbuilder .docsifythisurlbuildersecondarybutton {
@@ -130,6 +133,9 @@ span #docsifythisurlfield {
   border: 1px solid #2302cd;
   border-radius: 1.4rem;
   -webkit-appearance: none;
+  white-space: normal;
+  overflow: visible;
+  word-wrap: break-word;
 }
 
 .docsifythisurlbuilderoptionsline {
