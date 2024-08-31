@@ -1465,7 +1465,13 @@
             const data = JSON.parse(textData);
 
             return Object.entries(data)
-                .map(([key, value]) => `${key}=${value}`)
+                .map(([key, value]) => {
+                    // If the value starts with '#', remove the leading '#'
+                    if (typeof value === 'string' && value.startsWith('#')) {
+                        value = value.substring(1);
+                    }
+                    return `${key}=${value}`;
+                })
                 .join('&');
         } catch (error) {
             console.error('Error fetching or processing JSON:', error);
