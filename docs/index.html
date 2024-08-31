@@ -1455,6 +1455,60 @@
       ]
     }
 
+    // Function to fetch JSON data and generate new URL parameters
+    async function loadParamsFromJson(jsonUrl) {
+        try {
+            console.log('Fetching JSON from:', jsonUrl);
+            const response = await fetch(jsonUrl);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const textData = await response.text(); // Fetch the JSON as text
+            console.log('Raw text data:', textData);
+
+            // Parse the JSON data
+            const data = JSON.parse(textData);
+            console.log('Parsed JSON data:', data);
+
+            // Manually construct the query string from the JSON data without encoding
+            let newParams = Object.entries(data)
+                .map(([key, value]) => `${key}=${value}`)
+                .join('&');
+
+            console.log('Generated URL Parameters:', newParams);
+
+            return newParams;
+        } catch (error) {
+            console.error('Error fetching or processing JSON:', error);
+            return '';
+        }
+    }
+
+    // Function to construct a new URL without the 'loadConfig' parameter and without decoding the base URL
+    function constructNewUrl(newParams) {
+        const currentUrl = window.location.href;
+        const baseUrl = currentUrl.split('?')[0]; // Keep the base URL as is, without decoding
+        const urlParams = new URLSearchParams(window.location.search);
+        urlParams.delete('loadConfig');  // Remove the 'loadConfig' parameter
+
+        // Construct the new URL without the 'loadConfig' parameter and with the new parameters
+        const newUrl = `${baseUrl}${urlParams.toString() ? '?' + urlParams.toString() : ''}${newParams ? (urlParams.toString() ? '&' : '?') + newParams : ''}`;
+        console.log('New URL:', newUrl);
+        return newUrl;
+    }
+
+    (async function() {
+        const configParam = getURLParameterByName('loadConfig', null, null, window.location.href, true);
+        if (configParam) {
+            const newParams = await loadParamsFromJson(configParam);
+            if (newParams) {
+                const newUrl = constructNewUrl(newParams);
+                // Update the URL in the browser bar and reload the page
+                window.location.href = newUrl;
+            }
+        }
+    })();
+
     <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
     <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
     if (getURLParameterByName('basePath')) {
