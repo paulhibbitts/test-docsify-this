@@ -909,6 +909,66 @@
 
             if (window.$docsify['basePath']) {
 
+              // Fetch JSON data and create URL parameters
+              async function loadParamsFromJson(jsonUrl) {
+                  try {
+                      const response = await fetch(jsonUrl);
+                      if (!response.ok) throw new Error('Network response was not ok');
+                      
+                      const textData = await response.text();
+                      const data = JSON.parse(textData);
+
+                      return Object.entries(data)
+                          .map(([key, value]) => {
+                              // If the value starts with '#', remove the leading '#'
+                              if (typeof value === 'string' && value.startsWith('#')) {
+                                  value = value.substring(1);
+                              }
+                              return `${key}=${value}`;
+                          })
+                          .join('&');
+                  } catch (error) {
+                      console.error('Error fetching or processing JSON:', error);
+                      return '';
+                  }
+              }
+
+              // Construct a new URL without 'loadConfig' and ensure 'basePath' is the first parameter
+              function constructNewUrl(newParams) {
+                  const baseUrl = window.location.href.split('?')[0];
+                  const urlParams = new URLSearchParams(window.location.search);
+
+                  // Extract the 'basePath' parameter value
+                  const basePath = urlParams.get('basePath');
+                  urlParams.delete('loadConfig');
+                  urlParams.delete('basePath'); // Temporarily remove 'basePath' to handle it manually
+
+                  // Start the new URL with the 'basePath' as the first parameter
+                  let newUrl = `${baseUrl}?basePath=${basePath}`;
+
+                  // Append the remaining parameters
+                  if (urlParams.toString()) {
+                      newUrl += `&${urlParams.toString()}`;
+                  }
+                  if (newParams) {
+                      newUrl += `&${newParams}`;
+                  }
+
+                  console.log('New URL:', newUrl);
+                  return newUrl;
+              }
+
+              // Main function to run the script
+              (async function() {
+                  const configParam = new URLSearchParams(window.location.search).get('loadConfig');
+                  if (configParam) {
+                      const newParams = await loadParamsFromJson(configParam);
+                      if (newParams) {
+                          window.location.href = constructNewUrl(newParams);
+                      }
+                  }
+              })();
+
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
 
@@ -1454,66 +1514,6 @@
 
       ]
     }
-
-    // Fetch JSON data and create URL parameters
-    async function loadParamsFromJson(jsonUrl) {
-        try {
-            const response = await fetch(jsonUrl);
-            if (!response.ok) throw new Error('Network response was not ok');
-            
-            const textData = await response.text();
-            const data = JSON.parse(textData);
-
-            return Object.entries(data)
-                .map(([key, value]) => {
-                    // If the value starts with '#', remove the leading '#'
-                    if (typeof value === 'string' && value.startsWith('#')) {
-                        value = value.substring(1);
-                    }
-                    return `${key}=${value}`;
-                })
-                .join('&');
-        } catch (error) {
-            console.error('Error fetching or processing JSON:', error);
-            return '';
-        }
-    }
-
-    // Construct a new URL without 'loadConfig' and ensure 'basePath' is the first parameter
-    function constructNewUrl(newParams) {
-        const baseUrl = window.location.href.split('?')[0];
-        const urlParams = new URLSearchParams(window.location.search);
-
-        // Extract the 'basePath' parameter value
-        const basePath = urlParams.get('basePath');
-        urlParams.delete('loadConfig');
-        urlParams.delete('basePath'); // Temporarily remove 'basePath' to handle it manually
-
-        // Start the new URL with the 'basePath' as the first parameter
-        let newUrl = `${baseUrl}?basePath=${basePath}`;
-
-        // Append the remaining parameters
-        if (urlParams.toString()) {
-            newUrl += `&${urlParams.toString()}`;
-        }
-        if (newParams) {
-            newUrl += `&${newParams}`;
-        }
-
-        console.log('New URL:', newUrl);
-        return newUrl;
-    }
-
-    // Main function to run the script
-    (async function() {
-        const configParam = new URLSearchParams(window.location.search).get('loadConfig');
-        if (configParam) {
-            const newParams = await loadParamsFromJson(configParam);
-            if (newParams) {
-                window.location.href = constructNewUrl(newParams);
-            }
-        }
-    })();
 
     <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
     <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
