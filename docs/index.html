@@ -1478,7 +1478,6 @@
         const baseUrl = window.location.href.split('?')[0];
         const urlParams = new URLSearchParams(window.location.search);
         urlParams.delete('loadConfig');
-
         return `${baseUrl}${urlParams.toString() ? '?' + urlParams.toString() : ''}${newParams ? '&' + newParams : ''}`;
     }
 
