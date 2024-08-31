@@ -903,31 +903,33 @@
 
           // Invoked one time when docsify script is initialized
           hook.init(function () {
-            
-            // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-            // Fetch JSON data and create URL parameters
-            async function loadParamsFromJson(jsonUrl) {
+
+            if (window.$docsify['basePath']) {
+
+              // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+              // Fetch JSON data and create URL parameters
+              async function loadParamsFromJson(jsonUrl) {
                 try {
-                    const response = await fetch(jsonUrl);
-                    if (!response.ok) throw new Error('Failed to fetch JSON data');
+                  const response = await fetch(jsonUrl);
+                  if (!response.ok) throw new Error('Failed to fetch JSON data');
 
-                    const data = await response.json();
+                  const data = await response.json();
 
-                    return Object.entries(data).map(([key, value]) => {
-                        // Remove leading '#' from value if present
-                        if (typeof value === 'string' && value.startsWith('#')) {
-                            value = value.slice(1);
-                        }
-                        return `${key}=${value}`;
-                    }).join('&');
+                  return Object.entries(data).map(([key, value]) => {
+                    // Remove leading '#' from value if present
+                    if (typeof value === 'string' && value.startsWith('#')) {
+                      value = value.slice(1);
+                    }
+                    return `${key}=${value}`;
+                  }).join('&');
                 } catch (error) {
-                    console.error('Error loading JSON:', error);
-                    return '';
+                  console.error('Error loading JSON:', error);
+                  return '';
                 }
-            }
+              }
 
-            // Construct a new URL with 'basePath' as the first parameter
-            function constructNewUrl(newParams) {
+              // Construct a new URL with 'basePath' as the first parameter
+              function constructNewUrl(newParams) {
                 const baseUrl = window.location.origin + window.location.pathname;
                 const urlParams = new URLSearchParams(window.location.search);
 
@@ -941,26 +943,28 @@
                 // Add remaining parameters
                 const existingParams = urlParams.toString();
                 if (existingParams) {
-                    newUrl = `${newUrl}&${existingParams}`;
+                  newUrl = `${newUrl}&${existingParams}`;
                 }
                 if (newParams) {
-                    newUrl = `${newUrl}&${newParams}`;
+                  newUrl = `${newUrl}&${newParams}`;
                 }
 
                 // console.log('New URL:', newUrl);
                 return newUrl;
-            }
+              }
 
-            // Main function to run the script
-            (async function() {
+              // Main function to run the script
+              (async function () {
                 const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
                 if (loadConfig) {
-                    const newParams = await loadParamsFromJson(loadConfig);
-                    if (newParams) {
-                        window.location.href = constructNewUrl(newParams);
-                    }
+                  const newParams = await loadParamsFromJson(loadConfig);
+                  if (newParams) {
+                    window.location.href = constructNewUrl(newParams);
+                  }
                 }
-            })();
+              })();
+
+              }
 
           });
 
