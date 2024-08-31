@@ -960,9 +960,9 @@
 
               // Main function to run the script
               (async function() {
-                  const configParam = new URLSearchParams(window.location.search).get('loadConfig');
-                  if (configParam) {
-                      const newParams = await loadParamsFromJson(configParam);
+                  const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
+                  if (loadConfig) {
+                      const newParams = await loadParamsFromJson(loadConfig);
                       if (newParams) {
                           window.location.href = constructNewUrl(newParams);
                       }
