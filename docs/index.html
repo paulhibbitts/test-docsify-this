@@ -904,6 +904,7 @@
           // Invoked one time when docsify script is initialized
           hook.init(function () {
             
+            // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
             // Fetch JSON data and create URL parameters
             async function loadParamsFromJson(jsonUrl) {
                 try {
@@ -934,14 +935,16 @@
                 urlParams.delete('loadConfig');
                 urlParams.delete('basePath'); // Remove 'basePath' temporarily
 
-                let newUrl = `${baseUrl}?basePath=${basePath}`; // Add 'basePath' first
+                // Start with 'basePath' as the first parameter
+                let newUrl = `${baseUrl}?basePath=${basePath}`;
 
                 // Add remaining parameters
-                if (urlParams.toString()) {
-                    newUrl += `&${urlParams.toString()}`;
+                const existingParams = urlParams.toString();
+                if (existingParams) {
+                    newUrl = `${newUrl}&${existingParams}`;
                 }
                 if (newParams) {
-                    newUrl += `&${newParams}`;
+                    newUrl = `${newUrl}&${newParams}`;
                 }
 
                 // console.log('New URL:', newUrl);
@@ -950,7 +953,7 @@
 
             // Main function to run the script
             (async function() {
-              const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
+                const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
                 if (loadConfig) {
                     const newParams = await loadParamsFromJson(loadConfig);
                     if (newParams) {
