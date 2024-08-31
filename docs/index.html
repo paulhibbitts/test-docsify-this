@@ -908,40 +908,35 @@
             async function loadParamsFromJson(jsonUrl) {
                 try {
                     const response = await fetch(jsonUrl);
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    
-                    const textData = await response.text();
-                    const data = JSON.parse(textData);
+                    if (!response.ok) throw new Error('Failed to fetch JSON data');
 
-                    return Object.entries(data)
-                        .map(([key, value]) => {
-                            // If the value starts with '#', remove the leading '#'
-                            if (typeof value === 'string' && value.startsWith('#')) {
-                                value = value.substring(1);
-                            }
-                            return `${key}=${value}`;
-                        })
-                        .join('&');
+                    const data = await response.json();
+
+                    return Object.entries(data).map(([key, value]) => {
+                        // Remove leading '#' from value if present
+                        if (typeof value === 'string' && value.startsWith('#')) {
+                            value = value.slice(1);
+                        }
+                        return `${key}=${value}`;
+                    }).join('&');
                 } catch (error) {
-                    console.error('Error fetching or processing JSON:', error);
+                    console.error('Error loading JSON:', error);
                     return '';
                 }
             }
 
-            // Construct a new URL without 'loadConfig' and ensure 'basePath' is the first parameter
+            // Construct a new URL with 'basePath' as the first parameter
             function constructNewUrl(newParams) {
-                const baseUrl = window.location.href.split('?')[0];
+                const baseUrl = window.location.origin + window.location.pathname;
                 const urlParams = new URLSearchParams(window.location.search);
 
-                // Extract the 'basePath' parameter value
                 const basePath = urlParams.get('basePath');
                 urlParams.delete('loadConfig');
-                urlParams.delete('basePath'); // Temporarily remove 'basePath' to handle it manually
+                urlParams.delete('basePath'); // Remove 'basePath' temporarily
 
-                // Start the new URL with the 'basePath' as the first parameter
-                let newUrl = `${baseUrl}?basePath=${basePath}`;
+                let newUrl = `${baseUrl}?basePath=${basePath}`; // Add 'basePath' first
 
-                // Append the remaining parameters
+                // Add remaining parameters
                 if (urlParams.toString()) {
                     newUrl += `&${urlParams.toString()}`;
                 }
@@ -955,7 +950,7 @@
 
             // Main function to run the script
             (async function() {
-                const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
+              const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
                 if (loadConfig) {
                     const newParams = await loadParamsFromJson(loadConfig);
                     if (newParams) {
@@ -963,7 +958,7 @@
                     }
                 }
             })();
-            
+
           });
 
           hook.afterEach(function (html, next) {
