@@ -1473,12 +1473,29 @@
         }
     }
 
-    // Construct a new URL without 'loadConfig'
+    // Construct a new URL without 'loadConfig' and ensure 'basePath' is the first parameter
     function constructNewUrl(newParams) {
         const baseUrl = window.location.href.split('?')[0];
         const urlParams = new URLSearchParams(window.location.search);
+
+        // Extract the 'basePath' parameter value
+        const basePath = urlParams.get('basePath');
         urlParams.delete('loadConfig');
-        return `${baseUrl}${urlParams.toString() ? '?' + urlParams.toString() : ''}${newParams ? '&' + newParams : ''}`;
+        urlParams.delete('basePath'); // Temporarily remove 'basePath' to handle it manually
+
+        // Start the new URL with the 'basePath' as the first parameter
+        let newUrl = `${baseUrl}?basePath=${basePath}`;
+
+        // Append the remaining parameters
+        if (urlParams.toString()) {
+            newUrl += `&${urlParams.toString()}`;
+        }
+        if (newParams) {
+            newUrl += `&${newParams}`;
+        }
+
+        console.log('New URL:', newUrl);
+        return newUrl;
     }
 
     // Main function to run the script
