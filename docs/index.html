@@ -944,14 +944,14 @@
                   const newUrl = constructNewUrl(newParams);
                   
                   // Check if the current URL is different from the new URL
-                  if (!urlsMatch(window.location.href, newUrl)) {
-                    window.location.replace(newUrl);  // Redirect to the new URL, causing a full reload but no history entry
-                  } else {
-                    // URL is already correct, no need to reload
+                    if (!urlsMatch(window.location.href, newUrl)) {
+                      window.location.href = newUrl;  // Redirect to the new URL, causing a full reload
+                    } else {
+                      // URL is already correct, no need to reload
+                    }
                   }
                 }
-              }
-            })();
+              })();
               
             }
             
