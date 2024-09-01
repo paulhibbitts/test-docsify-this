@@ -880,82 +880,80 @@
         function (hook, vm) {
 
           // Invoked one time when Docsify script is initialized
-        hook.init(function () {
+          hook.init(function () {
 
-          if (window.$docsify['basePath']) {
+            if (window.$docsify['basePath']) {
 
-            // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
-            // Fetch JSON data and create URL parameters
-            async function loadParamsFromJson(jsonUrl) {
-              try {
-                const response = await fetch(jsonUrl);
-                if (!response.ok) throw new Error('Failed to fetch JSON data');
+              // This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
+              // Fetch JSON data and create URL parameters
+              async function loadParamsFromJson(jsonUrl) {
+                try {
+                  const response = await fetch(jsonUrl);
+                  if (!response.ok) throw new Error('Failed to fetch JSON data');
 
-                const data = await response.json();
+                  const data = await response.json();
 
-                return Object.entries(data).map(([key, value]) => {
-                  // Remove leading '#' from value if present
-                  if (typeof value === 'string' && value.startsWith('#')) {
-                    value = value.slice(1);
-                  }
-                  return `${key}=${value}`;
-                }).join('&');
-              } catch (error) {
-                console.error('Error loading JSON:', error);
-                return '';
-              }
-            }
-
-            // Construct a new URL with 'basePath' as the first parameter
-            function constructNewUrl(newParams) {
-              const baseUrl = window.location.origin + window.location.pathname;
-              const urlParams = new URLSearchParams(window.location.search);
-
-              const basePath = urlParams.get('basePath');
-              urlParams.delete('loadConfig');
-              urlParams.delete('basePath'); // Remove 'basePath' temporarily
-
-              // Start with 'basePath' as the first parameter
-              let newUrl = `${baseUrl}?basePath=${basePath}`;
-
-              // Add remaining parameters
-              const existingParams = urlParams.toString();
-              if (existingParams) {
-                newUrl = `${newUrl}&${existingParams}`;
-              }
-              if (newParams) {
-                newUrl = `${newUrl}&${newParams}`;
+                  return Object.entries(data).map(([key, value]) => {
+                    // Remove leading '#' from value if present
+                    if (typeof value === 'string' && value.startsWith('#')) {
+                      value = value.slice(1);
+                    }
+                    return `${key}=${value}`;
+                  }).join('&');
+                } catch (error) {
+                  console.error('Error loading JSON:', error);
+                  return '';
+                }
               }
 
-              return newUrl;
-            }
+              // Construct a new URL with 'basePath' as the first parameter
+              function constructNewUrl(newParams) {
+                const baseUrl = window.location.origin + window.location.pathname;
+                const urlParams = new URLSearchParams(window.location.search);
 
-            // Compare current URL with constructed URL
-            function urlsMatch(url1, url2) {
-              return url1 === url2;
-            }
+                const basePath = urlParams.get('basePath');
+                urlParams.delete('loadConfig');
+                urlParams.delete('basePath'); // Remove 'basePath' temporarily
 
-            // Main function to run the script
-            (async function () {
-              const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
-              if (loadConfig) {
-                const newParams = await loadParamsFromJson(loadConfig);
+                // Start with 'basePath' as the first parameter
+                let newUrl = `${baseUrl}?basePath=${basePath}`;
+
+                // Add remaining parameters
+                const existingParams = urlParams.toString();
+                if (existingParams) {
+                  newUrl = `${newUrl}&${existingParams}`;
+                }
                 if (newParams) {
-                  const newUrl = constructNewUrl(newParams);
-                  
-                  // Check if the current URL is different from the new URL
-                    if (!urlsMatch(window.location.href, newUrl)) {
-                      window.location.href = newUrl;  // Redirect to the new URL, causing a full reload
-                    } else {
-                      // URL is already correct, no need to reload
+                  newUrl = `${newUrl}&${newParams}`;
+                }
+
+                return newUrl;
+              }
+
+              // Compare current URL with constructed URL
+              function urlsMatch(url1, url2) {
+                return url1 === url2;
+              }
+
+              // Main function to run the script
+              (async function () {
+                const loadConfig = getURLParameterByName('loadConfig', null, null, window.location.href, true);
+                if (loadConfig) {
+                  const newParams = await loadParamsFromJson(loadConfig);
+                  if (newParams) {
+                    const newUrl = constructNewUrl(newParams);
+                    
+                    // Check if the current URL is different from the new URL
+                      if (!urlsMatch(window.location.href, newUrl)) {
+                        window.location.href = newUrl;  // Redirect to the new URL, causing a full reload
+                      } else {
+                        // URL is already correct, no need to reload
+                      }
                     }
                   }
-                }
-              })();
-              
-            }
-            
-            console.log("hook.init");
+                })();
+                
+              }
 
           });
 
