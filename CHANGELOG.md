@@ -22,7 +22,7 @@
 **Breaking:**
 * With the use of Docsify v5 Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
-## [1.9.11] - XX/XX/2024
+## [1.9.11] - XX/XX/2024🏫
 
 **Improved:**
 * Updated ReadMe
@@ -32,7 +32,7 @@
 * Fixed Web Page Builder button lable handling on smaller screens 
 * Support file URL for 'Edit this Page' links as expected when Sidebar is displayed with single pages
 
-## [1.9.10] - 08/27/2024🏛️
+## [1.9.10] - 08/27/2024
 
 **New:**
 * Added platform default font choice ('system-ui')
