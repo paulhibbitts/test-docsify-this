@@ -29,11 +29,6 @@
 
 **Improved:**
 * Updated ReadMe
-
-## [1.9.11] - 09/03/2024🏫
-
-**Improved:**
-* Updated ReadMe
 * Removed RunKit support due to current unavailability of platform and unknown future
 
 **Bugfix:**
