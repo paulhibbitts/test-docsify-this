@@ -3,17 +3,17 @@
 ## [2.0.0] - XX/XX/2024
 
 **New:**
-* Docsify v5 used for all Markdown file rendering
-* Use of the new and improved theme system of Docsify v5
-* Use of Marked.js v14+ of Docsify v5
+* Docsify v5 is now used for all Markdown file rendering
+* Adoption of the new and improved theme system in Docsify v5
+* Integration of Marked.js v14+ from Docsify v5
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify v5 core (default) theme
-* Mermaid diagram support now directly done via Marked.js + Mermaid.js (instead of an additional plugin)
-* Skip-link to content button, accessible via tab key (now via Docsify v5)
+* Mermaid diagram support is now handled directly via Marked.js + Mermaid.js (no additional plugin needed)
 
 **Improved:**
 * Updated ReadMe
 * Default font Source Sans Pro replaced with the latest version (Source Sans 3)
 * Removed unneeded legacy fonts
+* Skip-link to content button, accessible via tab key (now via Docsify v5)
 * Aria attributes for Sidebar toggle button and current page link (now via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (now via Docsify v5)
 * Support for keyboard shortcuts, e.g. \ for hide or show Sidebar (now via Docsify v5)
@@ -23,7 +23,7 @@
 * Improved search results, which exclude Markdown formating syntax (via Docsify v5)
 
 **Breaking:**
-* With the use of Docsify v5 Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
+* With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
 ## [1.9.11] - 09/03/2024🏫
 
