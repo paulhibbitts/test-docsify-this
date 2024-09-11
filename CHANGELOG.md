@@ -4,6 +4,7 @@
 
 **New:**
 * Docsify v5 used for all Markdown file rendering
+* Use of the new and improved Theme system of Docsify v5
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify v5 core (default) theme
 * Skip-link to content button, accessible via tab key (now via Docsify v5)
 * Mermaid diagram support now directly done via Marked.js + Mermaid.js (instead of an additional plugin)
