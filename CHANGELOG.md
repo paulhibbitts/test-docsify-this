@@ -25,6 +25,12 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
+## [1.9.12] - XX/XX/2024
+
+**Improved:**
+* Updated ReadMe
+* Renamed 'Publish as a Standalone Web Page' button to 'Publish as a Web Page' and updated related docs
+
 ## [1.9.11] - 09/03/2024🏫
 
 **Improved:**
