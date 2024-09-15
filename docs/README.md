@@ -8,7 +8,7 @@
   </div>
 </div>
 
-<h1>Instantly Turn Online Markdown Files into web Pages</h1>
+<h1>Instantly Turn Online Markdown Files into Web Pages</h1>
 
 This open-source webapp, built with the magical documentation site generator [Docsify](https://docsify.js.org), serves as an entry point to [Markdown](https://en.wikipedia.org/wiki/Markdown) open publishing. It lets you quickly publish online Markdown files as web pages without setting up your own website. Try it out below!  
 
