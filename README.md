@@ -167,7 +167,7 @@ Learn more about each of the available Docsify-This URL parameters below, and di
 * [zoom-images](#zoom-images)
 
 ##### browser-tab-title
-Set a custom title on Browser tab for your web Pages with the optional **browser-tab-title** parameter, for example:  
+Set a custom title on Browser tab for your web pages with the optional **browser-tab-title** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&browser-tab-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ##### edit-link
@@ -183,15 +183,15 @@ Change the location of the "Edit this Page" link from the bottom of pages to be 
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
 ##### font-family
-Set a custom font for your web Pages with the optional **font-family** parameter, for example:  
+Set a custom font for your web pages with the optional **font-family** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New".  
 
 ##### font-size
-Set a custom font size for your web Pages with the optional **font-size** parameter, for example:  
+Set a custom font size for your web pages with the optional **font-size** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).  
 
 ##### header-weight
-Set a custom header font weight (default is 400 - regular) for your web Pages with the optional **header-weight** parameter, for example:  
+Set a custom header font weight (default is 400 - regular) for your web pages with the optional **header-weight** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600. 
 
 ##### hide-credits
@@ -203,7 +203,7 @@ Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.  
 
 ##### line-height
-Set a custom line height for your web Pages with the optional **line-height** parameter, for example:  
+Set a custom line height for your web pages with the optional **line-height** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&line-height=1.5. 
 
 ##### link-color
@@ -309,7 +309,7 @@ Display the name for the website in a Docsify custom Sidebar (i.e. file '_sideba
 https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&search=true&name=CPT-363  When this parameter is provided it will be automatically used as the Browser tab title as well.  
 
 ##### page-title
-Set a custom page title at the top of your web Pages with the optional **page-title** parameter, for example:  
+Set a custom page title at the top of your web pages with the optional **page-title** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/demo-grav-open-matter-course-hub/master/pages/04.resources&homepage=page.md&page-title=Resources Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page".  
 
 ##### pagination
