@@ -1194,7 +1194,7 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Markdown Examples and Templates
+#### 5. Additional Docsify-This Markdown Examples and Templates
 
 ##### Examples
 
