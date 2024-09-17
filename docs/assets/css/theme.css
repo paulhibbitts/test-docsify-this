@@ -1156,7 +1156,7 @@ span #docsifythisurlfield {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .docsifythisurlbuilderprimarybutton {
       width: 100%;
   }
@@ -1184,7 +1184,7 @@ span #docsifythisurlfield {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .docsifythisurlbuildersecondarybutton {
       width: 100%;
   }
