@@ -29,6 +29,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Added basic CORS (Cross-Origin Resource Sharing) error handling
 
 **Bugfix:**
 * Support expected passing of id parameter
