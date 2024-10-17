@@ -25,7 +25,7 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
-## [1.9.14] - XX/XX/2024
+## [1.9.14] - 10/17/2024
 
 **Improved:**
 * Updated CSS with word-wrap for code blocks
