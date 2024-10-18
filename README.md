@@ -7,14 +7,14 @@
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-## Instantly Turn Online Markdown Files into Web Pages
+<h2> Instantly Turn Online Markdown Files into Web Pages </h2>
 
 This open-source web app, built with the magical documentation site generator [Docsify](https://docsify.js.org), serves as an entry point to [Markdown](https://en.wikipedia.org/wiki/Markdown) open publishing. It lets you quickly publish online Markdown files as web pages without setting up your own website.  
 
 ![ Docsify-This](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v1-9-12-web-page-builder.png)
 _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
-## All About Docsify-This
+<h2> All About Docsify-This </h2>
 
 ### [1. Introduction and Overview](#1-introduction-and-overview-1)
 - [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
