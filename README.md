@@ -16,9 +16,9 @@ This open-source web app, built with the magical documentation site generator [D
 ![ Docsify-This](https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v1-9-12-web-page-builder.png)
 _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
-<div style="display: none;">
-
 ## All About Docsify-This
+
+<div style="display: none;">
 
 ### [1. Introduction and Overview](#1-introduction-and-overview) <!-- {docsify-ignore} -->
 - [What Problem Does Docsify-This Solve?](#what-problem-does-docsify-this-solve)
