@@ -18,7 +18,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-<h3><a href="#1-introduction-and-overview-1">1. Introduction and Overview</a></h3>
+<h3><a href="#1-introduction-and-overview">1. Introduction and Overview</a></h3>
 <ul>
   <li><a href="#what-problem-does-docsify-this-solve">What Problem Does Docsify-This Solve?</a></li>
   <li><a href="#docsify-this-core-design-principles">Docsify-This Core Design Principles</a></li>
