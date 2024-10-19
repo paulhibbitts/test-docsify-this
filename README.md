@@ -82,6 +82,8 @@ Have you tried out Docsify-This? Share your [feedback about Docsify-This](https:
 * [How Docsify-This Works](#how-docsify-this-works)
 * [Read What People are Saying about Docsify-This](#read-what-people-are-saying-about-docsify-this)
 
+---
+
 #### What Problem Does Docsify-This Solve?
 
 Docsify-This provides an easy way to display and share [Markdown](https://www.markdownguide.org/basic-syntax/) content in various contexts, with no website setup or build process required. By hosting your Markdown files on GitHub or Codeberg, you can also leverage version control (the ability to track and reverse changes) and enable collaboration.  
@@ -160,6 +162,8 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [Example Content Workflows](#example-content-workflows)
 * [Editing Docsify-This Markdown Files on your Desktop](#editing-docsify-this-markdown-files-on-your-desktop)
+
+---
 
 #### Overview
 
@@ -527,6 +531,12 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 
 ### 3. Customization and Advanced Usage
 
+* [Supported Markdown CSS Classes](#supported-markdown-css-classes)
+* [Custom Markdown CSS Classes](#custom-markdown-css-classes)
+* [Looking for Even More Customization and Control?](#looking-for-even-more-customization-and-control)
+
+---
+
 #### Supported Markdown CSS Classes
 
 * [accordion](#accordion)
@@ -861,6 +871,13 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ### 4. Resources and Additional Templates
 
+* [Markdown Syntax References](#markdown-syntax-references)
+* [Font Awesome Icons](#font-awesome-icons)
+* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+
+---
+
 #### Markdown Syntax References
 
 * [What Is Markdown, and How Do You Use It?](https://www.howtogeek.com/448323/what-is-markdown-and-how-do-you-use-it/)
@@ -956,6 +973,12 @@ An overview to self-publishing with Markdown using the open source project Docsi
 ---
 
 ### 5. Tips, Techniques, and Troubleshooting
+
+* [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
+* [Tips and Techniques](#tips-and-techniques)
+* [Troubleshooting](#troubleshooting)
+
+---
 
 #### Improving Markdown Previews in Text Editors
 
@@ -1139,6 +1162,11 @@ Docsify-This (as with Docsify itself) will only execute the first script include
 ---
 
 ### 6. Support and Policies
+
+* [Privacy Policy Summary](#privacy-policy-summary)
+* [Contact and Support](#contact-and-support)
+
+---
 
 #### Privacy Policy Summary
 
