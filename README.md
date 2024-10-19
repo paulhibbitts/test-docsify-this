@@ -71,7 +71,6 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
   <li><a href="#contact-and-support">Contact and Support</a></li>
 </ul>
 
-
 Have you tried out Docsify-This? Share your [feedback about Docsify-This](https://forms.gle/ViYu2ZdPmj6PeQ439)
 
 ---
