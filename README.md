@@ -978,6 +978,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 
 * [Improving Markdown Previews in Text Editors](#improving-markdown-previews-in-text-editors)
 * [Tips and Techniques](#tips-and-techniques)
+* [Troubleshooting](#troubleshooting)
 
 ---
 
