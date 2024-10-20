@@ -24,7 +24,7 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 ## All About Docsify-This
 
-<div style="display: none;">
+<div style="visibility: hidden;">
 
 <h3><a href="#1-introduction-and-overview-1">1. Introduction and Overview</a></h3>
 <ul>
