@@ -1017,7 +1017,7 @@
               }
 
               /* Support Browser-level image lazy loading of images */
-              if (getURLParameterByName(['lazy-load', 'lazyLoad']) === true) {
+              if (getURLParameterByName(['lazy-load-images', 'lazyLoadImages'], null, null, window.location.href, true) === 'true' ) {
                 htmlElement.innerHTML = htmlElement.innerHTML.replace(/<img(.*?)>/g, function (match, p1) {
                   if (p1.indexOf('loading=') === -1) {
                     return match.replace('>', ' loading="lazy">');
