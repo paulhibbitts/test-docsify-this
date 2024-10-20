@@ -9,7 +9,7 @@
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
 
-<div style="display: none;">
+<div style="visibility: hidden;">
 
 _See what Docsify-This can do right now by [checking out this ReadMe file displayed with Docsify-This](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&homepage=README.md&edit-link=https://github.com/hibbitts-design/docsify-this/blob/main/README.md&sidebar=true&browser-tab-title=Docsify-This%20ReadMe&edit-link-text=Suggest%20an%20Edit%20on%20GitHub&maxLevel=3&header-weight=600&zoom-images=true&dark-mode=true)!_
 
