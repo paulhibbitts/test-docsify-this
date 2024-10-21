@@ -1016,7 +1016,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 * [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
 * [Display of HedgeDocs Files](#display-of-hedgedocs-files)
 * [Changing the Default Values of the Web Page Builder](#changing-the-default-values-of-the-web-page-builde)
-* [Use of Camel Case (e.g. camelCase) Format](#use-of-camel-case-eg-camelcase-format)
+* [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
 * [Use of New Web Editor GitHub.dev])(#use-of-new-web-editor-githubdev)
 
 ##### Making a Raw Markdown File Available Online
@@ -1136,7 +1136,7 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-##### Use of Camel Case (e.g. camelCase) Format
+##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
 You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
 
 ##### Use of New Web Editor GitHub.dev
