@@ -36,7 +36,8 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <h3><a href="#2-publishing-with-docsify-this-1">2. Publishing with Docsify-This</a></h3>
 <ul>
-  <li><a href="#page-appearance-url-parameters">Page Appearance URL Parameters</a></li>
+  <li><a href="#page-appearance-url-parameters-basic">Page Appearance URL Parameters (Basic)</a></li>
+  <li><a href="#page-appearance-url-parameters-supplemental">Page Appearance URL Parameters (Supplemental)</a></li>
   <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
   <li><a href="#ready-to-use-docsify-this-markdown-templates">Ready-to-Use Docsify-This Markdown Templates</a></li>
   <li><a href="#example-content-workflows">Example Content Workflows</a></li>
@@ -159,7 +160,8 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 ### 2. Publishing with Docsify-This
 
 * [Overview](#overview)
-* [Page Appearance URL Parameters](#page-appearance-url-parameters)
+* [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
+* [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [Example Content Workflows](#example-content-workflows)
