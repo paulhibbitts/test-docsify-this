@@ -1222,6 +1222,9 @@ The following style prefixes are available with Docsify-This:
 
 #### Additional Docsify-This Markdown Files
 
+* [Examples](/?id=examples)
+* [Templates](/?id=templates)
+
 ##### Examples
 
 [GitHub Training Manual Working Locally with Git Markdown file](https://github.com/githubtraining/training-manual/blob/main/docs/06_working_locally.md), displayed by Docsify-This as a:  
