@@ -1004,17 +1004,17 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 #### Tips and Techniques
 
-* [Making a Raw Markdown File Available Online]
-* [Matching Fonts with Your Destination Platform Content]
-* [Providing a Page Table of Contents within a Smaller Area]
-* [Including Code Blocks]
-* [Including External Markdown Content]
-* [Use of WikiLinks]
-* [Display of AsciiDoc Files (file extension .adoc)]
-* [Display of HedgeDocs Files]
-* [Changing the Default Values of the Web Page Builder]
-* [Use of Camel Case (e.g. camelCase) Format]
-* [Use of New Web Editor GitHub.dev]
+* [Making a Raw Markdown File Available Online](#making-a-raw-markdown-file-available-online)
+* [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
+* [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
+* [Including Code Blocks](#including-code-blocks)
+* [Including External Markdown Content](#including-external-markdown-content)
+* [Use of WikiLinks](#use-of-wikilinks)
+* [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
+* [Display of HedgeDocs Files](#display-of-hedgedocs-files)
+* [Changing the Default Values of the Web Page Builder](#changing-the-default-values-of-the-web-page-builde)
+* [Use of Camel Case (e.g. camelCase) Format](#use-of-camel-case-eg-camelcase-format)
+* [Use of New Web Editor GitHub.dev])(#use-of-new-web-editor-githubdev)
 
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
@@ -1143,14 +1143,14 @@ To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' li
 
 #### Troubleshooting
 
-* ['404' File not Found message is Displayed]()
-* ['Edit this Page' Links not Working]()
-* [Updated Markdown file not Displayed in the Browser]()
-* [Embedded Image not Displayed]()
-* [Embedded iFrame not Displayed]()
-* [Docsify Sidebar is not Displaying Header Levels]()
-* [Search Results do not Return all Expected Matches]()
-* [Multiple Embedded Scripts are not Working as Expected]()
+* ['404' File not Found message is Displayed](#404-file-not-found-message-is-displayed)
+* ['Edit this Page' Links not Working](#edit-this-page-links-not-working)
+* [Updated Markdown file not Displayed in the Browser](#updated-markdown-file-not-displayed-in-the-browser)
+* [Embedded Image not Displayed](#embedded-image-not-displayed)
+* [Embedded iFrame not Displayed](#embedded-iframe-not-displayed)
+* [Docsify Sidebar is not Displaying Header Levels](#docsify-sidebar-is-not-displaying-header-levels)
+* [Search Results do not Return all Expected Matches](#search-results-do-not-return-all-expected-matches)
+* [Multiple Embedded Scripts are not Working as Expected](#multiple-embedded-scripts-are-not-working-as-expected)
 
 ##### '404' File not Found message is Displayed
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).  
