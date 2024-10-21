@@ -1321,7 +1321,7 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 * [Display of HedgeDocs Files](#display-of-hedgedocs-files)
 * [Changing the Default Values of the Web Page Builder](#changing-the-default-values-of-the-web-page-builde)
 * [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
-* [Use of New Web Editor GitHub.dev])(#use-of-new-web-editor-githubdev)
+* [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
 
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
