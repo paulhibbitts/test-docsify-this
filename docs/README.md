@@ -231,7 +231,7 @@ Page layout:
 ### [4. Resources and Additional Templates](/?id=_4-resources-and-additional-templates-1)
 - [Markdown Syntax References](/?id=markdown-syntax-references)
 - [Font Awesome Icons](/?id=font-awesome-icons)
-- [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
+- [Additional Docsify-This Markdown Files](/?id=additional-docsify-this-markdown-files)
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
@@ -1190,7 +1190,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 * [Markdown Syntax References](/?id=markdown-syntax-references)
 * [Font Awesome Icons](/?id=font-awesome-icons)
-* [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Markdown Files](/?id=additional-docsify-this-markdown-files)
 * [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ---
@@ -1220,7 +1220,7 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Markdown Examples and Templates
+#### Additional Docsify-This Markdown Files
 
 ##### Examples
 
