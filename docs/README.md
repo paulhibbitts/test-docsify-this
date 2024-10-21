@@ -1188,10 +1188,10 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 ### 4. Resources and Additional Templates
 
-* [Markdown Syntax References](#markdown-syntax-references)
-* [Font Awesome Icons](#font-awesome-icons)
-* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
-* [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
+* [Markdown Syntax References](/?id=markdown-syntax-references)
+* [Font Awesome Icons](/?id=font-awesome-icons)
+* [Additional Docsify-This Markdown Examples and Templates](/?id=additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ---
 
@@ -1311,17 +1311,17 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 #### Tips and Techniques
 
-* [Making a Raw Markdown File Available Online](#making-a-raw-markdown-file-available-online)
-* [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
-* [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
-* [Including Code Blocks](#including-code-blocks)
-* [Including External Markdown Content](#including-external-markdown-content)
-* [Use of WikiLinks](#use-of-wikilinks)
-* [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
-* [Display of HedgeDocs Files](#display-of-hedgedocs-files)
-* [Changing the Default Values of the Web Page Builder](#changing-the-default-values-of-the-web-page-builde)
-* [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
-* [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
+* [Making a Raw Markdown File Available Online](/?id=making-a-raw-markdown-file-available-online)
+* [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
+* [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
+* [Including Code Blocks](/?id=including-code-blocks)
+* [Including External Markdown Content](/?id=including-external-markdown-content)
+* [Use of WikiLinks](/?id=use-of-wikilinks)
+* [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
+* [Display of HedgeDocs Files](/?id=display-of-hedgedocs-files)
+* [Changing the Default Values of the Web Page Builder](/?id=changing-the-default-values-of-the-web-page-builde)
+* [Use of Camel Case (e.g. camelCase) Format for URL parameters](/?id=use-of-camel-case-eg-camelcase-format-for-url-parameters)
+* [Use of New Web Editor GitHub.dev](/?id=use-of-new-web-editor-githubdev)
 
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
@@ -1450,14 +1450,14 @@ To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' li
 
 #### Troubleshooting
 
-* ['404' File not Found message is Displayed](#404-file-not-found-message-is-displayed)
-* ['Edit this Page' Links not Working](#edit-this-page-links-not-working)
-* [Updated Markdown file not Displayed in the Browser](#updated-markdown-file-not-displayed-in-the-browser)
-* [Embedded Image not Displayed](#embedded-image-not-displayed)
-* [Embedded iFrame not Displayed](#embedded-iframe-not-displayed)
-* [Docsify Sidebar is not Displaying Header Levels](#docsify-sidebar-is-not-displaying-header-levels)
-* [Search Results do not Return all Expected Matches](#search-results-do-not-return-all-expected-matches)
-* [Multiple Embedded Scripts are not Working as Expected](#multiple-embedded-scripts-are-not-working-as-expected)
+* ['404' File not Found message is Displayed](/?id=404-file-not-found-message-is-displayed)
+* ['Edit this Page' Links not Working](/?id=edit-this-page-links-not-working)
+* [Updated Markdown file not Displayed in the Browser](/?id=updated-markdown-file-not-displayed-in-the-browser)
+* [Embedded Image not Displayed](/?id=embedded-image-not-displayed)
+* [Embedded iFrame not Displayed](/?id=embedded-iframe-not-displayed)
+* [Docsify Sidebar is not Displaying Header Levels](/?id=docsify-sidebar-is-not-displaying-header-levels)
+* [Search Results do not Return all Expected Matches](/?id=search-results-do-not-return-all-expected-matches)
+* [Multiple Embedded Scripts are not Working as Expected](/?id=multiple-embedded-scripts-are-not-working-as-expected)
 
 ##### '404' File not Found message is Displayed
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).  
