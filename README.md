@@ -159,7 +159,8 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 ### 2. Publishing with Docsify-This
 
 * [Overview](#overview)
-* [Page Appearance URL Parameters](#page-appearance-url-parameters)
+* [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
+* [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [Example Content Workflows](#example-content-workflows)
