@@ -1004,6 +1004,18 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 #### Tips and Techniques
 
+* [Making a Raw Markdown File Available Online]
+* [Matching Fonts with Your Destination Platform Content]
+* [Providing a Page Table of Contents within a Smaller Area]
+* [Including Code Blocks]
+* [Including External Markdown Content]
+* [Use of WikiLinks]
+* [Display of AsciiDoc Files (file extension .adoc)]
+* [Display of HedgeDocs Files]
+* [Changing the Default Values of the Web Page Builder]
+* [Use of Camel Case (e.g. camelCase) Format]
+* [Use of New Web Editor GitHub.dev]
+
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
@@ -1080,7 +1092,7 @@ Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
-##### Changing the Default Values of the Docsify-This Web Page Builder
+##### Changing the Default Values of the Web Page Builder
 You can configure the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing Docsify-This online sessions/workshops as well as Docsify-This users helping each other out. In addition to Docsify-This URL parameters, the following Web Page Builder URL parameters are available:  
 
 ###### url-field
@@ -1130,6 +1142,15 @@ To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' li
 ---
 
 #### Troubleshooting
+
+* ['404' File not Found message is Displayed]()
+* ['Edit this Page' Links not Working]()
+* [Updated Markdown file not Displayed in the Browser]()
+* [Embedded Image not Displayed]()
+* [Embedded iFrame not Displayed]()
+* [Docsify Sidebar is not Displaying Header Levels]()
+* [Search Results do not Return all Expected Matches]()
+* [Multiple Embedded Scripts are not Working as Expected]()
 
 ##### '404' File not Found message is Displayed
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).  
