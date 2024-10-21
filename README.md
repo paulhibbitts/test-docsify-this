@@ -883,7 +883,7 @@ Looking for some help with getting a Docsify custom-This instance up and running
 
 * [Markdown Syntax References](#markdown-syntax-references)
 * [Font Awesome Icons](#font-awesome-icons)
-* [Additional Docsify-This Markdown Examples and Templates](#additional-docsify-this-markdown-examples-and-templates)
+* [Additional Docsify-This Markdown Files](#additional-docsify-this-markdown-files)
 * [Additional Docsify-This Learning Materials](#additional-docsify-this-learning-materials)
 
 ---
@@ -913,7 +913,7 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Materials
+#### Additional Docsify-This Markdown Files
 
 * [Examples](#examples)
 * [Templates](#templates)
