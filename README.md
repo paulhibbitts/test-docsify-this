@@ -11,7 +11,7 @@
 
 ## Instantly Turn Online Markdown Files into Web Pages
 
-This open-source web app, powered by [Docsify](https://docsify.js.org), lets you publish [Markdown](https://en.wikipedia.org/wiki/Markdown) files as web pages without setting up your own website.
+This open-source web app, powered by [Docsify](https://docsify.js.org), lets you publish [Markdown](https://en.wikipedia.org/wiki/Markdown) files as web pages without setting up your own website.  
 
 <div style="display: none;">
 
