@@ -219,7 +219,8 @@ Page layout:
 - [Read What People are Saying about Docsify-This](/?id=read-what-people-are-saying-about-docsify-this)
 
 ### [2. Publishing with Docsify-This](/?id=_2-publishing-with-docsify-this-1)
-- [Page Appearance URL Parameters](/?id=page-appearance-url-parameters)
+- [Page Appearance URL Parameters (Basic)](/?id=page-appearance-url-parameters-basic)
+- [Page Appearance URL Parameters (Supplemental)](/?id=page-appearance-url-parameters-supplemental)
 - [Embedding Docsify-This Pages into Other Platforms](/?id=embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](/?id=ready-to-use-docsify-this-markdown-templates)
 - [Example Content Workflows](/?id=example-content-workflows)
@@ -337,7 +338,8 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 ### 2. Publishing with Docsify-This
 
 * [Overview](#overview)
-* [Page Appearance URL Parameters](#page-appearance-url-parameters)
+* [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
+* [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
 * [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 * [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 * [Example Content Workflows](#example-content-workflows)
