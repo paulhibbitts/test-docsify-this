@@ -913,7 +913,7 @@ The following style prefixes are available with Docsify-This:
 
 ---
 
-#### Additional Docsify-This Markdown Examples and Templates
+#### Additional Docsify-This Materials
 
 * [Examples](#examples)
 * [Templates](#templates)
