@@ -1311,6 +1311,18 @@ https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
 
 #### Tips and Techniques
 
+* [Making a Raw Markdown File Available Online](#making-a-raw-markdown-file-available-online)
+* [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
+* [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
+* [Including Code Blocks](#including-code-blocks)
+* [Including External Markdown Content](#including-external-markdown-content)
+* [Use of WikiLinks](#use-of-wikilinks)
+* [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
+* [Display of HedgeDocs Files](#display-of-hedgedocs-files)
+* [Changing the Default Values of the Web Page Builder](#changing-the-default-values-of-the-web-page-builde)
+* [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
+* [Use of New Web Editor GitHub.dev])(#use-of-new-web-editor-githubdev)
+
 ##### Making a Raw Markdown File Available Online
 There are multiple ways to get a raw Markdown file available online, here are three options to help you get started:
 
@@ -1387,7 +1399,7 @@ Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org
 
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
-##### Changing the Default Values of the Docsify-This Web Page Builder
+##### Changing the Default Values of the Web Page Builder
 You can configure the default values of the Docsify-This Web Page Builder via URL parameters - this is especially useful when doing Docsify-This online sessions/workshops as well as Docsify-This users helping each other out. In addition to Docsify-This URL parameters, the following Web Page Builder URL parameters are available:  
 
 ###### url-field
@@ -1428,7 +1440,7 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-##### Use of Camel Case (e.g. camelCase) Format
+##### Use of Camel Case (e.g. camelCase) Format for URL Parameters
 You can use [camel case](https://en.wikipedia.org/wiki/Camel_case) instead of hyphens for the names of Docsify-This URL parameters if prefered. For example, https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&toc-headings=h2,h3&edit-link=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md and https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&toc=true&tocHeadings=h2,h3&editLink=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md are equilivent.
 
 ##### Use of New Web Editor GitHub.dev
@@ -1437,6 +1449,15 @@ To use the new GitHub.dev web editor (currently in Beta) for 'Edit this Page' li
 ---
 
 #### Troubleshooting
+
+* ['404' File not Found message is Displayed](#404-file-not-found-message-is-displayed)
+* ['Edit this Page' Links not Working](#edit-this-page-links-not-working)
+* [Updated Markdown file not Displayed in the Browser](#updated-markdown-file-not-displayed-in-the-browser)
+* [Embedded Image not Displayed](#embedded-image-not-displayed)
+* [Embedded iFrame not Displayed](#embedded-iframe-not-displayed)
+* [Docsify Sidebar is not Displaying Header Levels](#docsify-sidebar-is-not-displaying-header-levels)
+* [Search Results do not Return all Expected Matches](#search-results-do-not-return-all-expected-matches)
+* [Multiple Embedded Scripts are not Working as Expected](#multiple-embedded-scripts-are-not-working-as-expected)
 
 ##### '404' File not Found message is Displayed
 The provided **basePath** parameter and/or optional **homepage** parameter may not be correct, verify that these items lead to accessible content. This error message may also result from a [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) policy, which restricts resources on a web page to be requested from another domain. If possible, relocate files to a domain that supports cross-origin requests or alternatively if the domain in question is under your control explore re-configuring [CORS related settings](https://www.w3.org/wiki/CORS_Enabled). You can confirm the cause of the 404 message by viewing the errors displayed in the [Browser Javascript Console](https://balsamiq.com/support/faqs/browserconsole/).  
