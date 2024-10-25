@@ -27,7 +27,7 @@ If you are interested in contributing a new feature vs. fixing a bug or improvin
 7. **Submit a Pull Request**  
    Once your branch has been pushed, submit a pull request with a clear explanation of what you’ve done.
 
-## Guidelines
+## Contribution Guidelines
 
 - **Code Style**  
    Follow the existing coding and formatting style as appropriate.
