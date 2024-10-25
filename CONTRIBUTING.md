@@ -30,10 +30,10 @@ If you are interested in contributing a new features vs. fixing a bug or improvi
 ## Guidelines
 
 - **Code Style**  
-   Follow the existing coding and formatting style.
+   Follow the existing coding and formatting style when appropriate.
 - **Commit Messages**  
-   Keep them descriptive and concise.
+   Please keep them descriptive and concise.
 - **Documentation**  
-   If you’re adding new features, make sure to include or update relevant documentation.
+   If you’re adding new features, please make sure to include or update relevant documentation.
 
 Thank you for helping make Docsify-This even better!
