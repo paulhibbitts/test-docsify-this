@@ -1,6 +1,6 @@
 # Contributing to Docsify-This
 
-Thank you for your interest in contributing to the Docsify-This project! Your input helps keep the project innovative and useful for everyone. Here’s how to get involved:
+Thank you for your interest in contributing to the Docsify-This project! Your input can help make the project better for everyone. Here’s how to get involved:
 
 ## How to Contribute
 
