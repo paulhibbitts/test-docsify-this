@@ -858,6 +858,8 @@ Markdown:
 
 Docsify-This was designed to provide a quick and easy way to display one or more remotely hosted Markdown files. For further customization of the rendering of remote files and to ensure consistent availability, even in the unlikely event that the public Docsify-This.net instance is not available in the future, you can host your own instance of Docsify-This.
 
+Docsify-This was designed to quickly and easily display one or more remotely hosted Markdown files. For greater customization of file rendering and to ensure consistent availability, even if the public Docsify-This.net instance was no longer available, you can host your own instance of Docsify-This.  
+
 ##### GitHub Hosting
 
 To host your own instance on GitHub Pages, which also supports the option of a custom domain, fork or clone the [Docsify-This](https://github.com/hibbitts-design/docsify-this) repository to your GitHub account. Then, enable GitHub Pages using the `/docs` folder.  
