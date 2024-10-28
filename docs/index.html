@@ -1510,8 +1510,8 @@
       ]
     }
 
-    <!-- Credit to Beau Shaw for dymamic remote docsify technique -->
-    <!-- To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main -->
+    // Credit to Beau Shaw for dymamic remote docsify technique
+    // To render a Markdown file named ** README.md ** (the expected default name) the URL would be https://hibbitts-design.github.io/test-docsify-project-docs/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main
     if (getURLParameterByName('basePath')) {
       const params = new URLSearchParams(window.location.search);
       params.forEach((value, key) => {
@@ -1751,14 +1751,14 @@
   <script>
     if (getURLParameterByName(['search-box', 'searchbox'], null, null, window.location.href, true) === 'true') {
 
-      <!-- Docsify Search Plugin current release -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>'); -->
+      // Docsify Search Plugin current release
+      // document.write('<script src="assets/vendor/docsify/plugins/custom/search.min.js"><\/script>');
 
-      <!-- Docsify Search Plugin "develop" branch custom preview files -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>'); -->
+      // Docsify Search Plugin "develop" branch custom preview files
+      // document.write('<script src="assets/vendor/docsify/plugins/preview/custom/search.js"><\/script>');
 
-      <!-- Docsify Search Plugin "develop" branch preview files -->
-      <!-- document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>'); -->
+      // Docsify Search Plugin "develop" branch preview files
+      // document.write('<script src="assets/vendor/docsify/plugins/search.min.js"><\/script>');
       document.write('<script src="https://docsify-preview-juzf1izx1-docsifyjs.vercel.app/dist/plugins/search.min.js"><\/script>');
     }
   </script>
