@@ -25,6 +25,8 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
+## [1.9.15] - XX/XX/2024
+
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
 * Updated ReadMe
