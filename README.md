@@ -856,8 +856,6 @@ Markdown:
 
 #### Looking for Even More Customization and Control?
 
-Docsify-This was designed to provide a quick and easy way to display one or more remotely hosted Markdown files. For further customization of the rendering of remote files and to ensure consistent availability, even in the unlikely event that the public Docsify-This.net instance is not available in the future, you can host your own instance of Docsify-This.
-
 Docsify-This was designed to quickly and easily display one or more remotely hosted Markdown files. For greater customization of file rendering and to ensure consistent availability, even if the public Docsify-This.net instance was no longer available, you can host your own instance of Docsify-This.  
 
 ##### GitHub Instance
@@ -1041,7 +1039,7 @@ There are multiple ways to get a raw Markdown file available online, here are th
 1. Create a gist with your Markdown file at https://gist.github.com
 2. Enter a filename ending with `.md` (e.g. `myfile.md`)
 3. Choose **Create public gist** and tap on that button
-4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 **Personal or Organizational Website:**  
 1. Obtain login information for your server
