@@ -109,7 +109,7 @@ Page layout:
     <option value="400">Normal (400)</option>
     <option disabled="disabled">----</option>
     <option value="600">Semi Bold (600)</option>
-    <option value="800">Bold (800)</option>
+    <option value="700">Bold (700)</option>
   </select>
 </div></div>
 
