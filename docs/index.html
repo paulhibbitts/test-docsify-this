@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
 
 <head>
   <meta charset="UTF-8">
@@ -48,12 +48,6 @@
 
   <link rel="stylesheet" href="assets/css/docsify-this.css">
   <link rel="stylesheet" href="assets/css/custom.css">
-
-  <!-- Font Awesome Stylesheets -->
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/brands.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/regular.css" />
-  <link rel="stylesheet" href="assets/vendor/fontawesome/css/solid.css" />
 
   <!-- Coloris -->
   <link rel="stylesheet" href="assets/vendor/coloris/coloris.min.css" />
@@ -1616,9 +1610,8 @@
 
   <!-- Font Awesome Plugin -->
   <!-- <script src="https://unpkg.com/docsify-fontawesome/dist/docsify-fontawesome.min.js"></script> -->
-  <!-- <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script> -->
-  <script src="assets/vendor/docsify/plugins/custom/docsify-fontawesome.min.js"></script>
-
+  <script src="assets/vendor/docsify/plugins/docsify-fontawesome.min.js"></script>
+  
   <!-- Footnotes Plugin -->
   <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
@@ -1643,6 +1636,37 @@
     if (getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
       document.write('<link rel="stylesheet" type="text/css" href="assets/css/toc-narrow.css" />');
       document.write('<script src="assets/vendor/docsify/plugins/custom/toc.js"><\/script>');
+    }
+  </script>
+
+  <!-- Font Awesome Plugin -->
+  <script>
+    console.log("Yes");
+    if (getURLParameterByName('svg-icons', null, null, window.location.href, true) === 'true' && getURLParameterByName('basePath')) {
+
+      // Create the link element
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = "https://unpkg.com/@fortawesome/fontawesome-free/css/svg-with-js.css";
+      // Append the link to the head
+      document.head.appendChild(link);
+      
+      // Create the script element
+      const script = document.createElement("script");
+      script.src = "https://unpkg.com/@fortawesome/fontawesome-free/js/all.js";
+      script.setAttribute("data-auto-replace-svg", "nest");
+      script.async = true; // Optional: load asynchronously
+      // Append the script to the body
+      document.body.appendChild(script);
+
+      } else {
+
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/fontawesome.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/brands.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/regular.css" />');
+      document.write('<link rel="stylesheet" type="text/css" href="assets/vendor/fontawesome/css/solid.css" />');
+      
     }
   </script>
 
