@@ -8,7 +8,6 @@
 * Integration of Marked.js v14+ from Docsify v5
 * Support of optional docsify-theme parameter (`docsify-theme=true`) to use new Docsify v5 core (default) theme
 * Mermaid diagram support is now handled directly via Marked.js + Mermaid.js (no additional plugin needed)
-* Support for SVG icons via optional `svg-icons` URL parameter (with thanks and appreciation to @erickjx for the updated Font Awesome plugin)
 
 **Improved:**
 * Updated ReadMe
@@ -27,6 +26,9 @@
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
 ## [1.9.15] - XX/XX/2024
+
+**New:**
+* Support for SVG icons via optional `svg-icons` URL parameter (with thanks and appreciation to @erickjx for the updated Font Awesome plugin)
 
 **Improved:**
 * Use of window.matchMedia.addListener replaced with window.matchMedia.addEventListener
