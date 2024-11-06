@@ -553,6 +553,7 @@ body {
 }
 
 .markdown-section pre {
+  margin-top: 1rem;
   overflow: auto;
 }
 
