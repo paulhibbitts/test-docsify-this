@@ -1295,10 +1295,10 @@
               return; // Exit if basePath is present
             }
 
-            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('='))) {
+            if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('?='))) {
               var markdownFileURL = '';
               // Check if the URL has only a '?' followed by content, without any '='
-              if (window.location.href.includes('?') && !window.location.href.includes('=')) {
+              if (window.location.href.includes('?') && !window.location.href.includes('?=')) {
                 // Extract everything after the '?' as the URL
                 markdownFileURL = window.location.href.split('?')[1] || '';
               } else {
