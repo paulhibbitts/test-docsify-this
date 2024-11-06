@@ -1116,7 +1116,7 @@ Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org
 You can support HedgeDoc URLs (e.g. https://demo.hedgedoc.org/ip4SRxZYTEKa6JHr62XTiA) in the Web Page Builder of your own instance of Docsify-This by locating the line `var hedgedocInstances = '';` within the `index.html` file and include your HedgeDoc instances separated by commas, for example `var hedgedocInstances = 'demo.hedgedoc.org';`. Try out a demo instance of Docsify-This with support for demo.hedgedoc.org files at https://hibbitts-design.github.io/hedgedoc-docsify-this.  
 
 ##### Preloading Web Page Builder Custom Settings
-You can preload custom default settings in the Docsify-This Web Page Builder using URL parameters. This ability is especially helpful for Docsify-This online sessions, workshops, or when users collaborate and assist one another. Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:  
+_You can even include **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads with your settings, simply press the Return key — no need to even move your mouse — to see Docsify-This present the Markdown file as a web page!  For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
 
 ###### url-field
 ```html
@@ -1131,7 +1131,7 @@ https://docsify-this.net/?url-field=empty
 
 ```
 
-_You can even include **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
+_You can even include **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads with your settings, just press the Return key — no need to move your mouse — to see Docsify-This present the Markdown file as a webpage!  For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
 
 ###### edit-link-checkbox
 ```html
