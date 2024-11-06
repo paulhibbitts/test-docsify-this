@@ -1297,17 +1297,21 @@
 
             if (getURLParameterByName(['url-field', 'urlField']) || (window.location.href.includes('?') && !window.location.href.includes('?='))) {
               var markdownFileURL = '';
+              
               // Check if the URL has only a '?' followed by content, without any '='
               if (window.location.href.includes('?') && !window.location.href.includes('?=')) {
-                // Extract everything after the '?' as the URL
-                markdownFileURL = window.location.href.split('?')[1] || '';
+                // Extract everything after the '?' as the URL, up to the first '&'
+                markdownFileURL = window.location.href.split('?')[1].split('&')[0] || '';
               } else {
                 // Use getURLParameterByName for 'url-field' or 'urlField'
                 markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
               }
-              if (markdownFileURL == "empty") {
+              
+              // If URL was 'empty', reset it to an empty string
+              if (markdownFileURL === "empty") {
                 markdownFileURL = '';
               }
+              
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
