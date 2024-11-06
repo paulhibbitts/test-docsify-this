@@ -1312,6 +1312,9 @@
                 markdownFileURL = '';
               }
               
+              // Remove any '#' and everything after it from the markdownFileURL
+              markdownFileURL = markdownFileURL.split('#')[0];
+
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
