@@ -237,9 +237,10 @@ Page layout:
 - [Additional Docsify-This Learning Materials](/?id=additional-docsify-this-learning-materials)
 
 ### [5. Tips, Techniques, and Troubleshooting](/?id=_5-tips-techniques-and-troubleshooting-1)
+- [Making a Raw Markdown File Available Online](/?id=making-a-raw-markdown-file-available-online)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
 - [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
-- [Tips and Techniques](/?id=tips-and-techniques)
+- [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 - [Troubleshooting](/?id=troubleshooting)
 
 ### [6. Support and Policies](/?id=_6-support-and-policies-1)
