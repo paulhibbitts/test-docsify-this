@@ -1034,12 +1034,12 @@ There are multiple ways to get a raw Markdown file available online, here are th
 1. Create a gist with your Markdown file at https://gist.github.com
 2. Enter a filename ending with `.md` (e.g. `myfile.md`)
 3. Choose **Create public gist** and tap on that button
-4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+4. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 **Personal or Organizational Website:**  
 1. Obtain login information for your server
 2. Upload the Markdown file to your server
-3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
+3. Navigate to the location of that file, view the contents in your Browser, and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 ---
 
@@ -1108,7 +1108,6 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 * [Use of WikiLinks](#use-of-wikilinks)
 * [Display of AsciiDoc Files (file extension .adoc)](#display-of-asciidoc-files-file-extension-adoc)
 * [Display of HedgeDocs Files](#display-of-hedgedocs-files)
-* [Loading Web Page Builder Custom Settings](#loading-web-page-builder-custom-settings)
 * [Use of Camel Case (e.g. camelCase) Format for URL parameters](#use-of-camel-case-eg-camelcase-format-for-url-parameters)
 * [Use of New Web Editor GitHub.dev](#use-of-new-web-editor-githubdev)
 
