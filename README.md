@@ -1044,7 +1044,6 @@ There are multiple ways to get a raw Markdown file available online, here are th
 ---
 
 #### Improving Markdown Previews in Text Editors
-
 Some text editors, such as [Microsoft Visual Studio](https://code.visualstudio.com/) (including the online [GitHub.dev web editor](https://docs.github.com/en/codespaces/the-githubdev-web-based-editor)), have the ability to link your own CSS so Markdown previews are more visually accurate. If your editor supports this ability, the below CSS files can be used.
 
 Docsify-This (based on the Docsify Open Publishing Starter Kit) CSS:  
