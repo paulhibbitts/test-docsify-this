@@ -3,8 +3,8 @@
 
 # Docsify-This
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/paulhibbitts/test-docsify-this)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-this/blob/main/LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/paulhibbitts/test-docsify-this)
 <a href="https://discord.gg/docsify">
     <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
