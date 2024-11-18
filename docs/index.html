@@ -1299,11 +1299,12 @@
               var markdownFileURL = '';
               
               // Check if the URL has only a '?' followed by content, without any '='
-              if (window.location.href.includes('?')) {
+              if (!(getURLParameterByName(['url-field', 'urlField']))) {
                 // Extract everything after the '?' as the URL, up to the first '&'
                 markdownFileURL = window.location.href.split('?')[1].split('&')[0] || '';
               } else {
                 // Use getURLParameterByName for 'url-field' or 'urlField'
+                console.log("url-field");
                 markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
               }
               
