@@ -1581,6 +1581,7 @@
             }
 
             linkhovercolordarkmode = getURLParameterByName(['link-color-hover-dark-mode', 'linkColorHoverDarkMode'], null, null, window.location.href, true);
+            console.log(linkhovercolordarkmode);
             if (linkhovercolordarkmode) {
               linkhovercolordarkmode = '#' + linkhovercolordarkmode;
               document.getElementById('linkhovercolordarkmode').value = linkhovercolordarkmode;
