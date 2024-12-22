@@ -58,6 +58,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
+<div class="clearfix">
+
 <div class='stackedlabeldropdown'>
   <label for="fontfamily">Page font family:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
@@ -83,7 +85,9 @@ Page layout:
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
     <option value="1.125">18px (1.125rem)</option>
     <option disabled="disabled">----</option>
+    <option value=".75">12px (0.75rem)</option>
     <option value=".875">14px (.875rem)</option>
+    <option value=".925">15px (.925rem)</option>
     <option value="1">16px (1rem)</option>
     <option value="1.25">20px (1.25rem)</option>
   </select>
@@ -99,11 +103,14 @@ Page layout:
     <option value="1.5">1.5</option>
     <option value="1.6">1.6</option>
   </select>
+  <div style="clear: both;"></div>
 </div>
 
-<div class="docsifythisurlbuilderoptionsline">Page link color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+</div>
 
-<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
+<div class="docsifythisurlbuilderoptionsline" style='margin-top:0px;'>Page link color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
+
+<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-top:-12px;margin-bottom:6px;border-radius: 7px;border-color: #8e8f9d'>
   <label for="headerweight">Page headers font weight:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
@@ -150,6 +157,48 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Title added to the top of page as H1 level header:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Title added to the top of page as H1 level header" type="text" maxlength="80" value="" id="pageTitle" name="pageTitle"></div>
 
+<h3>Link Styles and Behavior</h3>
+
+<hr>
+
+<div class="clearfix">
+
+<div class='stackedlabeldropdown'>
+  <label for="linktextdecoration">Link text decoration:</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="linktextdecoration" name="linktextdecoration" style="width: 60px;">
+    <option value="underline">Underline</option>
+    <option disabled="disabled">----</option>
+    <option value="none">None</option>
+  </select></div>
+
+</div>
+
+<div class="clearfix">
+
+  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
+
+  <div class='stackedlabeldropdown' style="margin-top:-7px;">
+  <label for="linkhovertextdecoration">Link hover text decoration:</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="linkhovertextdecoration" name="linkhovertextdecoration" style="width: 60px;">
+    <option value="none">None</option>
+    <option disabled="disabled">----</option>
+    <option value="underline">Underline</option>
+  </select></div>
+
+</div>
+
+<div class="clearfix">
+
+<div class='stackedlabeldropdown' style="margin-top:-11px;">
+<label for="externalLinkTarget">External link target:</label>
+<select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="externalLinkTarget" name="externalLinkTarget" style="width: 60px;">
+  <option value="_top">Same window or tab</option>
+  <option disabled="disabled">----</option>
+  <option value="_blank">New window or tab</option>
+</select></div>
+
+</div>
+
 <h3>Docsify Custom Files</h3>
 
 <hr>
@@ -194,6 +243,8 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableDarkmode" unchecked><label for="enableDarkmode">Enable automatic switching of light/dark theme based on system OS-level preference</label></div>
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Page link color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link color for dark theme" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolordarkmode', 'linkcolordarkmodepreview');" data-coloris><span id="linkcolordarkmodepreview"></span></div>
+
+<div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Page link hover color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link hover color for dark theme" type="text" maxlength="7" size="8" value="" id="linkhovercolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolordarkmode', 'linkhovercolordarkmodepreview');" data-coloris><span id="linkhovercolordarkmodepreview"></span></div>
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-left: 10px;">Coverpage color for dark theme:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Coverpage color for dark theme" type="text" maxlength="7" size="8" value="#262D30" id="coverpagecolordarkmode" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('coverpagecolordarkmode', 'coverpagecolordarkmodepreview');" data-coloris><span id="coverpagecolordarkmodepreview"></span></div>
 
@@ -463,6 +514,10 @@ The following additional URL parameters are available for use in Docsify-This UR
 * [dark-mode](/?id=dark-mode)
 * [edit-link-emoji](/?id=edit-link-emoji)
 * [link-color-dark-mode](/?id=link-color-dark-mode)
+* [link-color-hover](/?id=link-color-hover)
+* [link-color-hover-dark-mode](/?id=link-color-hover-dark-mode)
+* [link-text-decoration](/?id=link-text-decoration)
+* [link-text-decoration-hover](/?id=link-text-decoration-hover)
 * [loadFavicon](/?id=loadFavicon)
 * [loadFooter](/?id=loadFooter)
 * [loadNavbar](/?id=loadNavbar)
@@ -474,6 +529,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 * [pagination](/?id=pagination)
 * [searchbox](/?id=searchbox)
 * [subMaxLevel](/?id=subMaxLevel)
+* [svg-icons](/?id=svg-icons)
 
 ##### coverpage
 Display a [Docsify custom coverpage](https://docsify.js.org/#/configuration?id=coverpage) with the optional **coverpage** parameter, for example:  
@@ -502,6 +558,22 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### link-color-dark-mode
 Set a custom color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-dark-mode** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-color-dark-mode=FF9E9E.
+
+##### link-color-hover
+Set a custom hover color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-hover-color** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-hover-color=CC0000.
+
+##### link-color-hover-dark-mode
+Set a custom hover color for all links in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-hover-color-dark-mode** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000&dark-mode=true&link-hover-color-dark-mode=FF9E9E.
+
+##### link-text-decoration
+Set a custom text decoration for all links, with the optional **link-text-decoration** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-text-decoration=none
+
+##### link-text-decoration-hover
+Set a custom hover text decoration for all links, with the optional **link-text-decoration-hover** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-text-decoration-hover=underline
 
 ##### loadFavicon
 You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
