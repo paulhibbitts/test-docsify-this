@@ -1369,7 +1369,8 @@
               document.getElementById('docsifythisurlfield').value = markdownFileURL;
             }
 
-            // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
+            // console.log(getURLParameterByName(['browser-tab-title','
+            // ily', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
 
             if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true) {
               // console.log("show more!");
@@ -1415,9 +1416,7 @@
 
             fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
-              const urlParams = new URLSearchParams(window.location.search);
-              const fontFamily = urlParams.get('font-family');
-              const plusToSpace = fontFamily.replace(/\+/g, '%20');
+              const plusToSpace = fontfamily.replace(/\+/g, '%20');
               const decodedString = decodeURIComponent(plusToSpace);
               document.getElementById('fontfamily').value = encodeURI(decodedString);
             }
