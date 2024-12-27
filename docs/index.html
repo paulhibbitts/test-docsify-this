@@ -1416,7 +1416,7 @@
             fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
             if (fontfamily) {
               console.log(fontfamily);
-              document.getElementById('fontfamily').value = encodeURI(fontfamily);
+              document.getElementById('fontfamily').value = decodeURI(fontfamily);
             }
 
             fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
