@@ -1,6 +1,6 @@
 # Changelog
 
-## [2.0.0] - XX/XX/2024
+## [2.0.0] - XX/XX/2025
 
 **New:**
 * Docsify v5 is now used for all Markdown file rendering
@@ -25,7 +25,7 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
-## [1.10.0] - XX/XX/XXXX
+## [1.10.0] - 01/01/2025🎉
 
 **New:**
 * Additional link appearance and behavior Web Page Builder options and URL parameters (`link-color-hover`,  `link-color-hover-dark-mode`, `link-text-decoration`, `link-text-decoration-hover` and `external-link-target`)
@@ -34,7 +34,7 @@
 **Improved:**
 * Updated ReadMe
 * Updated example custom CSS for Moodle LMS
-* Updated to latest verified Docsify preview build (including Marked 4.2.12)
+* Updated to latest stable Docsify 4.x preview build (including Marked 4.2.12)
 * Minor Web Page Builder UI updates
 * Font size can now be set in px as well as rem units via URL parameter
 
