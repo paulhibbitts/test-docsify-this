@@ -1213,7 +1213,7 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
   - [Canvas Config](http://load-canvas.docsify-this.net)
   - [Moodle Config](http://load-moodle.docsify-this.net)
   - [Sakai Config](http://load-sakai.docsify-this.net)
-  
+
 ---
 
 #### Troubleshooting
