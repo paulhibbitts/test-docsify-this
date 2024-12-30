@@ -225,7 +225,6 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
@@ -233,7 +232,7 @@ body {
   padding-top: .25rem;
 }
 
-.active:is(:is(.app-nav-merged,.sidebar-nav) li)>a {
+.active.is(.app-nav-merged, .sidebar-nav) li > a {
   font-weight: bold;
 }
 
@@ -283,13 +282,6 @@ body {
   gap: 0.15em;
 }
 
-.markdown-section figure,
-.markdown-section p,
-.markdown-section ol,
-.markdown-section ul {
-  margin: 0.75em 0em 0.5em 0em !important;
-}
-
 .markdown-section {
   margin-top: 1.4rem;
 }
@@ -335,7 +327,10 @@ body {
   text-decoration: none !important;
   border: 1px solid var(--link-color);
   border-radius: 0.25rem !important;
-  outline: transparent !important;
+}
+
+.markdown-section .button[class="button"]:focus {
+  outline: 2px solid var(--link-color);
 }
 
 .markdown-section a.button[class="button"] {
@@ -815,7 +810,15 @@ body {
 .markdown-section p,
 .markdown-section ol,
 .markdown-section ul {
-  margin: 1em 0em 0.5em 0em;
+  margin: 0.75em 0em 0.5em 0em;
+}
+
+.markdown-section li:not(:last-child) {
+  margin-bottom: .08em;
+}
+
+:is(.markdown-section ol,.markdown-section ul) :is(.markdown-section ol,.markdown-section ul) {
+  margin-top: .08em!important;
 }
 
 .markdown-section hr {
@@ -1005,3 +1008,15 @@ body .docsify-pagination-container {
     line-height: 1.15rem;
   }
 }
+
+/* Dark mode custom colours for use with Core Dark Theme (uncomment to use) */
+@media (prefers-color-scheme: dark) {
+  /*
+    :root {
+  
+      --theme-color: #0685D7!important;
+      --link-color: #0685D7!important;
+  
+    }
+  }
+  */
