@@ -21,9 +21,15 @@
 * Top navbar can now accept focus (now via Docsify v5)
 * Keyboard scrolling is supported within code blocks (via Docsify v5)
 * Improved search results, which exclude Markdown formatting syntax (via Docsify v5)
+* Leveraged updated theme system handling of rendered code blocks
 
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
+
+## [1.10.1] - XX/XX/XXXX
+
+**Improved:**
+* Updated ReadMe
 
 ## [1.10.0] - 01/01/2025🎉
 
