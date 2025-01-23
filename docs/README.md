@@ -1557,7 +1557,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Matching Fonts with Your Destination Platform Content](/?id=matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](/?id=providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](/?id=including-code-blocks)
-- [Displaying Images in a Grid](/?id=including-code-blocks)
+- [Displaying Images in a Grid](/?id=displaying-images-in-a-grid)
 - [Including External Markdown Content](/?id=including-external-markdown-content)
 - [Use of WikiLinks](/?id=use-of-wikilinks)
 - [Display of AsciiDoc Files (file extension .adoc)](/?id=display-of-asciidoc-files-file-extension-adoc)
