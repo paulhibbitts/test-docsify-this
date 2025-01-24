@@ -1,3 +1,5 @@
+// Original source plugin 'img-grid' by @glimAR
+// This code was developed with the assistance of ChatGPT, an AI language model by OpenAI
 (function () {
     const DEFAULT_CONFIG = {
         columns: 3,
