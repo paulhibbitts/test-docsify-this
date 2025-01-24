@@ -1615,10 +1615,10 @@ function test() {
 - ![image3](path/to/image3.jpg)
 ```
 
-Change the number of columns with the optional **image-grid-columns** parameter, for example:  
+Change the number of columns with the optional **image-grid-columns** parameter (default is 3), for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4
 
-To accomodate a larger number of columns, the optional **image-grid-minWidth** parameter can be decreased, for example:  
+To accomodate a larger number of columns, the optional **image-grid-minWidth** parameter (default is 200px) can be decreased, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=6&image-grid-minWidth=100
 
 ##### Including External Markdown Content
