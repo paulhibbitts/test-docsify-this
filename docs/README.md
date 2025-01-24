@@ -1605,6 +1605,10 @@ function test() {
 - ![image3](path/to/image3.jpg)
 ```
 
+Change the number of columns with the optional **image-grid-columns** parameter, for example:  
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/paulhibbitts/Markdown-File-Tests/main&homepage=image-grid.md&image-grid-columns=4
+
+
 
 ##### Including External Markdown Content
 
