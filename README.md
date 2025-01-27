@@ -61,9 +61,9 @@ _Figure 1. [Docsify-This.net](https://docsify-this.net) Web Page Builder._
 
 <h3><a href="#5-tips-techniques-and-troubleshooting-1">5. Tips, Techniques, and Troubleshooting</a></h3>
 <ul>
+  <li><a href="#content-display-tips-and-techniques">Content Display Tips and Techniques</a></li>
   <li><a href="#making-a-markdown-file-available-online">Making a Markdown File Available Online</a></li>
   <li><a href="#improving-markdown-previews-in-text-editors">Improving Markdown Previews in Text Editors</a></li>
-  <li><a href="#content-display-tips-and-techniques">Content Display Tips and Techniques</a></li>
   <li><a href="#loading-web-page-builder-custom-settings">Loading Web Page Builder Custom Settings</a></li>
   <li><a href="#troubleshooting">Troubleshooting</a></li>
 </ul>
