@@ -161,11 +161,18 @@
         const { str, config } = getAndRemoveConfig(token.text);
 
         const text = getAndRemoveDocisfyIgnoreConfig(token.text).content;
-
+    
+        // Extract title from Markdown link
+        const match = text.match(/\[(.*?)\]\((.*?)\)/); 
+        let title = match ? match[1] : text;
+    
+        // Sanitize title for ID
+        title = title.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); // Replace non-alphanumeric with hyphens
+    
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
         } else {
-          slug = router.toURL(path, { id: slugify(escapeHtml(text)) });
+          slug = router.toURL(path, { id: slugify(title) }); 
         }
 
         if (str) {
