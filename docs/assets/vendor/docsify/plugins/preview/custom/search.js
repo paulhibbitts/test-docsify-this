@@ -326,6 +326,10 @@
           handlePostTitle = postTitle
             ? escapeHtml(ignoreDiacriticalMarks(postTitle))
             : postTitle;
+          
+          // Remove Markdown link syntax
+          handlePostTitle = handlePostTitle.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1').trim();
+
           handlePostContent = postContent
             ? escapeHtml(ignoreDiacriticalMarks(postContent))
             : postContent;
