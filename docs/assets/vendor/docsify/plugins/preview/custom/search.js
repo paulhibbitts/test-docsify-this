@@ -167,7 +167,7 @@
         let title = match ? match[1] : text;
     
         // Sanitize title for ID
-        title = title.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase(); // Replace non-alphanumeric with hyphens
+        title = title.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase();
     
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
