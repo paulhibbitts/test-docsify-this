@@ -173,14 +173,12 @@
 
         // Remove any forward slashes from the ID
         const sanitizedId = title.replace(/\//g, ''); // Replace all '/' with empty string
-        // console.log(sanitizedId);
 
         if (config.id) {
           slug = router.toURL(path, { id: slugify(config.id) });
           console.log(config.id);
         } else {
           slug = router.toURL(path, { id: slugify(title) });
-          // console.log(title);
         }
 
         if (str) {
