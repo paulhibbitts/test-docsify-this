@@ -610,7 +610,7 @@
   text-align: center;
 }
 
-.app-name.hide, .sidebar-nav.hide {
+.sidebar-nav.hide {
   display: none;
 }`;
 
@@ -647,7 +647,6 @@
     const $clearBtn = Docsify.dom.find($search, '.clear-button');
     const $sidebarNav = Docsify.dom.find('.sidebar-nav');
     const $status = Docsify.dom.find('div.search .results-status');
-    const $appName = Docsify.dom.find('.app-name');
 
     if (!value) {
       $panel.classList.remove('show');
@@ -657,7 +656,6 @@
 
       if (options.hideOtherSidebarContent) {
         $sidebarNav && $sidebarNav.classList.remove('hide');
-        $appName && $appName.classList.remove('hide');
       }
 
       return;
