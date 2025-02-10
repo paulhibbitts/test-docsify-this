@@ -438,7 +438,6 @@
         result.content = result.content.replace(new RegExp(`^<strong>${sharedPageTitle}</strong><br>`, 'i'), '');
       });
     }
-    
 
     return matchingResults.sort((r1, r2) => r2.score - r1.score);
   }
@@ -485,15 +484,15 @@
       // If expired, clear the existing database
       localStorage.removeItem(expireKey);
       localStorage.removeItem(indexKey);
-      console.log('Existing database expired and deleted.');
+      // console.log('Existing database expired and deleted.');
     } else {
-      console.log('Database is not expired, but it will still be reset.');
+      // console.log('Database is not expired, but it will still be reset.');
     }
 
     // Clear the database every load regardless of expiration
     localStorage.removeItem(expireKey);
     localStorage.removeItem(indexKey);
-    console.log('Existing database cleared.');
+    // console.log('Existing database cleared.');
 
     // Initialize INDEXS to an empty object
     INDEXS = {};
