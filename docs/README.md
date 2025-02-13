@@ -486,7 +486,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### font-size
 
 Set a custom font size for your web pages with the optional **font-size** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=1. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note the font size is set in [REM units](https://www.freecodecamp.org/news/what-is-rem-in-css/).
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16px. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
 
 ##### header-weight
 
