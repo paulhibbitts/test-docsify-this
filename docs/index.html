@@ -1175,6 +1175,7 @@
               editlinktextparm = getURLParameterByName(['edit-link-text', 'editLinkText'], null, null, window.location.href, true);
               if (!(editlinktextparm === false) && !(window.$docsify['basePath'] === undefined)) {
                 editlinktextparm = editlinktextparm.replaceAll('%20', ' ');
+                editlinktextparm = editlinktextparm.replaceAll('_', ' ');
                 editLinkText = editlinktextparm;
               }
 
@@ -1272,11 +1273,15 @@
 
               // Browser title logic optimized by early return pattern
               let browserTabTitle = getURLParameterByName(['browser-tab-title', 'browserTabTitle'], null, null, window.location.href, true);
+              if (browserTabTitle) {
+                browserTabTitle = browserTabTitle.replaceAll('_', ' ');
+              }
               document.title = browserTabTitle || appName || 'Published by Docsify-This';
 
               // Update page title if parameter present
               let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
               if (pageTitle) {
+                pageTitle = pageTitle.replaceAll('_', ' ');
                 let newh1 = document.createElement("h1");
                 newh1.innerHTML = pageTitle;
                 let divToMoveTo = document.getElementById("main");
@@ -1890,6 +1895,8 @@
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
         // console.log(fontfamily);
+        fontfamily = fontfamily.replaceAll('_', ' ');
+        console.log(fontfamily);
         document.documentElement.style.setProperty('--base-font-family', fontfamily);
       } else {
         document.documentElement.style.setProperty('--base-font-family', '"Source Sans Pro","Helvetica Neue",sans-serif');
