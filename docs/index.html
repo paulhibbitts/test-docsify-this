@@ -1276,7 +1276,7 @@
               if (browserTabTitle) {
                 browserTabTitle = browserTabTitle.replaceAll('_', ' ');
               }
-              document.title = browserTabTitle || appName.replaceAll('_', ' ') || 'Published by Docsify-This';
+              document.title = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : 'Published by Docsify-This');
 
               // Update page title if parameter present
               let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
