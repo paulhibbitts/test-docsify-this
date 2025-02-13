@@ -1245,12 +1245,14 @@
               const appName = getURLParameterByName('name', null, null, window.location.href, true);
               if (appName) {
                 const appNameLink = document.querySelector('a.app-name-link');
-                appNameLink.setAttribute('href', '#/');
-                if (!docBody.querySelector('style.sidebar-app-name')) {
-                  let editCSS = document.createElement('style')
-                  editCSS.innerHTML = ".sidebar .app-name {display: block;}";
-                  editCSS.classList.add('sidebar-app-name');
-                  docBody.appendChild(editCSS);
+                if (appNameLink) {
+                  appNameLink.setAttribute('href', '#/');
+                  if (!docBody.querySelector('style.sidebar-app-name')) {
+                    let editCSS = document.createElement('style')
+                    editCSS.innerHTML = ".sidebar .app-name {display: block;}";
+                    editCSS.classList.add('sidebar-app-name');
+                    docBody.appendChild(editCSS);
+                  }
                 }
               }
 
