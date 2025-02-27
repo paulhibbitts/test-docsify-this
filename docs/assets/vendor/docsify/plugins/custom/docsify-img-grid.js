@@ -26,6 +26,9 @@
             wrapper.style.cssText = `
                 flex: 0 1 calc(${100 / columns}% - 10px);
                 min-width: ${minWidth}px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             `;
 
             const parentAnchor = img.closest('a');
