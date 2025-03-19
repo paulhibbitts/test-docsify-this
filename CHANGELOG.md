@@ -14,7 +14,6 @@
 * Default font Source Sans Pro replaced with the latest version (Source Sans 3)
 * Removed unneeded legacy fonts
 * Overall refined visual layout of various Markdown elements
-* Minor Web Page Builder UI updates
 * Skip-link to content button, accessible via tab key (now via Docsify v5)
 * Aria attributes for Sidebar toggle button and current page link (now via Docsify v5)
 * Assigning proper roles and aria attributes to various site elements (now via Docsify v5)
@@ -34,6 +33,7 @@
 
 **Improved:**
 * Updated ReadMe
+* Minor Web Page Builder UI updates
 
 ## [1.10.2] - 03/04/2025
 
