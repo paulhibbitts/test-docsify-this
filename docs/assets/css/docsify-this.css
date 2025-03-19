@@ -427,7 +427,6 @@ span #docsifythisurlfield {
   }
 
   #docsifythisurlbuilder {
-    background: #36416d; /* Original color #1f4b66 */
     background: linear-gradient(to right, #2b2e3b, #1f1f2f);
     border: 1px solid #3b3f4a;
   } 
