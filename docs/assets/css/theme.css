@@ -237,7 +237,6 @@ iframe[src],
 iframe[src] * {
     color-scheme: light dark !important;
 }
-
 @media (prefers-color-scheme: dark) {
     iframe,
     iframe *,
