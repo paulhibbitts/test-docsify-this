@@ -238,7 +238,6 @@ iframe[src] * {
     color-scheme: light dark !important;
 }
 
-/* Ensure transparency in dark mode */
 @media (prefers-color-scheme: dark) {
     iframe,
     iframe *,
