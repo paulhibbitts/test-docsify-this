@@ -246,6 +246,11 @@ iframe[src] * {
     }
 }
 
+/* Fix for codeblocks within shaded table rows with preview build of Docsify v5 theme */
+.markdown-section code {
+  background: var(--color-mono-3);
+}
+
 body {
   display: flex;
   flex-wrap: wrap; 
