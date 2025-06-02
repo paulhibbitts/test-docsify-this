@@ -1872,6 +1872,15 @@
   <script>
     if (!(window.$docsify['basePath'] === undefined)) {
 
+      // Change content max width if maxwidth parameter present
+      maxwidth = getURLParameterByName(['max-width', 'maxWidth'], null, null, window.location.href, true);
+      if (!(maxwidth === false)) {
+        if (!(isNaN(maxwidth))) {
+          maxwidth += 'px'; // Append 'px' if no unit is provided
+        }
+        document.documentElement.style.setProperty('--content-max-width', maxwidth);
+      }
+
       // Change header weight if headerweight parameter present
       headerweight = getURLParameterByName(['header-weight', 'headerWeight'], null, null, window.location.href, true);
       if (!(headerweight === false)) {
@@ -1933,7 +1942,7 @@
     
       // Enable dark theme CSS files loaded if dark-mode parameter is true
       var enabledarkmode = getURLParameterByName(['dark-mode', 'darkMode'], null, null, window.location.href, true);
-      console.log(enabledarkmode);
+      // console.log(enabledarkmode);
       if (enabledarkmode === 'auto' || enabledarkmode === 'true' || darkmode === 'auto') {
         document.querySelector('link[data-sheet="dark-mode-auto"]').disabled = false;
       } else if (enabledarkmode === 'on' || darkmode === 'on') {
