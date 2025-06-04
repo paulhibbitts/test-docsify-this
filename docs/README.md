@@ -430,7 +430,7 @@ For example, to display the Markdown file located at https://raw.githubuserconte
 
 And here’s how Docsify-This.net displays the same URL:
 
-<img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border-rounded" alt="Example Docsify-This URL displayed by Docsify-This"><br>
+<img src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/main/docs/images/docsify-this-example-page.jpg" width="1152" height="819" class="responsive image-border-rounded" alt="Example Docsify-This URL displayed by Docsify-This"><br>
 <em>The web page displayed by Docsify-This.net, showing the Markdown file with a sidebar that includes headings up to 3 levels, as specified by the Docsify-This URL.</em>
 
 #### Page Appearance URL Parameters (Basic)
@@ -561,7 +561,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [edit-link-emoji](/?id=edit-link-emoji)
 - [image-captions-font-style](/?id=image-captions-font-style)
 - [image-captions-image-align](/?id=image-captions-image-align)
-- [image-captions-text-align](/?id=image-captions)
+- [image-captions-text-align](/?id=image-captions-text-align)
 - [link-color-dark-mode](/?id=link-color-dark-mode)
 - [link-color-hover](/?id=link-color-hover)
 - [link-color-hover-dark-mode](/?id=link-color-hover-dark-mode)
@@ -833,14 +833,14 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
 
-- [Website](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Web Pages")
-- [Website using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Web Pages using the Merriweather font")
-- [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Site - Web Pages using the Merriweather font and red links")
-- [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Web Pages with 'Edit this Page' link")
-- [Website and 'Edit this Page' links using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Web Pages with 'Edit this Page' link using the Merriweather font")
-- [Website with Docsify Navbar](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Web Pages with Docsify Navbar and an 'Edit this Page' link")
-- [Website with Footer and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Web Pages with Footer and an 'Edit this Page' link")
-- [Website with Docsify Navbar and 'GitHub Repository' link](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Web Pages with Docsify Navbar and an 'GitHub Repository' link")
+- [Website](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md "Docsify-This Multiple Page Site - Website")
+- [Website using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Website with 'Edit this Page' link")
+- [Website and 'Edit this Page' links using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Website with 'Edit this Page' link using the Merriweather font")
+- [Website with Docsify Navbar](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar "Docsify-This Multiple Page Site - Website with Docsify Navbar and an 'Edit this Page' link")
+- [Website with Footer and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadFooter=_footer&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site/blob/main/home.md "Docsify-This Multiple Page Site - Website with Footer and an 'Edit this Page' link")
+- [Website with Docsify Navbar and 'GitHub Repository' link](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository "Docsify-This Multiple Page Site - Website with Docsify Navbar and an 'GitHub Repository' link")
 
 </div>
 
@@ -1474,9 +1474,9 @@ The following style prefixes are available with Docsify-This:
 
 [Easy Markdown to Github Pages linked set of Markdown files](https://github.com/nicolas-van/easy-markdown-to-github-pages), displayed by Docsify-This as:
 
-- [Web Pages](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md "Easy Markdown to Github Pages - Web Page")
-- [Web Pages with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Web Page with Table of Contents")
-- [Web Pages with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&sidebar=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Web Page with Docsify Sidebar")
+- [Website](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md "Easy Markdown to Github Pages - Web Page")
+- [Website with Table of Contents and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&toc=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Web Page with Table of Contents")
+- [Website with Docsify Sidebar and an 'Edit this Page' link](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/nicolas-van/easy-markdown-to-github-pages/master&homepage=README.md&sidebar=true&edit-link=https://github.com/nicolas-van/easy-markdown-to-github-pages/blob/master/README.md "Easy Markdown to Github Pages - Web Page with Docsify Sidebar")
 
 [A Collection of GitHub Markdown files](https://github.com/paulhibbitts/cmpt-363-222-pages) used as course content [within an SFU CMPT-363 Canvas LMS site](https://canvas.sfu.ca/courses/69678).
 
@@ -1598,7 +1598,7 @@ function test() {
 }
 ```
 
-##### Displaying Images in a Grid 
+##### Displaying Images in a Grid
 
 3 or more images can be transformed into a responsive grid gallery by including them in lists. For example:
 
@@ -1659,7 +1659,7 @@ A [fully responsive Docsify-This page can be embedded into an HTML page](https:/
 
 ##### Including External Markdown Content
 
-The content of external Markdown files can be embedded into Docisfy-This web pages with the following:
+The content of external Markdown files can be embedded into Docsify-This web pages with the following:
 
 ```markdown
 [included Markdown from same source location](example.md ":include")
@@ -1677,13 +1677,13 @@ For additional examples of including external content, view [Docsify Embeded Fil
 
 ##### Display of AsciiDoc Files (file extension .adoc)
 
-The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc
+The display of [AsciiDoc](https://asciidoc.org/) files ('.adoc' extension) via [DownDoc](https://github.com/opendevise/downdoc) is possible by manually passing the relevant filenames within a Docsify-This URL (not available in the Docsify-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/asciidoctor/asciidoctor-pdf/main/examples&homepage=basic-example.adoc&edit-link=https://github.com/asciidoctor/asciidoctor-pdf/blob/main/examples/basic-example.adoc
 
 You can support the display of AsciiDoc files in the Web Page Builder of your own instance of Docsify-This by locating the function `getAllowedFileExtensions()` within the `index.html` file and add the file extension '.adoc' to the `return` statement, for example `return ".md,.adoc";`.
 
 ##### Display of HedgeDocs Files
 
-The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docisfy-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download
+The display of [HedgeDoc](https://hedgedoc.org/) files containing basic Markdown (as well as Mermaid and MathJax elements) is possible by manually using 'download' for the `homepage` URL parameter within a Docsify-This URL (not available in the Docsify-This.net Web Page Builder), for example: https://paulhibbitts.github.io/test-docsify-this/?basePath=https://demo.hedgedoc.org/crN3ispNQdejWkUXXIXYQA&homepage=download
 
 Here is an additional example, using the HedgeDoc file https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both (seen in split-screen view) and and rendered as a web page by Docsify-This https://paulhibbitts.github.io/test-docsify-this/?basePath=https://demo.hedgedoc.org&homepage=oisWMy9ZS36PE6TvYhJC4A/download&edit-link=https://demo.hedgedoc.org/oisWMy9ZS36PE6TvYhJC4A?both&toc=true&edit-link-text=Edit%20this%20Page%20in%20HedgeDoc
 
@@ -1790,7 +1790,7 @@ https://docsify-this.net/?advanced=true
 
 For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
 
-The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docisfy-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
+The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docsify-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net/?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
 ##### Pre-configured Settings for Embedding Docsify-This Content
 
@@ -1822,7 +1822,7 @@ When displaying GitHub Markdown files, the branch name is assumed to be `main`, 
 
 ##### The 'Edit this Page' Links are not Working
 
-Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-site&edit-link-text=GitHub%20Repository and https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
+Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com//paulhibbitts/docsify-this-cmpt-363-222-site&edit-link-text=GitHub%20Repository and https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
 
 ##### Updated Markdown file not Displayed in the Browser
 
