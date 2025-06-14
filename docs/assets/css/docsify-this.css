@@ -308,6 +308,12 @@ span #docsifythisurlfield {
   text-decoration-color: #3940bf;
 }
 
+#customdetailslink {
+  color: #3940bf;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #docsifythisurlbuilder select {
   /* color: #323232; DOCSIFY v5 */
   border: 1px solid #757575;
@@ -540,6 +546,12 @@ span #docsifythisurlfield {
   #docsifythisurlbuildershowhidelink2 a:active {
     color: #c6bfed; /* Original color #4bc3f4 */
     text-decoration-color: #c6bfed;
+  }
+
+  #customdetailslink {
+    color: #c6bfed; /* Original color #4bc3f4 */
+    text-decoration: underline;
+    cursor: pointer;
   }
 
   #linkcolor {
