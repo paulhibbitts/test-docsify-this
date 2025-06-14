@@ -303,7 +303,11 @@ span #docsifythisurlfield {
 #docsifythisurlbuildershowhidelink2 a:link,
 #docsifythisurlbuildershowhidelink2 a:visited,
 #docsifythisurlbuildershowhidelink2 a:hover,
-#docsifythisurlbuildershowhidelink2 a:active {
+#docsifythisurlbuildershowhidelink2 a:active,
+.docsifythisurlbuilderoptionsline a:link,
+.docsifythisurlbuilderoptionsline a:visited,
+.docsifythisurlbuilderoptionsline a:hover,
+.docsifythisurlbuilderoptionsline a:active {
   color: #3940bf;
   text-decoration-color: #3940bf;
 }
@@ -543,7 +547,11 @@ span #docsifythisurlfield {
   #docsifythisurlbuildershowhidelink2 a:link,
   #docsifythisurlbuildershowhidelink2 a:visited,
   #docsifythisurlbuildershowhidelink2 a:hover,
-  #docsifythisurlbuildershowhidelink2 a:active {
+  #docsifythisurlbuildershowhidelink2 a:active,
+  .docsifythisurlbuilderoptionsline a:link,
+   .docsifythisurlbuilderoptionsline a:visited,
+  .docsifythisurlbuilderoptionsline a:hover,
+  .docsifythisurlbuilderoptionsline a:active {
     color: #c6bfed; /* Original color #4bc3f4 */
     text-decoration-color: #c6bfed;
   }
