@@ -919,9 +919,9 @@
     function toggleElementState(elementId) {
       const element = document.getElementById(elementId);
       if (element) {
-        if (typeof element.disabled !== 'undefined') { //Check if disabled property exists
+        if (typeof element.disabled !== 'undefined') {
           element.disabled = !element.disabled;
-          element.setAttribute('aria-disabled', element.disabled); //Accessibility
+          element.setAttribute('aria-disabled', element.disabled);
         }
       }
     }
