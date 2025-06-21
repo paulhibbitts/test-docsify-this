@@ -20,7 +20,7 @@ This open-source web app, built with magical documentation site generator [Docsi
 
 **Markdown File URL** (GitHub, Codeberg or raw source URL):  
 <textarea
-    style="border-radius: 7px; border-color: #8e8f9d; resize: none; min-height: 60px; width: 100%; font-family: inherit; overflow: hidden; box-sizing: border-box;"
+    style="border-radius: 7px; border-color: #8e8f9d; resize: none; width: 100%; font-family: inherit; overflow: hidden; box-sizing: border-box;"
     aria-label="Markdown File URL (GitHub, Codeberg or raw source URL)"
     name="markdownFileURL"
     id="docsifythisurlfield"
