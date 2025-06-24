@@ -1,5 +1,23 @@
 /* DOCSIFY THIS */
 
+/* --- Global transitions --- */
+a,
+button,
+input[type="text"],
+input[type="url"],
+input[type="color"],
+input[type="number"],
+textarea,
+select,
+[type="radio"] + img, /* For your custom radio button images */
+input[type="checkbox"] {
+  transition: all 0.2s ease-in-out; /* Smooth transition for all animatable properties */
+  /* Using 'all' is simple, but for performance, you might specify properties like:
+     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out,
+                 color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+                 transform 0.1s ease-out; */
+}
+
 ::selection {
   background-color: #C1D1E9;
   color: #333;
