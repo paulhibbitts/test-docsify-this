@@ -579,7 +579,8 @@ input.toggle:where([type=checkbox], [type=radio]):before {
 
   #docsifythis p a,
   #docsifythis li a,
-  #docsifythis h3 a {
+  #docsifythis h3 a ,
+  #docsifythis .copy-link{
     color: #1ba1ee;
   }
 
