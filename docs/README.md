@@ -679,7 +679,6 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 
 ##### link-text-decoration-hover<button type="button" class="copy-link" aria-label="Copy link-text-decoration-hover parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&link-text-decoration-hover=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-
 Set a custom hover text decoration for all links, with the optional **link-text-decoration-hover** parameter, for example:  
 https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-text-decoration-hover=underline
 
