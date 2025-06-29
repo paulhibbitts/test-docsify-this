@@ -201,21 +201,8 @@
         if (isValidUrl(url)) {
 
           // Code generated/assisted by Anthropic Claude AI
-          // Remove 'edit-link*' and values anywhere in the URL string
-          url = url.replace(/([?&])edit-link[^&]*(&?)/, function(match, firstChar, secondChar) {
-          // If 'edit-link' is the first query param and has another param after it
-          if (firstChar === '?' && secondChar) return '?';
-            // If 'edit-link' is the only query param
-            if (firstChar === '?' && !secondChar) return '';
-          // If 'edit-link' is in the middle or end of params
-            if (firstChar === '&') {
-              if (secondChar) return '&';  // keep ampersand if followed by another param
-              return '';                  // no more params after, so remove ampersand
-            }
-          return '';
-          });
-          // Remove trailing '?' or '&' if left at the end
-          url = url.replace(/[?&]$/, '');
+          // Remove 'edit-link=' and values anywhere in the URL string
+          url = url.replace(/[?&]edit-link=[^&]*/g, '').replace(/[?&]$/, '');
 
           var docsifyURL = window.location.href
 
@@ -268,14 +255,19 @@
 
           // Get last segment of URL
           const { hostname } = new URL(url);
-          var lastSegment = url.split('/').pop();
+
+          // Remove URL parameters (anything after ? or &)
+          var lastSegment = url.split('?')[0].split('&')[0].split('/').pop();
+
           if (hedgedocInstances.includes(hostname)) {
-            // Support for HedgeDoc instances in the Web Page Builder
-            lastSegment = lastSegment.replace(/#/g, '');
-            if (!url.includes('/download')) {
-              lastSegment = lastSegment + '/download';
-            }
+              // Support for HedgeDoc instances in the Web Page Builder
+              lastSegment = lastSegment.split('&')[0].split('?')[0];
+              
+              if (!url.includes('/download')) {
+                  lastSegment = lastSegment + '/download';
+              }
           }
+
           var URLparms = '';
 
           const cb1 = document.querySelector('#editCheck');
@@ -496,7 +488,7 @@
 
           var getSiteLogo = document.getElementById("siteLogo");
           var siteLogo = getSiteLogo.value;
-          if (!(siteLogo == "")) { 
+          if (!(siteLogo == "")) {
             if (!url.includes('logo=')) {
               URLparms = URLparms + `&logo=` + siteLogo;
             }
@@ -610,8 +602,8 @@
           }
           if (!(hexCode == "6C8A9A")) {
             if (!url.includes('coverpage-color=')) {
-                var URLparms = URLparms + `&coverpage-color=` + hexCode;
-              }
+              var URLparms = URLparms + `&coverpage-color=` + hexCode;
+            }
           }
 
           var getenabledarkmode = document.getElementById('enableDarkmode').value;
@@ -666,8 +658,7 @@
             }
           }
 
-          const parts = lastSegment.split(/[?&]/);
-          lastSegment = parts[0];
+          const parts = url.split(/[?&]/);
           let queryString = '';
           if (parts.length > 1) {
               // Join all parameters back together
@@ -1891,7 +1882,7 @@
   <script src="assets/vendor/docsify/plugins/custom/docsify-fontawesome.min.js"></script>
 
   <!-- Footnotes Plugin -->
-  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/lib/index.min.js"></script> -->
+  <!-- <script src="//cdn.jsdelivr.net/npm/@sy-records/docsify-footnotes/dist/index.min.js"></script> -->
   <script src="assets/vendor/docsify/plugins/docsify-footnotes.min.js"></script>
 
   <!-- Pagination Plugin -->
