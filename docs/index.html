@@ -255,6 +255,7 @@
           // Code generated/assisted by Anthropic Claude AI
           // Remove URL parameters (anything after ? or &)
           var lastSegment = url.split('?')[0].split('&')[0].split('/').pop();
+
           if (hedgedocInstances.includes(hostname)) {
             // Support for HedgeDoc instances in the Web Page Builder
             lastSegment = lastSegment.split('&')[0].split('?')[0];
