@@ -472,7 +472,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 **Basic URL Parameters (included in the standard Web Page Builder)**
 
 - [browser-tab-title](/?id=browser-tab-titleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
-- [edit-link](/?id=edit-link)
+- [edit-link](/?id=edit-linkconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [edit-link-text](/?id=edit-link-textconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [edit-link-top](/?id=edit-link-topconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [font-family](/?id=font-familyconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -498,7 +498,7 @@ https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubuser
 ##### edit-link
 
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
-https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md. Please note that adding this URL parameter directly to the Markdown File URL field is not supported, use the provided Web Page Builder checkbox instead.
+https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md.
 
 ##### edit-link-text<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-text=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
