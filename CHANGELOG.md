@@ -31,7 +31,7 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
-## [1.10.4] - XX/XX/2025
+## [1.10.4] - 07/01/2025🇨🇦
 
 **New:**
 * Support for multi-line display of Markdown file URLs with the ability to manually append URL parameters
@@ -41,6 +41,7 @@
 
 **Bugfix:**
 * Fix for supporting footnotes syntax with inline code (with thanks and appreciation to @sy-records)
+* Do not display image captions for embedded emoji characters
 
 ## [1.10.3] - 04/09/2025
 
