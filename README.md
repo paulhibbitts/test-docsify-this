@@ -1183,7 +1183,7 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Matching Fonts with Your Destination Platform Content](#matching-fonts-with-your-destination-platform-content)
 - [Providing a Page Table of Contents within a Smaller Area](#providing-a-page-table-of-contents-within-a-smaller-area)
 - [Including Code Blocks](#including-code-blocks)
-- [Displaying Images in a Grid](#displaying-images-in-grid)
+- [Displaying Images in a Grid](#displaying-images-in-a-grid)
 - [Embedding a Responsive Docsify-This Page in HTML](#embedding-a-responsive-docsify-this-page-in-html)
 - [Including External Markdown Content](#including-external-markdown-content)
 - [Use of WikiLinks](#use-of-wikilinks)
