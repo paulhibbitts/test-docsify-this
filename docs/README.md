@@ -519,12 +519,12 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [toc-narrow](/?id=toc-narrowconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [zoom-images](/?id=zoom-imagesconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 
-##### browser-tab-title<button type="button" class="copy-link" aria-label="Copy browser-tab-title parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&browser-tab-title=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### browser-tab-title<button type="button" class="copy-link" aria-label="Copy browser-tab-title parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&browser-tab-title=Published_by_Docsify-This').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom title on Browser tab for your web pages with the optional **browser-tab-title** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&browser-tab-title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Underscores may also be used to represent spaces.
 
-##### docsify-core-theme<button type="button" class="copy-link" aria-label="Copy docsify-core-theme parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&docsify-core-theme=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### docsify-core-theme<button type="button" class="copy-link" aria-label="Copy docsify-core-theme parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&docsify-core-theme=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Use the Docsify v5 core theme instead of the Docsify-This theme with the optional **docsify-core-theme** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md&docsify-core-theme=true. Default page elements, such as Blockquotes, will be displayed without any Docsify-This styles. To style a blockquote similarly to the default Docsify-This theme, you can apply the `announcement` CSS class within an HTML Blockquote.
@@ -534,81 +534,81 @@ https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md. Please note that adding this URL parameter directly to the Markdown File URL field is not supported, use the provided Web Page Builder checkbox instead.
 
-##### edit-link-text<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-text=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### edit-link-text<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-text=Edit_this_Page').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-text=View%20as%20Markdown. Please note to use text with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "View as Markdown" would be "View%20as%20Markdown". Underscores may also be used to represent spaces.
 
-##### edit-link-top<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-top=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### edit-link-top<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-top=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Change the location of the "Edit this Page" link from the bottom of pages to be the top of pages with the optional **edit-link-top** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&toc=true&edit-link=https://github.com/hibbitts-design/docsify-open-publishing-starter-kit/blob/main/README.md&edit-link-top=true
 
-##### font-family<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&font-family=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### font-family<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&font-family=Source_Sans_3,Helvetica_Neue,sans-serif').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom font for your web pages with the optional **font-family** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. The default Docsify-This theme font is _Source Sans 3_, and the default font for the Docsify v5 core theme is _System-UI_. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". Underscores may also be used to represent spaces.
 
-##### font-size<button type="button" class="copy-link" aria-label="Copy font-size parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&font-size=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### font-size<button type="button" class="copy-link" aria-label="Copy font-size parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&font-size=18px').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom font size in pixels for your web pages with the optional **font-size** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-size=16px. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform.
 
-##### header-weight<button type="button" class="copy-link" aria-label="Copy header-weight parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&header-weight=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### header-weight<button type="button" class="copy-link" aria-label="Copy header-weight parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&header-weight=400').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 Set a custom header font weight (default is 400 - regular) for your web pages with the optional **header-weight** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&header-weight=600.
 
-##### hide-credits<button type="button" class="copy-link" aria-label="Copy hide-credits parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hide-credits=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### hide-credits<button type="button" class="copy-link" aria-label="Copy hide-credits parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hide-credits=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Hide the credits usually shown at the bottom of every displayed Docsify-This page with the optional **hide-credits** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hide-credits=true.
 
-##### hypothesis<button type="button" class="copy-link" aria-label="Copy hypothesis parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hypothesis=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### hypothesis<button type="button" class="copy-link" aria-label="Copy hypothesis parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&hypothesis=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Enable page annotation with [Hypothes.is](https://hypothes.is) with the optional **hypothesis** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&hypothesis=true.
 
-##### image-captions<button type="button" class="copy-link" aria-label="Copy image-captions parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&image-captions=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### image-captions<button type="button" class="copy-link" aria-label="Copy image-captions parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&image-captions=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Turn alt text into image captions (using the semantic HTML `<figure>` and `<figcaption>` structure) with the optional **image-captions** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true.
 
-##### line-height<button type="button" class="copy-link" aria-label="Copy line-height parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&line-height=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### line-height<button type="button" class="copy-link" aria-label="Copy line-height parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&line-height=1.4').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom line height for your web pages with the optional **line-height** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&line-height=1.5.
 
-##### link-color<button type="button" class="copy-link" aria-label="Copy link-color parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&link-color=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### link-color<button type="button" class="copy-link" aria-label="Copy link-color parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&link-color=0374B5').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set a custom color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000.
 
-##### maxLevel<button type="button" class="copy-link" aria-label="Copy maxLevel parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&maxLevel=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### maxLevel<button type="button" class="copy-link" aria-label="Copy maxLevel parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&maxLevel=2').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set the maximum header level of the Docsify sidebar with the optional **maxLevel** Docsify parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&sidebar=true&maxLevel=3
 
-##### sidebar<button type="button" class="copy-link" aria-label="Copy sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebar=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### sidebar<button type="button" class="copy-link" aria-label="Copy sidebar parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebar=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Display a Docsify sidebar with the optional **sidebar** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true
 
-##### toc<button type="button" class="copy-link" aria-label="Copy toc parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### toc<button type="button" class="copy-link" aria-label="Copy toc parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Display a page table of contents with the optional **toc** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true
 
-##### toc-headings<button type="button" class="copy-link" aria-label="Copy toc-headings parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-headings=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### toc-headings<button type="button" class="copy-link" aria-label="Copy toc-headings parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-headings=h2').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Set the page heading levels (i.e. h1, h2, etc.) to be included in the Page Table of Contents with the optional **toc-headings** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc=true&toc-headings=h1,h2,h3.
 
-##### toc-narrow<button type="button" class="copy-link" aria-label="Copy toc-narrow parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-narrow=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### toc-narrow<button type="button" class="copy-link" aria-label="Copy toc-narrow parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&toc-narrow=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Use a less wide Page Table of Contents with the optional **toc-narrow** parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-publishing-starter-kit/main/docs&homepage=introduction.md&toc-narrow=true. This parameter can be particularly valuable when embedding content where a smaller screen area is likely.
 
-##### zoom-images<button type="button" class="copy-link" aria-label="Copy zoom-images parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&zoom-images=true').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+##### zoom-images<button type="button" class="copy-link" aria-label="Copy zoom-images parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&zoom-images=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 Enable image zoom (tapping on page images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.
 
