@@ -2066,7 +2066,8 @@
           const trimmed = font.trim();
           return trimmed.includes(' ') ? `'${trimmed}'` : trimmed;
         });
-        const finalfontstack = fontlist.join(',');
+        var finalfontstack = fontlist.join(',');
+        finalfontstack = finalfontstack.replaceAll('_', ' ');
         document.documentElement.style.setProperty('--font-family', finalfontstack);
         if (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') {
           /* Fix to handle a variety of fonts with core Docsify v5 theme */
