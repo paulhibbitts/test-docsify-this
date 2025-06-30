@@ -533,7 +533,7 @@ input.toggle:where([type=checkbox], [type=radio]):before {
   clear: both;
 }
 
-#docsifythisurlbuilder .sidebar .app-name {
+.sidebar .app-name {
   display: none;
 }
 
