@@ -26,7 +26,7 @@
 * Improved search results, which exclude Markdown formatting syntax (via Docsify v5)
 
 **Bugfix:**
-* Handle use of Coverpage title link with duplicate id
+* Handle use of Coverpage title link with duplicate id via enhanced target scrolling
 
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
