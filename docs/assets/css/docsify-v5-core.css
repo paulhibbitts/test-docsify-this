@@ -1,3 +1,8 @@
+/* Fix for site name using sidebar link clamping with preview build of Docsify v5 theme */
+:is(body.sidebar-link-clamp .sidebar) a.app-name-link {
+  white-space: normal;
+}
+
 /* Fix for Coverpage title link colors with preview build of Docsify v5 theme */
 .cover h1 a {
   color: var(--cover-title-color);
