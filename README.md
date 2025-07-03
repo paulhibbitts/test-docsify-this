@@ -351,6 +351,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [svg-icons](#svg-icons)
 - [theme-color](#theme-color)
 - [theme-color-dark-mode](#theme-color-dark-mode)
+- [theme-classes](#theme-classes)
 
 ##### coverpage
 
@@ -496,6 +497,11 @@ https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/
 
 Set a custom theme color in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **theme-color-dark-mode** parameter (not included in the Advanced Web Page Builder), for example:  
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&docsify-core-theme=true&theme-color=CC0000&dark-mode=auto&theme-color-dark-mode=FF9E9E.  This parameter can be particularly valuable when using the core Docsify v5 theme via `docsify-core-theme` and wanting to retain the default link style.  
+
+##### theme-classes
+
+Add one or more [core theme classes](https://preview.docsifyjs.org/#/themes?id=classes) with the optional **theme-classes** parameter (not included in the Advanced Web Page Builder), for example:  
+https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363&docsify-core-theme=true&theme-classes=sidebar-chevron-left,sidebar-toggle-hamburger
 
 ---
 

@@ -1383,6 +1383,19 @@
               const docHead = document.head;
               const docBody = document.body;
 
+              // Get core theme classes from URL and apply to body
+              const themeClasses = getURLParameterByName('theme-classes', null, null, window.location.href, true);
+              if (themeClasses) {
+                document.body.className = '';
+                const newClasses = themeClasses.split(',');
+                for (let className of newClasses) {
+                  const cleanClassName = className.trim();
+                  if (cleanClassName) {
+                    document.body.classList.add(cleanClassName);
+                  }
+                }
+              }
+
               // Embedly script
               let hasEmbedly = document.getElementsByClassName('embedly-card');
               if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
