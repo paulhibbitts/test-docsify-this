@@ -1385,8 +1385,26 @@
 
               // Get core theme classes from URL and apply to body
               const themeClasses = getURLParameterByName('theme-classes', null, null, window.location.href, true);
+
               if (themeClasses) {
+                // Preserve important system classes
+                const importantClasses = [];
+                if (document.body.classList.contains('ready')) {
+                  importantClasses.push('ready');
+                }
+                if (document.body.classList.contains('sticky')) {
+                  importantClasses.push('sticky');
+                }
+                
+                // Clear all classes
                 document.body.className = '';
+                
+                // Re-add important classes first
+                for (let importantClass of importantClasses) {
+                  document.body.classList.add(importantClass);
+                }
+                
+                // Add theme classes
                 const newClasses = themeClasses.split(',');
                 for (let className of newClasses) {
                   const cleanClassName = className.trim();
@@ -1395,7 +1413,7 @@
                   }
                 }
               }
-
+              
               // Embedly script
               let hasEmbedly = document.getElementsByClassName('embedly-card');
               if (hasEmbedly.length > 0 && !document.querySelector('script[src="https://cdn.embedly.com/widgets/platform.js"]')) {
