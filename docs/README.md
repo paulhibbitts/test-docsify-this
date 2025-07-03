@@ -526,7 +526,7 @@ https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/
 
 ##### docsify-core-theme<button type="button" class="copy-link" aria-label="Copy docsify-core-theme parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&docsify-core-theme=false').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Use the Docsify v5 core theme instead of the Docsify-This theme with the optional **docsify-core-theme** parameter, for example:  
+Apply the Docsify v5 core theme defaults instead of using Docsify-This styles with the optional **docsify-core-theme** parameter, for example: 
 https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md&docsify-core-theme=true. Default page elements, such as Blockquotes, will be displayed without any Docsify-This styles. To style a blockquote similarly to the default Docsify-This theme, you can apply the `announcement` CSS class within an HTML Blockquote.
 
 ##### edit-link<button type="button" class="copy-link" aria-label="Copy font-family parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
