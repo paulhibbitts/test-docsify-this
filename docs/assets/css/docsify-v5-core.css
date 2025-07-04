@@ -506,6 +506,11 @@ iframe[src] * {
   margin-top: 2rem;
 }
 
+.markdown-section .card:not(.card-list .card),
+.markdown-section .card-rounded:not(.card-list .card-rounded) {
+  margin-top: 2rem;
+}
+
 .markdown-section .card {
   border: 1px solid var(--color-mono-3);
   padding: 1.5rem;
