@@ -510,7 +510,6 @@ iframe[src] * {
   border: 1px solid var(--color-mono-3);
   padding: 1.5rem;
   background: var(--color-mono-1);
-  transition: box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
 }
@@ -520,14 +519,8 @@ iframe[src] * {
   border-radius: 0.35em;
   padding: 1.5rem;
   background: var(--color-mono-1);
-  transition: box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
-}
-
-.markdown-section .card:hover,
-.markdown-section .card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .markdown-section .card h2, 
