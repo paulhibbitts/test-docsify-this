@@ -1071,7 +1071,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [button-secondary](/?id=button-secondary)
 - [button-secondary-rounded](/?id=button-secondary-rounded)
 - [card](/?id=card)
-- [card-list](/?id=card-list
+- [card-list](/?id=card-list)
 - [card-rounded](/?id=card-rounded)
 - [embedly-card](/?id=embedly-card)
 - [header-image-fade](/?id=header-image-fade)
