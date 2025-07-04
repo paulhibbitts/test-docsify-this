@@ -904,6 +904,7 @@
 .markdown-section .card-rounded h2 {
   margin-top: 0;
   margin-bottom: .1rem;
+  padding-bottom: 0;
   font-size: 1.3rem;
 }
 
