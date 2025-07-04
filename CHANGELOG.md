@@ -32,6 +32,11 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
+## [1.10.5] - XX/XX/2025
+
+**New:**
+* Support for multi-line display of Markdown file URLs with the ability to manually append URL parameters
+
 ## [1.10.4] - 07/01/2025🇨🇦
 
 **New:**
