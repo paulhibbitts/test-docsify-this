@@ -499,7 +499,7 @@ iframe[src] * {
   }
 }
 
-// CSS generated/assisted by Anthropic Claude AI
+/* CSS generated/assisted by Anthropic Claude AI */
 .markdown-section .card-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
