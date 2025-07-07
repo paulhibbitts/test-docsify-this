@@ -1076,6 +1076,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 - [embedly-card](/?id=embedly-card)
 - [header-image-fade](/?id=header-image-fade)
 - [header-image-full-width](/?id=header-image-full-width)
+- [header-image-full-width-header-overlay](/?id=header-image-full-width-header-overlay)
 - [image-75/image-50/image-25](/?id=image-75image-50image-25)
 - [image-75-border/image-50-border/image-25-border](/?id=image-75-borderimage-50-borderimage-25-border)
 - [image-border](/?id=image-border)
@@ -1480,6 +1481,16 @@ Suggested size of 1200px to 2000px width and 400px to 600px height, and display 
 
 ```markdown
 ![Photo of Mountain](images/mountain.jpg ":class=header-image")
+```
+
+##### header-image-full-width-header-overlay
+
+Suggested size of 1200px to 2000px width and 400px to 600px height, and display of Table of Contents or 'Edit this Page' links at top of page are not available.
+
+```markdown
+![Photo of Mountain](images/mountain.jpg ":class=header-image")
+
+# Page Title
 ```
 
 ##### image-75/image-50/image-25
