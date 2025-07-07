@@ -442,7 +442,6 @@ iframe[src] * {
   -webkit-line-clamp: 2; /* Maximum 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
-
 }
 
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
@@ -472,7 +471,6 @@ iframe[src] * {
   -webkit-line-clamp: 2; /* Maximum 2 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
-
 }
 
 /* Keep text-shadow for links in h1 and h2 (same as parent) */
