@@ -408,6 +408,7 @@ iframe[src] * {
   object-position: center 50%;
 }
 
+/* CSS generated/assisted by Anthropic Claude AI */
 .markdown-section p:has(.header-tall-image-full-width-header-overlay,
 .header-image-full-width-header-overlay) + h1 {
   position: absolute;
