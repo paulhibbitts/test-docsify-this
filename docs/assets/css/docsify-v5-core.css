@@ -380,7 +380,7 @@ iframe[src] * {
 /* CSS currently only works with sidebar and standalone pages */
 .markdown-section .header-image-full-width,
 .markdown-section .header-image-full-width-header-overlay {
-  margin-top: -2rem;
+  margin-top: -3rem;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -395,7 +395,7 @@ iframe[src] * {
 
 .markdown-section .header-tall-image-full-width,
 .markdown-section .header-tall-image-full-width-header-overlay {
-  margin-top: -2rem;
+  margin-top: -3rem;
   left: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
@@ -458,6 +458,7 @@ iframe[src] * {
   letter-spacing: 0.05em;
   padding: 0.5rem 1.5rem;
   max-width: 80vw;
+  border: 0;
 }
 
 .markdown-section .image-75 {
@@ -664,3 +665,5 @@ iframe[src] * {
     font-size: 1.1rem;
   }
 }
+
+
