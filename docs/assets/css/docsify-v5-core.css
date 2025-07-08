@@ -412,7 +412,8 @@ iframe[src] * {
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 {
   position: absolute;
-  top: 13dvh;
+  /* Adjust for Docsify v5 theme */
+  top: 11dvh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -441,7 +442,8 @@ iframe[src] * {
 .markdown-section p:has(.header-tall-image-full-width-headings-overlay,
 .header-image-full-width-headings-overlay) + h1 + h2 {
   position: absolute;
-  top: calc(16dvh + 3rem + 1rem);
+  /* Adjust for Docsify v5 theme */
+  top: calc(14dvh + 3rem + 1rem);
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgba(255,255,255,0.95);
