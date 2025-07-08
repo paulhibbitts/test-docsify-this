@@ -1559,9 +1559,9 @@
                       requestAnimationFrame(() => {
                         // Scroll smoothly to the element's top position
                         window.scrollTo({
-                          top: targetElement.offsetTop,
-                          behavior: 'smooth'  // Add smooth scrolling
-                        });
+                        top: targetElement.offsetTop + targetElement.offsetParent?.offsetTop || 0,
+                        behavior: 'smooth'
+                      });
                       });
                     } else {
                       dd && console.log('Target is within an excluded parent:', excludedParent);
