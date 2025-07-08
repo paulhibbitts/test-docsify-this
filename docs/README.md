@@ -1380,7 +1380,6 @@ Suggested size of 1200px to 2000px width and 400px to 600px height, and display 
 # Page Title
 ```
 
-
 ##### image-75/image-50/image-25
 
 Scale images to %.
