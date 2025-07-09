@@ -35,10 +35,13 @@
 ## [1.10.5] - XX/XX/2025
 
 **New:**
-* Support for multi-line display of Markdown file URLs with the ability to manually append URL parameters
+* Added CSS Markdown classes to support cards (`card` & `card-rounded`) and responsive card lists (`card-list`)
 
 **Improved:**
 * Updated ReadMe
+
+**Bugfix:**
+* Minor CSS fixes
 
 ## [1.10.4] - 07/01/2025🇨🇦
 
