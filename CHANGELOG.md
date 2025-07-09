@@ -37,6 +37,9 @@
 **New:**
 * Support for multi-line display of Markdown file URLs with the ability to manually append URL parameters
 
+**Improved:**
+* Updated ReadMe
+
 ## [1.10.4] - 07/01/2025🇨🇦
 
 **New:**
