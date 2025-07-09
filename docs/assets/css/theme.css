@@ -415,8 +415,8 @@ body .docsify-pagination-container {
 @media (prefers-color-scheme: dark) {
   :root {
 
-    --theme-color: #1BA1EE!important;
-    --link-color: #1BA1EE!important;
+    --theme-color: #1BA1EE !important;
+    --link-color: #1BA1EE !important;
 
   }
 }
