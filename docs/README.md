@@ -927,7 +927,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <div class="docsifythiscolumn35" >
 
-![Docsify-This Multiple Page Site](images/docsify-this-multiple-page-basic-site.jpg ":class=docsify-this-screenshot")
+![Docsify-This Multiple Page Basic Site](images/docsify-this-multiple-page-basic-site.jpg ":class=docsify-this-screenshot")
 
 </div>
 
@@ -935,7 +935,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 <h4 id="docsify-this-multiple-page-basic-site-template"><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site">Multiple Page Basic Site Template</a></h4>
 
-Multiple Page Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md) file, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
+Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-basic-site/blob/main/home.md) file and a range of page content examples, including the use of the Markdown CSS class `header-image-full-width`, displayed by Docsify-This as:
 
 - [Website](https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md "Docsify-This Multiple Page Site - Website")
 - [Website using the Merriweather font](https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-basic-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Site - Website using the Merriweather font")
