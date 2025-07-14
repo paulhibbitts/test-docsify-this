@@ -961,7 +961,7 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 <h4 id="docsify-this-blog-style-site-template"><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site">Multiple Blog Style Site Template</a></h4>
 
-Multiple Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of a responsive card list and the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
+Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of a responsive card list created with HTML div elements and the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
 - [Website](https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md "Docsify-This Multiple Blog Style Site - Website")
 - [Website using the Merriweather font](https://preview-v2.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Blog Style Site - Website using the Merriweather font")
