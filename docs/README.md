@@ -873,7 +873,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [One Page Article Template](/?id=docsify-this-one-page-article-template)
 - [One Page Course Template](/?id=docsify-this-one-page-course-template)
 - [Multiple Page Basic Site Template](/?id=docsify-this-multiple-page-basic-site-template)
-- [Multiple Blog Style Site Template](/?id=docsify-this-blog-style-site-template)
+- [Multiple Blog Style Site Template](/?id=docsify-this-multiple-page-blog-style-site-template)
 - [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
 - [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
 - [LMS Content Pages Template](/?id=docsify-this-lms-content-pages-template)
@@ -949,7 +949,7 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 </div>
 
-<div class="row" id="docsify-this-blog-style-site-template">
+<div class="row" id="docsify-this-multiple-page-blog-style-site-template">
 
 <div class="docsifythiscolumn35" >
 
