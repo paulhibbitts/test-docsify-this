@@ -947,7 +947,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 <div class="docsifythiscolumn35" >
 
-[![Course Site Template](images/docsify-this-multiple-page-course-site.jpg ":class=docsify-this-screenshot")](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363)
+[![Multiple Page Course Site Template](images/docsify-this-multiple-page-course-site.jpg ":class=docsify-this-screenshot")](https://paulhibbitts.github.io/test-docsify-this/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363)
 
 </div>
 
