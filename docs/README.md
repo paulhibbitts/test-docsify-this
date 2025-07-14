@@ -816,7 +816,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 - [One Page Article Template](/?id=docsify-this-one-page-article-template)
 - [One Page Course Template](/?id=docsify-this-one-page-course-template)
-- [Multiple Page Basic Site Template](/?id=docsify-this-multiple-page-site-template)
+- [Multiple Page Basic Site Template](/?id=docsify-this-multiple-page-basic-site-template)
 - [Multiple Page Blog Style Site Template](/?id=docsify-this-blog-style-site-template)
 - [Multiple Page Open Publishing Site Template](/?id=docsify-this-multiple-page-open-publishing-site-template)
 - [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
