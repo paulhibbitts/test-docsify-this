@@ -959,7 +959,7 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 <div class="docsifythiscolumn65" >
 
-<h4 id="docsify-this-blog-style-site-template"><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site">Multiple Blog Style Site Template</a></h4>
+<h4 id="docsify-this-multiple-page-blog-style-site-template"><a href="https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site">Multiple Blog Style Site Template</a></h4>
 
 Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of a responsive card list created with HTML div elements and the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
