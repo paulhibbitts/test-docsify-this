@@ -880,7 +880,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 - [Multiple Page Course Site Template](/?id=docsify-this-multiple-page-course-site-template)
 - [LMS Content Pages Template](/?id=docsify-this-lms-content-pages-template)
 
-<div class="row" id="docsify-this-one-page-article-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -903,7 +903,7 @@ One Page Article [home.md](https://github.com/hibbitts-design/docsify-this-one-p
 
 </div>
 
-<div class="row" id="docsify-this-one-page-course-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -925,7 +925,7 @@ One Page Course [home.md](https://github.com/hibbitts-design/docsify-this-one-pa
 
 </div>
 
-<div class="row" id="docsify-this-multiple-page-basic-site-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -951,7 +951,7 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 </div>
 
-<div class="row" id="docsify-this-multiple-page-blog-style-site-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -974,7 +974,7 @@ Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsi
 
 </div>
 
-<div class="row" id="docsify-this-multiple-page-open-publishing-site-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -1001,7 +1001,7 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 </div>
 
-<div class="row" id="docsify-this-multiple-page-course-site-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
@@ -1027,7 +1027,7 @@ Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-t
 
 </div>
 
-<div class="row" id="docsify-this-lms-content-pages-template">
+<div class="row">
 
 <div class="docsifythiscolumn35" >
 
