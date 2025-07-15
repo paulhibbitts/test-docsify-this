@@ -1381,6 +1381,16 @@
               }
               document.title = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : 'Published by Docsify-This');
 
+              // Update page title if parameter present
+              let pageTitle = getURLParameterByName(['page-title', 'pageTitle'], null, null, window.location.href, true);
+              if (pageTitle) {
+                pageTitle = pageTitle.replaceAll('_', ' ');
+                let newh1 = document.createElement("h1");
+                newh1.innerHTML = pageTitle;
+                let divToMoveTo = document.getElementById("main");
+                divToMoveTo.insertBefore(newh1, divToMoveTo.children[0]);
+              }
+
               // Code generated/assisted by Anthropic Claude AI
               // Add back link if parameter present and transform + characters to &
               let backLink = getURLParameterByName(['back-link', 'backLink'], null, null, window.location.href, true);
