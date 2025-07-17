@@ -18,7 +18,7 @@
   <div style="background: #fdf4d3; border: 2px solid #f0e4b3; border-radius: 8px; padding: 12px; margin: 20px 0; display: flex; align-items: center; gap: 12px;">
     <div style="flex: 1;">
       <strong style="color: #8b6914; font-size: 17px;">This is a preview of Docsify-This v2.0</strong>
-      <div style="color: #666; margin-top: 2px; font-size: 15px; display: block;">
+      <div style="color: #666; margin-top: 2px; font-size: 16px; display: block;">
         <style>
           @media (max-width: 768px) {
             .hide-on-mobile {
