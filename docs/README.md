@@ -108,7 +108,7 @@ Page layout:
 <div class='stackedlabeldropdown'>
  <label for="fontfamily">Page font family:</label>
  <select style="border-radius: 7px;border-color: #8e8f9d; display: inline-block; vertical-align: middle; margin-right: 4px;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
-   <option value="Source%20Sans%203,Helvetica%20Neue,sans-serif">Source Sans 3, sans-serif</option>
+   <option value="Source%20Sans%203,Helvetica%20Neue,sans-serif">Source Sans 3</option>
    <option disabled="disabled">----</option>
    <option value="Arial,sans-serif">Arial, sans-serif</option>
    <option value="Helvetica,sans-serif">Helvetica, sans-serif</option>
