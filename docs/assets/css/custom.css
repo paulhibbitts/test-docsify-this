@@ -15,19 +15,38 @@ body .markdown-section {
 }
 */
 
-/* Link colors to match visual styling of SFU Canvas LMS (uncomment to use) */
+/* Link colors to match SFU branding visual styling (uncomment to use) */
 /*
 :root {
 
-    --theme-color: #A6192E!important;
-    --link-color: #A6192E!important;
+    --theme-color: #CC0633!important;
+    --link-color: #CC0633!important;
     --link-color-hover: var(--link-color);
-    --link-underline-color: #A6192E!important;
-    --link-underline-thickness: 1px;
+    --link-underline-color: #CC0633!important;
+    --link-underline-thickness: auto;
     --link-underline-thickness-hover: var(--link-underline-thickness);
 
     --blockquote-border-color: #757B7F!important;
 
+}
+*/
+
+/* Dark mode colours to match SFU branding visual styling for use with light + dark theme (uncomment to use) */
+/*
+@media (prefers-color-scheme: dark) {
+:root {
+
+    --theme-color: #EA7688!important;
+    --link-color: #EA7688!important;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #EA7688!important;
+    --link-underline-thickness: auto;
+    --link-underline-thickness-hover: var(--link-underline-thickness);
+
+    --blockquote-border-color: #757B7F!important;
+
+    }
+}
 */
 
 /* CSS to better visually match Docsify pages within Moodle LMS (uncomment to use) */
@@ -42,16 +61,17 @@ body .markdown-section {
 /* Link colors to match visual styling of Moodle LMS (uncomment to use) */
 /*
 :root {
-    --navbar-root-color--active: #0F6CBF!important;
-    --blockquote-border-color: #0F6CBF!important;
-    --sidebar-name-color: #0F6CBF!important;
-    --sidebar-nav-link-color--active: #0F6CBF!important;
-    --sidebar-nav-link-border-color--active: #0F6CBF!important;
+
+    --theme-color: #0F6CBF!important;
     --link-color: #0F6CBF!important;
-    --link-color--hover: #03005D!important;
-    --link-text-decoration: none!important;
-    --link-text-decoration--hover: underline!important;
-    --pagination-title-color: #0F6CBF!important;
+    --link-color-hover: var(--link-color);
+    --link-underline-color: #0F6CBF!important;
+    --link-underline-thickness: 0px!important;
+    --link-underline-color-hover: #0F6CBF;
+    --link-underline-thickness-hover: auto!important;
+
+    --blockquote-border-color: #0F6CBF!important;
+
 }
 */
 
@@ -76,7 +96,9 @@ body .markdown-section {
     --link-underline-color: #0B1660!important;
     --link-underline-thickness: 0px!important;
     --link-underline-color-hover: #0B1660;
-    --link-underline-thickness-hover: 1px!important;
+    --link-underline-thickness-hover: auto!important;
 
     --blockquote-border-color: #0B1660!important;
+
+}
 */
