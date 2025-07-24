@@ -74,14 +74,6 @@
 <body class="sidebar-chevron-right sidebar-toggle-kebab">
   <div id="app"></div>
   <script>
-    if ((getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') && (getURLParameterByName('basePath'))) {
-      document.querySelectorAll('style').forEach(style => style.remove());
-      const body = document.body;
-      body.classList.add('sidebar-group-box');
-    } else {
-      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
-    }
-
     // Enter the URL of your own GitHub or Codeberg Repository in between the two quotes below
     var gitLinkRepoURL = '';
 
@@ -99,6 +91,9 @@
 
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
+
+    // Set docsifycoretheme to true to apply the Docsify v5 core theme defaults
+    var docsifycoretheme = false;
 
     // Set darkmode to 'on' or 'auto' to permanently enable dark mode support
     var darkmode = false;
@@ -156,6 +151,14 @@
       }
 
       return exists;
+    }
+
+    if (((getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || docsifycoretheme) && (getURLParameterByName('basePath'))) {
+      document.querySelectorAll('style').forEach(style => style.remove());
+      const body = document.body;
+      body.classList.add('sidebar-group-box');
+    } else {
+      document.head.insertAdjacentHTML('beforeend', '<link rel="stylesheet" type="text/css" href="assets/css/theme.css" />');
     }
 
     // DOCSIFY THIS SCRIPTS
@@ -822,7 +825,7 @@
 
     function setColorProperties(color) {
       document.documentElement.style.setProperty('--theme-color', color);
-      if ((getURLParameterByName(['link-color', 'linkColor']) || getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) || (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true'))) {
+      if ((getURLParameterByName(['link-color', 'linkColor']) || getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) || (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true')) || (!docsifycoretheme)) {
         document.documentElement.style.setProperty('--link-color', color);
       }
     }
@@ -840,7 +843,7 @@
           if (themeColorDarkMode !== false) {
             setColorProperties('#' + themeColorDarkMode);
           }
-          if ((linkColorDarkMode !== false) && (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true'))) {
+          if ((linkColorDarkMode !== false) && ((!getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!docsifycoretheme))) {
             setColorProperties('#' + linkColorDarkMode);
             document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
           }
@@ -854,7 +857,7 @@
           if (linkColor !== false) {
             setColorProperties('#' + linkColor);
           } else {
-            if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true')) {
+            if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') && !(docsifycoretheme)) {
               setColorProperties('#1BA1EE');
               document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
             }
@@ -888,7 +891,7 @@
             setColorProperties('#' + linkColor);
           }
         } else {
-          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true')) {
+          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!(docsifycoretheme))) {
             setColorProperties('#0374B5');
             document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
           }
@@ -904,7 +907,7 @@
         if (coverPageColor !== false) {
           document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
         } else {
-          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true')) {
+          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!(docsifycoretheme))) {
             document.documentElement.style.setProperty('--cover-bg', '#C1E1F6');
           }
         }
@@ -1120,7 +1123,9 @@
         depth: 6,
         namespace: "docsify-this-" + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        insertBefore: getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], '.app-name' , '.sidebar-nav', window.location.href)
+        insertBefore: (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme']) || docsifycoretheme) 
+          ? '.app-name' 
+          : '.sidebar-nav'
       },
 
       imgGrid: {
@@ -2030,7 +2035,7 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true'))) {
+    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') && (!docsifycoretheme)) {
       const root_theme = document.querySelector(':root');
       root_theme.style.setProperty('--content-margin-inline', '14px');
     }
@@ -2198,13 +2203,8 @@
         var finalfontstack = fontlist.join(',');
         finalfontstack = finalfontstack.replaceAll('_', ' ');
         document.documentElement.style.setProperty('--font-family', finalfontstack);
-        if (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') {
-          /* Temp fix to handle a variety of fonts with core Docsify v5 theme */
-          /* const root_theme = document.querySelector(':root'); */
-          /* root_theme.style.setProperty('--heading-line-height', 'calc(2ex + 9px)'); */
-        }
       } else {
-        if (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') {
+        if ((getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || docsifycoretheme) {
           document.documentElement.style.setProperty('--font-family', 'system-ui, sans-serif');
         } else {
           document.documentElement.style.setProperty('--font-family', '"Source Sans 3","Helvetica Neue",sans-serif');
