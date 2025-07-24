@@ -25,6 +25,7 @@
 * Top navbar can now accept focus (now via Docsify v5)
 * Keyboard scrolling is supported within code blocks (via Docsify v5)
 * Improved search results, which exclude Markdown formatting syntax (via Docsify v5)
+* Added variable for applying Docsify v5 core theme defaults
 
 **Bugfix:**
 * Handle use of Coverpage title link with duplicate id via enhanced target scrolling
