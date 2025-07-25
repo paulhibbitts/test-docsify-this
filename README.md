@@ -1,10 +1,10 @@
-| 🛑  | **This is a testing-only repository. View the main project repository at https://github.com/hibbitts-design/docsify-this.** |
+| ⚠️  | **This is a preview-only repository. View the main project repository at https://github.com/hibbitts-design/docsify-this.** |
 | --- | :-------------------------------------------------------------------------------------------------------------------------- |
 
 # Docsify-This
 
-[![Docsify](https://img.shields.io/npm/v/docsify?label=docsify)](https://docsify.js.org/)
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-open-multicourse-starter-kit/blob/main/LICENSE)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/hibbitts-design/docsify-this/blob/main/LICENSE)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/paulhibbitts/test-docsify-this)
 <a href="https://discord.gg/docsify">
 <img src="https://img.shields.io/badge/chat-on%20discord-7289DA.svg" alt="Docsify Discord Chat" />
 </a>
@@ -20,8 +20,8 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 </div>
 
 <picture>
-  <source srcset="https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v1-10-3-web-page-builder-dark.png" media="(prefers-color-scheme: dark)">
-  <img src="https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v1-10-3-web-page-builder.png" alt="Docsify-This">
+  <source srcset="https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v2-web-page-builder-dark.png" media="(prefers-color-scheme: dark)">
+  <img src="https://raw.githubusercontent.com/paulhibbitts/github-repo-images/master/docsify-this-v2-web-page-builder.png" alt="Docsify-This">
 </picture>
 <p>
   <em>Figure 1. <a href="https://docsify-this.net">Docsify-This.net</a> Web Page Builder.</em>
@@ -31,14 +31,15 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public raw Markdown file works
 1. **Visit** https://docsify-this.net
+1. **Paste your file URL** into the Markdown File URL field
 1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
-1. Tap on **Show More Page Appearance Options »** and select from available options
-1. Click **"Publish as Web Page"**
+1. Tap on the link  **Show More Page Appearance Options »** and select from available options
+1. Tap on the button **Publish as Web Page**
 1. **Share your new web page Docsify-This URL** - that’s it!
 
-**Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page.  
+**Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page instantly.  
 
-[Try it with the Docsify-This ReadMe file displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3)
+[Try it with the ReadMe file for this project, displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3)
 
 ## All About Docsify-This
 
@@ -153,7 +154,7 @@ Docsify-This can render files from anywhere that the content of a Markdown file 
 
 To directly render a file stored in a public GitHub repository when not using the above Web Page Builder, you need to use the raw source URL of that file (i.e. raw.githubusercontent.com) by tapping the **Raw** button when [viewing a file](https://docs.github.com/en/repositories/working-with-files/using-files/viewing-a-file). It is also possible to render a file stored in a private GitHub repository by activating GitHub Pages within that repository and then using the GitHub Pages URL of that file (i.e. username.github.io).
 
-The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters-basic) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex) and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
+The appearance of rendered Markdown files can be customized by optional [URL parameters](/?id=page-appearance-url-parameters) and a small set of available [CSS Classes](/?id=supported-markdown-css-classes) within source Markdown files. In addition to supporting standard Markdown, [Embed.ly](https://embed.ly/code), [H5P](https://h5p.org/), [Latex](https://github.com/scruel/docsify-latex) and [Mermaid Diagrams](https://github.com/Leward/mermaid-docsify) are included. Optionally, page annotation with [Hypothes.is](https://hypothes.is) can be enabled.
 
 Looking for an overall introduction to publishing with Docsify-This? Check out [Markdown Publishing with Docsify-This](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=4&title=Markdown%20Publishing%20with%20Docsify-This).
 
@@ -219,6 +220,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 **Basic URL Parameters (included in the standard Web Page Builder)**
 
 - [browser-tab-title](#browser-tab-title)
+- [core-theme-styles](#core-theme-styles)
 - [edit-link](#edit-link)
 - [edit-link-text](#edit-link-text)
 - [edit-link-top](#edit-link-top)
@@ -242,6 +244,11 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 Set a custom title on Browser tab for your web pages with the optional **browser-tab-title** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&browser-tab-title=Resources. Please note to use titles with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Page" would be "My%20Page". Underscores may also be used to represent spaces.
 
+##### core-theme-styles
+
+Apply the Docsify v5 core theme styles instead of using Docsify-This styles with the optional **core-theme-styles** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md&core-theme-styles=true. Default page elements, such as Blockquotes, will be displayed without any Docsify-This styles. All additional Docsify-This Markdown CSS classes remain available for use, including styling blockquotes with the `announcement` CSS class within HTML Blockquotes.
+
 ##### edit-link
 
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter, for example:  
@@ -260,7 +267,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### font-family
 
 Set a custom font for your web pages with the optional **font-family** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". Underscores may also be used to represent spaces.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&font-family=Helvetica,Arial,sans-serif. This parameter can be particularly valuable when trying to better match the visual presentation of embedded content with your destination platform. The default Docsify-This theme font is _Source Sans 3_, and the default font for the Docsify v5 core theme is _System-UI_. Please note to use fonts with spaces in their names they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "Courier New" would be "Courier%20New". Underscores may also be used to represent spaces.
 
 ##### font-size
 
@@ -285,7 +292,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### image-captions
 
 Turn alt text into image captions (using the semantic HTML `<figure>` and `<figcaption>` structure) with the optional **image-captions** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&image-captions=true.
 
 ##### line-height
 
@@ -325,7 +332,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### zoom-images
 
 Enable image zoom (tapping on page images to enlarge them) with the optional **zoom-images** Docsify parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&zoom-images=true. To exclude images, use `![](image.png ":no-zoom")`.
 
 #### Page Appearance URL Parameters (Supplemental)
 
@@ -352,6 +359,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [loadNavbar](#loadNavbar)
 - [loadSidebar](#loadSidebar)
 - [logo](#logo)
+- [max-width](#max-width)
 - [mergeNavbar](#mergeNavbar)
 - [name](#name)
 - [page-title](#page-title)
@@ -359,6 +367,9 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [searchbox](#searchbox)
 - [submaxLevel](#subMaxLevel)
 - [svg-icons](#svg-icons)
+- [theme-color](#theme-color)
+- [theme-color-dark-mode](#theme-color-dark-mode)
+- [theme-classes](#theme-classes)
 
 ##### back-link
 
@@ -417,8 +428,8 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### link-color-hover
 
-Set a custom hover color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color=CC0000
+Set a custom hover color for all links, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **link-color-hover** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&link-color-hover=CC0000
 
 ##### link-color-hover-dark-mode
 
@@ -438,7 +449,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### loadFavicon
 
 You can set a custom Favicon from the image file passed from the optional **loadFavicon** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&loadFavicon=open-access.png
 
 ##### loadFooter
 
@@ -459,6 +470,11 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts
 
 Display a logo image for the website in a Docsify custom Sidebar (i.e. file 'logo.png) with the optional **logo** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&name=CPT-363&logo=/images/logo.png The full folder path and filename must be provided. A website name must also be provided, and will be used as the alt text for the logo.
+
+##### max-width
+
+Set a custom max width for content in pixels of your web pages with the optional **max-width** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&core-theme-styles=true&max-width=910px. This parameter can be particularly valuable when using the core Docsify v5 theme via `core-theme-styles` and embedding the resulting page.
 
 ##### mergeNavbar
 
@@ -494,6 +510,21 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Use the SVG version of Font Awesome icons instead of Web Fonts with the optional **svg-icons** parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-lms-content-pages/main&homepage=schedule.md&svg-icons=true
+
+##### theme-color
+
+Set a custom theme color, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **theme-color** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&core-theme-styles=true&theme-color=CC0000. This parameter can be particularly valuable when using the core Docsify v5 theme via `core-theme-styles` and wanting to retain the default link style.  
+
+##### theme-color-dark-mode
+
+Set a custom theme color in dark mode, defined using the standard hexadecimal format _without the '#' symbol_ with the optional **theme-color-dark-mode** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main/docs&homepage=resources.md&core-theme-styles=true&theme-color=CC0000&dark-mode=auto&theme-color-dark-mode=FF9E9E.  This parameter can be particularly valuable when using the core Docsify v5 theme via `core-theme-styles` and wanting to retain the default link style.  
+
+##### theme-classes
+
+Add one or more Docsify v5 [core theme classes](https://preview.docsifyjs.org/#/themes?id=classes) with the optional **theme-classes** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363&theme-classes=sidebar-chevron-left,sidebar-toggle-hamburger
 
 ---
 
@@ -610,10 +641,10 @@ Multiple Page Basic Site [home.md](https://github.com/hibbitts-design/docsify-th
 
 Multiple Page Blog Style Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md) file, including the use of a responsive card list created with HTML div elements and the Markdown CSS class `header-image-full-width-headings-overlay`, displayed by Docsify-This as:
 
-- [Website](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md "Docsify-This Multiple Page Blog Style Site - Website")
-- [Website using the Merriweather font](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font")
-- [Website using the Merriweather font and red links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font and red links")
-- [Website and 'Edit this Page' links](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md "Docsify-This Multiple Page Blog Style Site - Website with 'Edit this Page' link")
+- [Website](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md "Docsify-This Multiple Page Blog Style Site - Website")
+- [Website using the Merriweather font](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font")
+- [Website using the Merriweather font and red links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&font-family=Merriweather,Georgia,serif&link-color=CC0000 "Docsify-This Multiple Page Blog Style Site - Website using the Merriweather font and red links")
+- [Website and 'Edit this Page' links](https://paulhibbitts.github.io/test-docsify-this?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-blog-style-site/blob/main/home.md "Docsify-This Multiple Page Blog Style Site - Website with 'Edit this Page' link")
 
 ##### [Multiple Page Open Publishing Site Template](https://github.com/hibbitts-design/docsify-this-multiple-page-open-publishing-site)
 
@@ -634,15 +665,15 @@ Multiple Page Open Publishing Site [home.md](https://github.com/hibbitts-design/
 
 ![Docsify-This Course Site Template](docs/images/docsify-this-multiple-page-course-site-readme.png ":class=docsify-this-screenshot")
 
-Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_sidebar.md) file and Docsify custom [Navbar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_navbar.md) file, displayed by Docsify-This as:
+Multiple Page Course Site [home.md](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md) file, including the use of a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_sidebar.md) file and Docsify custom [Navbar](https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/_navbar.md) file merged into the Sidebar on smaller screens, displayed by Docsify-This as:
 
-- [Website](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website")
+- [Website](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website")
 - [Website with custom Favicon](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&loadFavicon=favicon.png&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website")
-- [Website with logo](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&loadFavicon=favicon.png&hide-credits=true&browser-tab-title=CPT-363&logo=images/logo.png "Docsify-This Multiple Page Course Site - Website with logo")
-- [Website with Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&loadFavicon=favicon.png&hide-credits=true&browser-tab-title=CPT-363&logo=images/logo.png&searchbox=true "Docsify-This Multiple Page Course Site - Website with Search")
-- [Website with Pagination buttons](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363&pagination=true "Docsify-This Multiple Page Course Site - Website with Pagination buttons")
-- [Website with a 'Propose an Edit to this Site' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with a 'Propose an Edit to this Site' link")
-- [Website with Footer and a 'Propose an Edit to this Site' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with Footer and a 'Propose an Edit to this Site' link")
+- [Website with logo](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&loadFavicon=favicon.png&hide-credits=true&browser-tab-title=CPT-363&logo=images/logo.png "Docsify-This Multiple Page Course Site - Website with logo")
+- [Website with Search](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&loadFavicon=favicon.png&hide-credits=true&browser-tab-title=CPT-363&logo=images/logo.png&searchbox=true "Docsify-This Multiple Page Course Site - Website with Search")
+- [Website with Pagination buttons](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363&pagination=true "Docsify-This Multiple Page Course Site - Website with Pagination buttons")
+- [Website with a 'Propose an Edit to this Site' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with a 'Propose an Edit to this Site' link")
+- [Website with Footer and a 'Propose an Edit to this Site' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&edit-link=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main&edit-link-text=Propose%20an%20Edit%20to%20this%20Site&sidebar=true&loadSidebar=_sidebar.md&name=CPT-363&loadNavbar=_navbar.md&mergeNavbar=true&hide-credits=true&loadFooter=_footer.md&browser-tab-title=CPT-363 "Docsify-This Multiple Page Course Site - Website with Footer and a 'Propose an Edit to this Site' link")
 
 ##### [LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
 
@@ -707,6 +738,7 @@ For example, to edit GitHub Markdown files on your desktop you would do the foll
 #### Supported Markdown CSS Classes
 
 - [accordion](#accordion)
+- [announcement](#announcement)
 - [badge](#badge)
 - [banner-image](#banner-image)
 - [banner-tall-image](#banner-tall-image)
@@ -751,6 +783,37 @@ The following CSS classes are available when authoring your own Markdown content
     Topic two details here.
   </details>
 </div>
+```
+
+##### announcement
+
+When the Docsify v5 theme is enabled, to style Blockquotes similarly to the default Docsify-This style.  
+
+```html
+<blockquote class="announcement">
+  <h2>What’s Happening This Week</h2>
+  <h3>How to explore the problem space?</h3>
+  <h4>Important Reminders</h4>
+  <ul>
+    <li><a href="#">Journey Map</a> assignment <span class='badge'> Tue Jun 12th 11:59pm PDT</span></li>
+    <li><a href="#">Course Reflection Log</a> assignment <span class='badge'> Fri Aug 3rd 11:59pm PDT</span></li>
+  </ul>
+
+  <h4>Required Reading</h4>
+  <ul>
+    <li>
+      <a href="https://www.smashingmagazine.com/2014/10/the-skeptics-guide-to-low-fidelity-prototyping/">
+        The Skeptic’s Guide To Low-Fidelity Prototyping
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    <a href="https://canvas.sfu.ca/courses/44038/quizzes/166553" class="button primary">
+      Required Reading Quiz due Jun 4th
+    </a>
+  </p>
+</blockquote>
 ```
 
 ##### badge
@@ -1489,7 +1552,7 @@ There are multiple ways to get a raw Markdown file available online, here are th
 1. Create a gist with your Markdown file at https://gist.github.com
 1. Enter a filename ending with `.md` (e.g. `myfile.md`)
 1. Choose **Create public gist** and tap on that button
-1. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
+1. Tap on **Raw** button in the upper right of your Gist field and copy/paste that URL into the Docsify-This **Markdown File URL** field
 
 **Personal or Organizational Website:**
 
@@ -1542,7 +1605,8 @@ https://docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-thi
 https://docsify-this.net?url-field=empty
 ```
 
-_You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
+> [!TIP]
+> You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`.
 
 ##### edit-link-checkbox
 
@@ -1585,7 +1649,7 @@ The quickest way to create such a shareable URL is to use the Docsify-This Web P
 - [Embedded iFrame not Displayed](#embedded-iframe-not-displayed)
 - [Docsify Sidebar is not Displaying Header Levels](#docsify-sidebar-is-not-displaying-header-levels)
 - [Search Results do not Return all Expected Matches](#search-results-do-not-return-all-expected-matches)
-- [Search Results include Duplicate Matches](#search-results-include-duplicate-matches)
+- [Search Results do not Return all Expected Matches](#search-results-do-not-return-all-expected-matches)
 - [Multiple Embedded Scripts are not Working as Expected](#multiple-embedded-scripts-are-not-working-as-expected)
 
 ##### A '404' File not Found message is Displayed
