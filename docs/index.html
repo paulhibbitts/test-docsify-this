@@ -92,8 +92,8 @@
     // Set footer to true to permanently show the Footer ('_footer.md)
     var footer = false;
 
-    // Set docsifycoretheme to true to apply the Docsify v5 core theme defaults
-    var docsifycoretheme = false;
+    // Set corethemestyles to true to apply the Docsify v5 core theme defaults
+    var corethemestyles = false;
 
     // Set darkmode to 'on' or 'auto' to permanently enable dark mode support
     var darkmode = false;
@@ -153,7 +153,7 @@
       return exists;
     }
 
-    if (((getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || docsifycoretheme) && (getURLParameterByName('basePath'))) {
+    if (((getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || corethemestyles) && (getURLParameterByName('basePath'))) {
       document.querySelectorAll('style').forEach(style => style.remove());
       const body = document.body;
       body.classList.add('sidebar-group-box');
@@ -366,8 +366,8 @@
 
           const cb19 = document.querySelector('#docsifyV5coretheme');
           if (cb19.checked) {
-            if (!url.includes('docsify-core-theme=')) {
-              var URLparms = URLparms + `&docsify-core-theme=true`;
+            if (!url.includes('core-theme-styles=')) {
+              var URLparms = URLparms + `&core-theme-styles=true`;
             }
           }
 
@@ -825,7 +825,7 @@
 
     function setColorProperties(color) {
       document.documentElement.style.setProperty('--theme-color', color);
-      if ((getURLParameterByName(['link-color', 'linkColor']) || getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) || (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true')) || (!docsifycoretheme)) {
+      if ((getURLParameterByName(['link-color', 'linkColor']) || getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) || (!(getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true')) || (!corethemestyles)) {
         document.documentElement.style.setProperty('--link-color', color);
       }
     }
@@ -843,7 +843,7 @@
           if (themeColorDarkMode !== false) {
             setColorProperties('#' + themeColorDarkMode);
           }
-          if ((linkColorDarkMode !== false) && ((!getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!docsifycoretheme))) {
+          if ((linkColorDarkMode !== false) && ((!getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!corethemestyles))) {
             setColorProperties('#' + linkColorDarkMode);
             document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
           }
@@ -857,7 +857,7 @@
           if (linkColor !== false) {
             setColorProperties('#' + linkColor);
           } else {
-            if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') && !(docsifycoretheme)) {
+            if (!(getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') && !(corethemestyles)) {
               setColorProperties('#1BA1EE');
               document.documentElement.style.setProperty('--cover-button-primary-color', '#000000');
             }
@@ -891,7 +891,7 @@
             setColorProperties('#' + linkColor);
           }
         } else {
-          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!(docsifycoretheme))) {
+          if (!(getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!(corethemestyles))) {
             setColorProperties('#0374B5');
             document.documentElement.style.setProperty('--cover-button-primary-color', '#FFFFFF');
           }
@@ -907,7 +907,7 @@
         if (coverPageColor !== false) {
           document.documentElement.style.setProperty('--cover-bg', '#' + coverPageColor);
         } else {
-          if (!(getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || (!(docsifycoretheme))) {
+          if (!(getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!(corethemestyles))) {
             document.documentElement.style.setProperty('--cover-bg', '#C1E1F6');
           }
         }
@@ -1123,7 +1123,7 @@
         depth: 6,
         namespace: "docsify-this-" + Date.now(),
         hideOtherSidebarContent: false, // whether or not to hide other sidebar content
-        insertBefore: (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme']) || docsifycoretheme) 
+        insertBefore: (getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme']) || corethemestyles) 
           ? '.app-name' 
           : '.sidebar-nav'
       },
@@ -1814,7 +1814,7 @@
               document.getElementById("hypothesisenable").checked = true;
             }
 
-            if (getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') {
+            if (getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') {
               document.getElementById("docsifyV5coretheme").checked = true;
             }
 
@@ -2035,7 +2035,7 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') && (!docsifycoretheme)) {
+    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') && (!corethemestyles)) {
       const root_theme = document.querySelector(':root');
       root_theme.style.setProperty('--content-margin-inline', '14px');
     }
@@ -2193,7 +2193,7 @@
         document.documentElement.style.setProperty('--heading-font-weight', headerweight);
       }
 
-      // Change body font if fontFamily or docsify-core-theme parameters present
+      // Change body font if fontFamily or core-theme-styles parameters present
       fontfamily = getURLParameterByName(['font-family', 'fontFamily'], null, null, window.location.href, true);
       if (!(fontfamily === false)) {
           const fontlist = fontfamily.split(',').map(font => {
@@ -2204,7 +2204,7 @@
         finalfontstack = finalfontstack.replaceAll('_', ' ');
         document.documentElement.style.setProperty('--font-family', finalfontstack);
       } else {
-        if ((getURLParameterByName(['docsify-core-theme','docsifyCoreTheme','docsify-theme'], null, null, window.location.href, true) === 'true') || docsifycoretheme) {
+        if ((getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || corethemestyles) {
           document.documentElement.style.setProperty('--font-family', 'system-ui, sans-serif');
         } else {
           document.documentElement.style.setProperty('--font-family', '"Source Sans 3","Helvetica Neue",sans-serif');
