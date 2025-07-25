@@ -38,7 +38,7 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 
 **Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page.  
 
-[Try it with our sample ReadMe file with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
+[Try it with the Docsify-This ReadMe file displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3)
 
 ## All About Docsify-This
 
