@@ -233,7 +233,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 ##### core-theme-styles
 
 Apply the Docsify v5 core theme styles instead of using Docsify-This styles with the optional **core-theme-styles** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md&core-theme-styles=true Default page elements, such as Blockquotes, will be displayed without any Docsify-This styles. To style a blockquote similarly to the default Docsify-This theme, you can apply the `announcement` CSS class within an HTML Blockquote.
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-one-page-article/main&homepage=home.md&edit-link=https://github.com/paulhibbitts/docsify-this-one-page-article/blob/main/home.md&core-theme-styles=true. Default page elements, such as Blockquotes, will be displayed without any Docsify-This styles. All Docsify-This Markdown CSS classes remain available for use, including styling blockquotes with the `announcement` CSS class within HTML Blockquotes.
 
 ##### edit-link
 
