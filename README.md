@@ -33,8 +33,8 @@ _**Check out what Docsify-This can do by [viewing this ReadMe file as a web page
 1. **Visit** https://docsify-this.net
 1. **Paste your file URL** into the Markdown File URL field
 1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
-1. Tap on **Show More Page Appearance Options »** and select from available options
-1. Click **"Publish as Web Page"**
+1. Tap on the link  **Show More Page Appearance Options »** and select from available options
+1. Tap on the button **Publish as Web Page**
 1. **Share your new web page Docsify-This URL** - that’s it!
 
 **Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page instantly.  
