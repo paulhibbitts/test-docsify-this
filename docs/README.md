@@ -345,11 +345,14 @@ Page layout:
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public raw Markdown file works
 1. **Paste your file URL** into the Markdown File URL field
-1. Choose a **Page Layout** (try **Docsify Sidebar** for enhanced navigation)
+1. Choose a **Page layout** (try **Docsify Sidebar** for enhanced navigation)
+1. Tap on **Show More Page Appearance Options »** and select from available options
 1. Click **"Publish as Web Page"**
-1. **Share your new web page URL** - that’s it!
+1. **Share your new web page Docsify-This URL** - that’s it!
 
-**Example:** Turn any GitHub file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page instantly. [Try it with our sample ReadMe file →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&dark-mode=auto)
+**Example:** Turn any GitHub Markdown file like `https://github.com/hibbitts-design/docsify-this/blob/main/README.md` into a responsive web page instantly.  
+
+[Try it with our sample ReadMe file with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
 
 ## All About Docsify-This
 
