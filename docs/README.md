@@ -180,13 +180,13 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">
   <input class="docsifythisurlbuildercheckbox" type="checkbox" id="docsifyV5coretheme" onclick="disableEnableThemeStyleOptions()">
-  <label for="docsifyV5coretheme">Apply Docsify v5 core theme style defaults, overriding Docsify-This styles
+  <label for="docsifyV5coretheme">Use Docsify v5 core theme style defaults instead of Docsify-This styling
     <details class="docsifythiscustomdetails">
       <summary aria-label="More information about using Docsify v5 Core Theme">
         <img src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/docs/images/Info.svg" alt="Info" width="16" height="16">
         <span class="docsifythisinfolabel" id="docsifythisurlbuildercustomdetailslink">Learn more</span>
       </summary>
-      <p>This loads only the Docsify v5 core theme, removing Docsify-This and Web Page Builder theme styling. To adjust the visual appearance after publishing manually add URL parameters, for example <code>&font-family=Merriweather,serif</code>, <code>&theme-color=CC0000</code>, <code>&link-color=CC0000</code>, or <code>&max-width=910px</code>.</p>
+      <p>This applies the Docsify v5 core theme defaults, removing Docsify-This and Web Page Builder theme styling. To adjust the visual appearance after publishing manually add URL parameters, for example <code>&font-family=Merriweather,serif</code>, <code>&theme-color=CC0000</code>, <code>&link-color=CC0000</code>, or <code>&max-width=910px</code>. All additional Docsify-This Markdown CSS classes still remain available.</p>
     </details>
   </label>
 </div>
