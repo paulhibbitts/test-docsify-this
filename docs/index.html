@@ -2035,7 +2035,7 @@
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
-    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!corethemestyles)) {
+    if (((getURLParameterByName(['standalone', 'embedded']) || standalone)) && (!getURLParameterByName(['core-theme-styles','coreThemeStyles','docsify-core-theme'], null, null, window.location.href, true) === 'true') || (!corethemestyles) || (!(getURLParameterByName('basePath')))) {
       const root_theme = document.querySelector(':root');
       root_theme.style.setProperty('--content-margin-inline', '14px');
     }
