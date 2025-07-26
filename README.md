@@ -1666,7 +1666,7 @@ When displaying GitHub Markdown files, the branch name is assumed to be `main`, 
 Due to not being able to update Navbar or custom Sidebar links before page rendering, 'Edit this Page' links cannot be automatically updated to their correct target pages. Manually pass a URL pointing to the Git Repository using the URL parameter `edit-link` as a workaround, for example:
 
 ```
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com//paulhibbitts/docsify-this-cmpt-363-222-site&edit-link-text=GitHub%20Repository
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site&edit-link-text=GitHub%20Repository
 ```
 
 ##### Updated Markdown file not Displayed in the Browser
