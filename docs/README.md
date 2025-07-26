@@ -339,8 +339,6 @@ Page layout:
 
 </div>
 
-<div id='docsifythisdocsindex'>
-
 ### Quickstart ⚡
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or a public raw Markdown file works
@@ -357,6 +355,8 @@ https://github.com/hibbitts-design/docsify-this/blob/main/README.md
 ```
 
 [See the above ReadMe file displayed with Docsify Sidebar showing 3 levels of Headers →](https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2&sidebar=true&maxLevel=3 ':target=_blank')
+
+<div id='docsifythisdocsindex'>
 
 ## Everything You Need to Know about Docsify-This
 
