@@ -50,7 +50,6 @@ iframe[src] * {
 
 /* Patch for legacy use of non-Markdown long links to wrap */
 .markdown-section a {
-  word-wrap: break-word;
   word-break: break-all;
   overflow-wrap: break-word;
 }
