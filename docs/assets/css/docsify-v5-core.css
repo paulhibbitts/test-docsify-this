@@ -55,8 +55,6 @@
   line-height: 1.4;
 }
 
-/* Support for Docsify-This classes with preview build of Docsify v5 theme */
-
 /* Target first paragraphs with 5+ links (reasonable index minimum) */
 .markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) {
     display: flex;
