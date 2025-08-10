@@ -723,29 +723,6 @@ input.toggle:where([type=checkbox], [type=radio]):before {
   }
 }
 
-/* Navigation pills styling */
-.navpill {
-  display: inline-flex;
-  align-items: center;
-  padding: 6px 12px;
-  margin-left: 6px;
-  background: var(--bg-secondary);
-  color: var(--text-secondary);
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 400;
-  border: 1px solid var(--border-color);
-  transition: all var(--transition-fast);
-}
-
-.navpill:hover {
-  background: var(--interactive-color);
-  color: white;
-  border-color: var(--interactive-color);
-  transform: translateY(-1px);
-}
-
 /* Banner styling */
 #banner {
   margin: 20px 0;
