@@ -100,7 +100,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Title on Browser tab:<br><input aria-label="Title on Browser tab" type="text" maxlength="60" value="Published by Docsify-This" id="browserTabTitle" name="browserTabTitle"></div>
 
-<div class='stackedlabeldropdown'>
+<div class="stackedlabeldropdown">
  <label for="fontfamily">Page font family:</label>
  <select style="display: inline-block; vertical-align: middle; margin-right: 4px;" class="docsifythisurlbuilderoptionsline" id="fontfamily" name="fontfamily">
    <option value="Source%20Sans%203,Helvetica%20Neue,sans-serif">Source Sans 3</option>
@@ -122,7 +122,7 @@ Page layout:
 </span>
 </div>
 
-<div class='stackedlabeldropdown'>
+<div class="stackedlabeldropdown">
   <label for="fontsize">Font size:</label>
   <select class="docsifythisurlbuilderoptionsline" id="fontsize" name="fontsize">
     <option value="18px">18px</option>
@@ -136,7 +136,7 @@ Page layout:
   </select>
 </div>
 
-<div class='stackedlabeldropdown'>
+<div class="stackedlabeldropdown">
   <label for="lineheight">Line height:</label>
   <select class="docsifythisurlbuilderoptionsline" id="lineheight" name="lineheight" style="width: 70px;">
     <option value="1.4">1.4</option>
@@ -152,7 +152,7 @@ Page layout:
 
 <div class="clearfix">
 
-<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:8px;'>
+<div class="docsifythisurlbuilderoptionsline"><div class="stackedlabeldropdown" style='margin-bottom:8px;'>
   <label for="headerweight">Page headers font weight:</label>
   <select class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
     <option value="400">Normal (400)</option>
@@ -222,7 +222,7 @@ Page layout:
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:8px;'>
+<div class="docsifythisurlbuilderoptionsline"><div class="stackedlabeldropdown" style='margin-bottom:8px;'>
   <label for="enableDarkmode">Dark theme mode:</label>
   <select class="docsifythisurlbuilderoptionsline" id="enableDarkmode" name="enableDarkmode">
     <option value="false">Off</option>
@@ -242,7 +242,7 @@ Page layout:
 
 <div class="clearfix">
 
-<div class='stackedlabeldropdown'>
+<div class="stackedlabeldropdown">
   <label for="linktextdecoration">Link text decoration:</label>
   <select class="docsifythisurlbuilderoptionsline" id="linktextdecoration" name="linktextdecoration" style="width: 120px;">
     <option value="underline">Underline</option>
@@ -254,9 +254,9 @@ Page layout:
 
 <div class="clearfix">
 
-  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;"><label for="linkhovertextdecoration">Link hover color:</label><input aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
+  <div class="stackedlabeldropdown"><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;"><label for="linkhovertextdecoration">Link hover color:</label><input aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
 
-  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;"><label for="linkhovertextdecoration">Link hover text decoration:</label>
+  <div class="stackedlabeldropdown"><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;"><label for="linkhovertextdecoration">Link hover text decoration:</label>
   <select class="docsifythisurlbuilderoptionsline" id="linkhovertextdecoration" name="linkhovertextdecoration" style="width: 120px;">
     <option value="none">None</option>
     <option disabled="disabled">──</option>
@@ -267,7 +267,7 @@ Page layout:
 
 <div class="clearfix">
 
-<div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;">
+<div class="stackedlabeldropdown"><div class="docsifythisurlbuilderoptionsline" style="vertical-align: middle;">
 <label for="externalLinkTarget">External link target:</label>
 <select class="docsifythisurlbuilderoptionsline" id="externalLinkTarget" name="externalLinkTarget" style="width: 210px;">
   <option value="_top">Same window or tab</option>
