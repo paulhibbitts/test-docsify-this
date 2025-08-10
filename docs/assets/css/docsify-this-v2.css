@@ -54,7 +54,7 @@
 #docsifythis p {
   line-height: 1.5;
   letter-spacing: var(--letter-spacing-normal);
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 
 /* Button typography */
@@ -485,12 +485,12 @@ input[type="color"]:focus {
 /* Radio button layout options - add space above labels */
 /* FALLBACK: For browsers that don't support :has() */
 #docsifythisurlbuilder label[data-pagestyle-radio="true"] {
-  margin-top: 1rem;
+  margin-top: .10rem;
 }
 
 /* MODERN: For browsers that support :has() */
 #docsifythisurlbuilder label:has(input[type="radio"][name="pagestyle"]) {
-  margin-top: 1rem;
+  margin-top: .10rem;
 }
 
 #docsifythisurlbuilder .toggle-wrapper {
@@ -666,6 +666,10 @@ input.toggle:where([type=checkbox], [type=radio]):before {
 
 #docsifythisurlbuilder .stackedlabeldropdown select {
   margin-top: 0.125rem;
+}
+
+#docsifythisurlbuilder #fontPreview {
+  margin-top: 3px!important;
 }
 
 /* Align form elements horizontally - override inline styles */
