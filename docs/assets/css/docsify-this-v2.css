@@ -841,8 +841,8 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
 
 #docsifythisurlbuilder h3 {
   font-weight: 500;
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin-top: .75rem;
+  margin-bottom: 0.50rem;
   color: var(--interactive-color);
 }
 
