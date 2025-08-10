@@ -255,15 +255,14 @@ Page layout:
 
 <div class="clearfix">
 
-  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style='margin-top:-2px;'>Link hover color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
+  <div class='stackedlabeldropdown'><div class="docsifythisurlbuilderoptionsline" style="display: inline-block; vertical-align: middle;"><label for="linkhovertextdecoration">Link hover color:</label><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Link hover color" type="text" maxlength="7" size="8" value="" id="linkhovercolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkhovercolor', 'linkhovercolorpreview');" data-coloris><span id="linkhovercolorpreview"></span></div></div>
 
-  <div class='stackedlabeldropdown' style="margin-top:-6px;">
-  <label for="linkhovertextdecoration">Link hover text decoration:</label>
+  <div class='stackedlabeldropdown''><div class="docsifythisurlbuilderoptionsline" style="display: inline-block; vertical-align: middle;"><label for="linkhovertextdecoration">Link hover text decoration:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="linkhovertextdecoration" name="linkhovertextdecoration" style="width: 60px;">
     <option value="none">None</option>
     <option disabled="disabled">──</option>
     <option value="underline">Underline</option>
-  </select></div>
+  </select></div></div>
 
 </div>
 
