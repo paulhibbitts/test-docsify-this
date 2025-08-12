@@ -103,9 +103,9 @@ input[type="checkbox"] {
   color: var(--text-primary);
 }
 
-#docsifythisurlbuilder  .pagefontsettings {
+#docsifythisurlbuilder .pagefontsettings {
   margin-bottom: 10px;
-  overflow: hidden; /* clears floats */
+  overflow: hidden;
 }
 
 /* CSS generated/assisted by Anthropic Claude AI */
