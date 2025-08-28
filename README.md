@@ -130,7 +130,6 @@ With Docsify-This you can:
 
 ---
 
-
 #### Docsify-This Core Design Principles
 
 - Zero Maintenance Publishing
@@ -1505,7 +1504,7 @@ _To customize for longer/shorter content, adjust the height arrays in the JavaSc
 
 ##### Embedding a Responsive Docsify-This Page in HTML
 
-For automatic iframe height adjustment, see [Embedding a Responsive Docsify-This Page in an iFrame](#embedding-a-responsive-docsify-this-page-in-an-iframe).
+A [fully responsive Docsify-This page can be embedded into an HTML page](https://demo.hibbittsdesign.org/embedded-docsify-this-page/), using the following as a working example:
 
 ```html
 <!DOCTYPE html>
