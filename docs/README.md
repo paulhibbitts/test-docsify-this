@@ -821,9 +821,9 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 A [fully responsive Docsify-This page can be embedded into an iFrame](https://demo.hibbittsdesign.org/embedded-docsify-this-iframe/).
 
-_In general, paste the below HTML into your HTML editor. For WordPress users: Add the code below to a Custom HTML block._
+_In general, paste the below HTML into your HTML editor and then replace the default `basepath` and `homepage` value with your own. For WordPress users: Add the code below to a Custom HTML block._
 
-For basic embedding with a fixed height to seamlessly integrate with other destination page content, use:
+For basic embedding with a fixed height to seamlessly integrate with other destination page content:
 
 ```html
 <div style="width: 100%; margin: 0; padding: 0; overflow: hidden;">
