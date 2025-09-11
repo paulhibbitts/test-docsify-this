@@ -288,7 +288,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline">Add '←Back' link URL (displayed at top of page):<br><input aria-label="Add back link URL (displayed at top of page)" type="url" maxlength="200" value="" id="backLink" name="backLink"></div>
 
-<div class="docsifythisurlbuilderoptionsline">Add page title (as H1 header at top of page):<br><input aria-label="Add page title (added as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
+<div class="docsifythisurlbuilderoptionsline">Add page title (as H1 header at top of page):<br><input aria-label="Add page title (as H1 header at top of page)" type="text" maxlength="200" value="" id="pageTitle" name="pageTitle"></div>
 
 <h3>Docsify Custom Files</h3>
 
