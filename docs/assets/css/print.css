@@ -1,76 +1,100 @@
 /* CSS generated/assisted by Anthropic Claude AI */
+
 /* print.css - Minimal version with improvements */
+
 @media print {
 
-/* Hide UI elements */
-.app-nav, .sidebar, .pagination-item, .docsify-pagination-container,
-.button, .button-secondary, .button-rounded, .button-secondary-rounded {
-display: none !important;
- }
+  /* Hide UI elements */
+  .app-nav,
+  .sidebar,
+  .pagination-item,
+  .docsify-pagination-container,
+  .button,
+  .button-secondary,
+  .button-rounded,
+  .button-secondary-rounded {
+    display: none !important;
+  }
 
-/* Basic print setup */
-* {
-background: transparent !important;
-color: #000 !important;
-box-shadow: none !important;  /* Added: Remove shadows */
- }
+  /* Basic print setup */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    /* Added: Remove shadows */
+  }
 
-@page {
-margin: 2cm;
- }
+  @page {
+    margin: 2cm;
+  }
 
-body {
-font-size: 11pt;
-line-height: 1.4;  /* Added: Better readability */
- }
+  body {
+    font-size: 11pt;
+    line-height: 1.4;
+    /* Added: Better readability */
+  }
 
-.markdown-section {
-max-width: none !important;
-margin: 0 !important;
- }
+  .markdown-section {
+    max-width: none !important;
+    margin: 0 !important;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-page-break-after: avoid;
- }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
 
-/* Added: Text flow improvements */
-p, li {
-orphans: 3;
-widows: 3;
- }
+  /* Added: Text flow improvements */
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
 
-img {
-max-width: 100% !important;
-page-break-inside: avoid;
- }
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
 
-blockquote, pre, table {
-page-break-inside: avoid;
- }
+  blockquote,
+  pre,
+  table {
+    page-break-inside: avoid;
+  }
 
-/* Added: Table improvements */
-table {
-border-collapse: collapse;
-width: 100%;
- }
+  /* Added: Table improvements */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-th, td {
-border: 1pt solid #ccc;
-padding: 4pt;
- }
+  th,
+  td {
+    border: 1pt solid #ccc;
+    padding: 4pt;
+  }
 
-/* Added: Code readability */
-code, pre {
-font-family: monospace;
-font-size: 10pt !important;
- }
+  /* Added: Code readability */
+  code,
+  pre {
+    font-family: monospace;
+    font-size: 0.91em !important;
+    /* 91% of 11pt ≈ 10pt */
+  }
 
-/* Added: Link handling for external URLs */
-a[href^="http"]:after {
-content: " (" attr(href) ")";
-font-size: 9pt;
- }
+  /* Added: Link handling for external URLs */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.82em;
+    /* 82% of 11pt ≈ 9pt */
+  }
 
-.no-print { display: none !important; }
+  .no-print {
+    display: none !important;
+  }
 
 }
