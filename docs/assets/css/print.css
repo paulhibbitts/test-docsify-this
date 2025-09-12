@@ -11,16 +11,72 @@
     --print-url-size: 8pt;
   }
 
-  /* Hide UI elements */
+  /* Hide UI elements - expanded list with specific sidebar ID */
   .app-nav,
-  .sidebar,
+  #__sidebar,
+  aside,
   .pagination-item,
   .docsify-pagination-container,
   .button,
   .button-secondary,
   .button-rounded,
-  .button-secondary-rounded {
+  .button-secondary-rounded,
+  nav,
+  header,
+  .search,
+  .search-input,
+  .search-button,
+  .navbar,
+  .breadcrumb,
+  .edit-link,
+  .github-corner,
+  .app-nav-merged,
+  .skip-link,
+  [aria-label*="search"],
+  [role="navigation"],
+  .navigation {
     display: none !important;
+  }
+
+  /* Hide specific elements from this page type */
+  a[href*="github.com"],
+  a[href*="grabcad.com"],
+  a[href*="discord"],
+  .social-links,
+  .external-links {
+    display: none !important;
+  }
+
+  /* Fix layout - remove sidebar spacing */
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: var(--print-body-size);
+    line-height: 1.4;
+  }
+
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+  }
+
+  .content,
+  .app,
+  .markdown-section {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: none !important;
+    position: static !important;
+    font-size: var(--print-body-size) !important;
   }
 
   /* Basic print setup */
@@ -32,17 +88,6 @@
 
   @page {
     margin: 2cm;
-  }
-
-  body {
-    font-size: var(--print-body-size);
-    line-height: 1.4;
-  }
-
-  .markdown-section {
-    max-width: none !important;
-    margin: 0 !important;
-    font-size: var(--print-body-size) !important;
   }
 
   /* Override heading sizes explicitly */
