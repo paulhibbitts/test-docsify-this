@@ -1,0 +1,42 @@
+/* print.css - Minimal version */
+@media print {
+  /* Hide UI elements */
+  .app-nav, .sidebar, .pagination-item, .docsify-pagination-container,
+  .button, .button-secondary, .button-rounded, .button-secondary-rounded {
+    display: none !important;
+  }
+
+  /* Basic print setup */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  .markdown-section {
+    max-width: none !important;
+    margin: 0 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  blockquote, pre, table {
+    page-break-inside: avoid;
+  }
+
+  .no-print { display: none !important; }
+}
