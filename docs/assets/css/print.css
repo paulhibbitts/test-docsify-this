@@ -62,7 +62,7 @@ padding: 4pt;
 /* Added: Code readability */
 code, pre {
 font-family: monospace;
-font-size: 10pt;
+font-size: 10pt !important;
  }
 
 /* Added: Link handling for external URLs */
