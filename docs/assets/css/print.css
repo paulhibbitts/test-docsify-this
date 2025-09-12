@@ -13,8 +13,6 @@
 
   /* Hide UI elements - expanded list with specific sidebar ID */
   .app-nav,
-  .sidebar,
-  .sidebar-nav,
   #__sidebar,
   aside,
   .pagination-item,
@@ -29,12 +27,10 @@
   .search-input,
   .search-button,
   .navbar,
-  .nav-menu,
   .breadcrumb,
   .edit-link,
   .github-corner,
   .app-nav-merged,
-  .color-picker,
   .skip-link,
   [aria-label*="search"],
   [role="navigation"],
