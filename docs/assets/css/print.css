@@ -1,130 +1,126 @@
 /* CSS generated/assisted by Anthropic Claude AI */
-
 /* print.css - Minimal version with improvements */
-
 @media print {
+  /* Font size variables for easy scaling */
+  :root {
+    --print-body-size: 10pt;
+    --print-h1-size: 14pt;
+    --print-h2-size: 12pt;
+    --print-h3-size: 11pt;
+    --print-h4-h6-size: 10pt;
+    --print-code-size: 9pt;
+    --print-url-size: 8pt;
+  }
 
-/* Font size variables for easy scaling */
-:root {
---print-body-size: 10pt;
---print-h1-size: 14pt;
---print-h2-size: 12pt;
---print-h3-size: 11pt;
---print-h4-h6-size: 10pt;
---print-code-size: 9pt;
---print-url-size: 8pt;
-}
+  /* Hide UI elements */
+  .app-nav,
+  .sidebar,
+  .pagination-item,
+  .docsify-pagination-container,
+  .button,
+  .button-secondary,
+  .button-rounded,
+  .button-secondary-rounded {
+    display: none !important;
+  }
 
-/* Hide UI elements */
-.app-nav,
-.sidebar,
-.pagination-item,
-.docsify-pagination-container,
-.button,
-.button-secondary,
-.button-rounded,
-.button-secondary-rounded {
-display: none !important;
-}
+  /* Basic print setup */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+  }
 
-/* Basic print setup */
-* {
-background: transparent !important;
-color: #000 !important;
-box-shadow: none !important;
-}
+  @page {
+    margin: 2cm;
+  }
 
-@page {
-margin: 2cm;
-}
+  body {
+    font-size: var(--print-body-size);
+    line-height: 1.4;
+  }
 
-body {
-font-size: var(--print-body-size);
-line-height: 1.4;
-}
+  .markdown-section {
+    max-width: none !important;
+    margin: 0 !important;
+    font-size: var(--print-body-size) !important;
+  }
 
-.markdown-section {
-max-width: none !important;
-margin: 0 !important;
-font-size: var(--print-body-size) !important;
-}
+  /* Override heading sizes explicitly */
+  .markdown-section h1 {
+    font-size: var(--print-h1-size) !important;
+    page-break-after: avoid;
+  }
 
-/* Override heading sizes explicitly */
-.markdown-section h1 {
-font-size: var(--print-h1-size) !important;
-page-break-after: avoid;
-}
+  .markdown-section h2 {
+    font-size: var(--print-h2-size) !important;
+    page-break-after: avoid;
+  }
 
-.markdown-section h2 {
-font-size: var(--print-h2-size) !important;
-page-break-after: avoid;
-}
+  .markdown-section h3 {
+    font-size: var(--print-h3-size) !important;
+    page-break-after: avoid;
+  }
 
-.markdown-section h3 {
-font-size: var(--print-h3-size) !important;
-page-break-after: avoid;
-}
+  .markdown-section h4,
+  .markdown-section h5,
+  .markdown-section h6 {
+    font-size: var(--print-h4-h6-size) !important;
+    page-break-after: avoid;
+  }
 
-.markdown-section h4,
-.markdown-section h5,
-.markdown-section h6 {
-font-size: var(--print-h4-h6-size) !important;
-page-break-after: avoid;
-}
+  /* Override paragraph and list text */
+  .markdown-section p,
+  .markdown-section li,
+  .markdown-section td,
+  .markdown-section th {
+    font-size: var(--print-body-size) !important;
+  }
 
-/* Override paragraph and list text */
-.markdown-section p,
-.markdown-section li,
-.markdown-section td,
-.markdown-section th {
-font-size: var(--print-body-size) !important;
-}
+  /* Text flow improvements */
+  p,
+  li {
+    orphans: 3;
+    widows: 3;
+  }
 
-/* Text flow improvements */
-p,
-li {
-orphans: 3;
-widows: 3;
-}
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
 
-img {
-max-width: 100% !important;
-page-break-inside: avoid;
-}
+  blockquote,
+  pre,
+  table {
+    page-break-inside: avoid;
+  }
 
-blockquote,
-pre,
-table {
-page-break-inside: avoid;
-}
+  /* Table improvements */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-/* Table improvements */
-table {
-border-collapse: collapse;
-width: 100%;
-}
+  th,
+  td {
+    border: 1pt solid #ccc;
+    padding: 4pt;
+  }
 
-th,
-td {
-border: 1pt solid #ccc;
-padding: 4pt;
-}
+  /* Code readability */
+  code,
+  pre {
+    font-family: monospace;
+    font-size: var(--print-code-size) !important;
+  }
 
-/* Code readability */
-code,
-pre {
-font-family: monospace;
-font-size: var(--print-code-size) !important;
-}
+  /* Link handling for external URLs */
+  a[href^="http"]:after {
+    content: " (" attr(href) ")";
+    font-size: var(--print-url-size);
+  }
 
-/* Link handling for external URLs */
-a[href^="http"]:after {
-content: " (" attr(href) ")";
-font-size: var(--print-url-size);
-}
-
-.no-print {
-display: none !important;
-}
-
+  .no-print {
+    display: none !important;
+  }
 }
