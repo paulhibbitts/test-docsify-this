@@ -2262,13 +2262,60 @@ For example, the following URL will display the Advanced Web Page Builder, with 
 
 The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docsify-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://preview-v2.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://preview-v2.docsify-this.net?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
 
-##### Pre-configured Settings for Embedding Docsify-This Content
+#### Loading Web Page Builder Custom Settings
 
-- Popular Learning Management System (LMS) content styles for Docsify-This:
-  - [Brightspace Config](http://load-brightspace.docsify-this.net)
-  - [Canvas Config](http://load-canvas.docsify-this.net)
-  - [Moodle Config](http://load-moodle.docsify-this.net)
-  - [Sakai Config](http://load-sakai.docsify-this.net)
+You can load custom default settings in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including:
+
+- Producing multiple web pages/sites with consistent styling
+- Conducting online sessions or workshops where specific configurations are to be explored
+- Facilitating support and collaboration among Docsify-This users
+
+Along with the standard Docsify-This URL parameters, the Web Page Builder also offers the following specific parameters:
+
+##### url-field
+
+```html
+https://docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md
+```
+
+```html
+https://docsify-this.net?url-field=empty
+```
+
+_You can even just type **docsify-this.net?** in front of an online Markdown file URL that you are viewing (such as files hosted on GitHub, Codeberg, or raw source files) to instantly set up the Docsify-This Web Page Builder with that file. Once the Web Page Builder loads, press the Return key — no need to leave the keyboard — to see Docsify-This display the Markdown file as a web page! For example, `https://docsify-this.net?https://github.com/hibbitts-design/docsify-this-one-page-course/blob/main/home.md`._
+
+##### edit-link-checkbox
+
+```html
+https://docsify-this.net?url-field=https://codeberg.org/paulhibbitts/docsify-this-one-page-course/src/branch/main/home.md&edit-link-checkbox=true
+```
+
+##### show-page-options
+
+```html
+https://docsify-this.net?show-page-options=true
+```
+
+##### advanced
+
+```html
+https://docsify-this.net?advanced=true
+```
+
+For example, the following URL will display the Advanced Web Page Builder, with the Markdown file URL set to `https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md`, the site name 'CPT-363' along with a Docsify custom Sidebar and Navbar to be included: https://docsify-this.net?url-field=https://github.com/hibbitts-design/docsify-this-multiple-page-course-site/blob/main/home.md&sidebar=true&loadSidebar=true&loadNavbar=true&name=CPT-363
+
+The quickest way to create such a shareable URL is to use the Docsify-This Web Page Builder to generate a Docsify-This web page URL, and then replace the URL parameter `basepath` with `url-field` using the full path of the source Markdown file URL. For example, the URL https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&sidebar=true&maxLevel=3 would be changed to https://docsify-this.net?url-field=https://github.com/hibbitts-design/docsify-this-one-page-article/blob/main/home.md&homepage=home.md&sidebar=true&maxLevel=3.
+
+##### Load and Go LMS Styling Configurations
+
+Use these pre-configured Web Page Builders that automatically apply the default styling for your Learning Management System:
+
+- [Brightspace Config](http://load-brightspace.docsify-this.net) 
+- [Canvas Config](http://load-canvas.docsify-this.net)
+- [Moodle Config](http://load-moodle.docsify-this.net)
+- [Sakai Config](http://load-sakai.docsify-this.net)
+
+Each opens the Docsify-This Web Page Builder with fonts, colors, and sizing pre-set to seamlessly blend with your chosen platform.  
 
 ---
 
