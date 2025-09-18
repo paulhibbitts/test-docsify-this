@@ -150,25 +150,6 @@ input[type="checkbox"] {
   }
 }
 
-#docsifythis .docsify-copy-code-button {
-  padding: 0.35em 0.5em;
-  background: var(--text-primary);
-  color: var(--bg-primary);
-  font-size: .85em;
-  border-radius: 6px;
-  border: none;
-}
-
-.docsify-copy-code-button:focus-visible {
-  opacity: 1;
-}
-
-#docsifythis .docsify-copy-code-button > .error,
-#docsifythis .docsify-copy-code-button > .success {
-  padding: 0.2em 0.35em;
-  font-size: 0.8em;
-}
-
 #docsifythis .copy-link {
   margin-left: 8px;
   color: var(--link-color);

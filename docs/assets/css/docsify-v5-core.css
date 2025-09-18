@@ -55,6 +55,25 @@
   line-height: 1.4;
 }
 
+.markdown-section .docsify-copy-code-button {
+  padding: 0.35em 0.5em;
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  font-size: .85em;
+  border-radius: 6px;
+  border: none;
+}
+
+.markdown-section .docsify-copy-code-button:focus-visible {
+  opacity: 1;
+}
+
+.markdown-section .docsify-copy-code-button > .error,
+.markdown-section .docsify-copy-code-button > .success {
+  padding: 0.2em 0.35em;
+  font-size: 0.8em;
+}
+
 /* Target first paragraphs with 5+ links (reasonable index minimum) */
 .markdown-section p:first-of-type:has(a[href^="#"]):has(a:nth-of-type(5)) {
     display: flex;
