@@ -1536,6 +1536,14 @@
 
             dd && console.log('custom scroll plugin called!');
             
+            // Chrome-specific back button detection
+            let isChrome = /Chrome/.test(navigator.userAgent);
+            
+            if (isChrome && window.scrollY > 0) {
+                dd && console.log('Chrome back navigation detected (page already scrolled), skipping');
+                return;
+            }
+
             // Build the current URL without the hash
             let currentUrlWithoutHash = new URL(
               location.origin + location.pathname +
