@@ -732,7 +732,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### [LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages)
 
-!Docsify-This LMS Content Pages Template
+![Docsify-This LMS Content Pages Template](docs/images/docsify-this-lms-content-pages-readme.jpg)
 
 [LMS Content Pages Template](https://github.com/hibbitts-design/docsify-this-lms-content-pages) example pages, including the use of the `font-family`, `font-size` and `hide-credits` URL parameters for seamless content embedding within the Canvas LMS, as displayed by Docsify-This:
 
