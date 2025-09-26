@@ -66,7 +66,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
   <li><a href="#overview">Overview</a></li>
   <li><a href="#page-appearance-url-parameters-basic">Page Appearance URL Parameters (Basic)</a></li>
   <li><a href="#page-appearance-url-parameters-supplemental">Page Appearance URL Parameters (Supplemental)</a></li>
-  <li><a href="#using-the-share-thisnet-alias">Using the Share-This.net Alias</a></li>
+  <li><a href="#using-the-share-thisnet-and-publish-thisnet-aliases">Using the Share-This.net Alias</a></li>
   <li><a href="#embedding-docsify-this-pages-into-other-platforms">Embedding Docsify-This Pages into Other Platforms</a></li>
   <li><a href="#ready-to-use-docsify-this-markdown-templates">Ready-to-Use Docsify-This Markdown Templates</a></li>
   <li><a href="#example-content-workflows">Example Content Workflows</a></li>
@@ -235,7 +235,7 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 - [Overview](#overview)
 - [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
 - [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
-- [Using the Share-This.net Alias](#using-the-share-thisnet-alias)
+- [Using the Share-This.net Alias](#using-the-share-thisnet-and-publish-thisnet-aliases)
 - [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
 - [Example Content Workflows](#example-content-workflows)
