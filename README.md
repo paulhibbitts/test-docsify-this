@@ -274,7 +274,7 @@ Learn more about each of the basic Docsify-This URL parameters below, and discov
 - [edit-link-text](#edit-link-text)
 - [edit-link-top](#edit-link-top)
 - [font-family](#font-family)
-- [font-size](/#font-size)
+- [font-size](#font-size)
 - [header-weight](#header-weight)
 - [hide-credits](#hide-credits)
 - [hypothesis](#hypothesis)
