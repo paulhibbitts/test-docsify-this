@@ -554,13 +554,14 @@ https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibb
 
 ---
 
-#### Using the Share-This.net Alias
+#### Using the Share-This.net and Publish-This.net Aliases
 
-The Share-This.net domain provides an alternative way to access Docsify-This functionality without explicit branding. All Docsify-This features and URL parameters work identically with Share-This.net. Simply replace `docsify-this.net` with `share-this.net` in any Docsify-This URL.
+The Share-This.net and Publish-This.net aliases provide alternative ways to access Docsify-This functionality without Docsify-This branding. All Docsify-This features and URL parameters work identically with either alias. Simply replace `docsify-this.net` with `share-this.net` or `publish-this.net` in any Docsify-This URL. Note that once loaded, pages will display `docsify-this.net` in the browser URL bar.
 
-**Example:**
+**Examples:**
 - Docsify-This: `https://docsify-this.net?basePath=...`
 - Share-This alias: `https://share-this.net?basePath=...`
+- Publish-This alias: `https://publish-this.net?basePath=...`
 
 ---
 
