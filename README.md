@@ -1469,7 +1469,7 @@ https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-de
 
 The parameters `max-width` and `topMargin` can also be manually added to the Docsify-This URL to further adjust left/right margins and spacing above the header. 
 
-https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&max-width=80&font-size=42px&header-weight=600&dark-mode=on&topMargin=20#/?id=docsify-this-core-design-principles
+https://docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=42px&header-weight=600&dark-mode=on&max-width=80&topMargin=20#/?id=docsify-this-core-design-principles
 
 ##### Providing a Page Table of Contents within a Smaller Area
 
