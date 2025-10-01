@@ -582,6 +582,8 @@ For basic embedding with a fixed height to seamlessly integrate with other desti
 </div>
 ```
 
+Once you are viewing the embedded page, you can refine the left/right margins of the content by adjusting the `max-width` parameter (default unit is %), as shown in the example Docsify-This URL above.
+
 _Adjust the `height` value (2700px) to match your content length. Test on different devices to ensure all content is visible._
 
 To avoid having to determine and set an appropriate height for the iframe, a scrollbar can be included:
