@@ -158,6 +158,8 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline" style='margin-top:0px;'>Page link color:<br><input style="border-radius: 7px;border-color: #8e8f9d" aria-label="Page link color" type="text" maxlength="7" size="8" value="#0374B5" id="linkcolor" style="text-transform:uppercase" oninput="validateColorAndUpdatePreview('linkcolor', 'linkcolorpreview');" data-coloris><span id="linkcolorpreview"></span></div>
 
+<div class="clearfix">
+
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:12px;border-radius: 7px;border-color: #8e8f9d'>
   <label for="headerweight">Page headers font weight:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="headerweight" name="headerweight">
@@ -168,9 +170,31 @@ Page layout:
   </select>
 </div></div>
 
+</div>
+
+<h3>Page Display Options</h3>
+
+<hr>
+
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="imageCaptions" unchecked><label for="imageCaptions">Show alternative text of images as captions</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoomable page images (tapping on images to enlarge them)</label></div>
+
+<div class="clearfix">
+
+<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
+  <label for="adjustContentMargins">Adjustment of content margins (via max-width and topMargin):</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="adjustContentMargins" name="adjustContentMargins">
+    <option value="none">None</option>
+    <option disabled="disabled">----</option>
+    <option value="iframe">for iFrames</option>
+    <option value="presentation">for presentations</option>
+  </select>
+</div></div>
+
+</div>
+
+<hr>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
