@@ -188,7 +188,7 @@ Page layout:
 
 <div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
   <label for="maxWidthValue">Content maximum width:</label>
-  <div style="display: flex; gap: 8px;">
+  <div style="display: flex; gap: 10px;">
     <input type="number" id="maxWidthValue" name="maxWidthValue"
        style="flex: 1; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
        value="910" step="10">
