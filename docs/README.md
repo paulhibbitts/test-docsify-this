@@ -180,23 +180,29 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="zoomimages" unchecked><label for="zoomimages">Enable zoomable page images (tapping on images to enlarge them)</label></div>
 
-<div class="clearfix">
-
-<div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="pageContentAdjustment">Page content adjustment:</label>
-  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="pageContentAdjustment" name="pageContentAdjustment">
-    <option value="none">None</option>
-    <option disabled="disabled">----</option>
-    <option value="iframe">for iFrames (no margins)</option>
-    <option value="presentation">for presentations (larger margins) </option>
-  </select>
-</div></div>
-
-</div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
 
 <hr>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="hypothesisenable" unchecked><label for="hypothesisenable">Enable page annotation with Hypothes.is, an open source web annotation tool</label></div>
+<div class="clearfix">
+
+<div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
+  <label for="maxWidthValue">Content maximum width:</label>
+  <div style="display: flex; gap: 8px;">
+    <input type="number" id="maxWidthValue" name="maxWidthValue"
+       style="flex: 1; border-radius: 7px; border-color: #8e8f9d; vertical-align: top;"
+       value="910" step="10">
+    <select style="border-radius: 7px; border-color: #8e8f9d; vertical-align: top; transform: translateY(4px);"
+        id="maxWidthValueUnit" name="maxWidthValueUnit" value="px" onchange="updateMaxWidthStep()">
+      <option value="px" data-step="10" selected>px</option>
+      <option value="%" data-step="5">%</option>
+      <option value="ch" data-step="1">ch</option>
+    </select>
+  </div>
+</div>
+
+</div>
+
 
 <h3>Navigation Display Options</h3>
 

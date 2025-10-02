@@ -711,6 +711,24 @@
 
     }
 
+    function updateMaxWidthStep() {
+      const select = document.getElementById('maxWidthValueUnit');
+      const input = document.getElementById('maxWidthValue');
+      const selectedOption = select.selectedOptions[0];
+      
+      const step = selectedOption.getAttribute('data-step');
+      input.setAttribute('step', step);
+      
+      // Set appropriate default for each unit
+      const defaults = {
+        'px': '910',
+        '%': '100',
+        'ch': '75'
+      };
+      
+      input.value = defaults[select.value];
+    }
+
     const isValidUrl = urlString => {
       var urlPattern = new RegExp('^(https?:\\/\\/)?' +      // Protocol
         '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // Domain OR
