@@ -187,8 +187,8 @@ Page layout:
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="pageContentAdjustment" name="pageContentAdjustment">
     <option value="none">None</option>
     <option disabled="disabled">----</option>
-    <option value="iframe">for iFrames (full width)</option>
-    <option value="presentation">for presentations (less width + more top margin)</option>
+    <option value="iframe">for iFrames (no margins)</option>
+    <option value="presentation">for presentations (larger margins) </option>
   </select>
 </div></div>
 
