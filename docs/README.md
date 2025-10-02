@@ -183,8 +183,8 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="adjustContentMargins">Adjustment of page content layout:</label>
-  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="adjustContentMargins" name="adjustContentMargins">
+  <label for="pageContentAdjustment">Page content adjustment:</label>
+  <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="pageContentAdjustment" name="pageContentAdjustment">
     <option value="none">None</option>
     <option disabled="disabled">----</option>
     <option value="iframe">for iFrames (full width)</option>
