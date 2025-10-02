@@ -183,12 +183,12 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="adjustContentMargins">Adjustment of content margins (via max-width and topMargin):</label>
+  <label for="adjustContentMargins">Content layout adjustments:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="adjustContentMargins" name="adjustContentMargins">
-    <option value="none">None</option>
+    <option value="none">None (default width + no top margin)</option>
     <option disabled="disabled">----</option>
-    <option value="iframe">for iFrames</option>
-    <option value="presentation">for presentations</option>
+    <option value="iframe">for iFrames (full width)</option>
+    <option value="presentation">for presentations (less width + more top margin)</option>
   </select>
 </div></div>
 
