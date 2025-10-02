@@ -192,9 +192,9 @@ Page layout:
        value="910" step="10">
     <select style="border-radius: 7px; border-color: #8e8f9d; vertical-align: top; transform: translateY(4px);"
         id="maxWidthValueUnit" name="maxWidthValueUnit" value="px" onchange="updateMaxWidthStep()">
-      <option value="px" data-step="10" selected>px</option>
-      <option value="%" data-step="5">%</option>
-      <option value="ch" data-step="1">ch</option>
+      <option value="px" data-step="10" selected>Pixels (px)</option>
+      <option value="%" data-step="5">Percent (%)</option>
+      <option value="ch" data-step="1">Characters (ch)</option>
     </select>
   </div>
 </div>
