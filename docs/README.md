@@ -183,7 +183,7 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline"><div class='stackedlabeldropdown' style='margin-bottom:4px;border-radius: 7px;border-color: #8e8f9d'>
-  <label for="adjustContentMargins">Adjustments for page content:</label>
+  <label for="adjustContentMargins">Layout adjustment of page content:</label>
   <select style="border-radius: 7px;border-color: #8e8f9d" class="docsifythisurlbuilderoptionsline" id="adjustContentMargins" name="adjustContentMargins">
     <option value="none">None</option>
     <option disabled="disabled">----</option>
