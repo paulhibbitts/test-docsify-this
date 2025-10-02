@@ -1820,25 +1820,55 @@
 
             // console.log(getURLParameterByName(['browser-tab-title','font-family', 'font-size','line-height','link-color','edit-link-text','edit-link-top','hide-credits','toc-headings','toc-narrow','maxLevel','hypothesis']));
 
-            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true) {
+            // Code generated/assisted by Anthropic Claude AI
+            if (getURLParameterByName(['show-page-options', 'showPageOptions']) === true ||
+              (() => {
+                const hash = window.location.hash;
+                const targetId = hash?.includes('?id=')
+                  ? new URLSearchParams(hash.split('?')[1]).get('id')
+                  : (hash?.length > 1 && !hash.includes('?'))
+                    ? hash.substring(1)
+                    : getURLParameterByName('id');
+
+                if (!targetId) return false;
+
+                const target = document.getElementById(targetId);
+                const optionsDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+                return target && optionsDiv?.contains(target);
+              })()) {
+
               // console.log("show more!");
+
               var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+
               document.getElementById("docsifythisurlbuildershowhidelink").innerHTML = "<a name='toggleDivlink' href='#' onclick='toggleDiv(this); return false;'>Show Fewer Page Appearance Options &laquo;</a>";
+
               theDiv.style.display = "block";
             }
 
             // console.log(getURLParameterByName(['page-title','header-weight','zoom-images','loadFavicon','coverpage','loadSidebar','loadNavbar','loadFooter','searchbox','coverpage-color','dark-mode','link-color-dark-mode','coverpage-color-dark-mode']));
 
-            if (getURLParameterByName('advanced') === true) {
-              // console.log("show advanced options!");
-              document.getElementById("btn_2").style.display = "none";
-              var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
-              document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
-              theDiv.style.display = "block";
-              document.getElementById("advancedwebpagebuilder").style.display = "none";
-              document.querySelector("label[for='advancedwebpagebuilder']").style.display = "none";
-              var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
-              theDiv2.style.display = "block";
+            // Code generated/assisted by Anthropic Claude AI
+            if (getURLParameterByName('advanced') === true ||
+                (() => {
+                    const hash = window.location.hash;
+                    const targetId = hash?.includes('?id=') ? new URLSearchParams(hash.split('?')[1]).get('id') :
+                                    hash?.length > 1 && !hash.includes('?') ? hash.substring(1) : getURLParameterByName('id');
+                    const target = targetId && document.getElementById(targetId);
+                    const optionsDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+                    return target && optionsDiv2?.contains(target);
+                })()) {
+
+                // console.log("show advanced options!");
+
+                document.getElementById("btn_2").style.display = "none";
+                var theDiv = document.getElementById("docsifythisurlbuilderoptionsDiv");
+                document.getElementById("docsifythisurlbuildershowhidelink").style.display = "none";
+                theDiv.style.display = "block";
+                document.getElementById("advancedwebpagebuilder").style.display = "none";
+                document.querySelector("label[for='advancedwebpagebuilder']").style.display = "none";
+                var theDiv2 = document.getElementById("docsifythisurlbuilderoptionsDiv2");
+                theDiv2.style.display = "block";
             }
 
             if (getURLParameterByName('toc') === true) {
