@@ -2269,18 +2269,10 @@
         `;
         document.head.appendChild(fontCSS);
         document.addEventListener('DOMContentLoaded', function () {
-          const sidebarElements = document.querySelectorAll('.sidebar-nav');
-          sidebarElements.forEach(element => {
+          const elements = document.querySelectorAll('.sidebar-nav, .search');
+          elements.forEach(element => {
             element.style.marginTop = '27px';
           });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
-          const sidebarElements = document.querySelectorAll('.search');
-          sidebarElements.forEach(element => {
-            element.style.marginTop = '27px';
-          });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
           const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
           sidebarHeadings.forEach(element => {
             element.style.setProperty('margin-top', '27px', 'important');
