@@ -2261,9 +2261,22 @@
         }
         document.documentElement.style.setProperty('--sidebar-width', '306px');
         document.documentElement.style.setProperty('--base-font-size', fontsize);
+        document.documentElement.style.setProperty('--sidebar-name-font-size', '24px');
         var fontCSS = document.createElement('style');
         fontCSS.innerHTML = `.sidebar { font-size: 18px !important; }`;
         document.head.appendChild(fontCSS);
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebarElements = document.querySelectorAll('.sidebar-nav');
+            sidebarElements.forEach(element => {
+                element.style.marginTop = '27px';
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+          const sidebarHeadings = document.querySelectorAll('.sidebar > h1');
+          sidebarHeadings.forEach(element => {
+              element.style.setProperty('margin-top', '27px', 'important');
+          });
+        });
       }
 
       // Change line height if lineheight parameter present
