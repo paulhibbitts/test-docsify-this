@@ -2259,7 +2259,11 @@
           // Append 'rem' if no unit is specified
           fontsize = fontsize + 'rem';
         }
+        document.documentElement.style.setProperty('--sidebar-width', '306px');
         document.documentElement.style.setProperty('--base-font-size', fontsize);
+        var fontCSS = document.createElement('style');
+        fontCSS.innerHTML = `.sidebar { font-size: 18px !important; }`;
+        document.head.appendChild(fontCSS);
       }
 
       // Change line height if lineheight parameter present
