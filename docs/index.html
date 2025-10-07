@@ -597,6 +597,13 @@
             }
           }
 
+          const cb20 = document.querySelector('#closesidebar');
+          if (cb20.checked) {
+            if (!url.includes('close-sidebar=')) {
+              var URLparms = URLparms + `&close-sidebar=true`;
+            }
+          }
+
           var getmaxwidthvalue = document.getElementById('maxWidthValue').value;
           var getmaxwidthvalueunit = document.getElementById('maxWidthValueUnit').value;
           if (!((getmaxwidthvalue == "910") && (getmaxwidthvalueunit == "px"))) {
@@ -849,6 +856,7 @@
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = '400';
       document.getElementById("zoomimages").checked = false;
+      document.getElementById("closesidebar").checked = false;
       document.getElementById("maxWidthValue").value = 910;
       document.getElementById("maxWidthValueUnit").value = 'px';
       document.getElementById("coverpagecolor").value = '#6C8A9A';
@@ -1156,6 +1164,14 @@
             // call `next(html)` when task is done.
 
             if (window.$docsify['basePath']) {
+
+              // Close Sidebar based on URL parm
+              if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
+                const sidebarToggle = document.querySelector('.sidebar-toggle');
+                if (sidebarToggle) {
+                  sidebarToggle.click();
+                }
+              }
 
               var htmlElement = document.createElement('div');
               htmlElement.innerHTML = html;
@@ -1855,6 +1871,10 @@
 
             if (getURLParameterByName(['zoom-images', 'zoomImages'], null, null, window.location.href, true) === 'true') {
               document.getElementById("zoomimages").checked = true;
+            }
+
+            if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("closesidebar").checked = true;
             }
 
             maxWidth = getURLParameterByName('max-width', null, null, window.location.href, true);
