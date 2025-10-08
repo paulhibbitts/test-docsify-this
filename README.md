@@ -1543,7 +1543,10 @@ Once viewing the presented page, you can refine the left/right margins and spaci
 
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=56px&header-weight=600&dark-mode=on&max-width=80#/?id=docsify-this-core-design-principles
 
-You can also refine the font-size parameter for further adjusting the amount of text shown on the presented page.  
+You can also refine the font-size parameter for further adjusting the amount of text shown on the presented page.
+
+If you want to toggle the Docsify sidebar for navigation during your presentation, ensure the content width accounts for the sidebar display to prevent possible text reflow. For example, here is the sidebar included but initially closed, and using the more precise content width unit of characters (ch):  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this/main&font-family=Open%20Sans,sans-serif&font-size=36px&header-weight=600&dark-mode=on&max-width=50ch&sidebar=true&maxLevel=4&close-sidebar=true#/?id=quickstart-
 
 > [!TIP]
 > To scroll to specific section content to present, click on the nearest header and then bookmark the resulting Docsify-This page URL with the included anchor tag (like `#/?id=section-name` above), as shown in the above example URLs.
