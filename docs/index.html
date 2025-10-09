@@ -1642,7 +1642,7 @@
                     requestAnimationFrame(() => {
                       // Calculate the scroll position with topMargin offset
                       let scrollTop = 0;
-                      if (getURLParameterByName('sidebar') === true) {
+                      if ((getURLParameterByName('sidebar') === true) && (!(getURLParameterByName('topMargin')))) {
                         scrollTop = targetElement.offsetTop;
                       } else {
                         scrollTop = targetElement.offsetTop - topMargin;
@@ -1682,7 +1682,7 @@
                 markdownFileURL = window.location.href.split('?')[1].split('&')[0] || '';
               } else {
                 // Use getURLParameterByName for 'url-field' or 'urlField'
-                console.log("url-field");
+                // console.log("url-field");
                 markdownFileURL = getURLParameterByName(['url-field', 'urlField'], '', null, window.location.href, true);
               }
               
@@ -2104,7 +2104,7 @@
             var fontSizeRaw = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
             var fontSize = parseFloat(fontSizeRaw);
             if (!isNaN(fontSize) && fontSize >= 24) {
-              window.$docsify.topMargin = (fontSize - 14);
+              window.$docsify.topMargin = (fontSize - 16);
             }
             editCSS.innerHTML = ".markdown-section {padding-left: 0; padding-right: 0;}";
           }
@@ -2414,7 +2414,7 @@
       document.write('<script src="assets/vendor/docsify/plugins/docsify-code-copy.min.js"><\/script>');
     }
   </script>
-  
+
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 
   <script>
