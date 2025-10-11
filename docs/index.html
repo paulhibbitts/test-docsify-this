@@ -2404,6 +2404,16 @@
         if (!(isNaN(maxwidth))) {
           maxwidth += '%'; // Append '%' if no unit is provided
         }
+        
+        // Check if aside (ToC) is present and adjust for percentage values
+        const hasAside = getURLParameterByName(['toc', 'toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true';
+        
+        if (hasAside && maxwidth.endsWith('%')) {
+          const isNarrowToc = getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true';
+          const asideWidth = isNarrowToc ? '280px' : '440px';
+          maxwidth = `calc(${maxwidth} - ${asideWidth})`;
+        }
+        
         document.documentElement.style.setProperty('--content-max-width', maxwidth);
       }
 
