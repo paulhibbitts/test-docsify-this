@@ -2410,7 +2410,10 @@
         
         if (hasAside && maxwidth.endsWith('%')) {
           const isNarrowToc = getURLParameterByName(['toc-narrow', 'tocNarrow'], null, null, window.location.href, true) === 'true';
-          const asideWidth = isNarrowToc ? '280px' : '440px';
+          let asideWidth = '440px'; // default to regular ToC
+          if (isNarrowToc) {
+            asideWidth = '280px';
+          }
           maxwidth = `calc(${maxwidth} - ${asideWidth})`;
         }
         
