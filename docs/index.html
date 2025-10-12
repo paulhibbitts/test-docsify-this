@@ -1468,7 +1468,7 @@
                 const sidebarToggle = document.querySelector('.sidebar-toggle');
                 const sidebar = document.querySelector('.sidebar');
                 
-                if (sidebar && !sidebar.classList.contains('close') && sidebarToggle) {
+                if (sidebar && !sidebar.classList.contains('close') && sidebarToggle && window.innerWidth > 768) {
                   sidebarToggle.click();
                 }
               }
@@ -1686,7 +1686,7 @@
                     const sidebarToggle = document.querySelector('.sidebar-toggle');
                     const sidebar = document.querySelector('.sidebar');
                     
-                    if (sidebar && !sidebar.classList.contains('close') && sidebarToggle) {
+                    if (sidebar && !sidebar.classList.contains('close') && sidebarToggle && window.innerWidth > 768) {
                       sidebarToggle.click();
                     }
                   }
