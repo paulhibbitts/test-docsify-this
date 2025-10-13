@@ -124,7 +124,7 @@ Page layout:
 </div>
 
 <div class="stackedlabeldropdown">
-  <label for="fontsize">Font size:</label>
+  <label for="fontsize">Font size (px):</label>
   <input 
     type="number" 
     class="docsifythisurlbuilderoptionsline" 
@@ -136,7 +136,6 @@ Page layout:
     step="1"
     style="width: 70px;"
   >
-  <span style="margin-left: 4px;">px</span>
 </div>
 
 <div class="stackedlabeldropdown">
