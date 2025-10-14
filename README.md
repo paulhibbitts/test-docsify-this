@@ -1730,15 +1730,14 @@ _TIP: If you change the VSCode setting for **Workbench › Editor: Show Tabs** t
 
 ---
 
-#### Loading Web Page Builder Custom Settings
+#### Loading Web Page Builder Configurations
 
-You can load custom default settings in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including:
+You can load specific configurations in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including producing multiple web pages/sites with consistent styling and facilitating support and collaboration among Docsify-This users.
 
-- Producing multiple web pages/sites with consistent styling
-- Conducting online sessions or workshops where specific configurations are to be explored
-- Facilitating support and collaboration among Docsify-This users
+- [Preset Load and Go Styling Configurations](/?id=preset-load-and-go-styling-configurations)
+- [Custom Web Page Builder Configurations](/?id=custom-web-page-builder-configurations)
 
-##### Load and Go Styling Configurations
+##### Preset Load and Go Styling Configurations
 
 Use these preset Web Page Builder configurations that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.  
 
