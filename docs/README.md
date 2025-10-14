@@ -445,7 +445,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 - [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 - [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
-- [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
+- [Loading Web Page Builder Configurations](/?id=loading-web-page-builder-configurations)
 - [Troubleshooting](/?id=troubleshooting)
 
 ### [6. Support and Policies](/?id=_6-support-and-policies)
@@ -2323,47 +2323,14 @@ _TIP: If you change the VSCode setting for **Workbench › Editor: Show Tabs** t
 
 ---
 
-#### Loading Web Page Builder Custom Settings
+#### Loading Web Page Builder Configurations
 
-You can load custom default settings in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including:
+You can load specific configurations in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including producing multiple web pages/sites with consistent styling and facilitating support and collaboration among Docsify-This users.
 
-- Producing multiple web pages/sites with consistent styling
-- Conducting online sessions or workshops where specific configurations are to be explored
-- Facilitating support and collaboration among Docsify-This users
+- [Preset Load and Go Styling Configurations](/?id=preset-load-and-go-styling-configurations)
+- [Custom Web Page Builder Configurations](/?id=custom-web-page-builder-configurations)
 
-- [Load and Go Styling Configurations](/?id=load-and-go-styling-configurations)
-- [Custom Web Page Builder Configurations](/?id=custom-web-page-builder-parameters)
-
-##### Load and Go Styling Configurations
-
-Use these pre-configured Web Page Builders that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.  
-
-**Presentations**  
-*Open Sans 36px, semi-bold headers, dark mode, and hidden credits*
-
-- Basic Presentation: [present.docsify-this.net](http://present.docsify-this.net) → *80% width*
-- Presentation with Docsify Sidebar for Navigation (auto-closes): [present-nav.docsify-this.net](http://present-nav.docsify-this.net) → *55ch width, navigation up to H3*
-
-**Learning Management Systems**  
-*Visually styled for seamless embedding with full-width layout, platform-matched fonts and colors, hidden credits, and links with underline on hover*
-
-- Brightspace: [brightspace.docsify-this.net](http://brightspace.docsify-this.net) → *Lato Extended 19px, #006fbf links (hover: #050077)*
-- Canvas: [canvas.docsify-this.net](http://canvas.docsify-this.net) → *Lato Extended 16px, #0374B5 links*
-- Moodle: [moodle.docsify-this.net](http://moodle.docsify-this.net) → *System-UI 15px, #0f6cbf links (hover: #0C5699)*
-- Sakai: [sakai.docsify-this.net](http://sakai.docsify-this.net) → *Open Sans 14px, #0b1660 links (hover: #091242)*
-
-> [!TIP]
-> After loading any of these configs, you can further modify the generated URL by manually editing URL parameters like `&font-size=32px` or `&link-color=CC0000`. Bookmark your customized URL to create your own personal Load and Go configuration. For example, to make Basic Presentation use 32px fonts instead of 36px, just change `&font-size=36px` to `&font-size=32px` in the URL, reload the Docsify-This page and tap **Publish as a Web Page** button to view the final results.
-
-#### Loading Web Page Builder Custom Settings
-
-You can load custom default settings in the Docsify-This Web Page Builder by also using URL parameters. This ability can be helpful in a range of situations, including:
-
-- Producing multiple web pages/sites with consistent styling
-- Conducting online sessions or workshops where specific configurations are to be explored
-- Facilitating support and collaboration among Docsify-This users
-
-##### Load and Go Styling Configurations
+##### Preset Load and Go Styling Configurations
 
 Use these preset Web Page Builder configurations that automatically apply optimal styling for specific contexts. Just paste your Markdown file URL and go - you can even bookmark these for instant reuse.  
 
