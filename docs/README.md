@@ -2039,7 +2039,6 @@ An overview to self-publishing with Markdown using the open source project Docsi
 - [Content Display Tips and Techniques](/?id=content-display-tips-and-techniques)
 - [Making a Markdown File Available Online](/?id=making-a-markdown-file-available-online)
 - [Improving Markdown Previews in Text Editors](/?id=improving-markdown-previews-in-text-editors)
-- [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
 - [Troubleshooting](/?id=troubleshooting)
 
 ---
