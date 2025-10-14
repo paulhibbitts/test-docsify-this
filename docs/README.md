@@ -591,7 +591,7 @@ Docsify-This has been recognized as a finalist in the Open Infrastructure catego
 - [Overview](#overview)
 - [Page Appearance URL Parameters (Basic)](#page-appearance-url-parameters-basic)
 - [Page Appearance URL Parameters (Supplemental)](#page-appearance-url-parameters-supplemental)
-- [Loading Web Page Builder Custom Settings](/?id=loading-web-page-builder-custom-settings)
+- [Loading Web Page Builder Configurations](/?id=loading-web-page-builder-configurations)
 - [Using the Share-This.net and Publish-This.net Aliases](#using-the-share-thisnet-and-publish-thisnet-aliases)
 - [Embedding Docsify-This Pages into Other Platforms](#embedding-docsify-this-pages-into-other-platforms)
 - [Ready-to-Use Docsify-This Markdown Templates](#ready-to-use-docsify-this-markdown-templates)
