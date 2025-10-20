@@ -424,6 +424,15 @@
   /* Legacy iOS */
 }
 
+
+#page-actions-menu-dropdown .page-actions-menu-item {
+  font-size: 1rem;
+}
+
+#page-actions-menu-dropdown .page-actions-menu-desc {
+  font-size: .8rem;
+}
+
 .app-nav:not(:empty) ~ main .markdown-section {
   padding-top: 5rem;
 }
