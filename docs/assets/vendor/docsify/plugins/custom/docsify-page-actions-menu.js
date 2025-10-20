@@ -431,7 +431,7 @@ function pageActionItems(hook, vm) {
                }
          }
 
-         // ADD THIS: If still no target images found, fall back to default behavior
+         // If still no target images found, fall back to default behavior
          if (!processed) {
             html = /<article[\s>]/.test(html)
                ? html.replace(/(<article[\s>])/i, `$1${menuHtml}`)
