@@ -425,9 +425,17 @@ function pageActionItems(hook, vm) {
                   const imageRegex = new RegExp(`(<img[^>]*class="[^"]*${className}[^"]*"[^>]*>)`, 'i');
                   if (imageRegex.test(html)) {
                      html = html.replace(imageRegex, `$1${menuHtml}`);
+                     processed = true;
                      break;
                   }
                }
+         }
+
+         // ADD THIS: If still no target images found, fall back to default behavior
+         if (!processed) {
+            html = /<article[\s>]/.test(html)
+               ? html.replace(/(<article[\s>])/i, `$1${menuHtml}`)
+               : menuHtml + html;
          }
       } else {
          // Default behavior: inject at top
