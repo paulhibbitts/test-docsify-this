@@ -1220,11 +1220,7 @@
             label: 'Copy page Markdown',
             desc: 'Copy page source content',
             action: 'copy',
-            // Also works for copy/view/llm actions:
-            onSuccess: (ctx) => {
-               // Show a toast, log analytics, etc.
-               alert('Copied!');
-            },
+            onSuccess: 'Copied to clipboard!',
             onError: 'Copy failed.',
           },
           {
