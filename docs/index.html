@@ -314,10 +314,17 @@
             URLparms = URLparms + `&edit-link-text=` + editlinktext;
           }
 
-          const cb2 = document.querySelector('#editLinkTopCheck');
+          const cb21 = document.querySelector('#editLinkTopCheck');
           if (cb1.checked && cb2.checked) {
             if (gitlinkPageURL) {
               var URLparms = URLparms + `&edit-link-top=true`;
+            }
+          }
+
+          const cb22 = document.querySelector('#pageCopyMenu');
+          if (cb22.checked) {
+            if (!url.includes('page-copy-menu=')) {
+              var URLparms = URLparms + `&page-copy-menu=true`;
             }
           }
 
@@ -836,6 +843,7 @@
       document.getElementById("toch2").checked = true;
       document.getElementById("toch3").checked = false;
       document.getElementById("maxLevel").value = 2;
+      document.getElementById("pageCopyMenu").checked = false;
       document.getElementById("hideCredits").checked = false;
       document.getElementById("hypothesisenable").checked = false;
       document.getElementById("loadfavicon").checked = false;
@@ -1854,6 +1862,10 @@
 
             if (getURLParameterByName(['edit-link-top', 'editLinkTop'], null, null, window.location.href, true) === 'true') {
               document.getElementById("editLinkTopCheck").checked = true;
+            }
+
+            if (getURLParameterByName(['page-copy-menu', 'pageCopyMenu'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("pageCopyMenu").checked = true;
             }
 
             if (getURLParameterByName(['hide-credits', 'hideCredits'], null, null, window.location.href, true) === 'true') {
