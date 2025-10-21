@@ -400,7 +400,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
 - [back-link](#back-link)
-- [copy-actpageions-menu](#copy-page-menu)
+- [copy-actpageions-menu](#page-copy-menu)
 - [coverpage](#coverpage)
 - [coverpage-color](#coverpage-color)
 - [coverpage-color-dark-mode](#coverpage-color-dark-mode)
@@ -432,9 +432,9 @@ The following additional URL parameters are available for use in Docsify-This UR
 Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
 
-##### copy-page-menu
+##### page-copy-menu
 
-Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional copy-page-menu parameter (not included in the Advanced Web Page Builder), for example:  
+Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-menu parameter (not included in the Advanced Web Page Builder), for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-menu=true
 
 ##### coverpage
