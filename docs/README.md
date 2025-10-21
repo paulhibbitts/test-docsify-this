@@ -232,7 +232,7 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="editLinkTopCheck" unchecked><label for="editLinkTopCheck">Set location of the 'Edit this Page' link to top of page</label></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pageCopyMenu"/><label for="pageCopyMenu">Include page copy menu for directly accessing Markdown content</label></div>
+<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="pageCopyMenu"/><label for="pageCopyMenu">Include Copy Page copy menu for directly accessing Markdown content</label></div>
 
 <hr>
 
