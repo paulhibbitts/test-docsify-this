@@ -732,6 +732,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
 - [back-link](/?id=back-linkconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [copy-page-menu](/?id=copy-page-menuconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage](/?id=coverpageconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage-color](/?id=coverpage-colorconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [coverpage-color-dark-mode](/?id=coverpage-color-dark-modeconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -753,7 +754,6 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [max-width](/?id=max-widthconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [mergeNavbar](/?id=mergeNavbarconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [name](/?id=nameconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
-- [page-actions-menu](/?id=page-actions-menuconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [page-title](/?id=page-titleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [pagination](/?id=paginationconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [subMaxLevel](/?id=subMaxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -763,6 +763,11 @@ The following additional URL parameters are available for use in Docsify-This UR
 
 Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
+
+##### copy-page-menu<button type="button" class="copy-link" aria-label="Copy back-link parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&copy-page-menu=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Include a copy page menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional copy-page-menu parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&copy-page-menu=true
 
 ##### coverpage<button type="button" class="copy-link" aria-label="Copy coverpage parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&coverpage=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
@@ -873,11 +878,6 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display the name for the website in a Docsify custom Sidebar (i.e. file '\_sidebar.md) with the optional **name** Docsify parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&name=CPT-363. When this parameter is provided it will be automatically used as the Browser tab title as well. Please note to use names with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Site" would be "My%20Site". Underscores may also be used to represent spaces.
-
-##### page-actions-menu<button type="button" class="copy-link" aria-label="Copy back-link parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&page-actions-menu=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
-
-Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-actions-menu parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-actions-menu=true
 
 ##### page-title<button type="button" class="copy-link" aria-label="Copy age-title parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&age-title=').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
