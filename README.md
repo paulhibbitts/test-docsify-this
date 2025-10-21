@@ -435,7 +435,7 @@ https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibb
 ##### copy-page-menu
 
 Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional copy-page-menu parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&copy-page-menu=true
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-menu=true
 
 ##### coverpage
 
