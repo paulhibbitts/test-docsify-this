@@ -400,7 +400,6 @@ The following additional URL parameters are available for use in Docsify-This UR
 **Supplemental URL Parameters (included in the Advanced Web Page Builder)**
 
 - [back-link](#back-link)
-- [copy-actpageions-menu](#page-copy-menu)
 - [coverpage](#coverpage)
 - [coverpage-color](#coverpage-color)
 - [coverpage-color-dark-mode](#coverpage-color-dark-mode)
@@ -422,6 +421,7 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [max-width](#max-width)
 - [mergeNavbar](#mergeNavbar)
 - [name](#name)
+- [page-copy-menu](#page-copy-menu)
 - [page-title](#page-title)
 - [pagination](#pagination)
 - [submaxLevel](#subMaxLevel)
@@ -431,11 +431,6 @@ The following additional URL parameters are available for use in Docsify-This UR
 
 Add a custom back link to other sites at the top of your web pages with the optional back-link parameter, for example:  
 https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&back-link=https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-course/main+homepage=home.md+sidebar=true. Please note that since & is used to separate URL parameters, any & characters within the back-link URL must be replaced with + characters.
-
-##### page-copy-menu
-
-Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-menu parameter (not included in the Advanced Web Page Builder), for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-menu=true
 
 ##### coverpage
 
@@ -546,6 +541,11 @@ https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibb
 
 Display the name for the website in a Docsify custom Sidebar (i.e. file '\_sidebar.md) with the optional **name** Docsify parameter, for example:  
 https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&name=CPT-363. When this parameter is provided it will be automatically used as the Browser tab title as well. Please note to use names with spaces they must be [encoded](https://meyerweb.com/eric/tools/dencoder/), so "My Site" would be "My%20Site". Underscores may also be used to represent spaces.
+
+##### page-copy-menu
+
+Include a page actions menu, with the choices to directly copy or view page source Markdown, at the top right of your web pages with the optional page-copy-menu parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&page-copy-menu=true
 
 ##### page-title
 
