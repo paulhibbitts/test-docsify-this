@@ -2002,6 +2002,7 @@
 
             siteName = getURLParameterByName('name', null, null, window.location.href, true);
             if (siteName) {
+              pageTitle = pageTitle.replaceAll('_', ' ');
               document.getElementById("siteName").value = siteName;
             }
 
