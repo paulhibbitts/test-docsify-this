@@ -1436,7 +1436,7 @@ body .docsify-pagination-container {
 /* Override Sidebar initial visibility via CSS for delayed Markdown page load */
 #__sidebar,
 .sidebar-toggle {
-  display: none;
+  display: none !important;
 }
 
 @media screen and (max-width: 768px) {
