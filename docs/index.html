@@ -60,6 +60,14 @@
   <script src="assets/vendor/coloris/coloris.min.js"></script>
 
   <style>
+
+    /* This will apply the moment Docsify creates these elements */
+    #__sidebar:not(.loaded),
+    .sidebar-toggle:not(.loaded) {
+      visibility: hidden;
+      opacity: 0;
+    }
+
     :root {
       --base-font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 
@@ -1507,6 +1515,14 @@
           // Invoked on each page load after new HTML has been appended to the DOM
           hook.doneEach(function () {
             if (window.$docsify['basePath']) {
+
+              // Restore Sidebar visibility (no DOMContentLoaded needed)
+              const sidebar = document.getElementById('__sidebar');
+              const toggle = document.querySelector('.sidebar-toggle');
+              
+              if (sidebar) sidebar.classList.add('loaded');
+              if (toggle) toggle.classList.add('loaded');
+
               const docHead = document.head;
               const docBody = document.body;
 
@@ -2162,17 +2178,6 @@
 
   <!-- Docsify "develop" branch local preview files -->
   <script src="assets/vendor/docsify/preview/docsify.min.js"></script>
-
-  <!-- Restore Sidebar initial visibility via CSS for delayed Markdown page loads -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const sidebar = document.getElementById('__sidebar');
-      const toggle = document.querySelector('.sidebar-toggle');
-
-      if (sidebar) sidebar.style.setProperty('display', 'block', 'important');
-      if (toggle) toggle.style.setProperty('display', 'block', 'important');
-    });
-  </script>
 
   <!-- Adjust Page Margins When Standalone or Embedded -->
   <script>
