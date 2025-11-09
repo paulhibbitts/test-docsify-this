@@ -1535,7 +1535,7 @@
                   sidebarToggle.click();
                 }
               }
-              
+
               /* Javascript generated/assisted by Anthropic Claude AI */
               // Function to resolve image paths
               window.resolveImagePath = function (imagePath) {
@@ -1712,7 +1712,7 @@
                       } else {
                         scrollTop = targetElement.offsetTop - topMargin;
                       }
-                            
+
                       // Ensure we don't scroll above the top of the page
                       scrollTop = Math.max(0, scrollTop);
                       
@@ -2018,7 +2018,7 @@
 
             siteName = getURLParameterByName('name', null, null, window.location.href, true);
             if (siteName) {
-              pageTitle = pageTitle.replaceAll('_', ' ');
+              siteName = siteName.replaceAll('_', ' ');
               document.getElementById("siteName").value = siteName;
             }
 
