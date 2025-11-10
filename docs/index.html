@@ -1790,7 +1790,6 @@
               const urlField = document.getElementById('docsifythisurlfield');
               urlField.value = markdownFileURL;
               urlField.dispatchEvent(new Event('input'));
-              
             }
 
             if (getURLParameterByName(['hide-banner', 'hideBanner']) === true) {
@@ -1995,7 +1994,7 @@
                 document.getElementById('maxWidthValueUnit').value = maxWidthUnit;
               }
             }
-            
+
             if (getURLParameterByName('loadFavicon')) {
               document.getElementById("loadfavicon").checked = true;
             }
