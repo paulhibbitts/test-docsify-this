@@ -1778,7 +1778,9 @@
             dd && console.log('custom scroll plugin called!');
 
             // Get topMargin from Docsify config or use default
-            let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+            // let topMargin = (window.$docsify && window.$docsify.topMargin) || 0;
+            let topMargin = getComputedStyle(document.documentElement)
+              .getPropertyValue('--scroll-padding-top') || '0';
             dd && console.log('topMargin setting:', topMargin);
 
             // Build the current URL without the hash
