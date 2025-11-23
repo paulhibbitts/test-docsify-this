@@ -2532,7 +2532,7 @@
       // Change body font size if fontSize parameter present
       fontsize = getURLParameterByName(['font-size', 'fontSize'], null, null, window.location.href, true);
       if (!(fontsize === false)) {
-        // Check if fontsize is a number when converted
+        // If it's just a number, append 'px'
         if (!isNaN(fontsize) && !fontsize.includes('px') && !fontsize.includes('rem') && !fontsize.includes('em')) {
           fontsize = fontsize + "px";
         }
