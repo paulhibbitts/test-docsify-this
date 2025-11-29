@@ -2119,7 +2119,10 @@
             window.$docsify[key] = convertToBoolean(value);
           }
         } else {
-          if (key === 'name') {
+          if (key === 'themeable.responsiveTables') {
+            window.$docsify.themeable = window.$docsify.themeable || {};
+            window.$docsify.themeable.responsiveTables = convertToBoolean(value);
+          } else if (key === 'name') {
             window.$docsify[key] = replaceUnderscores(value);
           } else {
             window.$docsify[key] = convertToBoolean(value);
