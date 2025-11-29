@@ -1,17 +1,10 @@
-// Plugin 
-// MIT License 
-// Copyright (c) 2018 John Hildenbiddle 
 // Adds markdown table renderer for use with responsive table CSS
+// Original source plugin 'docsify-responsive-tables' by @jhildenbiddle
+// Code generated/assisted by Anthropic Claude AI */
 
 (function () {
   function responsiveTablesPlugin(hook, vm) {
     hook.doneEach(function () {
-      // Process tables after DOM is ready
-      const isEnabled = 
-        ((window.$docsify || {}).themeable || {}).responsiveTables !== false;
-
-      if (!isEnabled) return;
-
       // Find all tables that haven't been processed
       const tables = document.querySelectorAll('table:not([data-responsive-processed])');
       
@@ -24,12 +17,6 @@
           const tableId = '_' + Math.random().toString(36).substr(2, 9);
           table.id = tableId;
           
-          // Get headers
-          const thElms = Array.from(table.getElementsByTagName('th'));
-          const thTitles = thElms.map(function (thElm) {
-            return thElm.textContent.trim();
-          });
-
           // Create wrapper if it doesn't exist
           if (!table.parentElement.classList.contains('table-wrapper')) {
             const wrapper = document.createElement('div');
@@ -38,7 +25,16 @@
             wrapper.appendChild(table);
           }
 
-          // Generate CSS rules
+          // Get headers - matching v4 approach
+          const thElms = Array.apply(
+            null,
+            table.getElementsByTagName('th')
+          );
+          const thTitles = thElms.map(function (thElm) {
+            return thElm.innerHTML.replace(' ', ' ');
+          });
+
+          // Generate CSS rules - matching v4 approach
           if (thTitles.length > 0) {
             const styleElm = document.head.appendChild(
               document.createElement('style')
@@ -46,20 +42,21 @@
             const styleSheet = styleElm.sheet;
 
             thTitles.forEach((title, i) => {
-              const cleanTitle = title.replace(/"/g, '\\"');
               const rule = `#${tableId} td:nth-child(${
                 i + 1
-              })::before{content:"${cleanTitle}";}`;
+              })::before{content:"${title}";}`;
 
               try {
                 styleSheet.insertRule(rule, styleSheet.cssRules.length);
               } catch (e) {
-                console.warn('Failed to insert CSS rule:', rule, e);
+                // eslint-disable-next-line
+                console.log('Failed to render responsive table: ' + e);
               }
             });
           }
         } catch (e) {
-          console.log('Failed to process responsive table:', e);
+          // eslint-disable-next-line
+          console.log('Failed to render responsive table: ' + e);
         }
       });
     });
