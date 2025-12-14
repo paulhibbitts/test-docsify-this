@@ -892,13 +892,37 @@
     }
 
     function setColorProperties(color) {
+      const styles = getComputedStyle(document.documentElement);
+      
+      // Define default colors
+      const defaultColors = ['#0374B5', '#1BA1EE'];
+      
+      // Helper to check if a property should be set
+      const shouldSet = (prop) => {
+        const current = styles.getPropertyValue(prop).trim();
+        return !current || defaultColors.some(def => current === def || current.includes(def));
+      };
+      
+      // Only set link-color if it's a default value or empty AND meets other conditions
+      if ((getURLParameterByName(['link-color', 'linkColor']) ||
+        getURLParameterByName(['link-color-dark-mode', 'linkColorDarkMode'])) ||
+        (!(getURLParameterByName(['core-theme-styles', 'coreThemeStyles', 'docsify-core-theme'], null, null, window.location.href, true) === 'true')) ||
+        (!corethemestyles)) {
+        
+        if (shouldSet('--link-color')) {
+          document.documentElement.style.setProperty('--link-color', color);
+        }
+        if (shouldSet('--blockquote-border-color')) {
+          document.documentElement.style.setProperty('--blockquote-border-color', color);
+        }
+      }
+
+      // Always set these (not user-customizable in markdown)
       document.documentElement.style.setProperty('--navbar-root-color--active', color);
-      document.documentElement.style.setProperty('--blockquote-border-color', color);
+      document.documentElement.style.setProperty('--pagination-title-color', color);
       document.documentElement.style.setProperty('--sidebar-name-color', color);
       document.documentElement.style.setProperty('--sidebar-nav-link-color--active', color);
       document.documentElement.style.setProperty('--sidebar-nav-link-border-color--active', color);
-      document.documentElement.style.setProperty('--link-color', color);
-      document.documentElement.style.setProperty('--pagination-title-color', color);
       document.documentElement.style.setProperty('--cover-link-color', color);
       document.documentElement.style.setProperty('--cover-button-primary-background', color);
       document.documentElement.style.setProperty('--cover-button-primary-border', '1px solid ' + color);
