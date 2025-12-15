@@ -1324,6 +1324,7 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --base-line-height: 1.4;
     --base-font-size: 20px;
     --content-max-width: 800px;
+    --heading-color : #0891b2;
     --heading-h1-font-weight: 700;
     --heading-h2-font-weight: 700;
     --theme-color: #9333ea;
