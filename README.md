@@ -1387,7 +1387,7 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --content-max-width: 800px;
     --heading-font-weight: 700;
     --theme-color: #9333ea;
-    --link-color: #9333ea;
+    --link-color: #9333ea !important;
   }
 </style>
 ```
