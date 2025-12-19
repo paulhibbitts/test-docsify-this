@@ -1405,6 +1405,8 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
 </style>
 ```
 
+Here is an example Markdown file containing the above styles, as displayed by Docsify-This (notice no URL parameters are required for visual styling): https://docsify-this.net/?basePath=https://raw.githubusercontent.com/paulhibbitts/markdown-file-examples/main&homepage=custom-theme-vars-v5.md&sidebar=true
+
 You can also define your own custom classes within your displayed Markdown files, for example:
 
 CSS in Markdown file:
