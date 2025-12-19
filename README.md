@@ -1394,7 +1394,7 @@ In addition to the Markdown CSS classes supported by Docsify-This, you can also 
     --heading-font-weight: 700;
 
     /* Theme */
-    --theme-color: #9333ea !important;
+    --theme-color: #9333ea;
 
     /* Links */
     --link-color: var(--theme-color) !important;
