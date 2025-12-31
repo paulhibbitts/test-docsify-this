@@ -38,7 +38,7 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
-## [1.10.9] - XX/XX/2026
+## [1.10.9] - 12/23/2025🎊
 
 **Improved:**
 * Hide empty rows in responsive tables
@@ -46,6 +46,7 @@
 * Support nested properties via URL parameters
 * Updated ReadMe
 * Enhanced support for inline Docsify Themeable CSS vars
+* Minor refresh of Sidebar UI
 
 **Bugfix:**
 * Accommodate legacy use of default font sizes being in rem units
