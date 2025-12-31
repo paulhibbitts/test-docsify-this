@@ -1181,6 +1181,10 @@
       loadFooter: (getURLParameterByName('footer') || footer || false),
       ext: getFileExtension(getURLParameterByName('homepage', null, null, window.location.href, true)),
       executeScript: true,
+      sidebarExpandCollapse: {
+        accordion: false,
+        showChevrons: true
+      },
 
       // SIDEBAR NAVIGATION
       // -----------------------------------------------------------------
