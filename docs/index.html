@@ -2706,6 +2706,13 @@
     }
   </script>
 
+  <!-- Sidebar expand collapse plugin -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined) && (getURLParameterByName(['sidebar-collapse', 'sidebarCollapse'], null, null, window.location.href, true) === 'true')) {
+      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-sidebar-expand-collapse.js"><\/script>');
+    }
+  </script>
+
   <!-- Global site tag (gtag.js) - Google Analytics, only loaded for docsify-this.net homepage -->
 
   <!--
