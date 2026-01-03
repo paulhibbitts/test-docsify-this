@@ -12,7 +12,7 @@
 * Support of optional theme-classes parameter (`theme-classes=true`) to add one or more Docsify core theme classes
 * Mermaid diagram support is now handled directly via Marked.js + Mermaid.js (no additional plugin needed)
 * Added support for responsive tables (with thanks and appreciation to @jhildenbiddle for the original Docsify v4 Themeable plugin)
-* Added supportof optional sidebar-collapse parameter (`sidebar-collapse=true`) to make top-level sidebar sections collapsible
+* Added support of optional sidebar-collapse parameter (`sidebar-collapse=true`) to make top-level sidebar sections collapsible
 
 **Improved:**
 * Updated ReadMe
