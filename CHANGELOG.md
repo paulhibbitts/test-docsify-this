@@ -31,10 +31,6 @@
 * Updated support of Docsify config topMargin to CSS var `scroll-padding-top`
 * Updated support of inline CSS vars from Docsify Themeable to Docsify v5 Theme system
 
-**Bugfix:**
-* Handle use of Coverpage title link with duplicate id via enhanced target scrolling
-* Fixed Font Awesome plugin regex to only match :fa- prefixed patterns
-
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
