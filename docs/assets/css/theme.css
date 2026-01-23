@@ -2026,6 +2026,7 @@ span #docsifythisurlfield {
   font-family: inherit;
   font-size: inherit;
   text-align: right;
+  margin-top: 40px;
 }
 
 .markdown-section .docsify-this-screenshot {
