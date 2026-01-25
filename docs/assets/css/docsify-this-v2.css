@@ -619,7 +619,7 @@ input.toggle:where([type=checkbox], [type=radio]):before {
 
 #docsifythisurlbuilder #linkcolor,
 #docsifythisurlbuilder #linkhovercolor,
-#docsifythisurlbuilder #coverpagecolor
+#docsifythisurlbuilder #coverpagecolor,
 #docsifythisurlbuilder #linkcolordarkmode,
 #docsifythisurlbuilder #linkhovercolordarkmode,
 #docsifythisurlbuilder #coverpagecolordarkmodep {
