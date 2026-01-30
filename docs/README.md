@@ -144,7 +144,7 @@ Page layout:
  </span>
 </div>
 
-<div class='stackedlabeldropdown'>
+<div class='stackedlabeldropdown' style='margin-top: 2px;' >
   <label for="fontsize">Font size (px):</label>
   <input 
     type="number" 
@@ -159,7 +159,7 @@ Page layout:
   >
 </div>
         
-<div class='stackedlabeldropdown'>
+<div class='stackedlabeldropdown' style='margin-top: 2px;'>
   <label for="lineheight">Line height:</label>
   <input 
     type="number" 
