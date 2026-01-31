@@ -2252,17 +2252,15 @@ span #docsifythisurlfield {
     outline-color: var(--dt-primary-color-dark);
   }
 
+  /* FIXED: Removed forced opacity/filter on spin buttons, added color-scheme for v2 behavior */
   #docsifythisurlbuilder input[type="number"] {
     background-color: var(--dt-input-bg-dark);
     color: var(--dt-text-primary-dark);
     border-color: var(--dt-border-color-dark);
+    color-scheme: dark;
   }
 
-  #docsifythisurlbuilder input[type="number"]::-webkit-inner-spin-button,
-  #docsifythisurlbuilder input[type="number"]::-webkit-outer-spin-button {
-    filter: invert(1) brightness(1.2);
-    opacity: 1;
-  }
+  /* REMOVED: ::-webkit-inner-spin-button opacity: 1 rule to restore hover-only behavior */
 
   #docsifythisurlbuilder input[type="number"]:focus {
     border-color: var(--dt-primary-color-dark);
