@@ -556,7 +556,7 @@ input[type="color"]:focus {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 6px;
-  opacity: 1;
+  opacity: .9;
   transition: all 0.2s ease;
 }
 
@@ -572,7 +572,7 @@ input[type="color"]:focus {
 /* Radio label modern styling */
 #docsifythisurlbuilder label:has(input[type="radio"]) {
   filter: grayscale(100%);
-  opacity: 0.6;
+  opacity: 0.9;
   transition: all 0.2s ease;
 }
 
@@ -994,16 +994,5 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   #docsifythisurlbuilder h3, 
   #docsifythisurlbuilder h3 a {
     color: var(--dt-link-color) !important; /* Purple #818cf8 */
-  }
-
-  /* Increase contrast for unselected page layout options */
-  #docsifythisurlbuilder [type="radio"] + img {
-    opacity: 0.9; /* Was 0.7, increased for dark mode visibility */
-    filter: grayscale(30%); /* Reduced grayscale for better contrast */
-  }
-
-  #docsifythisurlbuilder label:has(input[type="radio"]) {
-    opacity: 0.9; /* Was 0.6, increased for dark mode visibility */
-    filter: grayscale(30%);
   }
 }
