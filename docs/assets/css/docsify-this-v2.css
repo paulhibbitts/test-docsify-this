@@ -556,7 +556,7 @@ input[type="color"]:focus {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 6px;
-  opacity: 2;
+  opacity: 1;
   transition: all 0.2s ease;
 }
 
