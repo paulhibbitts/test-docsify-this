@@ -81,7 +81,7 @@
     border-color: rgba(255, 255, 255, 0.1) !important;
   }
 
-  /* FIXED: Explicit dark mode select arrow with light color (#e2e8f0) - removed space in xmlns */
+  /* FIXED: Explicit dark mode select arrow with light color (#e2e8f0) */
   #docsifythisurlbuilder select,
   select {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23e2e8f0' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E") !important;
@@ -342,8 +342,9 @@ input[type="checkbox"] {
   box-shadow: var(--dt-shadow) !important;
 }
 
+/* UPDATED: Purple headers in both light and dark mode for consistency */
 #docsifythisurlbuilder h2 {
-  color: var(--dt-text-primary);
+  color: var(--dt-link-color);
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-top: 0.5rem;
@@ -355,7 +356,11 @@ input[type="checkbox"] {
   margin-bottom: 0.75rem;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--dt-text-primary) !important;
+  color: var(--dt-link-color) !important;
+}
+
+#docsifythisurlbuilder h3 a.anchor {
+  color: var(--dt-link-color) !important;
 }
 
 #docsifythisurlbuilder h3 a.anchor:hover {
@@ -933,7 +938,7 @@ select, input[type="text"], input[type="number"] {
 
 /* Dropdown indicator for select elements - Light mode (dark gray arrow #334155) - FIXED */
 select {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23334155' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg ' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23334155' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E") !important;
   background-position: right 8px center !important;
   background-repeat: no-repeat !important;
   background-size: 16px !important;
@@ -951,18 +956,14 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   outline: none !important;
 }
 
-/* Section headers in builder */
+/* Section headers in builder - Purple in both modes */
 #docsifythisurlbuilder h2 {
-  font-weight: 600;
-  color: var(--dt-text-primary);
+  color: var(--dt-link-color);
   letter-spacing: -0.02em;
 }
 
 #docsifythisurlbuilder h3, #docsifythisurlbuilder h3 a {
-  font-weight: 600;
-  margin-top: 1.5rem;
-  margin-bottom: 0.75rem;
-  color: var(--dt-text-primary)!important;
+  color: var(--dt-link-color) !important;
   letter-spacing: -0.02em;
 }
 
@@ -985,14 +986,7 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   box-shadow: var(--dt-shadow-hover);
 }
 
-/* Dark Mode - Builder headers PURPLE to match v1 */
+/* Dark Mode - Headers now inherit purple from global rules above */
 @media (prefers-color-scheme: dark) {
-  #docsifythisurlbuilder h2 {
-    color: var(--dt-link-color) !important; /* Purple #818cf8 */
-  }
-
-  #docsifythisurlbuilder h3, 
-  #docsifythisurlbuilder h3 a {
-    color: var(--dt-link-color) !important; /* Purple #818cf8 */
-  }
+  /* No need for explicit header colors here - inherited from global rules */
 }
