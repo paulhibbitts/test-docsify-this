@@ -1,4 +1,4 @@
-/* DOCSIFY THIS - MODERNIZED */
+/* DOCSIFY THIS - MODERNIZED v2 */
 
 :root #docsifythis {
   /* Core brand color */
@@ -340,7 +340,7 @@ input[type="checkbox"] {
   color: var(--dt-text-primary);
   font-weight: 600;
   letter-spacing: -0.02em;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 
@@ -556,7 +556,7 @@ input[type="color"]:focus {
   cursor: pointer;
   margin-right: 0.5rem;
   border-radius: 6px;
-  opacity: 0.7;
+  opacity: 2;
   transition: all 0.2s ease;
 }
 
@@ -983,4 +983,27 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   color: white;
   transform: translateY(-1px);
   box-shadow: var(--dt-shadow-hover);
+}
+
+/* Dark Mode - Builder headers PURPLE to match v1 */
+@media (prefers-color-scheme: dark) {
+  #docsifythisurlbuilder h2 {
+    color: var(--dt-link-color) !important; /* Purple #818cf8 */
+  }
+
+  #docsifythisurlbuilder h3, 
+  #docsifythisurlbuilder h3 a {
+    color: var(--dt-link-color) !important; /* Purple #818cf8 */
+  }
+
+  /* Increase contrast for unselected page layout options */
+  #docsifythisurlbuilder [type="radio"] + img {
+    opacity: 0.9; /* Was 0.7, increased for dark mode visibility */
+    filter: grayscale(30%); /* Reduced grayscale for better contrast */
+  }
+
+  #docsifythisurlbuilder label:has(input[type="radio"]) {
+    opacity: 0.9; /* Was 0.6, increased for dark mode visibility */
+    filter: grayscale(30%);
+  }
 }
