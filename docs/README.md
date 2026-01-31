@@ -1,6 +1,11 @@
 <style>
+:root {
+  --dt-page-bg-light: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  --dt-page-bg-dark: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
 html {
-  background: linear-gradient(135deg, #fafcfe 0%, #f2f6fe 100%);
+  background: var(--dt-page-bg-light);
   background-attachment: fixed;
   min-height: 100%;
 }
@@ -11,7 +16,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   html {
-    background: linear-gradient(135deg, #070b16 0%, #10172a 100%);
+    background: var(--dt-page-bg-dark);
     background-attachment: fixed;
   }
 }
