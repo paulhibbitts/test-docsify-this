@@ -1912,7 +1912,7 @@ span #docsifythisurlfield {
   margin-right: 0.5rem;
   border-radius: var(--dt-radius-md);
   transition: opacity 0.2s ease;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 #docsifythisurlbuilder [type="radio"]:checked + img {
