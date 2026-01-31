@@ -1762,10 +1762,12 @@ body .docsify-pagination-container {
   color: var(--dt-primary-color); /* Changed from var(--dt-text-primary) */
 }
 
+#docsifythisurlbuilder h2 a,
 #docsifythisurlbuilder h3 a {
   color: var(--dt-primary-color); /* Added to ensure anchor links are also purple */
 }
 
+#docsifythisurlbuilder h2 a.anchor:hover,
 #docsifythisurlbuilder h3 a.anchor:hover {
   text-decoration: none !important;
 }
