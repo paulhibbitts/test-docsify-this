@@ -1750,13 +1750,18 @@ body .docsify-pagination-container {
   box-shadow: var(--dt-shadow-sm) !important;
 }
 
+/* UPDATED: Purple headers in light mode */
 #docsifythisurlbuilder h2 {
   color: var(--dt-primary-color);
 }
 
 #docsifythisurlbuilder h3 {
   margin-top: 14px;
-  color: var(--dt-text-primary);
+  color: var(--dt-primary-color); /* Changed from var(--dt-text-primary) */
+}
+
+#docsifythisurlbuilder h3 a {
+  color: var(--dt-primary-color); /* Added to ensure anchor links are also purple */
 }
 
 #docsifythisurlbuilder h3 a.anchor:hover {
@@ -2252,15 +2257,13 @@ span #docsifythisurlfield {
     outline-color: var(--dt-primary-color-dark);
   }
 
-  /* FIXED: Removed forced opacity/filter on spin buttons, added color-scheme for v2 behavior */
+  /* FIXED: Spin box hover behavior with color-scheme */
   #docsifythisurlbuilder input[type="number"] {
     background-color: var(--dt-input-bg-dark);
     color: var(--dt-text-primary-dark);
     border-color: var(--dt-border-color-dark);
     color-scheme: dark;
   }
-
-  /* REMOVED: ::-webkit-inner-spin-button opacity: 1 rule to restore hover-only behavior */
 
   #docsifythisurlbuilder input[type="number"]:focus {
     border-color: var(--dt-primary-color-dark);
