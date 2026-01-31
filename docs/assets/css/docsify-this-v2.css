@@ -420,7 +420,7 @@ input[type="color"]:focus {
   vertical-align: middle;
   min-height: 64px;
   padding: min(15px, 5%) min(15px, 5%);
-  font-size: 18px;
+  font-size: 22px;
   border-radius: 12px !important;
   border-width: 2px !important;
   border-color: rgba(148, 163, 184, 0.4) !important;
