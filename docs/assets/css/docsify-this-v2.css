@@ -993,14 +993,40 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   box-shadow: var(--dt-shadow-hover);
 }
 
-/* Dark Mode - Slate-purple hybrid headers with no hover effects */
+/* Light mode - more purple (80% slate, 20% purple) */
+#docsifythisurlbuilder h2,
+#docsifythisurlbuilder h3,
+#docsifythisurlbuilder h2 a,
+#docsifythisurlbuilder h2 a.anchor,
+#docsifythisurlbuilder h3 a,
+#docsifythisurlbuilder h3 a.anchor {
+  color: #5a6070;
+  color: color-mix(in srgb, #334155 75%, var(--dt-link-color) 25%);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-decoration: none !important;
+}
+
+/* No hover effects - keep static */
+#docsifythisurlbuilder h2:hover,
+#docsifythisurlbuilder h3:hover,
+#docsifythisurlbuilder h2 a:hover,
+#docsifythisurlbuilder h2 a.anchor:hover,
+#docsifythisurlbuilder h3 a:hover,
+#docsifythisurlbuilder h3 a.anchor:hover {
+  color: #5a6070 !important;
+  color: color-mix(in srgb, #334155 75%, var(--dt-link-color) 25%) !important;
+  text-decoration: none !important;
+  opacity: 1 !important;
+}
+
+/* Dark mode - more purple (75% slate, 25% purple) */
 @media (prefers-color-scheme: dark) {
-  /* Static slate-purple for headers in dark mode */
   #docsifythisurlbuilder h2,
-  #docsifythisurlbuilder h3,
   #docsifythisurlbuilder h2 a,
   #docsifythisurlbuilder h2 a.anchor,
-  #docsifythisurlbuilder h3 a,
+  #docsifythisurlbuilder h3,
+  #docsifythisurlbuilder h3 a, 
   #docsifythisurlbuilder h3 a.anchor,
   #docsifythisurlbuilder h2:hover,
   #docsifythisurlbuilder h3:hover,
@@ -1008,28 +1034,12 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   #docsifythisurlbuilder h2 a.anchor:hover,
   #docsifythisurlbuilder h3 a:hover,
   #docsifythisurlbuilder h3 a.anchor:hover {
-    color: #8585a3;
-    color: color-mix(in srgb, #94a3b8 90%, var(--dt-link-color) 10%);
+    color: #8585a3 !important; /* Add !important to override conflicts */
+    color: color-mix(in srgb, #94a3b8 75%, var(--dt-link-color) 25%) !important;
     text-decoration: none !important;
     opacity: 1 !important;
   }
-  
-  /* Dark glass effect for banner */
-  #banner > div {
-    background: linear-gradient(135deg, rgba(30, 30, 35, 0.8) 0%, rgba(45, 45, 50, 0.8) 100%) !important;
-    border-color: rgba(255, 255, 255, 0.1) !important;
-  }
-  
-  #banner a {
-    background: rgba(146, 64, 14, 0.3) !important;
-    color: #fcd34d !important;
-    border-color: rgba(146, 64, 14, 0.5) !important;
-  }
-  
-  #banner a:hover {
-    background: rgba(146, 64, 14, 0.4) !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  }
+}
   
   /* Input inner shadows for dark mode depth */
   #docsifythisurlbuilder input[type="text"]:not(#docsifythisurlfield),
