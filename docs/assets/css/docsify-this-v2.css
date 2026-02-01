@@ -71,7 +71,6 @@
     background: #737985 !important;
   }
 
-  /* FIXED: Changed background to background-color so it doesn't override the SVG arrow */
   #docsifythisurlbuilder input[type="text"],
   #docsifythisurlbuilder input[type="url"],
   #docsifythisurlbuilder input[type="number"],
@@ -120,7 +119,6 @@
   margin-bottom: 0.125rem;
 }
 
-/* CSS generated/assisted by Anthropic Claude AI */
 /* --- Global transitions --- */
 #docsifythisurlbuilder a,
 #docsifythisurlbuilder button {
@@ -155,7 +153,6 @@ input[type="checkbox"] {
   overflow: hidden;
 }
 
-/* CSS generated/assisted by Anthropic Claude AI */
 @media screen and (max-width: 768px) {
   /* FALLBACK: For browsers that don't support :has() */
   .stackedlabeldropdown[data-fontsize="true"] {
@@ -342,7 +339,6 @@ input[type="checkbox"] {
   box-shadow: var(--dt-shadow) !important;
 }
 
-/* UPDATED: Slate-purple hybrid headers (88% slate, 12% purple) - static, no hover effects */
 #docsifythisurlbuilder h2,
 #docsifythisurlbuilder h3,
 #docsifythisurlbuilder h2 a,
@@ -834,7 +830,7 @@ input.toggle:where([type=checkbox], [type=radio]):before {
 }
 
 
-/* Align form elements horizontally - override inline styles */
+/* Align form elements horizontally */
 #docsifythisurlbuilder input[type="text"],
 #docsifythisurlbuilder input[type="url"],
 #docsifythisurlbuilder input[type="color"],
@@ -942,7 +938,7 @@ input.toggle:where([type=checkbox], [type=radio]):before {
   transition: all var(--dt-transition-fast);
 }
 
-/* Select and input styling with dropdown indicators - FIXED */
+/* Select and input styling with dropdown indicators */
 select, input[type="text"], input[type="number"] {
   border: 1px solid var(--dt-border-color) !important;
   background-color: var(--dt-bg-primary) !important;
@@ -954,7 +950,7 @@ select, input[type="text"], input[type="number"] {
               0 1px 0 0 rgba(255, 255, 255, 0.6);
 }
 
-/* Dropdown indicator for select elements - Light mode (dark gray arrow #334155) - FIXED */
+/* Dropdown indicator for select elements */
 select {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23334155' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E") !important;
   background-position: right 8px center !important;
@@ -993,7 +989,7 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   box-shadow: var(--dt-shadow-hover);
 }
 
-/* Light mode - more purple (80% slate, 20% purple) */
+/* Light mode */
 #docsifythisurlbuilder h2,
 #docsifythisurlbuilder h3,
 #docsifythisurlbuilder h2 a,
@@ -1020,7 +1016,7 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   opacity: 1 !important;
 }
 
-/* Dark mode - more purple (75% slate, 25% purple) */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   #docsifythisurlbuilder h2,
   #docsifythisurlbuilder h2 a,
@@ -1034,7 +1030,7 @@ select:focus, input[type="text"]:focus, input[type="number"]:focus {
   #docsifythisurlbuilder h2 a.anchor:hover,
   #docsifythisurlbuilder h3 a:hover,
   #docsifythisurlbuilder h3 a.anchor:hover {
-    color: #8585a3 !important; /* Add !important to override conflicts */
+    color: #8585a3 !important;
     color: color-mix(in srgb, #94a3b8 75%, var(--dt-link-color) 25%) !important;
     text-decoration: none !important;
     opacity: 1 !important;
