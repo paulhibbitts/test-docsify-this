@@ -34,6 +34,11 @@
 **Breaking:**
 * With the use of Docsify v5, Legacy Browsers (for example, Internet Explorer 11) are no longer supported 
 
+## [1.11.1] - XX/XX/2026
+
+**Improved:**
+* Banner can now be hidden by default on Web Page Builder page using inline CSS
+
 ## [1.11.0] - 02/01/2026
 
 **New:**
