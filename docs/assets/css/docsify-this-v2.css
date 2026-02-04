@@ -305,7 +305,6 @@ input[type="checkbox"] {
   height: 54px;
   opacity: 0.8;
   transition: opacity 0.2s ease;
-  /* Remove float: left and vertical-align */
 }
 
 #docsifythis .docsifythisheader .logoandtext img:hover {
@@ -873,13 +872,17 @@ input.toggle:where([type=checkbox], [type=radio]):before {
 }
 
 @media only screen and (max-width: 480px) {
-  .docsifythisheader .logoandtext h1 {
-    font-size: 1.8rem !important;
-    line-height: 35px !important;
+  #docsifythis .docsifythisheader .logoandtext h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
   }
 
   .docsifythisheader .logoandtext img {
     height: 35px;
+  }
+  
+  .docsifythisheader .logoandtext {
+    gap: 6px; 
   }
 }
 
