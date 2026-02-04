@@ -295,12 +295,17 @@ input[type="checkbox"] {
   margin-top: 2px;
 }
 
-#docsifythis .docsifythisheader .logoandtext img {
-  float: left;
+.docsifythisheader .logoandtext {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.docsifythisheader .logoandtext img {
   height: 54px;
-  vertical-align: middle;
   opacity: 0.8;
   transition: opacity 0.2s ease;
+  /* Remove float: left and vertical-align */
 }
 
 #docsifythis .docsifythisheader .logoandtext img:hover {
