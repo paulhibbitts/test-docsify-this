@@ -295,7 +295,7 @@ input[type="checkbox"] {
   margin-top: 2px;
 }
 
-.docsifythisheader .logoandtext img {
+#docsifythis .docsifythisheader .logoandtext img {
   float: left;
   height: 54px;
   vertical-align: middle;
@@ -303,7 +303,7 @@ input[type="checkbox"] {
   transition: opacity 0.2s ease;
 }
 
-.docsifythisheader .logoandtext img:hover {
+#docsifythis .docsifythisheader .logoandtext img:hover {
   opacity: 1;
 }
 
