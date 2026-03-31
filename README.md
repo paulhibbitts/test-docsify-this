@@ -37,7 +37,7 @@
     <td align="center" style="border: none; background: none;"><sub>Docsify-This – Web Page Builder</sub></td>
     <td align="center" style="border: none; background: none;"><sub>Docsify-This – Published page example</sub></td>
   </tr>
-  <tr><td colspan="2" style="border: none; background: none;">&nbsp;</td></tr>
+  <tr style="display: none;"><td colspan="2" style="border: none; background: none;">&nbsp;</td></tr>
   <tr>
     <td width="49%" style="border: none; background: none;">
       <picture>
