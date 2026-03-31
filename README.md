@@ -18,15 +18,15 @@
 > *"I'm blown away just by the fact you put a URL into Docsify-This and then you get a URL back for a web page… done!"*
 > — J. Groom, Co-founder, [Reclaim Hosting](https://reclaimhosting.com)
 
-<table>
+<table style="border-collapse: collapse; background: none;">
   <tr>
-    <td width="49%">
+    <td width="49%" style="border: none; background: none;">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1-dark.png">
         <img alt="Docsify-This Web Page Builder interface" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-1.png" width="100%">
       </picture>
     </td>
-    <td width="49%">
+    <td width="49%" style="border: none; background: none;">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2-dark.png">
         <img alt="Example page published with Docsify-This" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-2.png" width="100%">
@@ -34,18 +34,18 @@
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>Docsify-This – Web Page Builder</sub></td>
-    <td align="center"><sub>Docsify-This – Published page example</sub></td>
+    <td align="center" style="border: none; background: none;"><sub>Docsify-This – Web Page Builder</sub></td>
+    <td align="center" style="border: none; background: none;"><sub>Docsify-This – Published page example</sub></td>
   </tr>
-  <tr><td colspan="2">&nbsp;</td></tr>
+  <tr><td colspan="2" style="border: none; background: none;">&nbsp;</td></tr>
   <tr>
-    <td width="49%">
+    <td width="49%" style="border: none; background: none;">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3-dark.png">
         <img alt="Web Page Builder page appearance options" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-3.png" width="100%">
       </picture>
     </td>
-    <td width="49%">
+    <td width="49%" style="border: none; background: none;">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4-dark.png">
         <img alt="Web Page Builder advanced options" src="https://raw.githubusercontent.com/hibbitts-design/docsify-this/refs/heads/main/screenshots/screenshot-4.png" width="100%">
@@ -53,8 +53,8 @@
     </td>
   </tr>
   <tr>
-    <td align="center"><sub>Docsify-This Web Page Builder – Page appearance options</sub></td>
-    <td align="center"><sub>Docsify-This Web Page Builder – Advanced options</sub></td>
+    <td align="center" style="border: none; background: none;"><sub>Docsify-This Web Page Builder – Page appearance options</sub></td>
+    <td align="center" style="border: none; background: none;"><sub>Docsify-This Web Page Builder – Advanced options</sub></td>
   </tr>
 </table>
 
