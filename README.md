@@ -46,7 +46,7 @@
     <td width="49%">
       <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshot-4-dark.png">
-        <img alt="Web Page Builder advanced options" src=""https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshot-4.png" width="100%">
+        <img alt="Web Page Builder advanced options" src="https://raw.githubusercontent.com/paulhibbitts/test-docsify-this/refs/heads/test-docsify-this-v2/screenshot-4.png" width="100%">
       </picture>
     </td>
   </tr>
