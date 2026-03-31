@@ -86,7 +86,7 @@ https://github.com/hibbitts-design/markdown/blob/main/ReadMe.md
 > 
 > **Wanting more complete coverage?** Check out the [Markdown Publishing with Docsify-This](https://preview.docsify-this.net/?basePath=https://raw.githubusercontent.com/hibbitts-design/publishing-with-docsify-this/main&sidebar=true&searchbox=true&edit-link=https://github.com/hibbitts-design/publishing-with-docsify-this/blob/main/README.md&maxLevel=3&browser-tab-title=Markdown%20Publishing%20with%20Docsify-This&header-weight=600&dark-mode=auto&code-copy=true#/) guide for step-by-step instructions and more advanced workflows.
 
-<div style="display:none;">
+</div>
 
 ## Everything You Need to Know about Docsify-This
 
