@@ -60,9 +60,6 @@
 
 Content stays in the Markdown files you already have, wherever they are hosted. Publish as standalone pages or embed into Canvas, Moodle, WordPress, or almost any platform – one source, many destinations.
 
-> *"I'm blown away just by the fact you put a URL into Docsify-This and then you get a URL back for a web page… done!"*
-> — J. Groom, Co-founder, [Reclaim Hosting](https://reclaimhosting.com)
-
 ## Quickstart ⚡
 
 1. **Have a Markdown file online?** GitHub, Codeberg, or any public Markdown file works
