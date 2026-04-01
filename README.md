@@ -1,9 +1,9 @@
+<div align="center">
+  
 <div style="display:none;">
 
 | ⚠️  | **This is a preview-only repository. View the main project repository at https://github.com/hibbitts-design/docsify-this.** |
 | --- | :-------------------------------------------------------------------------------------------------------------------------- |
-
-<div align="center">
 
 <img src="https://docsify.js.org/_media/icon.svg" width="64">
 
