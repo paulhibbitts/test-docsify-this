@@ -1380,8 +1380,8 @@
                   // Skip for in-page anchor links (e.g. '?id=my-heading') — those don't need correction
 
                   // Only treat as relative if the href did NOT start with '#/'
-                  const isAbsolute = href.startsWith('#/');
-                  const fullPath = (linkPath.startsWith('?id') || isAbsolute)
+                  const alreadyAbsolute = currentPageDir && linkPath.startsWith(currentPageDir);
+                  const fullPath = (linkPath.startsWith('?id') || alreadyAbsolute)
                     ? linkPath
                     : currentPageDir + linkPath;
 
