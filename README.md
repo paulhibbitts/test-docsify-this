@@ -597,7 +597,7 @@ https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibb
 ##### max-width
 
 Set a custom max width for content of your web pages with the optional **max-width** parameter (not included in the Advanced Web Page Builder), for example:  
-https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&core-theme-styles=true&max-width=100. If no unit is included the default unit is percentage (%). You can also specify other units like max-width=910px.
+https://preview.docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-one-page-article/main&homepage=home.md&core-theme-styles=true&max-width=100. If no unit is included the default unit is percentage (%). You can also specify other units like max-width=910px. When set to 100 (full width), the top and side padding of the content area is automatically removed for a flush, edge-to-edge layout.
 
 ##### mergeNavbar
 
