@@ -571,7 +571,7 @@
             }
           }
 
-          var searchresultsource = document.getElementById('searchResultSource').value;
+          var searchresultsource = document.getElementById('searchresultsource').value;
           if (!(searchresultsource == "none")) {
             if (!url.includes('search.resultSource=')) {
               var URLparms = URLparms + `&search.resultSource=` + searchresultsource
@@ -603,13 +603,6 @@
           if (cb15.checked) {
             if (!url.includes('zoom-images=')) {
               var URLparms = URLparms + `&zoom-images=true`;
-            }
-          }
-
-          const cb22 = document.querySelector('#rightsidebar');
-          if (cb22.checked) {
-            if (!url.includes('sidebarPosition=')) {
-              var URLparms = URLparms + `&sidebarPosition=right`;
             }
           }
 
@@ -892,11 +885,10 @@
       document.getElementById("linkhovercolorpreview").style.border = "4px solid transparent";
       document.getElementById("linkhovercolorpreview").style.backgroundColor = "transparent";
       document.getElementById("pagination").checked = false;
-      document.getElementById("searchResultSource").value = 'none';
+      document.getElementById("searchresultsource").value = 'none';
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("headerweight").value = 600;
       document.getElementById("zoomimages").checked = false;
-      document.getElementById("rightsidebar").checked = false;
       document.getElementById("closesidebar").checked = false;
       document.getElementById("maxWidthValue").value = 840;
       document.getElementById("maxWidthValueUnit").value = 'px';
@@ -2201,11 +2193,7 @@
               document.getElementById("zoomimages").checked = true;
             }
 
-            if (getURLParameterByName('sidebarPosition', null, null, window.location.href, true) === 'right') {
-              document.getElementById("rightsidebar").checked = true;
-            }
-
-            if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
+if (getURLParameterByName(['close-sidebar', 'closeSidebar'], null, null, window.location.href, true) === 'true') {
               document.getElementById("closesidebar").checked = true;
             }
 
@@ -2271,7 +2259,7 @@
             
             resultSource = getURLParameterByName('search.resultSource', null, null, window.location.href, true);
             if (resultSource) {
-              document.getElementById('searchResultSource').value = resultSource;
+              document.getElementById('searchresultsource').value = resultSource;
             }
 
             if (getURLParameterByName('mergeNavbar', null, null, window.location.href, true) === 'true') {
