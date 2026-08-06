@@ -255,8 +255,6 @@ Page layout:
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="narrowToC"/><label for="narrowToC">Use a narrower table of contents area, along with a smaller screen breakpoint</label></div>
 
-<div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="rightsidebar"/><label for="rightsidebar">Position Docsify Sidebar on the right side of the page</label></div>
-
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="closesidebar"/><label for="closesidebar">Automatically close Docsify Sidebar for presentations or focused reading</label></div>
 
 <div class="docsifythisurlbuilderoptionsline"><input class="docsifythisurlbuildercheckbox" type="checkbox" id="enableSidebarsearch"/><label for="enableSidebarsearch">Enable search box in Docsify Sidebar</label></div>
@@ -386,8 +384,8 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown">
-  <label for="searchResultSource">Display search result source:</label>
-  <select class="docsifythisurlbuilderoptionsline" id="searchResultSource" name="searchResultSource">
+  <label for="searchresultsource">Display search result source:</label>
+  <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
     <option value="none" selected>None</option>
     <option disabled="disabled">──</option>
     <option value="page">Page title</option>
@@ -866,6 +864,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [name](/?id=nameconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [page-title](/?id=page-titleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [pagination](/?id=paginationconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [search.resultSource](/?id=searchresultsourceconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
+- [sidebarPosition](/?id=sidebarPositionconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-headings](/?id=spotlight-headingsconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [spotlight-toggle](/?id=spotlight-toggleconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
 - [subMaxLevel](/?id=subMaxLevelconst-bthisconst-origbtextcontentbtextcontentcopiedsettimeoutbtextcontentorig1500copy)
@@ -998,6 +998,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
+
+##### search.resultSource<button type="button" class="copy-link" aria-label="Copy search.resultSource parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&search.resultSource=breadcrumb').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. Use `search.resultSource=page` to show just the page title instead. The default value is `none`.
+
+##### sidebarPosition<button type="button" class="copy-link" aria-label="Copy sidebarPosition parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebarPosition=right').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
+
+Position the Docsify Sidebar on the right side of the page with the optional **sidebarPosition** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
 
 ##### spotlight-headings<button type="button" class="copy-link" aria-label="Copy spotlight-headings parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&spotlight-headings=h2,h3').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 

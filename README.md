@@ -500,6 +500,8 @@ The following additional URL parameters are available for use in Docsify-This UR
 - [name](#name)
 - [page-title](#page-title)
 - [pagination](#pagination)
+- [search.resultSource](#search.resultSource)
+- [sidebarPosition](#sidebarPosition)
 - [spotlight-headings](#spotlight-headings)
 - [spotlight-toggle](#spotlight-toggle)
 - [submaxLevel](#subMaxLevel)
@@ -633,6 +635,16 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 Display Pagination buttons in page content area (Docsify custom Sidebar required) with the optional **pagination** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&searchbox=true&pagination=true
+
+##### search.resultSource
+
+Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. Use `search.resultSource=page` to show just the page title instead. The default value is `none`.
+
+##### sidebarPosition
+
+Position the Docsify Sidebar on the right side of the page with the optional **sidebarPosition** parameter (not included in the Advanced Web Page Builder), for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&sidebar=true&sidebarPosition=right
 
 ##### spotlight-headings
 
