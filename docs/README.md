@@ -384,13 +384,13 @@ Page layout:
 <div class="clearfix">
 
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown">
-  <label for="searchresultsource">Display search result source:</label>
+  <label for="searchresultsource">Show below each search result:</label>
   <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
-    <option value="" selected>Automatic (multi-page sites)</option>
+    <option value="" selected>Automatic (breadcrumb for multiple page sites)</option>
     <option disabled="disabled">──</option>
-    <option value="none">None</option>
+    <option value="none">Nothing</option>
     <option value="page">Page title</option>
-    <option value="breadcrumb">Breadcrumb</option>
+    <option value="breadcrumb">Full breadcrumb path</option>
   </select>
 </div></div>
 
@@ -1002,7 +1002,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### search.resultSource<button type="button" class="copy-link" aria-label="Copy search.resultSource parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&search.resultSource=page').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Show page context (page title or full sidebar path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
+Show page context (page title or full breadcrumb path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=page. Defaults to `breadcrumb` when a custom Sidebar (`loadSidebar`) is loaded, otherwise `none`; override with `page` or `none`.
 
 ##### sidebarPosition<button type="button" class="copy-link" aria-label="Copy sidebarPosition parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebarPosition=right').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
