@@ -638,7 +638,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### search.resultSource
 
-Show page context (page title or full sidebar path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
+Show page context (page title or full breadcrumb path) below each search result — helpful on multi-page sites with similarly named sections — with the optional **search.resultSource** parameter, for example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=page. Defaults to `breadcrumb` when a custom Sidebar (`loadSidebar`) is loaded, otherwise `none`; override with `page` or `none`.
 
 ##### sidebarPosition
