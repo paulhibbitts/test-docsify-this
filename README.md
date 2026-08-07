@@ -638,8 +638,8 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### search.resultSource
 
-Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. Use `search.resultSource=page` to show just the page title instead. The default value is `none`.
+On multi-page sites where several pages share similarly named sections (e.g. "Usage", "Options", "Examples"), search results can be hard to tell apart without knowing which page they come from. Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. When a Docsify custom Sidebar is loaded (`loadSidebar`), this automatically defaults to `breadcrumb`; otherwise it defaults to `none`. Use `search.resultSource=page` to show just the page title instead, or `search.resultSource=none` to force it off even when a custom Sidebar is loaded.
 
 ##### sidebarPosition
 

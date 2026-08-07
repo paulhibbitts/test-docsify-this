@@ -386,8 +386,9 @@ Page layout:
 <div class="docsifythisurlbuilderoptionsline" style="margin-top:-2px;"><div class="stackedlabeldropdown">
   <label for="searchresultsource">Display search result source:</label>
   <select class="docsifythisurlbuilderoptionsline" id="searchresultsource" name="searchresultsource">
-    <option value="none" selected>None</option>
+    <option value="" selected>Automatic (multi-page sites)</option>
     <option disabled="disabled">──</option>
+    <option value="none">None</option>
     <option value="page">Page title</option>
     <option value="breadcrumb">Breadcrumb</option>
   </select>
@@ -1001,8 +1002,8 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### search.resultSource<button type="button" class="copy-link" aria-label="Copy search.resultSource parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&search.resultSource=breadcrumb').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
-Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
-https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. Use `search.resultSource=page` to show just the page title instead. The default value is `none`.
+On multi-page sites where several pages share similarly named sections (e.g. "Usage", "Options", "Examples"), search results can be hard to tell apart without knowing which page they come from. Show page context below each search result — either the page title or its full sidebar path — with the optional **search.resultSource** parameter, for example:  
+https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-multiple-page-course-site/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&searchbox=true&search.resultSource=breadcrumb. When a Docsify custom Sidebar is loaded (`loadSidebar`), this automatically defaults to `breadcrumb`; otherwise it defaults to `none`. Use `search.resultSource=page` to show just the page title instead, or `search.resultSource=none` to force it off even when a custom Sidebar is loaded.
 
 ##### sidebarPosition<button type="button" class="copy-link" aria-label="Copy sidebarPosition parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&sidebarPosition=right').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
