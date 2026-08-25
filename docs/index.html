@@ -2487,6 +2487,15 @@
       }
     }
 
+    // Check for Safari only CSS for Collapsible Sidebar
+    (function () {
+      const ua = navigator.userAgent;
+      const isSafari = /^((?!chrome|android|crios|fxios).)*safari/i.test(ua);
+      if (isSafari) {
+        document.documentElement.classList.add('is-safari');
+      }
+    })();
+
   </script>
 
   <!-- Docsify v5 release -->
