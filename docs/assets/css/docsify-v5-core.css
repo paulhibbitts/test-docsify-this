@@ -850,11 +850,3 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
     scrollbar-width: thin;
   }
 }
-
-/* Safari only (requires the is-safari class-toggle script — see custom.js):
-   only reserve scrollbar space when actually needed, instead of
-   scrollbar-gutter: stable's permanent reservation (added for
-   collapsible sidebar groups) */
-html.is-safari .sidebar {
-  scrollbar-gutter: auto !important;
-}
