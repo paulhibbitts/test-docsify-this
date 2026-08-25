@@ -2495,7 +2495,7 @@
         // Only reserve sidebar scrollbar space when actually needed, instead
         // of scrollbar-gutter: stable's permanent reservation (added for
         // collapsible sidebar groups)
-        var style = document.createElement('style');
+        const style = document.createElement('style');
         style.textContent = '.sidebar { scrollbar-gutter: auto !important; }';
         document.head.appendChild(style);
       }
