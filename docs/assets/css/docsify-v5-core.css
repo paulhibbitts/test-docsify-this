@@ -842,11 +842,3 @@ aside#__sidebar:has(.sidebar-nav > [class*="card-image-sidebar"]:first-child) .a
     line-height: 1.15rem;
   }
 }
-
-/* Firefox only: narrow scrollbar so scrollbar-gutter: stable (added for
-   collapsible sidebar groups) reserves less space */
-@supports (-moz-appearance: none) {
-  .sidebar {
-    scrollbar-width: thin;
-  }
-}
