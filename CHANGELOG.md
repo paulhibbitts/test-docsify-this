@@ -9,6 +9,7 @@
 **Improved:**
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), loaded only on pages with diagrams
 * Updated MathJax from 2 to 3.2.2, adding chemistry (\ce) and other LaTeX extras
+* Draw Mermaid diagrams in Mermaid's dark theme when the page is in dark mode (as the Grav Mermaid plugin does)
 * Add explicit embedly.look() reprocessing to make conditional Embedly script loading reliable across page navigations
 * Updated ReadMe
 * Set new search results option for grouped by page only when loadSidebar param is set (for updated Docsify v5 search plugin)
