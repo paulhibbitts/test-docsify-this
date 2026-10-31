@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.3.0] - XX/XX/2026
+
+**New:**
+* Guide card lists: `card-list-guides` (a Guides page) and `card-list-sections` (a guide home's sections) show three cards in a row, with optional `card-lines-2` or `card-lines-3` to trim card text to two or three lines
+
+**Improved:**
+* A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
+* Cards in a list line up across each row (image, title, text), however long their titles are
+* Updated ReadMe
+
 ## [2.2.0] - 11/01/2026
 
 **New:**
