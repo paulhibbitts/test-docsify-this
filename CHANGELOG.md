@@ -1,20 +1,11 @@
 # Changelog
 
-## [2.3.0] - XX/XX/2026
-
-**New:**
-* Guide card lists: `card-list-guides` (a Guides page) and `card-list-sections` (a guide home's sections) show three cards in a row, with optional `card-lines-2` or `card-lines-3` to trim card text to two or three lines
-
-**Improved:**
-* A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
-* Cards in a list line up across each row (image, title, text), however long their titles are
-* Updated ReadMe
-
 ## [2.2.0] - 11/01/2026
 
 **New:**
 * Support for Docsify Sidebar on right
 * Support for including search result source
+* Guide card lists: `card-list-guides` (a Guides page) and `card-list-sections` (a guide home's sections) show three cards in a row, with optional `card-lines-2` or `card-lines-3` to trim card text to two or three lines
 
 **Improved:**
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), loaded only on pages with diagrams
@@ -26,6 +17,8 @@
 * Minor reorganization of Web Page Builder
 * Visual indicator of active page layout in Web Page Builder page options
 * Add collapsible mobile ToC toggle and fix mobile width/rule bugs
+* A card's link button in its own paragraph now sits at the bottom of the card, lined up across the row
+* Cards in a list line up across each row (image, title, text), however long their titles are
 
 **Bugfix:**
 * Remove duplicate Search config
