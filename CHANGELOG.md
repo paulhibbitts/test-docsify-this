@@ -6,6 +6,7 @@
 * Support for Docsify Sidebar on right
 * Support for including search result source
 * Guide card lists: `card-list-guides` (a Guides page) and `card-list-sections` (a guide home's sections) show three cards in a row, with optional `card-lines-2` or `card-lines-3` to trim card text to two or three lines
+* Added example Docsify-This template (Multiple Guides Site Template)
 
 **Improved:**
 * Updated Mermaid to 11.17.2 (same as the Grav Mermaid plugin), loaded only on pages with diagrams
