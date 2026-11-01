@@ -25,6 +25,7 @@
 * Remove duplicate Search config
 * Address TOC plugin double-load, dark-mode colors, and multi-level heading crashes
 * LaTeX: prices such as $5 and $10 stay as text, and math in ~~~ code blocks stays as code (a patch for the docsify-latex plugin)
+* An empty navbar no longer leaves space above the page
 
 ## [2.0.0] - 07/27/2026
 
