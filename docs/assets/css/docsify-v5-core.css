@@ -957,6 +957,7 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
    sections listed one under the other). The same cards as the other card lists, one column on every screen. */
 .markdown-section .card-list-rows {
   grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 /* (a little less space above and below each card's content, as these cards are short) */
