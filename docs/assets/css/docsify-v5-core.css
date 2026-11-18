@@ -1036,6 +1036,21 @@ body:has(.markdown-section:empty) :is(aside.sidebar, button.sidebar-toggle) {
   }
 }
 
+/* A portrait cover (such as a book cover), with guide-cover-portrait next to guide-cover: shown whole, at its own
+   shape and a narrower width, also on phones, as in Open Publishing Space. An unusually tall image is kept to 18rem
+   high, and narrows to keep its shape. */
+.markdown-section .guide-cover.guide-cover-portrait > p:first-child {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.markdown-section .guide-cover.guide-cover-portrait > p:first-child img {
+  width: auto;
+  max-width: 11rem;
+  max-height: 18rem;
+  aspect-ratio: auto;
+}
+
 /* Site title – the site's name at the top left of the navbar, as in a site header, on pages that hide the sidebar
    (where Docsify shows the name). Used as the navbar's first link: - [Site Name](home.md ":class=site-title").
    A page hides its sidebar with a <style> line in its own text, so .markdown-section > style finds those pages.
