@@ -585,6 +585,13 @@
             }
           }
 
+          const cbKeepMyPlace = document.querySelector('#keepmyplace');
+          if (cbKeepMyPlace.checked) {
+            if (!url.includes('keep-my-place=')) {
+              var URLparms = URLparms + `&keep-my-place=true`;
+            }
+          }
+
           var searchresultsource = document.getElementById('searchresultsource').value;
           if (searchresultsource !== "") {
             if (!url.includes('search.resultSource=')) {
@@ -947,6 +954,7 @@
       document.getElementById("linkhovercolorpreview").style.border = "4px solid transparent";
       document.getElementById("linkhovercolorpreview").style.backgroundColor = "transparent";
       document.getElementById("pagination").checked = false;
+      document.getElementById("keepmyplace").checked = false;
       document.getElementById("searchresultsource").value = '';
       document.getElementById("mergeNavbar").checked = false;
       document.getElementById("collapsibleSidebarGroups").checked = false;
@@ -2017,14 +2025,54 @@
               if (browserTabTitle) {
                 browserTabTitle = browserTabTitle.replaceAll('_', ' ');
               }
-              const siteTitle = browserTabTitle || (appName && appName.trim() !== '' ? appName.replaceAll('_', ' ') : '');
-              let tabTitle = siteTitle || 'Published by Docsify-This';
+              let siteName = '';
+              if (appName && appName.trim() !== '') {
+                siteName = appName.replaceAll('_', ' ').trim();
+              }
+              let siteTitle = siteName;
+              if (browserTabTitle) {
+                siteTitle = browserTabTitle;
+              }
+              let tabTitle = siteTitle;
+              if (!tabTitle) {
+                tabTitle = 'Published by Docsify-This';
+              }
+
               // On sites with a sidebar file (several pages), each page's heading goes first, so every tab has its own title
               if (getURLParameterByName('loadSidebar')) {
+                let pageHeading = '';
                 const firstHeading = document.querySelector('#main h1');
-                const pageHeading = firstHeading ? firstHeading.textContent.trim() : '';
-                if (pageHeading && pageHeading !== siteTitle) {
-                  tabTitle = siteTitle ? pageHeading + ' | ' + siteTitle : pageHeading;
+                if (firstHeading) {
+                  pageHeading = firstHeading.textContent.trim();
+                }
+
+                // A course in its own folder names itself with its navbar's site title link. The link must point into
+                // this page's folder: right after moving between courses, the previous course's navbar can still show.
+                const routeParts = window.location.hash.replace(/^#\/?/, '').split('?')[0].split('/');
+                let folder = '';
+                if (routeParts.length > 1) {
+                  folder = routeParts[0];
+                }
+                let courseName = '';
+                const navbarTitle = document.querySelector('.app-nav a.site-title');
+                if (folder && navbarTitle) {
+                  const linkFolder = (navbarTitle.getAttribute('href') || '').replace(/^#\//, '').split('/')[0];
+                  const name = navbarTitle.textContent.trim();
+                  if (linkFolder === folder && name !== siteTitle && name !== siteName) {
+                    courseName = name;
+                  }
+                }
+
+                if (courseName && pageHeading && pageHeading !== courseName) {
+                  tabTitle = pageHeading + ' | ' + courseName;
+                } else if (courseName && siteTitle) {
+                  tabTitle = courseName + ' | ' + siteTitle;
+                } else if (courseName) {
+                  tabTitle = courseName;
+                } else if (pageHeading && pageHeading !== siteTitle && siteTitle) {
+                  tabTitle = pageHeading + ' | ' + siteTitle;
+                } else if (pageHeading && pageHeading !== siteTitle) {
+                  tabTitle = pageHeading;
                 }
               }
               document.title = tabTitle;
@@ -2531,6 +2579,10 @@
               document.getElementById("pagination").checked = true;
             }
 
+            if (getURLParameterByName(['keep-my-place', 'keepMyPlace'], null, null, window.location.href, true) === 'true') {
+              document.getElementById("keepmyplace").checked = true;
+            }
+
             resultSource = getURLParameterByName('search.resultSource', null, null, window.location.href, true);
             if (resultSource) {
               document.getElementById('searchresultsource').value = resultSource;
@@ -2877,6 +2929,16 @@
     if (getURLParameterByName('pagination', null, null, window.location.href, true) === 'true') {
       // document.write('<script src="assets/vendor/docsify/plugins/docsify-pagination.min.js"><\/script>');
       document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-pagination.min.js"><\/script>');
+      document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-arrow-keys.js"><\/script>');
+    }
+  </script>
+
+  <!-- Keep My Place Plugin -->
+  <script>
+    if (!(window.$docsify['basePath'] === undefined)) {
+      if (getURLParameterByName(['keep-my-place', 'keepMyPlace'], null, null, window.location.href, true) === 'true') {
+        document.write('<script src="assets/vendor/docsify/plugins/custom/docsify-keep-my-place.js"><\/script>');
+      }
     }
   </script>
 
