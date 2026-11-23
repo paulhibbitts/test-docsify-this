@@ -386,7 +386,7 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 
 ##### edit-link
 
-Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter. On a site of several pages from GitHub, a link to a page file follows the page being shown. For example:  
+Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter. On a site of several pages from GitHub or Codeberg, a link to a page file follows the page being shown. For example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md
 
 ##### edit-link-text
@@ -2163,7 +2163,7 @@ When displaying GitHub Markdown files, the branch name is assumed to be `main`, 
 
 ##### The 'Edit this Page' Links are not Working
 
-On a site of several pages from GitHub, an `edit-link` to a page file in the same repository (such as `.../blob/main/home.md`) links to the page being shown, including with a custom Navbar or Sidebar. For sites hosted elsewhere, such as Codeberg, these links can't be updated this way: pass a URL pointing to the Git Repository using the URL parameter `edit-link` instead, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com//paulhibbitts/docsify-this-cmpt-363-222-site&edit-link-text=GitHub%20Repository and https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
+On a site of several pages from GitHub or Codeberg, an `edit-link` to a page file in the same repository (such as `.../blob/main/home.md` or `.../src/branch/main/home.md`) links to the page being shown, including with a custom Navbar or Sidebar. For sites hosted elsewhere, these links can't be updated this way: pass a URL pointing to the Git Repository using the URL parameter `edit-link` instead, for example https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar&edit-link=https://github.com//paulhibbitts/docsify-this-cmpt-363-222-site&edit-link-text=GitHub%20Repository and https://docsify-this.net?basePath=https://raw.githubusercontent.com/paulhibbitts/docsify-this-cmpt-363-222-site/main&homepage=home.md&loadNavbar=_navbar.md&sidebar=true&loadSidebar=_sidebar.md&edit-link=https://github.com/paulhibbitts/docsify-this-cmpt-363-222-site/tree/main&edit-link-text=GitHub%20Repository
 
 ##### Updated Markdown file not Displayed in the Browser
 
