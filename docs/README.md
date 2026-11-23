@@ -793,6 +793,9 @@ https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-des
 Display a "Edit this Page" link (default location is bottom of page) with the optional **edit-link** parameter. On a site of several pages from GitHub or Codeberg, a link to a page file follows the page being shown. For example:  
 https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-open-course-starter-kit/main&edit-link=https://github.com/hibbitts-design/docsify-open-course-starter-kit/blob/main/README.md
 
+On a site of several pages on Codeberg, for example:  
+https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/docsify-this-share-move-reuse-site&homepage=home.md&name=Share%2C%20Move%2C%20Reuse&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&pagination=true&searchbox=true&edit-link=https://codeberg.org/paulhibbitts/docsify-this-share-move-reuse-site/src/branch/main/home.md&edit-link-text=View%20on%20Codeberg&edit-link-emoji=:page_facing_up:
+
 ##### edit-link-text<button type="button" class="copy-link" aria-label="Copy edit-link-text parameter" onclick="event.stopPropagation(); event.preventDefault(); navigator.clipboard.writeText('&edit-link-text=Edit_this_Page').then(()=>{const b=this;const orig=b.textContent;b.textContent='copied!';setTimeout(()=>b.textContent=orig,1500)})">copy</button>
 
 Change the default text for a "Edit this Page" link with the optional **edit-link-text** parameter, for example:  
@@ -2575,6 +2578,8 @@ _Markdown Content Demos_
 [Docsify-This Markdown CSS Styles & Embeds Demo file](https://github.com/hibbitts-design/docsify-this-markdown-content-demo/blob/main/README.md), displayed by Docsify-This as a [Web Page with 'View raw Markdown' link](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main&edit-link=https://raw.githubusercontent.com/hibbitts-design/docsify-this-markdown-content-demo/main/README.md&edit-link-text=View%20raw%20Markdown).
 
 [Docsify-This Markdown CSS Styles & Embeds Demo Codeberg file](https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/src/branch/main/README.md), displayed by Docsify-This as a [Web Page with 'View raw Markdown' link](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/docsify-this-markdown-content-demo/&edit-link=https://codeberg.org/paulhibbitts/docsify-this-markdown-content-demo/raw/branch/main/README.md&edit-link-text=View%20raw%20Markdown).
+
+[Share, Move, Reuse guides on Codeberg](https://codeberg.org/paulhibbitts/docsify-this-share-move-reuse-site), displayed by Docsify-This as a [Website with a 'View on Codeberg' link for each page](https://docsify-this.net?basePath=https://raw.codeberg.page/paulhibbitts/docsify-this-share-move-reuse-site&homepage=home.md&name=Share%2C%20Move%2C%20Reuse&sidebar=true&loadSidebar=_sidebar.md&loadNavbar=_navbar.md&pagination=true&searchbox=true&edit-link=https://codeberg.org/paulhibbitts/docsify-this-share-move-reuse-site/src/branch/main/home.md&edit-link-text=View%20on%20Codeberg&edit-link-emoji=:page_facing_up:)
 
 **Technical/Specialized Content**  
 
