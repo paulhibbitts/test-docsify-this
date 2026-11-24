@@ -980,7 +980,7 @@ To edit a file in GitHub, tap the **Pencil** icon (Edit file) in the upper-right
 
 ##### Guide Site with Image Cards Template
 
-![Docsify-This Guide Site with Image Cards](docs/images/docsify-this-guide-site-readme.jpg)
+![Docsify-This Guide Site with Image Cards](docs/images/docsify-this-guide-site-image-cards-readme.jpg)
 
 [Guide Site with Image Cards Template](https://github.com/hibbitts-design/docsify-this-guide-site-image-cards) with [home.md](https://github.com/hibbitts-design/docsify-this-guide-site-image-cards/blob/main/home.md) file, including the use of the `card-list-sections` card list (a picture on each section card), and a Docsify custom [Sidebar](https://github.com/hibbitts-design/docsify-this-guide-site-image-cards/blob/main/_sidebar.md) with collapsible sidebar groups, displayed by Docsify-This as:
 

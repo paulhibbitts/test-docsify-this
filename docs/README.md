@@ -1417,7 +1417,7 @@ Guide Site [home.md](https://github.com/hibbitts-design/docsify-this-guide-site/
 
 <div class="docsifythiscolumn35" >
 
-[![Guide Site with Image Cards](images/docsify-this-guide-site.jpg ":class=docsify-this-screenshot")](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true)
+[![Guide Site with Image Cards](images/docsify-this-guide-site-image-cards.jpg ":class=docsify-this-screenshot")](https://docsify-this.net?basePath=https://raw.githubusercontent.com/hibbitts-design/docsify-this-guide-site-image-cards/main&homepage=home.md&sidebar=true&loadSidebar=_sidebar.md&collapsibleSidebarGroups=true&name=Open%20Education%20Essentials&dark-mode=auto&pagination=true&searchbox=true)
 
 </div>
 
